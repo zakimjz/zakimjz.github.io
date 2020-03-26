@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.mjzaki.com/categories/</loc>
+    <loc>http://www.mjzaki.com/</loc>
+    <lastmod>2020-03-25T23:25:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.mjzaki.com/</loc>
+    <loc>http://www.mjzaki.com/posts/my-first-post/</loc>
+    <lastmod>2020-03-25T23:25:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.mjzaki.com/posts/</loc>
+    <lastmod>2020-03-25T23:25:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.mjzaki.com/categories/</loc>
   </url>
   
   <url>
