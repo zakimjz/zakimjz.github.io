@@ -1,4 +1,4 @@
-.. title: Zaki's Main Page
+.. title: Mohammed J. Zaki
 .. slug: index
 .. date: 2020-03-30 08:03:46 UTC-04:00
 .. tags: 
@@ -48,3 +48,7 @@ a Google Faculty Research Award in 2011. He is an `ACM Distinguished
 Scientist <http://awards.acm.org/distinguished_member/year.cfm>`_ and a `Fellow of the IEEE <https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_. His research is
 supported in part by NSF, NIH, DOE, IBM, Google, HP, and Nvidia.
 
+Courses
+-------
+
+Spring 2020: :doc:`Machine Learning in Bioinformatics <mlib>` 

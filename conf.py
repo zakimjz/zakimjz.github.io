@@ -140,7 +140,8 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/publications/", "Publications"),
-        ("/courses/", "Courses"),
+        ((("/courses/mlib", "MLinBioinfo"),
+          ("/courses/dm", "DataMining")), 'Courses'),
         # ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),
     ),
@@ -150,11 +151,13 @@ NAVIGATION_LINKS = {
 # although themes may not always support them. (translatable)
 # (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
 NAVIGATION_ALT_LINKS = {
-    DEFAULT_LANG: ()
+    DEFAULT_LANG: (
+        # ("/courses/mlib/index.html", "MLinBioinfo"),
+    )
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "bootstrap4"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -992,7 +995,7 @@ COMMENT_SYSTEM_ID = ""
 # What file should be used for directory indexes?
 # Defaults to index.html
 # Common other alternatives: default.html for IIS, index.php
-# INDEX_FILE = "index.html"
+INDEX_FILE = "index.html"
 
 # If a link ends in /index.html,  drop the index.html part.
 # http://mysite/foo/bar/index.html => http://mysite/foo/bar/
@@ -1035,37 +1038,37 @@ PRETTY_URLS = True
 
 # If you want support for the $.$ syntax (which may conflict with running
 # text!), just use this config:
-# MATHJAX_CONFIG = """
-# <script type="text/x-mathjax-config">
-# MathJax.Hub.Config({
-#     tex2jax: {
-#         inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
-#         processEscapes: true
-#     },
-#     displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
-#     "HTML-CSS": {
-#         styles: {'.MathJax_Display': {"margin": 0}}
-#     }
-# });
-# </script>
-# """
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # Want to use KaTeX instead of MathJax? While KaTeX may not support every
 # feature yet, it's faster and the output looks better.
-# USE_KATEX = False
+USE_KATEX = True
 
 # KaTeX auto-render settings. If you want support for the $.$ syntax (which may
 # conflict with running text!), just use this config:
-# KATEX_AUTO_RENDER = """
-# delimiters: [
-#     {left: "$$", right: "$$", display: true},
-#     {left: "\\\\[", right: "\\\\]", display: true},
-#     {left: "\\\\begin{equation*}", right: "\\\\end{equation*}", display: true},
-#     {left: "$", right: "$", display: false},
-#     {left: "\\\\(", right: "\\\\)", display: false}
-# ]
-# """
+KATEX_AUTO_RENDER = """
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\\\[", right: "\\\\]", display: true},
+    {left: "\\\\begin{equation*}", right: "\\\\end{equation*}", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\\\(", right: "\\\\)", display: false}
+]
+"""
 
 # Do you want to customize the nbconversion of your IPython notebook?
 # IPYNB_CONFIG = {}
