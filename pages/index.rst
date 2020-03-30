@@ -16,6 +16,7 @@
 | Department of Computer Science
 | Rensselaer Polytechnic Institute
 | Troy, New York 12180-3590
+|
 
 
 Mohammed J. Zaki is a Professor of Computer Science at RPI. He is also
@@ -55,3 +56,10 @@ Courses
 -------
 
 Spring 2020: :doc:`Machine Learning in Bioinformatics <mlib>` 
+
+
+Publications and Software
+-------------------------
+
+You can find all of the publications and related sofware (and datasets,
+where applicable) at :doc:`Publications <publications>`
