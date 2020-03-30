@@ -5,7 +5,10 @@
 .. category: 
 .. link: 
 .. description: 
+.. has_math: True
 .. type: text
+
+
 
 Assign1: ProtVec 
 ----------------
@@ -30,12 +33,12 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698/ (Learned
 protein embeddings for machine learning)
 
 You will be asked to compare the embeddings for different values of the
-dimensionality \(d\), different context size \(w\), and different n-gram
-sizes \(n\). For example \(d=50, 100, 300\), \(w=5, 7, 25\), and
-\(n=1,2,3,4,5\).
+dimensionality $d$, different context size $w$, and different n-gram
+sizes $n$. For example $d=50, 100, 300$, $w=5, 7, 25$, and
+$n=1,2,3,4,5$.
 
 You should compare with the default values used in the paper, namely
-\(d=100\), \(w=25\), and \(n=3\). In your implementation these should be
+$d=100$, $w=25$, and $n=3$. In your implementation these should be
 variables that take their values from the command line (see below; you
 should also make the number of negative samples a parameter).
 

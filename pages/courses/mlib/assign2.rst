@@ -5,7 +5,7 @@
 .. category: 
 .. link: 
 .. description: 
-.. has_math: true
+.. has_math: True
 .. type: text
 
 Protein Secondary Structure Prediction 
@@ -41,22 +41,22 @@ H-bonded turn (T), bend (S), and loop (L).
 
 Your task is the implement approach IV, as described in
 http://www.cs.rpi.edu/~zaki/MLIB/lecture8.pdf. That is, train the
-word2vec model with ngram size \(n\) and embedding dimensionality \(d\).
+word2vec model with ngram size $n$ and embedding dimensionality $d$.
 Store the embeddings in a file as done in assign1. Next, define a
-context size \(w\), and for each position \(i\) in the input sequence
-extract the vector embedding for the ngram centered at position \(i\).
-Next extract the embeddings for the \(\pm w\) ngrams surrounding the
+context size $w$, and for each position $i$ in the input sequence
+extract the vector embedding for the ngram centered at position $i$.
+Next extract the embeddings for the $\pm w$ ngrams surrounding the
 center ngram as the context embeddings.
 
-From the center word embeddings, say \(v_i\) and the context word
-embeddings \(v_j\) for \(j \in i\pm w\), create two types of
-representations: 1) add or average them to obtain a \(d\) dimensional
+From the center word embeddings, say $v_i$ and the context word
+embeddings $v_j$ for :math:`j \in i \pm w`, create two types of
+representations: 1) add or average them to obtain a $d$ dimensional
 vector which will be used as input to an MLP that predicts the 8 types
-of labels. 2) concatenate the vectors to obtain a \(d \times (2w+1)\)
+of labels. 2) concatenate the vectors to obtain a :math:`d \times (2w+1)`
 dimensional input vector for an MLP.
 
-Test various combinations of ngrams including \(n=1,3,5\), and context
-windows \(w=1,2,3,...\). Report the best prediction accuracy on the test
+Test various combinations of ngrams including $n=1,3,5$, and context
+windows $w=1,2,3,...$. Report the best prediction accuracy on the test
 set.
 
 If you are feeling ambitious, then also include a comparison with an RNN

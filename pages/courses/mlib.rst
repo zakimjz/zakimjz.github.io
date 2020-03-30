@@ -14,6 +14,8 @@ and so on. We will cover some of the traditional algorithms for these
 tasks, but the main focus is on the role of deep learning and data
 mining in computational biology and bioinformatics.
 
+**Class Hours**: 10-11:50AM TF, Low 3039. *Office Hours*: 12-1PM TF
+
 **Syllabus**: :doc:`mlib_syllabus`
 
 **Campuswire**: https://campuswire.com/c/GD5DDE12E/
