@@ -14,6 +14,23 @@ and so on. We will cover some of the traditional algorithms for these
 tasks, but the main focus is on the role of deep learning and data
 mining in computational biology and bioinformatics.
 
+**Syllabus**: :doc:`mlib_syllabus`
+
+**Campuswire**: https://campuswire.com/c/GD5DDE12E/
+
+**Submitty**: https://submitty.cs.rpi.edu/s20/csci4969
+
+
+Assignments
+-----------
+
+**Assign1**: :doc:`mlib_assign1`
+
+**Assign2**: :doc:`mlib_assign2`
+
+**Assign2**: :doc:`mlib_assign3`
+
+
 Class schedule
 --------------
 

@@ -1,0 +1,130 @@
+<div class="section" id="assign1-protvec">
+<h1>Assign1: ProtVec</h1>
+<p><strong>Due Date</strong>: Feb 4th, before midnight</p>
+<p>In this assignment, you will implement the ProtVec embedding method
+described in
+<a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287</a>
+(Continuous Distributed Representation of Biological Sequences for Deep
+Proteomics and Genomics).</p>
+<p>You will use <a class="reference external" href="http://www.pytorch.org">http://www.pytorch.org</a> (pytorch) for the implementation, and
+your code should implement the negative sampling approach to train the
+embeddings.</p>
+<p>For training  the model, you can first use a small set of 1000 proteins
+<a class="reference external" href="http://www.cs.rpi.edu/~zaki/MLIB/assignments/small_uniprot.txt">http://www.cs.rpi.edu/~zaki/MLIB/assignments/small_uniprot.txt</a>. Once your model is finalized you should train
+it on the large set of 524532 protein sequences
+<a class="reference external" href="http://www.cs.rpi.edu/~zaki/MLIB/assignments/uniprot-reviewed-lim_sequences.txt">http://www.cs.rpi.edu/~zaki/MLIB/assignments/uniprot-reviewed-lim_sequences.txt</a>. This data is from the paper
+<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698/</a> (Learned
+protein embeddings for machine learning)</p>
+<p>You will be asked to compare the embeddings for different values of the
+dimensionality (d), different context size (w), and different n-gram
+sizes (n). For example (d=50, 100, 300), (w=5, 7, 25), and
+(n=1,2,3,4,5).</p>
+<p>You should compare with the default values used in the paper, namely
+(d=100), (w=25), and (n=3). In your implementation these should be
+variables that take their values from the command line (see below; you
+should also make the number of negative samples a parameter).</p>
+<p>Here is the pseudo code for the overall structure of the script:</p>
+<table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-1"> 1</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-2"> 2</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-3"> 3</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-4"> 4</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-5"> 5</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-6"> 6</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-7"> 7</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-8"> 8</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-9"> 9</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-10">10</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-11">11</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-12">12</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-13">13</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-14">14</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-15">15</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-16">16</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-17">17</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-18">18</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-19">19</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-20">20</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-21">21</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-22">22</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-23">23</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-24">24</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-25">25</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-26">26</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-27">27</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-28">28</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-29">29</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-30">30</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-31">31</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-32">32</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-33">33</a>
+<a href="#rest_code_a91aafda3f9b4207864b78fc9bd2f271-34">34</a></pre></div></td><td class="code"><pre class="code python"><a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-1"></a><span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">ngram</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">ngram</span><span class="o">-</span><span class="mi">1</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-2"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-3"></a><span class="n">write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="k">return</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">positive</span> <span class="ow">and</span> <span class="n">negative</span> <span class="n">pairs</span> <span class="kn">from</span> <span class="nn">all</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sequences</span><span class="o">/</span><span class="n">offsets</span><span class="o">.</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-4"></a><span class="k">for</span> <span class="n">the</span> <span class="n">negative</span> <span class="n">sampling</span> <span class="n">use</span> <span class="n">the</span> <span class="n">cumsum</span> <span class="n">approach</span> <span class="n">described</span> <span class="ow">in</span> <span class="k">class</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-5"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-6"></a><span class="nc">define</span> <span class="n">NN</span> <span class="n">model</span><span class="p">:</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-7"></a>    <span class="n">init</span> <span class="n">function</span><span class="p">:</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-8"></a>        <span class="n">define</span> <span class="n">the</span> <span class="n">two</span> <span class="n">embeddings</span> <span class="n">layers</span> <span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">V</span><span class="p">)</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-9"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-10"></a>    <span class="n">forward</span> <span class="n">function</span><span class="p">:</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-11"></a>        <span class="nb">input</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">center_words</span><span class="p">,</span> <span class="ow">and</span> <span class="n">context_words</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-12"></a>        <span class="n">look</span> <span class="n">up</span> <span class="n">their</span> <span class="n">embeddings</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-13"></a>        <span class="n">compute</span> <span class="n">the</span> <span class="n">dot</span> <span class="n">product</span> <span class="n">between</span> <span class="n">corresponding</span> <span class="n">pairs</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-14"></a>        <span class="n">output</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="n">probability</span> <span class="n">of</span> <span class="n">that</span> <span class="n">pair</span> <span class="n">being</span> <span class="n">a</span> <span class="n">positive</span> <span class="n">pair</span> <span class="p">(</span><span class="n">via</span> <span class="n">sigmoid</span><span class="p">)</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-15"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-16"></a><span class="n">Next</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">boilerplate</span> <span class="n">code</span> <span class="k">for</span> <span class="n">training</span><span class="p">:</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-17"></a><span class="n">net</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-18"></a><span class="n">send</span> <span class="n">net</span> <span class="n">to</span> <span class="n">GPU</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-19"></a><span class="n">loss_func</span> <span class="o">=</span> <span class="n">BCEloss</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-20"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span> <span class="ow">or</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-21"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-22"></a><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">epochs</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-23"></a>    <span class="k">for</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">batches</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-24"></a>       <span class="n">convert</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="n">to</span> <span class="n">tensors</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-25"></a>       <span class="n">send</span> <span class="nb">all</span> <span class="n">three</span> <span class="n">to</span> <span class="n">the</span> <span class="n">GPU</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-26"></a>       <span class="n">net</span><span class="o">.</span><span class="n">zero_grad</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-27"></a>       <span class="n">preds</span> <span class="o">=</span> <span class="n">net</span> <span class="p">(</span><span class="n">center_words</span><span class="p">,</span> <span class="n">contex_words</span><span class="p">)</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-28"></a>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_func</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-29"></a>       <span class="n">loss</span><span class="o">.</span><span class="n">backward</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-30"></a>       <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-31"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-32"></a>   <span class="nb">print</span> <span class="n">total</span> <span class="n">loss</span> <span class="n">per</span> <span class="n">epoch</span>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-33"></a>
+<a name="rest_code_a91aafda3f9b4207864b78fc9bd2f271-34"></a><span class="n">save</span> <span class="n">embeddings</span> <span class="ow">in</span> <span class="n">required</span> <span class="nb">format</span>
+</pre></td></tr></table><div class="section" id="submission">
+<h2>Submission</h2>
+<p>Submit your code via submitty. Name your python script:
+<strong>assign1.py</strong>.</p>
+<p>Your script will be run as follows:</p>
+<p>assign1.py FILENAME EMBED_DIM CONTEXT_SZ NGRAM_SIZE NEG_SAMPLES</p>
+<p>Here FILENAME is the name of the sequence file, EMBED_DIM the
+dimensionality to use for the embedding vectors, CONTEXT_SZ is the size
+of the context to consider, NGRAM_SZ is the size of the ngrams, and
+NEG_SAMPLES is the number of negative samples to consider for each
+positive pair.</p>
+<p>Note that CONTEXT_SZ will always be an odd number greater than 1, so
+CONTEXT_SZ=3 means that you look at the center word and plus/minus one
+word, CONTEXT_SZ=25 means center word plus/minus 12 words, and so on.</p>
+<p>The output of your code should be a file that contain the embbedding of
+each work. The first line should have only two values:</p>
+<p>V d</p>
+<p>where V is the Vocab size, and d the EMBED_DIM</p>
+<p>Next, each line should contain:</p>
+<p>WORD EMBEDDING_VECTOR</p>
+<p>where WORD is a word from your vocab (not the index), and its embedding
+vector. For example, if there are only two words in your vocab (say AA
+and BB), and you are doing 3-dim embeddings, then the output file will
+be:</p>
+<p>2 3</p>
+<p>AA -1 -0.3 5</p>
+<p>BB 2 0.5 -1</p>
+<p>After learning the representations, you will be asked to use the trained
+vectors for a downstream task such as sequence classification or
+secondary structure prediction. <em>The details of the tasks will be posted
+for Assign2</em></p>
+<p>Note that you are allowed to use/modify existing implementations of
+word2vec in pytorch on the web, but you should understand what is being
+done, so that you are able to code more complex models later. You should
+acknowledge the source of any code you use.</p>
+</div>
+</div>

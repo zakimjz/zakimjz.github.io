@@ -21,6 +21,7 @@ We gratefully acknowledge the funding from the following agencies and companies 
 * NSF
 * DOE Office of Science
 * NIH
+* DARPA
 * IBM (AI Horizon Network and AIRC)
 * HP (Innovation Research Award)
 * Google (Faculty Research Award)

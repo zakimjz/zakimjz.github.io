@@ -1,0 +1,51 @@
+<div class="section" id="attention-for-secondary-structure-prediction">
+<h1>Attention for Secondary Structure Prediction</h1>
+<p>Due: March 6th, before midnight</p>
+<p>In this assignment, you will implement one transformer block, i.e.,
+applying attention over the input protein sequence to predict the
+secondary structure at each position.</p>
+<p>We will use the same dataset as for Assign2. Namely, the
+<a class="reference external" href="http://ww.cs.rpi.edu/~zaki/MLIB/train_SS.txt">http://ww.cs.rpi.edu/~zaki/MLIB/train_SS.txt</a> (training dataset)
+comprises 5365 protein sequences, along with the secondary structure
+(SS) label at each residue position. Each line in the file contains a
+protein sequence, followed by a space, followed by the label sequence
+(there is a one-to-one correspondence between an amino acid and the SS
+label). Likewise the <a class="reference external" href="http://ww.cs.rpi.edu/~zaki/MLIB/test_SS.txt">http://ww.cs.rpi.edu/~zaki/MLIB/test_SS.txt</a> (test
+dataset) comprises 514 sequences, along with the true labels, in the
+above format.</p>
+<p>Given an input sequence (x_1, x_2, ..., x_n), where each (x_i) is a
+(d)-dimensional vector (e.g., pretrained vector, or a one-hot vector)
+over a suitable vocabulary (e.g., single amino acids, or ngram words of
+size 3, 5, etc), you will predict the corresponding SS label for that
+position.</p>
+<p>You are required to implement the transformer block that considers the
+pair-wise attention scores between the center word, and other words
+within a block (w). For this, you should use the key (K), query
+(Q), and value (V) representations (in a lower dimensional subspace)
+that rely on the corresponding projection matrices (W^K, W^Q, W^V).
+You must write the code that computes the attention and then the final
+value representation for each word, which will then be mapped back to
+the original dimensionality (d), via another matrix (W^O).</p>
+<p>After the attention update, we can then pass the word vectors through a
+feed-forward network (FFN with relu activation), followed by a softmax
+output layer for each position in the input. You will then measure the
+cross-entropy loss per position, and sum them to compute the final loss
+for the given input sequence.</p>
+<p>Note that the parameters (W^K, W^Q, W^V, W^O) and the parameters for
+the FFN and softmax are all shared!</p>
+<p>Note that the input is given as an amino acid sequence, so depending on
+the word (or ngram) size, you first have to convert it into a sequence
+of words using a sliding window, so you can look up the vector
+representation. Second, the block size (w) is like the context size,
+in that you should be looking at the attention between the center words,
+and (w) words to the left and (w) to the right.</p>
+<p>Once you have implemented the basic attention module, you may play with
+more advanced variations like multiple attention layers, residual
+connections, and layer normalization.</p>
+<div class="section" id="submission">
+<h2>Submission</h2>
+<p>Submit <strong>assign3.py</strong> via submitty, along with an output file that
+summarizes the results of your method in terms of training and testing
+accuracy values.</p>
+</div>
+</div>

@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.mjzaki.com/</loc>
-  <lastmod>2020-03-30T16:08:00Z</lastmod>
+  <lastmod>2020-03-30T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.mjzaki.com/archive.html</loc>
-  <lastmod>2020-03-30T16:29:00Z</lastmod>
+  <lastmod>2020-03-30T20:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.mjzaki.com/categories/</loc>
@@ -23,7 +23,27 @@
  </url>
  <url>
   <loc>http://www.mjzaki.com/courses/mlib/</loc>
-  <lastmod>2020-03-30T16:08:00Z</lastmod>
+  <lastmod>2020-03-30T21:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.mjzaki.com/courses/mlib/mlib/</loc>
+  <lastmod>2020-03-30T20:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign1/</loc>
+  <lastmod>2020-03-30T20:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign2/</loc>
+  <lastmod>2020-03-30T20:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign3/</loc>
+  <lastmod>2020-03-30T21:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.mjzaki.com/courses/mlib/mlib_syllabus/</loc>
+  <lastmod>2020-03-30T20:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.mjzaki.com/galleries/</loc>

@@ -39,14 +39,17 @@ Mining. He was the program co-chair for `SDM'08
 `CIKM'12 <http://dl.acm.org/citation.cfm?id=2396761>`_, `ICDM'12
 <http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6412852>`_,
 `IEEE BigData'15 <http://cci.drexel.edu/bigdata/bigdata2015>`_, and
-`CIKM'18 <http://www.cikm2018.units.it>`_. He is currently serving on the
-Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
+`CIKM'18 <http://www.cikm2018.units.it>`_. He is currently serving on
+the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 received the National Science Foundation CAREER Award in 2001 and the
 Department of Energy Early Career Principal Investigator Award in 2002.
 He received an HP Innovation Research Award in 2010, 2011, and 2012, and
 a Google Faculty Research Award in 2011. He is an `ACM Distinguished
-Scientist <http://awards.acm.org/distinguished_member/year.cfm>`_ and a `Fellow of the IEEE <https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_. His research is
-supported in part by NSF, NIH, DOE, IBM, Google, HP, and Nvidia.
+Scientist <http://awards.acm.org/distinguished_member/year.cfm>`_ and a
+`Fellow of the IEEE
+<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_. His
+research is supported in part by NSF, NIH, DOE, IBM, Google, HP, and
+Nvidia.
 
 Courses
 -------
