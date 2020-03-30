@@ -12,12 +12,12 @@
    :width: 400
    :alt: mjzaki
 
+|
 | Associate Department Head and Graduate Program Director
 | Department of Computer Science
 | Rensselaer Polytechnic Institute
 | Troy, New York 12180-3590
 |
-
 
 Mohammed J. Zaki is a Professor of Computer Science at RPI. He is also
 the associate department head and the graduate program director for the
