@@ -65,7 +65,7 @@ You can find all of the publications and related sofware (and datasets,
 where applicable) at :doc:`Publications <publications>` 
 
 You can directly access the software at `my github page
-<https://github.com/zakimjz>`_.
+<https://github.com/zakimjz?tab=repositories>`_.
 
 You can also find my publications on  |googlescholar|_ and  |dblp|_
 
