@@ -79,7 +79,8 @@ Class schedule
 |  Mar 27         | 3D Structure Prediction         | P8       | `lecture16 <http://www.cs.rpi.edu/~zaki/MLIB/lecture16.pdf>`_,   |
 |                 |                                 |          | `video-mar27 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-mar24.mkv>`_ |
 +-----------------+---------------------------------+----------+------------------------------------------------------------------+
-|  Mar 31         | 3D Structure Prediction         | P9       |                                                                  |
+|  Mar 31         | 3D Structure Prediction         | P9       | `lecture17 <http://www.cs.rpi.edu/~zaki/MLIB/lecture17.pdf>`_,   |
+|                 |                                 |          | `video-mar31 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-mar31.mkv>`_ |
 +-----------------+---------------------------------+----------+------------------------------------------------------------------+
 
 
