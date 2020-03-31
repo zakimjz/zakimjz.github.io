@@ -30,7 +30,7 @@ Assignments
 
 **Assign2**: :doc:`mlib_assign2`
 
-**Assign2**: :doc:`mlib_assign3`
+**Assign3**: :doc:`mlib_assign3`
 
 
 Class schedule
