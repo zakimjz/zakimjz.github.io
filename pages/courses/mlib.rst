@@ -82,6 +82,9 @@ Class schedule
 |  Mar 31         | 3D Structure Prediction         | P9       | `lecture17 <http://www.cs.rpi.edu/~zaki/MLIB/lecture17.pdf>`_,   |
 |                 |                                 |          | `video-mar31 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-mar31.mkv>`_ |
 +-----------------+---------------------------------+----------+------------------------------------------------------------------+
+|  Apr 3          | 3D Structure Prediction         | P9       | `lecture18 <http://www.cs.rpi.edu/~zaki/MLIB/lecture18.pdf>`_,   |
+|                 |                                 |          | `video-apr3 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr3.mkv>`_   |
++-----------------+---------------------------------+----------+------------------------------------------------------------------+
 
 
 Papers
@@ -108,7 +111,7 @@ Readings
 
 These readings are referenced as Rx in the course schedule above.
 
-* R1: Cells and Genomes, http://www.cs.rpi.edu/~zaki/MLIB/protected, (look at AJLMRRW-chap1.pdf)
+* R1: Cells and Genomes, http://www.cs.rpi.edu/~zaki/MLIB/protected
 * R2: Linear Regression, http://www.cs.rpi.edu/~zaki/MLIB/linear-regression.pdf
 * R3: Logistic Regression, http://www.cs.rpi.edu/~zaki/MLIB/logistic-regression.pdf
 * R4: Neural Networks, http://www.cs.rpi.edu/~zaki/MLIB/neural-networks.pdf
