@@ -139,9 +139,16 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        # ("http://www.mjzaki.com", "Home"),
         ("/publications/", "Publications"),
-        ((("/courses/mlib", "MLinBioinfo"),
-          ("/courses/dm", "DataMining")), 'Courses'),
+        ("https://github.com/zakimjz", "Github"),
+        ("/courses/mlib", "MLinBioinfo"),
+        # ((("/courses/mlib", "MLinBioinfo"),
+        #   ("/courses/dm", "DataMining")), 'Courses', 'fas fa-chalkboard-teacher'),
+        # ('/index.html', 'Home', 'fa fa-home'),
+        # ('https://www.mjzaki.com', 'About me', 'fa fa-user'),
+        # ("/publications/", "Publications", 'fas fa-book-open'),
+        # ('https://github.com/zakimjz', 'My Github', 'fab fa-github'),
         # ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),
     ),
