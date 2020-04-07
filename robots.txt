@@ -1,4 +1,4 @@
-Sitemap: http://www.mjzaki.com/sitemapindex.xml
+Sitemap: http://www.cs.rpi.edu/~zaki/sitemapindex.xml
 
 User-Agent: *
-Host: www.mjzaki.com
+Host: www.cs.rpi.edu
