@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
-<link rel="canonical" href="http://www.mjzaki.com/courses/mlib/mlib_assign4/">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign4/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
@@ -20,7 +20,7 @@ r'<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/Mat
 
     
 
-    <meta name="author" content="Mohammed J. Zaki"><meta property="og:site_name" content="Zaki Home Page"><meta property="og:title" content="CSCI4969-6969 Assign4 "><meta property="og:url" content="http://www.mjzaki.com/courses/mlib/mlib_assign4/"><meta property="og:description" content="Protein Structure Prediction: Simplified AlphaFold
+    <meta name="author" content="Mohammed J. Zaki"><meta property="og:site_name" content="Zaki Home Page"><meta property="og:title" content="CSCI4969-6969 Assign4 "><meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign4/"><meta property="og:description" content="Protein Structure Prediction: Simplified AlphaFold
 
 Due: April 14th, before midnight
 In this assignment, you will implement a simplified version of the
@@ -33,7 +33,7 @@ AlphaFold protein structure method. In particula"><meta property="og:type" conte
 navbar-dark bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="http://www.mjzaki.com/">
+        <a class="navbar-brand" href="http://www.cs.rpi.edu/~zaki/">
 
             <span id="blog-title">Zaki Home Page</span>
         </a>
@@ -127,12 +127,17 @@ block should be made up of the different batch-norm, ELU, projections
 and dilations as described. These layers/activations will make use of
 the pytorch inbuilt functions, so you have to only define the
 architecture and forward function.</p>
-<p>One other departure from AlphaFold is that we will train on
+<p>We will train on
 each <span class="math">\(64 \times 64\)</span> tile separately.
-You can create tiles by starting at the tile centered at starting
-position $(0,0)$, and then generating all tiles with a stride of 16 or
-32 (depending on the desired overlaps between tiles); this also assumes
-that the input tensor has been zero padded as appropriate.
+You can create tiles by starting at a randomly chosen
+position $(s,e)$, and then generating all tiles with a stride of 64
+for non-overlapping tiles (or 16 or
+32 if you want to have overlaps between tiles); this also assumes
+that the input tensor has been zero padded as appropriate. You should
+restrict $s$ and $e$ to be within the first 64 entries (after
+zero-padding) along each dimension, to generate tiles that cover the
+entire protein. In particular, different epochs sould start at different
+$(s,e)$ locations for the same protein,
 That is, after predicting the
 distances for the tile, you will compare with the true distances for
 that tile only. You will first need to discretize the distances between

@@ -20,7 +20,7 @@ BLOG_AUTHOR = "Mohammed J. Zaki"  # (translatable)
 BLOG_TITLE = "Zaki Home Page"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://www.mjzaki.com/"
+SITE_URL = "http://www.cs.rpi.edu/~zaki/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://www.mjzaki.com/"

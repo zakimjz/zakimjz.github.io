@@ -6,59 +6,59 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://www.mjzaki.com/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/</loc>
   <lastmod>2020-03-31T17:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/archive.html</loc>
-  <lastmod>2020-04-06T14:21:00Z</lastmod>
+  <loc>http://www.cs.rpi.edu/~zaki/archive.html</loc>
+  <lastmod>2020-04-07T19:23:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/categories/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/categories/</loc>
   <lastmod>2020-03-30T16:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/</loc>
   <lastmod>2020-03-30T16:08:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/</loc>
   <lastmod>2020-04-05T20:33:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign1/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign1/</loc>
   <lastmod>2020-03-31T17:33:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign2/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign2/</loc>
   <lastmod>2020-03-30T20:51:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign3/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign3/</loc>
   <lastmod>2020-03-30T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/mlib_assign4/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign4/</loc>
   <lastmod>2020-04-05T20:33:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/courses/mlib/mlib_syllabus/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_syllabus/</loc>
   <lastmod>2020-03-30T20:22:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/galleries/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/galleries/</loc>
   <lastmod>2020-03-31T17:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/listings/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/listings/</loc>
   <lastmod>2020-03-31T17:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/posts/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/posts/</loc>
   <lastmod>2020-03-30T16:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.mjzaki.com/publications/</loc>
+  <loc>http://www.cs.rpi.edu/~zaki/publications/</loc>
   <lastmod>2020-03-30T16:08:00Z</lastmod>
  </url>
 </urlset>
