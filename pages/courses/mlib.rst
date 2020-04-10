@@ -90,6 +90,9 @@ Class schedule
 |  Apr 7         |  Structure Prediction Implementation | P9       | `lecture19 <http://www.cs.rpi.edu/~zaki/MLIB/lecture19.pdf>`_,   |
 |                |                                      |          | `video-apr7 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr7.mkv>`_   |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
+|  Apr 10        |  Structure Prediction                | P10      | `lecture20 <http://www.cs.rpi.edu/~zaki/MLIB/lecture20.pdf>`_,   |
+|                |                                      |          | `video-apr10 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr10.mkv>`_ |
++----------------+--------------------------------------+----------+------------------------------------------------------------------+
 
 
 Papers
@@ -109,7 +112,8 @@ course schedule above.
 7. P7: Learning protein sequence embeddings using information from structure, https://arxiv.org/abs/1902.08661 
 8. P8: End-to-end differentiable learning of protein structure, https://www.biorxiv.org/content/10.1101/265231v2
 9. P9: Improved protein structure prediction using potentials from deep learning,  https://www.nature.com/articles/s41586-019-1923-7, https://deepmind.com/research/open-source/alphafold_casp13
-
+10. P10: Improved protein structure prediction using predicted
+    interresidue orientations, https://www.pnas.org/content/117/3/1496
 
 Readings
 --------
