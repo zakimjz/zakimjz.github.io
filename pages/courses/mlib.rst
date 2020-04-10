@@ -90,7 +90,7 @@ Class schedule
 |  Apr 7         |  Structure Prediction Implementation | P9       | `lecture19 <http://www.cs.rpi.edu/~zaki/MLIB/lecture19.pdf>`_,   |
 |                |                                      |          | `video-apr7 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr7.mkv>`_   |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
-|  Apr 10        |  Structure Prediction                | P10      | `lecture20 <http://www.cs.rpi.edu/~zaki/MLIB/lecture20.pdf>`_,   |
+|  Apr 10        |  Structure Prediction                | P10, R6  | `lecture20 <http://www.cs.rpi.edu/~zaki/MLIB/lecture20.pdf>`_,   |
 |                |                                      |          | `video-apr10 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr10.mkv>`_ |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
 
@@ -125,4 +125,5 @@ These readings are referenced as Rx in the course schedule above.
 * R3: Logistic Regression, http://www.cs.rpi.edu/~zaki/MLIB/logistic-regression.pdf
 * R4: Neural Networks, http://www.cs.rpi.edu/~zaki/MLIB/neural-networks.pdf
 * R5: Deep Learning (RNNs, LSTMs, CNNs), http://www.cs.rpi.edu/~zaki/MLIB/deep-learning.pdf
+* R6: Distance Geometry,  http://www.cs.rpi.edu/~zaki/MLIB/protected
 
