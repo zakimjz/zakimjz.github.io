@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1586539308.8129268
+_modified_time = 1586541052.7728858
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.7/dist-packages/nikola/data/themes/base/templates/post_header.tmpl'
 _template_uri = 'post_header.tmpl'
@@ -63,11 +63,11 @@ def render_html_title(context):
 def render_html_translations(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        translations = context.get('translations', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
         sorted = context.get('sorted', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         lang = context.get('lang', UNDEFINED)
         len = context.get('len', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if len(post.translated_to) > 1:
@@ -92,8 +92,8 @@ def render_html_translations(context,post):
 def render_html_sourcelink(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        messages = context.get('messages', UNDEFINED)
         post = context.get('post', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -112,17 +112,17 @@ def render_html_post_header(context):
     __M_caller = context.caller_stack._push_frame()
     try:
         post = context.get('post', UNDEFINED)
-        def html_title():
-            return render_html_title(context)
         comments = _mako_get_namespace(context, 'comments')
         messages = context.get('messages', UNDEFINED)
+        def html_title():
+            return render_html_title(context)
         site_has_comments = context.get('site_has_comments', UNDEFINED)
         def html_sourcelink():
             return render_html_sourcelink(context)
         author_pages_generated = context.get('author_pages_generated', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
         def html_translations(post):
             return render_html_translations(context,post)
-        date_format = context.get('date_format', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    <header>\n        ')
