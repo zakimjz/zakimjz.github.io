@@ -10,7 +10,7 @@
 
 Protein Structure Prediction: Simplified AlphaFold 
 --------------------------------------------------
-Due: April 14th, before midnight
+Due: April 16th, before midnight
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this assignment, you will implement a simplified version of the
