@@ -93,7 +93,7 @@ Class schedule
 |  Apr 10        |  Structure Prediction                | P10, R6  | `lecture20 <http://www.cs.rpi.edu/~zaki/MLIB/lecture20.pdf>`_,   |
 |                |                                      |          | `video-apr10 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr10.mkv>`_ |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
-|  Apr 10        |  Distance Geometry                   | R6       | `lecture21 <http://www.cs.rpi.edu/~zaki/MLIB/lecture21.pdf>`_,   |
+|  Apr 14        |  Distance Geometry                   | R6       | `lecture21 <http://www.cs.rpi.edu/~zaki/MLIB/lecture21.pdf>`_,   |
 |                |                                      |          | `video-apr14 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr14.mkv>`_ |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
 
