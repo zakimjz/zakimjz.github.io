@@ -75,7 +75,7 @@ Class schedule
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
 |  Mar 10-Mar 20 | NO CLASS (Spring Break)              |          |                                                                  |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
-|  Mar 24        | Embeddings with Strcture             | P8       | `lecture15 <http://www.cs.rpi.edu/~zaki/MLIB/lecture15.pdf>`_,   |
+|  Mar 24        | Embeddings with Structure            | P8       | `lecture15 <http://www.cs.rpi.edu/~zaki/MLIB/lecture15.pdf>`_,   |
 |                |                                      |          | `video-mar24 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-mar24.mkv>`_ |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
 |  Mar 27        | 3D Structure Prediction              | P8       | `lecture16 <http://www.cs.rpi.edu/~zaki/MLIB/lecture16.pdf>`_,   |
