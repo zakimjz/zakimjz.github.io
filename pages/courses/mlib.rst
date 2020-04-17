@@ -96,6 +96,9 @@ Class schedule
 |  Apr 14        |  Distance Geometry                   | R6       | `lecture21 <http://www.cs.rpi.edu/~zaki/MLIB/lecture21.pdf>`_,   |
 |                |                                      |          | `video-apr14 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr14.mkv>`_ |
 +----------------+--------------------------------------+----------+------------------------------------------------------------------+
+|  Apr 17        |   Molecular Graphs                   | P11, P12 | `lecture22 <http://www.cs.rpi.edu/~zaki/MLIB/lecture22.pdf>`_,   |
+|                |                                      |          | `video-apr17 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr17.mkv>`_ |
++----------------+--------------------------------------+----------+------------------------------------------------------------------+
 
 
 Papers
@@ -117,6 +120,8 @@ course schedule above.
 9. P9: Improved protein structure prediction using potentials from deep learning,  https://www.nature.com/articles/s41586-019-1923-7, https://deepmind.com/research/open-source/alphafold_casp13
 10. P10: Improved protein structure prediction using predicted
     interresidue orientations, https://www.pnas.org/content/117/3/1496
+11. P11: A Deep Learning Approach to Antibiotic Discovery, https://doi.org/10.1016/j.cell.2020.01.021
+12. P12: Analyzing Learned Molecular Representations for Property Prediction, https://doi.org/10.1021/acs.jcim.9b00237
 
 Readings
 --------
