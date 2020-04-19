@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/</loc>
-  <lastmod>2020-04-05T20:33:00Z</lastmod>
+  <lastmod>2020-04-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign1/</loc>
@@ -42,6 +42,10 @@
   <lastmod>2020-04-05T20:33:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign5/</loc>
+  <lastmod>2020-04-19T17:57:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_syllabus/</loc>
   <lastmod>2020-03-30T20:22:00Z</lastmod>
  </url>
@@ -51,7 +55,19 @@
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/listings/</loc>
-  <lastmod>2020-03-31T17:34:00Z</lastmod>
+  <lastmod>2020-04-19T18:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.cs.rpi.edu/~zaki/listings/compute_phi_psi.py.html</loc>
+  <lastmod>2020-04-19T18:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.cs.rpi.edu/~zaki/listings/mlib/</loc>
+  <lastmod>2020-04-19T18:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.cs.rpi.edu/~zaki/listings/mlib/compute_phi_psi.py.html</loc>
+  <lastmod>2020-04-19T18:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/posts/</loc>
