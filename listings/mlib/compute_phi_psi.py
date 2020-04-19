@@ -5,26 +5,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from Bio.PDB.vectors import Vector, calc_angle, calc_dihedral
 
-MAX_SEQUENCE_LENGTH = 2000
-AA_ID_DICT = {'A': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'K': 9,
-              'L': 10, 'M': 11, 'N': 12, 'P': 13, 'Q': 14, 'R': 15, 'S': 16, 'T': 17,
-              'V': 18, 'W': 19, 'Y': 20}
-
 INVALID_ANGLE = 10  # invalid angle value
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description='compute_phi_psi.py')
-
     parser.add_argument('fname')
     parser.add_argument('-plot', action='store_true')
-
     args = parser.parse_args()
     return args
-
-
-def encode_primary_string(primary):
-    return list([AA_ID_DICT[aa]-1 for aa in primary])
 
 
 class running_stats:

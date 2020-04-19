@@ -406,18 +406,7 @@ to run the code.</p>
 232
 233
 234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246</pre></div></td>
+235</pre></div></td>
 <td class="code">
 <div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
 
@@ -426,26 +415,15 @@ to run the code.</p>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">Bio.PDB.vectors</span> <span class="kn">import</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">calc_angle</span><span class="p">,</span> <span class="n">calc_dihedral</span>
 
-<span class="n">MAX_SEQUENCE_LENGTH</span> <span class="o">=</span> <span class="mi">2000</span>
-<span class="n">AA_ID_DICT</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'A'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'D'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'E'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">'G'</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'H'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">'I'</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">'K'</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
-              <span class="s1">'L'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">'M'</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s1">'N'</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">'P'</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span> <span class="s1">'Q'</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s1">'R'</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="s1">'S'</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">'T'</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
-              <span class="s1">'V'</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">'W'</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="s1">'Y'</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
-
 <span class="n">INVALID_ANGLE</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># invalid angle value</span>
 
 
 <span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
     <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'compute_phi_psi.py'</span><span class="p">)</span>
-
     <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'fname'</span><span class="p">)</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-plot'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'store_true'</span><span class="p">)</span>
-
     <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">args</span>
-
-
-<span class="k">def</span> <span class="nf">encode_primary_string</span><span class="p">(</span><span class="n">primary</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">list</span><span class="p">([</span><span class="n">AA_ID_DICT</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">primary</span><span class="p">])</span>
 
 
 <span class="k">class</span> <span class="nc">running_stats</span><span class="p">:</span>
