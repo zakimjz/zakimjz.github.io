@@ -57,13 +57,15 @@ There is no required text for the course. Reading materials will be posted onlin
 Grading Policy
 --------------
 
-Your grade will be a combination of the following items.
+Your grade will be a combination of the following items. **Note that in
+light of COVID disruption, your grade will depend only on the
+assignments and attendance.**
 
-* **Assignments and HWs (50%)**: Assignments and HWs will be given
+* **Assignments and HWs (95%)**: Assignments and HWs will be given
   throughout the semester. These will include an implementation
   component and can also have written questions.
 
-* **Final Project (45%)**: You will implement cutting edge approaches
+* **Final Project (0%)**: You will implement cutting edge approaches
   from the literature and extend/improve them. You will read papers on
   the topic, implement and compare state-of-the-art methods, and write a
   report on your findings. Finally, you will present your projects in

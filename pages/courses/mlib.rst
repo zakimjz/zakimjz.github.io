@@ -34,6 +34,8 @@ Assignments
 
 **Assign4**: :doc:`mlib_assign4`
 
+**Assign5**: :doc:`mlib_assign5`
+
 
 Class schedule
 --------------
