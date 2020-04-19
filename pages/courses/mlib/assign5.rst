@@ -59,7 +59,9 @@ You will resue the same code from {{% doc %}} mlib_assign4 {{% /doc %}}
 
 The main difference is that you have to add a new output "head" to
 predict the phi and psi angles per position in the crop. You will use
-cross-entropy loss to compute the loss from the angle prediction.
+cross-entropy loss to compute the loss from the angle prediction. Use 36
+bins to discretize the dihedral angles (so you get :math:`10^\circ` or
+:math:`\pi/18` radians per bin).
 
 The final loss for training from a crop is the sum of the distance
 matrix loss and dihedral angle loss. 

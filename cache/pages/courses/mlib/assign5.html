@@ -38,7 +38,9 @@ structures in <em>training_30</em>.</p>
 <p>You will resue the same code from <a href="/courses/mlib/mlib_assign4/">CSCI4969-6969 Assign4 </a></p>
 <p>The main difference is that you have to add a new output &quot;head&quot; to
 predict the phi and psi angles per position in the crop. You will use
-cross-entropy loss to compute the loss from the angle prediction.</p>
+cross-entropy loss to compute the loss from the angle prediction. Use 36
+bins to discretize the dihedral angles (so you get <span class="math">\(10^\circ\)</span> or
+<span class="math">\(\pi/18\)</span> radians per bin).</p>
 <p>The final loss for training from a crop is the sum of the distance
 matrix loss and dihedral angle loss.</p>
 <p>Once the joint model has been trained, apply it to the test set to
