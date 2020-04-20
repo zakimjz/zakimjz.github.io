@@ -79,7 +79,7 @@ from the dihedral angles (and the bond lengths and angles noted in
 For the distance geometry method, you have to compute the matrix $M$ of
 dot products from the distance matrix (as described in class), then
 compute its eigenvectors $W$ and values :math:`\Lambda`, and the obtain
-the 3D coords as :math:`A = (\Lambda^{1/2} W)^T`
+the 3D coords as :math:`A = (W \Lambda^{1/2})^T`
 
 For dihedral angle to 3D coords you can use the pNERF implementation in
 `OpenProtein <https://github.com/biolib/openprotein>`_
