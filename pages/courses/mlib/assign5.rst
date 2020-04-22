@@ -38,9 +38,9 @@ These were computed from the *training_30* ProteinNet file:
 | bond length C-N 1.3294833825070522
 | bond length N-Ca 1.458975080720938
 | bond length Ca-C 1.5247020987105642
-| bond length C-N-Ca 2.1201622818174655
-| bond length N-Ca-C 1.9387460083687984
-| bond length Ca-C-N 2.034323200635229
+| bond angle C-N-Ca 2.1201622818174655
+| bond angle N-Ca-C 1.9387460083687984
+| bond angle Ca-C-N 2.034323200635229
 |
 
 FYI, the following plot also shows the phi (x-axis) vs. psi (y-axis)
