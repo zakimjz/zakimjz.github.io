@@ -104,8 +104,8 @@ Class schedule
 |  Apr 21        |   Molecular Graphs                        | P11, P12 | `lecture23 <http://www.cs.rpi.edu/~zaki/MLIB/lecture23.pdf>`_,                                            |
 |                |                                           |          | `video-apr21 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr21.mkv>`_ (apologies that only audio was recorded) |
 +----------------+-------------------------------------------+----------+-----------------------------------------------------------------------------------------------------------+
-|  Apr 24        |   Graph NNs, Protein Interface Prediction | P13      | `lecture2X <http://www.cs.rpi.edu/~zaki/MLIB/lecture24.pdf>`_,                                            |
-|                |                                           |          | `video-XXX <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr24.mkv>`_                                            |
+|  Apr 24        |   Graph NNs, Protein Interface Prediction | P13      | `lecture24 <http://www.cs.rpi.edu/~zaki/MLIB/lecture24.pdf>`_,                                            |
+|                |                                           |          | `video-apr24 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr24.mkv>`_                                          |
 +----------------+-------------------------------------------+----------+-----------------------------------------------------------------------------------------------------------+
 
 
