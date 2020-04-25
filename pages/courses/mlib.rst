@@ -104,7 +104,7 @@ Class schedule
 |  Apr 21        |   Molecular Graphs                        | P11, P12 | `lecture23 <http://www.cs.rpi.edu/~zaki/MLIB/lecture23.pdf>`_,                                            |
 |                |                                           |          | `video-apr21 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr21.mkv>`_ (apologies that only audio was recorded) |
 +----------------+-------------------------------------------+----------+-----------------------------------------------------------------------------------------------------------+
-|  Apr 24        |   Graph NNs, Protein Interface Prediction | P13      | `lecture24 <http://www.cs.rpi.edu/~zaki/MLIB/lecture24.pdf>`_,                                            |
+|  Apr 24        |   Graph NNs, Protein Interface Prediction | P13, P14 | `lecture24 <http://www.cs.rpi.edu/~zaki/MLIB/lecture24.pdf>`_,                                            |
 |                |                                           |          | `video-apr24 <http://www.cs.rpi.edu/~zaki/MLIB/mlib-apr24.mkv>`_                                          |
 +----------------+-------------------------------------------+----------+-----------------------------------------------------------------------------------------------------------+
 
@@ -131,6 +131,7 @@ course schedule above.
 11. P11: A Deep Learning Approach to Antibiotic Discovery, https://doi.org/10.1016/j.cell.2020.01.021
 12. P12: Analyzing Learned Molecular Representations for Property Prediction, https://doi.org/10.1021/acs.jcim.9b00237
 13. P13. End-to-End Learning on 3D Protein Structure for Interface Prediction, https://arxiv.org/abs/1807.01297
+14. P14. Protein Interface Prediction using Graph Convolutional Networks, https://papers.nips.cc/paper/7231-protein-interface-prediction-using-graph-convolutional-networks.pdf
 
 Readings
 --------
