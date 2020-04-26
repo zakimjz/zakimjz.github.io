@@ -110,8 +110,9 @@ testing file. Here NG is an integer that denotes the nubmer of block
 groups to train on. Here PDBID is an optional parameter that specifies a
 test protein file in ProteinNet format containing only one protein. If
 this parameter is specified it is the protein for which you have to
-generate the 3D coords and the visulaize it. **I will specify a specific
-protein for structure generation soon.**
+generate the 3D coords and the visulaize it. 
+
+**You must predict and visualize the CASP13 target protein** `T0990 (PDB: 6N9Y) <http://www.cs.rpi.edu/~zaki/MLIB/assign5/test_6n9y>`_. It is already in the ProteinNet format.
 
 Code
 ~~~~
