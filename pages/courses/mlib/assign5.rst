@@ -114,6 +114,11 @@ generate the 3D coords and the visulaize it.
 
 **You must predict and visualize the CASP13 target protein** `T0990 (PDB: 6N9Y) <http://www.cs.rpi.edu/~zaki/MLIB/assign5/test_6n9y>`_. It is already in the ProteinNet format.
 
+**Please include your trained model as part of your submission**. Your
+code should have an option to specify the trained model, so I can apply
+it directly on the testing file or the target protein above.
+
+
 Code
 ~~~~
 
