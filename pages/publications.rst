@@ -61,6 +61,30 @@ Books
 .. _lspdm: https://www.springer.com/us/book/9783540671947   
 
 
+Datasets
+--------
+
+* IBM Itemset and Sequence Data Generator: https://github.com/zakimjz/IBMGenerator
+  
+* Utilities for converting itemset and sequence datasets: https://github.com/zakimjz/tposedb
+
+* Synthetic Tree Generator: https://github.com/zakimjz/TreeGen
+
+* Data for Itemset, Sequence, and Tree Mining: https://doi.org/10.5281/zenodo.3785364
+
+  This includes CSLOGS (for tree mining), PlanData (for sequence
+  mining), and several datasets like chess, mushroom, pumsb, T10I4D100K
+  fo itemset mining. Used for CHARM, GenMax and Eclat papers.
+
+* Protein Graphs Dataset: https://doi.org/10.5281/zenodo.3731768
+  
+  This contains the PDB graphs from the DistGraph paper.
+
+* Attribute-Structure Graph Dataset: https://doi.org/10.5281/zenodo.3732152
+  
+  The datasets from  attribute-structure correlated graph mining paper.
+
+
 Publications
 ------------
 
