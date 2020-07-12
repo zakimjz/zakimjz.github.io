@@ -9,7 +9,7 @@
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="http://www.cs.rpi.edu/~zaki/listings/mlib/compute_phi_psi.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
@@ -23,7 +23,7 @@
 navbar-dark bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="http://www.cs.rpi.edu/~zaki/">
+        <a class="navbar-brand" href="../../">
 
             <span id="blog-title">Zaki Home Page</span>
         </a>
@@ -64,480 +64,1187 @@ navbar-dark bg-dark
 </ul></nav><h1>compute_phi_psi.py
         <small><a href="compute_phi_psi.py">(Source)</a></small>
     </h1>
-    <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#listingsmlibcompute_phi_psipy-1">  1</a>
-<a href="#listingsmlibcompute_phi_psipy-2">  2</a>
-<a href="#listingsmlibcompute_phi_psipy-3">  3</a>
-<a href="#listingsmlibcompute_phi_psipy-4">  4</a>
-<a href="#listingsmlibcompute_phi_psipy-5">  5</a>
-<a href="#listingsmlibcompute_phi_psipy-6">  6</a>
-<a href="#listingsmlibcompute_phi_psipy-7">  7</a>
-<a href="#listingsmlibcompute_phi_psipy-8">  8</a>
-<a href="#listingsmlibcompute_phi_psipy-9">  9</a>
-<a href="#listingsmlibcompute_phi_psipy-10"> 10</a>
-<a href="#listingsmlibcompute_phi_psipy-11"> 11</a>
-<a href="#listingsmlibcompute_phi_psipy-12"> 12</a>
-<a href="#listingsmlibcompute_phi_psipy-13"> 13</a>
-<a href="#listingsmlibcompute_phi_psipy-14"> 14</a>
-<a href="#listingsmlibcompute_phi_psipy-15"> 15</a>
-<a href="#listingsmlibcompute_phi_psipy-16"> 16</a>
-<a href="#listingsmlibcompute_phi_psipy-17"> 17</a>
-<a href="#listingsmlibcompute_phi_psipy-18"> 18</a>
-<a href="#listingsmlibcompute_phi_psipy-19"> 19</a>
-<a href="#listingsmlibcompute_phi_psipy-20"> 20</a>
-<a href="#listingsmlibcompute_phi_psipy-21"> 21</a>
-<a href="#listingsmlibcompute_phi_psipy-22"> 22</a>
-<a href="#listingsmlibcompute_phi_psipy-23"> 23</a>
-<a href="#listingsmlibcompute_phi_psipy-24"> 24</a>
-<a href="#listingsmlibcompute_phi_psipy-25"> 25</a>
-<a href="#listingsmlibcompute_phi_psipy-26"> 26</a>
-<a href="#listingsmlibcompute_phi_psipy-27"> 27</a>
-<a href="#listingsmlibcompute_phi_psipy-28"> 28</a>
-<a href="#listingsmlibcompute_phi_psipy-29"> 29</a>
-<a href="#listingsmlibcompute_phi_psipy-30"> 30</a>
-<a href="#listingsmlibcompute_phi_psipy-31"> 31</a>
-<a href="#listingsmlibcompute_phi_psipy-32"> 32</a>
-<a href="#listingsmlibcompute_phi_psipy-33"> 33</a>
-<a href="#listingsmlibcompute_phi_psipy-34"> 34</a>
-<a href="#listingsmlibcompute_phi_psipy-35"> 35</a>
-<a href="#listingsmlibcompute_phi_psipy-36"> 36</a>
-<a href="#listingsmlibcompute_phi_psipy-37"> 37</a>
-<a href="#listingsmlibcompute_phi_psipy-38"> 38</a>
-<a href="#listingsmlibcompute_phi_psipy-39"> 39</a>
-<a href="#listingsmlibcompute_phi_psipy-40"> 40</a>
-<a href="#listingsmlibcompute_phi_psipy-41"> 41</a>
-<a href="#listingsmlibcompute_phi_psipy-42"> 42</a>
-<a href="#listingsmlibcompute_phi_psipy-43"> 43</a>
-<a href="#listingsmlibcompute_phi_psipy-44"> 44</a>
-<a href="#listingsmlibcompute_phi_psipy-45"> 45</a>
-<a href="#listingsmlibcompute_phi_psipy-46"> 46</a>
-<a href="#listingsmlibcompute_phi_psipy-47"> 47</a>
-<a href="#listingsmlibcompute_phi_psipy-48"> 48</a>
-<a href="#listingsmlibcompute_phi_psipy-49"> 49</a>
-<a href="#listingsmlibcompute_phi_psipy-50"> 50</a>
-<a href="#listingsmlibcompute_phi_psipy-51"> 51</a>
-<a href="#listingsmlibcompute_phi_psipy-52"> 52</a>
-<a href="#listingsmlibcompute_phi_psipy-53"> 53</a>
-<a href="#listingsmlibcompute_phi_psipy-54"> 54</a>
-<a href="#listingsmlibcompute_phi_psipy-55"> 55</a>
-<a href="#listingsmlibcompute_phi_psipy-56"> 56</a>
-<a href="#listingsmlibcompute_phi_psipy-57"> 57</a>
-<a href="#listingsmlibcompute_phi_psipy-58"> 58</a>
-<a href="#listingsmlibcompute_phi_psipy-59"> 59</a>
-<a href="#listingsmlibcompute_phi_psipy-60"> 60</a>
-<a href="#listingsmlibcompute_phi_psipy-61"> 61</a>
-<a href="#listingsmlibcompute_phi_psipy-62"> 62</a>
-<a href="#listingsmlibcompute_phi_psipy-63"> 63</a>
-<a href="#listingsmlibcompute_phi_psipy-64"> 64</a>
-<a href="#listingsmlibcompute_phi_psipy-65"> 65</a>
-<a href="#listingsmlibcompute_phi_psipy-66"> 66</a>
-<a href="#listingsmlibcompute_phi_psipy-67"> 67</a>
-<a href="#listingsmlibcompute_phi_psipy-68"> 68</a>
-<a href="#listingsmlibcompute_phi_psipy-69"> 69</a>
-<a href="#listingsmlibcompute_phi_psipy-70"> 70</a>
-<a href="#listingsmlibcompute_phi_psipy-71"> 71</a>
-<a href="#listingsmlibcompute_phi_psipy-72"> 72</a>
-<a href="#listingsmlibcompute_phi_psipy-73"> 73</a>
-<a href="#listingsmlibcompute_phi_psipy-74"> 74</a>
-<a href="#listingsmlibcompute_phi_psipy-75"> 75</a>
-<a href="#listingsmlibcompute_phi_psipy-76"> 76</a>
-<a href="#listingsmlibcompute_phi_psipy-77"> 77</a>
-<a href="#listingsmlibcompute_phi_psipy-78"> 78</a>
-<a href="#listingsmlibcompute_phi_psipy-79"> 79</a>
-<a href="#listingsmlibcompute_phi_psipy-80"> 80</a>
-<a href="#listingsmlibcompute_phi_psipy-81"> 81</a>
-<a href="#listingsmlibcompute_phi_psipy-82"> 82</a>
-<a href="#listingsmlibcompute_phi_psipy-83"> 83</a>
-<a href="#listingsmlibcompute_phi_psipy-84"> 84</a>
-<a href="#listingsmlibcompute_phi_psipy-85"> 85</a>
-<a href="#listingsmlibcompute_phi_psipy-86"> 86</a>
-<a href="#listingsmlibcompute_phi_psipy-87"> 87</a>
-<a href="#listingsmlibcompute_phi_psipy-88"> 88</a>
-<a href="#listingsmlibcompute_phi_psipy-89"> 89</a>
-<a href="#listingsmlibcompute_phi_psipy-90"> 90</a>
-<a href="#listingsmlibcompute_phi_psipy-91"> 91</a>
-<a href="#listingsmlibcompute_phi_psipy-92"> 92</a>
-<a href="#listingsmlibcompute_phi_psipy-93"> 93</a>
-<a href="#listingsmlibcompute_phi_psipy-94"> 94</a>
-<a href="#listingsmlibcompute_phi_psipy-95"> 95</a>
-<a href="#listingsmlibcompute_phi_psipy-96"> 96</a>
-<a href="#listingsmlibcompute_phi_psipy-97"> 97</a>
-<a href="#listingsmlibcompute_phi_psipy-98"> 98</a>
-<a href="#listingsmlibcompute_phi_psipy-99"> 99</a>
-<a href="#listingsmlibcompute_phi_psipy-100">100</a>
-<a href="#listingsmlibcompute_phi_psipy-101">101</a>
-<a href="#listingsmlibcompute_phi_psipy-102">102</a>
-<a href="#listingsmlibcompute_phi_psipy-103">103</a>
-<a href="#listingsmlibcompute_phi_psipy-104">104</a>
-<a href="#listingsmlibcompute_phi_psipy-105">105</a>
-<a href="#listingsmlibcompute_phi_psipy-106">106</a>
-<a href="#listingsmlibcompute_phi_psipy-107">107</a>
-<a href="#listingsmlibcompute_phi_psipy-108">108</a>
-<a href="#listingsmlibcompute_phi_psipy-109">109</a>
-<a href="#listingsmlibcompute_phi_psipy-110">110</a>
-<a href="#listingsmlibcompute_phi_psipy-111">111</a>
-<a href="#listingsmlibcompute_phi_psipy-112">112</a>
-<a href="#listingsmlibcompute_phi_psipy-113">113</a>
-<a href="#listingsmlibcompute_phi_psipy-114">114</a>
-<a href="#listingsmlibcompute_phi_psipy-115">115</a>
-<a href="#listingsmlibcompute_phi_psipy-116">116</a>
-<a href="#listingsmlibcompute_phi_psipy-117">117</a>
-<a href="#listingsmlibcompute_phi_psipy-118">118</a>
-<a href="#listingsmlibcompute_phi_psipy-119">119</a>
-<a href="#listingsmlibcompute_phi_psipy-120">120</a>
-<a href="#listingsmlibcompute_phi_psipy-121">121</a>
-<a href="#listingsmlibcompute_phi_psipy-122">122</a>
-<a href="#listingsmlibcompute_phi_psipy-123">123</a>
-<a href="#listingsmlibcompute_phi_psipy-124">124</a>
-<a href="#listingsmlibcompute_phi_psipy-125">125</a>
-<a href="#listingsmlibcompute_phi_psipy-126">126</a>
-<a href="#listingsmlibcompute_phi_psipy-127">127</a>
-<a href="#listingsmlibcompute_phi_psipy-128">128</a>
-<a href="#listingsmlibcompute_phi_psipy-129">129</a>
-<a href="#listingsmlibcompute_phi_psipy-130">130</a>
-<a href="#listingsmlibcompute_phi_psipy-131">131</a>
-<a href="#listingsmlibcompute_phi_psipy-132">132</a>
-<a href="#listingsmlibcompute_phi_psipy-133">133</a>
-<a href="#listingsmlibcompute_phi_psipy-134">134</a>
-<a href="#listingsmlibcompute_phi_psipy-135">135</a>
-<a href="#listingsmlibcompute_phi_psipy-136">136</a>
-<a href="#listingsmlibcompute_phi_psipy-137">137</a>
-<a href="#listingsmlibcompute_phi_psipy-138">138</a>
-<a href="#listingsmlibcompute_phi_psipy-139">139</a>
-<a href="#listingsmlibcompute_phi_psipy-140">140</a>
-<a href="#listingsmlibcompute_phi_psipy-141">141</a>
-<a href="#listingsmlibcompute_phi_psipy-142">142</a>
-<a href="#listingsmlibcompute_phi_psipy-143">143</a>
-<a href="#listingsmlibcompute_phi_psipy-144">144</a>
-<a href="#listingsmlibcompute_phi_psipy-145">145</a>
-<a href="#listingsmlibcompute_phi_psipy-146">146</a>
-<a href="#listingsmlibcompute_phi_psipy-147">147</a>
-<a href="#listingsmlibcompute_phi_psipy-148">148</a>
-<a href="#listingsmlibcompute_phi_psipy-149">149</a>
-<a href="#listingsmlibcompute_phi_psipy-150">150</a>
-<a href="#listingsmlibcompute_phi_psipy-151">151</a>
-<a href="#listingsmlibcompute_phi_psipy-152">152</a>
-<a href="#listingsmlibcompute_phi_psipy-153">153</a>
-<a href="#listingsmlibcompute_phi_psipy-154">154</a>
-<a href="#listingsmlibcompute_phi_psipy-155">155</a>
-<a href="#listingsmlibcompute_phi_psipy-156">156</a>
-<a href="#listingsmlibcompute_phi_psipy-157">157</a>
-<a href="#listingsmlibcompute_phi_psipy-158">158</a>
-<a href="#listingsmlibcompute_phi_psipy-159">159</a>
-<a href="#listingsmlibcompute_phi_psipy-160">160</a>
-<a href="#listingsmlibcompute_phi_psipy-161">161</a>
-<a href="#listingsmlibcompute_phi_psipy-162">162</a>
-<a href="#listingsmlibcompute_phi_psipy-163">163</a>
-<a href="#listingsmlibcompute_phi_psipy-164">164</a>
-<a href="#listingsmlibcompute_phi_psipy-165">165</a>
-<a href="#listingsmlibcompute_phi_psipy-166">166</a>
-<a href="#listingsmlibcompute_phi_psipy-167">167</a>
-<a href="#listingsmlibcompute_phi_psipy-168">168</a>
-<a href="#listingsmlibcompute_phi_psipy-169">169</a>
-<a href="#listingsmlibcompute_phi_psipy-170">170</a>
-<a href="#listingsmlibcompute_phi_psipy-171">171</a>
-<a href="#listingsmlibcompute_phi_psipy-172">172</a>
-<a href="#listingsmlibcompute_phi_psipy-173">173</a>
-<a href="#listingsmlibcompute_phi_psipy-174">174</a>
-<a href="#listingsmlibcompute_phi_psipy-175">175</a>
-<a href="#listingsmlibcompute_phi_psipy-176">176</a>
-<a href="#listingsmlibcompute_phi_psipy-177">177</a>
-<a href="#listingsmlibcompute_phi_psipy-178">178</a>
-<a href="#listingsmlibcompute_phi_psipy-179">179</a>
-<a href="#listingsmlibcompute_phi_psipy-180">180</a>
-<a href="#listingsmlibcompute_phi_psipy-181">181</a>
-<a href="#listingsmlibcompute_phi_psipy-182">182</a>
-<a href="#listingsmlibcompute_phi_psipy-183">183</a>
-<a href="#listingsmlibcompute_phi_psipy-184">184</a>
-<a href="#listingsmlibcompute_phi_psipy-185">185</a>
-<a href="#listingsmlibcompute_phi_psipy-186">186</a>
-<a href="#listingsmlibcompute_phi_psipy-187">187</a>
-<a href="#listingsmlibcompute_phi_psipy-188">188</a>
-<a href="#listingsmlibcompute_phi_psipy-189">189</a>
-<a href="#listingsmlibcompute_phi_psipy-190">190</a>
-<a href="#listingsmlibcompute_phi_psipy-191">191</a>
-<a href="#listingsmlibcompute_phi_psipy-192">192</a>
-<a href="#listingsmlibcompute_phi_psipy-193">193</a>
-<a href="#listingsmlibcompute_phi_psipy-194">194</a>
-<a href="#listingsmlibcompute_phi_psipy-195">195</a>
-<a href="#listingsmlibcompute_phi_psipy-196">196</a>
-<a href="#listingsmlibcompute_phi_psipy-197">197</a>
-<a href="#listingsmlibcompute_phi_psipy-198">198</a>
-<a href="#listingsmlibcompute_phi_psipy-199">199</a>
-<a href="#listingsmlibcompute_phi_psipy-200">200</a>
-<a href="#listingsmlibcompute_phi_psipy-201">201</a>
-<a href="#listingsmlibcompute_phi_psipy-202">202</a>
-<a href="#listingsmlibcompute_phi_psipy-203">203</a>
-<a href="#listingsmlibcompute_phi_psipy-204">204</a>
-<a href="#listingsmlibcompute_phi_psipy-205">205</a>
-<a href="#listingsmlibcompute_phi_psipy-206">206</a>
-<a href="#listingsmlibcompute_phi_psipy-207">207</a>
-<a href="#listingsmlibcompute_phi_psipy-208">208</a>
-<a href="#listingsmlibcompute_phi_psipy-209">209</a>
-<a href="#listingsmlibcompute_phi_psipy-210">210</a>
-<a href="#listingsmlibcompute_phi_psipy-211">211</a>
-<a href="#listingsmlibcompute_phi_psipy-212">212</a>
-<a href="#listingsmlibcompute_phi_psipy-213">213</a>
-<a href="#listingsmlibcompute_phi_psipy-214">214</a>
-<a href="#listingsmlibcompute_phi_psipy-215">215</a>
-<a href="#listingsmlibcompute_phi_psipy-216">216</a>
-<a href="#listingsmlibcompute_phi_psipy-217">217</a>
-<a href="#listingsmlibcompute_phi_psipy-218">218</a>
-<a href="#listingsmlibcompute_phi_psipy-219">219</a>
-<a href="#listingsmlibcompute_phi_psipy-220">220</a>
-<a href="#listingsmlibcompute_phi_psipy-221">221</a>
-<a href="#listingsmlibcompute_phi_psipy-222">222</a>
-<a href="#listingsmlibcompute_phi_psipy-223">223</a>
-<a href="#listingsmlibcompute_phi_psipy-224">224</a>
-<a href="#listingsmlibcompute_phi_psipy-225">225</a>
-<a href="#listingsmlibcompute_phi_psipy-226">226</a>
-<a href="#listingsmlibcompute_phi_psipy-227">227</a>
-<a href="#listingsmlibcompute_phi_psipy-228">228</a>
-<a href="#listingsmlibcompute_phi_psipy-229">229</a>
-<a href="#listingsmlibcompute_phi_psipy-230">230</a>
-<a href="#listingsmlibcompute_phi_psipy-231">231</a>
-<a href="#listingsmlibcompute_phi_psipy-232">232</a>
-<a href="#listingsmlibcompute_phi_psipy-233">233</a>
-<a href="#listingsmlibcompute_phi_psipy-234">234</a>
-<a href="#listingsmlibcompute_phi_psipy-235">235</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsmlibcompute_phi_psipy-1"></a><span class="ch">#!/usr/bin/env python3</span>
-<a name="listingsmlibcompute_phi_psipy-2"></a>
-<a name="listingsmlibcompute_phi_psipy-3"></a><span class="kn">import</span> <span class="nn">argparse</span>
-<a name="listingsmlibcompute_phi_psipy-4"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<a name="listingsmlibcompute_phi_psipy-5"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<a name="listingsmlibcompute_phi_psipy-6"></a><span class="kn">from</span> <span class="nn">Bio.PDB.vectors</span> <span class="kn">import</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">calc_angle</span><span class="p">,</span> <span class="n">calc_dihedral</span>
-<a name="listingsmlibcompute_phi_psipy-7"></a>
-<a name="listingsmlibcompute_phi_psipy-8"></a><span class="n">INVALID_ANGLE</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># invalid angle value</span>
-<a name="listingsmlibcompute_phi_psipy-9"></a>
-<a name="listingsmlibcompute_phi_psipy-10"></a>
-<a name="listingsmlibcompute_phi_psipy-11"></a><span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
-<a name="listingsmlibcompute_phi_psipy-12"></a>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'compute_phi_psi.py'</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-13"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'fname'</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-14"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-plot'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'store_true'</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-15"></a>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-16"></a>    <span class="k">return</span> <span class="n">args</span>
-<a name="listingsmlibcompute_phi_psipy-17"></a>
-<a name="listingsmlibcompute_phi_psipy-18"></a>
-<a name="listingsmlibcompute_phi_psipy-19"></a><span class="k">class</span> <span class="nc">running_stats</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-20"></a>    <span class="sd">'''this class computes mean and std values for a</span>
-<a name="listingsmlibcompute_phi_psipy-21"></a><span class="sd">    list of values across proteins'''</span>
-<a name="listingsmlibcompute_phi_psipy-22"></a>
-<a name="listingsmlibcompute_phi_psipy-23"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name_str</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-24"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name_str</span>
-<a name="listingsmlibcompute_phi_psipy-25"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
-<a name="listingsmlibcompute_phi_psipy-26"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">=</span> <span class="mf">0.0</span>
-<a name="listingsmlibcompute_phi_psipy-27"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="listingsmlibcompute_phi_psipy-28"></a>
-<a name="listingsmlibcompute_phi_psipy-29"></a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Vin</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-30"></a>        <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-31"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-32"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-33"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-34"></a>
-<a name="listingsmlibcompute_phi_psipy-35"></a>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-36"></a>        <span class="n">mu</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
-<a name="listingsmlibcompute_phi_psipy-37"></a>        <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x2</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-38"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"bond length"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-39"></a>
-<a name="listingsmlibcompute_phi_psipy-40"></a>
-<a name="listingsmlibcompute_phi_psipy-41"></a><span class="k">class</span> <span class="nc">compute_stats</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-42"></a>    <span class="sd">'''Compute mean and std values for bond lengths and bond angles'''</span>
-<a name="listingsmlibcompute_phi_psipy-43"></a>
-<a name="listingsmlibcompute_phi_psipy-44"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-45"></a>
-<a name="listingsmlibcompute_phi_psipy-46"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CN"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-47"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCa"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-48"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaC"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-49"></a>
-<a name="listingsmlibcompute_phi_psipy-50"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CNCa"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-51"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCaC"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-52"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaCN"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-53"></a>
-<a name="listingsmlibcompute_phi_psipy-54"></a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v_CN</span><span class="p">,</span> <span class="n">v_NCa</span><span class="p">,</span> <span class="n">v_CaC</span><span class="p">,</span> <span class="n">v_CNCa</span><span class="p">,</span> <span class="n">v_NCaC</span><span class="p">,</span> <span class="n">v_CaCN</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-55"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CN</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-56"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCa</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-57"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaC</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-58"></a>
-<a name="listingsmlibcompute_phi_psipy-59"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CNCa</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-60"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCaC</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-61"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaCN</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-62"></a>
-<a name="listingsmlibcompute_phi_psipy-63"></a>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-64"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-65"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-66"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-67"></a>
-<a name="listingsmlibcompute_phi_psipy-68"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-69"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-70"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-71"></a>
-<a name="listingsmlibcompute_phi_psipy-72"></a>
-<a name="listingsmlibcompute_phi_psipy-73"></a><span class="k">def</span> <span class="nf">process_tertiary</span><span class="p">(</span><span class="n">tertiary</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-74"></a>    <span class="sd">'''compute the bond lengths, bond angles, and dihedral angles'''</span>
-<a name="listingsmlibcompute_phi_psipy-75"></a>    <span class="n">phi</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-76"></a>    <span class="n">psi</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-77"></a>    <span class="n">omega</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-78"></a>    <span class="n">bond_angle_CNCa</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-79"></a>    <span class="n">bond_angle_NCaC</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-80"></a>    <span class="n">bond_angle_CaCN</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-81"></a>    <span class="n">bond_len_NCa</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-82"></a>    <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-83"></a>    <span class="n">bond_len_CN</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-84"></a>    <span class="c1"># convert tertiary coords into Vectors</span>
-<a name="listingsmlibcompute_phi_psipy-85"></a>    <span class="n">pV</span> <span class="o">=</span> <span class="p">[</span><span class="n">vec</span> <span class="k">for</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
-<a name="listingsmlibcompute_phi_psipy-86"></a>                             <span class="nb">zip</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">2</span><span class="p">]))]</span>
-<a name="listingsmlibcompute_phi_psipy-87"></a>
-<a name="listingsmlibcompute_phi_psipy-88"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">),</span> <span class="mi">3</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-89"></a>        <span class="c1"># check for zero coords</span>
-<a name="listingsmlibcompute_phi_psipy-90"></a>        <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-91"></a>        <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-92"></a>        <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-93"></a>        <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-94"></a>        <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-95"></a>        <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-96"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-97"></a>            <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-98"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-99"></a>            <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-100"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-101"></a>            <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-102"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-103"></a>            <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-104"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-105"></a>            <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-106"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-107"></a>            <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-108"></a>
-<a name="listingsmlibcompute_phi_psipy-109"></a>        <span class="c1"># compute bond lengths</span>
-<a name="listingsmlibcompute_phi_psipy-110"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-111"></a>            <span class="n">blen_CN</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-112"></a>            <span class="n">bond_len_CN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CN</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-113"></a>
-<a name="listingsmlibcompute_phi_psipy-114"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-115"></a>            <span class="n">blen_NCa</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-116"></a>            <span class="n">bond_len_NCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_NCa</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-117"></a>
-<a name="listingsmlibcompute_phi_psipy-118"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-119"></a>            <span class="n">blen_CaC</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-120"></a>            <span class="n">bond_len_CaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CaC</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-121"></a>
-<a name="listingsmlibcompute_phi_psipy-122"></a>        <span class="c1"># compute bond angles</span>
-<a name="listingsmlibcompute_phi_psipy-123"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-124"></a>            <span class="n">theta_CNCa</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># C-N-Ca</span>
-<a name="listingsmlibcompute_phi_psipy-125"></a>            <span class="n">bond_angle_CNCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CNCa</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-126"></a>
-<a name="listingsmlibcompute_phi_psipy-127"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-128"></a>            <span class="n">theta_NCaC</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C</span>
-<a name="listingsmlibcompute_phi_psipy-129"></a>            <span class="n">bond_angle_NCaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_NCaC</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-130"></a>
-<a name="listingsmlibcompute_phi_psipy-131"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-132"></a>            <span class="n">theta_CaCN</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Ca-C-N</span>
-<a name="listingsmlibcompute_phi_psipy-133"></a>            <span class="n">bond_angle_CaCN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CaCN</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-134"></a>
-<a name="listingsmlibcompute_phi_psipy-135"></a>        <span class="c1"># compute dihedral angles</span>
-<a name="listingsmlibcompute_phi_psipy-136"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-137"></a>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-138"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C-N</span>
-<a name="listingsmlibcompute_phi_psipy-139"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-140"></a>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-<a name="listingsmlibcompute_phi_psipy-141"></a>        <span class="n">phi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phi_i</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-142"></a>
-<a name="listingsmlibcompute_phi_psipy-143"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-144"></a>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-145"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># C-N-Ca-C</span>
-<a name="listingsmlibcompute_phi_psipy-146"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-147"></a>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-<a name="listingsmlibcompute_phi_psipy-148"></a>        <span class="n">psi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">psi_i</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-149"></a>
-<a name="listingsmlibcompute_phi_psipy-150"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span> <span class="ow">and</span> <span class="n">norm_i4</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-151"></a>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-152"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Ca-C-N-Ca</span>
-<a name="listingsmlibcompute_phi_psipy-153"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-154"></a>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-<a name="listingsmlibcompute_phi_psipy-155"></a>        <span class="n">omega</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">omega_i</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-156"></a>
-<a name="listingsmlibcompute_phi_psipy-157"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span>
-<a name="listingsmlibcompute_phi_psipy-158"></a>            <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-159"></a>
-<a name="listingsmlibcompute_phi_psipy-160"></a>
-<a name="listingsmlibcompute_phi_psipy-161"></a><span class="k">def</span> <span class="nf">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-162"></a>    <span class="sd">'''Parse ProteinNet file and add PHIPSI entries'''</span>
-<a name="listingsmlibcompute_phi_psipy-163"></a>    <span class="n">CS</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-164"></a>    <span class="n">filename</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">fname</span>
-<a name="listingsmlibcompute_phi_psipy-165"></a>    <span class="n">out_fname</span> <span class="o">=</span> <span class="n">filename</span><span class="o">+</span><span class="s2">"_ext"</span>
-<a name="listingsmlibcompute_phi_psipy-166"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_fname</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-167"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_pointer</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-168"></a>            <span class="n">pcnt</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="listingsmlibcompute_phi_psipy-169"></a>            <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-170"></a>            <span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-171"></a>                <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-172"></a>                <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-173"></a>                <span class="k">if</span> <span class="n">id_next</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-174"></a>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="listingsmlibcompute_phi_psipy-175"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"ID"</span><span class="p">,</span> <span class="n">next_line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-176"></a>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[ID]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-177"></a>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="listingsmlibcompute_phi_psipy-178"></a>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[TERTIARY]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-179"></a>                    <span class="n">tertiary</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsmlibcompute_phi_psipy-180"></a>                    <span class="c1"># 3 dimension</span>
-<a name="listingsmlibcompute_phi_psipy-181"></a>                    <span class="k">for</span> <span class="n">_axis</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-<a name="listingsmlibcompute_phi_psipy-182"></a>                        <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-183"></a>                        <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-184"></a>                        <span class="n">tertiary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-185"></a>                            <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">next_line</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
-<a name="listingsmlibcompute_phi_psipy-186"></a>
-<a name="listingsmlibcompute_phi_psipy-187"></a>                    <span class="c1"># write the PHI_PSI angles</span>
-<a name="listingsmlibcompute_phi_psipy-188"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s1">'[PHI_PSI]'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-189"></a>
-<a name="listingsmlibcompute_phi_psipy-190"></a>                    <span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span>\
-<a name="listingsmlibcompute_phi_psipy-191"></a>                        <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span> <span class="n">bond_angle_CNCa</span><span class="p">,</span>\
-<a name="listingsmlibcompute_phi_psipy-192"></a>                        <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="n">process_tertiary</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-193"></a>                            <span class="n">tertiary</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-194"></a>
-<a name="listingsmlibcompute_phi_psipy-195"></a>                    <span class="n">CS</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">,</span>
-<a name="listingsmlibcompute_phi_psipy-196"></a>                              <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span>
-<a name="listingsmlibcompute_phi_psipy-197"></a>                              <span class="n">bond_angle_CaCN</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-198"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"process"</span><span class="p">,</span> <span class="n">pcnt</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
-<a name="listingsmlibcompute_phi_psipy-199"></a>                          <span class="nb">len</span><span class="p">(</span><span class="n">psi</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-200"></a>                    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
-<a name="listingsmlibcompute_phi_psipy-201"></a>
-<a name="listingsmlibcompute_phi_psipy-202"></a>                    <span class="c1"># print(gt, bl[gt])</span>
-<a name="listingsmlibcompute_phi_psipy-203"></a>                    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-204"></a>                        <span class="c1"># only plot valid phi,psi pairs (not equal to -1)</span>
-<a name="listingsmlibcompute_phi_psipy-205"></a>                        <span class="n">phi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-206"></a>                        <span class="n">psi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psi</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-207"></a>                        <span class="n">phi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-208"></a>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">phi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-<a name="listingsmlibcompute_phi_psipy-209"></a>                        <span class="n">psi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
-<a name="listingsmlibcompute_phi_psipy-210"></a>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">psi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-<a name="listingsmlibcompute_phi_psipy-211"></a>                        <span class="n">val_idx</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phi_idx</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">psi_idx</span><span class="p">))</span>
-<a name="listingsmlibcompute_phi_psipy-212"></a>                        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span> <span class="n">psi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span>
-<a name="listingsmlibcompute_phi_psipy-213"></a>                                 <span class="s1">'o'</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-214"></a>
-<a name="listingsmlibcompute_phi_psipy-215"></a>                    <span class="n">out_phi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">phi</span><span class="p">])</span>
-<a name="listingsmlibcompute_phi_psipy-216"></a>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_phi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-217"></a>                    <span class="n">out_psi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">psi</span><span class="p">])</span>
-<a name="listingsmlibcompute_phi_psipy-218"></a>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_psi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-219"></a>
-<a name="listingsmlibcompute_phi_psipy-220"></a>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-221"></a>                    <span class="n">pcnt</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="listingsmlibcompute_phi_psipy-222"></a>
-<a name="listingsmlibcompute_phi_psipy-223"></a>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">''</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-224"></a>                    <span class="k">break</span>
-<a name="listingsmlibcompute_phi_psipy-225"></a>        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-226"></a>            <span class="c1"># plt.show()</span>
-<a name="listingsmlibcompute_phi_psipy-227"></a>            <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">fname</span><span class="o">+</span><span class="s1">'_phipsi_plot.png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-<a name="listingsmlibcompute_phi_psipy-228"></a>                        <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-229"></a>        <span class="n">CS</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-230"></a>
-<a name="listingsmlibcompute_phi_psipy-231"></a>
-<a name="listingsmlibcompute_phi_psipy-232"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-<a name="listingsmlibcompute_phi_psipy-233"></a>    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">()</span>
-<a name="listingsmlibcompute_phi_psipy-234"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-<a name="listingsmlibcompute_phi_psipy-235"></a>    <span class="n">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-</pre></td>
-</tr></table>
-<!--End of body content--><footer id="footer">
+    <div class="code"><table class="codetable">
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-1"><code data-line-number="  1"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-1"></a><span class="ch">#!/usr/bin/env python3</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-2"><code data-line-number="  2"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-2"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-3"><code data-line-number="  3"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-3"></a><span class="kn">import</span> <span class="nn">argparse</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-4"><code data-line-number="  4"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-4"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-5"><code data-line-number="  5"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-5"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-6"><code data-line-number="  6"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-6"></a><span class="kn">from</span> <span class="nn">Bio.PDB.vectors</span> <span class="kn">import</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">calc_angle</span><span class="p">,</span> <span class="n">calc_dihedral</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-7"><code data-line-number="  7"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-7"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-8"><code data-line-number="  8"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-8"></a><span class="n">INVALID_ANGLE</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># invalid angle value</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-9"><code data-line-number="  9"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-9"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-10"><code data-line-number=" 10"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-10"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-11"><code data-line-number=" 11"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-11"></a><span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-12"><code data-line-number=" 12"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-12"></a>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'compute_phi_psi.py'</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-13"><code data-line-number=" 13"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-13"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'fname'</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-14"><code data-line-number=" 14"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-14"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-plot'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'store_true'</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-15"><code data-line-number=" 15"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-15"></a>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-16"><code data-line-number=" 16"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-16"></a>    <span class="k">return</span> <span class="n">args</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-17"><code data-line-number=" 17"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-17"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-18"><code data-line-number=" 18"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-18"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-19"><code data-line-number=" 19"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-19"></a><span class="k">class</span> <span class="nc">running_stats</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-20"><code data-line-number=" 20"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-20"></a>    <span class="sd">'''this class computes mean and std values for a</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-21"><code data-line-number=" 21"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-21"></a><span class="sd">    list of values across proteins'''</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-22"><code data-line-number=" 22"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-22"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-23"><code data-line-number=" 23"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-23"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name_str</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-24"><code data-line-number=" 24"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-24"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name_str</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-25"><code data-line-number=" 25"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-25"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-26"><code data-line-number=" 26"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-26"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">=</span> <span class="mf">0.0</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-27"><code data-line-number=" 27"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-27"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-28"><code data-line-number=" 28"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-28"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-29"><code data-line-number=" 29"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-29"></a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Vin</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-30"><code data-line-number=" 30"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-30"></a>        <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-31"><code data-line-number=" 31"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-31"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-32"><code data-line-number=" 32"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-32"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-33"><code data-line-number=" 33"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-33"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-34"><code data-line-number=" 34"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-34"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-35"><code data-line-number=" 35"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-35"></a>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-36"><code data-line-number=" 36"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-36"></a>        <span class="n">mu</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-37"><code data-line-number=" 37"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-37"></a>        <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x2</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-38"><code data-line-number=" 38"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-38"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"bond length"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-39"><code data-line-number=" 39"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-39"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-40"><code data-line-number=" 40"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-40"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-41"><code data-line-number=" 41"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-41"></a><span class="k">class</span> <span class="nc">compute_stats</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-42"><code data-line-number=" 42"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-42"></a>    <span class="sd">'''Compute mean and std values for bond lengths and bond angles'''</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-43"><code data-line-number=" 43"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-43"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-44"><code data-line-number=" 44"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-44"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-45"><code data-line-number=" 45"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-45"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-46"><code data-line-number=" 46"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-46"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CN"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-47"><code data-line-number=" 47"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-47"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCa"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-48"><code data-line-number=" 48"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-48"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaC"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-49"><code data-line-number=" 49"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-49"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-50"><code data-line-number=" 50"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-50"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CNCa"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-51"><code data-line-number=" 51"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-51"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCaC"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-52"><code data-line-number=" 52"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-52"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaCN"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-53"><code data-line-number=" 53"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-53"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-54"><code data-line-number=" 54"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-54"></a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v_CN</span><span class="p">,</span> <span class="n">v_NCa</span><span class="p">,</span> <span class="n">v_CaC</span><span class="p">,</span> <span class="n">v_CNCa</span><span class="p">,</span> <span class="n">v_NCaC</span><span class="p">,</span> <span class="n">v_CaCN</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-55"><code data-line-number=" 55"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-55"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CN</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-56"><code data-line-number=" 56"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-56"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCa</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-57"><code data-line-number=" 57"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-57"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaC</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-58"><code data-line-number=" 58"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-58"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-59"><code data-line-number=" 59"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-59"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CNCa</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-60"><code data-line-number=" 60"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-60"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCaC</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-61"><code data-line-number=" 61"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-61"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaCN</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-62"><code data-line-number=" 62"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-62"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-63"><code data-line-number=" 63"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-63"></a>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-64"><code data-line-number=" 64"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-64"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-65"><code data-line-number=" 65"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-65"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-66"><code data-line-number=" 66"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-66"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-67"><code data-line-number=" 67"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-67"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-68"><code data-line-number=" 68"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-68"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-69"><code data-line-number=" 69"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-69"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-70"><code data-line-number=" 70"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-70"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-71"><code data-line-number=" 71"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-71"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-72"><code data-line-number=" 72"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-72"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-73"><code data-line-number=" 73"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-73"></a><span class="k">def</span> <span class="nf">process_tertiary</span><span class="p">(</span><span class="n">tertiary</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-74"><code data-line-number=" 74"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-74"></a>    <span class="sd">'''compute the bond lengths, bond angles, and dihedral angles'''</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-75"><code data-line-number=" 75"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-75"></a>    <span class="n">phi</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-76"><code data-line-number=" 76"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-76"></a>    <span class="n">psi</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-77"><code data-line-number=" 77"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-77"></a>    <span class="n">omega</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-78"><code data-line-number=" 78"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-78"></a>    <span class="n">bond_angle_CNCa</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-79"><code data-line-number=" 79"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-79"></a>    <span class="n">bond_angle_NCaC</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-80"><code data-line-number=" 80"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-80"></a>    <span class="n">bond_angle_CaCN</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-81"><code data-line-number=" 81"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-81"></a>    <span class="n">bond_len_NCa</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-82"><code data-line-number=" 82"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-82"></a>    <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-83"><code data-line-number=" 83"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-83"></a>    <span class="n">bond_len_CN</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-84"><code data-line-number=" 84"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-84"></a>    <span class="c1"># convert tertiary coords into Vectors</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-85"><code data-line-number=" 85"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-85"></a>    <span class="n">pV</span> <span class="o">=</span> <span class="p">[</span><span class="n">vec</span> <span class="k">for</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-86"><code data-line-number=" 86"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-86"></a>                             <span class="nb">zip</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">2</span><span class="p">]))]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-87"><code data-line-number=" 87"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-87"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-88"><code data-line-number=" 88"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-88"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">),</span> <span class="mi">3</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-89"><code data-line-number=" 89"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-89"></a>        <span class="c1"># check for zero coords</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-90"><code data-line-number=" 90"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-90"></a>        <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-91"><code data-line-number=" 91"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-91"></a>        <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-92"><code data-line-number=" 92"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-92"></a>        <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-93"><code data-line-number=" 93"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-93"></a>        <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-94"><code data-line-number=" 94"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-94"></a>        <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-95"><code data-line-number=" 95"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-95"></a>        <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-96"><code data-line-number=" 96"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-96"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-97"><code data-line-number=" 97"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-97"></a>            <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-98"><code data-line-number=" 98"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-98"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-99"><code data-line-number=" 99"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-99"></a>            <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-100"><code data-line-number="100"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-100"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-101"><code data-line-number="101"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-101"></a>            <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-102"><code data-line-number="102"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-102"></a>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-103"><code data-line-number="103"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-103"></a>            <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-104"><code data-line-number="104"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-104"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-105"><code data-line-number="105"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-105"></a>            <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-106"><code data-line-number="106"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-106"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-107"><code data-line-number="107"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-107"></a>            <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-108"><code data-line-number="108"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-108"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-109"><code data-line-number="109"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-109"></a>        <span class="c1"># compute bond lengths</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-110"><code data-line-number="110"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-110"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-111"><code data-line-number="111"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-111"></a>            <span class="n">blen_CN</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-112"><code data-line-number="112"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-112"></a>            <span class="n">bond_len_CN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CN</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-113"><code data-line-number="113"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-113"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-114"><code data-line-number="114"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-114"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-115"><code data-line-number="115"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-115"></a>            <span class="n">blen_NCa</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-116"><code data-line-number="116"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-116"></a>            <span class="n">bond_len_NCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_NCa</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-117"><code data-line-number="117"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-117"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-118"><code data-line-number="118"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-118"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-119"><code data-line-number="119"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-119"></a>            <span class="n">blen_CaC</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-120"><code data-line-number="120"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-120"></a>            <span class="n">bond_len_CaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CaC</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-121"><code data-line-number="121"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-121"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-122"><code data-line-number="122"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-122"></a>        <span class="c1"># compute bond angles</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-123"><code data-line-number="123"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-123"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-124"><code data-line-number="124"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-124"></a>            <span class="n">theta_CNCa</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># C-N-Ca</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-125"><code data-line-number="125"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-125"></a>            <span class="n">bond_angle_CNCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CNCa</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-126"><code data-line-number="126"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-126"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-127"><code data-line-number="127"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-127"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-128"><code data-line-number="128"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-128"></a>            <span class="n">theta_NCaC</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-129"><code data-line-number="129"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-129"></a>            <span class="n">bond_angle_NCaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_NCaC</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-130"><code data-line-number="130"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-130"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-131"><code data-line-number="131"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-131"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-132"><code data-line-number="132"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-132"></a>            <span class="n">theta_CaCN</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Ca-C-N</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-133"><code data-line-number="133"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-133"></a>            <span class="n">bond_angle_CaCN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CaCN</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-134"><code data-line-number="134"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-134"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-135"><code data-line-number="135"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-135"></a>        <span class="c1"># compute dihedral angles</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-136"><code data-line-number="136"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-136"></a>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-137"><code data-line-number="137"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-137"></a>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-138"><code data-line-number="138"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-138"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C-N</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-139"><code data-line-number="139"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-139"></a>        <span class="k">else</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-140"><code data-line-number="140"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-140"></a>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-141"><code data-line-number="141"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-141"></a>        <span class="n">phi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phi_i</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-142"><code data-line-number="142"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-142"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-143"><code data-line-number="143"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-143"></a>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-144"><code data-line-number="144"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-144"></a>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-145"><code data-line-number="145"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-145"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># C-N-Ca-C</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-146"><code data-line-number="146"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-146"></a>        <span class="k">else</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-147"><code data-line-number="147"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-147"></a>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-148"><code data-line-number="148"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-148"></a>        <span class="n">psi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">psi_i</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-149"><code data-line-number="149"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-149"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-150"><code data-line-number="150"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-150"></a>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span> <span class="ow">and</span> <span class="n">norm_i4</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-151"><code data-line-number="151"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-151"></a>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-152"><code data-line-number="152"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-152"></a>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Ca-C-N-Ca</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-153"><code data-line-number="153"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-153"></a>        <span class="k">else</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-154"><code data-line-number="154"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-154"></a>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-155"><code data-line-number="155"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-155"></a>        <span class="n">omega</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">omega_i</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-156"><code data-line-number="156"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-156"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-157"><code data-line-number="157"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-157"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-158"><code data-line-number="158"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-158"></a>            <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-159"><code data-line-number="159"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-159"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-160"><code data-line-number="160"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-160"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-161"><code data-line-number="161"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-161"></a><span class="k">def</span> <span class="nf">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-162"><code data-line-number="162"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-162"></a>    <span class="sd">'''Parse ProteinNet file and add PHIPSI entries'''</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-163"><code data-line-number="163"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-163"></a>    <span class="n">CS</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-164"><code data-line-number="164"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-164"></a>    <span class="n">filename</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">fname</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-165"><code data-line-number="165"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-165"></a>    <span class="n">out_fname</span> <span class="o">=</span> <span class="n">filename</span><span class="o">+</span><span class="s2">"_ext"</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-166"><code data-line-number="166"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-166"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_fname</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-167"><code data-line-number="167"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-167"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_pointer</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-168"><code data-line-number="168"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-168"></a>            <span class="n">pcnt</span> <span class="o">=</span> <span class="mi">0</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-169"><code data-line-number="169"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-169"></a>            <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-170"><code data-line-number="170"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-170"></a>            <span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-171"><code data-line-number="171"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-171"></a>                <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-172"><code data-line-number="172"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-172"></a>                <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-173"><code data-line-number="173"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-173"></a>                <span class="k">if</span> <span class="n">id_next</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-174"><code data-line-number="174"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-174"></a>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-175"><code data-line-number="175"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-175"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"ID"</span><span class="p">,</span> <span class="n">next_line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-176"><code data-line-number="176"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-176"></a>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[ID]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-177"><code data-line-number="177"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-177"></a>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">True</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-178"><code data-line-number="178"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-178"></a>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[TERTIARY]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-179"><code data-line-number="179"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-179"></a>                    <span class="n">tertiary</span> <span class="o">=</span> <span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-180"><code data-line-number="180"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-180"></a>                    <span class="c1"># 3 dimension</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-181"><code data-line-number="181"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-181"></a>                    <span class="k">for</span> <span class="n">_axis</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-182"><code data-line-number="182"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-182"></a>                        <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-183"><code data-line-number="183"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-183"></a>                        <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-184"><code data-line-number="184"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-184"></a>                        <span class="n">tertiary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-185"><code data-line-number="185"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-185"></a>                            <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">next_line</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-186"><code data-line-number="186"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-186"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-187"><code data-line-number="187"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-187"></a>                    <span class="c1"># write the PHI_PSI angles</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-188"><code data-line-number="188"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-188"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s1">'[PHI_PSI]'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-189"><code data-line-number="189"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-189"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-190"><code data-line-number="190"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-190"></a>                    <span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span>\
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-191"><code data-line-number="191"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-191"></a>                        <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span> <span class="n">bond_angle_CNCa</span><span class="p">,</span>\
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-192"><code data-line-number="192"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-192"></a>                        <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="n">process_tertiary</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-193"><code data-line-number="193"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-193"></a>                            <span class="n">tertiary</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-194"><code data-line-number="194"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-194"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-195"><code data-line-number="195"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-195"></a>                    <span class="n">CS</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">,</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-196"><code data-line-number="196"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-196"></a>                              <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-197"><code data-line-number="197"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-197"></a>                              <span class="n">bond_angle_CaCN</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-198"><code data-line-number="198"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-198"></a>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"process"</span><span class="p">,</span> <span class="n">pcnt</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-199"><code data-line-number="199"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-199"></a>                          <span class="nb">len</span><span class="p">(</span><span class="n">psi</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-200"><code data-line-number="200"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-200"></a>                    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-201"><code data-line-number="201"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-201"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-202"><code data-line-number="202"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-202"></a>                    <span class="c1"># print(gt, bl[gt])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-203"><code data-line-number="203"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-203"></a>                    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-204"><code data-line-number="204"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-204"></a>                        <span class="c1"># only plot valid phi,psi pairs (not equal to -1)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-205"><code data-line-number="205"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-205"></a>                        <span class="n">phi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-206"><code data-line-number="206"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-206"></a>                        <span class="n">psi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psi</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-207"><code data-line-number="207"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-207"></a>                        <span class="n">phi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-208"><code data-line-number="208"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-208"></a>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">phi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-209"><code data-line-number="209"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-209"></a>                        <span class="n">psi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-210"><code data-line-number="210"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-210"></a>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">psi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-211"><code data-line-number="211"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-211"></a>                        <span class="n">val_idx</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phi_idx</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">psi_idx</span><span class="p">))</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-212"><code data-line-number="212"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-212"></a>                        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span> <span class="n">psi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-213"><code data-line-number="213"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-213"></a>                                 <span class="s1">'o'</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-214"><code data-line-number="214"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-214"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-215"><code data-line-number="215"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-215"></a>                    <span class="n">out_phi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">phi</span><span class="p">])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-216"><code data-line-number="216"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-216"></a>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_phi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-217"><code data-line-number="217"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-217"></a>                    <span class="n">out_psi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">psi</span><span class="p">])</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-218"><code data-line-number="218"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-218"></a>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_psi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-219"><code data-line-number="219"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-219"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-220"><code data-line-number="220"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-220"></a>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-221"><code data-line-number="221"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-221"></a>                    <span class="n">pcnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-222"><code data-line-number="222"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-222"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-223"><code data-line-number="223"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-223"></a>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">''</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-224"><code data-line-number="224"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-224"></a>                    <span class="k">break</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-225"><code data-line-number="225"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-225"></a>        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-226"><code data-line-number="226"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-226"></a>            <span class="c1"># plt.show()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-227"><code data-line-number="227"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-227"></a>            <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">fname</span><span class="o">+</span><span class="s1">'_phipsi_plot.png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-228"><code data-line-number="228"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-228"></a>                        <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-229"><code data-line-number="229"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-229"></a>        <span class="n">CS</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-230"><code data-line-number="230"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-230"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-231"><code data-line-number="231"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-231"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-232"><code data-line-number="232"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-232"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-233"><code data-line-number="233"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-233"></a>    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">()</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-234"><code data-line-number="234"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-234"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#listingsmlibcompute_phi_psipy-235"><code data-line-number="235"></code></a></td>
+<td class="code"><code><a name="listingsmlibcompute_phi_psipy-235"></a>    <span class="n">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</code></td>
+</tr>
+</table></div>
+
+        <!--End of body content-->
+
+        <footer id="footer">
             Contents © 2020         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
             
@@ -552,12 +1259,12 @@ navbar-dark bg-dark
         captions: function(element) {
             return element.getElementsByTagName('img')[0].alt;
     }});
-    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-2"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'UA-11058802-2');
+gtag('config', 'UA-11058802-1');
 </script>
 </body>
 </html>
