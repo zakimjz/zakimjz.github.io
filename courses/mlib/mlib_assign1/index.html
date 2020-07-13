@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign1/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
@@ -33,7 +33,7 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0">
 navbar-dark bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="http://www.cs.rpi.edu/~zaki/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Zaki Home Page</span>
         </a>
@@ -97,77 +97,178 @@ $d=100$, $w=25$, and $n=3$. In your implementation these should be
 variables that take their values from the command line (see below; you
 should also make the number of negative samples a parameter).</p>
 <p>Here is the pseudo code for the overall structure of the script:</p>
-<table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-1"> 1</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-2"> 2</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-3"> 3</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-4"> 4</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-5"> 5</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-6"> 6</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-7"> 7</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-8"> 8</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-9"> 9</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-10">10</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-11">11</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-12">12</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-13">13</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-14">14</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-15">15</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-16">16</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-17">17</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-18">18</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-19">19</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-20">20</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-21">21</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-22">22</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-23">23</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-24">24</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-25">25</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-26">26</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-27">27</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-28">28</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-29">29</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-30">30</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-31">31</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-32">32</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-33">33</a>
-<a href="#rest_code_9b826c55b05d47eeae9eaafc449911d8-34">34</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-1"></a><span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">ngram</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">ngram</span><span class="o">-</span><span class="mi">1</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-2"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-3"></a><span class="n">write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="k">return</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">positive</span> <span class="ow">and</span> <span class="n">negative</span> <span class="n">pairs</span> <span class="kn">from</span> <span class="nn">all</span> <span class="nn">of</span> <span class="nn">the</span> <span class="nn">sequences</span><span class="o">/</span><span class="n">offsets</span><span class="o">.</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-4"></a><span class="k">for</span> <span class="n">the</span> <span class="n">negative</span> <span class="n">sampling</span> <span class="n">use</span> <span class="n">the</span> <span class="n">cumsum</span> <span class="n">approach</span> <span class="n">described</span> <span class="ow">in</span> <span class="k">class</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-5"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-6"></a><span class="nc">define</span> <span class="n">NN</span> <span class="n">model</span><span class="p">:</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-7"></a>    <span class="n">init</span> <span class="n">function</span><span class="p">:</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-8"></a>        <span class="n">define</span> <span class="n">the</span> <span class="n">two</span> <span class="n">embeddings</span> <span class="n">layers</span> <span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">V</span><span class="p">)</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-9"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-10"></a>    <span class="n">forward</span> <span class="n">function</span><span class="p">:</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-11"></a>        <span class="nb">input</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">center_words</span><span class="p">,</span> <span class="ow">and</span> <span class="n">context_words</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-12"></a>        <span class="n">look</span> <span class="n">up</span> <span class="n">their</span> <span class="n">embeddings</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-13"></a>        <span class="n">compute</span> <span class="n">the</span> <span class="n">dot</span> <span class="n">product</span> <span class="n">between</span> <span class="n">corresponding</span> <span class="n">pairs</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-14"></a>        <span class="n">output</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="n">probability</span> <span class="n">of</span> <span class="n">that</span> <span class="n">pair</span> <span class="n">being</span> <span class="n">a</span> <span class="n">positive</span> <span class="n">pair</span> <span class="p">(</span><span class="n">via</span> <span class="n">sigmoid</span><span class="p">)</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-15"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-16"></a><span class="n">Next</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">boilerplate</span> <span class="n">code</span> <span class="k">for</span> <span class="n">training</span><span class="p">:</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-17"></a><span class="n">net</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-18"></a><span class="n">send</span> <span class="n">net</span> <span class="n">to</span> <span class="n">GPU</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-19"></a><span class="n">loss_func</span> <span class="o">=</span> <span class="n">BCEloss</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-20"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span> <span class="ow">or</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-21"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-22"></a><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">epochs</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-23"></a>    <span class="k">for</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">batches</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-24"></a>       <span class="n">convert</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="n">to</span> <span class="n">tensors</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-25"></a>       <span class="n">send</span> <span class="nb">all</span> <span class="n">three</span> <span class="n">to</span> <span class="n">the</span> <span class="n">GPU</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-26"></a>       <span class="n">net</span><span class="o">.</span><span class="n">zero_grad</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-27"></a>       <span class="n">preds</span> <span class="o">=</span> <span class="n">net</span> <span class="p">(</span><span class="n">center_words</span><span class="p">,</span> <span class="n">contex_words</span><span class="p">)</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-28"></a>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_func</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-29"></a>       <span class="n">loss</span><span class="o">.</span><span class="n">backward</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-30"></a>       <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-31"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-32"></a>   <span class="k">print</span> <span class="n">total</span> <span class="n">loss</span> <span class="n">per</span> <span class="n">epoch</span>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-33"></a>
-<a name="rest_code_9b826c55b05d47eeae9eaafc449911d8-34"></a><span class="n">save</span> <span class="n">embeddings</span> <span class="ow">in</span> <span class="n">required</span> <span class="n">format</span>
-</pre></td>
-</tr></table>
+<div class="code"><table class="codetable">
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-1"><code data-line-number=" 1"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-1"></a><span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">ngram</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">ngram</span><span class="o">-</span><span class="mi">1</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-2"><code data-line-number=" 2"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-2"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-3"><code data-line-number=" 3"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-3"></a><span class="n">write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="k">return</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">positive</span> <span class="ow">and</span> <span class="n">negative</span> <span class="n">pairs</span> <span class="kn">from</span> <span class="nn">all</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sequences</span><span class="o">/</span><span class="n">offsets</span><span class="o">.</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-4"><code data-line-number=" 4"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-4"></a><span class="k">for</span> <span class="n">the</span> <span class="n">negative</span> <span class="n">sampling</span> <span class="n">use</span> <span class="n">the</span> <span class="n">cumsum</span> <span class="n">approach</span> <span class="n">described</span> <span class="ow">in</span> <span class="k">class</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-5"><code data-line-number=" 5"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-5"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-6"><code data-line-number=" 6"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-6"></a><span class="nc">define</span> <span class="n">NN</span> <span class="n">model</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-7"><code data-line-number=" 7"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-7"></a>    <span class="n">init</span> <span class="n">function</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-8"><code data-line-number=" 8"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-8"></a>        <span class="n">define</span> <span class="n">the</span> <span class="n">two</span> <span class="n">embeddings</span> <span class="n">layers</span> <span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">V</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-9"><code data-line-number=" 9"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-9"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-10"><code data-line-number="10"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-10"></a>    <span class="n">forward</span> <span class="n">function</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-11"><code data-line-number="11"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-11"></a>        <span class="nb">input</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">center_words</span><span class="p">,</span> <span class="ow">and</span> <span class="n">context_words</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-12"><code data-line-number="12"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-12"></a>        <span class="n">look</span> <span class="n">up</span> <span class="n">their</span> <span class="n">embeddings</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-13"><code data-line-number="13"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-13"></a>        <span class="n">compute</span> <span class="n">the</span> <span class="n">dot</span> <span class="n">product</span> <span class="n">between</span> <span class="n">corresponding</span> <span class="n">pairs</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-14"><code data-line-number="14"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-14"></a>        <span class="n">output</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="n">probability</span> <span class="n">of</span> <span class="n">that</span> <span class="n">pair</span> <span class="n">being</span> <span class="n">a</span> <span class="n">positive</span> <span class="n">pair</span> <span class="p">(</span><span class="n">via</span> <span class="n">sigmoid</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-15"><code data-line-number="15"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-15"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-16"><code data-line-number="16"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-16"></a><span class="n">Next</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">boilerplate</span> <span class="n">code</span> <span class="k">for</span> <span class="n">training</span><span class="p">:</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-17"><code data-line-number="17"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-17"></a><span class="n">net</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-18"><code data-line-number="18"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-18"></a><span class="n">send</span> <span class="n">net</span> <span class="n">to</span> <span class="n">GPU</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-19"><code data-line-number="19"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-19"></a><span class="n">loss_func</span> <span class="o">=</span> <span class="n">BCEloss</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-20"><code data-line-number="20"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-20"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span> <span class="ow">or</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-21"><code data-line-number="21"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-21"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-22"><code data-line-number="22"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-22"></a><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">epochs</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-23"><code data-line-number="23"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-23"></a>    <span class="k">for</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">batches</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-24"><code data-line-number="24"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-24"></a>       <span class="n">convert</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="n">to</span> <span class="n">tensors</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-25"><code data-line-number="25"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-25"></a>       <span class="n">send</span> <span class="nb">all</span> <span class="n">three</span> <span class="n">to</span> <span class="n">the</span> <span class="n">GPU</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-26"><code data-line-number="26"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-26"></a>       <span class="n">net</span><span class="o">.</span><span class="n">zero_grad</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-27"><code data-line-number="27"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-27"></a>       <span class="n">preds</span> <span class="o">=</span> <span class="n">net</span> <span class="p">(</span><span class="n">center_words</span><span class="p">,</span> <span class="n">contex_words</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-28"><code data-line-number="28"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-28"></a>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_func</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-29"><code data-line-number="29"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-29"></a>       <span class="n">loss</span><span class="o">.</span><span class="n">backward</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-30"><code data-line-number="30"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-30"></a>       <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-31"><code data-line-number="31"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-31"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-32"><code data-line-number="32"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-32"></a>   <span class="nb">print</span> <span class="n">total</span> <span class="n">loss</span> <span class="n">per</span> <span class="n">epoch</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-33"><code data-line-number="33"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-33"></a>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#rest_code_95be99685e58449db2bb2aafdc91cee0-34"><code data-line-number="34"></code></a></td>
+<td class="code"><code><a name="rest_code_95be99685e58449db2bb2aafdc91cee0-34"></a><span class="n">save</span> <span class="n">embeddings</span> <span class="ow">in</span> <span class="n">required</span> <span class="nb">format</span>
+</code></td>
+</tr>
+</table></div>
 <div class="section" id="submission">
 <h3>Submission</h3>
 <p>Submit your code via submitty. Name your python script:
@@ -237,12 +338,12 @@ delimiters: [
         captions: function(element) {
             return element.getElementsByTagName('img')[0].alt;
     }});
-    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-2"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'UA-11058802-2');
+gtag('config', 'UA-11058802-1');
 </script>
 </body>
 </html>
