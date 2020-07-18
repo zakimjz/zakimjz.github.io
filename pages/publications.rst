@@ -41,8 +41,12 @@ You can also find my publications on |googlescholar|_ and  |dblp|_.
 Books
 -----
 
-|dmabook|_ |psp|_ |dmb|_ |lspdm|_
+|dmmlbook|_ |dmabook|_ |psp|_ |dmb|_ |lspdm|_
 
+
+.. |dmmlbook| image:: /images/bookpic-2nd.png
+   :width: 100
+.. _dmmlbook: http://dataminingbook.info
 
 .. |dmabook| image:: /images/DMABOOK.jpg
    :width: 100
