@@ -55,6 +55,7 @@ Nvidia.
 Courses
 -------
 
+Fall 2020: :doc:`Data Mining <datamining>` 
 Spring 2020: :doc:`Machine Learning in Bioinformatics <mlib>` 
 
 
