@@ -9,7 +9,10 @@
 
 This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
-algebraic and probabilistic viewpoints, as well as algorithmic implementation. 
+algebraic and probabilistic viewpoints, as well as algorithmic implementation.
+
+This class will be online for the entire semester, and live class videos
+will be using webex link below.
 
 **Webex Lectures**: https://rensselaer.webex.com/meet/zakim
 
