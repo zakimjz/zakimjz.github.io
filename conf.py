@@ -5,7 +5,6 @@ import time
 # !! This is the configuration of Nikola. !! #
 # !!  You should edit it to your liking.  !! #
 
-
 # ! Some settings can be different in different languages.
 # ! A comment stating (translatable) is used to denote those.
 # ! There are two ways to specify a translatable setting:
@@ -13,7 +12,6 @@ import time
 # ! (b) BLOG_TITLE = {"en": "My Blog", "es": "Mi Blog"}
 # ! Option (a) is used when you don't want that setting translated.
 # ! Option (b) is used for settings that are different in different languages.
-
 
 # Data about this site
 BLOG_AUTHOR = "Mohammed J. Zaki"  # (translatable)
@@ -142,7 +140,7 @@ NAVIGATION_LINKS = {
         # ("http://www.mjzaki.com", "Home"),
         ("/publications/", "Publications"),
         ("https://github.com/zakimjz", "Github"),
-        ("/courses/mlib", "MLinBioinfo"),
+        ("/courses/datamining", "DataMining"),
         # ((("/courses/mlib", "MLinBioinfo"),
         #   ("/courses/dm", "DataMining")), 'Courses', 'fas fa-chalkboard-teacher'),
         # ('/index.html', 'Home', 'fa fa-home'),
@@ -240,7 +238,6 @@ PAGES = (
     ("pages/*.html", "", "page.tmpl"),
 )
 
-
 # Below this point, everything is optional
 
 # Post's dates are considered in UTC by default, if you want to use
@@ -303,16 +300,16 @@ TIMEZONE = "America/New_York"
 COMPILERS = {
     "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
+    "textile": ('.textile', ),
+    "txt2tags": ('.t2t', ),
+    "bbcode": ('.bb', ),
+    "wiki": ('.wiki', ),
+    "ipynb": ('.ipynb', ),
     "html": ('.html', '.htm'),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ('.php',),
+    "php": ('.php', ),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -543,7 +540,6 @@ HIDDEN_CATEGORIES = []
 #    },
 # }
 
-
 # If you do not want to display an author publicly, you can mark it as hidden.
 # The author will not be displayed on the author list page and posts.
 # Tag pages will still be generated.
@@ -556,9 +552,7 @@ INDEX_PATH = "posts"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
-FRONT_INDEX_HEADER = {
-    DEFAULT_LANG: ''
-}
+FRONT_INDEX_HEADER = {DEFAULT_LANG: ''}
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -961,15 +955,12 @@ CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{autho
 #          do not need formatting)
 # (translatable)
 CONTENT_FOOTER_FORMATS = {
-    DEFAULT_LANG: (
-        (),
-        {
-            "email": BLOG_EMAIL,
-            "author": BLOG_AUTHOR,
-            "date": time.gmtime().tm_year,
-            "license": LICENSE
-        }
-    )
+    DEFAULT_LANG: ((), {
+        "email": BLOG_EMAIL,
+        "author": BLOG_AUTHOR,
+        "date": time.gmtime().tm_year,
+        "license": LICENSE
+    })
 }
 
 # A simple copyright tag for inclusion in RSS feeds that works just
@@ -1090,14 +1081,14 @@ delimiters: [
 #       with the MarkdownExtension class and should not be added here.
 # Defaults are markdown.extensions.(fenced_code|codehilite|extra)
 # markdown.extensions.meta is required for Markdown metadata.
-MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
-                       'markdown.extensions.codehilite',
-                       'markdown.extensions.extra', 'markdown.extensions.meta']
+MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.fenced_code', 'markdown.extensions.codehilite',
+    'markdown.extensions.extra', 'markdown.extensions.meta'
+]
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
 # Default is {} (no config at all)
 # MARKDOWN_EXTENSION_CONFIGS = {}
-
 
 # Extra options to pass to the pandoc command.
 # by default, it's empty, is a list of strings, for example

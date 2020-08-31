@@ -7,7 +7,13 @@
 .. description: 
 .. type: text
 
+Fall 2020
+-----------
+
+* CSCI4390/6390 Data Mining: :doc:`datamining`
+
+
 Spring 2020
 -----------
 
-CSCI4969/6969 Machine Learning in Bioinformatics
+* CSCI4969/6969 Machine Learning in Bioinformatics: :doc:`mlib`

@@ -1,0 +1,108 @@
+.. title: CSCI4390-6390 Data Mining
+.. slug: datamining
+.. date: 2020-08-31 12:48:31 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+This course focuses on fundamental algorithms and core concepts in data
+mining and machine learning. The emphasis is on leveraging geometric,
+algebraic and probabilistic viewpoints, as well as algorithmic implementation. 
+
+**Class Hours**: 10:10AM-12:00PM TF (Online)
+
+**Instructor Office Hours**: 12-1PM TF
+
+**TA**: Abhishek Gupta <guptaa10@rpi.edu>
+
+**TA Office Hours**: TBA
+
+**Syllabus**: :doc:`dm_syllabus`
+
+**Campuswire**: https://campuswire.com/c/GC1A29D57/
+
+**Submitty**: https://submitty.cs.rpi.edu/courses/f20/csci4390
+
+
+Assignments
+-----------
+
+TBA
+
+Videos
+-------
+
+After each class the lecture videos will be posted at :doc:`dm_videos`
+
+Class Schedule: Lectures 
+-------------------------
+
+Tentative course schedule is given below. The topics are subject to
+change, but the dates for the Exams are fixed.
+
++---------+--------------------------------------------------+---------------+
+| Date    | Topic                                            | Lecture Notes |
++=========+==================================================+===============+
+|  Sep 01 |  Introduction & Data Matrix (Chapter 1)          |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 04 |  Data Matrix (Chapter 1)                         |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 08 |  **NO CLASS** (Monday Schedule)                  |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 11 |  Numeric Attributes (Chapter 2)                  |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 15 |  Numeric Attributes (Chapter 2)                  |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 18 |  Dimensionality Reduction (Chapter 7)            |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 22 |  High Dimensional Data (Chapter 6)               |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 25 |  **EXAM I**                                      |               |
++---------+--------------------------------------------------+---------------+
+|  Sep 29 |  Kernel Methods (Chapter 5)                      |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 02 |  Linear Regression I (Chapter 23)                |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 06 |  Linear Regression II (Chapter 23)               |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 09 |  Logistic Regression (Chapter 24)                |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 13 |  Neural Networks I (Chapter 25)                  |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 16 |  Neural Networks II (Chapter 25)                 |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 20 |  **EXAM II**                                     |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 23 |  Deep Learning I (Chapter 26)                    |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 27 |  Deep Learning II (Chapter 26)                   |               |
++---------+--------------------------------------------------+---------------+
+|  Oct 30 |  Support Vector Machines I (Chapter 21)          |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 03 |  Support Vector Machines II (Chapter 21)         |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 06 |  Probabilisitic Classification (Chapter 18)      |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 10 |  Classification Assessment (Chapter 22)          |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 13 |  **EXAM III**                                    |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 17 |  Representative-based Clustering (Chapter 13)    |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 20 |  Representative-based Clustering II (Chapter 13) |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 24 |  Density-based Clustering (Chapter 15)           |               |
++---------+--------------------------------------------------+---------------+
+|  Nov 27 |  **NO CLASS** (Thanksgiving)                     |               |
++---------+--------------------------------------------------+---------------+
+|  Dec 01 |  Spectral and Graph Clustering I (Chapter 16)    |               |
++---------+--------------------------------------------------+---------------+
+|  Dec 04 |  Spectral and Graph Clustering II (Chapter 16)   |               |
++---------+--------------------------------------------------+---------------+
+|  Dec 08 |  Itemset Mining (Chapter 8)                      |               |
++---------+--------------------------------------------------+---------------+
+|  Dec 11 |  **EXAM IV**                                     |               |
++---------+--------------------------------------------------+---------------+
+
