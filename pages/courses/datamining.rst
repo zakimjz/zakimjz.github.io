@@ -16,7 +16,7 @@ will be using webex link below.
 
 **Webex Lectures**: https://rensselaer.webex.com/meet/zakim
 
-**Class Hours**: 10:10AM-12:00PM Tue/Fri (Online via Webex)
+**Class Hours**: 10:10AM-12:00PM Tue/Fri Online via `Webex <https://rensselaer.webex.com/meet/zakim>`_
 
 **Instructor Office Hours**: 12-1PM Tue/Fri
 
