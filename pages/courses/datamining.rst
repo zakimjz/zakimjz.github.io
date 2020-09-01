@@ -20,7 +20,7 @@ will be using webex link below.
 
 **Instructor Office Hours**: 12-1PM TF
 
-**TA**: Abhishek Gupta <guptaa10@rpi.edu>
+**TA**: Abhishek Gupta guptaa10@rpi.edu
 
 **TA Office Hours**: TBA
 
@@ -40,6 +40,9 @@ Videos
 -------
 
 After each class the lecture videos will be posted at :doc:`dm_videos`
+
+Check out the short video on `Successful Remote Learning <https://mediasite.mms.rpi.edu/Mediasite5/Play/3c69d5096dc5494eadcaba2b9c99189f1d>`_ which can help you get organized for remote classes.
+
 
 Class Schedule: Lectures 
 -------------------------
