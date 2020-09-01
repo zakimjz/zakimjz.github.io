@@ -68,6 +68,16 @@ Readings from the book will be posted on the course schedule,
 All lecture notes and videos will be posted online on the course
 webpage. 
 
+Lectures & Videos
+------------------
+
+The lecture PDF and Video will be posted on the course webpage after
+each class, typically before 5pm on each class day.
+
+Check out the short video on `Successful Remote Learning <https://mediasite.mms.rpi.edu/Mediasite5/Play/3c69d5096dc5494eadcaba2b9c99189f1d>`_ which can help you get organized for remote classes.
+
+
+
 Grading Policy
 --------------
 
