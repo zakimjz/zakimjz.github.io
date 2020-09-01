@@ -16,13 +16,14 @@ will be using webex link below.
 
 **Webex Lectures**: https://rensselaer.webex.com/meet/zakim
 
-**Class Hours**: 10:10AM-12:00PM TF (Online)
+**Class Hours**: 10:10AM-12:00PM Tue/Fri (Online via Webex)
 
-**Instructor Office Hours**: 12-1PM TF
+**Instructor Office Hours**: 12-1PM Tue/Fri
 
 **TA**: Abhishek Gupta guptaa10@rpi.edu
 
-**TA Office Hours**: TBA
+**TA Office Hours**: 3-4PM Wed and 4-5PM on Thurs via Webex
+(https://rensselaer.webex.com/meet/guptaa10)
 
 **Syllabus**: :doc:`dm_syllabus`
 
