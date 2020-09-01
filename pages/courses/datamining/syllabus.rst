@@ -101,7 +101,7 @@ Your grade will be a combination of the following items.
   extension for a 15% grade penalty. No late assignments will be
   accepted after the midnight following the due date.
 
-The grading for CSCS4390 and CSCI6390 will be done separately taking
+The grading for CSCI4390 and CSCI6390 will be done separately taking
 into account the more advanced material required for CSCI6390 -- this
 includes extra/in-depth questions on the exam, and implementation of
 more advanced algorithms for the assignments. The letter grades
