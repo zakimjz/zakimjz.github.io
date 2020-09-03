@@ -35,9 +35,7 @@ will be using webex link below.
 Assignments
 -----------
 
-TBA
-
-
+**Assign1**: :doc:`dm_assign1`   (Due Date: Sep 11th)
 
 
 Class Schedule: Lectures 
