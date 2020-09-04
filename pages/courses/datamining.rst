@@ -50,7 +50,8 @@ change, but the dates for the Exams are fixed.
 |  Sep 01 |  Introduction & Data Matrix (Chapter 1)          | `PDF <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1-9-1-20.pdf>`_, |
 |         |                                                  | `Video <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/9-1-20/9-1-20.html>`_   |
 +---------+--------------------------------------------------+-----------------------------------------------------------------------------+
-|  Sep 04 |  Data Matrix (Chapter 1)                         |                                                                             |
+|  Sep 04 |  Data Matrix/Numeric Attributes (Chapter 2)      | `PDF <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2-9-4-20.pdf>`_, |
+|         |                                                  | `Video <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/9-4-20/9-4-20.html>`_   |
 +---------+--------------------------------------------------+-----------------------------------------------------------------------------+
 |  Sep 08 |  **NO CLASS** (Monday Schedule)                  |                                                                             |
 +---------+--------------------------------------------------+-----------------------------------------------------------------------------+
