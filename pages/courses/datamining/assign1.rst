@@ -184,10 +184,6 @@ plots should also be part of this output file as well, with any required
 comments. **You will lose points if you do not include the output PDF
 file.** 
 
-Note that since there are >19k points, you should not print out the full
-eigenvectors. Just print out the first 10 and last ten values per
-eigenvector.
-
 Your script must use Python version 3. Please note that you can use
 built-in NumPy/Python functions for reading and parsing the text input,
 but you should NOT use any of the built-in functions like **cov** or
