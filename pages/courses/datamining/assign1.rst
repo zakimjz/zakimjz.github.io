@@ -18,7 +18,9 @@ Download the `Appliances energy prediction data set
 <https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction#>`_
 from the UCI Machine Learning repository. This dataset has 29 attributes
 and 19725 points. You will ignore the first attribute, which is a
-date-time variable. The rest of the attributes are all numeric, and will
+date-time variable. 
+It also turns out that the last two columns are identical, so you can
+remove the last column, leaving you with 27 attributes in total that will
 be used in the assignment.
 
 This assignment consists of two parts. Part I must be done by students
