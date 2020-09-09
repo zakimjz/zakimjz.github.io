@@ -108,7 +108,7 @@ that element before scaling.
 
 Once you have obtained the dominant eigenvector, :math:`\mathbf{u}_1`,
 project each of the original data points :math:`\mathbf{x}_i` onto this
-vector, and print the coordinates for the new points along this
+vector, and plot the coordinates for the new points along this
 "direction".
 
 
