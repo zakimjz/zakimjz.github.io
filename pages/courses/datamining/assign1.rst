@@ -17,7 +17,7 @@ Assign1: Covariance and Eigenvectors
 Download the `Appliances energy prediction data set
 <https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction#>`_
 from the UCI Machine Learning repository. This dataset has 29 attributes
-and 19725 points. You will ignore the first attribute, which is a
+and 19735 points. You will ignore the first attribute, which is a
 date-time variable. 
 It also turns out that the last two columns are identical, so you can
 remove the last column, leaving you with 27 attributes in total that will
