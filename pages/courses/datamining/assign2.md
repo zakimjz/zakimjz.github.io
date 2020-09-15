@@ -12,7 +12,7 @@
 
 # Assign2: High Dimensional Data and Dimensionality Reduction
 
-**Due Date**: Sep 22th, before midnight (11:59:59PM, Alofi Time; GMT-11)
+**Due Date**: Sep 22, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
 
 Both Part I and II have to be done by all sections. Differences have
