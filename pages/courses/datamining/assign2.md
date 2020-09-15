@@ -91,9 +91,7 @@ Explain why? or why not?
 * For part1, read the filename from the command line, assume it is in
  the local directory. So, part1 will be run as  
  **Assign2-part1.py FILENAME ALPHA**. FILENAME is the datafile name, and ALPHA is the
- approximation threshold $\alpha$. 
-
- In other words, you script must
+ approximation threshold $\alpha$.  In other words, your script must
  compute and return the correct number of components to capture $\alpha$
  fraction of total variance. 
 
