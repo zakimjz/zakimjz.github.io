@@ -90,14 +90,15 @@ Explain why? or why not?
 
 * For part1, read the filename from the command line, assume it is in
  the local directory. So, part1 will be run as 
- **Assign2-part2.py FILENAME ALPHA**. FILENAME is the datafile name, and ALPHA is the
+ 
+ **Assign2-part1.py FILENAME ALPHA**. FILENAME is the datafile name, and ALPHA is the
  approximation threshold $\alpha$. 
 
  In other words, you script must
  compute and return the correct number of components to capture $\alpha$
  fraction of total variance. 
 
-* For part1, the script will be run as **Assign2-part1.py**.
+* For part2, the script will be run as **Assign2-part2.py**.
 
 * Submit a PDF file named Assign2.pdf that should include your solutions
  to each of the questions (just cut and paste the output from python).
