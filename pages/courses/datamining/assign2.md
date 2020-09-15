@@ -89,8 +89,7 @@ Explain why? or why not?
 
 
 * For part1, read the filename from the command line, assume it is in
- the local directory. So, part1 will be run as 
- 
+ the local directory. So, part1 will be run as  
  **Assign2-part1.py FILENAME ALPHA**. FILENAME is the datafile name, and ALPHA is the
  approximation threshold $\alpha$. 
 
