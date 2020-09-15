@@ -195,7 +195,7 @@ comparing to the results from the built-in methods.
 Tutorial on Python and NumPy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For those not that familiar with pythoni or NumPy, you may search online
+For those not that familiar with python or NumPy, you may search online
 for tutorials, e.g. https://docs.python.org/3/tutorial/ or
 https://numpy.org/doc/stable/
 
