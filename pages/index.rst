@@ -26,8 +26,8 @@ from the University of Rochester in 1998. His research interests focus
 on developing novel data mining and machine learning techniques,
 especially for applications in text mining, social networks,
 bioinformatics and personal health. He has over 250 publications,
-including the `Data Mining and Machine Learning <http://dataminingbook.info
->`_ textbook (2nd Edition, Cambridge
+including the `Data Mining and Machine Learning
+<http://dataminingbook.info>`_ textbook (2nd Edition, Cambridge
 University Press, 2020). He is the founding co-chair for the BIOKDD
 series of workshops. He is currently an associate editor for Data Mining
 and Knowledge Discovery, and he has also served as Area Editor for
@@ -50,8 +50,8 @@ a Google Faculty Research Award in 2011. He is an `ACM Distinguished
 Scientist <http://awards.acm.org/distinguished_member/year.cfm>`_ and a
 `Fellow of the IEEE
 <https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_. His
-research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP, and
-Nvidia.
+research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
+and Nvidia.
 
 Courses
 -------
