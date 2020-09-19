@@ -63,7 +63,8 @@ corner of the $d$-dimensional hypercube.
 
 Randomly generate
  $n=100,000$ pairs of
-half-diagonals in the d-dimensional hypercube, and compute the angle
+half-diagonals in the $d$-dimensional hypercube (random $d$-dimensional
+vectors with elements +1 or -1), and compute the angle
 between them (in degrees). 
 
 Plot the probability mass
