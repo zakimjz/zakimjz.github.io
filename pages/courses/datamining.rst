@@ -66,7 +66,8 @@ change, but the dates for the Exams are fixed.
 |  Sep 18 |  High Dimensional Data (Chapter 6)                              | `PDF5 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5-9-18-20.pdf>`_, |
 |         |                                                                 | `Video5 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/9-18-20/9-18-20.html>`_  |
 +---------+-----------------------------------------------------------------+-------------------------------------------------------------------------------+
-|  Sep 22 |  High Dimensional Data II (Chap 6) & Kernel Methods (Chapter 5) |                                                                               |
+|  Sep 22 |  High Dimensional Data II (Chap 6) & Kernel Methods (Chapter 5) | `PDF6 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6-9-22-20.pdf>`_, |
+|         |                                                                 | `Video6 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/9-22-20/9-22-20.html>`_  |
 +---------+-----------------------------------------------------------------+-------------------------------------------------------------------------------+
 |  Sep 25 |  **EXAM I**                                                     |                                                                               |
 +---------+-----------------------------------------------------------------+-------------------------------------------------------------------------------+
