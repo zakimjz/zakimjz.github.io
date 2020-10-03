@@ -39,6 +39,8 @@ Assignments
 
 **Assign2**: :doc:`dm_assign2`   (Due Date: Sep 22nd)
 
+**Assign3**: :doc:`dm_assign3`   (Due Date: Oct 9th)
+
 
 Class Schedule: Lectures 
 -------------------------
