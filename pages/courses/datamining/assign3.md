@@ -38,7 +38,7 @@ Algorithm 7.2 (Chapter 7, page 208). You need to compute the kernel and
 then center it, followed by extracting the dominant eigenvectors, which
 will give you the components of the directions in feature space. Next
 you will project and visualize the data. To compute the principal
-components (PCs) of the kernel matrix, you may use the inbuilt numpy
+components (PCs) from the kernel matrix, you may use the inbuilt numpy
 function eigh.
 
 Using the linear kernel, how many dimensions are required to capture
@@ -66,15 +66,17 @@ various spread values and then decide).
 You will implement the linear regression algorithm via QR factorization,
 namely Algorithm 23.1 on page 602 in Chapter 23.
 
-CSCI4390: You can use the **numpy.linalg.qr** function to compute the QR
-factorization.
+**CSCI4390**: You can use the **numpy.linalg.qr** function to compute the QR
+factorization. 
 
-CSCI6390: You must implement QR factorization on your own, as described
+
+**CSCI6390**: You must implement QR factorization on your own, as described
 in Section 23.3.1 (you cannot use numpy.linalg.qr or similar function).
 
-Next, using the $\mathbf{Q}$ and the $\mathbf{R}$ matrices, you must
+Next, for both sections, using the $\mathbf{Q}$ and the $\mathbf{R}$ matrices, you must
 solve for the augmented weight vector $\mathbf{w}$ using
-backsubstitution. See Example 23.4 on how backsolve works.
+backsubstitution. See Example 23.4 on how backsolve works. You cannot
+use **numpy.linalg.inv** in your solution (but it can be used to verify your answer).
 
 After you have computed the weight vector $\mathbf{w}$, 
 you should compute the SSE value for the predictions, and also the 
@@ -101,18 +103,20 @@ $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$
  fraction of total variance. You should also plot the projected points
  on the first two Kernel PCs.
 
- Note that KPCA on the full dataset will be expensive, so try to
- run/debug
- your algorithm on smaller subsets of the data, and then run on the full
- dataset for the final submission.
+ Note that KPCA on the full dataset with about 20K points will be
+ expensive and it will take around 12GB of memory if you use np.float32
+ for all data. If you cannot run on the full dataset, run it on the
+ first 10K points. If that is also too much, then you should you use at
+ least 5K points.
+
 
 * For part2, the script will be run as **Assign2-lr.py FILENAME**,
 where FILENAME is the input data file. Use 70% of the points for the training dataset, and 30% of the points for the testing dataset. 
-Your script MUST print the following:
+Your script MUST print the following (where MSE is mean squared error):
     1. the weight vector $\mathbf{w}$
     2. the $L_2$ norm of the weight vector
-    3. the SSE  and $R^2$ values on the training data
-    4. the SSE and $R^2$ values on the testing data
+    3. the SSE, MSE  and $R^2$ values on the training data
+    4. the SSE, MSE and $R^2$ values on the testing data
 
 
 * Submit a PDF file named Assign3.pdf that should include your answers
