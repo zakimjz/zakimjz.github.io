@@ -139,8 +139,14 @@ $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$</p>
  for the Gaussian kernel.  In other words, your script must
  compute and return the correct number of components to capture $\alpha$
  fraction of total variance. You should also plot the projected points
- on the first two Kernel PCs. </p>
+ on the first two Kernel PCs.</p>
 </li>
+</ul>
+<p>Note that KPCA on the full dataset will be expensive, so try to
+ run/debug
+ your algorithm on smaller subsets of the data, and then run on the full
+ dataset for the final submission.</p>
+<ul>
 <li>
 <p>For part2, the script will be run as <strong>Assign2-lr.py FILENAME</strong>,
 where FILENAME is the input data file. Use 70% of the points for the training dataset, and 30% of the points for the testing dataset. 
