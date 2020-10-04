@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-# Assign3: Non-Linear Dimensionality Reduction
+# Assign3: Non-Linear Dimensionality Reduction and Linear Regression
 
 **Due Date**: Oct 9, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
@@ -41,7 +41,8 @@ you will project and visualize the data. To compute the principal
 components (PCs) from the kernel matrix, you may use the inbuilt numpy
 function eigh.
 
-Using the linear kernel, how many dimensions are required to capture
+Using the linear kernel (i.e., polynomial kernel with degree $q=1$ and
+$c=0$; in other words $K(\mathbf{x},\mathbf{y}) = \mathbf{x}^T\mathbf{y}$), how many dimensions are required to capture
 $\alpha=0.95$ fraction
 of the total variance? For the same linear kernel, compute the projected
 points along the first two kernel PCs, and create a scatter plot of the

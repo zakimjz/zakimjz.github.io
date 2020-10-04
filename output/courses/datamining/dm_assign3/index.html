@@ -15,10 +15,9 @@
 <meta property="og:site_name" content="Zaki Home Page">
 <meta property="og:title" content="CSCI4390-6390 Assign3">
 <meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign3/">
-<meta property="og:description" content="Assign3: Non-Linear Dimensionality Reduction
+<meta property="og:description" content="Assign3: Non-Linear Dimensionality Reduction and Linear Regression
 Due Date: Oct 9, before midnight (11:59:59PM, Alofi Time; GMT-11)
-Both Part I and II have to be done by all sections. Differences have
-been specified by CS">
+Both Part I and II have to be done by all sections. Differences hav">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-10-02T18:23:01-04:00">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
@@ -71,7 +70,7 @@ navbar-dark bg-dark
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<h2>Assign3: Non-Linear Dimensionality Reduction</h2>
+<h2>Assign3: Non-Linear Dimensionality Reduction and Linear Regression</h2>
 <p><strong>Due Date</strong>: Oct 9, before midnight (11:59:59PM, Alofi Time; GMT-11)</p>
 <p>Both Part I and II have to be done by all sections. Differences have
 been specified by <strong>CSCI4390</strong> and <strong>CSCI6390</strong> labels. </p>
@@ -93,7 +92,8 @@ will give you the components of the directions in feature space. Next
 you will project and visualize the data. To compute the principal
 components (PCs) from the kernel matrix, you may use the inbuilt numpy
 function eigh.</p>
-<p>Using the linear kernel, how many dimensions are required to capture
+<p>Using the linear kernel (i.e., polynomial kernel with degree $q=1$ and
+$c=0$; in other words $K(\mathbf{x},\mathbf{y}) = \mathbf{x}^T\mathbf{y}$), how many dimensions are required to capture
 $\alpha=0.95$ fraction
 of the total variance? For the same linear kernel, compute the projected
 points along the first two kernel PCs, and create a scatter plot of the
