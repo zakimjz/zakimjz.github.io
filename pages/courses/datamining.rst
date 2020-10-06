@@ -79,7 +79,8 @@ change, but the dates for the Exams are fixed.
 |  Oct 02 |  Kernel PCA (Chapter 5) and Linear Regression I (Chapter 23) | `PDF8 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8-10-2-20.pdf>`_, |
 |         |                                                              | `Video8 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/10-2-20/10-2-20.html>`_  |
 +---------+--------------------------------------------------------------+-------------------------------------------------------------------------------+
-|  Oct 06 |  Linear Regression II (Chapter 23)                           |                                                                               |
+|  Oct 06 |  Linear Regression II (Chapter 23)                           | `PDF9 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-10-6-20.pdf>`_, |
+|         |                                                              | `Video9 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/10-6-20/10-6-20.html>`_  |
 +---------+--------------------------------------------------------------+-------------------------------------------------------------------------------+
 |  Oct 09 |  Logistic Regression (Chapter 24)                            |                                                                               |
 +---------+--------------------------------------------------------------+-------------------------------------------------------------------------------+
