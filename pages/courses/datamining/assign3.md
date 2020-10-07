@@ -111,7 +111,7 @@ $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$
  least 5K points.
 
 
-* For part2, the script will be run as **Assign2-lr.py FILENAME**,
+* For part2, the script will be run as **Assign3-lr.py FILENAME**,
 where FILENAME is the input data file. Use 70% of the points for the training dataset, and 30% of the points for the testing dataset. 
 Your script MUST print the following (where MSE is mean squared error):
     1. the weight vector $\mathbf{w}$
