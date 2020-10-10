@@ -41,6 +41,8 @@ Assignments
 
 **Assign3**: :doc:`dm_assign3`   (Due Date: Oct 9th)
 
+**Assign4**: :doc:`dm_assign4`   (Due Date: Oct 16th)
+
 
 Class Schedule: Lectures 
 -------------------------
