@@ -90,7 +90,8 @@ change, but the dates for the Exams are fixed.
 |  Oct 13 |  Logistic & Neural Networks I (Chapters 24, 25)    | `PDF11 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11-10-13-20.pdf>`_, |
 |         |                                                    | `Video11 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/10-13-20/10-13-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Oct 16 |  Neural Networks II (Chapter 25)                   |                                                                                  |
+|  Oct 16 |  Neural Networks II (Chapter 25)                   | `PDF12 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12-10-16-20.pdf>`_, |
+|         |                                                    | `Video12 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/10-16-20/10-13-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Oct 20 |  **EXAM II**                                       |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
