@@ -79,8 +79,9 @@ classes in both.
 
 * Write a scripy named as **Assign5.py**, which will be run as 
       
-         Assign5.py FILENAME ETA MAXITER HIDDENSIZE for CSCI4390
-         Assign5.py FILENAME ETA MAXITER HIDDENSIZE NUMHIDDEN for CSCI6390
+   Assign5.py FILENAME ETA MAXITER HIDDENSIZE for CSCI4390
+   
+   Assign5.py FILENAME ETA MAXITER HIDDENSIZE NUMHIDDEN for CSCI6390
 
  FILENAME is the datafile name,  ETA is the
  step size $\eta$, 
