@@ -14,11 +14,14 @@ will implement multiclass classification via MLP.</p>
 <hr>
 <h2>CSCI4390: Binary Classification</h2>
 <p>You will implement binary classification via the MLP training 
-Algorithm 25.1 (Chapter 25, page 655). The only difference is that you
-must use ReLU activation for the hidden layer, whereas the output layer
-will use sigmoid as described in the algorithm. The only place where
-this has an effect is line 11, where you must use the ReLU derivative in
-place of $\mathbf{z_i} \odot (\mathbf{1}-\mathbf{z_i})$.</p>
+Algorithm 25.1 (Chapter 25, page 655). 
+This algorithm assumes sigmoid activation for hidden layer, and squared
+error for the loss. However you have to use ReLU activation for the
+hidden layer, and use binary cross entropy for the loss.
+Consequently, you have to modify lines 10 and 11 appropriately so that
+line 10 uses cross-entropy loss, and line 11 uses ReLU derivative.
+See section 25.1.1 for derivative of ReLU, and section 25.2.3 for the
+derivative of binary cross-entropy loss function.</p>
 <p>Note that the <strong>Appliances Energy Use</strong> attribute takes values in the
 range $[10,1080]$. However, for binary classification, we need only two
 values, so for the purpose of this assignment you should consider energy
@@ -30,7 +33,9 @@ classes in both.</p>
 <h2>CSCI6390: Multiclass Classification</h2>
 <p>You will implement multiclass classification via the deep MLP algorithm in
 Algorithm 25.2 (Chapter 25, page 668). You should use ReLU activation
-for all hidden layers, and softmax for the output layer.</p>
+for all hidden layers, and softmax for the output layer. See section
+25.1.1 for the derivative of the activation functions, and end of section
+25.4.3 for derivative of the multiclass cross-entropy function.</p>
 <p>Note that the <strong>Appliances Energy Use</strong> attribute takes values in the
 range $[10,1080]$. However, for multiclass regression, we will convert
 these into four classes as follows: energy use less than or equal to 30
