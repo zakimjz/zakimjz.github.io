@@ -36,7 +36,7 @@ You will implement binary classification via the MLP training
 Algorithm 25.1 (Chapter 25, page 655). The only difference is that you
 must use ReLU activation for the hidden layer, whereas the output layer
 will use sigmoid as described in the algorithm. The only place where
-this has an effect is line 11, where you must use the RelU derivative in
+this has an effect is line 11, where you must use the ReLU derivative in
 place of $\mathbf{z_i} \odot (\mathbf{1}-\mathbf{z_i})$.
 
 Note that the **Appliances Energy Use** attribute takes values in the
