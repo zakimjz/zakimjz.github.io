@@ -27,7 +27,6 @@ response variable differently for the two sections as noted below, since
 CSCI4390 will implement binary classification, whereas CSCI6390
 will implement multiclass classification via MLP.
 
-
 ---
 
 ## CSCI4390: Binary Classification
@@ -89,7 +88,10 @@ classes in both.
  size of the hidden layer, and NUMHIDDEN is the number of hidden layers
  (this is for CSCI6390). CSCI6390 students may assume that all hidden
  layers use the same size.
- 
+
+You should implement the algorithms using NumPy; you cannot use any of
+the deep learning libraries (like keras, pytorch or tensorflow, and so on).
+
 Your script should print out the weight matrices and biases for each
 layer, and also the final
 accuracy value on the test data, where you use 70% of the data for
