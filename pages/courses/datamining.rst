@@ -108,7 +108,8 @@ change, but the dates for the Exams are fixed.
 |  Oct 30 |  Deep Learning II (Chap 26) & SVMs I (Chapter 21)  | `PDF15 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15-10-30-20.pdf>`_, |
 |         |                                                    | `Video15 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/10-30-20/10-30-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Nov 03 |  Support Vector Machines II (Chapter 21)           |                                                                                  |
+|  Nov 03 |  Support Vector Machines II (Chapter 21)           | `PDF16 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16-11-03-20.pdf>`_, |
+|         |                                                    | `Video16 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-3-20/11-3-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Nov 06 |  Probabilisitic Classification (Chapter 18)        |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
