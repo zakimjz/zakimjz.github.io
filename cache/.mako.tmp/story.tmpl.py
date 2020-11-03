@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1604368357.075474
+_modified_time = 1604368422.6320956
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/base/templates/story.tmpl'
 _template_uri = 'story.tmpl'
@@ -40,13 +40,13 @@ def render_body(context,**pageargs):
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         pheader = _mako_get_namespace(context, 'pheader')
+        enable_comments = context.get('enable_comments', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
         def content():
             return render_content(context._locals(__M_locals))
         site_has_comments = context.get('site_has_comments', UNDEFINED)
         post = context.get('post', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
-        enable_comments = context.get('enable_comments', UNDEFINED)
-        math = _mako_get_namespace(context, 'math')
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -68,13 +68,13 @@ def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         pheader = _mako_get_namespace(context, 'pheader')
+        enable_comments = context.get('enable_comments', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
         def content():
             return render_content(context)
         site_has_comments = context.get('site_has_comments', UNDEFINED)
         post = context.get('post', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
-        enable_comments = context.get('enable_comments', UNDEFINED)
-        math = _mako_get_namespace(context, 'math')
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<article class="post-')
