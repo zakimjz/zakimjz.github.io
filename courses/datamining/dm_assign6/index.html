@@ -92,7 +92,7 @@ training and 30% for testing, so that there is an equal mix of the
 classes in both.</p>
 <p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540).
 You must implement both the "hinge" and "quadratic" loss cases, which
-will be command line options.</p>
+will be command line options. </p>
 <h3>CSCI4390</h3>
 <p>You must implement two kernels, namely, both linear and Gaussian.</p>
 <h3>CSCI6390</h3>
@@ -117,10 +117,11 @@ will be command line options.</p>
 <p>Your script should print out the support vectors on the training set,
 and the final
 accuracy value on the test data, where you use 70% of the data for
-training and 30% for testing.</p>
+training and 30% for testing. For the linear kernel you must also print
+the weight vector and bias (see Eq 21.34 and 21.35).</p>
 <p>Note that accuracy is defined as the fraction of correct class label
 predictions. So for each test point, you should predict its class as the
-sign of the hyperplane equation (see Eq 21.3).
+sign of the hyperplane equation (see Eq 21.37).
  Divide the number of correct predictions by the test data
 size to get the accuracy. Report the
 results for the combination of LOSS, C, KERNEL and KERNEL_PARAM values
