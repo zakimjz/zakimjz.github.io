@@ -36,7 +36,7 @@ classes in both.
 
 You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540).
 You must implement both the "hinge" and "quadratic" loss cases, which
-will be command line options.
+will be command line options. 
 
 ##CSCI4390
 
@@ -45,6 +45,7 @@ You must implement two kernels, namely, both linear and Gaussian.
 ##CSCI6390
 
 You must implement three kernels, namely, linear, Gaussian, and polynomial.
+
 
 ---
 
@@ -70,11 +71,12 @@ You should implement the algorithms using NumPy; you cannot use any other librar
 Your script should print out the support vectors on the training set,
 and the final
 accuracy value on the test data, where you use 70% of the data for
-training and 30% for testing.
+training and 30% for testing. For the linear kernel you must also print
+the weight vector and bias (see Eq 21.34 and 21.35).
 
 Note that accuracy is defined as the fraction of correct class label
 predictions. So for each test point, you should predict its class as the
-sign of the hyperplane equation (see Eq 21.3).
+sign of the hyperplane equation (see Eq 21.37).
  Divide the number of correct predictions by the test data
 size to get the accuracy. Report the
 results for the combination of LOSS, C, KERNEL and KERNEL_PARAM values
