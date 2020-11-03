@@ -60,8 +60,8 @@ You must implement three kernels, namely, linear, Gaussian, and polynomial.
  you do not get convergence within EPS), KERNEL is one of the strings
  "linear", "gaussian" or "polynomial", and finally KERNEL_PARAM is
  either a float that represents the spread $\sigma^2$ for gaussian
- kernel, or it is a comma separated pair $q,c$ for the polynomial kernel
- (see Eq 5.9 on page 144 in the book), with $q$ being the degree (an
+ kernel (see Eq 5.10 on pg 147), or it is a comma separated pair $q,c$ for the polynomial kernel
+ (see Eq 5.9 on pg 144), with $q$ being the degree (an
  int) and $c$ the kernel constant (a float); note that polynomial kernel
  is only for CSCI6390.
 
