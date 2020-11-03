@@ -31,12 +31,14 @@ will be command line options.</p>
 <p>Assign6.py FILENAME LOSS C EPS MAXITER KERNEL KERNEL_PARAM</p>
 <p>FILENAME is the datafile name,  LOSS is either the string "hinge" or
  "quadratic", C is the regularization constant, EPS is the convergence
- threshold, MAXITER is the max number of iterations to perform (in
- caseyou do not get convergence within EPS), KERNEL is one of the
- strings "linear", "gaussian" or "polynomial", and finally KERNEL_PARAM
- is either a float that represents the spread $\sigma^2$ for gaussian
- kernel, or it is a comma separated pair q,c for the polynomial kernel (see Eq 5.9 on page 144 in the book), with $q$ being the degree and $c$ the kernel constant (note that polynomial kernel is 
- only for CSCI6390).</p>
+ threshold, MAXITER is the max number of iterations to perform (in case
+ you do not get convergence within EPS), KERNEL is one of the strings
+ "linear", "gaussian" or "polynomial", and finally KERNEL_PARAM is
+ either a float that represents the spread $\sigma^2$ for gaussian
+ kernel, or it is a comma separated pair $q,c$ for the polynomial kernel
+ (see Eq 5.9 on page 144 in the book), with $q$ being the degree (an
+ int) and $c$ the kernel constant (a float); note that polynomial kernel
+ is only for CSCI6390.</p>
 <p>You should implement the algorithms using NumPy; you cannot use any other library.</p>
 <p>Your script should print out the support vectors on the training set,
 and the final
