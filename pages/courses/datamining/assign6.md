@@ -28,7 +28,7 @@ Note that the **Appliances Energy Use** attribute takes values in the
 range $[10,1080]$. However, for binary classification, we need only two
 values, so for the purpose of this assignment you should consider energy
 use less than or equal to 50 as the positive class (1), and energy use
-higher than 50 as negative class (0). 
+higher than 50 as negative class (-1). 
 
 You should shuffle the data points before selecting 70% of the data
 training and 30% for testing, so that there is an equal mix of the
@@ -66,9 +66,25 @@ You must implement three kernels, namely, linear, Gaussian, and polynomial.
  int) and $c$ the kernel constant (a float); note that polynomial kernel
  is only for CSCI6390.
 
-You should implement the algorithms using NumPy; you cannot use any other library.
+You should implement the algorithms using NumPy; you cannot use any
+other library. Note that computing the full kernel matrix for 19K+
+points will be memory intensive, so if you do not have enough memory,
+one option is for you to repeatedly compute the required kernel values
+for each point $\mathbf{x}_k$. You can see in line 12, that we need only
+the $k$-th row of the kernel matrix, so you can recompute that row as
+needed instead of storing the entire kernel matrix in memory.
+Alternatively, you can show results on at least 5000 points. These
+points should be selected after shuffling the data, and then you should
+create the training/test splits.
 
-Your script should print out the support vectors on the training set,
+One final note in the implementation is that you must shuffle the
+points/indexes in line 11 so that you get different permutations for the
+stochastic gradient ascent in each iteration. This results in better
+performance than using the fixed order.
+
+Your script should print out the support vectors on the training set
+(those points that are exact support vectors, with $0 < \alpha < C$ for
+hinge, and with $\alpha > 0$ for quadratic loss),
 and the final
 accuracy value on the test data, where you use 70% of the data for
 training and 30% for testing. For the linear kernel you must also print
