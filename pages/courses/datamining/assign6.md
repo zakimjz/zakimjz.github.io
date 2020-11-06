@@ -82,7 +82,7 @@ points/indexes in line 11 so that you get different permutations for the
 stochastic gradient ascent in each iteration. This results in better
 performance than using the fixed order.
 
-Your script should print out the support vectors on the training set
+Your script should print out the number of support vectors on the training set
 (those points that are exact support vectors, with $0 < \alpha < C$ for
 hinge, and with $\alpha > 0$ for quadratic loss),
 and the final
