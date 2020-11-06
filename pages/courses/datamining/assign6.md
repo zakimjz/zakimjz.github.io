@@ -99,7 +99,7 @@ results for the combination of LOSS, C, KERNEL and KERNEL_PARAM values
 that yields the best accuracy.
 
 You can compare your results with those obtained from 
-[sklearn SVM implementation] (https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
+[sklearn SVM implementation](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
 
 * Submit a PDF file named Assign6.pdf that should include your answers
  to each of the questions (just cut and paste the output from python).
