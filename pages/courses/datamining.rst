@@ -111,7 +111,8 @@ change, but the dates for the Exams are fixed.
 |  Nov 03 |  Support Vector Machines II (Chapter 21)           | `PDF16 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16-11-03-20.pdf>`_, |
 |         |                                                    | `Video16 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-3-20/11-3-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Nov 06 |  Probabilisitic Classification (Chapter 18)        |                                                                                  |
+|  Nov 06 |  Probabilisitic Classification (Chapter 18)        | `PDF17 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17-11-06-20.pdf>`_, |
+|         |                                                    | `Video17 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-6-20/11-6-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Nov 10 |  Classification Assessment (Chapter 22)            |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
