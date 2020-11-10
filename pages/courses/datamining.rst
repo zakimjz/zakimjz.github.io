@@ -114,7 +114,8 @@ change, but the dates for the Exams are fixed.
 |  Nov 06 |  Probabilisitic Classification (Chapter 18)        | `PDF17 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17-11-06-20.pdf>`_, |
 |         |                                                    | `Video17 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-6-20/11-6-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Nov 10 |  Classification Assessment (Chapter 22)            |                                                                                  |
+|  Nov 10 |  Classification Assessment (Chapter 22)            | `PDF18 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18-11-10-20.pdf>`_, |
+|         |                                                    | `Video18 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-10-20/11-10-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Nov 13 |  **EXAM III**                                      |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
