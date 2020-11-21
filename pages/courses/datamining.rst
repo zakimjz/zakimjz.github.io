@@ -47,6 +47,8 @@ Assignments
 
 **Assign6**: :doc:`dm_assign6`   (Due Date: Nov 9th)
 
+**Assign7**: :doc:`dm_assign7`   (Due Date: Nov 30th)
+
 
 Class Schedule: Lectures 
 -------------------------
@@ -122,7 +124,8 @@ change, but the dates for the Exams are fixed.
 |  Nov 17 |  Classification Assessment II (Chapter 22)         | `PDF19 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19-11-17-20.pdf>`_, |
 |         |                                                    | `Video19 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-17-20/11-17-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Nov 20 |  Representative-based Clustering I (Chapter 13)    |                                                                                  |
+|  Nov 20 |  Representative-based Clustering (Chapter 13)      | `PDF20 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-11-20-20.pdf>`_, |
+|         |                                                    | `Video20 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-20-20/11-20-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Nov 24 |  Density-based Clustering (Chapter 15)             |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
