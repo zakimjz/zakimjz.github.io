@@ -23,26 +23,30 @@ $|c_5| = 3003$ and $|c_6| = 2208$.</p>
 <h1>CSCI4390/6390: Expectation Maximization Clustering</h1>
 <p>Implement the Expectation-Maximization (EM) algorithm for clustering
 (see Algorithm 13.3 in Chapter 13). Use the 'Appliances' attribute as
-the true cluster label, and use it for the purity-based clustering
+the true cluster label as described above, and use it for the purity-based clustering
 evaluation (see below). Run with $k=6$ clusters. </p>
-<p>Your program output should consist of the following information:
- - The final mean for each cluster
- - The final covariance matrix for each cluster
- - Number of iterations the EM algorithm took to converge.
- - Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.
- - The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
+<p>Your program output should consist of the following information:</p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Number of iterations the EM algorithm took to converge.</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
    denotes the set of points assigned to cluster $i$ by the EM algorithm, and let $T_i$ 
    denote the true cluster id. Purity score is defined as:
    $$\frac{1}{n} \sum_{i=1}^k max_{j=1}^K {c_i \cap T_j} $$
    where $K$ is the true number of clusters, and $k$ is the input number
-   of clusters to EM. See Eq(17.1) on pg 427 for more details on the purity measure.</p>
+   of clusters to EM. See Eq(17.1) on pg 427 for more details on the purity measure.</li>
+</ul>
 <hr>
 <h1>CSCI6390: Kernel K-Means</h1>
 <p>Also implement the Kernel K-Means algorithm 13.2 on pg 341. Use only
 the Gaussian kernel, but you'll have to choose the value of spread. </p>
-<p>Your code must output the following information:
-- Size of each cluster
-- The Purity for your clustering</p>
+<p>Your code must output the following information:</p>
+<ul>
+<li>Size of each cluster</li>
+<li>The Purity for your clustering</li>
+</ul>
 <hr>
 <h2>What to submit</h2>
 <ul>

@@ -42,15 +42,16 @@ $|c_5| = 3003$ and $|c_6| = 2208$.
 
 Implement the Expectation-Maximization (EM) algorithm for clustering
 (see Algorithm 13.3 in Chapter 13). Use the 'Appliances' attribute as
-the true cluster label, and use it for the purity-based clustering
+the true cluster label as described above, and use it for the purity-based clustering
 evaluation (see below). Run with $k=6$ clusters. 
 
 Your program output should consist of the following information:
- - The final mean for each cluster
- - The final covariance matrix for each cluster
- - Number of iterations the EM algorithm took to converge.
- - Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.
- - The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
+
+* The final mean for each cluster
+* The final covariance matrix for each cluster
+* Number of iterations the EM algorithm took to converge.
+* Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.
+* The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
    denotes the set of points assigned to cluster $i$ by the EM algorithm, and let $T_i$ 
    denote the true cluster id. Purity score is defined as:
    $$\frac{1}{n} \sum_{i=1}^k max_{j=1}^K \{c_i \cap T_j\} $$
@@ -65,8 +66,9 @@ Also implement the Kernel K-Means algorithm 13.2 on pg 341. Use only
 the Gaussian kernel, but you'll have to choose the value of spread. 
 
 Your code must output the following information:
-- Size of each cluster
-- The Purity for your clustering
+
+* Size of each cluster
+* The Purity for your clustering
 
 ---
 
