@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1605918956.0766127
+_modified_time = 1605919029.8938103
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/tags.tmpl'
 _template_uri = 'tags.tmpl'
@@ -30,13 +30,13 @@ def render_body(context,**pageargs):
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         cat_hierarchy = context.get('cat_hierarchy', UNDEFINED)
         title = context.get('title', UNDEFINED)
-        cat_items = context.get('cat_items', UNDEFINED)
-        items = context.get('items', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
         len = context.get('len', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         hidden_tags = context.get('hidden_tags', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
+        items = context.get('items', UNDEFINED)
+        cat_items = context.get('cat_items', UNDEFINED)
         range = context.get('range', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
@@ -55,13 +55,13 @@ def render_content(context,**pageargs):
     try:
         cat_hierarchy = context.get('cat_hierarchy', UNDEFINED)
         title = context.get('title', UNDEFINED)
-        cat_items = context.get('cat_items', UNDEFINED)
-        items = context.get('items', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
         len = context.get('len', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         hidden_tags = context.get('hidden_tags', UNDEFINED)
         def content():
             return render_content(context)
+        items = context.get('items', UNDEFINED)
+        cat_items = context.get('cat_items', UNDEFINED)
         range = context.get('range', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<h1>')

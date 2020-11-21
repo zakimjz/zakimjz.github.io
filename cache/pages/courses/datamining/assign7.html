@@ -34,7 +34,7 @@ evaluation (see below). Run with $k=6$ clusters. </p>
 <li>The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
    denotes the set of points assigned to cluster $i$ by the EM algorithm, and let $T_i$ 
    denote the true cluster id. Purity score is defined as:
-   $$\frac{1}{n} \sum_{i=1}^k max_{j=1}^K {c_i \cap T_j} $$
+   $$\frac{1}{n} \sum_{i=1}^k max_{j=1}^K \{c_i \cap T_j\} $$
    where $K$ is the true number of clusters, and $k$ is the input number
    of clusters to EM. See Eq(17.1) on pg 427 for more details on the purity measure.</li>
 </ul>
