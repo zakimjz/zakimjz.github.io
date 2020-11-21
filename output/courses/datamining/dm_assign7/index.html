@@ -99,11 +99,23 @@ $|c_5| = 3003$ and $|c_6| = 2208$.</p>
 (see Algorithm 13.3 in Chapter 13). Use the 'Appliances' attribute as
 the true cluster label as described above, and use it for the purity-based clustering
 evaluation (see below). Run with $k=6$ clusters. </p>
+<p>For initializing the clusters, you can either choose random means as
+described in the algorithm. Or you can shuffle the data, and pick the
+first $k$ points as the mean. This has the advantage that the means are
+always points in the dataset.</p>
+<p>For practical purposes, you may want to use the <a href="https://blog.feedly.com/tricks-of-the-trade-logsumexp/">logexpsum trick</a> 
+for expectation step, where you compute the log probabilities so that
+you can deal with very small probability values, otherwise, you may find
+that weights of a point for the clusters are zero.</p>
+<p>As another practical point, you can get an error when inverting the covariance
+matrix, so you should add a small ridge value $\lambda$ value along the
+diagonal entries to make the matrix invertible. This can be considered
+as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
+\lambda \mathbf{I}$$.</p>
 <p>Your program output should consist of the following information:</p>
 <ul>
 <li>The final mean for each cluster</li>
 <li>The final covariance matrix for each cluster</li>
-<li>Number of iterations the EM algorithm took to converge.</li>
 <li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
 <li>The 'purity score' for your clustering, computed as follows: Assume that $c_i$ 
    denotes the set of points assigned to cluster $i$ by the EM algorithm, and let $T_i$ 
@@ -126,9 +138,12 @@ the Gaussian kernel, but you'll have to choose the value of spread. </p>
 <ul>
 <li>For EM, write a script named as <strong>Assign7.py</strong>, which will be run as </li>
 </ul>
-<p>Assign6.py FILENAME k EPS</p>
+<p>Assign6.py FILENAME k EPS RIDGE MAXITER</p>
 <p>FILENAME is the datafile name, $k$ is the number of clusters to find,
- and EPS is the convergence threshold. Note that you should report the
+ and EPS is the convergence threshold, RIDGE the $\lambda$ value for
+ the ridge, and MAXITER is the maximum number of iterations to run (we
+ need this since it may take a long time to converge for low EPS).
+ Note that you should report the
  output for $k=6$, but your code should run for any input value of $k$.
  And you must output the purity for the given value of $k$ (which may
  not correspond to the true value $K=6$).</p>
