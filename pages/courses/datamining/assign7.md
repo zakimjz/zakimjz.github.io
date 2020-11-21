@@ -98,8 +98,8 @@ one option is for you to repeatedly compute the required kernel values.
 Alternatively, you can show results on at least 5000 points. 
 However, you have to select these points using **stratified sampling**,
 so that you choose a proportional number of points from each cluster
-label. You can use StratifiedShuffleSplit from scikit-learn for
-stratified sampling if you wish (https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html).
+label. You can use [StratifiedShuffleSplit](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html) from scikit-learn for
+stratified sampling if you wish.
 
 * Submit a PDF file named Assign7.pdf that should include your output 
 * (just cut and paste the output from python).
