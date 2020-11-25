@@ -127,7 +127,8 @@ change, but the dates for the Exams are fixed.
 |  Nov 20 |  Representative-based Clustering (Chapter 13)      | `PDF20 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-11-20-20.pdf>`_, |
 |         |                                                    | `Video20 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-20-20/11-20-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Nov 24 |  Density-based Clustering (Chapter 15)             |                                                                                  |
+|  Nov 24 |  Density-based Clustering (Chapter 15)             | `PDF21 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-11-24-20.pdf>`_, |
+|         |                                                    | `Video21 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/11-24-20/11-24-20.html>`_  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Nov 27 |  **NO CLASS** (Thanksgiving)                       |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
