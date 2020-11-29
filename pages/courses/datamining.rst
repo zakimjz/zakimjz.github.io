@@ -47,7 +47,7 @@ Assignments
 
 **Assign6**: :doc:`dm_assign6`   (Due Date: Nov 9th)
 
-**Assign7**: :doc:`dm_assign7`   (Due Date: Nov 30th)
+**Assign7**: :doc:`dm_assign7`   (Due Date: Dec 2nd)
 
 
 Class Schedule: Lectures 

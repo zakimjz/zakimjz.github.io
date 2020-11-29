@@ -12,7 +12,7 @@
 
 # Assign6: Clustering: EM and Kernel KMeans
 
-**Due Date**: Nov 30, before midnight (11:59:59PM, Alofi Time; GMT-11)
+**Due Date**: Dec 2, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
 
 You will use the 
