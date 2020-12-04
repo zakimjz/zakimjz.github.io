@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1606862169.0810235
+_modified_time = 1607123474.670352
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/listing.tmpl'
 _template_uri = 'listing.tmpl'
@@ -30,19 +30,19 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        folders = context.get('folders', UNDEFINED)
-        code = context.get('code', UNDEFINED)
-        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         source_link = context.get('source_link', UNDEFINED)
+        code = context.get('code', UNDEFINED)
         title = context.get('title', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
         ui = _mako_get_namespace(context, 'ui')
+        def content():
+            return render_content(context._locals(__M_locals))
+        crumbs = context.get('crumbs', UNDEFINED)
+        files = context.get('files', UNDEFINED)
+        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context._locals(__M_locals))
-        files = context.get('files', UNDEFINED)
-        def content():
-            return render_content(context._locals(__M_locals))
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -64,16 +64,16 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        folders = context.get('folders', UNDEFINED)
-        code = context.get('code', UNDEFINED)
         source_link = context.get('source_link', UNDEFINED)
+        code = context.get('code', UNDEFINED)
         title = context.get('title', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
         ui = _mako_get_namespace(context, 'ui')
-        messages = context.get('messages', UNDEFINED)
-        files = context.get('files', UNDEFINED)
         def content():
             return render_content(context)
+        crumbs = context.get('crumbs', UNDEFINED)
+        files = context.get('files', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer(str(ui.breadcrumbs(crumbs)))
@@ -114,11 +114,11 @@ def render_content(context,**pageargs):
 def render_sourcelink(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        source_link = context.get('source_link', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context)
-        ui = _mako_get_namespace(context, 'ui')
         show_sourcelink = context.get('show_sourcelink', UNDEFINED)
+        source_link = context.get('source_link', UNDEFINED)
+        ui = _mako_get_namespace(context, 'ui')
         __M_writer = context.writer()
         __M_writer('\n')
         if source_link and show_sourcelink:

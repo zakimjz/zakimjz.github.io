@@ -135,7 +135,8 @@ change, but the dates for the Exams are fixed.
 |  Dec 01 |  Spectral and Graph Clustering I (Chapter 16)      | `PDF22 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22-12-1-20.pdf>`_,  |
 |         |                                                    | `Video22 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/12-1-20/12-1-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Dec 04 |  Spectral and Graph Clustering II (Chapter 16)     |                                                                                  |
+|  Dec 04 |  Clustering Validation (Chapter 17)                | `PDF23 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23-12-4-20.pdf>`_,  |
+|         |                                                    | `Video23 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/12-4-20/12-4-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Dec 08 |  Itemset Mining (Chapter 8)                        |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
