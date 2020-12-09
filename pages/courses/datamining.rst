@@ -138,7 +138,8 @@ change, but the dates for the Exams are fixed.
 |  Dec 04 |  Clustering Validation (Chapter 17)                | `PDF23 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23-12-4-20.pdf>`_,  |
 |         |                                                    | `Video23 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/12-4-20/12-4-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
-|  Dec 08 |  Itemset Mining (Chapter 8)                        |                                                                                  |
+|  Dec 08 |  Itemset Mining and Summaries (Chapter 8/9)        | `PDF24 <http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture24-12-8-20.pdf>`_,  |
+|         |                                                    | `Video24 <http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/12-8-20/12-8-20.html>`_    |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
 |  Dec 11 |  **EXAM IV**                                       |                                                                                  |
 +---------+----------------------------------------------------+----------------------------------------------------------------------------------+
