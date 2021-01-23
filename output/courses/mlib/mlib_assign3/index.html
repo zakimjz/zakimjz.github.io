@@ -29,7 +29,8 @@ applying attention over the input protein sequence to p">
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
         <a class="navbar-brand" href="../../../">
@@ -49,7 +50,7 @@ navbar-dark bg-dark
 <a href="https://github.com/zakimjz" class="nav-link">Github</a>
                 </li>
 <li class="nav-item">
-<a href="../../datamining" class="nav-link">DataMining</a>
+<a href="../../algorithms" class="nav-link">Algorithms</a>
 
                 
             </li>
@@ -138,7 +139,7 @@ delimiters: [
                     }
                 );
             </script></article><!--End of body content--><footer id="footer">
-            Contents © 2020         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
             
         </footer>
@@ -149,9 +150,7 @@ delimiters: [
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

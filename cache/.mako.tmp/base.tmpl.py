@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1607472162.395157
+_modified_time = 1611436315.5026467
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/base.tmpl'
 _template_uri = 'base.tmpl'
@@ -33,40 +33,40 @@ def render_body(context,**pageargs):
         _import_ns = {}
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'notes')._populate(_import_ns, ['*'])
-        def belowtitle():
-            return render_belowtitle(context._locals(__M_locals))
-        def extra_footer():
-            return render_extra_footer(context._locals(__M_locals))
-        def extra_header():
-            return render_extra_header(context._locals(__M_locals))
-        def extra_js():
-            return render_extra_js(context._locals(__M_locals))
-        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
-        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
-        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
-        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
-        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
-        def sourcelink():
-            return render_sourcelink(context._locals(__M_locals))
-        luxon_date_format = _import_ns.get('luxon_date_format', context.get('luxon_date_format', UNDEFINED))
-        theme_config = _import_ns.get('theme_config', context.get('theme_config', UNDEFINED))
-        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        navigation_alt_links = _import_ns.get('navigation_alt_links', context.get('navigation_alt_links', UNDEFINED))
-        content_footer = _import_ns.get('content_footer', context.get('content_footer', UNDEFINED))
-        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
-        _link = _import_ns.get('_link', context.get('_link', UNDEFINED))
-        navigation_links = _import_ns.get('navigation_links', context.get('navigation_links', UNDEFINED))
-        blog_title = _import_ns.get('blog_title', context.get('blog_title', UNDEFINED))
-        show_blog_title = _import_ns.get('show_blog_title', context.get('show_blog_title', UNDEFINED))
         search_form = _import_ns.get('search_form', context.get('search_form', UNDEFINED))
         len = _import_ns.get('len', context.get('len', UNDEFINED))
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        theme_config = _import_ns.get('theme_config', context.get('theme_config', UNDEFINED))
+        navigation_alt_links = _import_ns.get('navigation_alt_links', context.get('navigation_alt_links', UNDEFINED))
+        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
+        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
+        def belowtitle():
+            return render_belowtitle(context._locals(__M_locals))
+        content_footer = _import_ns.get('content_footer', context.get('content_footer', UNDEFINED))
+        date_fanciness = _import_ns.get('date_fanciness', context.get('date_fanciness', UNDEFINED))
+        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
+        base = _mako_get_namespace(context, 'base')
+        def extra_footer():
+            return render_extra_footer(context._locals(__M_locals))
+        navigation_links = _import_ns.get('navigation_links', context.get('navigation_links', UNDEFINED))
+        def sourcelink():
+            return render_sourcelink(context._locals(__M_locals))
         luxon_locales = _import_ns.get('luxon_locales', context.get('luxon_locales', UNDEFINED))
+        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        messages = _import_ns.get('messages', context.get('messages', UNDEFINED))
+        _link = _import_ns.get('_link', context.get('_link', UNDEFINED))
+        blog_title = _import_ns.get('blog_title', context.get('blog_title', UNDEFINED))
+        def extra_js():
+            return render_extra_js(context._locals(__M_locals))
         body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
+        luxon_date_format = _import_ns.get('luxon_date_format', context.get('luxon_date_format', UNDEFINED))
         def content():
             return render_content(context._locals(__M_locals))
-        base = _mako_get_namespace(context, 'base')
+        show_blog_title = _import_ns.get('show_blog_title', context.get('show_blog_title', UNDEFINED))
+        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
+        def extra_header():
+            return render_extra_header(context._locals(__M_locals))
         show_sourcelink = _import_ns.get('show_sourcelink', context.get('show_sourcelink', UNDEFINED))
         __M_writer = context.writer()
         __M_writer('\n')
@@ -85,9 +85,16 @@ def render_body(context,**pageargs):
         __M_writer(str(messages("Skip to main content")))
         __M_writer('</a>\n\n<!-- Menubar -->\n\n<nav class="navbar navbar-expand-md static-top mb-4\n')
         if theme_config.get('navbar_light'):
-            __M_writer('navbar-light bg-light\n')
+            __M_writer('navbar-light\n')
         else:
-            __M_writer('navbar-dark bg-dark\n')
+            __M_writer('navbar-dark\n')
+        if theme_config.get('navbar_custom_bg'):
+            __M_writer(str(theme_config['navbar_custom_bg']))
+            __M_writer('\n')
+        elif theme_config.get('navbar_light'):
+            __M_writer('bg-light\n')
+        else:
+            __M_writer('bg-dark\n')
         __M_writer('">\n    <div class="container"><!-- This keeps the margins nice -->\n        <a class="navbar-brand" href="')
         __M_writer(str(_link("root", None, lang)))
         __M_writer('">\n')
@@ -165,7 +172,7 @@ def render_body(context,**pageargs):
             context['self'].extra_js(**pageargs)
         
 
-        __M_writer("\n    <script>\n    baguetteBox.run('div#content', {\n        ignoreClass: 'islink',\n        captions: function(element) {\n            return element.getElementsByTagName('img')[0].alt;\n    }});\n    </script>\n")
+        __M_writer("\n    <script>\n    baguetteBox.run('div#content', {\n        ignoreClass: 'islink',\n        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});\n    </script>\n")
         __M_writer(str(body_end))
         __M_writer('\n')
         __M_writer(str(template_hooks['body_end']()))
@@ -196,11 +203,11 @@ def render_belowtitle(context,**pageargs):
         _import_ns = {}
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'notes')._populate(_import_ns, ['*'])
-        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
-        len = _import_ns.get('len', context.get('len', UNDEFINED))
         def belowtitle():
             return render_belowtitle(context)
         base = _mako_get_namespace(context, 'base')
+        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
+        len = _import_ns.get('len', context.get('len', UNDEFINED))
         __M_writer = context.writer()
         __M_writer('\n')
         if len(translations) > 1:
@@ -285,6 +292,6 @@ def render_extra_js(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 0, "72": 2, "73": 3, "74": 4, "75": 4, "76": 5, "77": 5, "82": 8, "83": 9, "84": 9, "85": 12, "86": 12, "87": 17, "88": 18, "89": 19, "90": 20, "91": 22, "92": 24, "93": 24, "94": 25, "95": 26, "96": 26, "97": 26, "98": 26, "99": 26, "100": 28, "101": 29, "102": 30, "103": 30, "104": 30, "105": 32, "106": 39, "107": 39, "108": 40, "109": 40, "110": 42, "111": 43, "112": 43, "113": 43, "114": 45, "115": 47, "116": 47, "121": 52, "122": 53, "123": 54, "128": 54, "129": 56, "130": 56, "131": 56, "132": 67, "133": 67, "138": 68, "143": 69, "144": 73, "145": 73, "146": 74, "147": 74, "152": 75, "153": 80, "154": 80, "155": 81, "156": 82, "157": 84, "158": 84, "159": 85, "160": 85, "161": 85, "162": 85, "163": 89, "168": 89, "169": 97, "170": 97, "171": 98, "172": 98, "178": 6, "187": 6, "193": 48, "205": 48, "206": 49, "207": 50, "208": 50, "209": 50, "210": 52, "216": 54, "230": 68, "244": 69, "258": 75, "272": 89, "286": 272}}
+{"filename": "/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 0, "72": 2, "73": 3, "74": 4, "75": 4, "76": 5, "77": 5, "82": 8, "83": 9, "84": 9, "85": 12, "86": 12, "87": 17, "88": 18, "89": 19, "90": 20, "91": 22, "92": 23, "93": 23, "94": 24, "95": 25, "96": 26, "97": 27, "98": 29, "99": 31, "100": 31, "101": 32, "102": 33, "103": 33, "104": 33, "105": 33, "106": 33, "107": 35, "108": 36, "109": 37, "110": 37, "111": 37, "112": 39, "113": 46, "114": 46, "115": 47, "116": 47, "117": 49, "118": 50, "119": 50, "120": 50, "121": 52, "122": 54, "123": 54, "128": 59, "129": 60, "130": 61, "135": 61, "136": 63, "137": 63, "138": 63, "139": 74, "140": 74, "145": 75, "150": 76, "151": 80, "152": 80, "153": 81, "154": 81, "159": 82, "160": 87, "161": 87, "162": 88, "163": 89, "164": 91, "165": 91, "166": 92, "167": 92, "168": 92, "169": 92, "170": 96, "175": 96, "176": 102, "177": 102, "178": 103, "179": 103, "185": 6, "194": 6, "200": 55, "212": 55, "213": 56, "214": 57, "215": 57, "216": 57, "217": 59, "223": 61, "237": 75, "251": 76, "265": 82, "279": 96, "293": 279}}
 __M_END_METADATA
 """

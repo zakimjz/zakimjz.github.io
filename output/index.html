@@ -31,7 +31,8 @@ Mohammed J. Zaki is a Professor of Computer Science ">
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
         <a class="navbar-brand" href=".">
@@ -51,7 +52,7 @@ navbar-dark bg-dark
 <a href="https://github.com/zakimjz" class="nav-link">Github</a>
                 </li>
 <li class="nav-item">
-<a href="courses/datamining" class="nav-link">DataMining</a>
+<a href="courses/algorithms" class="nav-link">Algorithms</a>
 
                 
             </li>
@@ -109,6 +110,7 @@ research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
 and Nvidia.</p>
 <div class="section" id="courses">
 <h2>Courses</h2>
+<p>Spring 2021: <a href="courses/algorithms/">CSCI2300 Introduction to Algorithms</a></p>
 <p>Fall 2020: <a class="reference external" href="courses/datamining/">Data Mining</a></p>
 <p>Spring 2020: <a class="reference external" href="courses/mlib/">Machine Learning in Bioinformatics</a></p>
 </div>
@@ -128,7 +130,7 @@ where applicable) at <a class="reference external" href="publications/">Publicat
     
 
 </article><!--End of body content--><footer id="footer">
-            Contents © 2020         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
             
         </footer>
@@ -139,9 +141,7 @@ where applicable) at <a class="reference external" href="publications/">Publicat
         <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
