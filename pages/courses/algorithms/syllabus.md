@@ -22,7 +22,10 @@ choose which technique should be used for which problem.
 
 ## Learning Objectives
 
-The goal of this course is to provide a strong foundation in algorithms and data structures in preparation for jobs in industry or for more advanced courses. Algorithms are the basic language of computer science. After taking this course, you, the student, should be able to:
+The goal of this course is to provide a strong foundation in algorithms
+in preparation for jobs in industry or for more
+advanced courses. Algorithms are the basic language of computer science.
+After taking this course, you, the student, should be able to:
 
 - Understand the correctness of, and analyze the running times of, different algorithms.
 
@@ -76,7 +79,7 @@ courses.
 
 ## Website and Announcements
 
-We will make extensive use of Piazza and the course website. You are
+We will make extensive use of the course website and Campuswire. You are
 responsible for checking the course website regularly for announcements
 and course materials, as well as your e-mail for communications related
 to the class.
@@ -98,15 +101,16 @@ Your grade will be determined using two components: *ExamGrade* and
 - **Exams**: There will be two midterm exams in class (see the class
  schedule for the exact dates), and a comprehensive final exam during
  finals week. Your *ExamGrade* is made up to the two midterms (30% each)
- and the final (40%), for a total of 100%.
+ and the final (40%), for a total of 100%. Exams will be "live"
+ during the 6:45-8:55PM slots on Monday and during the finals week.
 
  All exams are open-textbook and open-notes. You are
- **not** permitted to search online, collaborate or copy from others,
- which are all breaches of the academic integrity. 
+ **not** permitted to search online, or collaborate or copy from others,
+ which are all breaches of academic integrity. 
 
  We will not provide make-up exams unless we receive an [excused
  absence](https://success.studentlife.rpi.edu/current-students/academic-and-personal-goals/requesting-excused-absence).
- Any students with special circumstances must notify the instructor
+ Any students with special accommodations must notify the instructor
  during the first two weeks of class with official approval.
 
 Your *AssignmentGrade* is made up of the following categories: 
@@ -114,7 +118,7 @@ Your *AssignmentGrade* is made up of the following categories:
 - **Labs and HW**: Lab assignments and HWs will be given throughout
   the semester, typically every 1-2 weeks. These can include an
   implementation component and also written questions.  HWs will be due
-  on Thursdays, just before midnight. Labs/HW make up 75% of your
+  on Thursdays, just before midnight. Labs/HW make up 80% of your
   *AssignmentGrade*.
 
 
@@ -126,29 +130,33 @@ Your *AssignmentGrade* is made up of the following categories:
  those office hours, and also any other questions they may have about
  the course material. You must start your HW/labs before wed, since this
  is your chance to clarify any doubts in a live session. Recitations
- make up 25% of your *AssignmentGrade*.
+ make up 20% of your *AssignmentGrade*.
+
+- **Lecture Viewing and Quizzes**: We may pilot the ability to track
+    lecture viewing and inserted post-class quizzes. In that case, 20%
+    of the assignment grade may be be assigned to this component.
 
 Your final grade will be the **minimum** of your exam grade and
 assignment grade. Students are encouraged to participate in the class
 via attendance, discussions, and engagement on the Campuswire forum.
-Bonus engagement points will be awarded to the students in proportion of
+Bonus engagement points will be awarded to the students in proportion to
 their participation. 
 
 ## Homeworks
 
-All assignments and exams will be submitted online via **Submitty**:
-https://submitty.cs.rpi.edu/courses/s21/csci2300sec1to4, and all class related
-discussions will be conducted via
-[Campuswire](https://campuswire.com/c/G7EB4B888/).
-Class annoncements will be posted on Campuswire.
+All assignments and exams will be submitted online via
+[Submitty](https://submitty.cs.rpi.edu/courses/s21/csci2300sec1to4), and
+all class related discussions will be conducted via
+[Campuswire](https://campuswire.com/c/G7EB4B888/). Class announcements
+will be posted on Campuswire.
 
 **Late Submissions**: Most assignments will be due just before midnight
-on the due date. Students get an allowance of three late days for the
-howeworks and assignments. Any part of a late day counts as one day.
-This late-day policy is intended to cover unanticipated things like
-minor sickness, exams in other classes, etc., so that you do not have to
-ask for extensions. No late submissions will be accepted if your budget
-is exhausted.
+on the due date. Students get a total allowance of three late days for
+the howeworks and assignments for the whole semester. Any part of a late
+day counts as one day. This late-day policy is intended to cover
+unanticipated things like minor sickness, exams in other classes, etc.,
+so that you do not have to ask for extensions. No late submissions will
+be accepted if your budget is exhausted.
 
 
 

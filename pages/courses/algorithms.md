@@ -34,8 +34,8 @@ will be using webex link below.
 
 TA and Mentor office hours are by sections below:
 
-- **Section01, Wed 10:10-12:00**: *TA:* Jason Liang <liang4@rpi.edu>, *Mentors:* Justin Choi
-    <choij4@rpi.edu>, Mitesh Kumar <kumarm4@rpi.edu>, Andrew Nagawiecki
+- **Section01, Wed 10:10-12:00**: *TA:* Jason Liang <liangz4@rpi.edu>, *Mentors:* Justin Choi
+    <choij9@rpi.edu>, Mitesh Kumar <kumarm4@rpi.edu>, Andrew Nagawiecki
     <nagawa@rpi.edu>
 
 - **Section02, Wed 2:30-4:20**: *TA:* Muhammad Saad Atique <atiqum@rpi.edu>, *Mentors:* Prashant Acharya
