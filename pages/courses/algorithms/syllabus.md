@@ -118,7 +118,7 @@ Your *AssignmentGrade* is made up of the following categories:
 - **Labs and HW**: Lab assignments and HWs will be given throughout
   the semester, typically every 1-2 weeks. These can include an
   implementation component and also written questions.  HWs will be due
-  on Thursdays, just before midnight. Labs/HW make up 80% of your
+  on Thursdays, just before midnight. Labs/HW make up 60% of your
   *AssignmentGrade*.
 
 
@@ -132,15 +132,20 @@ Your *AssignmentGrade* is made up of the following categories:
  is your chance to clarify any doubts in a live session. Recitations
  make up 20% of your *AssignmentGrade*.
 
-- **Lecture Viewing and Quizzes**: We may pilot the ability to track
-    lecture viewing and inserted post-class quizzes. In that case, 20%
-    of the assignment grade may be be assigned to this component.
+- **Lecture Viewing and Quizzes**: Lectures will be posted with
+    post-class quizzes. You can attempt only once, since the correct
+    answers are already indicated. You **are not allowed** to share the correct answers
+    with other students. The post-class quizzes make up 20% of your *AssignmentGrade*.
 
 Your final grade will be the **minimum** of your exam grade and
 assignment grade. Students are encouraged to participate in the class
 via attendance, discussions, and engagement on the Campuswire forum.
 Bonus engagement points will be awarded to the students in proportion to
-their participation. 
+their participation. Also, participation points will be based on class
+attendance for those who attend the live class, or percentage of (each)
+lecture viewed online for those unable to attend the live classes (webex
+records class attendance and time attended, and the videos record
+percentage watched, for accurate tracking). 
 
 ## Homeworks
 
