@@ -1,5 +1,5 @@
 <!--
-.. title: CSCI2300 HW1
+.. title: HW1
 .. slug: algo_hw1
 .. date: 2021-01-28 21:20:01 UTC-04:00
 .. tags: 
@@ -21,7 +21,7 @@ implementation-based lab.
 
 Answer the following questions. DPV refers to the algorithms book.
 
-Q1. Consider the following pseudo-code:
+Q1. Consider the following code:
 ```python
    def star(n):
       print('**')
