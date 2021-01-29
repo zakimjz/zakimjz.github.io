@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI2300 HW1 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw1/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI2300 HW1">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw1/">
+<meta property="og:description" content="Due Date: Feb 4, before midnight (11:59:59PM)
+This assignment comprises both written questions and
+implementation-based lab.
+
+HW1
+Answer the following questions. DPV refers to the algorithms book.
+Q1.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-01-28T21:20:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../algorithms" class="nav-link">Algorithms</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI2300 HW1</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>
+<strong>Due Date</strong>: Feb 4, before midnight (11:59:59PM)</h2>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h2>HW1</h2>
+<p>Answer the following questions. DPV refers to the algorithms book.</p>
+<p>Q1. Consider the following pseudo-code:</p>
+<pre class="code literal-block">   <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">'**'</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+         <span class="k">return</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+         <span class="n">star</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre>
+
+<p>Let $T(n)$ be the number of times the function above prints a star when
+called with input $n \ge 0$. Give an exact solution for $T(n)$ in terms
+of $n$ only.</p>
+<p>Q2. Give solutions for DPV Q0.1, parts g, i, l, p</p>
+<p>Q3. Solve DPV Q0.3 a, b, c</p>
+<h2>Lab1: Fibonacci Series</h2>
+<p>You will compare the two algorithms to generate the $n$-th Fibonacci
+number. </p>
+<p>The first algorithm one should implement the recursive algorithm
+<strong>fib1</strong> on Page 3 of the textbook, and the second one should implement
+the iterative algorithm <strong>fib2</strong> on Page 4.</p>
+<p>You should measure the time it takes for each of these versions (use for
+example, the time module in python) to calculate the $n$-th Fibonacci
+number for the following values of $n$: 1, 5, 10, 15, 20, 25, 30, 35, 40,
+41, 42, 43. Create a table of all your results and plot (using for example,
+the matplotlib library) the time taken to compute the Fibonacci numbers
+using fib1 and fib2, with $n$ on the $x$-axis and time on the $y$-axis.</p>
+<p>Next, verify that fib2 is indeed quadratic time. Run fib2 and record the
+time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$,
+$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes more than
+excessive time on your machine to compute the large values, then drop the last few values
+above.</p>
+<p>For this part you can appreciate the fact that Python has native arbitrary precision integer arithmetic. Otherwise, the values of $F(n)$ would easily exceed the 64 bit word size and cause overflow.</p>
+<hr>
+<h3>Optional</h3>
+<p>Optionally, implement <strong>fib3</strong>, the repeated squaring matrix
+power based algorithm we discussed in class. Compare its time versus
+fib2.</p>
+<hr>
+<h3>Grading</h3>
+<p>Use submitty to submit exactly one PDF and one .py script.</p>
+<p>The PDF file must contain your solutions to the HW, and all of the
+output from the python script.
+You can hand write your solutions to the HW, take pics and convert to
+PDF, or you can type up your answers.</p>
+<p>The .py script must be implemented in Python3. </p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+</div>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>

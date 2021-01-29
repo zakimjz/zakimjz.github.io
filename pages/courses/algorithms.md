@@ -56,40 +56,40 @@ Class Schedule: Lectures
 Tentative course schedule is given below. The topics are subject to
 change, but the dates for the Exams are fixed.
 
-| Date | Topic | Lectures, Videos, Assignments |
-| :--- | :----: | ---: |
-| Jan 25 | Prologue: Chap 0 | [Lecture1-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/lecture1-1-25-21.pdf), [Lecture1-Video](http://www.cs.rpi.edu/~zaki/CS2300/videos/lecture1-1-25-21/lecture1-1-25-21.html) (Complete Quiz by Feb 1, 11:59pm) |
-| Jan 28 | Prologue: Chap 0 | [Lecture2-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture2-1-28-21.pdf), [Lecture2-Video](http://www.cs.rpi.edu/~zaki/CS2300/videos/lecture2-1-28-21/lecture2-1-28-21.html) (Complete Quiz by Feb 3, 11:59pm)|
-| Feb 01 | Algorithms with numbers: Chap 1 | |
-| Feb 04 | Algorithms with numbers: Chap 1 | |
-| Feb 08 | Algorithms with numbers: Chap 1 | |
-| Feb 11 | Algorithms with numbers: Chap 1 | |
-| Feb 15 | **NO CLASS** (President's Day) | |
-| Feb 18 | Algorithms with numbers: Chap 1 | |
-| Feb 22 | Divide and conquer: Chap 2 | |
-| Feb 25 | Divide and conquer: Chap 2 | |
-| Mar 01 | Divide and conquer: Chap 2 | |
-| Mar 01 | **EXAM I (6:45-8:55PM)** | |
-| Mar 04 | Graph algorithms: Chap 3 | |
-| Mar 08 | Graph algorithms: Chap 3 | |
-| Mar 11 | Graph algorithms: Chap 4 | |
-| Mar 15 | Graph algorithms: Chap 4 | |
-| Mar 18 | Graph algorithms: Chap 4 | |
-| Mar 22 | Greedy algorithms: Chap 5 | |
-| Mar 25 | Greedy algorithms: Chap 5 | |
-| Mar 29 | Greedy algorithms: Chap 5 | |
-| Apr 01 | Dynamic programming: Chap 6 | |
-| Apr 05 | Dynamic programming: Chap 6 | |
-| Apr 05 | **EXAM II (6:45-8:55PM)** | |
-| Apr 08 | Dynamic programming: Chap 6 | |
-| Apr 12 | Network flows: Chap 7 | |
-| Apr 15 | Network flows: Chap 7 | |
-| Apr 19 | NP-Complete problems: Chap 8 | |
-| Apr 22 | NP-Complete problems: Chap 8 | |
-| Apr 26 | NP-Complete problems: Chap 8 | |
-| Apr 29 | Coping with intractability: Chap 9 | |
-| May 03 | Coping with intractability: Chap 9 | |
-| May 06-12 | **FINAL EXAM** (TBD) | |
+| Date | Topic | Assignments | Lectures, Videos |
+| :--- | :--- | :--- | :--- |
+| Jan 25 | Prologue: Chap 0 | | [Lecture1-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/lecture1-1-25-21.pdf), [Lecture1-Video](http://www.cs.rpi.edu/~zaki/CS2300/videos/lecture1-1-25-21/lecture1-1-25-21.html) (Complete Quiz by Feb 1, 11:59pm) | |
+| Jan 28 | Prologue: Chap 0 | | [Lecture2-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture2-1-28-21.pdf), [Lecture2-Video](http://www.cs.rpi.edu/~zaki/CS2300/videos/lecture2-1-28-21/lecture2-1-28-21.html) (Complete Quiz by Feb 3, 11:59pm)| |
+| Feb 01 | Algorithms with numbers: Chap 1 | | |
+| Feb 04 | Algorithms with numbers: Chap 1 | **HW1 Due:** {{% doc %}} algo_hw1 {{% /doc %}}  | |
+| Feb 08 | Algorithms with numbers: Chap 1 | | | 
+| Feb 11 | Algorithms with numbers: Chap 1 | | |
+| Feb 15 | **NO CLASS** (President's Day) | | |
+| Feb 18 | Algorithms with numbers: Chap 1 | | |
+| Feb 22 | Divide and conquer: Chap 2 | | |
+| Feb 25 | Divide and conquer: Chap 2 | | |
+| Mar 01 | Divide and conquer: Chap 2 | | |
+| Mar 01 | **EXAM I (6:45-8:55PM)** | | |
+| Mar 04 | Graph algorithms: Chap 3 | | |
+| Mar 08 | Graph algorithms: Chap 3 | | |
+| Mar 11 | Graph algorithms: Chap 4 | | |
+| Mar 15 | Graph algorithms: Chap 4 | | |
+| Mar 18 | Graph algorithms: Chap 4 | | |
+| Mar 22 | Greedy algorithms: Chap 5 | | |
+| Mar 25 | Greedy algorithms: Chap 5 | | |
+| Mar 29 | Greedy algorithms: Chap 5 | | |
+| Apr 01 | Dynamic programming: Chap 6 | | |
+| Apr 05 | Dynamic programming: Chap 6 | | |
+| Apr 05 | **EXAM II (6:45-8:55PM)** | | |
+| Apr 08 | Dynamic programming: Chap 6 | | |
+| Apr 12 | Network flows: Chap 7 | | |
+| Apr 15 | Network flows: Chap 7 | | |
+| Apr 19 | NP-Complete problems: Chap 8 | | |
+| Apr 22 | NP-Complete problems: Chap 8 | | |
+| Apr 26 | NP-Complete problems: Chap 8 | | |
+| Apr 29 | Coping with intractability: Chap 9 | | |
+| May 03 | Coping with intractability: Chap 9 | | |
+| May 06-12 | **FINAL EXAM** (TBD) | | |
 
 
 

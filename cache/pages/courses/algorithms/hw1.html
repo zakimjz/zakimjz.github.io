@@ -1,0 +1,58 @@
+<h1><strong>Due Date</strong>: Feb 4, before midnight (11:59:59PM)</h1>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h1>HW1</h1>
+<p>Answer the following questions. DPV refers to the algorithms book.</p>
+<p>Q1. Consider the following pseudo-code:</p>
+<pre class="code literal-block">   <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**&#39;</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+         <span class="k">return</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+         <span class="n">star</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre>
+
+<p>Let $T(n)$ be the number of times the function above prints a star when
+called with input $n \ge 0$. Give an exact solution for $T(n)$ in terms
+of $n$ only.</p>
+<p>Q2. Give solutions for DPV Q0.1, parts g, i, l, p</p>
+<p>Q3. Solve DPV Q0.3 a, b, c</p>
+<h1>Lab1: Fibonacci Series</h1>
+<p>You will compare the two algorithms to generate the $n$-th Fibonacci
+number. </p>
+<p>The first algorithm one should implement the recursive algorithm
+<strong>fib1</strong> on Page 3 of the textbook, and the second one should implement
+the iterative algorithm <strong>fib2</strong> on Page 4.</p>
+<p>You should measure the time it takes for each of these versions (use for
+example, the time module in python) to calculate the $n$-th Fibonacci
+number for the following values of $n$: 1, 5, 10, 15, 20, 25, 30, 35, 40,
+41, 42, 43. Create a table of all your results and plot (using for example,
+the matplotlib library) the time taken to compute the Fibonacci numbers
+using fib1 and fib2, with $n$ on the $x$-axis and time on the $y$-axis.</p>
+<p>Next, verify that fib2 is indeed quadratic time. Run fib2 and record the
+time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$,
+$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes more than
+excessive time on your machine to compute the large values, then drop the last few values
+above.</p>
+<p>For this part you can appreciate the fact that Python has native arbitrary precision integer arithmetic. Otherwise, the values of $F(n)$ would easily exceed the 64 bit word size and cause overflow.</p>
+<hr>
+<h2>Optional</h2>
+<p>Optionally, implement <strong>fib3</strong>, the repeated squaring matrix
+power based algorithm we discussed in class. Compare its time versus
+fib2.</p>
+<hr>
+<h2>Grading</h2>
+<p>Use submitty to submit exactly one PDF and one .py script.</p>
+<p>The PDF file must contain your solutions to the HW, and all of the
+output from the python script.
+You can hand write your solutions to the HW, take pics and convert to
+PDF, or you can type up your answers.</p>
+<p>The .py script must be implemented in Python3. </p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
