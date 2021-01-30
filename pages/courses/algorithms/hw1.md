@@ -48,22 +48,26 @@ number.
 
 The first algorithm one should implement the recursive algorithm
 **fib1** on Page 3 of the textbook, and the second one should implement
-the iterative algorithm **fib2** on Page 4.
+the iterative algorithm **fib2** on Page 4 (these are same as fib1 and
+fib2 in the lectures).
 
 You should measure the time it takes for each of these versions (use for
 example, the time module in python) to calculate the $n$-th Fibonacci
-number for the following values of $n$: 1, 5, 10, 15, 20, 25, 30, 35, 40,
-41, 42, 43. Create a table of all your results and plot (using for example,
-the matplotlib library) the time taken to compute the Fibonacci numbers
-using fib1 and fib2, with $n$ on the $x$-axis and time on the $y$-axis.
+number for the following values of $n$: 1, 5, 10, 15, 20, 25, 30, 35,
+40, 41, 42, 43. Create a table of all your results and plot (using for
+example, the matplotlib library) the time taken to compute the Fibonacci
+numbers using fib1 and fib2, with $n$ on the $x$-axis and time on the
+$y$-axis.
 
 Next, verify that fib2 is indeed quadratic time. Run fib2 and record the
-time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$,
-$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes
-excessive time on your machine to compute the large values, then drop the last few values
-above.
+time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$,
+$2^{16}$, $2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$.
+If it takes excessive time on your machine to compute the large values,
+then drop the last few values above.
 
-For this part you can appreciate the fact that Python has native arbitrary precision integer arithmetic. Otherwise, the values of $F(n)$ would easily exceed the 64 bit word size and cause overflow.
+For this part you can appreciate the fact that Python has native
+arbitrary precision integer arithmetic. Otherwise, the values of $F(n)$
+would easily exceed the 64 bit word size and cause overflow.
 
 --- 
 
