@@ -21,7 +21,8 @@ implementation-based lab.
 
 Answer the following questions. DPV refers to the algorithms book.
 
-Q1. Consider the following code:
+Q1. Consider the following code (note: 'range' goes from 0 to n-1
+inclusive):
 ```python
    def star(n):
       print('**')
@@ -58,7 +59,7 @@ using fib1 and fib2, with $n$ on the $x$-axis and time on the $y$-axis.
 
 Next, verify that fib2 is indeed quadratic time. Run fib2 and record the
 time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$,
-$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes more than
+$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes
 excessive time on your machine to compute the large values, then drop the last few values
 above.
 

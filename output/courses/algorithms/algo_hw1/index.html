@@ -82,7 +82,8 @@ implementation-based lab.</p>
 <hr>
 <h2>HW1</h2>
 <p>Answer the following questions. DPV refers to the algorithms book.</p>
-<p>Q1. Consider the following code:</p>
+<p>Q1. Consider the following code (note: 'range' goes from 0 to n-1
+inclusive):</p>
 <pre class="code literal-block">   <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
       <span class="nb">print</span><span class="p">(</span><span class="s1">'**'</span><span class="p">)</span>
       <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
@@ -110,7 +111,7 @@ the matplotlib library) the time taken to compute the Fibonacci numbers
 using fib1 and fib2, with $n$ on the $x$-axis and time on the $y$-axis.</p>
 <p>Next, verify that fib2 is indeed quadratic time. Run fib2 and record the
 time on the following values of $n$: $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$,
-$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes more than
+$2^{18}$, $2^{19}$, $2^{20}$ Plot the time of fib2 versus $n$. If it takes
 excessive time on your machine to compute the large values, then drop the last few values
 above.</p>
 <p>For this part you can appreciate the fact that Python has native arbitrary precision integer arithmetic. Otherwise, the values of $F(n)$ would easily exceed the 64 bit word size and cause overflow.</p>
