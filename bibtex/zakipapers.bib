@@ -4018,7 +4018,7 @@ Representation Learning},
   fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/SIGKDD20.pdf},
   customlinkgithubcode = {https://github.com/zakimjz/Reciptor},
     KeyWord =
-    {Conference,NeuralNetworks,PersonalHealth.FoodRecommendation},
+    {Conference,NeuralNetworks,PersonalHealth,FoodRecommendation},
     abstract = {Recipe representation plays an important role in food computing for
 perception, recognition, recommendation and other applications.
 Learning pretrained recipe embeddings is a challenging task, as
@@ -4064,6 +4064,61 @@ IDGL without compromising the performance. Our extensive experiments on nine
 benchmarks show that our proposed IDGL models can consistently outperform
 or match the state-of-the-art baselines. Furthermore, IDGL can be more robust to
 adversarial graphs and cope with both transductive and inductive learning.},
+}
+
+@inproceedings{2021-wsdm,
+  title={Personalized Food Recommendation as Constrained Question
+         Answering over a Large-scale Food Knowledge Graph},
+  author={Yu Chen and Ananya Subburathinam and Ching-Hua Chen and Mohammed J. Zaki},
+  booktitle = {Fourteenth ACM International Conference on Web Search and Data
+   Mining (WSDM)},
+  year      = {2021},
+            month = {Mar},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/WSDM21.pdf},
+  customlinkArxiv = {https://arxiv.org/abs/2101.01775},
+  customlinkgithubcode = {https://github.com/hugochan/PFoodReq},
+    KeyWord =
+    {Conference,NeuralNetworks,KBQA,PersonalHealth,FoodRecommendation},
+    abstract = {Food recommendation has become an important means to
+                help guide users to adopt healthy dietary habits.
+                Previous works on food recommendation either i) fail to
+                consider users' explicit requirements, ii) ignore
+                crucial health factors (e.g., allergies and nutrition
+                needs), or iii) do not utilize the rich food knowledge
+                for recommending healthy recipes. To address these
+                limitations, we propose a novel problem formulation for
+                food recommendation, modeling this task as constrained
+                question answering over a large-scale food knowledge
+                base/graph (KBQA). Besides the requirements from the
+                user query, personalized requirements from the user's
+                dietary preferences and health guidelines are handled in
+                a unified way as additional constraints to the QA
+                system. To validate this idea, we create a QA style
+                dataset for personalized food recommendation based on a
+                large-scale food knowledge graph and health guidelines.
+                Furthermore, we propose a KBQA-based personalized food
+                recommendation framework which is equipped with novel
+                techniques for handling negations and numerical
+                comparisons in the queries. Experimental results on the
+                benchmark show that our approach significantly
+                outperforms non-personalized counterparts (average
+                59.7\% absolute improvement across various evaluation
+                metrics), and is able to recommend more relevant and
+                healthier recipes.},
+}
+
+@inproceedings{2021-iclr,
+  title={Can a Fruit Fly Learn Word Embeddings},
+  author={Yuchen Liang and Chaitanya K. Ryali and Benjamin Hoover and Leopold
+          Grinberg and Saket Navlakha and Mohammed J. Zaki and Dmitry Krotov},
+  booktitle = {International Conference on Learning Representations
+               (ICLR)},
+  year      = {2021},
+            month = {May},
+  customlinkArxiv = {https://arxiv.org/abs/2101.06887},
+    KeyWord =
+    {Conference,NeuralNetworks,WordEmbeddings},
+    abstract = {The mushroom body of the fruit fly brain is one of the best studied systems in neuroscience. At its core it consists of a population of Kenyon cells, which receive inputs from multiple sensory modalities. These cells are inhibited by the anterior paired lateral neuron, thus creating a sparse high dimensional representation of the inputs. In this work we study a mathematical formalization of this network motif and apply it to learning the correlational structure between words and their context in a corpus of unstructured text, a common natural language processing (NLP) task. We show that this network can learn semantic representations of words and can generate both static and context-dependent word embeddings. Unlike conventional methods (e.g., BERT, GloVe) that use dense representations for word embedding, our algorithm encodes semantic meaning of words and their context in the form of sparse binary hash codes. The quality of the learned representations is evaluated on word similarity analysis, word-sense disambiguation, and document classification. It is shown that not only can the fruit fly network motif achieve performance comparable to existing methods in NLP, but, additionally, it uses only a fraction of the computational resources (shorter training time and smaller memory footprint).},
 }
 
 
