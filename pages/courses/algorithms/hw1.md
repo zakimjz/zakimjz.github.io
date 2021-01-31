@@ -71,9 +71,9 @@ would easily exceed the 64 bit word size and cause overflow.
 
 --- 
 
-## Optional
+## Bonus
 
-Optionally, implement **fib3**, the repeated squaring matrix
+As a bonus, implement **fib3**, the repeated squaring matrix
 power based algorithm we discussed in class. Compare its time versus
 fib2.
 
