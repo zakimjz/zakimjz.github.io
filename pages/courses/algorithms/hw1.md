@@ -86,8 +86,7 @@ Use submitty to submit exactly one PDF and one .py script.
 
 The PDF file must contain your solutions to the HW, and all of the
 output from the python script.
-You can hand write your solutions to the HW, take pics and convert to
-PDF, or you can type up your answers.
+You can hand write your solutions to the HW, take pics, or you can type up your answers and convert to PDF.
 
 The .py script must be implemented in Python3. 
 
