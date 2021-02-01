@@ -76,7 +76,10 @@ would easily exceed the 64 bit word size and cause overflow.
 As a bonus, implement **fib3**, the repeated squaring matrix
 power based algorithm we discussed in class. Compare its time versus
 fib2. Note that fib3 must work for any power (not necessarily powers of
-2).
+2). Also, note that you cannot use libraries like numpy, since they will
+not do arbitrary precision integer arithmetic. You'll have to write your
+own matrix multiplication routine for $2\times 2$ matrices of integer
+values.
 
 ---
 

@@ -124,7 +124,10 @@ would easily exceed the 64 bit word size and cause overflow.</p>
 <p>As a bonus, implement <strong>fib3</strong>, the repeated squaring matrix
 power based algorithm we discussed in class. Compare its time versus
 fib2. Note that fib3 must work for any power (not necessarily powers of
-2).</p>
+2). Also, note that you cannot use libraries like numpy, since they will
+not do arbitrary precision integer arithmetic. You'll have to write your
+own matrix multiplication routine for $2\times 2$ matrices of integer
+values.</p>
 <hr>
 <h3>Grading</h3>
 <p>Use submitty to submit exactly one PDF and one .py script.</p>
