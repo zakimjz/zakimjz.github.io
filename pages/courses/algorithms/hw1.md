@@ -79,7 +79,7 @@ fib2. Note that fib3 must work for any power (not necessarily powers of
 2). Also, note that you cannot use libraries like numpy, since they will
 not do arbitrary precision integer arithmetic. You'll have to write your
 own matrix multiplication routine for $2\times 2$ matrices of integer
-values.
+values. **Interestingly, you'll find fib3 to be much faster than fib2.**
 
 ---
 
