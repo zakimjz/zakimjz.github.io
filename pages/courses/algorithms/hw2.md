@@ -28,12 +28,12 @@ Q1.9, Q1.11, Q1.12, Q1.18, Q1.31
 
 You will compare the two algorithms for integer multiplication. 
 
-Implement the recursive algorithm in Fig 1.1 in the book. Use bit shift
+Implement the recursive algorithm in Fig 1.1 in the book. You can use bit shift
 operations for multiplying and dividing by two, but can use regular
 integer addition.
 
-Next, implement the divide-and-conquer algorithm in Fig 2.1. Once again
-use only bit-wise operations for division and shifting, and also for
+Next, implement the divide-and-conquer algorithm in Fig 2.1. You can use
+bit-wise operations for division and shifting, and also for
 splitting the input numbers into 2 parts. Use regular
 additions/subtractions on integers for the rest. 
 
