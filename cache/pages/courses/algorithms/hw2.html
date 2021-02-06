@@ -9,22 +9,47 @@ Q1.9, Q1.11, Q1.12, Q1.18, Q1.31</p>
 <p>You will compare the two algorithms for integer multiplication. </p>
 <p>Implement the recursive algorithm in Fig 1.1 in the book. You can use bit shift
 operations for multiplying and dividing by two, but can use regular
-integer addition.</p>
-<p>Next, implement the divide-and-conquer algorithm in Fig 2.1. You can use
+integer addition.
+For this method, try not to use recursion, which can cause
+"maximum number of recursive calls exceeded" error. Replace the
+recursion by a for loop. </p>
+<p>Next, implement the divide-and-conquer algorithm in Fig 2.1. 
+There is an error in the book for Fig 2.1; use the correction noted at:
+http://cseweb.ucsd.edu/~dasgupta/book/errata.pdf
+You can use
 bit-wise operations for division and shifting, and also for
 splitting the input numbers into 2 parts. Use regular
-additions/subtractions on integers for the rest. </p>
-<p>BTW, look at the errata for Fig 2.1, listed at:
-http://cseweb.ucsd.edu/~dasgupta/book/errata.pdf</p>
-<p>Note that for both methods, try not to use recursion, which can cause
-"maximum number of recursive calls exceeded" error. Replace the
-recursion by a for loop.</p>
+additions/subtractions on integers for the rest. It is best to leave
+this as a recursive method, however see below for a trick to speed up
+the code via memoization.</p>
 <p>Compare the two methods in terms of running time on $d$ digit numbers
 (in base 10), for $d=100, 1000, 10000$. Try larger values if you can (or
-smaller values if the code takes to much time). Plot the running time of
+smaller values if the code takes to much time). List the average running time of
 the two methods as a function of $d$ on random pairs of $d$ digit
 numbers. You can generate random $d$ digit integers using the python
 <strong>random</strong> library (e.g., using <em>randint</em>).</p>
+<h3>Speeding up recursive code via memoization</h3>
+<p>In python, you can speedup recursive calls via memoization, using a
+decorator. First define the memoize class follows:</p>
+<pre class="code literal-block"><span class="k">class</span> <span class="nc">memoize</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">func</span> <span class="o">=</span> <span class="n">func</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="n">args</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__missing__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+</pre>
+
+<p>Next, just add the decorator before your recursive multiply function, as
+follows:</p>
+<pre class="code literal-block"><span class="nd">@memoize</span>
+<span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;YOUR CODE HERE&#39;&#39;&#39;</span>
+</pre>
+
 <hr>
 <h2>Grading</h2>
 <p>Use submitty to submit exactly one PDF and one .py script.</p>
