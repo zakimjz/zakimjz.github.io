@@ -47,7 +47,7 @@ the code via memoization.
 
 Compare the two methods in terms of running time on $d$ digit numbers
 (in base 10), for $d=100, 1000, 10000$. Try larger values if you can (or
-smaller values if the code takes to much time). List the average running time of
+smaller values if the code takes too much time). List the average running time of
 the two methods as a function of $d$ on random pairs of $d$ digit
 numbers. You can generate random $d$ digit integers using the python
 **random** library (e.g., using *randint*).
