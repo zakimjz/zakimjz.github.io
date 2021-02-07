@@ -37,7 +37,7 @@ recursion by a for loop.
 
 Next, implement the divide-and-conquer algorithm in Fig 2.1. 
 There is an error in the book for Fig 2.1; use the correction noted at:
-(http://cseweb.ucsd.edu/~dasgupta/book/errata.pdf). 
+http://cseweb.ucsd.edu/~dasgupta/book/errata.pdf . 
 You can use
 bit-wise operations for division and shifting, and also for
 splitting the input numbers into 2 parts. Use regular
