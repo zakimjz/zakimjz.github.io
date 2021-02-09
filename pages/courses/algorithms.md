@@ -62,7 +62,7 @@ change, but the dates for the Exams are fixed.
 | Jan 28 | Prologue: Chap 0 | | [Lecture2-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture2-1-28-21.pdf), [Lecture2-Video](http://www.cs.rpi.edu/~zaki/CS2300/videos/lecture2-1-28-21/lecture2-1-28-21.html) (Complete Quiz by Feb 3, 11:59pm)|
 | Feb 01 | Algorithms with numbers: Chap 1 | |[Lecture3-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture3-2-1-21.pdf), Video (on LMS; Complete Quiz by Feb 5, 11:59pm)|
 | Feb 04 | Algorithms with numbers: Chap 1 | **HW1 Due:** {{% doc %}} algo_hw1 {{% /doc %}} | [Lecture4-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture4-2-4-21.pdf), Video (on LMS; Complete Quiz by Feb 8, 11:59pm)|
-| Feb 08 | Algorithms with numbers: Chap 1 | | | 
+| Feb 08 | Algorithms with numbers: Chap 1 | | [Lecture5-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture5-2-8-21.pdf), Video (on LMS; Complete Quiz by Feb 12, 11:59pm)| 
 | Feb 11 | Algorithms with numbers: Chap 1 | **HW2 Due:** {{% doc %}} algo_hw2 {{% /doc %}} | |
 | Feb 15 | **NO CLASS** (President's Day) | | |
 | Feb 18 | Algorithms with numbers: Chap 1 | | |
