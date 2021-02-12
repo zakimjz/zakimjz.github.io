@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-#**Due Date**: Feb 11, before midnight (11:59:59PM)
+# **Due Date**: Feb 11, before midnight (11:59:59PM)
 
 This assignment comprises both written questions and
 implementation-based lab.
@@ -52,7 +52,7 @@ the two methods as a function of $d$ on random pairs of $d$ digit
 numbers. You can generate random $d$ digit integers using the python
 **random** library (e.g., using *randint*).
 
-###Speeding up recursive code via memoization
+### Speeding up recursive code via memoization
 
 In python, you can speedup recursive calls via memoization, using a
 decorator. First define the memoize class as follows:

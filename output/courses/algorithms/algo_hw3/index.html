@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HW3 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw3/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="HW3">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw3/">
+<meta property="og:description" content="Due Date: Feb 18, before midnight (11:59:59PM)
+This assignment comprises both written questions and
+implementation-based lab.
+
+HW3
+Answer the following questions from the DPV book i) Q1.17, ii) Q1.19,">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-02-12T09:50:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../algorithms" class="nav-link">Algorithms</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">HW3</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>
+<strong>Due Date</strong>: Feb 18, before midnight (11:59:59PM)</h2>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h2>HW3</h2>
+<p>Answer the following questions from the DPV book i) Q1.17, ii) Q1.19,
+iii) Q 1.23, and iv) given that $x^{86} \equiv 6 \mod 29$, find $x$.</p>
+<h2>Lab3: Primality Testing</h2>
+<p>You will compare the two randomized primality testing algorithms -- the
+basic one in Fig 1.8, and the Miller-Rabin algorithm.
+Both these methods require modular exponentiation, so you <strong>must</strong> also
+implement the <em>modexp</em> algorithm in Fig 1.4.</p>
+<p>Implement the randomized primality algorithm in Fig 1.8 in the book. </p>
+<p>Next, implement the Miller-Rabin primality test, which is informally
+described in the gray box on pg 28 in the book, and whose pseudo-code is
+given below:</p>
+<pre class="code literal-block"><span class="n">MillerRabin</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">Pick</span> <span class="n">positive</span> <span class="n">intgers</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">aK</span> <span class="o">&lt;</span> <span class="n">N</span> <span class="n">at</span> <span class="n">random</span>
+    <span class="n">Find</span> <span class="n">u</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">such</span> <span class="n">that</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span> <span class="o">=</span> <span class="n">u</span> <span class="o">*</span> <span class="mi">2</span><span class="o">^</span><span class="n">t</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">K</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">ai</span><span class="o">^</span><span class="n">u</span> <span class="n">mod</span> <span class="n">N</span>
+        <span class="k">if</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">mod</span> <span class="n">N</span> 
+            <span class="n">mark</span> <span class="n">that</span> <span class="n">ai</span> <span class="n">passes</span> <span class="n">the</span> <span class="n">test</span>
+        <span class="k">else</span>
+            <span class="c1"># repeated squaring, keep track of previous value of z,</span>
+            <span class="c1"># find first occurrence of 1 if any</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">..</span><span class="p">,</span> <span class="n">t</span>
+                <span class="n">compute</span> <span class="n">z</span><span class="o">^</span><span class="mi">2</span> <span class="n">mod</span> <span class="n">N</span>
+                <span class="c1"># ai passes the test iff squared value is 1 and prev value is N-1</span>
+                <span class="c1"># else ai fails the test</span>
+            <span class="c1">#ai also fails the test if no 1 is encountered above</span>
+    <span class="k">if</span> <span class="nb">all</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">aK</span> <span class="k">pass</span> <span class="n">the</span> <span class="n">test</span>
+        <span class="k">return</span> <span class="n">yes</span>
+    <span class="k">else</span>
+        <span class="k">return</span> <span class="n">no</span>
+</pre>
+
+<h4>Carmichael numbers</h4>
+<p>Test your code on the following Carmichael numbers:</p>
+<pre class="code literal-block"><span class="n">Carmichael</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">561</span><span class="p">,</span>
+    <span class="mi">6601</span><span class="p">,</span>
+    <span class="mi">67902031</span><span class="p">,</span>
+    <span class="mi">8956911601</span><span class="p">,</span>
+    <span class="mi">438253965870337</span><span class="p">,</span>
+    <span class="mi">999987515379253441</span><span class="p">,</span>
+    <span class="mi">1745094470986967126132341</span><span class="p">,</span>
+    <span class="mi">844154128953833755776750022681</span><span class="p">,</span>
+    <span class="mi">365376903642671522645639268043801</span><span class="p">,</span>
+    <span class="mi">1334733877147062382486934807105197899496002201113849920496510541601</span><span class="p">,</span>
+    <span class="mi">2887148238050771212671429597130393991977609459279722700926516024197432303799152733116328983144639225941977803110929349655578418949441740933805615113979999421542416933972905423711002751042080134966731755152859226962916775325475044445856101949404200039904432116776619949629539250452698719329070373564032273701278453899126120309244841494728976885406024976768122077071687938121709811322297802059565867</span>
+<span class="p">]</span>
+</pre>
+
+<p>Except for 561, these numbers are difficult for the basic primality
+testing code, but will be marked as non-prime by MillerRabin for
+reasonable values of $K$. On the contrary, some numbers like
+999987515379253441 are still incorrectly marked as prime by the basic
+test, even for $K=1000$!</p>
+<p>Your script should test all of the numbers above, except for the last
+one, which will cause "maximum recursion exceed" error for
+the recursive version of <em>modexp</em>. Your script should print whether the
+given Carmichael number is prime or not, and it must also print 
+the fraction of choices of $a_i$ (out of the $K$)
+that pass Fermat's test for each method. Try different value of $K$,
+such as $K=10, 20, 50, 100, 1000$.</p>
+<p><strong>Bonus:</strong> To run the last number in the list above you'll have to
+implement a non-recursive version of <em>modexp</em>, which will earn bonus
+points.</p>
+<hr>
+<h3>Grading</h3>
+<p>Use submitty to submit exactly one PDF and one .py script. 
+The .py script must be implemented in Python3. 
+You can hand write your solutions to the HW, take
+pics, or you can type up your answers and convert to PDF.</p>
+<p>The PDF file must contain your solutions to the HW, and the output from
+the python script. The script output should be whether each Carmichael
+number is prime or not, and the fraction of choices of $a_i$ that pass
+the test (even if the number is eventually identified as non-prime).</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+</div>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
