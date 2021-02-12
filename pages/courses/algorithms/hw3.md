@@ -34,11 +34,11 @@ implement the *modexp* algorithm in Fig 1.4.
 Implement the randomized primality algorithm in Fig 1.8 in the book. 
 
 Next, implement the Miller-Rabin primality test, which is informally
-described in the gray box on pg 28 in the book, and whose pseudo-code is
+described in the gray box just before sec 1.3.1 in the book, and whose pseudo-code is
 given below:
 
 ```python
-MillerRabin(N, k):
+MillerRabin(N, K):
     Pick positive intgers a1, a2, ..., aK < N at random
     Find u, t, such that N-1 = u * 2^t
     for i = 1, 2, ..., K
