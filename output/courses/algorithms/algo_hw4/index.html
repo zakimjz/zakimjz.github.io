@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HW4 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw4/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="HW4">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw4/">
+<meta property="og:description" content="Due Date: Feb 25, before midnight (11:59:59PM)
+This assignment comprises both written questions and
+implementation-based lab.
+
+HW4
+Answer the following questions from the DPV book i) Q1.33, ii) Q1.39,">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-02-19T20:07:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../algorithms" class="nav-link">Algorithms</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">HW4</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>
+<strong>Due Date</strong>: Feb 25, before midnight (11:59:59PM)</h2>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h2>HW4</h2>
+<p>Answer the following questions from the DPV book i) Q1.33, ii) Q1.39,
+iii) Q1.40, and iv) Q1.42.</p>
+<h2>Lab4: Generating Large Primes for Cryptography</h2>
+<p><strong>Random Prime:</strong> Both RSA and Diffie-Hellman (DH) schemes require large prime numbers as
+keys. Given $n$, the number of bits, write a program to generate a
+random $n$-bit prime number, using the method described in sec 1.3.1 in
+the book. Basically, you will generate a random $n$-bit number and test
+whether it is a prime using the MillerRabin method you implemented in
+the previous lab. If the number is not a prime, repeat, until you
+generate a prime. Your method should print out the $n$-bit prime number,
+and the number of trials it took to generate one prime (note that the
+number of trials is different from the $k$ value you use in MillerRabin,
+which you can set to $k=10$.)</p>
+<p><strong>Random Relative Prime:</strong> RSA scheme also requires a random public key
+$e$ chosen so that it must be relatively prime to $M=(p-1) \cdot (q-1)$, where
+$p$ and $q$ are two random $n$-bit primes. You need to write a function
+to generate two random $n$-bit primes using the random prime algorithm
+above, and then you should generate $e$, some number in the range $2$ to
+$M-1$ that is relative prime to $M$. Think about how you can efficiently
+generate such an $e$ and write a function to generate it. </p>
+<p><strong>Verification of $e$:</strong> When you generate $e$, you must verify that it
+is relatively prime to $M$ by checking whether their GCD is indeed $1$
+via the Euclid algorithm in Fig 1.5.</p>
+<hr>
+<h3>Grading</h3>
+<p>Use submitty to submit exactly one PDF and one .py script. 
+The .py script must be implemented in Python3. 
+You can hand write your solutions to the HW, take
+pics, or you can type up your answers and convert to PDF.</p>
+<p>The PDF file must contain your solutions to the HW, and the output from
+the python script. The script output the following information:</p>
+<p>'p',  number of bits in p, number of trials it took to generate $p$,
+value of $p$</p>
+<p>'q', number of bits in q, number of trials it took to generate $q$,
+value of $q$</p>
+<p>'e', number of bits in e, number of trials it took to generate $e$,
+value of $e$</p>
+<p>'M', the GCD of $e$ and $M$, vaule of $M$</p>
+<p>Try you code for $n=256, 512$. Try $n=1024$ if you can, or larger!</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+</div>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
