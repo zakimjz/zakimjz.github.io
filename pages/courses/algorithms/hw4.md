@@ -28,7 +28,7 @@ iii) Q1.40, and iv) Q1.42.
 **Random Prime:** Both RSA and Diffie-Hellman (DH) schemes require large prime numbers as
 keys. Given $n$, the number of bits, write a program to generate a
 random $n$-bit prime number, using the method described in sec 1.3.1 in
-the book. Basically, you will generate a random $n$-bit number and test
+the book. Basically, you will generate a random $n$-bit (odd) number and test
 whether it is a prime using the MillerRabin method you implemented in
 the previous lab. If the number is not a prime, repeat, until you
 generate a prime. Your method should print out the $n$-bit prime number,
@@ -40,7 +40,7 @@ which you can set to $k=10$.)
 $e$ chosen so that it must be relatively prime to $M=(p-1) \cdot (q-1)$, where
 $p$ and $q$ are two random $n$-bit primes. You need to write a function
 to generate two random $n$-bit primes using the random prime algorithm
-above, and then you should generate $e$, some number in the range $2$ to
+above, and then you should generate $e$, some (odd) number in the range $2$ to
 $M-1$ that is relative prime to $M$. Think about how you can efficiently
 generate such an $e$ and write a function to generate it. 
 
