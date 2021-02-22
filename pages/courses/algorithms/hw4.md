@@ -40,7 +40,7 @@ which you can set to $k=10$.)
 $e$ chosen so that it must be relatively prime to $M=(p-1) \cdot (q-1)$, where
 $p$ and $q$ are two random $n$-bit primes. You need to write a function
 to generate two random $n$-bit primes using the random prime algorithm
-above, and then you should generate $e$, some (odd) number in the range $2$ to
+above, and then you should generate $e$, a random (odd) number in the range $2$ to
 $M-1$ that is relative prime to $M$. Think about how you can efficiently
 generate such an $e$ and write a function to generate it. 
 
