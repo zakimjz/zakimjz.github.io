@@ -63,7 +63,9 @@ fft_C = fft_A[i] * fft_B[i] # elementwise multiplication
 C = 1/n * FFT(fft_C, w**-1)
 ```
 You code must output the coefficients for the polynomial $C = A\cdot B$,
-and also the time it takes.
+and also the time it takes. When implementing the FFT, you'll find it
+useful to check whether $\omega = 1$ by using the *cmath.isclose()*
+function, since it may not be exactly 1.
 
 **Bonus**: Implement the recursive divide-and-conquer algorithm, Alg2,
 for polynomial multiplication that we discussed in Lecture11-PDF (using
