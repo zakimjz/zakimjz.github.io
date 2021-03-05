@@ -19,7 +19,7 @@ implementation-based lab.
 
 # HW5
 
-Answer the following questions from the DPV book i) Q2.27, ii) Q2.32
+Answer the following questions from the DPV book i) Q2.27-a,b,c, ii) Q2.32-a,b,c
 iii) Show the output at each recursive step of the FFT algorithm in Fig
 2.9, for the input $A = \[2,5,4,2,0,0,0,0\]$, and $\omega =
 \frac{1}{\sqrt{2}}(1 + i)$.
