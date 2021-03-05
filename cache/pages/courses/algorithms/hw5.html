@@ -1,0 +1,68 @@
+<h1><strong>Due Date</strong>: Mar 11, before midnight (11:59:59PM)</h1>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h1>HW5</h1>
+<p>Answer the following questions from the DPV book i) Q2.27, ii) Q2.32
+iii) Show the output at each recursive step of the FFT algorithm in Fig
+2.9, for the input $A = [2,5,4,2,0,0,0,0]$, and $\omega =
+\frac{1}{\sqrt{2}}(1 + i)$.</p>
+<h1>Lab5: Multiplying Large Polynomials</h1>
+<p><strong>Basic Algorithm:</strong> Implement the basic quadratic time algorithm (Alg1 in Lecture11-PDF),
+which is a simplified version of the description at the beginning of sec
+2.6 in the book (before sec 2.6.1). </p>
+<p>Your code must take as input the "maximum degree" $d$ for the polynomial
+$A$, and you must generate $d$ random coefficients in the range 1--10,
+which will denote the coefficients $[a_0, a_1, a_2, ..., a_{d-1}]$, so
+in fact the degree of the polynomial will be $d-1$. Likewise, generate
+$d$ random coefficients for the polynomial $B$, to make up the
+coefficients $[b_0, b_1, b_2, ..., b_{d-1}]$. </p>
+<p>You code must output the coefficients for the polynomial $C = A\cdot B$,
+and also the time it takes.</p>
+<p><strong>FFT-Based Algorithm:</strong> 
+Implement the FFT algorithm in Fig 2.9. Use the python <strong>cmath</strong> library
+to deal with complex numbers. Now, use the following
+pseudo-code to multiply the two polynomials $A$, $B$:</p>
+<pre class="code literal-block"><span class="n">n</span> <span class="o">=</span> <span class="n">power</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">equal</span> <span class="n">to</span> <span class="ow">or</span> <span class="n">larger</span> <span class="n">than</span> <span class="mi">2</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mf">2.</span> <span class="o">*</span> <span class="n">cmath</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">n</span>  <span class="c1"># primitive root&#39;s angle</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span> <span class="c1">#primitive n-th root of unity</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">a_0</span><span class="p">,</span> <span class="n">a_1</span><span class="p">,</span> <span class="n">a_2</span><span class="p">,</span> <span class="o">....</span><span class="p">,</span> <span class="n">a_</span><span class="p">{</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#zero-pad to length n</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="n">b_0</span><span class="p">,</span> <span class="n">b_1</span><span class="p">,</span> <span class="n">b_2</span><span class="p">,</span> <span class="o">....</span><span class="p">,</span> <span class="n">b_</span><span class="p">{</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#zero-pad to length n</span>
+
+<span class="c1"># Evaluation</span>
+<span class="n">fft_A</span> <span class="o">=</span> <span class="n">FFT</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="n">fft_B</span> <span class="o">=</span> <span class="n">FFT</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+
+<span class="c1"># Multiplication</span>
+<span class="n">fft_C</span> <span class="o">=</span> <span class="n">fft_A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">fft_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1"># elementwise multiplication</span>
+
+<span class="c1"># Interpolation</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">n</span> <span class="o">*</span> <span class="n">FFT</span><span class="p">(</span><span class="n">fft_C</span><span class="p">,</span> <span class="n">w</span><span class="o">**-</span><span class="mi">1</span><span class="p">)</span>
+</pre>
+
+<p>You code must output the coefficients for the polynomial $C = A\cdot B$,
+and also the time it takes.</p>
+<p><strong>Bonus</strong>: Implement the recursive divide-and-conquer algorithm, Alg2,
+for polynomial multiplication that we discussed in Lecture11-PDF.
+Compare the output with the basic method for correctness, and report the
+running time. Is it faster or slower than the basic method?</p>
+<hr>
+<h2>Grading</h2>
+<p>Use submitty to submit exactly one PDF and one .py script. 
+The PDF file must contain your solutions to the HW, and the output from
+the python script. </p>
+<p>You must compare the output of the two algorithms to check for
+correctness of your implementation of the FFT-based approach. You should
+compare the running time for the two approaches for the following values
+of $d=100, 1000, 10000$. You can also try larger values.</p>
+<p>In the PDF include the output of the two algorithms for only $d=100$.
+But you must include your running time for all the values of $d$.
+Include the time for both the basic and FFT-based method, and the
+divide-and-conquer method if you implement that.</p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
