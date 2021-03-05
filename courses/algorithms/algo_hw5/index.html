@@ -118,7 +118,9 @@ pseudo-code to multiply the two polynomials $A$, $B$:</p>
 </pre>
 
 <p>You code must output the coefficients for the polynomial $C = A\cdot B$,
-and also the time it takes.</p>
+and also the time it takes. When implementing the FFT, you'll find it
+useful to check whether $\omega = 1$ by using the <em>cmath.isclose()</em>
+function, since it may not be exactly 1.</p>
 <p><strong>Bonus</strong>: Implement the recursive divide-and-conquer algorithm, Alg2,
 for polynomial multiplication that we discussed in Lecture11-PDF (using
 the two-way split and using three subproblems).
