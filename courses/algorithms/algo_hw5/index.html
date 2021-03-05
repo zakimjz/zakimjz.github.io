@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HW5 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw5/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="HW5">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/algorithms/algo_hw5/">
+<meta property="og:description" content="Due Date: Mar 11, before midnight (11:59:59PM)
+This assignment comprises both written questions and
+implementation-based lab.
+
+HW5
+Answer the following questions from the DPV book i) Q2.27, ii) Q2.32
+">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-03-04T21:28:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../algorithms" class="nav-link">Algorithms</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">HW5</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>
+<strong>Due Date</strong>: Mar 11, before midnight (11:59:59PM)</h2>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h2>HW5</h2>
+<p>Answer the following questions from the DPV book i) Q2.27, ii) Q2.32
+iii) Show the output at each recursive step of the FFT algorithm in Fig
+2.9, for the input $A = [2,5,4,2,0,0,0,0]$, and $\omega =
+\frac{1}{\sqrt{2}}(1 + i)$.</p>
+<h2>Lab5: Multiplying Large Polynomials</h2>
+<p><strong>Basic Algorithm:</strong> Implement the basic quadratic time algorithm (Alg1 in Lecture11-PDF),
+which is a simplified version of the description at the beginning of sec
+2.6 in the book (before sec 2.6.1). </p>
+<p>Your code must take as input the "maximum degree" $d$ for the polynomial
+$A$, and you must generate $d$ random coefficients in the range 1--10,
+which will denote the coefficients $[a_0, a_1, a_2, ..., a_{d-1}]$, so
+in fact the degree of the polynomial will be $d-1$. Likewise, generate
+$d$ random coefficients for the polynomial $B$, to make up the
+coefficients $[b_0, b_1, b_2, ..., b_{d-1}]$. </p>
+<p>You code must output the coefficients for the polynomial $C = A\cdot B$,
+and also the time it takes.</p>
+<p><strong>FFT-Based Algorithm:</strong> 
+Implement the FFT algorithm in Fig 2.9. Use the python <strong>cmath</strong> library
+to deal with complex numbers. Now, use the following
+pseudo-code to multiply the two polynomials $A$, $B$:</p>
+<pre class="code literal-block"><span class="n">n</span> <span class="o">=</span> <span class="n">power</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">equal</span> <span class="n">to</span> <span class="ow">or</span> <span class="n">larger</span> <span class="n">than</span> <span class="mi">2</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mf">2.</span> <span class="o">*</span> <span class="n">cmath</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">n</span>  <span class="c1"># primitive root's angle</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span> <span class="c1">#primitive n-th root of unity</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">a_0</span><span class="p">,</span> <span class="n">a_1</span><span class="p">,</span> <span class="n">a_2</span><span class="p">,</span> <span class="o">....</span><span class="p">,</span> <span class="n">a_</span><span class="p">{</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#zero-pad to length n</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="n">b_0</span><span class="p">,</span> <span class="n">b_1</span><span class="p">,</span> <span class="n">b_2</span><span class="p">,</span> <span class="o">....</span><span class="p">,</span> <span class="n">b_</span><span class="p">{</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#zero-pad to length n</span>
+
+<span class="c1"># Evaluation</span>
+<span class="n">fft_A</span> <span class="o">=</span> <span class="n">FFT</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="n">fft_B</span> <span class="o">=</span> <span class="n">FFT</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+
+<span class="c1"># Multiplication</span>
+<span class="n">fft_C</span> <span class="o">=</span> <span class="n">fft_A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">fft_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1"># elementwise multiplication</span>
+
+<span class="c1"># Interpolation</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">n</span> <span class="o">*</span> <span class="n">FFT</span><span class="p">(</span><span class="n">fft_C</span><span class="p">,</span> <span class="n">w</span><span class="o">**-</span><span class="mi">1</span><span class="p">)</span>
+</pre>
+
+<p>You code must output the coefficients for the polynomial $C = A\cdot B$,
+and also the time it takes.</p>
+<p><strong>Bonus</strong>: Implement the recursive divide-and-conquer algorithm, Alg2,
+for polynomial multiplication that we discussed in Lecture11-PDF.
+Compare the output with the basic method for correctness, and report the
+running time. Is it faster or slower than the basic method?</p>
+<hr>
+<h3>Grading</h3>
+<p>Use submitty to submit exactly one PDF and one .py script. 
+The PDF file must contain your solutions to the HW, and the output from
+the python script. </p>
+<p>You must compare the output of the two algorithms to check for
+correctness of your implementation of the FFT-based approach. You should
+compare the running time for the two approaches for the following values
+of $d=100, 1000, 10000$. You can also try larger values.</p>
+<p>In the PDF include the output of the two algorithms for only $d=100$.
+But you must include your running time for all the values of $d$.
+Include the time for both the basic and FFT-based method, and the
+divide-and-conquer method if you implement that.</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+</div>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
