@@ -66,7 +66,8 @@ You code must output the coefficients for the polynomial $C = A\cdot B$,
 and also the time it takes.
 
 **Bonus**: Implement the recursive divide-and-conquer algorithm, Alg2,
-for polynomial multiplication that we discussed in Lecture11-PDF.
+for polynomial multiplication that we discussed in Lecture11-PDF (using
+the two-way split and using three subproblems).
 Compare the output with the basic method for correctness, and report the
 running time. Is it faster or slower than the basic method?
 
