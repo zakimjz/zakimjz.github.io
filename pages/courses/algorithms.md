@@ -71,7 +71,7 @@ change, but the dates for the Exams are fixed.
 | Mar 01 | Divide and conquer: Chap 2 | | [Lecture10-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture10-3-1-21.pdf), Video (on LMS; No Quiz)|
 | Mar 01 | **EXAM I (6:45-8:55PM)** | | |
 | Mar 04 | Divide and conquer: Chap 2 | | [Lecture11-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture11-3-4-21.pdf), Video (on LMS; Complete Quiz by March 8, 11:59pm)|
-| Mar 08 | Divide and conquer: Chap 2 | | |
+| Mar 08 | Divide and conquer: Chap 2 | | [Lecture12-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture12-3-8-21.pdf), Video (on LMS; Complete Quiz by March 12, 11:59pm)|
 | Mar 11 | Graph algorithms: Chap 3 | **HW5:** {{% doc %}} algo_hw5 {{% /doc %}} | |
 | Mar 15 | Graph algorithms: Chap 4 | | |
 | Mar 18 | Graph algorithms: Chap 4 | | |
