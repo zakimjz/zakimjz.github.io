@@ -57,7 +57,7 @@ fft_A = FFT(A, w)
 fft_B = FFT(B, w)
 
 # Multiplication
-fft_C = fft_A[i] * fft_B[i] # elementwise multiplication
+fft_C = fft_A * fft_B # elementwise multiplication
 
 # Interpolation
 C = 1/n * FFT(fft_C, w**-1)

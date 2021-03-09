@@ -34,7 +34,7 @@ pseudo-code to multiply the two polynomials $A$, $B$:</p>
 <span class="n">fft_B</span> <span class="o">=</span> <span class="n">FFT</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
 
 <span class="c1"># Multiplication</span>
-<span class="n">fft_C</span> <span class="o">=</span> <span class="n">fft_A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">fft_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1"># elementwise multiplication</span>
+<span class="n">fft_C</span> <span class="o">=</span> <span class="n">fft_A</span> <span class="o">*</span> <span class="n">fft_B</span> <span class="c1"># elementwise multiplication</span>
 
 <span class="c1"># Interpolation</span>
 <span class="n">C</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">n</span> <span class="o">*</span> <span class="n">FFT</span><span class="p">(</span><span class="n">fft_C</span><span class="p">,</span> <span class="n">w</span><span class="o">**-</span><span class="mi">1</span><span class="p">)</span>
