@@ -1,0 +1,44 @@
+<h1><strong>Due Date</strong>: Mar 18, before midnight (11:59:59PM)</h1>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h1>HW6</h1>
+<p>Answer the following questions from the DPV book i) Q3.4 ii) Q3.6, iii)
+Q3.9., iv) Q3.11.</p>
+<h1>Lab6: Strongly Connected Components</h1>
+<p>Implement the strongly connected components algorithm described on page
+94 in the book. You'll have to increase the recursion limit to make this
+work for the graphs below.</p>
+<p>You should run your code on these two graphs: 
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph100.txt">graph1</a> 
+and 
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph1000.txt">graph2</a> 
+These files list out all the directed edges, one per line.</p>
+<p>Your code must print the SCCs in decreasing order of length. Also, for
+two SCCs with the same number of nodes, the one with the lowest id
+vertex should come first. These SCCs must therefore be numbered from 0
+to M, where M is the number of SCCs. Print them out in the following
+format:</p>
+<pre class="code literal-block"><span></span><code><span class="err">SCC_ID LEN SET_OF_NODES_IN_SCC(in sorted order)</span>
+</code></pre>
+
+
+<p>Once you have printed the SCCs, you must also print the edges that
+comprise the DAG structure over the SCCs. The edges must be printed in
+sorted order (in increasing order). The edges will use the SCC_IDs from
+above to denote the DAG nodes.</p>
+<p><strong>Bonus</strong>: Implement a non-recursive version of dfs method to handle large graphs, and test it on
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph10000.txt">graph3</a> </p>
+<p>Submit the output on the bonus graph as for the above two graphs.</p>
+<hr>
+<h2>Grading</h2>
+<p>Use submitty to submit exactly one PDF and one .py script. 
+The PDF file must contain your solutions to the HW, and the output from
+the python script. </p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>

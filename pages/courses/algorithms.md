@@ -74,7 +74,7 @@ change, but the dates for the Exams are fixed.
 | Mar 08 | Divide and conquer: Chap 2 | | [Lecture12-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture12-3-8-21.pdf), Video (on LMS; Complete Quiz by March 12, 11:59pm)|
 | Mar 11 | Graph algorithms: Chap 3 | **HW5:** {{% doc %}} algo_hw5 {{% /doc %}} | [Lecture13-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture13-3-11-21.pdf), Video (on LMS; Complete Quiz by March 15, 11:59pm)|
 | Mar 15 | Graph algorithms: Chap 4 | | |
-| Mar 18 | Graph algorithms: Chap 4 | | |
+| Mar 18 | Graph algorithms: Chap 4 | **HW6:** {{% doc %}} algo_hw6 {{% /doc %}} | |
 | Mar 22 | Greedy algorithms: Chap 5 | | |
 | Mar 25 | Greedy algorithms: Chap 5 | | |
 | Mar 29 | Greedy algorithms: Chap 5 | | |
