@@ -27,7 +27,9 @@ Q3.9., iv) Q3.11.
 
 Implement the strongly connected components algorithm described on page
 94 in the book. You'll have to increase the recursion limit to make this
-work for the graphs below.
+work for the graphs below. You are only allowed to use basic python data
+structures (e.g., dict, set, list), and should *not* use any graph
+packages (e.g., networkx, igraph, etc.).
 
 You should run your code on these two graphs: 
 [graph1](http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph100.txt) 
