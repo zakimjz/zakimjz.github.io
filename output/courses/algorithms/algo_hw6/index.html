@@ -91,12 +91,14 @@ packages (e.g., networkx, igraph, etc.).</p>
 <p>You should run your code on these two graphs: 
 <a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph100.txt">graph1</a> 
 and 
-<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph1000.txt">graph2</a> 
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph1000.txt">graph2</a>. 
 These files list out all the directed edges, one per line.</p>
 <p>Your code must print the SCCs in decreasing order of length. Also, for
-two SCCs with the same number of nodes, the one with the lowest id
-vertex should come first. These SCCs must therefore be numbered from 0
-to M, where M is the number of SCCs. Print them out in the following
+two SCCs with the same number of nodes, the one with a lower id
+vertex (i.e., lexicographically smaller) should come first. 
+These SCCs must therefore be numbered from 0
+to M-1 (which will denote the SCC_IDs), 
+where M is the number of SCCs. Print them out in the following
 format:</p>
 <pre class="code literal-block"><span></span><code><span class="err">SCC_ID LEN SET_OF_NODES_IN_SCC(in sorted order)</span>
 </code></pre>
