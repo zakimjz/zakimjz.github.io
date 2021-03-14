@@ -50,7 +50,10 @@ format:
 Once you have printed the SCCs, you must also print the edges that
 comprise the DAG structure over the SCCs. The edges must be printed in
 sorted order (in increasing order). The edges will use the SCC_IDs from
-above to denote the DAG nodes.
+above to denote the DAG nodes. Use the following format:
+
+    NUM_DAG_NODES NUM_DAG_EDGES
+    EDGES (one per line in sorted order of source)
 
 **Bonus**: Implement a non-recursive version of dfs method to handle large graphs, and test it on
 [graph3](http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph10000.txt) 
