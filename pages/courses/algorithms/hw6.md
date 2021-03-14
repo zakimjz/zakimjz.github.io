@@ -58,7 +58,9 @@ above to denote the DAG nodes. Use the following format:
 **Bonus**: Implement a non-recursive version of dfs method to handle large graphs, and test it on
 [graph3](http://www.cs.rpi.edu/~zaki/CS2300/data/scc_graph10000.txt) 
 
-Submit the output on the bonus graph as for the above two graphs.
+Submit the output on the bonus graph. However, given the large size of
+the graph, just print the SCCs lengths in decreasing order, and the DAG
+number of nodes and edges.
 
 ---
 
