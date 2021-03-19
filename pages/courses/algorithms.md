@@ -76,7 +76,7 @@ change, but the dates for the Exams are fixed.
 | Mar 15 | Graph algorithms: Chap 4 | | [Lecture14-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture14-3-15-21.pdf), Video (on LMS; Complete Quiz by March 19, 11:59pm)|
 | Mar 18 | Graph algorithms: Chap 4 | **HW6:** {{% doc %}} algo_hw6 {{% /doc %}} | [Lecture15-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture15-3-18-21.pdf), Video (on LMS; Complete Quiz by March 22, 11:59pm)|
 | Mar 22 | Greedy algorithms: Chap 5 | | |
-| Mar 25 | Greedy algorithms: Chap 5 | | |
+| Mar 25 | Greedy algorithms: Chap 5 | **HW7:** {{% doc %}} algo_hw7 {{% /doc %}}| |
 | Mar 29 | Greedy algorithms: Chap 5 | | |
 | Apr 01 | Dynamic programming: Chap 6 | | |
 | Apr 05 | Dynamic programming: Chap 6 | | |
