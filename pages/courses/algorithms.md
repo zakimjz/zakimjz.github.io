@@ -35,7 +35,7 @@ will be using webex link below.
 TA and Mentor office hours are by sections below:
 
 - **[Section01 (webex)](https://rensselaer.webex.com/rensselaer/j.php?MTID=mdfc723d28beb8ba1637893f56046efb7), Wed 10:10-12:00**: *TA:* Jason Liang <liangz4@rpi.edu>, *Mentors:* Justin Choi
-    <choij9@rpi.edu>, Mitesh Kumar <kumarm4@rpi.edu>, Andrew Nagawiecki
+    <choij9@rpi.edu>, Andrew Nagawiecki
     <nagawa@rpi.edu>
 
 - **[Section02 (webex)](https://rensselaer.webex.com/rensselaer/j.php?MTID=m568961fec2fc51e8bd0c887d7d1477e4), Wed 2:30-4:20**: *TA:* Muhammad Saad Atique <atiqum@rpi.edu>, *Mentors:* Prashant Acharya

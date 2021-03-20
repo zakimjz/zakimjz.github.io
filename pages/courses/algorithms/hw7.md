@@ -30,7 +30,8 @@ Implement Dijkstra's algorithm described in Fig 4.8. You must implement
 your own binary heap priority queue for supporting the deletemin and
 decreasekey operations required in the algorithm. You cannot use any
 other python module or data structure other than array, list, set or
-dict. 
+dict. Note that you must use the **prev** values to peint the actual shortest
+paths along with the length.
 
 Before you implement the binary heap version of the priority queue, you
 can test the correctness of the Dijkstra implementation using the basic
