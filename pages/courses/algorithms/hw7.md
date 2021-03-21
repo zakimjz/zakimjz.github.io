@@ -78,6 +78,11 @@ For source node $0$, the output should be as follows:
 
 Which shows the node, length of shortest path, and actual shortest path per line.
 
+Here is another graph file
+[graph2](http://www.cs.rpi.edu/~zaki/CS2300/data/dijk_graph5.txt) and
+the output using source 30 [graph2
+output](http://www.cs.rpi.edu/~zaki/CS2300/data/dijk_graph5_out.txt).
+
 ---
 
 ## Grading
