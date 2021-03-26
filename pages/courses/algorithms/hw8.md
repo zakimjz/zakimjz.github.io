@@ -32,7 +32,7 @@ find.  You cannot use any other python module or data structure other than
 list, set or dict. 
 
 
-You should run your code on the following three *undirected* **graphs (zipped): 
+You should run your code on the following three *undirected* graphs (zipped): 
 [graphs.zip](http://www.cs.rpi.edu/~zaki/CS2300/data/graphs.zip) 
 Each line in a file is a source-target-weight triple separated by
 spaces. You should treat all nodes and weights as integers. 
