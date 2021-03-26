@@ -33,7 +33,7 @@ list, set or dict.
 
 
 You should run your code on the following three *undirected* graphs (zipped): 
-[graphs.zip](http://www.cs.rpi.edu/~zaki/CS2300/data/graphs.zip) 
+[graphs.zip; right click and save as](http://www.cs.rpi.edu/~zaki/CS2300/data/graphs.zip) 
 Each line in a file is a source-target-weight triple separated by
 spaces. You should treat all nodes and weights as integers. 
 Submit the output for source vertex 0.
