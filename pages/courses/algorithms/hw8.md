@@ -35,8 +35,7 @@ list, set or dict.
 You should run your code on the following three *undirected* graphs (zipped): 
 [graphs.zip; right click and save as](http://www.cs.rpi.edu/~zaki/CS2300/data/graphs.zip). 
 Each line in a file is a source-target-weight triple separated by
-spaces. You should treat all nodes and weights as integers. 
-Submit the output for source vertex 0.
+spaces. 
 
 Your code shoud print out the weight of the MST and the maximum rank of the
 root node, and the maximum height of the root node in the final MST. Compare
