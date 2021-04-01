@@ -20,7 +20,7 @@ implementation-based lab.
 # HW8
 
 Answer the following questions from the DPV book i) Q5.2 ii) Q5.3, iii)
-Q5.5, iv) Q5.18.
+Q5.5, iv) Q5.18a,b,d.
 
 
 # Lab8: Kruskal's Algorithm and Union-Find Data Structure
@@ -37,15 +37,16 @@ You should run your code on the following three *undirected* graphs (zipped):
 Each line in a file is a source-target-weight triple separated by
 spaces. 
 
-Your code shoud print out the weight of the MST and the maximum rank of the
-root node, and the maximum height of the root node in the final MST. Compare
+Your code should print out *only* the weight of the MST and the maximum rank of the
+root node, and the maximum height of the root node in the final MST (do not
+print the actual MST edges). Compare
 the time, rank, and height with and without path compression.
 
 ---
 
 ## Grading
 
-Use submitty to submit a PDF and one .py script.  
+Use submitty to submit a PDF with the output and one .py script.  
 
 ---
 
