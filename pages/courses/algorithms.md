@@ -69,7 +69,7 @@ change, but the dates for the Exams are fixed.
 | Feb 22 | Divide and conquer: Chap 2 | | [Lecture8-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture8-2-22-21.pdf), Video (on LMS; Complete Quiz by Feb 25, 11:59pm)|
 | Feb 25 | Divide and conquer: Chap 2 | **HW4:** {{% doc %}} algo_hw4 {{% /doc %}} | [Lecture9-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture9-2-25-21.pdf), Video (on LMS; Complete Quiz by Feb 27, 11:59pm)|
 | Mar 01 | Divide and conquer: Chap 2 | | [Lecture10-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture10-3-1-21.pdf), Video (on LMS; No Quiz)|
-| Mar 01 | **EXAM I (6:45-8:55PM)** | | |
+| Mar 01 | **EXAM I (6:55-8:45PM)** | | |
 | Mar 04 | Divide and conquer: Chap 2 | | [Lecture11-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture11-3-4-21.pdf), Video (on LMS; Complete Quiz by March 8, 11:59pm)|
 | Mar 08 | Divide and conquer: Chap 2 | | [Lecture12-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture12-3-8-21.pdf), Video (on LMS; Complete Quiz by March 12, 11:59pm)|
 | Mar 11 | Graph algorithms: Chap 3 | **HW5:** {{% doc %}} algo_hw5 {{% /doc %}} | [Lecture13-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture13-3-11-21.pdf), Video (on LMS; Complete Quiz by March 15, 11:59pm)|
@@ -80,7 +80,7 @@ change, but the dates for the Exams are fixed.
 | Mar 29 | Greedy algorithms: Chap 5 | | [Lecture18-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture18-3-29-21.pdf), Video (on LMS; Complete Quiz by April 1, 11:59pm)|
 | Apr 01 | Dynamic programming: Chap 6 | **HW8:** {{% doc %}} algo_hw8 {{% /doc %}}| [Lecture19-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture19-4-1-21.pdf), Video (on LMS; No Quiz)|
 | Apr 05 | Dynamic programming: Chap 6 | | [Lecture20-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture20-4-5-21.pdf), Video (on LMS; No Quiz)|
-| Apr 05 | **EXAM II (6:45-8:55PM)** | | |
+| Apr 05 | **EXAM II (6:55-8:45PM)** | | |
 | Apr 08 | **NO CLASS** (Take a break!) | | |
 | Apr 12 | Dynamic programming: Chap 6 | | |
 | Apr 15 | Network flows: Chap 7 | | |
@@ -89,7 +89,7 @@ change, but the dates for the Exams are fixed.
 | Apr 26 | NP-Complete problems: Chap 8 | | |
 | Apr 29 | Coping with intractability: Chap 9 | | |
 | May 03 | Coping with intractability: Chap 9 | | |
-| May 06-12 | **FINAL EXAM** (TBD) | | |
+| May 06 | **FINAL EXAM (6:30-9:40PM)** | | |
 
 
 
