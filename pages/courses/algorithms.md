@@ -89,7 +89,7 @@ change, but the dates for the Exams are fixed.
 | Apr 26 | NP-Complete problems: Chap 8 | | |
 | Apr 29 | Coping with intractability: Chap 9 | | |
 | May 03 | Coping with intractability: Chap 9 | | |
-| May 06 | **FINAL EXAM (6:30-9:40PM)** | | |
+| May 07 | **FINAL EXAM (6:30-9:40PM)** | | |
 
 
 
