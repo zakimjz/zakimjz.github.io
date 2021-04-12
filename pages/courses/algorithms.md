@@ -79,15 +79,15 @@ change, but the dates for the Exams are fixed.
 | Mar 25 | Greedy algorithms: Chap 5 | **HW7:** {{% doc %}} algo_hw7 {{% /doc %}}| [Lecture17-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture17-3-25-21.pdf), Video (on LMS; Complete Quiz by March 29, 11:59pm)|
 | Mar 29 | Greedy algorithms: Chap 5 | | [Lecture18-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture18-3-29-21.pdf), Video (on LMS; Complete Quiz by April 1, 11:59pm)|
 | Apr 01 | Dynamic programming: Chap 6 | **HW8:** {{% doc %}} algo_hw8 {{% /doc %}}| [Lecture19-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture19-4-1-21.pdf), Video (on LMS; No Quiz)|
-| Apr 05 | Dynamic programming: Chap 6 | | [Lecture20-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture20-4-5-21.pdf), Video (on LMS; No Quiz)|
+| Apr 05 | Exam Review | | [Lecture20-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture20-4-5-21.pdf), Video (on LMS; No Quiz)|
 | Apr 05 | **EXAM II (6:55-8:45PM)** | | |
 | Apr 08 | **NO CLASS** (Take a break!) | | |
-| Apr 12 | Dynamic programming: Chap 6 | |[Lecture17-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture21-4-12-21.pdf), Video (on LMS; Complete Quiz by April 16, 11:59pm) |
-| Apr 15 | Network flows: Chap 7 | | |
+| Apr 12 | Dynamic programming: Chap 6 | |[Lecture21-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture21-4-12-21.pdf), Video (on LMS; Complete Quiz by April 16, 11:59pm) |
+| Apr 15 | Dynamic programming: Chap 6 | | |
 | Apr 19 | Network flows: Chap 7 | | |
-| Apr 22 | NP-Complete problems: Chap 8 | | |
+| Apr 22 | Network flows: Chap 7 | | |
 | Apr 26 | NP-Complete problems: Chap 8 | | |
-| Apr 29 | Coping with intractability: Chap 9 | | |
+| Apr 29 | NP-Complete problems: Chap 8 | | |
 | May 03 | Coping with intractability: Chap 9 | | |
 | May 07 | **FINAL EXAM (6:30-9:40PM)** | | |
 
