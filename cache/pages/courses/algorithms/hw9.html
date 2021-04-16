@@ -1,0 +1,75 @@
+<h1><strong>Due Date</strong>: April 22, before midnight (11:59:59PM)</h1>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h1>HW9</h1>
+<p>Answer the following questions from the DPV book: i) Q6.1, ii) Q6.4, iii)
+Q6.11, iv) Q6.19.</p>
+<h1>Lab9: Edit Distance</h1>
+<p>Implement the edit distance algorithm described in Sec 6.3. Your code should
+compute the i) edit distance, and ii) a corresponding optimal alignment (via a
+"prev" array that keeps track of the minimum choice at each cell). 
+You can use the numpy library if you need, but the code to implement edit
+distance must be your own.</p>
+<p>You can test you code on the simple example from the book chapter. Given
+$S_1 = EXPONENTIAL$ and $S_2 = POLYNOMIAL$, your output should be:</p>
+<pre class="code literal-block"><span></span><code><span class="err">edit distance = 6</span>
+<span class="c">alignment:</span>
+<span class="err">EXPONEN-TIAL</span>
+<span class="err">--POLYNOMIAL</span>
+</code></pre>
+
+
+<p>Note that is possible to have another alignment, but the distance remains 6.</p>
+<p>As another test case, try the following two DNA strings:</p>
+<pre class="code literal-block"><span></span><code><span class="n">S1</span><span class="o">:</span> <span class="n">CATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGTTGAACAG</span>
+<span class="n">S2</span><span class="o">:</span> <span class="n">CGTAGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCAAGCTATTTTGTTGAGGGTGCTGCTCAGGCTGGATGGA</span>
+</code></pre>
+
+
+<p>The edit distance in this case is 41. When printing a long string, make sure
+that no more than 80 characters are printed at one time. For the two strings
+above your output should look like:</p>
+<pre class="code literal-block"><span></span><code><span class="n">edit</span> <span class="n">distance</span><span class="p">:</span> <span class="mi">41</span>
+<span class="n">alignment</span><span class="p">:</span>
+<span class="n">CATAAGC</span><span class="o">-</span><span class="n">TTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGT</span>
+<span class="n">CGT</span><span class="o">-</span><span class="n">AGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCA</span><span class="c1">--AGCTAT-TTTGTTGAGGGTGC-TGCTCAGGC</span>
+
+<span class="n">TGAACAG</span><span class="o">-</span>
+<span class="n">TGGATGGA</span>
+</code></pre>
+
+
+<p>Finally, submit your output on the following two files. The first one 
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/cox1-protein.fasta">cox1-protein.fasta</a>
+contains the COX1 (cytochrome c oxidase subunit I) gene's protein sequence for Humans and Yeast, and the second
+one
+<a href="http://www.cs.rpi.edu/~zaki/CS2300/data/cox1-dna.fasta">cox1-dna.fasta</a>
+contains the COX1 gene's DNA sequence for Humans and Worms. These "fasta"
+files have two sequences in each file. Each sequence begins with a header
+string on one line beginning with the character "&gt;". The lines that follow
+should all be concatenated into one string, until the next "&gt;" is seen or
+end of file is encountered. For example, if a sample file is </p>
+<pre class="code literal-block"><span></span><code><span class="err">&gt;this is seq1</span>
+<span class="err">ACGT</span>
+<span class="err">AC</span>
+<span class="err">&gt;this is seq2</span>
+<span class="err">TAGGGGT</span>
+<span class="err">ACTT</span>
+</code></pre>
+
+
+<p>Then the first sequence is ACGTAC, and the second is TAGGGGTACTT</p>
+<h1>Bonus</h1>
+<p>In addition to the edit distance, compute and print the total number of
+distinct alignments that are optimal. </p>
+<hr>
+<h2>Grading</h2>
+<p>Use submitty to submit a PDF with the output and one .py script.  </p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
