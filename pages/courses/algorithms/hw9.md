@@ -88,7 +88,8 @@ distinct alignments that are optimal.
 
 ## Grading
 
-Use submitty to submit a PDF with the output and one .py script.  
+Use submitty to submit a PDF with the output and one .py script. The output
+on the cox1-protein and cox1-dna sequences should be submitted.
 
 ---
 
