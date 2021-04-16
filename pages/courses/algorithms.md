@@ -83,7 +83,7 @@ change, but the dates for the Exams are fixed.
 | Apr 05 | **EXAM II (6:55-8:45PM)** | | |
 | Apr 08 | **NO CLASS** (Take a break!) | | |
 | Apr 12 | Dynamic programming: Chap 6 | |[Lecture21-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture21-4-12-21.pdf), Video (on LMS; Complete Quiz by April 16, 11:59pm) |
-| Apr 15 | Dynamic programming: Chap 6 | | |
+| Apr 15 | Dynamic programming: Chap 6 | | [Lecture22-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture22-4-15-21.pdf), Video (on LMS; Complete Quiz by April 19, 11:59pm)|
 | Apr 19 | Network flows: Chap 7 | | |
 | Apr 22 | Network flows: Chap 7 | | |
 | Apr 26 | NP-Complete problems: Chap 8 | | |
