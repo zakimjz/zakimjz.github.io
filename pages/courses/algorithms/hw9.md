@@ -32,7 +32,7 @@ You can use the numpy library if you need, but the code to implement edit
 distance must be your own.
 
 You can test you code on the simple example from the book chapter. Given
-$S_1 = EXPONENTIAL$ and $S_2 = POLYNOMIAL$, your output should be:
+strings EXPONENTIAL and POLYNOMIAL, your output should be:
 
     edit distance = 6
     alignment:
@@ -43,8 +43,8 @@ Note that is possible to have another alignment, but the distance remains 6.
 
 As another test case, try the following two DNA strings:
 
-    S1: CATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGTTGAACAG
-    S2: CGTAGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCAAGCTATTTTGTTGAGGGTGCTGCTCAGGCTGGATGGA
+    CATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGTTGAACAG
+    CGTAGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCAAGCTATTTTGTTGAGGGTGCTGCTCAGGCTGGATGGA
 
 The edit distance in this case is 41. When printing a long string, make sure
 that no more than 80 characters are printed at one time. For the two strings
