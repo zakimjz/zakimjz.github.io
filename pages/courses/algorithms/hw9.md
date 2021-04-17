@@ -82,7 +82,9 @@ Then the first sequence is ACGTAC, and the second is TAGGGGTACTT
 # Bonus 
 
 In addition to the edit distance, compute and print the total number of
-distinct alignments that are optimal. 
+distinct alignments that are optimal. For this, you need to define a new
+recursive function that will compute the number of distinct alignments for each cell,
+which can be updated after computing the edit distance for each cell.
 
 ---
 
