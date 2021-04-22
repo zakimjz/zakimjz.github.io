@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1618867875.6203995
+_modified_time = 1619132218.5802803
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/base/templates/math_helper.tmpl'
 _template_uri = 'math_helper.tmpl'
@@ -32,8 +32,8 @@ def render_body(context,**pageargs):
 def render_math_scripts(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        use_katex = context.get('use_katex', UNDEFINED)
         mathjax_config = context.get('mathjax_config', UNDEFINED)
+        use_katex = context.get('use_katex', UNDEFINED)
         katex_auto_render = context.get('katex_auto_render', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -123,9 +123,9 @@ def render_math_styles_ifpost(context,post):
 def render_math_styles_ifposts(context,posts):
     __M_caller = context.caller_stack._push_frame()
     try:
+        any = context.get('any', UNDEFINED)
         def math_styles():
             return render_math_styles(context)
-        any = context.get('any', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if any(post.has_math for post in posts):
