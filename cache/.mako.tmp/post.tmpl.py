@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1619132218.600821
+_modified_time = 1619216425.6326497
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.8/dist-packages/nikola/data/themes/bootstrap4/templates/post.tmpl'
 _template_uri = 'post.tmpl'
@@ -42,23 +42,23 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        pheader = _mako_get_namespace(context, 'pheader')
-        ui = _mako_get_namespace(context, 'ui')
-        messages = context.get('messages', UNDEFINED)
-        math = _mako_get_namespace(context, 'math')
-        smartjoin = context.get('smartjoin', UNDEFINED)
-        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
-        comments = _mako_get_namespace(context, 'comments')
+        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
+        ui = _mako_get_namespace(context, 'ui')
+        smartjoin = context.get('smartjoin', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context._locals(__M_locals))
-        post = context.get('post', UNDEFINED)
         parent = context.get('parent', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        post = context.get('post', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        pheader = _mako_get_namespace(context, 'pheader')
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -89,13 +89,13 @@ def render_body(context,**pageargs):
 def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        helper = _mako_get_namespace(context, 'helper')
-        math = _mako_get_namespace(context, 'math')
-        smartjoin = context.get('smartjoin', UNDEFINED)
-        post = context.get('post', UNDEFINED)
-        parent = context.get('parent', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
+        parent = context.get('parent', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
+        helper = _mako_get_namespace(context, 'helper')
+        smartjoin = context.get('smartjoin', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    ')
         __M_writer(str(parent.extra_head()))
@@ -138,15 +138,15 @@ def render_extra_head(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        pheader = _mako_get_namespace(context, 'pheader')
-        messages = context.get('messages', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
-        comments = _mako_get_namespace(context, 'comments')
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         def content():
             return render_content(context)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        post = context.get('post', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        post = context.get('post', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        pheader = _mako_get_namespace(context, 'pheader')
         __M_writer = context.writer()
         __M_writer('\n<article class="post-')
         __M_writer(str(post.meta('type')))
@@ -178,11 +178,11 @@ def render_content(context,**pageargs):
 def render_sourcelink(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         ui = _mako_get_namespace(context, 'ui')
-        post = context.get('post', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context)
+        post = context.get('post', UNDEFINED)
+        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if show_sourcelink:

@@ -1,0 +1,58 @@
+<h1><strong>Due Date</strong>: April 29, before midnight (11:59:59PM)</h1>
+<p>This assignment comprises both written questions and
+implementation-based lab.</p>
+<hr>
+<h1>HW10</h1>
+<p>Answer the following questions from the DPV book: i) Q7.17, ii) Q7.21</p>
+<h1>Lab10: Network Flow</h1>
+<p>Implement the Edmonds-Karp maximum flow algorithm described in
+<a href="https://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture24-4-22-21.pdf">Lecture24</a>.
+In particular, for Edmonds-Karp start from the Ford-Fulkerson algorithm described in Section
+7.2, with the only difference being that you need to always find the shortest
+$s$-$t$ path (via BFS, assuming edge weight 1) when finding augmenting
+paths (see Section 7.2.5).</p>
+<p>Your code should output the final i) maxflow value, ii) the actual flow
+along each edge.</p>
+<p>You can test you code on the simple example from the book chapter, using
+source $s$ and sink $t$:</p>
+<pre class="code literal-block"><span></span><code><span class="err">s a 3</span>
+<span class="err">s b 3</span>
+<span class="err">s c 4</span>
+<span class="err">a d 2</span>
+<span class="err">b a 10</span>
+<span class="err">b d 1</span>
+<span class="err">c e 5</span>
+<span class="err">d c 1</span>
+<span class="err">d e 1</span>
+<span class="err">d t 2</span>
+<span class="err">e t 5</span>
+</code></pre>
+
+
+<p>Here the maxflow value is 7, and the flow is:</p>
+<pre class="code literal-block"><span></span><code><span class="err">{(&#39;s&#39;, &#39;a&#39;): 2, (&#39;a&#39;, &#39;d&#39;): 2, (&#39;d&#39;, &#39;t&#39;): 2, (&#39;s&#39;, &#39;c&#39;): 4, (&#39;c&#39;, &#39;e&#39;): 4, (&#39;e&#39;, &#39;t&#39;): 5, (&#39;s&#39;, &#39;b&#39;): 1, (&#39;b&#39;, &#39;d&#39;): 1, (&#39;d&#39;, &#39;e&#39;): 1})</span>
+</code></pre>
+
+
+<h1>Bonus</h1>
+<p>In addition to the maxflow and the actual flow, compute the minimum cut
+value and the actual cut comprising the two subsets of vertices. For the
+example graph above, the output should be:</p>
+<pre class="code literal-block"><span></span><code><span class="err">mincut [&#39;s&#39;, &#39;a&#39;, &#39;b&#39;], [&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;t&#39;]</span>
+<span class="err">mincut value 7</span>
+</code></pre>
+
+
+<hr>
+<h2>Grading</h2>
+<p>Use submitty to submit a PDF with the output and one .py script. The output
+on TBD graph should be submitted. Your code should take as input the name of
+the graph file and the source and sink vertex, e.g., <strong>lab10.py example.txt
+0 49</strong>; here 0 is the source vertex and 49 the sink vertex.</p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>

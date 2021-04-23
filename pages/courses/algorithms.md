@@ -87,7 +87,7 @@ change, but the dates for the Exams are fixed.
 | Apr 19 | Network flows: Chap 7 | | [Lecture23-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture23-4-19-21.pdf), Video (on LMS; Complete Quiz by April 23, 11:59pm)|
 | Apr 22 | Network flows: Chap 7 | **HW9:** {{% doc %}} algo_hw9 {{% /doc %}}| [Lecture24-PDF](http://www.cs.rpi.edu/~zaki/CS2300/pdf/Lecture24-4-22-21.pdf), Video (on LMS; Complete Quiz by April 26, 11:59pm)|
 | Apr 26 | NP-Complete problems: Chap 8 | | |
-| Apr 29 | NP-Complete problems: Chap 8 | | |
+| Apr 29 | NP-Complete problems: Chap 8 | **HW10:** {{% doc %}} algo_hw10 {{% /doc %}}| |
 | May 03 | Coping with intractability: Chap 9 | | |
 | May 07 | **FINAL EXAM (6:30-9:40PM)** | | |
 
