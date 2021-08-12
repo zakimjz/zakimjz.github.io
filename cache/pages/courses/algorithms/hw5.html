@@ -23,7 +23,7 @@ and also the time it takes.</p>
 Implement the FFT algorithm in Fig 2.9. Use the python <strong>cmath</strong> library
 to deal with complex numbers. Now, use the following
 pseudo-code to multiply the two polynomials $A$, $B$:</p>
-<pre class="code literal-block"><span class="n">n</span> <span class="o">=</span> <span class="n">power</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">equal</span> <span class="n">to</span> <span class="ow">or</span> <span class="n">larger</span> <span class="n">than</span> <span class="mi">2</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span>
+<pre class="code literal-block"><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="n">power</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">equal</span> <span class="n">to</span> <span class="ow">or</span> <span class="n">larger</span> <span class="n">than</span> <span class="mi">2</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span>
 <span class="n">angle</span> <span class="o">=</span> <span class="mf">2.</span> <span class="o">*</span> <span class="n">cmath</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">n</span>  <span class="c1"># primitive root&#39;s angle</span>
 <span class="n">w</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span> <span class="c1">#primitive n-th root of unity</span>
 <span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">a_0</span><span class="p">,</span> <span class="n">a_1</span><span class="p">,</span> <span class="n">a_2</span><span class="p">,</span> <span class="o">....</span><span class="p">,</span> <span class="n">a_</span><span class="p">{</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1">#zero-pad to length n</span>
@@ -38,7 +38,8 @@ pseudo-code to multiply the two polynomials $A$, $B$:</p>
 
 <span class="c1"># Interpolation</span>
 <span class="n">C</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">n</span> <span class="o">*</span> <span class="n">FFT</span><span class="p">(</span><span class="n">fft_C</span><span class="p">,</span> <span class="n">w</span><span class="o">**-</span><span class="mi">1</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 
 <p>You code must output the coefficients for the polynomial $C = A\cdot B$,
 and also the time it takes. When implementing the FFT, you'll find it

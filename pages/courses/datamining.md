@@ -1,7 +1,7 @@
 <!--
 .. title: CSCI4390-6390 Data Mining
 .. slug: datamining
-.. date: 2021-08-12 12:48:31 UTC-04:00
+.. date: 2021-08-12 09:00:31 UTC-04:00
 .. tags: 
 .. category: 
 .. link: 
