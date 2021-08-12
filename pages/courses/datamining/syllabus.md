@@ -59,8 +59,8 @@ PyTorch)
 
 The following textbook is **required** for the course:
 
-[Data Mining and Machine Learning: Fundamental Concepts and Algorithms]
-(https://dataminingbook.info/) (2nd Edition), Mohammed J. Zaki and
+[Data Mining and Machine Learning: Fundamental Concepts and Algorithms](https://dataminingbook.info/) 
+(2nd Edition), Mohammed J. Zaki and
 Wagner Meira, Jr, Cambridge University Press, 2020.
 
 
