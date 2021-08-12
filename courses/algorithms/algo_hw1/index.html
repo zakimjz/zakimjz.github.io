@@ -84,13 +84,14 @@ implementation-based lab.</p>
 <p>Answer the following questions. DPV refers to the algorithms book.</p>
 <p>Q1. Consider the following code (note: 'range' goes from 0 to n-1
 inclusive):</p>
-<pre class="code literal-block">   <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<pre class="code literal-block"><span></span><code>   <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
       <span class="nb">print</span><span class="p">(</span><span class="s1">'**'</span><span class="p">)</span>
       <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
          <span class="k">return</span>
       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
          <span class="n">star</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 
 <p>Let $T(n)$ be the number of times the function above prints a star when
 called with input $n \ge 0$. Give an exact solution for $T(n)$ in terms

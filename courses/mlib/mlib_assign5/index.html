@@ -175,1183 +175,481 @@ excluded from the loss too.</p>
 <p>Note that you will need to install <a class="reference external" href="https://biopython.org/">Biopython</a>
 to run the code.</p>
 <p><a href="../../../listings/mlib/compute_phi_psi.py.html">mlib/compute_phi_psi.py</a>  <a href="../../../listings/mlib/compute_phi_psi.py">(Source)</a></p>
-<div class="code"><table class="codetable">
-<tr>
-<td class="linenos linenodiv"><a href="#-1"><code data-line-number="  1"></code></a></td>
-<td class="code"><code><span class="ch">#!/usr/bin/env python3</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-2"><code data-line-number="  2"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-3"><code data-line-number="  3"></code></a></td>
-<td class="code"><code><span class="kn">import</span> <span class="nn">argparse</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-4"><code data-line-number="  4"></code></a></td>
-<td class="code"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-5"><code data-line-number="  5"></code></a></td>
-<td class="code"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-6"><code data-line-number="  6"></code></a></td>
-<td class="code"><code><span class="kn">from</span> <span class="nn">Bio.PDB.vectors</span> <span class="kn">import</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">calc_angle</span><span class="p">,</span> <span class="n">calc_dihedral</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-7"><code data-line-number="  7"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-8"><code data-line-number="  8"></code></a></td>
-<td class="code"><code><span class="n">INVALID_ANGLE</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># invalid angle value</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-9"><code data-line-number="  9"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-10"><code data-line-number=" 10"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-11"><code data-line-number=" 11"></code></a></td>
-<td class="code"><code><span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-12"><code data-line-number=" 12"></code></a></td>
-<td class="code"><code>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'compute_phi_psi.py'</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-13"><code data-line-number=" 13"></code></a></td>
-<td class="code"><code>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'fname'</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-14"><code data-line-number=" 14"></code></a></td>
-<td class="code"><code>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-plot'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'store_true'</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-15"><code data-line-number=" 15"></code></a></td>
-<td class="code"><code>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-16"><code data-line-number=" 16"></code></a></td>
-<td class="code"><code>    <span class="k">return</span> <span class="n">args</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-17"><code data-line-number=" 17"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-18"><code data-line-number=" 18"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-19"><code data-line-number=" 19"></code></a></td>
-<td class="code"><code><span class="k">class</span> <span class="nc">running_stats</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-20"><code data-line-number=" 20"></code></a></td>
-<td class="code"><code>    <span class="sd">'''this class computes mean and std values for a</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-21"><code data-line-number=" 21"></code></a></td>
-<td class="code"><code><span class="sd">    list of values across proteins'''</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-22"><code data-line-number=" 22"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-23"><code data-line-number=" 23"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name_str</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-24"><code data-line-number=" 24"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name_str</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-25"><code data-line-number=" 25"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-26"><code data-line-number=" 26"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">=</span> <span class="mf">0.0</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-27"><code data-line-number=" 27"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-28"><code data-line-number=" 28"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-29"><code data-line-number=" 29"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Vin</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-30"><code data-line-number=" 30"></code></a></td>
-<td class="code"><code>        <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-31"><code data-line-number=" 31"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-32"><code data-line-number=" 32"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-33"><code data-line-number=" 33"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-34"><code data-line-number=" 34"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-35"><code data-line-number=" 35"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-36"><code data-line-number=" 36"></code></a></td>
-<td class="code"><code>        <span class="n">mu</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-37"><code data-line-number=" 37"></code></a></td>
-<td class="code"><code>        <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x2</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-38"><code data-line-number=" 38"></code></a></td>
-<td class="code"><code>        <span class="nb">print</span><span class="p">(</span><span class="s2">"bond length"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-39"><code data-line-number=" 39"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-40"><code data-line-number=" 40"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-41"><code data-line-number=" 41"></code></a></td>
-<td class="code"><code><span class="k">class</span> <span class="nc">compute_stats</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-42"><code data-line-number=" 42"></code></a></td>
-<td class="code"><code>    <span class="sd">'''Compute mean and std values for bond lengths and bond angles'''</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-43"><code data-line-number=" 43"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-44"><code data-line-number=" 44"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-45"><code data-line-number=" 45"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-46"><code data-line-number=" 46"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CN"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-47"><code data-line-number=" 47"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCa"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-48"><code data-line-number=" 48"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaC"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-49"><code data-line-number=" 49"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-50"><code data-line-number=" 50"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CNCa"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-51"><code data-line-number=" 51"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCaC"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-52"><code data-line-number=" 52"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaCN"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-53"><code data-line-number=" 53"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-54"><code data-line-number=" 54"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v_CN</span><span class="p">,</span> <span class="n">v_NCa</span><span class="p">,</span> <span class="n">v_CaC</span><span class="p">,</span> <span class="n">v_CNCa</span><span class="p">,</span> <span class="n">v_NCaC</span><span class="p">,</span> <span class="n">v_CaCN</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-55"><code data-line-number=" 55"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CN</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-56"><code data-line-number=" 56"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCa</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-57"><code data-line-number=" 57"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaC</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-58"><code data-line-number=" 58"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-59"><code data-line-number=" 59"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CNCa</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-60"><code data-line-number=" 60"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCaC</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-61"><code data-line-number=" 61"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaCN</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-62"><code data-line-number=" 62"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-63"><code data-line-number=" 63"></code></a></td>
-<td class="code"><code>    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-64"><code data-line-number=" 64"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-65"><code data-line-number=" 65"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-66"><code data-line-number=" 66"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-67"><code data-line-number=" 67"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-68"><code data-line-number=" 68"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-69"><code data-line-number=" 69"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-70"><code data-line-number=" 70"></code></a></td>
-<td class="code"><code>        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-71"><code data-line-number=" 71"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-72"><code data-line-number=" 72"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-73"><code data-line-number=" 73"></code></a></td>
-<td class="code"><code><span class="k">def</span> <span class="nf">process_tertiary</span><span class="p">(</span><span class="n">tertiary</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-74"><code data-line-number=" 74"></code></a></td>
-<td class="code"><code>    <span class="sd">'''compute the bond lengths, bond angles, and dihedral angles'''</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-75"><code data-line-number=" 75"></code></a></td>
-<td class="code"><code>    <span class="n">phi</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-76"><code data-line-number=" 76"></code></a></td>
-<td class="code"><code>    <span class="n">psi</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-77"><code data-line-number=" 77"></code></a></td>
-<td class="code"><code>    <span class="n">omega</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-78"><code data-line-number=" 78"></code></a></td>
-<td class="code"><code>    <span class="n">bond_angle_CNCa</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-79"><code data-line-number=" 79"></code></a></td>
-<td class="code"><code>    <span class="n">bond_angle_NCaC</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-80"><code data-line-number=" 80"></code></a></td>
-<td class="code"><code>    <span class="n">bond_angle_CaCN</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-81"><code data-line-number=" 81"></code></a></td>
-<td class="code"><code>    <span class="n">bond_len_NCa</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-82"><code data-line-number=" 82"></code></a></td>
-<td class="code"><code>    <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-83"><code data-line-number=" 83"></code></a></td>
-<td class="code"><code>    <span class="n">bond_len_CN</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-84"><code data-line-number=" 84"></code></a></td>
-<td class="code"><code>    <span class="c1"># convert tertiary coords into Vectors</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-85"><code data-line-number=" 85"></code></a></td>
-<td class="code"><code>    <span class="n">pV</span> <span class="o">=</span> <span class="p">[</span><span class="n">vec</span> <span class="k">for</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-86"><code data-line-number=" 86"></code></a></td>
-<td class="code"><code>                             <span class="nb">zip</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">2</span><span class="p">]))]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-87"><code data-line-number=" 87"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-88"><code data-line-number=" 88"></code></a></td>
-<td class="code"><code>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">),</span> <span class="mi">3</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-89"><code data-line-number=" 89"></code></a></td>
-<td class="code"><code>        <span class="c1"># check for zero coords</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-90"><code data-line-number=" 90"></code></a></td>
-<td class="code"><code>        <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-91"><code data-line-number=" 91"></code></a></td>
-<td class="code"><code>        <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-92"><code data-line-number=" 92"></code></a></td>
-<td class="code"><code>        <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-93"><code data-line-number=" 93"></code></a></td>
-<td class="code"><code>        <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-94"><code data-line-number=" 94"></code></a></td>
-<td class="code"><code>        <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-95"><code data-line-number=" 95"></code></a></td>
-<td class="code"><code>        <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-96"><code data-line-number=" 96"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-97"><code data-line-number=" 97"></code></a></td>
-<td class="code"><code>            <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-98"><code data-line-number=" 98"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-99"><code data-line-number=" 99"></code></a></td>
-<td class="code"><code>            <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-100"><code data-line-number="100"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-101"><code data-line-number="101"></code></a></td>
-<td class="code"><code>            <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-102"><code data-line-number="102"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-103"><code data-line-number="103"></code></a></td>
-<td class="code"><code>            <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-104"><code data-line-number="104"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-105"><code data-line-number="105"></code></a></td>
-<td class="code"><code>            <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-106"><code data-line-number="106"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-107"><code data-line-number="107"></code></a></td>
-<td class="code"><code>            <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-108"><code data-line-number="108"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-109"><code data-line-number="109"></code></a></td>
-<td class="code"><code>        <span class="c1"># compute bond lengths</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-110"><code data-line-number="110"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-111"><code data-line-number="111"></code></a></td>
-<td class="code"><code>            <span class="n">blen_CN</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-112"><code data-line-number="112"></code></a></td>
-<td class="code"><code>            <span class="n">bond_len_CN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CN</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-113"><code data-line-number="113"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-114"><code data-line-number="114"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-115"><code data-line-number="115"></code></a></td>
-<td class="code"><code>            <span class="n">blen_NCa</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-116"><code data-line-number="116"></code></a></td>
-<td class="code"><code>            <span class="n">bond_len_NCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_NCa</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-117"><code data-line-number="117"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-118"><code data-line-number="118"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-119"><code data-line-number="119"></code></a></td>
-<td class="code"><code>            <span class="n">blen_CaC</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-120"><code data-line-number="120"></code></a></td>
-<td class="code"><code>            <span class="n">bond_len_CaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CaC</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-121"><code data-line-number="121"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-122"><code data-line-number="122"></code></a></td>
-<td class="code"><code>        <span class="c1"># compute bond angles</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-123"><code data-line-number="123"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-124"><code data-line-number="124"></code></a></td>
-<td class="code"><code>            <span class="n">theta_CNCa</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># C-N-Ca</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-125"><code data-line-number="125"></code></a></td>
-<td class="code"><code>            <span class="n">bond_angle_CNCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CNCa</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-126"><code data-line-number="126"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-127"><code data-line-number="127"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-128"><code data-line-number="128"></code></a></td>
-<td class="code"><code>            <span class="n">theta_NCaC</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-129"><code data-line-number="129"></code></a></td>
-<td class="code"><code>            <span class="n">bond_angle_NCaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_NCaC</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-130"><code data-line-number="130"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-131"><code data-line-number="131"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-132"><code data-line-number="132"></code></a></td>
-<td class="code"><code>            <span class="n">theta_CaCN</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Ca-C-N</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-133"><code data-line-number="133"></code></a></td>
-<td class="code"><code>            <span class="n">bond_angle_CaCN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CaCN</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-134"><code data-line-number="134"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-135"><code data-line-number="135"></code></a></td>
-<td class="code"><code>        <span class="c1"># compute dihedral angles</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-136"><code data-line-number="136"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-137"><code data-line-number="137"></code></a></td>
-<td class="code"><code>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-138"><code data-line-number="138"></code></a></td>
-<td class="code"><code>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C-N</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-139"><code data-line-number="139"></code></a></td>
-<td class="code"><code>        <span class="k">else</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-140"><code data-line-number="140"></code></a></td>
-<td class="code"><code>            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-141"><code data-line-number="141"></code></a></td>
-<td class="code"><code>        <span class="n">phi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phi_i</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-142"><code data-line-number="142"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-143"><code data-line-number="143"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-144"><code data-line-number="144"></code></a></td>
-<td class="code"><code>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-145"><code data-line-number="145"></code></a></td>
-<td class="code"><code>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># C-N-Ca-C</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-146"><code data-line-number="146"></code></a></td>
-<td class="code"><code>        <span class="k">else</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-147"><code data-line-number="147"></code></a></td>
-<td class="code"><code>            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-148"><code data-line-number="148"></code></a></td>
-<td class="code"><code>        <span class="n">psi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">psi_i</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-149"><code data-line-number="149"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-150"><code data-line-number="150"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span> <span class="ow">and</span> <span class="n">norm_i4</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-151"><code data-line-number="151"></code></a></td>
-<td class="code"><code>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-152"><code data-line-number="152"></code></a></td>
-<td class="code"><code>                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Ca-C-N-Ca</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-153"><code data-line-number="153"></code></a></td>
-<td class="code"><code>        <span class="k">else</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-154"><code data-line-number="154"></code></a></td>
-<td class="code"><code>            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-155"><code data-line-number="155"></code></a></td>
-<td class="code"><code>        <span class="n">omega</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">omega_i</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-156"><code data-line-number="156"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-157"><code data-line-number="157"></code></a></td>
-<td class="code"><code>    <span class="k">return</span> <span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-158"><code data-line-number="158"></code></a></td>
-<td class="code"><code>            <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-159"><code data-line-number="159"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-160"><code data-line-number="160"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-161"><code data-line-number="161"></code></a></td>
-<td class="code"><code><span class="k">def</span> <span class="nf">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-162"><code data-line-number="162"></code></a></td>
-<td class="code"><code>    <span class="sd">'''Parse ProteinNet file and add PHIPSI entries'''</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-163"><code data-line-number="163"></code></a></td>
-<td class="code"><code>    <span class="n">CS</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-164"><code data-line-number="164"></code></a></td>
-<td class="code"><code>    <span class="n">filename</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">fname</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-165"><code data-line-number="165"></code></a></td>
-<td class="code"><code>    <span class="n">out_fname</span> <span class="o">=</span> <span class="n">filename</span><span class="o">+</span><span class="s2">"_ext"</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-166"><code data-line-number="166"></code></a></td>
-<td class="code"><code>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_fname</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-167"><code data-line-number="167"></code></a></td>
-<td class="code"><code>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_pointer</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-168"><code data-line-number="168"></code></a></td>
-<td class="code"><code>            <span class="n">pcnt</span> <span class="o">=</span> <span class="mi">0</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-169"><code data-line-number="169"></code></a></td>
-<td class="code"><code>            <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-170"><code data-line-number="170"></code></a></td>
-<td class="code"><code>            <span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-171"><code data-line-number="171"></code></a></td>
-<td class="code"><code>                <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-172"><code data-line-number="172"></code></a></td>
-<td class="code"><code>                <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-173"><code data-line-number="173"></code></a></td>
-<td class="code"><code>                <span class="k">if</span> <span class="n">id_next</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-174"><code data-line-number="174"></code></a></td>
-<td class="code"><code>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-175"><code data-line-number="175"></code></a></td>
-<td class="code"><code>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"ID"</span><span class="p">,</span> <span class="n">next_line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-176"><code data-line-number="176"></code></a></td>
-<td class="code"><code>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[ID]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-177"><code data-line-number="177"></code></a></td>
-<td class="code"><code>                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">True</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-178"><code data-line-number="178"></code></a></td>
-<td class="code"><code>                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[TERTIARY]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-179"><code data-line-number="179"></code></a></td>
-<td class="code"><code>                    <span class="n">tertiary</span> <span class="o">=</span> <span class="p">[]</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-180"><code data-line-number="180"></code></a></td>
-<td class="code"><code>                    <span class="c1"># 3 dimension</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-181"><code data-line-number="181"></code></a></td>
-<td class="code"><code>                    <span class="k">for</span> <span class="n">_axis</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-182"><code data-line-number="182"></code></a></td>
-<td class="code"><code>                        <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-183"><code data-line-number="183"></code></a></td>
-<td class="code"><code>                        <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-184"><code data-line-number="184"></code></a></td>
-<td class="code"><code>                        <span class="n">tertiary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-185"><code data-line-number="185"></code></a></td>
-<td class="code"><code>                            <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">next_line</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-186"><code data-line-number="186"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-187"><code data-line-number="187"></code></a></td>
-<td class="code"><code>                    <span class="c1"># write the PHI_PSI angles</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-188"><code data-line-number="188"></code></a></td>
-<td class="code"><code>                    <span class="nb">print</span><span class="p">(</span><span class="s1">'[PHI_PSI]'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-189"><code data-line-number="189"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-190"><code data-line-number="190"></code></a></td>
-<td class="code"><code>                    <span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span>\
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-191"><code data-line-number="191"></code></a></td>
-<td class="code"><code>                        <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span> <span class="n">bond_angle_CNCa</span><span class="p">,</span>\
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-192"><code data-line-number="192"></code></a></td>
-<td class="code"><code>                        <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="n">process_tertiary</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-193"><code data-line-number="193"></code></a></td>
-<td class="code"><code>                            <span class="n">tertiary</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-194"><code data-line-number="194"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-195"><code data-line-number="195"></code></a></td>
-<td class="code"><code>                    <span class="n">CS</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">,</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-196"><code data-line-number="196"></code></a></td>
-<td class="code"><code>                              <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-197"><code data-line-number="197"></code></a></td>
-<td class="code"><code>                              <span class="n">bond_angle_CaCN</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-198"><code data-line-number="198"></code></a></td>
-<td class="code"><code>                    <span class="nb">print</span><span class="p">(</span><span class="s2">"process"</span><span class="p">,</span> <span class="n">pcnt</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-199"><code data-line-number="199"></code></a></td>
-<td class="code"><code>                          <span class="nb">len</span><span class="p">(</span><span class="n">psi</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-200"><code data-line-number="200"></code></a></td>
-<td class="code"><code>                    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-201"><code data-line-number="201"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-202"><code data-line-number="202"></code></a></td>
-<td class="code"><code>                    <span class="c1"># print(gt, bl[gt])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-203"><code data-line-number="203"></code></a></td>
-<td class="code"><code>                    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-204"><code data-line-number="204"></code></a></td>
-<td class="code"><code>                        <span class="c1"># only plot valid phi,psi pairs (not equal to -1)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-205"><code data-line-number="205"></code></a></td>
-<td class="code"><code>                        <span class="n">phi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-206"><code data-line-number="206"></code></a></td>
-<td class="code"><code>                        <span class="n">psi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psi</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-207"><code data-line-number="207"></code></a></td>
-<td class="code"><code>                        <span class="n">phi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-208"><code data-line-number="208"></code></a></td>
-<td class="code"><code>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">phi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-209"><code data-line-number="209"></code></a></td>
-<td class="code"><code>                        <span class="n">psi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-210"><code data-line-number="210"></code></a></td>
-<td class="code"><code>                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">psi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-211"><code data-line-number="211"></code></a></td>
-<td class="code"><code>                        <span class="n">val_idx</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phi_idx</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">psi_idx</span><span class="p">))</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-212"><code data-line-number="212"></code></a></td>
-<td class="code"><code>                        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span> <span class="n">psi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-213"><code data-line-number="213"></code></a></td>
-<td class="code"><code>                                 <span class="s1">'o'</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-214"><code data-line-number="214"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-215"><code data-line-number="215"></code></a></td>
-<td class="code"><code>                    <span class="n">out_phi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">phi</span><span class="p">])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-216"><code data-line-number="216"></code></a></td>
-<td class="code"><code>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_phi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-217"><code data-line-number="217"></code></a></td>
-<td class="code"><code>                    <span class="n">out_psi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">psi</span><span class="p">])</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-218"><code data-line-number="218"></code></a></td>
-<td class="code"><code>                    <span class="nb">print</span><span class="p">(</span><span class="n">out_psi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-219"><code data-line-number="219"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-220"><code data-line-number="220"></code></a></td>
-<td class="code"><code>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-221"><code data-line-number="221"></code></a></td>
-<td class="code"><code>                    <span class="n">pcnt</span> <span class="o">+=</span> <span class="mi">1</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-222"><code data-line-number="222"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-223"><code data-line-number="223"></code></a></td>
-<td class="code"><code>                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">''</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-224"><code data-line-number="224"></code></a></td>
-<td class="code"><code>                    <span class="k">break</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-225"><code data-line-number="225"></code></a></td>
-<td class="code"><code>        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-226"><code data-line-number="226"></code></a></td>
-<td class="code"><code>            <span class="c1"># plt.show()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-227"><code data-line-number="227"></code></a></td>
-<td class="code"><code>            <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">fname</span><span class="o">+</span><span class="s1">'_phipsi_plot.png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-228"><code data-line-number="228"></code></a></td>
-<td class="code"><code>                        <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-229"><code data-line-number="229"></code></a></td>
-<td class="code"><code>        <span class="n">CS</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-230"><code data-line-number="230"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-231"><code data-line-number="231"></code></a></td>
-<td class="code"><code>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-232"><code data-line-number="232"></code></a></td>
-<td class="code"><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-233"><code data-line-number="233"></code></a></td>
-<td class="code"><code>    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">()</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-234"><code data-line-number="234"></code></a></td>
-<td class="code"><code>    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-</code></td>
-</tr>
-<tr>
-<td class="linenos linenodiv"><a href="#-235"><code data-line-number="235"></code></a></td>
-<td class="code"><code>    <span class="n">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-</code></td>
-</tr>
-</table></div>
+<table class="highlighttable"><tr>
+<td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235</pre></div></td>
+<td class="code">
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">Bio.PDB.vectors</span> <span class="kn">import</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">calc_angle</span><span class="p">,</span> <span class="n">calc_dihedral</span>
+
+<span class="n">INVALID_ANGLE</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># invalid angle value</span>
+
+
+<span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'compute_phi_psi.py'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'fname'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-plot'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'store_true'</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">args</span>
+
+
+<span class="k">class</span> <span class="nc">running_stats</span><span class="p">:</span>
+    <span class="sd">'''this class computes mean and std values for a</span>
+<span class="sd">    list of values across proteins'''</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name_str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name_str</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Vin</span><span class="p">):</span>
+        <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x2</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Vin</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">mu</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
+        <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x2</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"bond length"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">compute_stats</span><span class="p">:</span>
+    <span class="sd">'''Compute mean and std values for bond lengths and bond angles'''</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CN"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCa"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaC"</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CNCa"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"NCaC"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span> <span class="o">=</span> <span class="n">running_stats</span><span class="p">(</span><span class="s2">"CaCN"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v_CN</span><span class="p">,</span> <span class="n">v_NCa</span><span class="p">,</span> <span class="n">v_CaC</span><span class="p">,</span> <span class="n">v_CNCa</span><span class="p">,</span> <span class="n">v_NCaC</span><span class="p">,</span> <span class="n">v_CaCN</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CN</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCa</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaC</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CNCa</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_NCaC</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">v_CaCN</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">CNCa</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">NCaC</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">CaCN</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">process_tertiary</span><span class="p">(</span><span class="n">tertiary</span><span class="p">):</span>
+    <span class="sd">'''compute the bond lengths, bond angles, and dihedral angles'''</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">psi</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">omega</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_angle_CNCa</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_angle_NCaC</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_angle_CaCN</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_len_NCa</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">bond_len_CN</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># convert tertiary coords into Vectors</span>
+    <span class="n">pV</span> <span class="o">=</span> <span class="p">[</span><span class="n">vec</span> <span class="k">for</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
+                             <span class="nb">zip</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tertiary</span><span class="p">[</span><span class="mi">2</span><span class="p">]))]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">),</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="c1"># check for zero coords</span>
+        <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_im1</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_i</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_i1</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_i2</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_i3</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pV</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">norm_i4</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># compute bond lengths</span>
+        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span><span class="p">:</span>
+            <span class="n">blen_CN</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+            <span class="n">bond_len_CN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CN</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
+            <span class="n">blen_NCa</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+            <span class="n">bond_len_NCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_NCa</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+            <span class="n">blen_CaC</span> <span class="o">=</span> <span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span>
+            <span class="n">bond_len_CaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">blen_CaC</span><span class="p">)</span>
+
+        <span class="c1"># compute bond angles</span>
+        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span><span class="p">:</span>
+            <span class="n">theta_CNCa</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># C-N-Ca</span>
+            <span class="n">bond_angle_CNCa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CNCa</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+            <span class="n">theta_NCaC</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C</span>
+            <span class="n">bond_angle_NCaC</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_NCaC</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
+            <span class="n">theta_CaCN</span> <span class="o">=</span> <span class="n">calc_angle</span><span class="p">(</span><span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Ca-C-N</span>
+            <span class="n">bond_angle_CaCN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_CaCN</span><span class="p">)</span>
+
+        <span class="c1"># compute dihedral angles</span>
+        <span class="k">if</span> <span class="n">norm_im1</span> <span class="ow">and</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span><span class="p">:</span>
+            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># N-Ca-C-N</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+        <span class="n">phi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phi_i</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i</span> <span class="ow">and</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span><span class="p">:</span>
+            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># C-N-Ca-C</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">psi_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+        <span class="n">psi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">psi_i</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">norm_i1</span> <span class="ow">and</span> <span class="n">norm_i2</span> <span class="ow">and</span> <span class="n">norm_i3</span> <span class="ow">and</span> <span class="n">norm_i4</span><span class="p">:</span>
+            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">calc_dihedral</span><span class="p">(</span>
+                <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">],</span> <span class="n">pV</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Ca-C-N-Ca</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">omega_i</span> <span class="o">=</span> <span class="n">INVALID_ANGLE</span>
+        <span class="n">omega</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">omega_i</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span>
+            <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">'''Parse ProteinNet file and add PHIPSI entries'''</span>
+    <span class="n">CS</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">()</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">fname</span>
+    <span class="n">out_fname</span> <span class="o">=</span> <span class="n">filename</span><span class="o">+</span><span class="s2">"_ext"</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_fname</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_pointer</span><span class="p">:</span>
+            <span class="n">pcnt</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+                <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">id_next</span><span class="p">:</span>
+                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">"ID"</span><span class="p">,</span> <span class="n">next_line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[ID]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+                    <span class="n">id_next</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'[TERTIARY]</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+                    <span class="n">tertiary</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="c1"># 3 dimension</span>
+                    <span class="k">for</span> <span class="n">_axis</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                        <span class="n">next_line</span> <span class="o">=</span> <span class="n">file_pointer</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="n">next_line</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+                        <span class="n">tertiary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                            <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">next_line</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
+
+                    <span class="c1"># write the PHI_PSI angles</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">'[PHI_PSI]'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+
+                    <span class="n">phi</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span>\
+                        <span class="n">bond_angle_NCaC</span><span class="p">,</span> <span class="n">bond_angle_CaCN</span><span class="p">,</span> <span class="n">bond_angle_CNCa</span><span class="p">,</span>\
+                        <span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span> <span class="o">=</span> <span class="n">process_tertiary</span><span class="p">(</span>
+                            <span class="n">tertiary</span><span class="p">)</span>
+
+                    <span class="n">CS</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">bond_len_CN</span><span class="p">,</span> <span class="n">bond_len_NCa</span><span class="p">,</span> <span class="n">bond_len_CaC</span><span class="p">,</span>
+                              <span class="n">bond_angle_CNCa</span><span class="p">,</span> <span class="n">bond_angle_NCaC</span><span class="p">,</span>
+                              <span class="n">bond_angle_CaCN</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">"process"</span><span class="p">,</span> <span class="n">pcnt</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+                          <span class="nb">len</span><span class="p">(</span><span class="n">psi</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+                    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tertiary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">//</span><span class="mi">3</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
+
+                    <span class="c1"># print(gt, bl[gt])</span>
+                    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
+                        <span class="c1"># only plot valid phi,psi pairs (not equal to -1)</span>
+                        <span class="n">phi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+                        <span class="n">psi_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">psi</span><span class="p">)</span>
+                        <span class="n">phi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">phi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">psi_idx</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">psi_a</span> <span class="o">!=</span> <span class="n">INVALID_ANGLE</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">val_idx</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phi_idx</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">psi_idx</span><span class="p">))</span>
+                        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span> <span class="n">psi_a</span><span class="p">[</span><span class="n">val_idx</span><span class="p">],</span>
+                                 <span class="s1">'o'</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+                    <span class="n">out_phi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">phi</span><span class="p">])</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">out_phi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+                    <span class="n">out_psi</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">psi</span><span class="p">])</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">out_psi</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+
+                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+                    <span class="n">pcnt</span> <span class="o">+=</span> <span class="mi">1</span>
+
+                <span class="k">elif</span> <span class="n">next_line</span> <span class="o">==</span> <span class="s1">''</span><span class="p">:</span>
+                    <span class="k">break</span>
+        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">plot</span><span class="p">:</span>
+            <span class="c1"># plt.show()</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">fname</span><span class="o">+</span><span class="s1">'_phipsi_plot.png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+                        <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">CS</span><span class="o">.</span><span class="n">print_stats</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">read_protein_from_file</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</pre></div>
+</td>
+</tr></table>
 </div>
 </div>
 </div>

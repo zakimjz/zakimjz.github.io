@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/</loc>
-  <lastmod>2021-08-12T12:28:00Z</lastmod>
+  <lastmod>2021-08-12T13:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/archive.html</loc>
-  <lastmod>2021-08-12T12:53:00Z</lastmod>
+  <lastmod>2021-08-12T13:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/categories/</loc>
@@ -70,6 +70,14 @@
   <lastmod>2021-08-12T12:28:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/datamining/</loc>
+  <lastmod>2021-08-12T13:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.cs.rpi.edu/~zaki/courses/datamining/dm_syllabus/</loc>
+  <lastmod>2021-08-12T13:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.cs.rpi.edu/~zaki/courses/mlib/</loc>
   <lastmod>2021-08-12T12:28:00Z</lastmod>
  </url>
@@ -111,7 +119,7 @@
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/listings/mlib/compute_phi_psi.py.html</loc>
-  <lastmod>2021-08-12T12:53:00Z</lastmod>
+  <lastmod>2021-08-12T13:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.cs.rpi.edu/~zaki/posts/</loc>
