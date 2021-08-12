@@ -1,14 +1,16 @@
+<!--
 .. title: CSCI4390-6390 Syllabus 
 .. slug: dm_syllabus
-.. date: 2020-08-31 14:16:31 UTC-04:00
+.. date: 2021-08-12 14:16:31 UTC-04:00
 .. tags: 
 .. category: 
 .. link: 
-.. description: 
+.. description:
+.. has_math: True
 .. type: text
+-->
 
-Introduction
-------------
+## Introduction
 
 This course will provide an introduction to the main topics in data
 mining and knowledge discovery, including: algebraic and statistical
@@ -16,8 +18,7 @@ foundations, pattern mining, classification, regression, and clustering.
 Emphasis will be laid on the algorithmic approach.
 
 
-Learning Objectives
--------------------
+## Learning Objectives
 
 **For CSCI-4390**: After taking this course students will be
 
@@ -43,8 +44,7 @@ Learning Objectives
 * able to implement more advanced algorithms
 
 
-Prerequisites
--------------
+## Prerequisites
 
 You need a minimum of CS2300: Introduction to Algorithms. Linear algebra
 forms the foundation of data mining and machine learning, and therefore
@@ -52,34 +52,19 @@ prior exposure to linear algebra is essentially a prerequisite. A good
 knowledge of probability and statistics is also a plus. 
 
 You are expected to know how to program. Class assignments will require
-the use of `Python3 <https://www.python.org/>`_, especially using NumPy.
+the use of [Python3](https://www.python.org/), especially using NumPy (and
+PyTorch)
 
-Textbook
---------
+## Textbook
 
 The following textbook is **required** for the course:
 
-`Data Mining and Machine Learning: Fundamental Concepts and Algorithms
-<https://dataminingbook.info/>`_ (2nd Edition), Mohammed J. Zaki and
+[Data Mining and Machine Learning: Fundamental Concepts and Algorithms]
+(https://dataminingbook.info/) (2nd Edition), Mohammed J. Zaki and
 Wagner Meira, Jr, Cambridge University Press, 2020.
 
-Readings from the book will be posted on the course schedule,
 
-All lecture notes and videos will be posted online on the course
-webpage. 
-
-Lectures & Videos
-------------------
-
-The lecture PDF and Video will be posted on the course webpage after
-each class, typically before 5pm on each class day.
-
-Check out the short video on `Successful Remote Learning <https://mediasite.mms.rpi.edu/Mediasite5/Play/3c69d5096dc5494eadcaba2b9c99189f1d>`_ which can help you get organized for remote classes.
-
-
-
-Grading Policy
---------------
+## Grading Policy
 
 Your grade will be a combination of the following items. 
 
@@ -88,7 +73,7 @@ Your grade will be a combination of the following items.
   also have written questions. You can expect about 8-10 assignments
   over the semester. 
 
-* **Exams (60%)**: There will be four exams covering the main topics of
+* **Exams (60%)**: There will be three exams covering the main topics of
   the course. The tentative exam dates are noted on the class schedule
   table. There is no comprehensive final exam. All exams are open book.
 
@@ -107,17 +92,14 @@ includes extra/in-depth questions on the exam, and implementation of
 more advanced algorithms for the assignments. The letter grades
 typically are also based on different ranges for the two sections.
 
-All assignments and exams will be submitted online via **Submitty**:
-https://submitty.cs.rpi.edu/courses/f20/csci4390, and all class related
-discussions will be conducted via **Campuswire**:
-https://campuswire.com/c/GC1A29D57/ . Class annoncements will be posted
-on the course webpage and also posted on Campuswire.
+All assignments and exams will be submitted online via **Submitty**, and 
+discussions will be conducted via **Campuswire**. See the main page  for the
+links.
 
 
-COVID-19 Issues
-----------------
+## Health Issues
 
-The course is online for the entire semester. Students should follow all
+Students should follow all
 guidelines from RPI related to health and safety for themselves and
 other campus members. All illness related accommodations will require
 officially approved excuse from RPI.
@@ -132,16 +114,15 @@ reasonably suspected case of illness may be appealable under the student
 grade appeal process. Students who need to report an illness should
 contact the Student Health Center via email or call 518-276-6287. For
 student seen off campus, a student may request an excused absence via
-http://www.bit.ly/rpiabsence with an uploaded doctor's note that excuses
+<http://www.bit.ly/rpiabsence> with an uploaded doctor's note that excuses
 them.
 
 
-Academic Integrity
-------------------
+## Academic Integrity
 
 Students must work independently on all course assignments. You may
-consult other members of the class on the assignments, but you must
-submit your own work. For instance you may discuss general approaches to
+consult other members of the class on the assignments, **but you must
+submit your own work**. For instance you may discuss general approaches to
 solving a problem, but you must implement the solution on your own
 (similarity detection software may be used). **Anytime you borrow
 material from the web or elsewhere, you must acknowledge the source**.
