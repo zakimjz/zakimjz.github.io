@@ -14,13 +14,13 @@ This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
 algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
-**Class Hours**: 10AM-11:50AM Mon/Thurs 
+**Class Hours**: 10AM-11:50AM Mon/Thurs, *West Hall Auditorium (2nd Floor)* 
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs
 
-**TA**: TBD
+**TA**: Qitong Wang <wangq19@rpi.edu>, Ian Bogle <boglei@rpi.edu>
 
-**TA Office Hours**: TBD
+**TA Office Hours**: Ian Bogle (Mon 2-3pm), Qitong Wang (TBD)
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
