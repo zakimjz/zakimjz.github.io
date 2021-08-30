@@ -61,9 +61,9 @@ change, but the dates for the Exams are fixed.
 |  Nov 15 |  Classification Assessment II (Chapter 22) |  |
 |  Nov 18 |  Representative-based Clustering (Chapter 13) |  |
 |  Nov 22 |  Density-based Clustering (Chapter 15) |  |
-|  Nov 25 |  Spectral and Graph Clustering I (Chapter 16) |  |
-|  Nov 29 |  Clustering Validation (Chapter 17)|  |
-|  Dec 02 |  Pattern Mining I (Chapter 8) |  |
-|  Dec 06 |  Pattern Mining II (Chapter 9) |  |
+|  Nov 25 |  **NO CLASS** (Thanksgiving) |  |
+|  Nov 29 |  Spectral and Graph Clustering I (Chapter 16)|  |
+|  Dec 02 |  Clustering Validation (Chapter 17) |  |
+|  Dec 06 |  Pattern Mining (Chapter 9) |  |
 |  Dec 09 |  **EXAM III**  |  |
  
