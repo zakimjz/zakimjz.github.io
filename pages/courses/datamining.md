@@ -34,9 +34,9 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 Tentative course schedule is given below. The topics are subject to
 change, but the dates for the Exams are fixed.
 
-| Date | Topic | Assignments | Lectures, Videos |
+| Date | Topic | Assignments | Lectures |
 | :--- | :--- | :---: | ---: |
-|  Aug 30 |  Introduction & Data Matrix (Chapter 1) |   |
+|  Aug 30 |  Introduction & Data Matrix (Chapter 1) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf)  |
 |  Sep 02 |  Data Matrix/Numeric Attributes (Chapter 2) |   |
 |  Sep 07 (Tue) | Numeric Attributes (Chapter 2) |   |
 |  Sep 09 |  Dimensionality Reduction I (Chapter 7) |   |
