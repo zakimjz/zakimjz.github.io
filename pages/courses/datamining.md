@@ -20,7 +20,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 **TA**: Qitong Wang <wangq19@rpi.edu>, Ian Bogle <boglei@rpi.edu>
 
-**TA Office Hours (online)**: Ian Bogle (Mon 2-3pm; [webex](https://rensselaer.webex.com/meet/boglei)), Qitong Wang (Wed 2-3pm, Fri 2-3pm; [webex](https://rensselaer.webex.com/meet/wangq19)).
+**TA Office Hours (online)**: Ian Bogle (Mon 2-3pm; [webex](https://rensselaer.webex.com/meet/boglei)), Qitong Wang (Wed 2-3pm & Fri 2-3pm; [webex](https://rensselaer.webex.com/meet/wangq19)).
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
