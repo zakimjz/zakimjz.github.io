@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign1 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign1/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign1">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign1/">
+<meta property="og:description" content="Assign1: Covariance and Eigenvectors
+Due Date: Sep 16th (Thurs), before midnight (11:59:59PM, Alofi Time; GMT-11)
+Download the Appliances energy prediction data set
+from the UCI Machine Learning repos">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-09-08T13:51:00-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign1</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="section" id="assign1-covariance-and-eigenvectors">
+<h2>Assign1: Covariance and Eigenvectors</h2>
+<p><strong>Due Date</strong>: Sep 16th (Thurs), before midnight (11:59:59PM, Alofi Time; GMT-11)</p>
+<p>Download the <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction#">Appliances energy prediction data set</a>
+from the UCI Machine Learning repository. This dataset has 29 attributes
+and 19735 points. You will ignore the first attribute, which is a
+date-time variable.
+It also turns out that the last two columns are identical, so you can
+remove the last column, leaving you with 27 attributes in total that will
+be used in the assignment.</p>
+<p>This assignment consists of two parts. Part I must be done by students
+in both sections, namely CSCI4390 and CSCI6390. For the second part,
+Part II-4390 must be done by those in CSCI4390, and Part II-CSCI6390
+must be done by students registered for CSCI6390.</p>
+<div class="section" id="part-i-both-csci-4390-and-csci-6390-50-points">
+<h3>Part I (both CSCI-4390 and CSCI-6390): 50 Points</h3>
+<p><strong>a. Mean vector and total variance</strong></p>
+<p>Compute the mean vector <span class="math">\(\mathbf{\mu}\)</span> for the data
+matrix, and then compute the total variance <span class="math">\(var(\mathbf{D})\)</span>; see
+Eq. (1.8) for the latter.</p>
+<p><strong>b. Covariance matrix (inner and outer product form)</strong></p>
+<p>Compute the sample covariance matrix  <span class="math">\(\mathbf{\Sigma}\)</span>  as <strong>inner
+products</strong> between the attributes of the centered data matrix (see Eq.
+(2.38) in chapter 2). Next compute the sample covariance matrix as sum
+of the <strong>outer products</strong> between the centered points (see Eq. (2.39)).</p>
+<p><strong>c. Correlation matrix as pair-wise cosines</strong></p>
+<p>Compute the correlation matrix for this dataset using the formula for
+the cosine between centered attribute vectors (see Eq. (2.30)).</p>
+<p>Output which attribute pairs are i) the most correlated, ii) the most
+anti-correlated, and iii) the least correlated?</p>
+<p>Create the scatter plots for the threee interesting pairs using
+matplotlib and visually confirm the trends, i.e., describe how each of
+the three cases results in a particular type of plot.</p>
+</div>
+<div class="section" id="part-ii-eigenvectors-50-points">
+<h3>Part II: Eigenvectors (50 Points)</h3>
+<div class="section" id="csci-4390-only-dominant-eigenvector">
+<h4>CSCI-4390 Only: Dominant Eigenvector</h4>
+<p>Compute the dominant eigenvalue and eigenvector of the covariance matrix
+<span class="math">\(\mathbf{\Sigma}\)</span> via the power-iteration method. One can compute
+the dominant eigen-vector/-value of the covariance matrix iteratively as
+follows.</p>
+<p>Let <span class="math">\(\mathbf{x}_0\)</span> be a random starting vector in $R^d$, where $d$ is the
+number of dimensions.</p>
+<p>In each iteration $i$, we compute the new vector:</p>
+<div class="math">
+\begin{equation*}
+\mathbf{x}_i = \mathbf{\Sigma} \; \mathbf{x}_{i-1}
+\end{equation*}
+</div>
+<p>We then find the element of <span class="math">\(\mathbf{x}_i\)</span> that  has the maximum
+absolute value, say at index <cite>m</cite>. For the next round, to avoid
+numerical issues with large values, we re-scale <span class="math">\(\mathbf{x}_i\)</span> by
+dividing all elements by <span class="math">\(x_{im}\)</span>, so that the largest value is always 1
+before we begin the  next  iteration.</p>
+<p>To test convergence, you may compute the norm of the difference between
+the scaled vectors from the current iteration and the previous one, and
+you can stop if this norm falls below some threshold. That is, stop if</p>
+<div class="math">
+\begin{equation*}
+\|\mathbf{x}_i - \mathbf{x}_{i-1}\| &lt; \epsilon
+\end{equation*}
+</div>
+<p>For the final
+eigen-vector, make sure to normalize it, so that it has unit length.</p>
+<p>Also, the ratio <span class="math">\(\frac{x_{im}}{x_{i-1,m}}\)</span> gives you the largest
+eigenvalue. If you did the scaling as described above, then the
+denominator will be 1, but the numerator will be the updated value of
+that element before scaling.</p>
+<p>Once you have obtained the dominant eigenvector, <span class="math">\(\mathbf{u}_1\)</span>,
+project each of the original data points <span class="math">\(\mathbf{x}_i\)</span> onto this
+vector, and plot the coordinates for the new points along this
+"direction".</p>
+</div>
+<div class="section" id="csci-6390-only-first-two-eigenvectors-and-eigenvalues">
+<h4>CSCI-6390 Only: First Two Eigenvectors and Eigenvalues</h4>
+<p>Compute the first two eigenvectors of the covariance matrix
+<span class="math">\(\mathbf{\Sigma}\)</span> using a generalization of the above iterative
+method.</p>
+<p>Let <span class="math">\(\mathbf{X}_0\)</span> be a <span class="math">\(d \times 2\)</span> (random) matrix with two
+non-zero $d$-dimensional column vectors with unit length.  We will
+iteratively multiply <span class="math">\(\mathbf{X}_0\)</span> with <span class="math">\(\mathbf{\Sigma}\)</span> on the
+left.</p>
+<p>The first column will not be modified, but the second column will be
+orthogonalized with respect to the first one by subtracting its
+projection along the first column (see section 1.3.3 in chapter 1). That
+is, let <span class="math">\(\mathbf{a}\)</span> and <span class="math">\(\mathbf{b}\)</span> denote the first and second
+column of <span class="math">\(\mathbf{X}_1\)</span>, where</p>
+<div class="math">
+\begin{equation*}
+\mathbf{X}_1 = \mathbf{\Sigma} \; \mathbf{X}_0
+\end{equation*}
+</div>
+<p>Then we orthogonalize <span class="math">\(\mathbf{b}\)</span> as follows:</p>
+<div class="math">
+\begin{equation*}
+\mathbf{b} = \mathbf{b} - \left({\mathbf{b}^T \mathbf{a} \over \mathbf{a}^T\mathbf{a}}\right) \mathbf{a}
+\end{equation*}
+</div>
+<p>After this <span class="math">\(\mathbf{b}\)</span>
+is guaranteed to be orthogonal to <span class="math">\(\mathbf{a}\)</span>. This will yield the
+matrix <span class="math">\(\mathbf{X}_1\)</span> with the two column vectors denoting the current
+estimates for the first and second eigenvectors.</p>
+<p>Before the next iteration, normalize each column to be unit length, and
+repeat the whole process. That is, from <span class="math">\(\mathbf{X}_1\)</span> obtain
+<span class="math">\(\mathbf{X}_2\)</span> and so on, until convergence.</p>
+<p>To test for convergence, you can look at the distance between
+<span class="math">\(\mathbf{X}_{i}\)</span> and <span class="math">\(\mathbf{X}_{i-1}\)</span>. If the difference is less
+than some threshold <span class="math">\(\epsilon\)</span> then we stop.</p>
+<p>Once you have obtained the two eigenvectors: <span class="math">\(\mathbf{u}_1\)</span> and
+<span class="math">\(\mathbf{u}_2\)</span>, project each of the original data points
+<span class="math">\(\mathbf{x}_i\)</span> onto those two vectors, to obtain the new projected
+points in 2D. Plot these projected points in the two new dimensions.</p>
+</div>
+</div>
+<div class="section" id="submission">
+<h3>Submission</h3>
+<p>Submit your code via submitty. Name your python script:
+<strong>assign1.py</strong>.</p>
+<p>Your script will be run as follows:</p>
+<p>assign1.py FILENAME EPS</p>
+<p>Here FILENAME is the name of the input CSV file, EPS the
+convergence threshold <span class="math">\(\epsilon\)</span> for the eigen-vector/-value computation.</p>
+<p>You may assume that the input CSV data file <em>energydata_complete.csv</em>
+resides in the local directory where the script will be called from. You
+can use epsilon as 0.001 or 0.0001. You may find the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">pandas read_csv</a>
+function useful to read the CSV file.</p>
+<p>Save all your output to a pdf file named <strong>assign1.pdf</strong>. The output
+should comprise the mean vector, total variance, covariance matrix via
+inner and via outer product formulas, correlation matrix, the
+observations, the dominant eigen-vectors and eigenvalues. The scatter
+plots should also be part of this output file as well, with any required
+comments. <strong>You will lose points if you do not include the output PDF
+file.</strong></p>
+<p>Your script must use Python version 3. Please note that you can use
+built-in NumPy/Python functions for reading and parsing the text input,
+but you should NOT use any of the built-in functions like <strong>cov</strong> or
+<strong>eigen</strong> for this assignment. You may however verify your answers by
+comparing to the results from the built-in methods.</p>
+</div>
+<div class="section" id="tutorial-on-python-and-numpy">
+<h3>Tutorial on Python and NumPy</h3>
+<p>For those not that familiar with python or NumPy, you may search online
+for tutorials, e.g. <a class="reference external" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a> or
+<a class="reference external" href="https://numpy.org/doc/stable/">https://numpy.org/doc/stable/</a></p>
+</div>
+<div class="section" id="policy-on-academic-honesty">
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+</div>
+</div>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2021         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
