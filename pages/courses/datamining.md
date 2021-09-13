@@ -43,7 +43,7 @@ change, but the dates for the Exams are fixed.
 |  Sep 02 |  Data Matrix/Numeric Attributes (Chapter 2) | [lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf)   |
 |  Sep 07 (Tue) | Numeric Attributes (Chapter 2) | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf)   |
 |  Sep 09 |  Dimensionality Reduction I (Chapter 7) | [lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf)   |
-|  Sep 13 |  Dimensionality Reduction II (Chapter 7) |   |
+|  Sep 13 |  Dimensionality Reduction II (Chapter 7), High Dimensional Data (Chapter 6) | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf)  |
 |  Sep 16 |  High Dimensional Data (Chapter 6) |   |
 |  Sep 20 |  High Dimensional Data II (Chap 6) |   |
 |  Sep 23 |  Kernel Methods I (Chapter 5) |  |
