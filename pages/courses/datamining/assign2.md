@@ -1,7 +1,7 @@
 <!--
 .. title: CSCI4390-6390 Assign2
 .. slug: dm_assign2
-.. date: 2021-09-15 18:23:01 UTC-04:00
+.. date: 2021-09-15 10:23:01 UTC-04:00
 .. tags: 
 .. category: 
 .. link: 
