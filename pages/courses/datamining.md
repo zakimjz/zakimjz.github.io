@@ -46,19 +46,19 @@ change, but the dates for the Exams are fixed.
 |  Sep 07 (Tue) | Numeric Attributes (Chapter 2) | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf)   |
 |  Sep 09 |  Dimensionality Reduction I (Chapter 7) | [lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf)   |
 |  Sep 13 |  Dimensionality Reduction II (Chapter 7), High Dimensional Data (Chapter 6) | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf)  |
-|  Sep 16 |  High Dimensional Data (Chapter 6) |   |
-|  Sep 20 |  High Dimensional Data II (Chap 6) |   |
-|  Sep 23 |  Kernel Methods I (Chapter 5) |  |
-|  Sep 27 |  Kernel PCA & Linear Regression I (Chapters 5, 23) |   |
+|  Sep 16 |  High Dimensional Data (Chapter 6) | [lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf)  |
+|  Sep 20 |  Kernel Methods I (Chap 5) |   |
+|  Sep 23 |  Kernel PCA & Linear Regression (Chapter 7, 23) |  |
+|  Sep 27 |  Linear Regression II (Chapter 23) |   |
 |  Sep 30 |  **EXAM I** |   |
-|  Oct 04 |  Linear Regression II (Chapter 23)|   |
-|  Oct 07 |  Logistic Regression (Chapter 24) |   |
+|  Oct 04 |  Logistic Regression I (Chapter 24)|   |
+|  Oct 07 |  Logistic Regression II (Chapter 24) |   |
 |  Oct 11 |  **NO CLASS** (Columbus Day) |  |
-|  Oct 14 |  Logistic & Neural Networks  (Chapters 24, 25) |  |
-|  Oct 18 |  Neural Networks I (Chapter 25) |  |
-|  Oct 21 |  Neural Network II (Chapter 25) |  |
-|  Oct 25 |  Deep Learning I (Chapter 26) |  |
-|  Oct 28 |  Deep Learning II (Chap 26) & SVMs I (Chapter 21)  |  |
+|  Oct 14 |  Neural Networks I (Chapter 25) |  |
+|  Oct 18 |  Neural Networks II (Chapter 25) |  |
+|  Oct 21 |  Deep Learning I (Chapter 26) |  |
+|  Oct 25 |  Deep Learning II (Chapter 26) |  |
+|  Oct 28 |  Deep Learning III (Chap 26) & SVMs I (Chapter 21)  |  |
 |  Nov 01 |  **EXAM II** |  |
 |  Nov 04 |  Support Vector Machines II (Chapter 21) |  |
 |  Nov 08 |  Probabilisitic Classification (Chapter 18)|  |
