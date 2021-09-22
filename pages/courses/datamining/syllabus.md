@@ -92,7 +92,7 @@ includes extra/in-depth questions on the exam, and implementation of
 more advanced algorithms for the assignments. The letter grades
 typically are also based on different ranges for the two sections.
 
-All assignments and exams will be submitted online via **Submitty**, and 
+All assignments will be submitted online via **Submitty**, and 
 discussions will be conducted via **Campuswire**. See the main page  for the
 links.
 
