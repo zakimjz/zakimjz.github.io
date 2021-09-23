@@ -75,7 +75,8 @@ Your grade will be a combination of the following items.
 
 * **Exams (60%)**: There will be three exams covering the main topics of
   the course. The tentative exam dates are noted on the class schedule
-  table. There is no comprehensive final exam. All exams are open book.
+  table. There is no comprehensive final exam. All exams are open book, and
+  in-person during class.
 
 * **Class Participation**: Students are encouraged to participate in the
   class via attendance, discussions, and engagement on the Campuswire

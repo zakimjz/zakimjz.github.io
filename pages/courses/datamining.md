@@ -48,8 +48,8 @@ change, but the dates for the Exams are fixed.
 |  Sep 13 |  Dimensionality Reduction II (Chapter 7), High Dimensional Data (Chapter 6) | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf)  |
 |  Sep 16 |  High Dimensional Data (Chapter 6) | [lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf)  |
 |  Sep 20 |  Kernel Methods I (Chap 5) | [lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7.pdf)   |
-|  Sep 23 |  Kernel PCA & Linear Regression (Chapter 7, 23) |  |
-|  Sep 27 |  Linear Regression II (Chapter 23) |   |
+|  Sep 23 |  Kernel PCA & Linear Discriminants (Chapter 7, 20) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf)  |
+|  Sep 27 |  Linear Discriminants II & Regression (Chapters 20, 23) |   |
 |  Sep 30 |  **EXAM I** |   |
 |  Oct 04 |  Logistic Regression I (Chapter 24)|   |
 |  Oct 07 |  Logistic Regression II (Chapter 24) |   |
