@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-# Assign3: Kernel Linear Discriminant
+# Assign3: Kernel Discriminant Analysis
 
 **Due Date**: Oct 8, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
