@@ -19,7 +19,8 @@ You will use the
 [Appliances energy prediction data set](https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction#).
 You should ignore the first attribute, which is a date-time variable,
 and you should also remove the last attribute, which is a duplicate of
-the previous one. 
+the previous one (note: do not modify the csv file, but rather ignore these
+columns after reading in the csv in your code). 
 
 For kernel discriminant, use the first attribute (after removing the
 date-time variable), which denotes the
