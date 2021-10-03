@@ -44,12 +44,20 @@ points.
 ## Both CSCI4390 and CSCI6390
 
 You will implement the kernel discriminant analysis algorithm as described in
-Algorithm 20.2 (Chapter 20, page 512) to find the kernel LD. Use the Gaussian kernel to
+Algorithm 20.2 (Chapter 20, page 512) to find the kernel LD. 
+**Note: use numpy.lingalg.pinv** to compute the inverse, since the regular
+numpy.linalg.inv function is not very stable on this dataset due to the
+condition number of the matrix.
+
+Use the Gaussian kernel to
 construct the kernel matrix, but you will have to play with the spread
-parameter to find the best LD, e.g., the one that gives the best Fischer
-objective value among the different spread parameters. You can find this by
+parameter $\sigma^2$ to find the best LD, e.g., the one that gives the best Fischer
+objective value among the different spread parameters. 
+You can find this by
 grid-search, i.e., starting with a small value and increasing it to see
-which spread value gives the highest objective value.
+which spread value gives the highest objective value. Initially, I suggest
+you try values from 0.001 to 100, and increase in powers of 10. Next narrow
+down the range successively till you find the best spread value.
 
 Once you have found the best spread parameter for the Gaussian kernel, then
 project the points onto the kernel LD direction, and plot them. Use circles
@@ -62,10 +70,13 @@ file.
 In addition to the kernel LDA algorithm, you should implement the linear
 discriminant algorithm in Algorithm 20.1.
 
-You need to find the LD dicrection, and then verify that it is the same as
+You need to find the LD direction, and then verify that it is the same as
 the one obtained from the kernel discriminant algorithm using the linear
 kernel. In other words, run kernel discriminant Algo 20.2 with linear kernel and
-compute the direction, and this should match the output from Algo 20.1.
+compute the direction $\mathbf{w}$, and this should match the output from Algo 20.1.
+
+Also, project the points onto the LD direction for the Linear kernel, and
+plot this. Compare with the plot from the Gaussian kernel.
 
 ---
 
@@ -74,6 +85,8 @@ compute the direction, and this should match the output from Algo 20.1.
 * Write a scripy named as **Assign3.py**, which will be run as 
  **Assign3.py FILENAME SPREAD**. FILENAME is the datafile name,  SPREAD is the
  spread parameter $\sigma^2$ for the Gaussian kernel.
+ Note: when you play with the spread parameter, then a value like 0.01 means
+ $\sigma^2 = 0.01$ in the Gaussian kernel.
  
 Your script should print out the weight vector $\mathbf{a}$, which gives the
 mixture weights for each of the feature points. You need to include the plot
@@ -82,7 +95,6 @@ plot.
 
 For the additional part for CSCI6390, show the LD direction $\mathbf{w}$
 from the linear kernel in Algo 20.2, and the one from Algo 20.1.
-
 
 * Submit a PDF file named Assign3.pdf that should include your answers
  to each of the questions (just cut and paste the output from python).
