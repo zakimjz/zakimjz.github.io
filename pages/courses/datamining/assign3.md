@@ -36,8 +36,8 @@ higher than 50 as class $c_2$. You need to do this conversion to
 create the binary class for each point.
 
 Finally, since running the LDA code on 19K points can take a very long time,
-use the first 5000 points. If that is also too much, try at least 1000
-points.
+use the first 1000 points. This will make the search for the spread
+parameter faster.
 
 ---
 
