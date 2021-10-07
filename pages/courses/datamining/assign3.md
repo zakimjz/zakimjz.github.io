@@ -45,7 +45,7 @@ parameter faster.
 
 You will implement the kernel discriminant analysis algorithm as described in
 Algorithm 20.2 (Chapter 20, page 512) to find the kernel LD. 
-**Note: use numpy.lingalg.pinv** to compute the inverse, since the regular
+**Note: use numpy.linalg.pinv** to compute the inverse, since the regular
 numpy.linalg.inv function is not very stable on this dataset due to the
 condition number of the matrix.
 

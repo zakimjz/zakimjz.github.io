@@ -53,16 +53,16 @@ change, but the dates for the Exams are fixed.
 |  Sep 23 |  Kernel PCA & Linear Discriminants (Chapter 7, 20) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf)  |
 |  Sep 27 |  Linear Discriminants II (Chapters 20) | [lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9.pdf)   |
 |  Sep 30 |  **EXAM I** |   |
-|  Oct 04 |  Linear Regression I (Chapter 23)| [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)   |
-|  Oct 07 |  Linear Regression II & Logistic Regression (Chapters 23, 24) |   |
+|  Oct 04 |  Linear Regression (Chapter 23)| [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)   |
+|  Oct 07 |  Linear Regression II (Chapters 23) | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)   |
 |  Oct 11 |  **NO CLASS** (Columbus Day) |  |
-|  Oct 14 |  Logistic Regression (Chapter 24) |  |
-|  Oct 18 |  Neural Networks I (Chapter 25) |  |
-|  Oct 21 |  Neural Networks II (Chapter 25) |  |
-|  Oct 25 |  Deep Learning I (Chapter 26) |  |
-|  Oct 28 |  Deep Learning II (Chap 26) & SVMs I (Chapter 21)  |  |
+|  Oct 14 |  Support Vector Machines (Chapter 21) |  |
+|  Oct 18 |  Support Vector Machines II & Logistic Regression (Chapter 21, 23) |  |
+|  Oct 21 |  Logistic Regression II (Chapter 24) |  |
+|  Oct 25 |  Neural Networks (Chapter 25) |  |
+|  Oct 28 |  Neural Networks II (Chap 25) & Deep Learning (Chapter 26)  |  |
 |  Nov 01 |  **EXAM II** |  |
-|  Nov 04 |  Support Vector Machines II (Chapter 21) |  |
+|  Nov 04 |  Deep Learning II (Chapter 26) |  |
 |  Nov 08 |  Probabilisitic Classification (Chapter 18)|  |
 |  Nov 11 |  Classification Assessment (Chapter 22) |  |
 |  Nov 15 |  Classification Assessment II (Chapter 22) |  |
