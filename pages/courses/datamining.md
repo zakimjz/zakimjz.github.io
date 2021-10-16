@@ -30,6 +30,8 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 ## Assignments
 
+**HW4:** {{% doc %}} dm_assign4 {{% /doc %}}, Due: 22nd Oct
+
 **HW3:** {{% doc %}} dm_assign3 {{% /doc %}}, Due: 8th Oct
 
 **HW2:** {{% doc %}} dm_assign2 {{% /doc %}}, Due: 23rd Sep
@@ -56,7 +58,7 @@ change, but the dates for the Exams are fixed.
 |  Oct 04 |  Linear Regression (Chapter 23)| [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)   |
 |  Oct 07 |  Linear Regression II (Chapters 23) | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)   |
 |  Oct 11 |  **NO CLASS** (Columbus Day) |  |
-|  Oct 14 |  Support Vector Machines (Chapter 21) |  |
+|  Oct 14 |  Support Vector Machines (Chapter 21) | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)  |
 |  Oct 18 |  Support Vector Machines II & Logistic Regression (Chapter 21, 23) |  |
 |  Oct 21 |  Logistic Regression II (Chapter 24) |  |
 |  Oct 25 |  Neural Networks (Chapter 25) |  |
