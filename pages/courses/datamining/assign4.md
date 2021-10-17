@@ -63,6 +63,10 @@ $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$
 For initializing the $\mathbf{w}$ vector, you may use np.ones(), a vector of
 all ones.
 
+Also, you can verify that the $\mathbf{w}$ vector found using batch gradient
+descent is close to the one computed using the closed-form solution in
+equation (23.32).
+
 ## Part II (CSCI6390): Kernel Regression
 
 In addition, implement the kernel regression Algorithm 23.4 using Gaussian
@@ -85,7 +89,9 @@ Further $EPS$ is the convergence threshold for the gradient descent
 algorithm, and MAXITER is the maximum number of iterations to run in case
 you do not reach the EPS convergence threshold.
 
-Note that if you get "inf" errors, then lower the step size $\eta$.
+Note that if you get "inf" errors, then lower the step size $\eta$. Also,
+choose MAXITER and EPS values that result in the weight vector that is
+similar to the closed-form solution.
 
 * For part2, the script will be run as **Assign4-kernel.py FILENAME ALPHA
 SPREAD**. Here SPREAD is the $\sigma^2$ spread parameter for the Gaussian
