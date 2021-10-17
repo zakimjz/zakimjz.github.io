@@ -114,6 +114,9 @@ where TSS is the total scatter of the response variable
 $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$</p>
 <p>For initializing the $\mathbf{w}$ vector, you may use np.ones(), a vector of
 all ones.</p>
+<p>Also, you can verify that the $\mathbf{w}$ vector found using batch gradient
+descent is close to the one computed using the closed-form solution in
+equation (23.32).</p>
 <h3>Part II (CSCI6390): Kernel Regression</h3>
 <p>In addition, implement the kernel regression Algorithm 23.4 using Gaussian
 Kernel. Choose the best $\alpha$ and spread parameter $\sigma^2$ for the
@@ -132,7 +135,9 @@ Further $EPS$ is the convergence threshold for the gradient descent
 algorithm, and MAXITER is the maximum number of iterations to run in case
 you do not reach the EPS convergence threshold.</li>
 </ul>
-<p>Note that if you get "inf" errors, then lower the step size $\eta$.</p>
+<p>Note that if you get "inf" errors, then lower the step size $\eta$. Also,
+choose MAXITER and EPS values that result in the weight vector that is
+similar to the closed-form solution.</p>
 <ul>
 <li>
 <p>For part2, the script will be run as <strong>Assign4-kernel.py FILENAME ALPHA
