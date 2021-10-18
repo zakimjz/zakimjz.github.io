@@ -59,12 +59,12 @@ change, but the dates for the Exams are fixed.
 |  Oct 07 |  Linear Regression II (Chapters 23) | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)   |
 |  Oct 11 |  **NO CLASS** (Columbus Day) |  |
 |  Oct 14 |  Support Vector Machines (Chapter 21) | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)  |
-|  Oct 18 |  Support Vector Machines II & Logistic Regression (Chapter 21, 23) |  |
-|  Oct 21 |  Logistic Regression II (Chapter 24) |  |
+|  Oct 18 |  Support Vector Machines II (Chapter 21) | [lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf) |
+|  Oct 21 |  Logistic Regression (Chapter 24) |  |
 |  Oct 25 |  Neural Networks (Chapter 25) |  |
-|  Oct 28 |  Neural Networks II (Chap 25) & Deep Learning (Chapter 26)  |  |
-|  Nov 01 |  **EXAM II** |  |
-|  Nov 04 |  Deep Learning II (Chapter 26) |  |
+|  Oct 28 |  Neural Networks II (Chap 25)   |  |
+|  Nov 01 |  Deep Learning (Chapter 26) |  |
+|  Nov 04 |  **EXAM II** |  |
 |  Nov 08 |  Probabilisitic Classification (Chapter 18)|  |
 |  Nov 11 |  Classification Assessment (Chapter 22) |  |
 |  Nov 15 |  Classification Assessment II (Chapter 22) |  |
