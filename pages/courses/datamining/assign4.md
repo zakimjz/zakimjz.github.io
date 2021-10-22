@@ -30,7 +30,7 @@ independent variables, make sure to use the standard scaler to normalize
 each attribute to have mean zero and variance one. You can use the sklearn
 [StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 to do this (or do it by using the formula $(x_i-\mu_X)/\sigma_X$, where
-$\mu_X$ and $\sigma_X$ are the mean and variance for a single
+$\mu_X$ and $\sigma_X$ are the mean and standard deviation for a single
 attribute $X$, and $x_i$ is one of the values of $X$. 
 
 Part I should be done by both CSCI4390 and CSCI6390.
