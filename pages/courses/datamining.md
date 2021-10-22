@@ -58,7 +58,7 @@ change, but the dates for the Exams are fixed.
 |  Oct 04 |  Linear Regression (Chapter 23)| [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)   |
 |  Oct 07 |  Linear Regression II (Chapters 23) | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)   |
 |  Oct 11 |  **NO CLASS** (Columbus Day) |  |
-|  Oct 14 |  Support Vector Machines (Chapter 21) | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)  |
+|  Oct 14 |  Regularization and Kernel Regression (Chapter 23), Support Vector Machines (Chapter 21) | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)  |
 |  Oct 18 |  Support Vector Machines II (Chapter 21) | [lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf) |
 |  Oct 21 |  Logistic Regression (Chapter 24) | [lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf)  |
 |  Oct 25 |  Neural Networks (Chapter 25) |  |
