@@ -30,6 +30,10 @@ values, so for the purpose of this assignment you should consider energy
 use less than or equal to 50 as the positive class (1), and energy use
 higher than 50 as negative class (-1). 
 
+Also, use the standard scaling to
+normalize the other attributes to have mean zero and variance one (this will
+prevent the kernel values from becoming too large). 
+
 You should use the first 5000 points as the training, the next 2000 points
 for validation, and the next 5000 points for testing.
 
