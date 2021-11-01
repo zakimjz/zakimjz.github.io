@@ -65,7 +65,7 @@ change, but the dates for the Exams are fixed.
 |  Oct 21 |  Logistic Regression (Chapter 24) | [lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf)  |
 |  Oct 25 |  Neural Networks (Chapter 25) | [lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf) |
 |  Oct 28 |  Neural Networks II (Chap 25)   | [lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf)  |
-|  Nov 01 |  Deep Learning (Chapter 26) |  |
+|  Nov 01 |  Deep Learning (Chapter 26) | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf) |
 |  Nov 04 |  **EXAM II** |  |
 |  Nov 08 |  Probabilisitic Classification (Chapter 18)|  |
 |  Nov 11 |  Classification Assessment (Chapter 22) |  |
