@@ -69,14 +69,14 @@ change, but the dates for the Exams are fixed.
 |  Oct 28 |  Neural Networks II (Chap 25)   | [lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf)  |
 |  Nov 01 |  Deep Learning (Chapter 26) | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf) |
 |  Nov 04 |  **EXAM II** |  |
-|  Nov 08 |  Probabilisitic Classification (Chapter 18)|  |
-|  Nov 11 |  Classification Assessment (Chapter 22) |  |
-|  Nov 15 |  Classification Assessment II (Chapter 22) |  |
-|  Nov 18 |  Representative-based Clustering (Chapter 13) |  |
-|  Nov 22 |  Density-based Clustering (Chapter 15) |  |
+|  Nov 08 |  Probabilisitic Classification (Chapter 18)| [lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf) |
+|  Nov 11 |  Representative-based Clustering (Chapter 13)  |  |
+|  Nov 15 |  Density-based Clustering (Chapter 15)  |  |
+|  Nov 18 |  Density-based Clustering II (Chapter 15) |  |
+|  Nov 22 |  Spectral and Graph Clustering I (Chapter 16) |  |
 |  Nov 25 |  **NO CLASS** (Thanksgiving) |  |
-|  Nov 29 |  Spectral and Graph Clustering I (Chapter 16)|  |
-|  Dec 02 |  Clustering Validation (Chapter 17) |  |
-|  Dec 06 |  Pattern Mining (Chapter 9) |  |
+|  Nov 29 |  Classification Assessment (Chapter 22) |  |
+|  Dec 02 |  Classification Assessment II (Chapter 22) |  |
+|  Dec 06 |  Clustering Validation (Chapter 17) |  |
 |  Dec 09 |  **EXAM III**  |  |
  
