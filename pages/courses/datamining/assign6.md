@@ -71,6 +71,7 @@ the class-specific accuracy and recall values -- see Eq 22.3 and 22.4 for
 the later two. Report these values for the full and naive Bayes
 methods.
 
+You may find [scipy multivariate_normal.pdf](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multivariate_normal.html) to compute the normal probability density function.
 
 ---
 
