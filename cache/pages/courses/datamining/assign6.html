@@ -1,5 +1,5 @@
-<h1>Assign6: Support Vector Machines</h1>
-<p><strong>Due Date</strong>: Nov 9, before midnight (11:59:59PM, Alofi Time; GMT-11)</p>
+<h1>Assign6: Bayes Classifier</h1>
+<p><strong>Due Date</strong>: Oct 15, before midnight (11:59:59PM, Alofi Time; GMT-11)</p>
 <p>You will use the 
 <a href="https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction#">Appliances energy prediction data set</a>.
 You should ignore the first attribute, which is a date-time variable,
@@ -9,66 +9,47 @@ date-time variable), which denotes the
 <strong>Appliances Energy Use</strong>, as the response variable, with the remaining
 attributes as predictor variables. </p>
 <p>Note that the <strong>Appliances Energy Use</strong> attribute takes values in the
-range $[10,1080]$. However, for binary classification, we need only two
-values, so for the purpose of this assignment you should consider energy
-use less than or equal to 50 as the positive class (1), and energy use
-higher than 50 as negative class (-1). </p>
-<p>You should shuffle the data points before selecting 70% of the data
-training and 30% for testing, so that there is an equal mix of the
-classes in both.</p>
-<p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540).
-You must implement both the "hinge" and "quadratic" loss cases, which
-will be command line options. </p>
+range $[10,1080]$. However, for multiclass classification, we will convert
+these into four classes as follows: energy use less than or equal to 40
+is class $c_0$, energy use greater than 40 but less than or equal to 60
+is class $c_1$, energy use greater than 60 but less than or equal to 100
+is class $c_2$, and finally energy use higher than 100 is class $c_3$.
+Also, don't use any data scaling.</p>
+<p>You should use the first 14735 points as the training, and the last 5000 points for testing.</p>
 <h2>CSCI4390</h2>
-<p>You must implement two kernels, namely, both linear and Gaussian.</p>
+<p>Implement both the full Bayes classifier in Algo 18.1, and the naive Bayes
+classifier in Algo 18.2. </p>
 <h2>CSCI6390</h2>
-<p>You must implement three kernels, namely, linear, Gaussian, and polynomial.</p>
+<p>Implement both the full Bayes classifier in Algo 18.1, and the naive Bayes
+classifier in Algo 18.2. However, you have to implement a mixed numeric and
+categorical version, as described below.</p>
+<p>First, discretize the attributes 'T5' and 'T_out' so that they are treated as categorical.
+If value is less than or equal to 5, treat the temperature as 'L'; if value
+is greater than or equal to 5 and less than 9, then treat is as 'M'; if
+value is greater than 9, then treat it as 'H'. You can also code them as 0,
+1, and 2, but these must be considered categorical values.</p>
+<p>Next, treat the other 24 attributes as numeric from which you can compute the
+mean and covariance matrices. </p>
+<p>For the 2 categorical attributes ('T5', 'T_out') you need to
+estimate the joint probability as a pair of values for full Bayes, and as product of
+individual attribute value probabilities for naive Bayes. </p>
+<p>Finally, you may assume
+that the categorical attributes are independent from the numeric ones so
+that the joint probability of a point can be computed as the product of the
+probabilities of the numeric and categorical parts.</p>
+<h2>Both CSCI4390 and 6390</h2>
+<p>Estimate parameters using the training data, and
+report the accuracy of the testing set. You must report total accuracy, and
+the class-specific accuracy and recall values -- see Eq 22.3 and 22.4 for
+the later two. Report these values for the full and naive Bayes
+methods.</p>
 <hr>
 <h2>What to submit</h2>
 <ul>
 <li>Write a script named as <strong>Assign6.py</strong>, which will be run as </li>
 </ul>
-<p>Assign6.py FILENAME LOSS C EPS MAXITER KERNEL KERNEL_PARAM</p>
-<p>FILENAME is the datafile name,  LOSS is either the string "hinge" or
- "quadratic", C is the regularization constant, EPS is the convergence
- threshold, MAXITER is the max number of iterations to perform (in case
- you do not get convergence within EPS), KERNEL is one of the strings
- "linear", "gaussian" or "polynomial", and finally KERNEL_PARAM is
- either a float that represents the spread $\sigma^2$ for gaussian
- kernel (see Eq 5.10 on pg 147), or it is a comma separated pair $q,c$ for the polynomial kernel
- (see Eq 5.9 on pg 144), with $q$ being the degree (an
- int) and $c$ the kernel constant (a float); note that polynomial kernel
- is only for CSCI6390.</p>
-<p>You should implement the algorithms using NumPy; you cannot use any
-other library. Note that computing the full kernel matrix for 19K+
-points will be memory intensive, so if you do not have enough memory,
-one option is for you to repeatedly compute the required kernel values
-for each point $\mathbf{x}_k$. You can see in line 12, that we need only
-the $k$-th row of the kernel matrix, so you can recompute that row as
-needed instead of storing the entire kernel matrix in memory.
-Alternatively, you can show results on at least 5000 points. These
-points should be selected after shuffling the data, and then you should
-create the training/test splits.</p>
-<p>One final note in the implementation is that you must shuffle the
-points/indexes in line 11 so that you get different permutations for the
-stochastic gradient ascent in each iteration. This results in better
-performance than using the fixed order.</p>
-<p>Your script should print out the number of support vectors on the training set
-(those points that are exact support vectors, with $0 &lt; \alpha &lt; C$ for
-hinge, and with $\alpha &gt; 0$ for quadratic loss),
-and the final
-accuracy value on the test data, where you use 70% of the data for
-training and 30% for testing. For the linear kernel you must also print
-the weight vector and bias (see Eq 21.34 and 21.35).</p>
-<p>Note that accuracy is defined as the fraction of correct class label
-predictions. So for each test point, you should predict its class as the
-sign of the hyperplane equation (see Eq 21.37).
- Divide the number of correct predictions by the test data
-size to get the accuracy. Report the
-results for the combination of LOSS, C, KERNEL and KERNEL_PARAM values
-that yields the best accuracy.</p>
-<p>You can compare your results with those obtained from 
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html">sklearn SVM implementation</a>.</p>
+<p>Assign6.py FILENAME</p>
+<p>FILENAME is the datafile name.</p>
 <ul>
 <li>
 <p>Submit a PDF file named Assign6.pdf that should include your answers
