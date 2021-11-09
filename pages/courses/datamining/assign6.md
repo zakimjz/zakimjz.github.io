@@ -12,7 +12,7 @@
 
 # Assign6: Bayes Classifier 
 
-**Due Date**: Oct 15, before midnight (11:59:59PM, Alofi Time; GMT-11)
+**Due Date**: Nov 15, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
 
 You will use the 
