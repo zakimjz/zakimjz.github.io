@@ -58,7 +58,8 @@ As another practical point, you can get an error when inverting the covariance
 matrix, so you should add a small ridge value $\lambda$ value along the
 diagonal entries to make the matrix invertible. This can be considered
 as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
-\lambda \mathbf{I}$$. Or just use scipy.stats.multivariate_normal.logpdf with *allow_singular* flag set to True.
+\lambda \mathbf{I}$$
+Or just use scipy.stats.multivariate_normal.logpdf with *allow_singular* flag set to True.
 
 Your program output should consist of the following information:
 
