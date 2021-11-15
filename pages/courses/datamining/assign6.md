@@ -47,7 +47,7 @@ categorical version, as described below.
 
 First, discretize the attributes 'T5' and 'T_out' so that they are treated as categorical.
 If value is less than or equal to 5, treat the temperature as 'L'; if value
-is greater than or equal to 5 and less than 9, then treat is as 'M'; if
+is greater than 5 and less than 9, then treat is as 'M'; if
 value is greater than 9, then treat it as 'H'. You can also code them as 0,
 1, and 2, but these must be considered categorical values.
 
