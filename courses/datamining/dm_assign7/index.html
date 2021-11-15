@@ -111,7 +111,8 @@ that weights of a point for the clusters are zero. </p>
 matrix, so you should add a small ridge value $\lambda$ value along the
 diagonal entries to make the matrix invertible. This can be considered
 as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
-\lambda \mathbf{I}$$. Or just use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+\lambda \mathbf{I}$$
+Or just use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
 <p>Your program output should consist of the following information:</p>
 <ul>
 <li>The final mean for each cluster</li>
