@@ -115,7 +115,7 @@ the final $w_{ij}$, we have to use the logsumexp trick, since
 $$logsumexp(\log w_{1j}, \log w_{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
         \exp \log w_{aj}\right) = \log \left(\sum_{a=1}^k w_{aj}\right)$$
 And therefore,
-$$w_{ij} = \exp\Big\left( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log w_{kj}) \Big\right)$$
+$$w_{ij} = \exp\Big( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log w_{kj}) \Big)$$
 You can therefore use scipy.special.logsumexp function on log probabilities.</p>
 <p>As another practical point, you can get an error when inverting the covariance
 matrix, so you should add a small ridge value $\lambda$ value along the
