@@ -54,7 +54,7 @@ trick](https://blog.feedly.com/tricks-of-the-trade-logsumexp/) for
 expectation step, where you compute the log probabilities so that you can
 deal with very small probability values, otherwise, you may find that
 weights of a point for the clusters are zero. That is, if all probabilities
-are given as $\log P(C_i | \mathbf{x}_j)$ and $\log P(C_i)$, then we have to
+are given as $\log P(C_i | \mathbf{x}'_'j)$ and $\log P(C_i)$, then we have to
 first compute $\log w_{ij} = \log P(C_i | \mathbf{x}_j) + \log P(C_i)$. But, to compute
 the final $w_{ij}$, we have to use the logsumexp trick, since 
 $$logsumexp(\log w_{1j}, \log w{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
@@ -62,7 +62,7 @@ $$logsumexp(\log w_{1j}, \log w{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
 And therefore,
 $$w_{ij} = \exp\left( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log
             w_{kj})$$
-You can therefore use scipy.logsumexp function on log probabilities.
+You can therefore use scipy.special.logsumexp function on log probabilities.
 
 As another practical point, you can get an error when inverting the covariance
 matrix, so you should add a small ridge value $\lambda$ value along the
