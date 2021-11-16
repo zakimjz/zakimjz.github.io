@@ -58,11 +58,10 @@ are given as $\log P(Ci)$ and $\log P(Ci | xj)$,
 then we have
 first compute $\log w_{ij} = \log P(Ci | xj) + \log P(Ci)$. But, to compute
 the final $w_{ij}$, we have to use the logsumexp trick, since 
-$$logsumexp(\log w_{1j}, \log w{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
-        \exp \log w_{aj}\right) = \log (\sum_{a=1}^k w_{aj})$$
+$$logsumexp(\log w_{1j}, \log w_{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
+        \exp \log w_{aj}\right) = \log \left(\sum_{a=1}^k w_{aj}\right)$$
 And therefore,
-$$w_{ij} = \exp\left( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log
-            w_{kj})$$
+$$w_{ij} = \exp\left( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log w_{kj} \right)$$
 You can therefore use scipy.special.logsumexp function on log probabilities.
 
 As another practical point, you can get an error when inverting the covariance
