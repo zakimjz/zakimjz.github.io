@@ -56,7 +56,8 @@ deal with very small probability values, otherwise, you may find that
 weights of a point for the clusters are zero. That is, if all probabilities
 are given as $\log P(Ci)$ and $\log P(xj | Ci)$, 
 then we have
-first compute $\log w_{ij} = \log P(xj | Ci) + \log P(Ci)$. But, to compute
+first compute $\log w_{ij} = \log P(xj | Ci) + \log P(Ci)$ (note: this is
+only the numerator, we have to normalize as given below). But, to compute
 the final $w_{ij}$, we have to use the logsumexp trick, since 
 $$logsumexp(\log w_{1j}, \log w_{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
         \exp \log w_{aj}\right) = \log \left(\sum_{a=1}^k w_{aj}\right)$$
