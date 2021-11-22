@@ -75,7 +75,7 @@ change, but the dates for the Exams are fixed.
 |  Nov 11 |  Representative-based Clustering (Chapter 13)  | [lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf) |
 |  Nov 15 |  EM-Clustering (Chapter 13); Density-based Clustering (Chapter 15)  | [lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20.pdf) |
 |  Nov 18 |  Density-based Clustering II (Chapter 15) | [lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21.pdf) |
-|  Nov 22 |  Spectral Clustering (Chapter 16) |  |
+|  Nov 22 |  Spectral Clustering (Chapter 16) |  [lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22.pdf)  |
 |  Nov 25 |  **NO CLASS** (Thanksgiving) |  |
 |  Nov 29 |  Classification Assessment (Chapter 22) |  |
 |  Dec 02 |  Classification Assessment II (Chapter 22) |  |
