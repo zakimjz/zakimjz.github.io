@@ -115,7 +115,7 @@ and report the clustering with the best 'purity score'.
 
 * For EM, write a script named as **Assign7.py**, which will be run as 
       
-   Assign6.py FILENAME k EPS RIDGE MAXITER
+   Assign7.py FILENAME k EPS RIDGE MAXITER
    
  FILENAME is the datafile name, $k$ is the number of clusters to find,
  and EPS is the convergence threshold, RIDGE the $\lambda$ value for
