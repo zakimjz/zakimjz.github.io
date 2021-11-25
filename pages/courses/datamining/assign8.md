@@ -63,7 +63,7 @@ and report the clustering with the best F-score.
 
 * Write a script named as **Assign8.py**, which will be run as 
       
-   Assign7.py FILENAME k n k_spread obj
+   Assign7.py FILENAME k n spread obj
    
  FILENAME is the datafile name, $k$ is the number of clusters to find, and
  $n$ is the number of data points to use (default=1000), $spread$ is
