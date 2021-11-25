@@ -68,7 +68,8 @@ and report the clustering with the best F-score.
  FILENAME is the datafile name, $k$ is the number of clusters to find, and
  $n$ is the number of data points to use (default=1000), $spread$ is
  the spread value for Gaussian kernel ($\sigma^2$), and finally $obj$ is the spectral clustering
- objective -- one of 'ratio', 'asymmetric' or 'symmetric', where the latter
+ objective -- one of 'ratio', 'asymmetric' or 'symmetric', where the first
+ refers to ratio cut objective, and the latter
  two refer to the type of Laplacian for normalized cut objective.
 
  Note that you should report the
