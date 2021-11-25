@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-# Assign6: Clustering: EM and Kernel KMeans
+# Assign7: Clustering: EM and Kernel KMeans
 
 **Due Date**: Nov 22, before midnight (11:59:59PM, Alofi Time; GMT-11)
 
