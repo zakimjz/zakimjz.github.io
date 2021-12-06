@@ -81,6 +81,6 @@ change, but the dates for the Exams are fixed.
 |  Nov 25 |  **NO CLASS** (Thanksgiving) |  |
 |  Nov 29 |  Classification Assessment (Chapter 22) | [lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23.pdf)  |
 |  Dec 02 |  Classification Assessment II (Chapter 22) | [lecture24](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture24.pdf) |
-|  Dec 06 |  Clustering Validation (Chapter 17) |  |
+|  Dec 06 |  Clustering Validation (Chapter 17) | [lecture25](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture25.pdf) |
 |  Dec 09 |  **EXAM III**  |  |
  
