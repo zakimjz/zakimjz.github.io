@@ -141,8 +141,8 @@ NAVIGATION_LINKS = {
         ("/publications/", "Publications"),
         ("https://github.com/zakimjz", "Github"),
         # ("/courses/algorithms", "Algorithms"),
-        ("/courses/datamining", "DataMining"),
-        # ((("/courses/mlib", "MLinBioinfo"),
+        # ("/courses/datamining", "DataMining"),
+        ("/courses/mlib", "MLinBioinfo"),
         #   ("/courses/dm", "DataMining")), 'Courses', 'fas fa-chalkboard-teacher'),
         # ('/index.html', 'Home', 'fa fa-home'),
         # ('https://www.mjzaki.com', 'About me', 'fa fa-user'),
@@ -188,7 +188,7 @@ THEME_CONFIG = {
         # Strip HTML from featured post text.
         'featured_strip_html': False,
         # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
+        'sidebar': '',
     }
 }
 
@@ -301,16 +301,16 @@ TIMEZONE = "America/New_York"
 COMPILERS = {
     "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile', ),
-    "txt2tags": ('.t2t', ),
-    "bbcode": ('.bb', ),
-    "wiki": ('.wiki', ),
-    "ipynb": ('.ipynb', ),
+    "textile": ('.textile',),
+    "txt2tags": ('.t2t',),
+    "bbcode": ('.bb',),
+    "wiki": ('.wiki',),
+    "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ('.php', ),
+    "php": ('.php',),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -956,12 +956,15 @@ CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{autho
 #          do not need formatting)
 # (translatable)
 CONTENT_FOOTER_FORMATS = {
-    DEFAULT_LANG: ((), {
-        "email": BLOG_EMAIL,
-        "author": BLOG_AUTHOR,
-        "date": time.gmtime().tm_year,
-        "license": LICENSE
-    })
+    DEFAULT_LANG: (
+        (),
+        {
+            "email": BLOG_EMAIL,
+            "author": BLOG_AUTHOR,
+            "date": time.gmtime().tm_year,
+            "license": LICENSE,
+        },
+    )
 }
 
 # A simple copyright tag for inclusion in RSS feeds that works just
@@ -1082,8 +1085,10 @@ delimiters: [
 # Defaults are markdown.extensions.(fenced_code|codehilite|extra)
 # markdown.extensions.meta is required for Markdown metadata.
 MARKDOWN_EXTENSIONS = [
-    'markdown.extensions.fenced_code', 'markdown.extensions.codehilite',
-    'markdown.extensions.extra', 'markdown.extensions.meta'
+    'markdown.extensions.fenced_code',
+    'markdown.extensions.codehilite',
+    'markdown.extensions.extra',
+    'markdown.extensions.meta',
 ]
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)

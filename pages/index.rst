@@ -56,11 +56,11 @@ and Nvidia.
 Courses
 -------
 
+Spring 2022: :doc:`Machine Learning in Bioinformatics <mlib>` 
+
 Fall 2021: :doc:`Data Mining <datamining>`
 
 Spring 2021: {{% doc %}} algorithms {{% /doc %}}
-
-Spring 2020: :doc:`Machine Learning in Bioinformatics <mlib>` 
 
 
 Publications and Software
