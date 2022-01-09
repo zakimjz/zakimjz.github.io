@@ -13,7 +13,7 @@
 
 This course focuses on machine learning algorithms for analyzing
 biological data. The course will introduce the main topics in this area,
-such as analysis of protein structures, molecular graphs, genome sequences,
+such as analysis of protein/DNA sequences, protein structures, molecular graphs, 
 and so on. The main focus is on the role of deep learning and data
 mining in computational biology and bioinformatics.
 
