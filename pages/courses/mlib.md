@@ -16,7 +16,7 @@ such as analysis of protein/DNA sequences, protein structures, molecular graphs,
 and so on. The main focus is on the role of deep learning and data
 mining in computational biology and bioinformatics.
 
-**Class Hours**: 10-11:50AM MR, Carnegie 201. *Office Hours*: 12-1PM MR
+**Class Hours**: 10-11:50AM MR, Carnegie 201. *Office Hours*: 12-1PM MR  
 Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 **Syllabus**: {{% doc %}} mlib_syllabus {{% /doc %}}
