@@ -23,7 +23,7 @@ mining in computational biology and bioinformatics.
 
 **Campuswire**: <https://campuswire.com/c/G8B78468D>
 
-**Submitty**: <https://submitty.cs.rpi.edu/s22/csci4969>
+**Submitty**: <https://submitty.cs.rpi.edu/courses/s22/csci4969>
 
 
 ## Assignments
