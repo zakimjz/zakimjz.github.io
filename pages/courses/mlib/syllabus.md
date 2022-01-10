@@ -53,8 +53,10 @@ Smola.
 Your grade will be a combination of the following items. 
 
 * **Assignments and HWs (70%)**: Assignments and HWs will be given
-  throughout the semester. These will include an implementation
-  component and can also have written questions.
+  throughout the semester. These will include an implementation component
+  and can also have written questions. Most assignments will be due just
+  before midnight on the due date. Late assignments will be accepted with
+  15% grade penalty per day (for at most 3 days).
 
 * **Final Project (20%)**: You will implement cutting edge approaches
   from the literature and extend/improve them. You will read papers on
@@ -63,9 +65,7 @@ Your grade will be a combination of the following items.
   class. Final projects can be done in groups of at most two students.
 
 * **Attendance (10%)**: Students are required to attend and participate
-  in the class. Attendance will be taken. Late Submissions: Most assignments
-  will be due just before midnight on the due date. Late assignments will be
-  accepted with 15% grade penalty per day.
+  in the class. Attendance will be taken. 
 
 Students auditing the course are required to complete all assignments and
 projects, as well as attend the classes.
