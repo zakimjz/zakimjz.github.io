@@ -44,6 +44,9 @@ for deep learning.
 ## Textbook
 
 There is no required text for the course. Reading materials will be posted online.
+For the deep learning content, the following book is good:  
+[Dive Into Deep Learning](https://d2l.ai/), A. Zhang, Z.C. Lipton, M. Li, A.
+Smola.
 
 ##Grading Policy
 
