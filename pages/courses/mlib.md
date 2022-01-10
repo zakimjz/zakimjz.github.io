@@ -28,7 +28,7 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 ## Assignments
 
-
+**Assign0:** {{% doc %}} mlib_assign0 {{% /doc %}}, Due: 13th Jan
 
 ## Class schedule
 
@@ -36,9 +36,7 @@ Tentative course schedule is given below.
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-| Jan 10     | Introduction I |
-[intro.pptx](http://www.cs.rpi.edu/~zaki/MLIB/intro.pptx),  
-[lecture1 video](http://www.cs.rpi.edu/~zaki/MLIB/mlbio-lecture1/mlbio-lecture1.html) |
+| Jan 10     | Introduction I | [intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture1 video](http://www.cs.rpi.edu/~zaki/MLIB/mlbio-lecture1/mlbio-lecture1.html), [Intro to Molecular Biology (on LMS)](https://lms.rpi.edu/bbcswebdav/courses/2201_CSCI_4969_01/MolBio-Ch1-2.pdf) |
 | Jan 13     | Introduction II |
 |  Jan 17    | **NO CLASS** (MLK, Jr. Day) |
 |  Jan 20    | Neural Networks (MLPs) |
