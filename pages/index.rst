@@ -42,7 +42,8 @@ Mining. He was the program co-chair for `SDM'08
 `CIKM'12 <http://dl.acm.org/citation.cfm?id=2396761>`_, `ICDM'12
 <http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6412852>`_,
 `IEEE BigData'15 <http://cci.drexel.edu/bigdata/bigdata2015>`_, and
-`CIKM'18 <http://www.cikm2018.units.it>`_. He is currently serving on
+`CIKM'18 <http://www.cikm2018.units.it>`_, and he will be co-chairing
+`CIKM'22 <https://www.cikm2022.org/>`_. He is currently serving on
 the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
@@ -72,7 +73,7 @@ where applicable) at :doc:`Publications <publications>`
 You can directly access the software at `my github page
 <https://github.com/zakimjz?tab=repositories>`_.
 
-You can also find my publications on  |googlescholar|_ and  |dblp|_
+You can also find my publications on  |googlescholar|_ and  |dblp|_ and  |semanticscholar|_
 
 .. |googlescholar| image:: /images/googlescholar.gif
    :width: 120
@@ -82,6 +83,9 @@ You can also find my publications on  |googlescholar|_ and  |dblp|_
    :width: 120
 .. _dblp: http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/z/Zaki:Mohammed_Javeed.html
 
+.. |semanticscholar| image:: /images/semanticscholar.png
+   :width: 120
+.. _semanticscholar: https://www.semanticscholar.org/author/1693515
 
 Books
 -----
