@@ -36,8 +36,8 @@ Tentative course schedule is given below.
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-| Jan 10     | Introduction I | [intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture1 video](http://www.cs.rpi.edu/~zaki/MLIB/mlbio-lecture1/mlbio-lecture1.html), [Intro to Molecular Biology (on LMS)](https://lms.rpi.edu/bbcswebdav/xid-6488496_1) |
-| Jan 13     | Introduction II |
+| Jan 10     | Introduction I | [intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture1 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture1/mlbio-lecture1.html), [Intro to Molecular Biology (on LMS)](https://lms.rpi.edu/bbcswebdav/xid-6488496_1) |
+| Jan 13     | Introduction II |[intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture2 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture2/mlbio-lecture2.html) |
 |  Jan 17    | **NO CLASS** (MLK, Jr. Day) |
 |  Jan 20    | Neural Networks (MLPs) |
 |  Jan 27    | Deep MLPs |
