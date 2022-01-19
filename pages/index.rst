@@ -47,10 +47,10 @@ Mining. He was the program co-chair for `SDM'08
 the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
-as HP Innovation Research Award, and Google Faculty Research Award. He is an `ACM Distinguished
-Scientist <http://awards.acm.org/distinguished_member/year.cfm>`_ and a
-`Fellow of the IEEE
-<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_. His
+as HP Innovation Research Award, and Google Faculty Research Award. He 
+is a `Fellow of the IEEE
+<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_ and a
+`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_. His
 research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
 and Nvidia.
 
