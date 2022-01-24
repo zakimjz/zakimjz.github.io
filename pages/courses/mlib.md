@@ -40,8 +40,7 @@ Tentative course schedule is given below.
 | Jan 13     | Introduction II |[intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture2 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture2/mlbio-lecture2.html) |
 |  Jan 17    | **NO CLASS** (MLK, Jr. Day) |
 |  Jan 20    | Neural Networks (MLPs) |[lecture3.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture3.pdf), [lecture3 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture3/mlbio-lecture3.html)|
-|  Jan 27    | MLPs II |
-[lecture4.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture4.pdf),
+|  Jan 27    | MLPs II | [lecture4.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture4.pdf),
 [lecture4 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture4/mlbio-lecture4.html) |
 |  Jan 31    | RNNs |
 |  Feb 03    | LSTMs | 
