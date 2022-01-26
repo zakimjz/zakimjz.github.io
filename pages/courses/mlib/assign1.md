@@ -89,7 +89,9 @@ class to get batches like we did for MNIST.
 
 For the MLP model, the only difference is that the 2d input ($101\times 4$)
 will have to be flattened into 404d vector. Then pass it to the hidden
-layer, and apply relu activation. However, before feeding the output of the
+layer, and apply relu activation. 
+You can also try to add in a dropout layer at this point.
+However, before feeding the output of the
 hidden layer to the output layer, you must concatenate the accessibility
 value. So if you are using hidden dimension of 128, then after concatenating
 the accessibility value, it will become a 129d vector, which should be fed
