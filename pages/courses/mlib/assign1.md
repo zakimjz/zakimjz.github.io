@@ -111,6 +111,7 @@ on the test data.
 ## What to submit
 
 * Upload your jupyter notebook on [submitty](https://submitty.cs.rpi.edu/courses/s22/csci4969/gradeable/Assign1)
-
 * The notebook must have output values for the final test accuracy.
+* Do not submit the data file or directories. 
+
 
