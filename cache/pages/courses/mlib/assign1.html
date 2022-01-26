@@ -1,97 +1,88 @@
-<div class="section" id="assign1-protvec">
-<h1>Assign1: ProtVec</h1>
-<p><strong>Due Date</strong>: Feb 4th, before midnight</p>
-<p>In this assignment, you will implement the ProtVec embedding method
-described in
-<a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287</a>
-(Continuous Distributed Representation of Biological Sequences for Deep
-Proteomics and Genomics).</p>
-<p>You will use <a class="reference external" href="http://www.pytorch.org">http://www.pytorch.org</a> (pytorch) for the implementation, and
-your code should implement the negative sampling approach to train the
-embeddings.</p>
-<p>For training  the model, you can first use a small set of 1000 proteins
-<a class="reference external" href="http://www.cs.rpi.edu/~zaki/MLIB/assignments/small_uniprot.txt">http://www.cs.rpi.edu/~zaki/MLIB/assignments/small_uniprot.txt</a>. Once your model is finalized you should train
-it on the large set of 524532 protein sequences
-<a class="reference external" href="http://www.cs.rpi.edu/~zaki/MLIB/assignments/uniprot-reviewed-lim_sequences.txt">http://www.cs.rpi.edu/~zaki/MLIB/assignments/uniprot-reviewed-lim_sequences.txt</a>. This data is from the paper
-<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698/</a> (Learned
-protein embeddings for machine learning)</p>
-<p>You will be asked to compare the embeddings for different values of the
-dimensionality $d$, different context size $w$, and different n-gram
-sizes $n$. For example $d=50, 100, 300$, $w=5, 7, 25$, and
-$n=1,2,3,4,5$.</p>
-<p>You should compare with the default values used in the paper, namely
-$d=100$, $w=25$, and $n=3$. In your implementation these should be
-variables that take their values from the command line (see below; you
-should also make the number of negative samples a parameter).</p>
-<p>Here is the pseudo code for the overall structure of the script:</p>
-<div class="code"><table class="codetable"><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-1"><code data-line-number=" 1"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-1"></a><span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">ngram</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">ngram</span><span class="o">-</span><span class="mi">1</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-2"><code data-line-number=" 2"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-2"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-3"><code data-line-number=" 3"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-3"></a><span class="n">write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="k">return</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">positive</span> <span class="ow">and</span> <span class="n">negative</span> <span class="n">pairs</span> <span class="kn">from</span> <span class="nn">all</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sequences</span><span class="o">/</span><span class="n">offsets</span><span class="o">.</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-4"><code data-line-number=" 4"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-4"></a><span class="k">for</span> <span class="n">the</span> <span class="n">negative</span> <span class="n">sampling</span> <span class="n">use</span> <span class="n">the</span> <span class="n">cumsum</span> <span class="n">approach</span> <span class="n">described</span> <span class="ow">in</span> <span class="k">class</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-5"><code data-line-number=" 5"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-5"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-6"><code data-line-number=" 6"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-6"></a><span class="nc">define</span> <span class="n">NN</span> <span class="n">model</span><span class="p">:</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-7"><code data-line-number=" 7"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-7"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">init</span> <span class="n">function</span><span class="p">:</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-8"><code data-line-number=" 8"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-8"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">define</span> <span class="n">the</span> <span class="n">two</span> <span class="n">embeddings</span> <span class="n">layers</span> <span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">V</span><span class="p">)</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-9"><code data-line-number=" 9"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-9"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-10"><code data-line-number="10"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-10"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">forward</span> <span class="n">function</span><span class="p">:</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-11"><code data-line-number="11"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-11"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nb">input</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">center_words</span><span class="p">,</span> <span class="ow">and</span> <span class="n">context_words</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-12"><code data-line-number="12"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-12"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">look</span> <span class="n">up</span> <span class="n">their</span> <span class="n">embeddings</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-13"><code data-line-number="13"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-13"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">compute</span> <span class="n">the</span> <span class="n">dot</span> <span class="n">product</span> <span class="n">between</span> <span class="n">corresponding</span> <span class="n">pairs</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-14"><code data-line-number="14"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-14"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">output</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="n">probability</span> <span class="n">of</span> <span class="n">that</span> <span class="n">pair</span> <span class="n">being</span> <span class="n">a</span> <span class="n">positive</span> <span class="n">pair</span> <span class="p">(</span><span class="n">via</span> <span class="n">sigmoid</span><span class="p">)</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-15"><code data-line-number="15"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-15"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-16"><code data-line-number="16"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-16"></a><span class="n">Next</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">boilerplate</span> <span class="n">code</span> <span class="k">for</span> <span class="n">training</span><span class="p">:</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-17"><code data-line-number="17"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-17"></a><span class="n">net</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-18"><code data-line-number="18"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-18"></a><span class="n">send</span> <span class="n">net</span> <span class="n">to</span> <span class="n">GPU</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-19"><code data-line-number="19"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-19"></a><span class="n">loss_func</span> <span class="o">=</span> <span class="n">BCEloss</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-20"><code data-line-number="20"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-20"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span> <span class="ow">or</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-21"><code data-line-number="21"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-21"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-22"><code data-line-number="22"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-22"></a><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">epochs</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-23"><code data-line-number="23"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-23"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">for</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">batches</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-24"><code data-line-number="24"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">convert</span> <span class="n">center_words</span><span class="p">,</span> <span class="n">context_words</span><span class="p">,</span> <span class="n">labels</span> <span class="n">to</span> <span class="n">tensors</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-25"><code data-line-number="25"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">send</span> <span class="nb">all</span> <span class="n">three</span> <span class="n">to</span> <span class="n">the</span> <span class="n">GPU</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-26"><code data-line-number="26"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">net</span><span class="o">.</span><span class="n">zero_grad</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-27"><code data-line-number="27"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-27"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">preds</span> <span class="o">=</span> <span class="n">net</span> <span class="p">(</span><span class="n">center_words</span><span class="p">,</span> <span class="n">contex_words</span><span class="p">)</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-28"><code data-line-number="28"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-28"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">loss</span> <span class="o">=</span> <span class="n">loss_func</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-29"><code data-line-number="29"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-29"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">loss</span><span class="o">.</span><span class="n">backward</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-30"><code data-line-number="30"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">optimizer</span><span class="o">.</span><span class="n">step</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-31"><code data-line-number="31"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-31"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-32"><code data-line-number="32"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-32"></a>&nbsp;&nbsp;&nbsp;<span class="nb">print</span> <span class="n">total</span> <span class="n">loss</span> <span class="n">per</span> <span class="n">epoch</span>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-33"><code data-line-number="33"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-33"></a>
-</code></td></tr><tr><td class="linenos linenodiv"><a href="#rest_code_127c1e2033ee455797f03231729ea92c-34"><code data-line-number="34"></code></a></td><td class="code"><code><a name="rest_code_127c1e2033ee455797f03231729ea92c-34"></a><span class="n">save</span> <span class="n">embeddings</span> <span class="ow">in</span> <span class="n">required</span> <span class="nb">format</span>
-</code></td></tr></table></div><div class="section" id="submission">
-<h2>Submission</h2>
-<p>Submit your code via submitty. Name your python script:
-<strong>assign1.py</strong>.</p>
-<p>Your script will be run as follows:</p>
-<p>assign1.py FILENAME EMBED_DIM CONTEXT_SZ NGRAM_SIZE NEG_SAMPLES</p>
-<p>Here FILENAME is the name of the sequence file, EMBED_DIM the
-dimensionality to use for the embedding vectors, CONTEXT_SZ is the size
-of the context to consider, NGRAM_SZ is the size of the ngrams, and
-NEG_SAMPLES is the number of negative samples to consider for each
-positive pair.</p>
-<p>Note that CONTEXT_SZ will always be an odd number greater than 1, so
-CONTEXT_SZ=3 means that you look at the center word and plus/minus one
-word, CONTEXT_SZ=25 means center word plus/minus 12 words, and so on.</p>
-<p>The output of your code should be a file that contain the embbedding of
-each work. The first line should have only two values:</p>
-<p>V d</p>
-<p>where V is the Vocab size, and d the EMBED_DIM</p>
-<p>Next, each line should contain:</p>
-<p>WORD EMBEDDING_VECTOR</p>
-<p>where WORD is a word from your vocab (not the index), and its embedding
-vector. For example, if there are only two words in your vocab (say AA
-and BB), and you are doing 3-dim embeddings, then the output file will
-be:</p>
-<p>2 3</p>
-<p>AA -1 -0.3 5</p>
-<p>BB 2 0.5 -1</p>
-<p>After learning the representations, you will be asked to use the trained
-vectors for a downstream task such as sequence classification or
-secondary structure prediction. <em>The details of the tasks will be posted
-for Assign2</em></p>
-<p>Note that you are allowed to use/modify existing implementations of
-word2vec in pytorch on the web, but you should understand what is being
-done, so that you are able to code more complex models later. You should
-acknowledge the source of any code you use.</p>
-</div>
-</div>
+<h1>Assign1: Transcription Factor Binding via MLP</h1>
+<p><strong>Due Date</strong>: Feb 1, before midnight (EST 11:59:59PM)</p>
+<p>Transcription Factors (TFs) are proteins that bind to the DNA and help
+regulate gene transcription. The TFs have to recognize some "motif" on the
+DNA upstream from the gene, and DNA accessibility also plays a role.</p>
+<h2>MLP model</h2>
+<p>In this assignment you'll modify write an MLP model the predict whether a
+segments of the human chromosome 22 (Chr22) contain the binding sites for the JUND
+TF.  You can modify the mlp notebook I shared with you to work on this
+problem. You need to have at least one hidden layer. You have to compute a
+weighted loss, and include accessibility information in your model, as
+described below.</p>
+<h2>Dataset</h2>
+<p>The data comprises 101 length segments from Chr22, with each position a
+one-hot vector denoting one of the four bases (A, C, G, T). Thus, each
+element of the input is 2d with size $101 \times 4$. Each such element has
+a target label $0$ or $1$, indicating whether the TF binds to that segment or not. 
+The data also includes a weight per input element, since there are only a
+few binding sites (0.42%), so that you'd obtain an accuracy of 99.58% just
+by predicting there are no binding sites. This means you have to use the
+weights to discount the losses for label $0$ and enhance the losses for
+label $1$ items. 
+Finally, there is an array of values, one per input element, that also
+indicates the chromosome accessibility for that segment.</p>
+<p>The data is split into training, validation and testing sets. Each set
+contains the following files:</p>
+<ul>
+<li>shard-0-X.joblib: the set of 101 x 4 input elements</li>
+<li>shard-0-y.joblib: the true labels: 0 or 1</li>
+<li>shard-0-w.joblib: weight per input element</li>
+<li>shard-0-a.joblib: accessibility value per input element</li>
+</ul>
+<p>You can read these files by using <strong>joblib.load</strong> function, which will
+populate a numpy array. For example</p>
+<pre class="code literal-block"><span></span><code><span class="n">X</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;shard-0-X.joblib&#39;</span><span class="p">)</span>
+</code></pre>
+
+<p>will results in a numpy array X, which you can then convert to torch tensor,
+and so on.</p>
+<p>You can download the data as <a href="https://www.cs.rpi.edu/~zaki/MLIB/data/TF_data.zip">TF_data.zip</a>. Unzip it to create the train, valid, test directories.</p>
+<h2>Details</h2>
+<p>First, you must write a dataset class that can load the data from the
+different directories (train_dataset, valid_dataset, test_dataset).
+Your class will have the following structure:</p>
+<pre class="code literal-block"><span></span><code><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
+
+<span class="k">class</span> <span class="nc">JUND_Dataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dir</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;load X, y, w, a from data_dir&#39;&#39;&#39;</span>        
+        <span class="nb">super</span><span class="p">(</span><span class="n">JUND_Dataset</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+        <span class="c1"># load X, y, w, a from given data_dir</span>
+        <span class="c1"># convert them into torch tensors</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;return len of dataset&#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;return X, y, w, and a values at index idx&#39;&#39;&#39;</span>
+</code></pre>
+
+<p>Once you have created the dataset class it can be passed to the DataLoader
+class to get batches like we did for MNIST.</p>
+<p>For the MLP model, the only difference is that the 2d input ($101\times 4$)
+will have to be flattened into 404d vector. Then pass it to the hidden
+layer, and apply relu activation. However, before feeding the output of the
+hidden layer to the output layer, you must concatenate the accessibility
+value. So if you are using hidden dimension of 128, then after concatenating
+the accessibility value, it will become a 129d vector, which should be fed
+to the final output layer of size 1, since we have a binary class/label.</p>
+<p>The only other issue is the loss function. You should use
+<a href="https://pytorch.org/docs/stable/generated/torch.nn.functional.binary_cross_entropy_with_logits.html">binary_cross_entropy_with_logits</a> with weight set to the weights per
+input element. Check out the documentation for details.</p>
+<p>You need to train the model on the training data, and use the validation
+data to select how many epochs you want to use and to choose the hidden
+dimension. Use the weighted prediction accuracy as the evaluation metric.
+That is, sum of the weights of the correct predictions divided by the total
+weight across all the input elements. Finally, report the weighted accuracy
+on the test data.</p>
+<h2>What to submit</h2>
+<ul>
+<li>
+<p>Upload your jupyter notebook on <a href="https://submitty.cs.rpi.edu/courses/s22/csci4969/gradeable/Assign1">submitty</a></p>
+</li>
+<li>
+<p>The notebook must have output values for the final test accuracy.</p>
+</li>
+</ul>
