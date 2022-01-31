@@ -42,10 +42,11 @@ Tentative course schedule is given below.
 | Jan 13     | Introduction II |[intro.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/intro.pdf), [lecture2 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture2/mlbio-lecture2.html) |
 |  Jan 17    | **NO CLASS** (MLK, Jr. Day) |
 |  Jan 20    | Neural Networks (MLPs) |[lecture3.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture3.pdf), [lecture3 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture3/mlbio-lecture3.html)|
-|  Jan 27    | MLPs II | [lecture4.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture4.pdf), [lecture4 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture4/mlbio-lecture4.html) |
-|  Jan 31    | RNNs |[lecture5.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture5/mlbio-lecture5.html)|
-|  Feb 03    | LSTMs | 
-|  Feb 07    | CNNs |
+|  Jan 24    | MLPs II | [lecture4.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture4.pdf), [lecture4 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture4/mlbio-lecture4.html) |
+|  Jan 27    | RNNs |[lecture5.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture5/mlbio-lecture5.html)|
+|  Jan 31    | RNNs, LSTMs |[lecture6.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture6/mlbio-lecture6.html)|
+|  Feb 03    | CNNs | 
+|  Feb 07    | CNNs, Attention |
 |  Feb 10    | Attention |
 |  Feb 14    | Transformer |
 |  Feb 17    | Language Models |
