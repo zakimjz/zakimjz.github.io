@@ -47,7 +47,7 @@ Tentative course schedule is given below.
 |  Jan 24    | MLPs II | [lecture4.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture4.pdf), [lecture4 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture4/mlbio-lecture4.html) |
 |  Jan 27    | RNNs |[lecture5.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture5/mlbio-lecture5.html)|
 |  Jan 31    | RNNs, LSTMs |[lecture6.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture6/mlbio-lecture6.html)|
-|  Feb 03    | CNNs | 
+|  Feb 03    | CNNs | [lecture7.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture7.pdf), [lecture7 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture7/mlbio-lecture7.html)|
 |  Feb 07    | CNNs, Attention |
 |  Feb 10    | Attention |
 |  Feb 14    | Transformer |
