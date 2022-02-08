@@ -48,7 +48,7 @@ Tentative course schedule is given below.
 |  Jan 27    | RNNs |[lecture5.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture5/mlbio-lecture5.html)|
 |  Jan 31    | RNNs, LSTMs |[lecture6.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture6/mlbio-lecture6.html)|
 |  Feb 03    | CNNs | [lecture7.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture7.pdf), [lecture7 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture7/mlbio-lecture7.html)|
-|  Feb 07    | CNNs, Attention |
+|  Feb 07    | Word Embeddings | [lecture8.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture8/mlbio-lecture8.html)|
 |  Feb 10    | Attention |
 |  Feb 14    | Transformer |
 |  Feb 17    | Language Models |
