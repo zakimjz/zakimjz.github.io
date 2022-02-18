@@ -53,7 +53,7 @@ Tentative course schedule is given below.
 |  Feb 07    | Word Embeddings | [lecture8.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture8/mlbio-lecture8.html)|
 |  Feb 10    | Attention |[lecture9.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture9.pdf), [lecture9 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture9/mlbio-lecture9.html)|
 |  Feb 14    | Transformer | [lecture10.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture10/mlbio-lecture10.html)|
-|  Feb 17    | Language Models |
+|  Feb 17    | Language Models (BERT) |[lecture11.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture11/mlbio-lecture11.html)|
 |  Feb 22(T) | Masked Language Models |
 |  Feb 24    | Protein Sequence & Structure |
 |  Feb 28    | Protein Sequence Embeddings |
