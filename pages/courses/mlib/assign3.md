@@ -13,7 +13,7 @@
 
 # Assign3: Protein Embeddings
 
-**Due Date**: Feb 21, before midnight (EST 11:59:59PM)
+**Due Date**: Feb 22, before midnight (EST 11:59:59PM)
 
 In this assignment, you will implement the ProtVec embedding method
 described in the paper
