@@ -54,8 +54,8 @@ Tentative course schedule is given below.
 |  Feb 10    | Attention |[lecture9.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture9.pdf), [lecture9 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture9/mlbio-lecture9.html)|
 |  Feb 14    | Transformer | [lecture10.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture10/mlbio-lecture10.html)|
 |  Feb 17    | Language Models (BERT) |[lecture11.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture11/mlbio-lecture11.html)|
-|  Feb 22(T) | Masked Language Models |
-|  Feb 24    | Protein Sequence & Structure |
+|  Feb 22(T) | Graph Neural Networks (GNNs) |[lecture12.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture12/mlbio-lecture12.html)|
+|  Feb 24    | GNNs II |
 |  Feb 28    | Protein Sequence Embeddings |
 |  Mar 03    | Embeddings with Structure |
 |  Mar 07    | **NO CLASS** (Spring Break) |
