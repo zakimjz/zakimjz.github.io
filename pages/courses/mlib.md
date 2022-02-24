@@ -55,20 +55,20 @@ Tentative course schedule is given below.
 |  Feb 14    | Transformer | [lecture10.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture10/mlbio-lecture10.html)|
 |  Feb 17    | Language Models (BERT) |[lecture11.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture11/mlbio-lecture11.html)|
 |  Feb 22(T) | Graph Neural Networks (GNNs) |[lecture12.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture12/mlbio-lecture12.html)|
-|  Feb 24    | GNNs II |
-|  Feb 28    | Protein Sequence Embeddings |
-|  Mar 03    | Embeddings with Structure |
+|  Feb 24    | GNNs II |Graph Neural Networks (GNNs) |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
+|  Feb 28    | GNNs III |
+|  Mar 03    | Molecular Graphs |
 |  Mar 07    | **NO CLASS** (Spring Break) |
 |  Mar 10    | **NO CLASS** (Spring Break) |
-|  Mar 14    | Secondary Structure Prediction |
-|  Mar 17    | GNNs I |
-|  Mar 21    | GNNs II |
+|  Mar 14    | Molecular Graphs II |
+|  Mar 17    | Protein Structure |
+|  Mar 21    | Secondary Structure Prediction |
 |  Mar 24    | 3D Structure Prediction I |
 |  Mar 28    | 3D Structure Prediction II |
 |  Mar 31    | Structure Prediction Implementation |
 |  Apr 04    | Distance Geometry |
-|  Apr 07    | Molecular Graphs |
-|  Apr 11    | Molecular Graphs II |
+|  Apr 07    | Autoencoders |
+|  Apr 11    | Autoencoders II |
 |  Apr 14    | Generative Models |
 |  Apr 18    | Generative Models II |
 |  Apr 21    | Project Presentations I |
