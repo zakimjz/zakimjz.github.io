@@ -1,0 +1,54 @@
+<h1>Assign4: Protein Contextual Embeddings via BERT</h1>
+<p><strong>Due Date</strong>: Mar 4, before midnight (EST 11:59:59PM)</p>
+<p>In this assignment, you will implement the BERT embedding method for protein
+sequences.</p>
+<p>Your code should implement on your own the transformer approach with masked
+language model for learning contextual embeddings for input sequences. You
+can use the pytorch layer norm and feed forward layers, but you must
+implement the multi-head attention on your own. The details of BERT training
+can be found in <a href="https://arxiv.org/abs/1810.04805">BERT</a>, and those for the
+transformer in <a href="https://arxiv.org/abs/1706.03762">Transformer</a>. You must
+implement at least one transformer block, but you may play with the full
+model too (12 layers!). You have to also implement the masked language
+model.</p>
+<p>For training  the BERT model, you will use the same large set of 524532 protein sequences
+<a href="http://www.cs.rpi.edu/~zaki/MLIB/data/uniprot-reviewed-lim_sequences.txt">uniprot-reviewed-lim_sequences.txt</a>. This data is from the paper
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061698">Learned
+protein embeddings for machine learning</a>.
+For prototyping the algorithm you can make use of the dataset of 1000 proteins
+<a href="http://www.cs.rpi.edu/~zaki/MLIB/data/small_uniprot.txt">small_uniprot.txt</a>. </p>
+<p>One complication in BERT training is what tokenization to use. You can try
+the basic character-level tokenization, i.e., each amino acid is a token,
+i.e., kmer=1. On the training dataset, the max sequence length is 999, so
+you should use a block size of 1000, with the first token being "CLS". </p>
+<p>If you are feeling ambitious, you an also try a kmer-3 tokenization, in
+which case, each sequence can either be represented via a sliding window of
+all kmers, or you can create three different sequences based on the starting
+offset, and use non-overlapping kmers for pre-training.</p>
+<h1>Evaluation</h1>
+<p>Once you have pre-trained the BERT model, you will evaluate it on the protein family classification described in the paper
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287">Continuous Distributed Representation of Biological Sequences for Deep
+Proteomics and Genomics</a>.
+The dataset is available online at (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN). In particular, use the testing sequences in the file "family_classification_sequences.csv". This file has 324018 sequences from different protein families. The true class for these sequences is listed in the last column of the file "family_classification_metadata.csv". </p>
+<p>For each family, you should as positive class the sequences that have the
+given family label, and then you should select an equal number of random
+sequences from the whole dataset as negative class to train an MLP model for
+binary classification. The MLP model will use the pre-trained BERT model to
+learn a representation for each example sequence in the dataset.</p>
+<p>Finally, you should also compare the benefit of BERT over ProtVec by using
+the pre-trained word2vec based embeddings in the "protVec_100d_3grams.csv"
+file. In addition, you may also use your own prot2vec embeddings from the
+previous assignment if you want.</p>
+<h1>Submission</h1>
+<p>Submit your jupyter notebooks (or python scripts) via submitty. </p>
+<p>The first notebook is for the BERT model.
+The output of your code should the pre-trained BERT model for the
+pre-training code.  </p>
+<p>The second notebook is for the classification.
+Next, you need to report the classification accuracy
+using the pre-trained BERT model, as well as the prot2vec model on the
+protein family classification dataset. Report the classification results
+(specificity, sensitivity, and accuracy) for the first 1000, 2000, 3000,
+and 4000 families, as well as for the whole dataset, as shown in Table 2
+in the paper.</p>
+<p>You should acknowledge the source of any code you use from the web.</p>

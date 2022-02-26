@@ -28,6 +28,9 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 ## Assignments
 
+**Assign4:** {{% doc %}} mlib_assign4 {{% /doc %}}, Due: 4th Mar
+
+
 **Assign3:** {{% doc %}} mlib_assign3 {{% /doc %}}, Due: 22nd Feb
 
 **Assign2:** {{% doc %}} mlib_assign2 {{% /doc %}}, Due: 9th Feb
