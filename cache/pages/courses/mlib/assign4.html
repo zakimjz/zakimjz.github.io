@@ -26,10 +26,16 @@ which case, each sequence can either be represented via a sliding window of
 all kmers, or you can create three different sequences based on the starting
 offset, and use non-overlapping kmers for pre-training.</p>
 <h1>Evaluation</h1>
-<p>Once you have pre-trained the BERT model, you will evaluate it on the protein family classification described in the paper
-<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287">Continuous Distributed Representation of Biological Sequences for Deep
-Proteomics and Genomics</a>.
-The dataset is available online at (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN). In particular, use the testing sequences in the file "family_classification_sequences.csv". This file has 324018 sequences from different protein families. The true class for these sequences is listed in the last column of the file "family_classification_metadata.csv". </p>
+<p>Once you have pre-trained the BERT model, you will evaluate it on the
+protein family classification described in the paper <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287">Continuous Distributed
+Representation of Biological Sequences for Deep Proteomics and
+Genomics</a>.
+The dataset is available online at
+<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN</a>.
+In particular, use the testing sequences in the file
+"family_classification_sequences.csv". This file has 324018 sequences from
+different protein families. The true class for these sequences is listed in
+the last column of the file "family_classification_metadata.csv". </p>
 <p>For each family, you should as positive class the sequences that have the
 given family label, and then you should select an equal number of random
 sequences from the whole dataset as negative class to train an MLP model for

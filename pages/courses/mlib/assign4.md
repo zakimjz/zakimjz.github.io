@@ -48,10 +48,16 @@ offset, and use non-overlapping kmers for pre-training.
 
 # Evaluation
 
-Once you have pre-trained the BERT model, you will evaluate it on the protein family classification described in the paper
-[Continuous Distributed Representation of Biological Sequences for Deep
-Proteomics and Genomics](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287).
-The dataset is available online at (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN). In particular, use the testing sequences in the file "family_classification_sequences.csv". This file has 324018 sequences from different protein families. The true class for these sequences is listed in the last column of the file "family_classification_metadata.csv". 
+Once you have pre-trained the BERT model, you will evaluate it on the
+protein family classification described in the paper [Continuous Distributed
+Representation of Biological Sequences for Deep Proteomics and
+Genomics](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141287).
+The dataset is available online at
+<https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JMFHTN>.
+In particular, use the testing sequences in the file
+"family_classification_sequences.csv". This file has 324018 sequences from
+different protein families. The true class for these sequences is listed in
+the last column of the file "family_classification_metadata.csv". 
 
 For each family, you should as positive class the sequences that have the
 given family label, and then you should select an equal number of random
