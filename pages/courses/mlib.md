@@ -30,7 +30,6 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 **Assign4:** {{% doc %}} mlib_assign4 {{% /doc %}}, Due: 4th Mar
 
-
 **Assign3:** {{% doc %}} mlib_assign3 {{% /doc %}}, Due: 22nd Feb
 
 **Assign2:** {{% doc %}} mlib_assign2 {{% /doc %}}, Due: 9th Feb
@@ -58,7 +57,7 @@ Tentative course schedule is given below.
 |  Feb 14    | Transformer | [lecture10.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture10/mlbio-lecture10.html)|
 |  Feb 17    | Language Models (BERT) |[lecture11.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture11/mlbio-lecture11.html)|
 |  Feb 22(T) | Graph Neural Networks (GNNs) |[lecture12.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture12/mlbio-lecture12.html)|
-|  Feb 24    | GNNs II |Graph Neural Networks (GNNs) |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
+|  Feb 24    | GNNs II |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
 |  Feb 28    | GNNs III |
 |  Mar 03    | Molecular Graphs |
 |  Mar 07    | **NO CLASS** (Spring Break) |
