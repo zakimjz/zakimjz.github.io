@@ -57,12 +57,12 @@ Tentative course schedule is given below.
 |  Feb 14    | Transformer | [lecture10.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture10/mlbio-lecture10.html)|
 |  Feb 17    | Language Models (BERT) |[lecture11.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture11/mlbio-lecture11.html)|
 |  Feb 22(T) | Graph Neural Networks (GNNs) |[lecture12.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture12/mlbio-lecture12.html)|
-|  Feb 24    | GNNs II |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
-|  Feb 28    | GNNs III |
-|  Mar 03    | Molecular Graphs |
+|  Feb 24    | GNN IIs |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
+|  Feb 28    | BERT for Proteins | [lecture14.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture14.pdf), [lecture14 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture14/mlbio-lecture14.html)|
+|  Mar 03    | GNNs III |
 |  Mar 07    | **NO CLASS** (Spring Break) |
 |  Mar 10    | **NO CLASS** (Spring Break) |
-|  Mar 14    | Molecular Graphs II |
+|  Mar 14    | Molecular Graphs |
 |  Mar 17    | Protein Structure |
 |  Mar 21    | Secondary Structure Prediction |
 |  Mar 24    | 3D Structure Prediction I |
