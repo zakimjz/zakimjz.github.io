@@ -57,7 +57,7 @@ The dataset is available online at
 In particular, use the testing sequences in the file
 "family_classification_sequences.csv". This file has 324018 sequences from
 different protein families. The true class for these sequences is listed in
-the last column of the file "family_classification_metadata.csv". 
+the "FamilyID" of the file "family_classification_metadata.tab". 
 
 For each family, you should as positive class the sequences that have the
 given family label, and then you should select an equal number of random
@@ -66,9 +66,11 @@ binary classification. The MLP model will use the pre-trained BERT model to
 learn a representation for each example sequence in the dataset.
 
 Finally, you should also compare the benefit of BERT over ProtVec by using
-the pre-trained word2vec based embeddings in the "protVec_100d_3grams.csv"
-file. In addition, you may also use your own prot2vec embeddings from the
-previous assignment if you want.
+the pre-trained word2vec based embeddings in the
+"family_classification_protVec.csv"
+file.  This file has the final embedding vector for each of the 324018
+sequences, which can be used directly as input for a MLP model for
+classification.
 
 
 # Submission
