@@ -59,7 +59,7 @@ Tentative course schedule is given below.
 |  Feb 22(T) | Graph Neural Networks (GNNs) |[lecture12.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture12/mlbio-lecture12.html)|
 |  Feb 24    | GNN IIs |[lecture13.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture13/mlbio-lecture13.html)|
 |  Feb 28    | BERT for Proteins | [lecture14.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture14.pdf), [lecture14 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture14/mlbio-lecture14.html)|
-|  Mar 03    | GNNs III |
+|  Mar 03    | GNNs III |[lecture15.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture15.pdf), [lecture15 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture15/mlbio-lecture15.html)|
 |  Mar 07    | **NO CLASS** (Spring Break) |
 |  Mar 10    | **NO CLASS** (Spring Break) |
 |  Mar 14    | Molecular Graphs |
