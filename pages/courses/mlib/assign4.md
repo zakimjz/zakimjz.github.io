@@ -13,7 +13,7 @@
 
 # Assign4: Protein Contextual Embeddings via BERT
 
-**Due Date**: Mar 4, before midnight (EST 11:59:59PM)
+**Due Date**: Mar 6, before midnight (EST 11:59:59PM)
 
 In this assignment, you will implement the BERT embedding method for protein
 sequences.
