@@ -85,7 +85,7 @@ The second notebook is for the classification.
 Next, you need to report the classification accuracy
 using the pre-trained BERT model, as well as the prot2vec model on the
 protein family classification dataset. Report the classification results
-(specificity, sensitivity, and accuracy) for the first 20 families (in
+(accuracy) for the first 20 families (in
 decreasing order of size).
 
 
