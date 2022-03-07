@@ -78,7 +78,7 @@ classification.
 Submit your jupyter notebooks (or python scripts) via submitty. 
 
 The first notebook is for the BERT model.
-The output of your code should the pre-trained BERT model for the
+The output of your code should include the pre-trained BERT model for the
 pre-training code.  
 
 The second notebook is for the classification.
