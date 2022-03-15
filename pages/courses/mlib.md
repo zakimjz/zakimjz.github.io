@@ -62,7 +62,7 @@ Tentative course schedule is given below.
 |  Mar 03    | GNNs III |[lecture15.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture15.pdf), [lecture15 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture15/mlbio-lecture15.html)|
 |  Mar 07    | **NO CLASS** (Spring Break) |
 |  Mar 10    | **NO CLASS** (Spring Break) |
-|  Mar 14    | Molecular Graphs |
+|  Mar 14    | Pytorch Implementation Tips | [lecture16.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture16.pdf), [lecture16 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture16/mlbio-lecture16.html)|
 |  Mar 17    | Protein Structure |
 |  Mar 21    | Secondary Structure Prediction |
 |  Mar 24    | 3D Structure Prediction I |
