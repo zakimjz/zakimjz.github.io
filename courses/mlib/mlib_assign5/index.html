@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4949-6969 Assign5 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign5/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4949-6969 Assign5">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/mlib/mlib_assign5/">
+<meta property="og:description" content="Assign5: Graph Neural Networks
+Due Date: Mar 25th, before midnight (EST 11:59:59PM)
+In this assignment, you will use two different graph neural networks (GNNs)
+for graph property prediction: Graph Con">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-03-16T19:00:31-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4949-6969 Assign5</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign5: Graph Neural Networks</h2>
+<p><strong>Due Date</strong>: Mar 25th, before midnight (EST 11:59:59PM)</p>
+<p>In this assignment, you will use two different graph neural networks (GNNs)
+for graph property prediction: Graph Convolution Network (GCN) and Message
+Passing Neural Network (MPNN).</p>
+<p>You can use the starter code from the <a href="https://docs.dgl.ai/en/0.6.x/tutorials/blitz/5_graph_classification.html#sphx-glr-tutorials-blitz-5-graph-classification-py">graph classification tutorial</a> on the
+DGL site, but modify it to a regression task.</p>
+<p>For training  the GNNs, you will use the
+<a href="https://docs.dgl.ai/en/0.6.x/api/python/dgl.data.html#graph-prediction-datasets">dgl.data.QM9EdgeDataset</a>
+that contains 130,831 molecules (there are several QM9 datasets, but use the
+"Edge" one). This dataset has multiple regression
+targets, but we will predict only the "mu" target values. That is, this is a
+graph regression problem, where each of the molecules has one mu value, and
+our goal is to predict that real value. </p>
+<p>On the DCS cluster, it will not download the dataset automatically so you
+should download it from <a href="https://data.dgl.ai/dataset/qm9_edge.npz">https://data.dgl.ai/dataset/qm9_edge.npz</a> and put
+it under "./data" directory, and then load the data via
+<strong>data = QM9EdgeDataset(label_keys=['mu'], raw_dir="./data")</strong> to extract only the "mu"
+values as labels.</p>
+<p>Each graph has both node features (<strong>g.ndata['attr']</strong>)
+and edge features (<strong>g.edata['edge_attr']</strong>). The GCN model makes use only of the node features,
+whereas the MPNN uses both node and edge features. The two models will
+differ in the type of GNN layers they will use. GCN uses the regular
+<strong>dgl.nn.GraphConv</strong> layers, whereas MPNN uses the
+<a href="https://lifesci.dgl.ai/api/model.gnn.html#module-dgllife.model.gnn.mpnn">dgllife.model.gnn.mpnn.MPNNGNN</a> layer. However, once the GNN is done, in
+the forward function of each model, you
+should do graph node pooling via <strong>dgl.readout_nodes</strong> to extract the final
+node features. These should then be fed to a two layer FFN comprised of two
+linear layers with ReLU and dropout in between. The first FFN linear layer
+will map the graph feature to a hidden MLP layer, and the second will map
+the hidden MLP layer to a single neuron output for regression.</p>
+<p>To evaluate and compare the two models, namely GCN and MPNN, you should use
+the nn.L1Loss, which is also called the Mean Absolute Error. You should
+divide the input graphs into 80% training, 10% validation, and 10% testing,
+at random. You can use <strong>torch.utils.data.random_split</strong> for this. </p>
+<p>Use the validation set to select the number of GNN layers, size of the
+hidden layers, learning rate, which pooling operator to use (max, min, mean, etc.), and so on, 
+for both models. Finally, report the
+test performance, and compare which model is better. For example, you can
+use 5-fold cross-validation, or use 5 different splits to evaluate both
+models and compare which has better average performance.</p>
+<h2>Implementation</h2>
+<p>You will have to install the <a href="https://docs.dgl.ai/en/0.6.x/index.html">DGL</a> 
+graph library, and the <a href="https://lifesci.dgl.ai/index.html">DGL-LifeSci</a>
+companion library (for MPNN model). This is straightforward on the Amazon
+StudioLab machine, but instructions on how to install these on the DCS
+cluster will be shared on CampusWire.</p>
+<h2>Submission</h2>
+<p>Submit your jupyter notebook with both models, and the comparison output, via submitty. </p>
+<p>You should acknowledge the source of any code you use from the web.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
