@@ -65,10 +65,10 @@ Tentative course schedule is given below.
 |  Mar 07    | **NO CLASS** (Spring Break) |
 |  Mar 10    | **NO CLASS** (Spring Break) |
 |  Mar 14    | Pytorch Implementation Tips | [lecture16.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture16.pdf), [lecture16 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture16/mlbio-lecture16.html)|
-|  Mar 17    | Protein Structure |
-|  Mar 21    | Secondary Structure Prediction |
-|  Mar 24    | 3D Structure Prediction I |
-|  Mar 28    | 3D Structure Prediction II |
+|  Mar 17    | GNN Assignment & Protein Structure |[lecture17.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture17.pdf), [lecture17 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture17/mlbio-lecture17.html)| 
+|  Mar 21    | Structure Prediction I |
+|  Mar 24    | Structure Prediction II |
+|  Mar 28    | Structure Prediction III |
 |  Mar 31    | Structure Prediction Implementation |
 |  Apr 04    | Distance Geometry |
 |  Apr 07    | Autoencoders |
