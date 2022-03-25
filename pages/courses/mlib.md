@@ -28,6 +28,8 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 ## Assignments
 
+**Assign6:** {{% doc %}} mlib_assign6 {{% /doc %}}, Due: 5th Apr
+
 **Assign5:** {{% doc %}} mlib_assign5 {{% /doc %}}, Due: 25th Mar
 
 **Assign4:** {{% doc %}} mlib_assign4 {{% /doc %}}, Due: 6th Mar
@@ -67,10 +69,10 @@ Tentative course schedule is given below.
 |  Mar 14    | Pytorch Implementation Tips | [lecture16.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture16.pdf), [lecture16 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture16/mlbio-lecture16.html)|
 |  Mar 17    | GNN Assignment & Protein Structure |[lecture17.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture17.pdf), [lecture17 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture17/mlbio-lecture17.html)| 
 |  Mar 21    | Structure Prediction I | [lecture18.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture18.pdf), [lecture18 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture18/mlbio-lecture18.html)| 
-|  Mar 24    | Structure Prediction II |
-|  Mar 28    | Structure Prediction III |
-|  Mar 31    | Structure Prediction Implementation |
-|  Apr 04    | Distance Geometry |
+|  Mar 24    | Structure Prediction II | [lecture19.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture19/mlbio-lecture19.html)|
+|  Mar 28    | **NO CLASS** |
+|  Mar 31    | Structure Prediction III |
+|  Apr 04    | Structure Prediction IV |
 |  Apr 07    | Autoencoders |
 |  Apr 11    | Autoencoders II |
 |  Apr 14    | Generative Models |
