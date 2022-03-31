@@ -71,7 +71,7 @@ Tentative course schedule is given below.
 |  Mar 21    | Structure Prediction I | [lecture18.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture18.pdf), [lecture18 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture18/mlbio-lecture18.html)| 
 |  Mar 24    | Structure Prediction II | [lecture19.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture19/mlbio-lecture19.html)|
 |  Mar 28    | **NO CLASS** |
-|  Mar 31    | Structure Prediction III |
+|  Mar 31    | Structure Prediction III |[lecture20.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture20/mlbio-lecture20.html)|
 |  Apr 04    | Structure Prediction IV |
 |  Apr 07    | Autoencoders |
 |  Apr 11    | Autoencoders II |
