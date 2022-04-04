@@ -68,13 +68,13 @@ Tentative course schedule is given below.
 |  Mar 10    | **NO CLASS** (Spring Break) |
 |  Mar 14    | Pytorch Implementation Tips | [lecture16.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture16.pdf), [lecture16 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture16/mlbio-lecture16.html)|
 |  Mar 17    | GNN Assignment & Protein Structure |[lecture17.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture17.pdf), [lecture17 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture17/mlbio-lecture17.html)| 
-|  Mar 21    | Structure Prediction I | [lecture18.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture18.pdf), [lecture18 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture18/mlbio-lecture18.html)| 
-|  Mar 24    | Structure Prediction II | [lecture19.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture19/mlbio-lecture19.html)|
+|  Mar 21    | Protein Structure Prediction | [lecture18.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture18.pdf), [lecture18 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture18/mlbio-lecture18.html)| 
+|  Mar 24    | AlphaFold1 I | [lecture19.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture19/mlbio-lecture19.html)|
 |  Mar 28    | **NO CLASS** |
-|  Mar 31    | Structure Prediction III |[lecture20.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture20/mlbio-lecture20.html)|
-|  Apr 04    | Structure Prediction IV |
-|  Apr 07    | Autoencoders |
-|  Apr 11    | Autoencoders II |
+|  Mar 31    | Alphafold1 II |[lecture20.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture20/mlbio-lecture20.html)|
+|  Apr 04    | Alphafold1 III |[lecture21.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture21.pdf), [lecture21 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture21/mlbio-lecture21.html)|
+|  Apr 07    | Alphafold2 I |
+|  Apr 11    | Alpahafold2 II |
 |  Apr 14    | Generative Models |
 |  Apr 18    | Generative Models II |
 |  Apr 21    | Project Presentations I |
