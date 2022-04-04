@@ -12,11 +12,12 @@
 
 # Protein Structure Prediction: Simplified AlphaFold1 
 
-**Due Date**: April 5th, before midnight
+**Due Date**: April 7th, before midnight
 
 In this assignment, you will implement a simplified version of the
 AlphaFold protein structure method. In particular, we will predict 
-the distance matrix and the dihedral angles, instead of the full 3D coordinate structure.
+the distance matrix and the dihedral angles (the angle prediction is optional), 
+instead of the full 3D coordinate structure.
 
 # Data
 
