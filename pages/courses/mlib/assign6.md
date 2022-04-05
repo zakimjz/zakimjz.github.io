@@ -60,7 +60,8 @@ network will be trained on 8 blocks with two cycles of dilations. Each
 block should be made up of the different batch-norm, ELU, projections
 and dilations as described. These layers/activations will make use of
 the pytorch inbuilt functions, so you have to only define the
-architecture and forward function.
+architecture and forward function. For the main architecture of the
+Alphafold1 refer to [Extended Data Fig 1b](https://www.nature.com/articles/s41586-019-1923-7/figures/5) in the [AlphaFold paper](https://www.nature.com/articles/s41586-019-1923-7).
 
 You will train on
 each $64 \times 64$ crop separately. 
@@ -92,12 +93,21 @@ probabilities in the bins corresponding to the "symbols" in the range
 $2-8A^\circ$, and if that is over 0.5 then you can predict that pair to be in
 contact. You can then report the accuracy for short, medium and long
 range contacts in terms of distance in the sequence. 
-Short is defined as $5 \le |i-j| \le 12$, medium as
-$12 \le |i-j| \le 23$ and long as $|i-j| \ge 23$. In each
+Short is defined as $6 \le |i-j| \le 11$, medium as
+$12 \le |i-j| \le 23$ and long as $|i-j| \ge 24$. In each
 category, you should report the accuracy for the top $L$, $L/2$ and
 $L/5$ predictions, where $L$ is the sequence length. Finally, you should
 average the accuracy in each range over all of the test protein and
 report that number.
+
+Note: accuracy (or precision) is defined as: TP/(TP+FP), where TP is the
+number of true positives and FP is the number of false positives. 
+TP means that the predicted and true contacts agree on a pair, and FP means that you
+predict a contact, whereas there is no true contact for that pair.
+Also, if there are fewer than L (or L/2 or L/5) try contacts, you should use
+only the true number when evaluating the metrics, e.g., if $L=100$ but there
+are only 90 true contacts, then report results only for top 90 (not top
+100), and so on.
 
 # Submission
 
