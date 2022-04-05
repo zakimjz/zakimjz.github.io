@@ -109,6 +109,18 @@ only the true number when evaluating the metrics, e.g., if $L=100$ but there
 are only 90 true contacts, then report results only for top 90 (not top
 100), and so on.
 
+So for any L/k value, first find your top L/k predictions and find the
+number of correct L/k predictions. Next divide that by L/k. Since there is a
+chance for fewer than L/k true contacts, esp for long range, do the following:
+
+```python
+Accuracy for L/k:
+    denom = min(L/k, #of true contacts)
+    sort predictions in decreasing order and select top denom preds
+    num correct= how many of your preds are true/correct
+    accuracy @ L/k: num correct / denom
+```
+
 # Submission
 
 Submit you notebook (or python script) via submitty, along with an output file (txt/pdf) that
