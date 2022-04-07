@@ -73,7 +73,7 @@ Tentative course schedule is given below.
 |  Mar 28    | **NO CLASS** |
 |  Mar 31    | Alphafold1 II |[lecture20.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture20/mlbio-lecture20.html)|
 |  Apr 04    | Alphafold1 III |[lecture21.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture21.pdf), [lecture21 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture21/mlbio-lecture21.html)|
-|  Apr 07    | Alphafold2 I |
+|  Apr 07    | Alphafold2 I |[lecture22.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture22.pdf), [lecture22 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture22/mlbio-lecture22.html)|
 |  Apr 11    | Alpahafold2 II |
 |  Apr 14    | Generative Models |
 |  Apr 18    | Generative Models II |

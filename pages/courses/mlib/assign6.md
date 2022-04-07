@@ -115,7 +115,7 @@ chance for fewer than L/k true contacts, esp for long range, do the following:
 
 ```python
 Accuracy for L/k:
-    denom = min(L/k, #of true contacts)
+    denom = min(L/k, #of true contacts in group -- short, medium, long)
     sort predictions in decreasing order and select top denom preds
     num correct= how many of your preds are true/correct
     accuracy @ L/k: num correct / denom
