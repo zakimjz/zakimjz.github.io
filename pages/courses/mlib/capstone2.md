@@ -15,7 +15,8 @@
 **Due Date**: April 18th, before midnight
 
 This is a group assignment, comprising part II of the final/capstone project for the course.
-You'll be in the same group as for part I.
+You'll be in the same group as for part I. Each student must detail their
+role, as described below.
 
 In this part (II) of the assignment you will predict the full 3D
 coordinates for the protein backbone $C_\alpha$ atoms. It is thus a
@@ -53,6 +54,12 @@ summarizes the results of your method in terms of training and testing
 values. If submitting a notebook, results can be part of the
 notebook. You should report test loss, and 3D score for CASP7, but ideally
 for CASP12.
+
+Your script/notebook must include a statement on the top about which group
+member contributed to which portion of the code as well as ideas. Insert
+comments in the code as well attributing different portions to different
+members, or jointly done. Also, all code used from online sources must be
+acknowledged.
 
 You may want to use multiple GPUs to speed up your training, using the DCS
 cluster.

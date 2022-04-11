@@ -15,9 +15,12 @@
 **Due Date**: April 18th, before midnight
 
 This is a group assignment, comprising part I of the final/capstone project for the course.
-A group is made up of two persons. Send me your group information by monday
+A group is made up of two persons.  Each student must detail their
+role, as described below.
+
+Send me via email your group information by monday
 (11th April, before midnight). Talk to students during class or via email to
-create groups. 
+create groups.
 
 The capstone project comprises implementing AlphaFold2 in two parts.
 In part I, you will implement the Evoformer Trunk for the AlphaFold2 
@@ -64,9 +67,14 @@ Submit you notebook (or python script) via submitty, along with an output file (
 summarizes the results of your method in terms of training and testing
 accuracy values. If submitting a notebook, results can be part of the
 notebook. You should report test loss, and contact map accuracy for CASP7
-(if interested,  do CASP12 too). 
+(if interested,  do CASP12 too). You also need to report the comparison between Alphafold2 vs. Alphafold1.
 
-You also need to report the comparison between Alphafold2 vs. Alphafold1.
+Your script/notebook must include a statement on the top about which group
+member contributed to which portion of the code as well as ideas. Insert
+comments in the code as well attributing different portions to different
+members, or jointly done. Also, all code used from online sources must be
+acknowledged.
+
 
 You may want to use multiple GPUs to speed up your training, using the DCS
 cluster.
