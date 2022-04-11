@@ -28,6 +28,10 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 ## Assignments
 
+**Capstone2:** {{% doc %}} mlib_capstone2 {{% /doc %}}, Due: 25th Apr
+
+**Capstone1:** {{% doc %}} mlib_capstone1 {{% /doc %}}, Due: 18th Apr
+
 **Assign6:** {{% doc %}} mlib_assign6 {{% /doc %}}, Due: 7th Apr
 
 **Assign5:** {{% doc %}} mlib_assign5 {{% /doc %}}, Due: 25th Mar
