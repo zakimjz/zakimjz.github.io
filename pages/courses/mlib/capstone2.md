@@ -12,7 +12,7 @@
 
 # Capstone Project (Part II): AlphaFold2 -- 3D Structure Prediction
 
-**Due Date**: April 18th, before midnight
+**Due Date**: April 25th, before midnight
 
 This is a group assignment, comprising part II of the final/capstone project for the course.
 You'll be in the same group as for part I. Each student must detail their
