@@ -42,7 +42,9 @@ methods described in the
 in the [supplementary information PDF](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf).
 
 You will combine the structure prediction module with the Evoformer truck
-from part I for an end-to-end 3D coordinate prediction method.
+from part I for an end-to-end 3D coordinate prediction method. The loss to
+be used is the FAPE loss (Frame Aligned Point Error) combined with the
+torsion angle loss.
 
 For testing you should report the loss, but also the accuracy of the 3D
 $C_\alpha$ backbone prediction, i.e., the score for the true vs predicted 3D structure.
