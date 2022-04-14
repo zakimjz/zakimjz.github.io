@@ -79,7 +79,7 @@ Tentative course schedule is given below.
 |  Apr 04    | Alphafold1 III |[lecture21.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture21.pdf), [lecture21 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture21/mlbio-lecture21.html)|
 |  Apr 07    | Alphafold2 I |[lecture22.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture22.pdf), [lecture22 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture22/mlbio-lecture22.html)|
 |  Apr 11    | Alpahafold2: Evoformer |[lecture23.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture23.pdf), [lecture23 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture23/mlbio-lecture23.html)| 
-|  Apr 14    | Alphafold2: IPA  |
+|  Apr 14    | Alphafold2: Evoformer II  |[lecture24.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture24.pdf), [lecture24 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture24/mlbio-lecture24.html)| 
 |  Apr 18    | 
 |  Apr 21    | 
 |  Apr 25    | 
