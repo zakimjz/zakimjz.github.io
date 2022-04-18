@@ -12,7 +12,7 @@
 
 # Capstone Project (Part I): AlphaFold2 -- Evoformer
 
-**Due Date**: April 18th, before midnight
+**Due Date**: April 19th, before midnight
 
 This is a group assignment, comprising part I of the final/capstone project for the course.
 A group is made up of two persons.  Each student must detail their

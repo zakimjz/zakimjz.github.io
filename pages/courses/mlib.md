@@ -30,7 +30,7 @@ Online Class: <https://rensselaer.webex.com/meet/zakim>
 
 **Capstone2:** {{% doc %}} mlib_capstone2 {{% /doc %}}, Due: 25th Apr
 
-**Capstone1:** {{% doc %}} mlib_capstone1 {{% /doc %}}, Due: 18th Apr
+**Capstone1:** {{% doc %}} mlib_capstone1 {{% /doc %}}, Due: 19th Apr
 
 **Assign6:** {{% doc %}} mlib_assign6 {{% /doc %}}, Due: 7th Apr
 
@@ -80,6 +80,6 @@ Tentative course schedule is given below.
 |  Apr 07    | Alphafold2 I |[lecture22.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture22.pdf), [lecture22 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture22/mlbio-lecture22.html)|
 |  Apr 11    | Alpahafold2: Evoformer |[lecture23.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture23.pdf), [lecture23 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture23/mlbio-lecture23.html)| 
 |  Apr 14    | Alphafold2: Evoformer II  |[lecture24.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture24.pdf), [lecture24 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture24/mlbio-lecture24.html)| 
-|  Apr 18    | 
-|  Apr 21    | 
-|  Apr 25    | 
+|  Apr 18    | Alphafold2: Structure Prediction I  |[lecture25.pdf](http://www.cs.rpi.edu/~zaki/MLIB/lectures/lecture25.pdf), [lecture25 video](http://www.cs.rpi.edu/~zaki/MLIB/videos/mlbio-lecture25/mlbio-lecture25.html)|
+|  Apr 21    | Alphafold2: Structure Prediction II  |
+|  Apr 25    | |
