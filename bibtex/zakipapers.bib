@@ -4258,3 +4258,19 @@ language-agnostic keyword extraction},
 abstract = {Domain-specific keyword extraction is a vital task in the field of text mining. There are various research tasks, such as spam e-mail classification, abusive language detection, sentiment analysis, and emotion mining, where a set of domain-specific keywords (aka lexicon) is highly effective. Existing works for keyword extraction list all keywords rather than domain-specific keywords from a document corpus. Moreover, most of the existing approaches perform well on formal document corpuses but fail on noisy and informal user generated content in online social media. In this article, we present a hybrid approach by jointly modeling the local and global contextual semantics of words, utilizing the strength of distributional word representation and contrasting-domain corpus for domain-specific keyword extraction. Starting with a seed set of a few domain-specific keywords, we model the text corpus as a weighted word-graph. In this graph, the initial weight of a node (word) represents its semantic association with the target domain calculated as a linear combination of three semantic association metrics, and the weight of an edge connecting a pair of nodes represents the co-occurrence count of the respective words. Thereafter, a modified PageRank method is applied to the word-graph to identify the most relevant words for expanding the initial set of domain-specific keywords. We evaluate our method over both formal and informal text corpuses (comprising six datasets), and show that it performs significantly better in comparison to state-of-the-art methods. Furthermore, we generalize our approach to handle the language-agnostic case, and show that it outperforms existing language-agnostic approaches.}, 
 }
 
+@inproceedings{2022-sigkdd,
+  title={Global Self-Attention as a Replacement for Graph Convolution},
+  author={Md. Shamim Hussain and Mohammed J. Zaki and Dharmashankar
+          Subramanian},
+  booktitle = {28th ACM SIGKDD International Conference on Knowledge Discovery
+and Data Mining},
+  year      = {2022},
+    month = {Aug},
+  customlinkArxiv = {https://arxiv.org/abs/2108.03348},
+    KeyWord ={Conference,GraphNN,NeuralNetworks},
+    abstract = {
+  We propose an extension to the transformer neural network architecture for general-purpose graph learning by adding a dedicated pathway for pairwise structural information, called edge channels. The resultant framework -- which we call Edge-augmented Graph Transformer (EGT) -- can directly accept, process and output structural information of arbitrary form, which is important for effective learning on graph-structured data. Our model exclusively uses global self-attention as an aggregation mechanism rather than static localized convolutional aggregation. This allows for unconstrained long-range dynamic interactions between nodes. Moreover, the edge channels allow the structural information to evolve from layer to layer, and prediction tasks on edges/links can be performed directly from the output embeddings of these channels. We verify the performance of EGT in a wide range of graph-learning experiments on benchmark datasets, in which it outperforms Convolutional/Message-Passing Graph Neural Networks. EGT sets a new state-of-the-art for the quantum-chemical regression task on the OGB-LSC PCQM4Mv2 dataset containing 3.8 million molecular graphs. Our findings indicate that global self-attention based aggregation can serve as a flexible, adaptive and effective replacement of graph convolution for general-purpose graph learning. Therefore, convolutional local neighborhood aggregation is not an essential inductive bias.                },
+}
+
+
+
