@@ -25,7 +25,7 @@ CS department at RPI. He received his Ph.D. degree in computer science
 from the University of Rochester in 1998. His research interests focus
 on developing novel data mining and machine learning techniques,
 especially for applications in text mining, social networks,
-bioinformatics and personal health. He has over 250 publications (and 6
+bioinformatics and personal health. He has around 300 publications (and 6
 patents),
 including the `Data Mining and Machine Learning
 <http://dataminingbook.info>`_ textbook (2nd Edition, Cambridge
@@ -42,17 +42,17 @@ Mining. He was the program co-chair for `SDM'08
 `CIKM'12 <http://dl.acm.org/citation.cfm?id=2396761>`_, `ICDM'12
 <http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6412852>`_,
 `IEEE BigData'15 <http://cci.drexel.edu/bigdata/bigdata2015>`_, and
-`CIKM'18 <http://www.cikm2018.units.it>`_, and he will be co-chairing
+`CIKM'18 <http://www.cikm2018.units.it>`_, and he is co-chairing
 `CIKM'22 <https://www.cikm2022.org/>`_. He is currently serving on
 the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
-as HP Innovation Research Award, and Google Faculty Research Award. He 
-is a `Fellow of the IEEE
+as HP Innovation Research Award, and Google Faculty Research Award. 
+Hisresearch is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
+and Nvidia. He  is a `Fellow of the IEEE
 <https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_ and a
-`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_. His
-research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
-and Nvidia.
+`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_. 
+
 
 Courses
 -------
