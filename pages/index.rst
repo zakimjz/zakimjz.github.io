@@ -19,9 +19,8 @@
 | Troy, New York 12180-3590
 |
 
-Mohammed J. Zaki is a Professor of Computer Science at RPI. He is also
-the associate department head and the graduate program director for the
-CS department at RPI. He received his Ph.D. degree in computer science
+Mohammed J. Zaki is a Professor and Department Head of Computer Science at RPI. 
+He received his Ph.D. degree in computer science
 from the University of Rochester in 1998. His research interests focus
 on developing novel data mining and machine learning techniques,
 especially for applications in text mining, social networks,
