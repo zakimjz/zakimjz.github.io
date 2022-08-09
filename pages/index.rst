@@ -13,7 +13,7 @@
    :alt: mjzaki
 
 |
-| Associate Department Head and Graduate Program Director
+| Department Head
 | Department of Computer Science
 | Rensselaer Polytechnic Institute
 | Troy, New York 12180-3590
