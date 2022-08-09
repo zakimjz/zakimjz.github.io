@@ -47,7 +47,7 @@ the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
 as HP Innovation Research Award, and Google Faculty Research Award. 
-Hisresearch is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
+His research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
 and Nvidia. He  is a `Fellow of the IEEE
 <https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_ and a
 `Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_. 
