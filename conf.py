@@ -141,7 +141,7 @@ NAVIGATION_LINKS = {
         ("/publications/", "Publications"),
         ("https://github.com/zakimjz", "Github"),
         # ("/courses/algorithms", "Algorithms"),
-        # ("/courses/datamining", "DataMining"),
+        ("/courses/datamining", "DataMining"),
         ("/courses/mlib", "MLinBioinfo"),
         #   ("/courses/dm", "DataMining")), 'Courses', 'fas fa-chalkboard-teacher'),
         # ('/index.html', 'Home', 'fa fa-home'),
