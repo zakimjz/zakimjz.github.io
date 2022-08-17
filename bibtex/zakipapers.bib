@@ -4311,3 +4311,41 @@ KeyWord = {TechReport,WordEmbeddings,FinancialText},
   KeyWord =	 {Book,Biokdd},
 }
 
+
+@inproceedings{2022-dlg,
+Author = {Yuchen Liang and Dmitry Krotov and Mohammed J. Zaki},
+Title = {Associative Learning for Network Embedding},
+Year = {2022},
+booktitle = {8th International Workshop on Deep Learning on Graphs
+             (DLG-KDD22)},
+fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/DLGKDD.pdf},
+url = {https://drive.google.com/file/d/1Esi_Nsv5VBDFN6kTXZ5Dgb_xU_U-OVuL/view?usp=sharing},
+KeyWord = {Workshop,GraphNN,AssociativeLearning},
+abstract = { The network embedding task is to represent the node in the network as a low-dimensional
+vector while incorporating the topological and structural information. Most
+existing approaches solve this problem by factorizing a proximity matrix,
+either directly or implicitly. In this work, we introduce a network
+embedding method from a new perspective, which leverages Modern
+Hopfield Networks (MHN) for associative learning. Our network learns
+associations between the content of each node and that node's neighbors.
+These associations serve as memories in the MHN. The recurrent dynamics of
+the network make it possible to recover the masked node, given
+that node's neighbors. Our proposed method is evaluated on different
+downstream tasks such as node classification and linkage prediction. The results show competitive performance compared to the common matrix
+factorization techniques and deep learning based methods.},
+}
+
+@inproceedings{2022-dshealth,
+  author    = {Jonathan J. Harris and
+               Mohammed J. Zaki},
+  title     = {Towards Neural Numeric-To-Text Generation From Temporal Personal Health Data},
+  booktitle   = {Workshop on Applied Data Science for Healthcare:
+                 Transparent and Human-centered AI (with KDD)},
+  year      = {2022},
+  customlinkArxiv = {http://arxiv.org/abs/2207.05194},
+  customlinkgithubcode = {https://github.com/harrij15/TemporalSummaries},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/DSHealth22.pdf},
+  abstract = {With an increased interest in the production of personal health technologies designed to track user data (e.g., nutrient intake, step counts), there is now more opportunity than ever to surface meaningful behavioral insights to everyday users in the form of natural language. This knowledge can increase their behavioral awareness and allow them to take action to meet their health goals. It can also bridge the gap between the vast collection of personal health data and the summary generation required to describe an individual's behavioral tendencies. Previous work has focused on rule-based time-series data summarization methods designed to generate natural language summaries of interesting patterns found within temporal personal health data. We examine recurrent, convolutional, and Transformer-based encoder-decoder models to automatically generate natural language summaries from numeric temporal personal health data. We showcase the effectiveness of our models on real user health data logged in MyFitnessPal and show that we can automatically generate high-quality natural language summaries. Our work serves as a first step towards the ambitious goal of automatically generating novel and meaningful temporal summaries from personal health data.},
+    KeyWord = {TemporalSummaries,DeepLearning,PersonalHealth},
+}
+
