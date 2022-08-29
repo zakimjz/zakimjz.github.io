@@ -53,7 +53,8 @@ knowledge of probability and statistics is also a plus.
 
 You are expected to know how to program. Class assignments will require
 the use of [Python](https://www.python.org/), especially using NumPy (and
-PyTorch)
+PyTorch if needed). All assignments will be submitted as [JupyterLab
+Notebooks](https://jupyter.org). 
 
 ## Textbook
 
@@ -73,19 +74,20 @@ Your grade will be a combination of the following items.
   also have written questions. You can expect about 8-10 assignments
   over the semester. 
 
-* **Exams (60%)**: There will be three exams covering the main topics of
+* **Exams (50-55%)**: There will be three exams covering the main topics of
   the course. The tentative exam dates are noted on the class schedule
-  table. There is no comprehensive final exam. All exams are open book, and
-  in-person during class.
+  table. There is no comprehensive final exam. I may consider take-home
+  exams, otherwise they will be in-person during class hours.
 
-* **Class Participation**: Students are encouraged to participate in the
-  class via attendance, discussions, and engagement on the Campuswire
+* **Attendance and Quizzes (5-10%)**: Attendance is required. There may be
+    pop-quizzes given throughout the semester. Students are also encouraged 
+    to participate in the class via discussions and engagement on the Campuswire
   forum.
     
 * **Late Submissions**: Most assignments will be due just before
   midnight on the due date. Students can get an automatic one day
-  extension for a 15% grade penalty. No late assignments will be
-  accepted after the midnight following the due date.
+  extension for a 15% grade penalty. No further late assignments will be
+  accepted.
 
 The grading for CSCI4390 and CSCI6390 will be done separately taking
 into account the more advanced material required for CSCI6390 -- this
