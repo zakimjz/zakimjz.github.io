@@ -18,14 +18,13 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs
 
-**TA**: 
+**TAs (Office Hours)**: 
 
-Qitong Wang <wangq19@rpi.edu>, TBD
+Qitong Wang <wangq19@rpi.edu> (TBD)
 
-Dhruva Nararan <narayd@rpi.edu>, TBD
+Dhruva Nararan <narayd@rpi.edu> (TBD)
 
 
-**TA Office Hours**: TBD 
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
