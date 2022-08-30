@@ -22,7 +22,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 Qitong Wang <wangq19@rpi.edu> (TBD)
 
-Dhruva Nararan <narayd@rpi.edu> (TBD)
+Dhruva Narayan <narayd@rpi.edu> (TBD)
 
 
 
@@ -42,7 +42,7 @@ change, but the dates for the Exams are fixed.
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-|  Aug 29 |  Introduction & Data Matrix (Chapter 1) | |
+|  Aug 29 |  Introduction & Data Matrix (Chapter 1) |[lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
 |  Sep 01 |  Data Matrix/Numeric Attributes (Chapter 2) | |
 |  Sep 06 (Tue) | Numeric Attributes (Chapter 2) | |
 |  Sep 08 |  High Dimensional Data (Chapter 6) | |
