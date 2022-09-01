@@ -1,0 +1,72 @@
+<h1>Assign1: Data Exploration</h1>
+<p><strong>Due Date</strong>: Sep 9th (Friday), before midnight (11:59:59PM; EDT)</p>
+<p>Download the <a href="https://archive.ics.uci.edu/ml/datasets/online+news+popularity">Online News Popularity</a> dataset
+from the UCI Machine Learning repository. This dataset has 61 attributes
+and 39797 points. You will ignore the following attributes for this
+assignment: 0-1, and 13-38. So, you'll be left with 33 attributes that
+you'll use. Complete the following tasks.</p>
+<h2>Mean vector and total variance</h2>
+<p>Compute the mean vector $\mathbf{\mu}$ for the data
+matrix, and then compute the total variance $var(\mathbf{D})$; see
+Eq. (1.8) for the latter.</p>
+<h2>Covariance matrix (inner and outer product form)</h2>
+<p>Compute the sample covariance matrix  $\mathbf{\Sigma}$  as <strong>inner
+products</strong> between the attributes of the centered data matrix (see Eq.
+(2.38) in chapter 2). Next compute the sample covariance matrix as sum
+of the <strong>outer products</strong> between the centered points (see Eq. (2.39)).</p>
+<h2>Correlation matrix as pair-wise cosines</h2>
+<p>Compute the correlation matrix for this dataset using the formula for
+the cosine between centered attribute vectors (see Eq. (2.30)). </p>
+<p>Output which attribute pairs are i) the most correlated, ii) the most
+anti-correlated, and iii) the least correlated?</p>
+<h2>Visualization</h2>
+<p>Create the scatter plots for the three interesting pairs using
+matplotlib and visually confirm the trends, i.e., describe how each of
+the three cases results in a particular type of plot.</p>
+<h2>(CSCI 6390 Only) Change of basis</h2>
+<p>Create a new orthogonal basis for the dataset as follows: Keep the first
+dimension as is as the new first dimension. For the second dimension, remove
+its projection along the first dimension to obtain the new second dimension.
+For the third dimension, first remove its projection along the new first
+dimension, and then take the resulting vector and remove its projection
+along the new second dimension to obtain the new third dimension. Proceed in
+this way by taking each dimension and subtract its projection along all
+previous (new) dimensions to obtain the new dimension. This will give you a
+new orthogonal basis for the data. </p>
+<p>Finally, compute the total variance in the new basis and compare it with the
+total variance in the original basis. What happens? Why?</p>
+<h2>Submission</h2>
+<p>Submit your code via submitty. Name your jupyter notebook:
+<strong>assign1.ipynb</strong>. You must use Python 3 (only versions 3.9 or 3.10).</p>
+<p>You may assume that the input CSV data file <em>OnlineNewsPopularity.csv</em>
+resides in the local directory of the notebook. You <strong>MUST NOT</strong>
+hard code the file path, rather use "./OnlineNewsPopularity.csv" as the
+filename, and do not change or manipulate the input file in any way. All
+feature subset selection must take place inside the notebook. This
+way the TAs can run your notebook with ease.</p>
+<p>The notebook should contain the executed output of each cell and plots, and
+you must add comment blocks corresponding to the
+different subtasks (e.g., mean vector and total variance, covariance matrix,
+etc), so the TAs can quickly check the results. </p>
+<p>The output of the different blocks should comprise the mean vector,
+total variance, covariance matrix via inner and via outer product,
+correlation matrix, and the scatter plots (using <strong>matplotlib</strong>). Your
+observations on which attributes are most, least, and anti-correlated must
+appear as comment blocks in the notebook.</p>
+<p>CSCI6390 students must also
+show the code for change of basis, and the output for the total variance in
+the new space, and their answer as a comment block.</p>
+<p>Note that you are allowed to use built-in NumPy/Python functions/libraries (e.g., <a href="https://docs.python.org/3/library/csv.html">csv</a>) for reading and
+parsing the input file, but you should NOT use any of the built-in functions
+like <strong>cov</strong> for this assignment. You may however verify your answers by
+comparing to the results from the built-in methods.</p>
+<h3>Tutorial on Python and NumPy</h3>
+<p>For those not that familiar with python or NumPy, you may search online
+for tutorials, e.g. https://docs.python.org/3/tutorial/ or
+https://numpy.org/doc/stable/</p>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>

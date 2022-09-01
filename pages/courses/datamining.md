@@ -34,6 +34,7 @@ Dhruva Narayan <narayd@rpi.edu> (TBD)
 
 ## Assignments
 
+**Assign1:** {{% doc %}} dm_assign1 {{% /doc %}}, Due: 9th Sep
 
 ## Class Schedule: Lectures 
 
