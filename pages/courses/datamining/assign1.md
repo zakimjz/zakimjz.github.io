@@ -99,8 +99,8 @@ comparing to the results from the built-in methods.
 ### Tutorial on Python and NumPy
 
 For those not that familiar with python or NumPy, you may search online
-for tutorials, e.g. https://docs.python.org/3/tutorial/ or
-https://numpy.org/doc/stable/
+for tutorials, e.g. [Python Tutorial](https://docs.python.org/3/tutorial/) or
+[NumPy Doc](https://numpy.org/doc/stable/).
 
 
 ### Policy on Academic Honesty
