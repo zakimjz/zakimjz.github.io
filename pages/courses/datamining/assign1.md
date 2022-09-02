@@ -15,7 +15,7 @@
 
 Download the [Online News Popularity](https://archive.ics.uci.edu/ml/datasets/online+news+popularity) dataset
 from the UCI Machine Learning repository. This dataset has 61 attributes
-and 39797 points. You will ignore the following attributes for this
+and 39644 points. You will ignore the following attributes for this
 assignment: 0-1, and 13-38. So, you'll be left with 33 attributes that
 you'll use. Complete the following tasks.
 
