@@ -38,7 +38,12 @@ Compute the correlation matrix for this dataset using the formula for
 the cosine between centered attribute vectors (see Eq. (2.30)).  
 
 Output which attribute pairs are i) the most correlated, ii) the most
-anti-correlated, and iii) the least correlated? You must print the "actual" names of these columns as well as the dimension index. For example, dimension 0 is named "n_tokens_title". The names and descriptions are given on the UCI dataset link above.
+anti-correlated, and iii) the least correlated? You must print the "actual"
+names of these columns as well as the dimension index. For example,
+for the 33 valid dimensions, the first dimension is named "n_tokens_title". 
+You can find the names and descriptions of all the valid attributes
+on the UCI dataset link above (you can get them from the first line of the
+csv file; *do not hard code the names*).
 
 
 ## Visualization
