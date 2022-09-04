@@ -35,31 +35,42 @@ of the **outer products** between the centered points (see Eq. (2.39)).
 ## Correlation matrix as pair-wise cosines
 
 Compute the correlation matrix for this dataset using the formula for
-the cosine between centered attribute vectors (see Eq. (2.30)). 
+the cosine between centered attribute vectors (see Eq. (2.30)).  
 
 Output which attribute pairs are i) the most correlated, ii) the most
-anti-correlated, and iii) the least correlated?
+anti-correlated, and iii) the least correlated? You must print the "actual" names of these columns as well as the dimension index. For example, dimension 0 is named "n_tokens_title". The names and descriptions are given on the UCI dataset link above.
 
 
 ## Visualization
 Create the scatter plots for the three interesting pairs using
 matplotlib and visually confirm the trends, i.e., describe how each of
-the three cases results in a particular type of plot.
+the three cases results in a particular type of plot. Based on the attribute
+description, do the results make sense? Why or why not?
 
 ## (CSCI 6390 Only) Change of basis 
 
-Create a new orthogonal basis for the dataset as follows: Keep the first
-dimension as is as the new first dimension. For the second dimension, remove
-its projection along the first dimension to obtain the new second dimension.
-For the third dimension, first remove its projection along the new first
-dimension, and then take the resulting vector and remove its projection
-along the new second dimension to obtain the new third dimension. Proceed in
-this way by taking each dimension and subtract its projection along all
-previous (new) dimensions to obtain the new dimension. This will give you a
-new orthogonal basis for the data. 
+Create a new orthogonal basis for the dataset as follows: 
+First, set the seed as **np.random.seed(42)** so that everyone will get the
+same answer. Next, generate a new orthonormal basis for the data as follows:
+First, generate a random $d$-dimensional vector using
+*np.random.random_sample*, and set it as the new first dimension $U_0$ after
+making it a unit vector. 
+For the second dimension, generate a random $d$-dimensional vector and remove
+its projection along $U_0$, and make it a unit vector to obtain the new second dimension, $U_1$.
+For the third dimension, first generate a random $d$-dimensional vector and
+remove its projections along $U_0$ and then $U_1$, and then make it a unit
+vector, which gives you $U_2$. In general, for the $i$-th new dimension
+$U_i$, first generate a random $d$-dimensional vector and then
+subtract its projection along all previous dimensions $U_j$, where $j < i$, and then make it a unit vector. This will give you a new orthogonal (and normal) basis for the data. This procedure is called the Gram-Schmidt Orthogonalization. 
 
-Finally, compute the total variance in the new basis and compare it with the
-total variance in the original basis. What happens? Why?
+Finally, you have to project the original data into the new space to obtain
+the coordinates of each point. This can be done by creating a matrix $U$
+whose columns are $U_0, U_1, U_2, ..., U_d$, and then simply multiplying the
+original data $D$ by $U$, i.e., new data $D' = D U$.
+
+
+Finally, compute the total variance of $D'$ in the new basis and compare it with the
+total variance of $D$ in the original basis. What happens? 
 
 
 ## Submission
