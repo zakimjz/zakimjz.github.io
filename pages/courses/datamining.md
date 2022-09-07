@@ -45,7 +45,7 @@ change, but the dates for the Exams are fixed.
 | :--- | :---  | ---: |
 |  Aug 29 |  Introduction & Data Matrix (Chapter 1) |[lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
 |  Sep 01 |  Data Matrix/Numeric Attributes (Chapter 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf), [lecture2 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture2/lecture2.html) |
-|  Sep 06 (Tue) | Numeric Attributes (Chapter 2) | |
+|  Sep 06 (Tue) | Numeric Attributes (Chapter 2) | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf) |
 |  Sep 08 |  High Dimensional Data (Chapter 6) | |
 |  Sep 12 |  High Dimensional Data II (Chapter 6) ||
 |  Sep 15 |  Dimensionality Reduction I (Chapter 7) | |
