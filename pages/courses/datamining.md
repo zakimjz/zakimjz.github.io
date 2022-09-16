@@ -48,7 +48,7 @@ change, but the dates for the Exams are fixed.
 |  Sep 06 (Tue) | Numeric Attributes (Chapter 2) | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf), [lecture3 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture3/lecture3.html)  |
 |  Sep 08 |  PCA (Chapter 7)|[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf), [lecture4 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture4/lecture4.html) |
 |  Sep 12 |  PCA II (Chapter 7)  |[lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture5/lecture5.html) |
-|  Sep 15 |  High Dimensional Data (Chapter 6) | |
+|  Sep 15 |  High Dimensional Data (Chapter 6) |[lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture6/lecture6.html) |
 |  Sep 19 |  Dimensionality Reduction II (Chapter 7) | |
 |  Sep 22 |  Kernel Methods I (Chap 5) | |
 |  Sep 26 |  Kernel PCA (Chapter 7) | |
