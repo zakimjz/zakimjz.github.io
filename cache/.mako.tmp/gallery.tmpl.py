@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1663383072.4201088
+_modified_time = 1663383149.6532211
 _enable_loop = True
 _template_filename = '/usr/lib/python3.10/site-packages/nikola/data/themes/base/templates/gallery.tmpl'
 _template_uri = 'gallery.tmpl'
@@ -37,33 +37,33 @@ def render_body(context,**pageargs):
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         photo_array = context.get('photo_array', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
-        photo_array_json = context.get('photo_array_json', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        post_helper = _mako_get_namespace(context, 'post_helper')
-        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
-        folders = context.get('folders', UNDEFINED)
-        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
-        def extra_js():
-            return render_extra_js(context._locals(__M_locals))
-        enable_comments = context.get('enable_comments', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
-        _link = context.get('_link', UNDEFINED)
-        parent = context.get('parent', UNDEFINED)
-        ui = _mako_get_namespace(context, 'ui')
-        post = context.get('post', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         translations = context.get('translations', UNDEFINED)
-        len = context.get('len', UNDEFINED)
         gallery_path = context.get('gallery_path', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        def sourcelink():
-            return render_sourcelink(context._locals(__M_locals))
+        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
+        parent = context.get('parent', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        def extra_js():
+            return render_extra_js(context._locals(__M_locals))
+        permalink = context.get('permalink', UNDEFINED)
+        enable_comments = context.get('enable_comments', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        ui = _mako_get_namespace(context, 'ui')
+        title = context.get('title', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        photo_array_json = context.get('photo_array_json', UNDEFINED)
+        def sourcelink():
+            return render_sourcelink(context._locals(__M_locals))
+        len = context.get('len', UNDEFINED)
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        post_helper = _mako_get_namespace(context, 'post_helper')
+        lang = context.get('lang', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
+        crumbs = context.get('crumbs', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -111,17 +111,17 @@ def render_content(context,**pageargs):
         post = context.get('post', UNDEFINED)
         ui = _mako_get_namespace(context, 'ui')
         photo_array = context.get('photo_array', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
         title = context.get('title', UNDEFINED)
-        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
-        folders = context.get('folders', UNDEFINED)
-        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
-        def content():
-            return render_content(context)
-        enable_comments = context.get('enable_comments', UNDEFINED)
         site_has_comments = context.get('site_has_comments', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
+        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
+        def content():
+            return render_content(context)
+        crumbs = context.get('crumbs', UNDEFINED)
+        permalink = context.get('permalink', UNDEFINED)
+        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
+        enable_comments = context.get('enable_comments', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    ')
         __M_writer(str(ui.breadcrumbs(crumbs)))
@@ -197,14 +197,14 @@ def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         post = context.get('post', UNDEFINED)
-        len = context.get('len', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         gallery_path = context.get('gallery_path', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
+        len = context.get('len', UNDEFINED)
         post_helper = _mako_get_namespace(context, 'post_helper')
+        lang = context.get('lang', UNDEFINED)
         parent = context.get('parent', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -235,8 +235,8 @@ def render_extra_js(context,**pageargs):
     try:
         def extra_js():
             return render_extra_js(context)
-        photo_array_json = context.get('photo_array_json', UNDEFINED)
         thumbnail_size = context.get('thumbnail_size', UNDEFINED)
+        photo_array_json = context.get('photo_array_json', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<script src="/assets/js/justified-layout.min.js"></script>\n<script src="/assets/js/gallery.min.js"></script>\n<script>\nvar jsonContent = ')
         __M_writer(str(photo_array_json))

@@ -63,10 +63,8 @@ repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the difference 
-
-between \(\mathbf{X}_a - \mathbf{X}_{b}\)
-
-If the difference is less
+between the $\mathbf{X}_i$ matrix from $i$-th iteration versus that from the
+previous iteration. If the difference is less
 than some threshold $\epsilon$ then we stop.
 
 ### Scatter Plot of the Data in the 2D/3D PC Basis
