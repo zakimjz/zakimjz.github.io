@@ -63,7 +63,7 @@ repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the distance between
-$\mathbf{X}_{i}$ and $\mathbf{X}_{i-1}$. If the difference is less
+$\mathbf{X}_i$ and $\mathbf{X}_{i-1}$. If the difference is less
 than some threshold $\epsilon$ then we stop.
 
 ### Scatter Plot of the Data in the 2D PC Basis
