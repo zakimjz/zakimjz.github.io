@@ -10,7 +10,7 @@ first 3 PCs (for CSCI6390), i.e., the eigenvectors as well as the
 eigenvalues. The description below is for 2 PCs, but the same procedure
 works for 3 PCs, by adding an additional column to the matrix of
 eigenvectors.</p>
-<p>Make sue to set the seed as np.random.seed(42), so everyone will get the
+<p>Make sure to set the seed as np.random.seed(42), so everyone will get the
 same results.</p>
 <p>To compute the first two eigenvectors of the covariance matrix
 $\mathbf{\Sigma}$ we will use a generalized power-iteration
@@ -36,9 +36,9 @@ orthogonalize the third column with respect to the first two.</p>
 <p>Before the next iteration, normalize each column to be unit length, and
 repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.</p>
-<p>To test for convergence, you can look at the difference 
-$$\mathbf{X}<em i-1>i - \mathbf{X}</em>$$ 
-If the difference is less
+<p>To test for convergence, you can look at the difference </p>
+<p>$$\mathbf{X}<em b>a - \mathbf{X}</em>$$ </p>
+<p>If the difference is less
 than some threshold $\epsilon$ then we stop.</p>
 <h3>Scatter Plot of the Data in the 2D PC Basis</h3>
 <p>Once you have obtained the two eigenvectors: $\mathbf{u}_1$ and

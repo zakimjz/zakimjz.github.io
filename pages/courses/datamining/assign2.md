@@ -27,7 +27,7 @@ eigenvalues. The description below is for 2 PCs, but the same procedure
 works for 3 PCs, by adding an additional column to the matrix of
 eigenvectors.
 
-Make sue to set the seed as np.random.seed(42), so everyone will get the
+Make sure to set the seed as np.random.seed(42), so everyone will get the
 same results.
 
 To compute the first two eigenvectors of the covariance matrix
@@ -63,7 +63,9 @@ repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the difference 
-$$\mathbf{X}_i - \mathbf{X}_{i-1}$$ 
+
+$$\mathbf{X}_a - \mathbf{X}_{b}$$ 
+
 If the difference is less
 than some threshold $\epsilon$ then we stop.
 
