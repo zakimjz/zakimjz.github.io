@@ -112,11 +112,10 @@ orthogonalize the third column with respect to the first two.</p>
 repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.</p>
 <p>To test for convergence, you can look at the difference </p>
-<p>between $$\mathbf{X}<em b>a$$
-and $$\mathbf{X}</em>$$</p>
+<p>between (\mathbf{X}<em b>a - \mathbf{X}</em>)</p>
 <p>If the difference is less
 than some threshold $\epsilon$ then we stop.</p>
-<h4>Scatter Plot of the Data in the 2D PC Basis</h4>
+<h4>Scatter Plot of the Data in the 2D/3D PC Basis</h4>
 <p>Once you have obtained the two eigenvectors: $\mathbf{u}_1$ and
 $\mathbf{u}_2$, first print out both of them.</p>
 <p>Next, project each of the original data points
@@ -125,6 +124,8 @@ points in 2D, and show the scatter plot.</p>
 <p>Finally, output how much of the variance is captured by the first two PCs, and
 what is the error in the approximation if we retain only these two
 components.</p>
+<p>For CSCI6390, plot the points in the first three PCs (3D scatter plot) and
+report the variance and error.</p>
 <h3>Part II: Points in High Dimensional Space</h3>
 <p>You will empirically verify what happens to the "center" of the space, and
 what happens at the "boundary".</p>

@@ -64,13 +64,12 @@ $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the difference 
 
-between $$\mathbf{X}_a$$
-and $$\mathbf{X}_{b}$$
+between \(\mathbf{X}_a - \mathbf{X}_{b}\)
 
 If the difference is less
 than some threshold $\epsilon$ then we stop.
 
-### Scatter Plot of the Data in the 2D PC Basis
+### Scatter Plot of the Data in the 2D/3D PC Basis
 
 Once you have obtained the two eigenvectors: $\mathbf{u}_1$ and
 $\mathbf{u}_2$, first print out both of them.
@@ -83,6 +82,8 @@ Finally, output how much of the variance is captured by the first two PCs, and
 what is the error in the approximation if we retain only these two
 components.
 
+For CSCI6390, plot the points in the first three PCs (3D scatter plot) and
+report the variance and error.
 
 
 ## Part II: Points in High Dimensional Space
