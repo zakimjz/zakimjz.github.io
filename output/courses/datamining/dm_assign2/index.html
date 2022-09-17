@@ -111,8 +111,9 @@ orthogonalize the third column with respect to the first two.</p>
 <p>Before the next iteration, normalize each column to be unit length, and
 repeat the whole process. That is, from $\mathbf{X}_1$ obtain
 $\mathbf{X}_2$ and so on, until convergence.</p>
-<p>To test for convergence, you can look at the distance between
-$\mathbf{X}<em i-1>i$ and $\mathbf{X}</em>$. If the difference is less
+<p>To test for convergence, you can look at the difference 
+$$\mathbf{X}<em i-1>i - \mathbf{X}</em>$$ 
+If the difference is less
 than some threshold $\epsilon$ then we stop.</p>
 <h4>Scatter Plot of the Data in the 2D PC Basis</h4>
 <p>Once you have obtained the two eigenvectors: $\mathbf{u}_1$ and
