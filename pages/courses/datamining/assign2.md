@@ -64,8 +64,8 @@ $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the difference 
 
-between $\mathbf{X}_a$ 
-and $\mathbf{X}_{b}$
+between $$\mathbf{X}_a$$
+and $$\mathbf{X}_{b}$$
 
 If the difference is less
 than some threshold $\epsilon$ then we stop.
