@@ -64,8 +64,8 @@ $\mathbf{X}_2$ and so on, until convergence.
 
 To test for convergence, you can look at the difference 
 between the $\mathbf{X}_i$ matrix from $i$-th iteration versus that from the
-previous iteration. If the difference is less
-than some threshold $\epsilon$ then we stop.
+previous iteration. Use **np.linalg.norm** on the difference, and if it is less
+than threshold $\epsilon=1e-6$ then we stop.
 
 ### Scatter Plot of the Data in the 2D/3D PC Basis
 
