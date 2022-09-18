@@ -89,6 +89,8 @@ report the variance and error.
 You will empirically verify what happens to the "center" of the space, and
 what happens at the "boundary".
 
+First, reset the seed as np.random.seed(42).
+
 Randomly generate
  $n=1,000,000$ points in $d$ dimensions, sampled uniformly in the range
  $[-1,1]$ for each dimension, where $d$ will be varied from $d=2$ to $d=20$.
