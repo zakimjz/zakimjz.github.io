@@ -40,8 +40,7 @@ Dhruva Narayan <narayd@rpi.edu> (12:30-1:30PM Tue, Fri, AE118)
 
 ## Class Schedule: Lectures 
 
-Tentative course schedule is given below. The topics are subject to
-change, but the dates for the Exams are fixed.
+Tentative course schedule is given below. 
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
@@ -54,8 +53,8 @@ change, but the dates for the Exams are fixed.
 |  Sep 19 |  High Dimensional Data II (Chapter 6) | [lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7.pdf), [lecture7 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture7/lecture7.html) |
 |  Sep 22 |  Kernel Methods I (Chap 5) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture8/lecture8.html)|
 |  Sep 26 |  Kernel PCA (Chapter 7) | |
-|  Sep 29 |  **EXAM I** |   |
-|  Oct 03 |  Linear Regression I (Chapter 23)| |
+|  Sep 29 |  Linear Regression I (Chapter 23) |   |
+|  Oct 03 |  **EXAM I** | |
 |  Oct 06 |  Linear Regression II (Chapters 23) ||
 |  Oct 10 |  **NO CLASS** (Columbus Day) |  |
 |  Oct 13 |  Support Vector Machines I (Chapter 21) ||
