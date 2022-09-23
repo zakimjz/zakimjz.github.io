@@ -52,10 +52,10 @@ change, but the dates for the Exams are fixed.
 |  Sep 12 |  PCA II (Chapter 7)  |[lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf), [lecture5 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture5/lecture5.html) |
 |  Sep 15 |  High Dimensional Data (Chapter 6) |[lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture6/lecture6.html) |
 |  Sep 19 |  High Dimensional Data II (Chapter 6) | [lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7.pdf), [lecture7 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture7/lecture7.html) |
-|  Sep 22 |  Kernel Methods I (Chap 5) | |
+|  Sep 22 |  Kernel Methods I (Chap 5) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture8/lecture8.html)|
 |  Sep 26 |  Kernel PCA (Chapter 7) | |
 |  Sep 29 |  **EXAM I** |   |
-|  Oct 05 |  Linear Regression I (Chapter 23)| |
+|  Oct 03 |  Linear Regression I (Chapter 23)| |
 |  Oct 06 |  Linear Regression II (Chapters 23) ||
 |  Oct 10 |  **NO CLASS** (Columbus Day) |  |
 |  Oct 13 |  Support Vector Machines I (Chapter 21) ||
