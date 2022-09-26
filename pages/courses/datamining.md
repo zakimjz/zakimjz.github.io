@@ -54,7 +54,7 @@ Tentative course schedule is given below.
 |  Sep 15 |  High Dimensional Data (Chapter 6) |[lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf), [lecture6 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture6/lecture6.html) |
 |  Sep 19 |  High Dimensional Data II (Chapter 6) | [lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7.pdf), [lecture7 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture7/lecture7.html) |
 |  Sep 22 |  Kernel Methods I (Chap 5) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture8/lecture8.html)|
-|  Sep 26 |  Kernel PCA (Chapter 7) | |
+|  Sep 26 |  Kernel PCA (Chapter 7) | [lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9.pdf), [lecture9 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture9/lecture9.html)||
 |  Sep 29 |  Linear Regression I (Chapter 23) |   |
 |  Oct 03 |  **EXAM I** | |
 |  Oct 06 |  Linear Regression II (Chapters 23) ||
