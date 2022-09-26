@@ -12,7 +12,7 @@
 
 # Assign3: Non-Linear Dimensionality Reduction: Kernel PCA
 
-**Due Date**: Oct 9, before midnight (11:59:59PM)
+**Due Date**: Sep 30, before midnight (11:59:59PM)
 
 
 We will the [Online News
