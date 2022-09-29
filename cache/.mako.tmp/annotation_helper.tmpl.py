@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1664235028.4239078
+_modified_time = 1664493238.8919778
 _enable_loop = True
-_template_filename = '/usr/local/lib/python3.10/dist-packages/nikola/data/themes/base/templates/annotation_helper.tmpl'
+_template_filename = '/usr/lib/python3.10/site-packages/nikola/data/themes/base/templates/annotation_helper.tmpl'
 _template_uri = 'annotation_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['css', 'code']
@@ -47,6 +47,6 @@ def render_code(context):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/local/lib/python3.10/dist-packages/nikola/data/themes/base/templates/annotation_helper.tmpl", "uri": "annotation_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 3, "22": 16, "28": 1, "32": 1, "38": 5, "42": 5, "48": 42}}
+{"filename": "/usr/lib/python3.10/site-packages/nikola/data/themes/base/templates/annotation_helper.tmpl", "uri": "annotation_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 3, "22": 16, "28": 1, "32": 1, "38": 5, "42": 5, "48": 42}}
 __M_END_METADATA
 """
