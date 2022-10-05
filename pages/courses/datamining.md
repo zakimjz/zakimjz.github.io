@@ -56,7 +56,7 @@ Tentative course schedule is given below.
 |  Sep 22 |  Kernel Methods I (Chap 5) | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf), [lecture8 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture8/lecture8.html)|
 |  Sep 26 |  Kernel PCA (Chapter 7) | [lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9.pdf), [lecture9 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture9/lecture9.html)||
 |  Sep 29 |  Exam Syllabus & Regression | [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf), [lecture10 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture10/lecture10.html)  |
-|  Oct 03 |  Linear Regression I (Chapter 23) | |
+|  Oct 03 |  Linear Regression I (Chapter 23) |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf), [lecture11 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture11/lecture11.html)  |
 |  Oct 06 |  Linear Regression II (Chapter 23) ||
 |  Oct 10 |  **NO CLASS** (Columbus Day) |  |
 |  Oct 13 |  Support Vector Machines I (Chapter 21) ||
