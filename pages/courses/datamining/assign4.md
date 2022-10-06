@@ -79,7 +79,7 @@ $TSS = \sum_{i=1}^n ( y_i − \mu_Y)^2$
 Implement ridge regression algorithm (Algo 23.3 on page 610), but using *batch* gradient descent 
 to solve for $\mathbf{w}$, via equation (23.35). That is, instead of doing
 lines 5-7, just use eq (23.35) to compute the gradient, and then update the
-weight vector. Repeat until convergence.
+weight vector as shown in the next equation after (23.35). Repeat until convergence.
 
 Use $\eta=1e-6$, but choose the appropriate regularization constant $\alpha$, based on the validation set, as follows: 
 For each value of $\alpha$, first learn $\mathbf{w}$ on the
