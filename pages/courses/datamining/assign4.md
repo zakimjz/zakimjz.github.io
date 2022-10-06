@@ -38,10 +38,10 @@ Since the attributes have different scales, you should next
 standardize the **training data** so that each independent attribute has mean zero and variance one. 
 You can use the sklearn [StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 to do this, or do it by using the formula $(x_i-\mu_X)/\sigma_X$, where
-$\mu_X$ and $\sigma_X$ are the mean and standard deviation for the
+$\mu_X$ and $\sigma_X$ are the mean and standard deviation for an
 attribute $X$, and $x_i$ is one of the values of $X$. There is no need to
 standardize the target variable. Make a note of the training data mean and
-standard deviation.
+standard deviation for each attribute.
 
 Then, standardize both the validation and test data independent
 attributes using the **training mean and training std** for each attribute.

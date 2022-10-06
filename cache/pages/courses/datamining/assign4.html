@@ -20,10 +20,10 @@ points as the test data (that is, 80-10-10 split).</p>
 standardize the <strong>training data</strong> so that each independent attribute has mean zero and variance one. 
 You can use the sklearn <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">StandardScaler</a>
 to do this, or do it by using the formula $(x_i-\mu_X)/\sigma_X$, where
-$\mu_X$ and $\sigma_X$ are the mean and standard deviation for the
+$\mu_X$ and $\sigma_X$ are the mean and standard deviation for an
 attribute $X$, and $x_i$ is one of the values of $X$. There is no need to
 standardize the target variable. Make a note of the training data mean and
-standard deviation.</p>
+standard deviation for each attribute.</p>
 <p>Then, standardize both the validation and test data independent
 attributes using the <strong>training mean and training std</strong> for each attribute.</p>
 <p>Finally, augment the training, validation and testing datasets by adding a
