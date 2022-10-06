@@ -44,7 +44,7 @@ standardize the target variable. Make a note of the training data mean and
 standard deviation.
 
 Then, standardize both the validation and test data independent
-attributes using the **training mean and training std**.
+attributes using the **training mean and training std** for each attribute.
 
 Finally, augment the training, validation and testing datasets by adding a
 columns of ones as the first dimension.
