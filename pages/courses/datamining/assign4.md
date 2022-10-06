@@ -66,8 +66,8 @@ solve for the augmented weight vector $\mathbf{w}$.
 use **numpy.linalg.inv** for your solution, but **CSCI6390** must implement backsolve via backsubstitution 
 on their own without using the inv function. See Example 23.4 on how backsolve works.
 
-After you have computed the weight vector $\mathbf{w}$,
-you should compute the SSE value for the predictions and also the
+After you have computed the weight vector $\mathbf{w}$, print it, and then 
+compute the SSE value for the predictions and also the
 $R^2$ statistic on the test data, where: 
 $$R^2=\frac{TSS−SSE}{TSS}$$
 where TSS is the total scatter of the response variable 
@@ -84,16 +84,17 @@ weight vector as shown in the next equation after (23.35). Repeat until converge
 Use $\eta=1e-6$, but choose the appropriate regularization constant $\alpha$, based on the validation set, as follows: 
 For each value of $\alpha$, first learn $\mathbf{w}$ on the
 *training set*, and then compute the SSE value on the *validation set*.
-The value that give the least validation SSE is the one to
+The value that gives the least validation SSE is the one to
 choose. 
-
-Once the best $\alpha$ and corresponding $\mathbf{w}$ have
-been found, you should evaluate the model on the
-testing data. In particular, you should compute the SSE value for the predictions on the test data.
-You should also report the $R^2$ statistic on the test data.
 
 For the $\alpha$ value try powers of 10 (e.g., 0, 1, 10, 100, 1000, 10000,
 etc), and then narrow down the range.
+
+Once the best $\alpha$ and corresponding $\mathbf{w}$ have
+been found, print those, and then evaluate the model on the
+testing data. In particular, you should compute the SSE value for the predictions on the test data.
+You should also report the $R^2$ statistic on the test data.
+
 
 ---
 
