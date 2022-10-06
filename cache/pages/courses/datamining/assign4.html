@@ -27,7 +27,8 @@ standard deviation.</p>
 <p>Then, standardize both the validation and test data independent
 attributes using the <strong>training mean and training std</strong> for each attribute.</p>
 <p>Finally, augment the training, validation and testing datasets by adding a
-columns of ones as the first dimension.</p>
+columns of ones as the first dimension. Make sure to keep the target
+variable as separate from the independent variables for all three splits.</p>
 <hr>
 <h2>Part I: Linear Regression via QR Factorization</h2>
 <p>Implement the linear regression algorithm via QR factorization,

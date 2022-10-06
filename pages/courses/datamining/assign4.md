@@ -47,7 +47,8 @@ Then, standardize both the validation and test data independent
 attributes using the **training mean and training std** for each attribute.
 
 Finally, augment the training, validation and testing datasets by adding a
-columns of ones as the first dimension.
+columns of ones as the first dimension. Make sure to keep the target
+variable as separate from the independent variables for all three splits.
 
 ---
 
