@@ -101,7 +101,7 @@ You should also report the $R^2$ statistic on the test data.
 ## What to submit
 
 * Submit your python notebook, that contains the solution and output, 
-suitably annotated/commented. Name the notebook: assign4.ipynb.
+suitably annotated/commented. Name the notebook: **assign4.ipynb**.
 
 
 * Submit the notebook file via submitty. Your code must be self-contained,
