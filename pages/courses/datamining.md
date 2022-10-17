@@ -62,7 +62,7 @@ Tentative course schedule is given below.
 |  Oct 06 |  Linear Regression II (Chapter 23) |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf), [lecture12 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture12/lecture12.html) |
 |  Oct 10 |  **NO CLASS** (Columbus Day) |  |
 |  Oct 13 |  Support Vector Machines I (Chapter 21) |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf), [lecture13 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture13/lecture13.html)|
-|  Oct 17 |  Support Vector Machines II (Chapter 21) | |
+|  Oct 17 |  Support Vector Machines II (Chapter 21) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf), [lecture14 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture14/lecture14.html) |
 |  Oct 20 |  Logistic Regression (Chapter 24) | |
 |  Oct 24 |  Neural Networks (Chapter 25) | |
 |  Oct 27 |  Neural Networks II (Chap 25)   | |

@@ -1,0 +1,42 @@
+<h1>Assign5: Support Vector Regression</h1>
+<p><strong>Due Date</strong>: Oct 21, before midnight (11:59:59PM)</p>
+<p>We will continue with the <a href="https://archive.ics.uci.edu/ml/datasets/online+news+popularity">Online News Popularity</a>
+dataset as in previous assignments. This dataset has 61 attributes and 39644
+points. 
+Ignore the following attributes for this assignment: 0-1,
+4-6, 13-38. We will use all the remaining attributes, but with the last attribute
+(60; shares) as the target variable. Thus you will have 29 independent
+attributes and 1 dependent or target attribute. Your goal is to build a
+regression model to predict the number of shares of a news article.</p>
+<p>First, follow the same data preprocessing steps outlined in <a href="/courses/datamining/dm_assign4/">CSCI4390-6390 Assign4</a>, except that you should split the data into three parts after shuffling the points, by taking 
+the first 5000 points as
+training data, the next 2000 points as validation data, and the next 5000
+points as the test data. You can ignore the remaining points.</p>
+<p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540).
+You must implement the hinge loss case.</p>
+<h2>CSCI4390 and CSCI6390</h2>
+<p>You must implement two kernels, namely, both linear and Gaussian.
+You must select the best $C$ value using the validation set, and the same
+goes for the spread parameter $\sigma^2$ for the Gaussian kernel.</p>
+<h2>CSCI6390</h2>
+<p>You must also implement the polynomial kernel. You need to select the best degree and $C$ value.</p>
+<hr>
+<h2>What to submit</h2>
+<ul>
+<li>
+<p>Submit your python notebook, that contains the solution and output, 
+suitably annotated/commented. Name the notebook: <strong>assign5.ipynb</strong>.</p>
+</li>
+<li>
+<p>Submit the notebook file via submitty. Your code must be self-contained,
+    and must not hard code file names. You can assume the data file lies in
+    the local dir.</p>
+</li>
+</ul>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
