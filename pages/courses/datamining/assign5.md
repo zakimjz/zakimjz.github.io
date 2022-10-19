@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-# Assign5: Support Vector Regression
+# Assign5: Support Vector Classification
 
 **Due Date**: Oct 24, before midnight (11:59:59PM)
 
