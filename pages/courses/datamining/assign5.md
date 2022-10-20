@@ -70,8 +70,9 @@ validation accuracy.
 
 ## Exam I Questions
 
-Submit your solutions to exam I question Q5, and in addition CSCI6390
-should submit their solutions to Q8.
+Everyone should do question Q5, and in addition CSCI6390
+should submit their solutions to Q8. The lecture13 discusses how to solve both
+these problems.
 
 
 ---
