@@ -36,6 +36,11 @@ i.e., if the target variable has more than 6000 shares, then set it to 6000.
 Next, define the positive class (+1) as those posts with 2000 or more shares, and
 the negative class (-1) as those with fewer than 2000 shares.
 
+Also, keep in mind that you do not have to augment the data directly, since
+we can obtain the augmented kernel by adding 1 to all entries of the kernel
+matrix (element-wise).
+
+
 ## SVM
 
 You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540), using
@@ -46,14 +51,20 @@ You must select the best $C$ value using the validation set, and the same
 goes for the spread parameter $\sigma^2$ for the Gaussian kernel.
 
 Report the test accuracy for the different kernels, and the best value of
-the hyperparameters.
+the hyperparameters, that should be selected based on the validation
+accuracy. 
+
+Accuracy is defined as the number of correct predictions over the number of
+points in a given dataset (e.g., validation set or testing set).
+
 
 #### CSCI6390
 
 In addition, you must also implement the inhomogeneous polynomial kernel. 
 You need to select the best degree and $C$ value.
 
-Report the test accuracy and the best hyperparameters used.
+Report the test accuracy and the best hyperparameters used based on the
+validation accuracy.
 
 ---
 

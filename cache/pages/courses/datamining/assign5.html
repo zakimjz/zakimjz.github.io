@@ -17,6 +17,9 @@ points as the test data. You can ignore the remaining points.</p>
 i.e., if the target variable has more than 6000 shares, then set it to 6000.
 Next, define the positive class (+1) as those posts with 2000 or more shares, and
 the negative class (-1) as those with fewer than 2000 shares.</p>
+<p>Also, keep in mind that you do not have to augment the data directly, since
+we can obtain the augmented kernel by adding 1 to all entries of the kernel
+matrix (element-wise).</p>
 <h2>SVM</h2>
 <p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540), using
 hinge loss.</p>
@@ -24,11 +27,15 @@ hinge loss.</p>
 You must select the best $C$ value using the validation set, and the same
 goes for the spread parameter $\sigma^2$ for the Gaussian kernel.</p>
 <p>Report the test accuracy for the different kernels, and the best value of
-the hyperparameters.</p>
+the hyperparameters, that should be selected based on the validation
+accuracy. </p>
+<p>Accuracy is defined as the number of correct predictions over the number of
+points in a given dataset (e.g., validation set or testing set).</p>
 <h4>CSCI6390</h4>
 <p>In addition, you must also implement the inhomogeneous polynomial kernel. 
 You need to select the best degree and $C$ value.</p>
-<p>Report the test accuracy and the best hyperparameters used.</p>
+<p>Report the test accuracy and the best hyperparameters used based on the
+validation accuracy.</p>
 <hr>
 <h2>Exam I Questions</h2>
 <p>Submit your solutions to exam I question Q5, and in addition CSCI6390
