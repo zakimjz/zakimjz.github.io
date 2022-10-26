@@ -34,6 +34,8 @@ Dhruva Narayan <narayd@rpi.edu> (12:30-1:30PM Tue, Fri, AE118)
 
 ## Assignments
 
+**Assign6:** {{% doc %}} dm_assign6 {{% /doc %}}, Due: 1st Nov
+
 **Assign5:** {{% doc %}} dm_assign5 {{% /doc %}}, Due: 24th Oct
 
 **Assign4:** {{% doc %}} dm_assign4 {{% /doc %}}, Due: 14th Oct
