@@ -35,6 +35,9 @@ Your script should print out the weight vector(s), and also the final
 accuracy value on the test data (see Eq 22.2). You should also compute the F1-score (see
 Eq 22.7 in chapter 22).
 
+You should use the scipy.special.softmax function rather than your own,
+since it is more robust.
+
 
 **CSCI6390**: There may be an extra component which is TBD.
 
