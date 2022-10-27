@@ -23,6 +23,11 @@ first column denotes the class, and the remaining 784 attributes are the
 pixel values (1-255). You will use the 60K examples fashion-mnist_train.csv
 file for training, and the 10K examples fashion-mnist_test.csv for testing.
 
+Since the data is large, you should first set the random seed to 42, and
+then shuffle the points in the training and test sets. Select the first
+10000 points after shuffling the train.csv file as the training data, and
+the first 5000 points after shuffling test.csv files as the testing data.
+
 You will implement the multi-class logistic regression algorithm as described in
 Algorithm 24.2 (Chapter 24, page 634). 
 
