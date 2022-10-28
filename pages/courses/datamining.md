@@ -69,7 +69,7 @@ Tentative course schedule is given below.
 |  Oct 17 |  Support Vector Machines II (Chapter 21) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf), [lecture14 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture14/lecture14.html) |
 |  Oct 20 |  Logistic Regression (Chapter 24) |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf), [lecture15 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture15/lecture15.html) |
 |  Oct 24 |  Neural Networks (Chapter 25) |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf), [lecture16 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture16/lecture16.html) |
-|  Oct 27 |  Neural Networks II (Chap 25)   | |
+|  Oct 27 |  Neural Networks II (Chap 25)   | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf), [lecture17 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture17/lecture17.html)|
 |  Oct 31 |  Deep Learning (Chapter 26) | |
 |  Nov 03 |  **EXAM II** |  |
 |  Nov 07 |  Probabilistic Classification (Chapter 18)| |
