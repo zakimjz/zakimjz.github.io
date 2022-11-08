@@ -72,7 +72,7 @@ Tentative course schedule is given below.
 |  Oct 27 |  Neural Networks II (Chap 25)   | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf), [lecture17 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture17/lecture17.html)|
 |  Oct 31 |  Deep Learning (Chapter 26) | [lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf), [lecture18 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture18/lecture18.html)|
 |  Nov 03 |  **EXAM II (take home)**, Exam Review & Regularization (Chapter 26) | [lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture19/lecture19.html) |
-|  Nov 07 |  Probabilistic Classification (Chapter 18)| |
+|  Nov 07 |  Deep Learning II (Chapter 26)| [lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture20/lecture20.html)|
 |  Nov 10 |  Representative-based Clustering (Chapter 13)  | |
 |  Nov 14 |  EM-Clustering (Chapter 13)  | |
 |  Nov 17 |  Density-based Clustering (Chapter 15) | |
