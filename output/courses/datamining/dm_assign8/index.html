@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign8 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign8/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign8">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign8/">
+<meta property="og:description" content="Assign8: Clustering: EM and K-Means
+Due Date: Nov 22, before midnight (11:59:59PM)
+You will use the 
+Codon Usage Dataset.
+You should use Column 1 as the true cluster label. Next ignore
+Columns 2, 3, 4">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-11-11T12:00:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign8</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign8: Clustering: EM and K-Means</h2>
+<p><strong>Due Date</strong>: Nov 22, before midnight (11:59:59PM)</p>
+<p>You will use the 
+<a href="https://archive.ics.uci.edu/ml/datasets/Codon+usage#">Codon Usage Dataset</a>.
+You should use Column 1 as the true cluster label. Next ignore
+Columns 2, 3, 4, and 5. Use the remaining 64 attributes as the 64
+dimensional feature vector per point. Since Column 1 is the animal kingdom,
+you are trying to group the points based on the DNA codon frequencies.
+Also, there are some data errors on lines 488 and 5065 (if header is assumed
+to be line 1). You should ignore
+those lines after reading in the data (<strong>do not modify the input file</strong>).</p>
+<hr>
+<h2>CSCI4390/6390: Expectation Maximization Clustering</h2>
+<p>Implement the Expectation-Maximization (EM) algorithm for clustering
+(see Algorithm 13.3 in Chapter 13). Use the 'Appliances' attribute as
+the true cluster label as described above, and use it for the purity-based clustering
+evaluation (see below). Run with $k=4$ clusters. </p>
+<p>For initializing the clusters, select $k$ random data points as the cluster
+centers. However, once you have chosen the centers, assign each point to the
+closest center to compute the covariance matrix and the prior probabilities
+of each cluster.</p>
+<p>For practical purposes, you may want to use the <a href="https://blog.feedly.com/tricks-of-the-trade-logsumexp/">logexpsum
+trick</a> for
+expectation step, where you compute the log probabilities so that you can
+deal with very small probability values, otherwise, you may find that
+weights of a point for the clusters are zero. That is, if all probabilities
+are given as $\log P(Ci)$ and $\log P(xj | Ci)$, 
+then we have
+first compute $\log w_{ij} = \log P(xj | Ci) + \log P(Ci)$ (note: this is
+only the numerator, we have to normalize as given below). But, to compute
+the final $w_{ij}$, we have to use the logsumexp trick, since 
+$$logsumexp(\log w_{1j}, \log w_{2j}, ..., \log w_{kj}) = \log\left(\sum_{a=1}^k
+        \exp \log w_{aj}\right) = \log \left(\sum_{a=1}^k w_{aj}\right)$$
+And therefore,
+$$w_{ij} = \exp\Big( \log w_{ij} - logsumexp(\log w_{1j}, ..., \log w_{kj}) \Big)$$
+You can therefore use scipy.special.logsumexp function on log probabilities.</p>
+<p>As another practical point, you can get an error when inverting the covariance
+matrix, so you should add a small ridge value $\lambda$ value along the
+diagonal entries to make the matrix invertible. This can be considered
+as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
+\lambda \mathbf{I}$$
+Or just use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+<p>Your program output should consist of the following information:</p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering,
+    computed using Eq. 17.8. You must implement this on your own. </li>
+</ul>
+<p>Run your code at least 10 times with different random initial clusters, 
+and report the clustering with the best NMI score.</p>
+<hr>
+<h2>CSCI6390 Only: K-Means</h2>
+<p>In addition, implement the basic K-Means algorithm 13.1 on pg 336. </p>
+<p>To initialize the clusters select $k$ random points as means.</p>
+<p>Your code must output the following information:</p>
+<ul>
+<li>The mean and size of each cluster</li>
+<li>The NMI value for your clustering</li>
+</ul>
+<p>Run your code at least 10 times with different random initial clusters, 
+and report the clustering with the best NMI score.</p>
+<hr>
+<h3>What to submit</h3>
+<ul>
+<li>Submit your notebook named as <strong>Assign8.ipynb</strong> via submitty.</li>
+</ul>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-11058802-1');
+</script>
+</body>
+</html>
