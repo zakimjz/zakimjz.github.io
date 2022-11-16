@@ -78,11 +78,11 @@ Tentative course schedule is given below.
 |  Nov 03 |  **EXAM II (take home)**, Exam Review & Regularization (Chapter 26) | [lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf), [lecture19 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture19/lecture19.html) |
 |  Nov 07 |  Deep Learning II (Chapter 26)| [lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20.pdf), [lecture20 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture20/lecture20.html)|
 |  Nov 10 |  Deep Learning III (Chapter 26)  |[lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21.pdf), [lecture21 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture21/lecture21.html) |
-|  Nov 14 |  Representative-Based Clustering (Chapter 13)  | |
-|  Nov 17 |  Density-based Clustering (Chapter 15) | |
+|  Nov 14 |  Representative-Based Clustering (Chapter 13)  |[lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22.pdf), [lecture22 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture22/lecture22.html)  |
+|  Nov 17 |  Representative & Density-based Clustering (Chapters  13,15) | |
 |  Nov 21 |  Spectral Clustering (Chapter 16) | |
 |  Nov 24 |  **NO CLASS** (Thanksgiving) |  |
 |  Nov 28 |  Classification Assessment (Chapter 22) | |
 |  Dec 01 |  Classification Assessment II (Chapter 22) | |
 |  Dec 05 |  Clustering Validation (Chapter 17) | |
-|  Dec 08 |  **EXAM III**  |  |
+|  Dec 08 |  **EXAM III**  ||
