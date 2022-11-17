@@ -30,9 +30,8 @@ those lines after reading in the data (**do not modify the input file**).
 # CSCI4390/6390: Expectation Maximization Clustering
 
 Implement the Expectation-Maximization (EM) algorithm for clustering
-(see Algorithm 13.3 in Chapter 13). Use the 'Appliances' attribute as
-the true cluster label as described above, and use it for the purity-based clustering
-evaluation (see below). Run with $k=4$ clusters. 
+(see Algorithm 13.3 in Chapter 13). Use Col 1 as the true cluster labels, so
+there are 11 true clusters, and you should use $k=11$ to show results.
 
 For initializing the clusters, select $k$ random data points as the cluster
 centers. However, once you have chosen the centers, assign each point to the
