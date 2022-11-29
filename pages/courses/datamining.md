@@ -84,7 +84,7 @@ Tentative course schedule is given below.
 |  Nov 17 |  Representative & Density-based Clustering (Chapters  13,15) | [lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23.pdf), [lecture23 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture23/lecture23.html)|
 |  Nov 21 |  Density-based & Spectral Clustering (Chapters 15,16) | [lecture24](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture24.pdf), [lecture24 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture24/lecture24.html)|
 |  Nov 24 |  **NO CLASS** (Thanksgiving) |  |
-|  Nov 28 |  Spectral Clustering (Chapter 16) | |
-|  Dec 01 |  Classification Assessment I (Chapter 22) | |
+|  Nov 28 |  Spectral Clustering (Chapter 16) | [lecture25](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture25.pdf), [lecture25 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture25/lecture25.html)|
+|  Dec 01 |  Markov Clustering and Classification Assessment I (Chapters 16, 22) | |
 |  Dec 05 |  Clustering Validation (Chapter 17) | |
 |  Dec 08 |  **EXAM III**  ||
