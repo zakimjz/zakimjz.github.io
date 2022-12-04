@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1670197037.6010547
+_modified_time = 1670197259.7694829
 _enable_loop = True
 _template_filename = '/usr/lib/python3.10/site-packages/nikola/data/themes/base/templates/gallery.tmpl'
 _template_uri = 'gallery.tmpl'
@@ -36,33 +36,33 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        post_helper = _mako_get_namespace(context, 'post_helper')
-        parent = context.get('parent', UNDEFINED)
-        _link = context.get('_link', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
-        folders = context.get('folders', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
-        len = context.get('len', UNDEFINED)
-        photo_array_json = context.get('photo_array_json', UNDEFINED)
-        def sourcelink():
-            return render_sourcelink(context._locals(__M_locals))
-        comments = _mako_get_namespace(context, 'comments')
-        title = context.get('title', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
-        photo_array = context.get('photo_array', UNDEFINED)
-        post = context.get('post', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
         ui = _mako_get_namespace(context, 'ui')
-        enable_comments = context.get('enable_comments', UNDEFINED)
-        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        translations = context.get('translations', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
+        crumbs = context.get('crumbs', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        permalink = context.get('permalink', UNDEFINED)
+        photo_array = context.get('photo_array', UNDEFINED)
+        def sourcelink():
+            return render_sourcelink(context._locals(__M_locals))
         def extra_js():
             return render_extra_js(context._locals(__M_locals))
+        parent = context.get('parent', UNDEFINED)
+        enable_comments = context.get('enable_comments', UNDEFINED)
+        photo_array_json = context.get('photo_array_json', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
+        title = context.get('title', UNDEFINED)
+        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        thumbnail_size = context.get('thumbnail_size', UNDEFINED)
+        post_helper = _mako_get_namespace(context, 'post_helper')
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         gallery_path = context.get('gallery_path', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -108,20 +108,20 @@ def render_sourcelink(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        comments = _mako_get_namespace(context, 'comments')
         folders = context.get('folders', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
-        photo_array = context.get('photo_array', UNDEFINED)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        post = context.get('post', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
+        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
         def content():
             return render_content(context)
-        enable_comments = context.get('enable_comments', UNDEFINED)
         ui = _mako_get_namespace(context, 'ui')
-        galleries_use_thumbnail = context.get('galleries_use_thumbnail', UNDEFINED)
+        photo_array = context.get('photo_array', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        crumbs = context.get('crumbs', UNDEFINED)
         thumbnail_size = context.get('thumbnail_size', UNDEFINED)
+        permalink = context.get('permalink', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        title = context.get('title', UNDEFINED)
+        enable_comments = context.get('enable_comments', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n    ')
         __M_writer(str(ui.breadcrumbs(crumbs)))
@@ -196,16 +196,16 @@ def render_content(context,**pageargs):
 def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        post_helper = _mako_get_namespace(context, 'post_helper')
-        parent = context.get('parent', UNDEFINED)
         translations = context.get('translations', UNDEFINED)
-        _link = context.get('_link', UNDEFINED)
-        post = context.get('post', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
-        gallery_path = context.get('gallery_path', UNDEFINED)
-        len = context.get('len', UNDEFINED)
+        post = context.get('post', UNDEFINED)
         lang = context.get('lang', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        post_helper = _mako_get_namespace(context, 'post_helper')
+        gallery_path = context.get('gallery_path', UNDEFINED)
+        parent = context.get('parent', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer(str(parent.extra_head()))
