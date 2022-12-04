@@ -4353,3 +4353,133 @@ factorization techniques and deep learning based methods.},
     KeyWord = {TemporalSummaries,DeepLearning,PersonalHealth},
 }
 
+@inproceedings{2022-coling,
+  author    = {Qitong Wang and
+               Mohammed J. Zaki},
+  title     = {HG2Vec: Improved Word Embeddings from Dictionary and Thesaurus Based
+               Heterogeneous Graph},
+  booktitle = {Proceedings of the 29th International Conference on Computational
+               Linguistics (COLING)},
+  pages     = {3154--3163},
+  publisher = {International Committee on Computational Linguistics},
+  year      = {2022},
+  month = {Oct},
+  url       = {https://aclanthology.org/2022.coling-1.279},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/COLING22.pdf},
+  customlinkgithubcode = {https://github.com/Qitong-Wang/HG2Vec},
+  abstract = {Learning word embeddings is an essential topic in natural
+              language processing. Most existing works use a vast corpus as
+              a primary source while training, but this requires massive
+              time and space for data pre-processing and model training. We
+              propose a new model, HG2Vec, that learns word embeddings
+              utilizing only dictionaries and thesauri. Our model reaches
+              the state-of-art on multiple word similarity and relatedness
+              benchmarks. We demonstrate that dictionaries and thesauri are
+              effective resources to learn word embeddings. In addition, we
+              exploit a new context-focused loss that models transitive
+              relationships between word pairs and balances the performance
+              between similarity and relatedness benchmarks, yielding
+              superior results.},
+}
+
+@inproceedings{2022-aacl,
+  author    = {Diya Li and
+               Mohammed J. Zaki},
+  title     = {Food Knowledge Representation Learning with Adversarial Substitution},
+  booktitle = {Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the
+               Association for Computational Linguistics and the 12th International
+               Joint Conference on Natural Language Processing, {AACL/IJCNLP}
+               - Volume 1: Long Papers},
+  pages     = {653--664},
+  publisher = {Association for Computational Linguistics},
+  year      = {2022},
+  month = {Nov},
+  url       = {https://aclanthology.org/2022.aacl-main.50},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/AACL-IJCNLP22.pdf},
+  customlinkgithubcode = {https://github.com/DiyaLI916/FoodKGE},
+  abstract = {Knowledge graph embedding (KGE) has been well-studied in
+              general domains, but has not been examined for food computing.
+              To fill this gap, we perform knowledge representation learning
+              over a food knowledge graph (KG). We employ a pre-trained
+              language model to encode entities and relations, thus
+              emphasizing contextual information in food KGs. The model is
+              trained on two tasks – predicting a masked entity from a given
+              triple from the KG and predicting the plausibility of a
+              triple. Analysis of food substitutions helps in dietary
+              choices for enabling healthier eating behaviors. Previous work
+              in food substitutions mainly focuses on semantic similarity
+              while ignoring the context. It is also hard to evaluate the
+              substitutions due to the lack of an adequate validation
+              set, and further, the evaluation is subjective based on
+              perceived purpose. To tackle this problem, we propose a
+              collection of adversarial sample generation strategies for
+              different food substitutions over our learnt KGE. We propose
+              multiple strategies to generate high quality context-aware
+              recipe and ingredient substitutions and also provide
+              generalized ingredient substitutions to meet different user
+              needs. The effectiveness and efficiency of the proposed
+              knowledge graph learning method and the following attack
+              strategies are verified by extensive evaluations on a
+              large-scale food KG.},
+}
+
+
+@article{2022-frontiers,
+  author  = {Yuchen Liang and Dmitry Krotov and Mohammed J. Zaki},
+  title  = {Modern Hopfield Networks for graph embedding},
+  journal   = {Frontiers in Big Data, Special Issue on Distributed
+               Representation Learning using Neural Network Embeddings},
+volume={5},
+pages = {1044709},
+year={2022},
+month={Nov},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/FrontiersBigData22.pdf},
+url={https://www.frontiersin.org/articles/10.3389/fdata.2022.1044709},
+doi={https://doi.org/10.3389/fdata.2022.1044709},
+abstract={The network embedding task is to represent a node in a network as a low-dimensional vector while incorporating the topological and structural information. Most existing approaches solve this problem by factorizing a proximity matrix, either directly or implicitly. In this work, we introduce a network embedding method from a new perspective, which leverages Modern Hopfield Networks (MHN) for associative learning. Our network learns associations between the content of each node and that node's neighbors. These associations serve as memories in the MHN. The recurrent dynamics of the network make it possible to recover the masked node, given that node's neighbors. Our proposed method is evaluated on different benchmark datasets for downstream tasks such as node classification, link prediction, and graph coarsening. The results show competitive performance compared to the common matrix factorization techniques and deep learning based methods.}
+}
+
+
+@article{2023-jows,
+  author  = {Diya Li and
+               Mohammed J. Zaki and Ching-Hua Chen},
+  title  = {Health-guided recipe recommendation over knowledge graphs},
+  journal   = {Journal of Web Semantics, Special Issue on Knowledge Graphs
+               and Information Retrieval},
+  volume    = {75},
+  pages = {100743},
+  year      = {2023},
+  month = {Jan},
+  DOI = {https://doi.org/10.1016/j.websem.2022.100743},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/JOWS23.pdf},
+  customlinkgithubcode = {https://github.com/DiyaLI916/recipe_recommendation},
+  abstract = {While the availability of large-scale online recipe
+              collections presents opportunities for health consumers to
+              access a wide variety of recipes, it can be challenging for
+              them to discover relevant recipes. Whereas most recommender
+              systems are designed to offer selections consistent with
+              users' past behavior, it remains an open problem to offer
+              selections that can help users' transition from one type of
+              behavior to another, intentionally. In this paper, we
+              introduce health-guided recipe recommendation as a way to
+              incrementally shift users towards healthier recipe options
+              while respecting the preferences reflected in their past
+              choices. Introducing a knowledge graph (KG) into recommender
+              systems as side information has attracted great interest, but
+              its use in recipe recommendation has not been studied. To fill
+              this gap, we consider the task of recipe recommendation over
+              knowledge graphs. In particular, we jointly learn recipe
+              representations via graph neural networks over two graphs
+              extracted from a large-scale Food KG, which capture different
+              semantic relationships, namely, user preferences and recipe
+              healthiness, respectively. To integrate the nutritional
+              aspects into recipe representations and the recommendation
+              task, instead of simple fusion, we utilize a knowledge
+              transfer scheme to enable the transfer of useful semantic
+              information across the preferences and healthiness aspects.
+              Experimental results on two large real-world recipe datasets
+              showcase our model's ability to recommend tasty as well as
+              healthy recipes to users.},
+    KeyWord = {Journal,NeuralNetworks,RecipeRecommendation,KnowledgeGraphs,FoodComputing,Health},
+}
+
