@@ -87,4 +87,4 @@ Tentative course schedule is given below.
 |  Nov 28 |  Spectral Clustering (Chapter 16) | [lecture25](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture25.pdf), [lecture25 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture25/lecture25.html)|
 |  Dec 01 |  Markov Clustering and Clustering Validation (Chapters 16, 17) | [lecture26](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture26.pdf), [lecture26 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture26/lecture26.html)|
 |  Dec 05 |  Classification Assessment (Chapter 22) | [lecture27](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture27.pdf), [lecture27 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture27/lecture27.html)|
-|  Dec 08 |  **EXAM III**  ||
+|  Dec 08 |  **EXAM III (take home)** Review & Wrapup |[lecture28](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture28.pdf), [lecture28 video](http://www.cs.rpi.edu/~zaki/DMCOURSE/videos/lecture28/lecture28.html)|
