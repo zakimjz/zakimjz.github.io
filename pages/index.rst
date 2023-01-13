@@ -19,13 +19,12 @@
 | Troy, New York 12180-3590
 |
 
-Mohammed J. Zaki is a Professor and Department Head of Computer Science at RPI. 
-He received his Ph.D. degree in computer science
-from the University of Rochester in 1998. His research interests focus
-on developing novel data mining and machine learning techniques,
-especially for applications in text mining, social networks,
-bioinformatics and personal health. He has around 300 publications (and 6
-patents),
+Mohammed J. Zaki is a Professor and Department Head of Computer Science at
+RPI. He received his Ph.D. degree in computer science from the University of
+Rochester in 1998. His research interests focus novel data mining and
+machine learning techniques, particularly for learning from graph structured
+and textual data, with applications in bioinformatics, personal health and
+financial analytics. He has around 300 publications (and 6 patents),
 including the `Data Mining and Machine Learning
 <http://dataminingbook.info>`_ textbook (2nd Edition, Cambridge
 University Press, 2020). He is the founding co-chair for the BIOKDD
@@ -41,7 +40,7 @@ Mining. He was the program co-chair for `SDM'08
 `CIKM'12 <http://dl.acm.org/citation.cfm?id=2396761>`_, `ICDM'12
 <http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6412852>`_,
 `IEEE BigData'15 <http://cci.drexel.edu/bigdata/bigdata2015>`_, and
-`CIKM'18 <http://www.cikm2018.units.it>`_, and he is co-chairing
+`CIKM'18 <http://www.cikm2018.units.it>`_, and he recently co-chaired
 `CIKM'22 <https://www.cikm2022.org/>`_. He is currently serving on
 the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
