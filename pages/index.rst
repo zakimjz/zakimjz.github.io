@@ -48,8 +48,8 @@ Department of Energy Early Career Principal Investigator Award, as well
 as HP Innovation Research Award, and Google Faculty Research Award. 
 His research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
 and Nvidia. He  is a `Fellow of the IEEE
-<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_ and a
-`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_. 
+<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_,  a
+`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_, and a `Fellow of the American Association for the Advancement of Science (AAAS) <https://www.aaas.org/news/elected-fellows-announcement-2022>`_. 
 
 
 Courses
