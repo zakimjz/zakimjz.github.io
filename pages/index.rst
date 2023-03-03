@@ -9,7 +9,7 @@
 
 
 .. image:: /images/zaki_pic.png
-   :width: 400
+   :width: 300
    :alt: mjzaki
 
 |
