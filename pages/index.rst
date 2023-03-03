@@ -8,7 +8,7 @@
 .. type: text
 
 
-.. image:: /images/Zaki-Main.jpg
+.. image:: /images/zaki_pic.png
    :width: 400
    :alt: mjzaki
 
