@@ -1227,16 +1227,27 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 # in the default template (base.tmpl).
 # (translatable)
 BODY_END = """
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-gtag('config', 'UA-11058802-1');
+  gtag('config', 'G-C304VMWK2R');
 </script>
 """
+# BODY_END = """
+# <!-- Global site tag (gtag.js) - Google Analytics -->
+# <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11058802-1"></script>
+# <script>
+# window.dataLayer = window.dataLayer || [];
+# function gtag(){dataLayer.push(arguments);}
+# gtag('js', new Date());
+
+# gtag('config', 'UA-11058802-1');
+# </script>
+# """
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
