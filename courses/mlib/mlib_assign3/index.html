@@ -92,7 +92,7 @@ protein embeddings for machine learning</a>.</p>
 <p>You should compare with the default values used in the paper, namely
 embedding dimensionality $d=100$, window size $w=25$, and k-mer/n-gram size $k=3$, and the number of negative samples per positive example $q=5$. </p>
 <p>Here is the pseudo code for the overall method:</p>
-<pre class="code literal-block"><span></span><code>   <span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">k</span><span class="o">-</span><span class="n">mer</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">2.</span>
+<div class="code"><pre class="code literal-block">   <span class="n">create</span> <span class="n">the</span> <span class="n">vocab</span><span class="p">,</span> <span class="n">probability</span> <span class="n">distribution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">word</span> <span class="n">to</span> <span class="n">index</span> <span class="p">(</span><span class="ow">and</span> <span class="n">reverse</span> <span class="n">mappings</span><span class="p">)</span> <span class="k">for</span> <span class="n">each</span> <span class="n">k</span><span class="o">-</span><span class="n">mer</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">sequence</span> <span class="n">at</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">offsets</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">2.</span>
 
    <span class="n">write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="k">return</span> <span class="n">a</span> <span class="n">batch</span> <span class="n">of</span> <span class="n">positive</span> <span class="ow">and</span> <span class="n">negative</span> <span class="n">pairs</span> <span class="kn">from</span> <span class="nn">all</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sequences</span><span class="o">/</span><span class="n">offsets</span><span class="o">.</span>
    <span class="k">for</span> <span class="n">the</span> <span class="n">negative</span> <span class="n">sampling</span> <span class="n">use</span> <span class="n">the</span> <span class="n">cumsum</span> <span class="n">approach</span> <span class="n">to</span> <span class="n">sample</span> <span class="n">random</span> <span class="n">words</span> 
@@ -127,7 +127,7 @@ embedding dimensionality $d=100$, window size $w=25$, and k-mer/n-gram size $k=3
 
    <span class="n">save</span> <span class="n">embeddings</span>
    <span class="n">visualize</span> <span class="n">embeddings</span> <span class="n">via</span> <span class="n">t</span><span class="o">-</span><span class="n">SNE</span>
-</code></pre>
+</pre></div>
 
 <h2>Submission</h2>
 <p>Submit your jupyter notebook (or python script) via submitty. </p>
@@ -141,10 +141,10 @@ each word. The first line should have only two values:</p>
 vector. For example, if there are only two words in your vocab (say AA
 and BB), and you are doing 3-dim embeddings, then the output file will
 be:</p>
-<pre class="code literal-block"><span></span><code><span class="mf">2</span> <span class="mf">3</span>
-<span class="n">AA</span> <span class="o">-</span><span class="mf">1</span> <span class="o">-</span><span class="mf">0.3</span> <span class="mf">5</span>
-<span class="n">BB</span> <span class="mf">2</span> <span class="mf">0.5</span> <span class="o">-</span><span class="mf">1</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="mf">2</span><span class="w"> </span><span class="mf">3</span>
+<span class="n">AA</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="o">-</span><span class="mf">0.3</span><span class="w"> </span><span class="mf">5</span>
+<span class="n">BB</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span>
+</pre></div>
 
 <p>After learning the representations, we will use the trained
 vectors for some downstream tasks in future assignments.
