@@ -34,26 +34,24 @@ Submit the output for source vertex 0.</p>
 <p>Given a source node $s$, your code should print out the length of the
 shortest path from $s$ to each node $u$ and (one of) the actual shortest
 paths from $s$ to $u$. So given the graph:</p>
-<pre class="code literal-block"><span></span><code><span class="err">0 1 4</span>
-<span class="err">0 2 2</span>
-<span class="err">1 2 3</span>
-<span class="err">1 3 2</span>
-<span class="err">1 4 3</span>
-<span class="err">2 1 1</span>
-<span class="err">2 2 4</span>
-<span class="err">2 3 5</span>
-<span class="err">4 3 1</span>
-</code></pre>
-
+<div class="code"><pre class="code literal-block"><span class="mf">0</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">4</span>
+<span class="mf">0</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">2</span>
+<span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">3</span>
+<span class="mf">1</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">2</span>
+<span class="mf">1</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">3</span>
+<span class="mf">2</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="mf">1</span>
+<span class="mf">2</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span>
+<span class="mf">2</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">5</span>
+<span class="mf">4</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="mf">1</span>
+</pre></div>
 
 <p>For source node $0$, the output should be as follows:</p>
-<pre class="code literal-block"><span></span><code><span class="err">0 0 [0]</span>
-<span class="err">1 3 [0, 2, 1]</span>
-<span class="err">2 2 [0, 2]</span>
-<span class="err">3 5 [0, 2, 1, 3]</span>
-<span class="err">4 6 [0, 2, 1, 4]</span>
-</code></pre>
-
+<div class="code"><pre class="code literal-block"><span class="mf">0</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="err">[</span><span class="mf">0</span><span class="err">]</span>
+<span class="mf">1</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="err">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="err">]</span>
+<span class="mf">2</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="err">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="err">]</span>
+<span class="mf">3</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="err">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="err">]</span>
+<span class="mf">4</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="err">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="err">]</span>
+</pre></div>
 
 <p>Which shows the node, length of shortest path, and actual shortest path per line.</p>
 <p>Here is another graph file

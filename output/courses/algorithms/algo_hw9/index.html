@@ -92,32 +92,29 @@ You can use the numpy library if you need, but the code to implement edit
 distance must be your own.</p>
 <p>You can test you code on the simple example from the book chapter. Given
 strings EXPONENTIAL and POLYNOMIAL, your output should be:</p>
-<pre class="code literal-block"><span></span><code><span class="err">edit distance = 6</span>
-<span class="c">alignment:</span>
-<span class="err">EXPONEN-TIAL</span>
-<span class="err">--POLYNOMIAL</span>
-</code></pre>
-
+<div class="code"><pre class="code literal-block">edit distance = 6
+alignment:
+EXPONEN-TIAL
+--POLYNOMIAL
+</pre></div>
 
 <p>Note that is possible to have another alignment, but the distance remains 6.</p>
 <p>As another test case, try the following two DNA strings:</p>
-<pre class="code literal-block"><span></span><code><span class="err">CATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGTTGAACAG</span>
-<span class="err">CGTAGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCAAGCTATTTTGTTGAGGGTGCTGCTCAGGCTGGATGGA</span>
-</code></pre>
-
+<div class="code"><pre class="code literal-block">CATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGTTGAACAG
+CGTAGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCAAGCTATTTTGTTGAGGGTGCTGCTCAGGCTGGATGGA
+</pre></div>
 
 <p>The edit distance in this case is 41. When printing a long string, make sure
 that no more than 80 characters are printed at one time. For the two strings
 above your output should look like:</p>
-<pre class="code literal-block"><span></span><code><span class="n">edit</span> <span class="n">distance</span><span class="p">:</span> <span class="mi">41</span>
-<span class="n">alignment</span><span class="p">:</span>
-<span class="n">CATAAGC</span><span class="o">-</span><span class="n">TTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGT</span>
-<span class="n">CGT</span><span class="o">-</span><span class="n">AGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCA</span><span class="c1">--AGCTAT-TTTGTTGAGGGTGC-TGCTCAGGC</span>
+<div class="code"><pre class="code literal-block">edit distance: 41
+alignment:
+CATAAGC-TTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTATAGTGGAGGCCGGAGCAGGAACAGGT
+CGT-AGCTTTTTGGTTAATTCCTCCTTCAGGTTTGATGTTGGTAGCA--AGCTAT-TTTGTTGAGGGTGC-TGCTCAGGC
 
-<span class="n">TGAACAG</span><span class="o">-</span>
-<span class="n">TGGATGGA</span>
-</code></pre>
-
+TGAACAG-
+TGGATGGA
+</pre></div>
 
 <p>Finally, submit your output on the following two files. The first one 
 <a href="http://www.cs.rpi.edu/~zaki/CS2300/data/cox1-protein.fasta">cox1-protein.fasta</a>
@@ -129,14 +126,13 @@ files have two sequences in each file. Each sequence begins with a header
 string on one line beginning with the character "&gt;". The lines that follow
 should all be concatenated into one string, until the next "&gt;" is seen or
 end of file is encountered. For example, if a sample file is </p>
-<pre class="code literal-block"><span></span><code><span class="err">&gt;this is seq1</span>
-<span class="err">ACGT</span>
-<span class="err">AC</span>
-<span class="err">&gt;this is seq2</span>
-<span class="err">TAGGGGT</span>
-<span class="err">ACTT</span>
-</code></pre>
-
+<div class="code"><pre class="code literal-block">&gt;this is seq1
+ACGT
+AC
+&gt;this is seq2
+TAGGGGT
+ACTT
+</pre></div>
 
 <p>Then the first sequence is ACGTAC, and the second is TAGGGGTACTT</p>
 <h2>Bonus</h2>

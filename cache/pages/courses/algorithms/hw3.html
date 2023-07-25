@@ -14,7 +14,7 @@ implement the <em>modexp</em> algorithm in Fig 1.4.</p>
 <p>Next, implement the Miller-Rabin primality test, which is informally
 described in the gray box just before sec 1.3.1 in the book, and whose pseudo-code is
 given below:</p>
-<pre class="code literal-block"><span></span><code><span class="n">MillerRabin</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">K</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="n">MillerRabin</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">K</span><span class="p">):</span>
     <span class="n">Pick</span> <span class="n">positive</span> <span class="n">intgers</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">aK</span> <span class="o">&lt;</span> <span class="n">N</span> <span class="n">at</span> <span class="n">random</span>
     <span class="n">Find</span> <span class="n">u</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">such</span> <span class="n">that</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span> <span class="o">=</span> <span class="n">u</span> <span class="o">*</span> <span class="mi">2</span><span class="o">^</span><span class="n">t</span>
     <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">K</span>
@@ -33,12 +33,11 @@ given below:</p>
         <span class="k">return</span> <span class="n">yes</span>
     <span class="k">else</span>
         <span class="k">return</span> <span class="n">no</span>
-</code></pre>
-
+</pre></div>
 
 <h3>Carmichael numbers</h3>
 <p>Test your code on the following Carmichael numbers:</p>
-<pre class="code literal-block"><span></span><code><span class="n">Carmichael</span> <span class="o">=</span> <span class="p">[</span>
+<div class="code"><pre class="code literal-block"><span class="n">Carmichael</span> <span class="o">=</span> <span class="p">[</span>
     <span class="mi">561</span><span class="p">,</span>
     <span class="mi">6601</span><span class="p">,</span>
     <span class="mi">67902031</span><span class="p">,</span>
@@ -51,8 +50,7 @@ given below:</p>
     <span class="mi">1334733877147062382486934807105197899496002201113849920496510541601</span><span class="p">,</span>
     <span class="mi">2887148238050771212671429597130393991977609459279722700926516024197432303799152733116328983144639225941977803110929349655578418949441740933805615113979999421542416933972905423711002751042080134966731755152859226962916775325475044445856101949404200039904432116776619949629539250452698719329070373564032273701278453899126120309244841494728976885406024976768122077071687938121709811322297802059565867</span>
 <span class="p">]</span>
-</code></pre>
-
+</pre></div>
 
 <p>Except for 561, these numbers are difficult for the basic primality
 testing code, but will be marked as non-prime by MillerRabin for

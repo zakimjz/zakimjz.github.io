@@ -31,7 +31,7 @@ numbers. You can generate random $d$ digit integers using the python
 <h3>Speeding up recursive code via memoization</h3>
 <p>In python, you can speedup recursive calls via memoization, using a
 decorator. First define the memoize class as follows:</p>
-<pre class="code literal-block"><span></span><code><span class="k">class</span> <span class="nc">memoize</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">class</span> <span class="nc">memoize</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">func</span> <span class="o">=</span> <span class="n">func</span>
 
@@ -41,16 +41,14 @@ decorator. First define the memoize class as follows:</p>
     <span class="k">def</span> <span class="fm">__missing__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span>
-</code></pre>
-
+</pre></div>
 
 <p>Next, just add the decorator before your recursive multiply function, as
 follows:</p>
-<pre class="code literal-block"><span></span><code><span class="nd">@memoize</span>
+<div class="code"><pre class="code literal-block"><span class="nd">@memoize</span>
 <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;YOUR CODE HERE&#39;&#39;&#39;</span>
-</code></pre>
-
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;YOUR CODE HERE&#39;&#39;&#39;</span>
+</pre></div>
 
 <hr>
 <h2>Grading</h2>
