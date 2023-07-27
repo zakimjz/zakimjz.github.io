@@ -207,7 +207,7 @@ In <em>Proceedings of the 40th International Conference on Machine Learning</em>
             })(this, 'bibtex-2023-icml');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2023-icml" class="publication-abstract" style="display:none">
-                <blockquote>Clustering is a widely used unsupervised learning technique involving an intensive discrete optimization problem. Associative Memory models or AMs are differentiable neural networks defining a recursive dynamical system, which have been integrated with various deep learning architectures. We uncover a novel connection between the AM dynamics and the inherent discrete assignment necessary in clustering to propose \em a novel unconstrained continuous relaxation of the discrete clustering problem, enabling end-to-end differentiable \bf clustering with \bf AM, dubbed \clam. Leveraging the pattern completion ability of AMs, we further develop a novel self-supervised clustering loss. Our evaluations on varied datasets demonstrate that \clam benefits from the self-supervision, and significantly improves upon both the traditional Lloyd's $k$-means algorithm, and more recent continuous clustering relaxations (by upto 60\% in terms of the Silhouette Coefficient).</blockquote></div>
+                <blockquote>Clustering is a widely used unsupervised learning technique involving an intensive discrete optimization problem. Associative Memory models or AMs are differentiable neural networks defining a recursive dynamical system, which have been integrated with various deep learning architectures. We uncover a novel connection between the AM dynamics and the inherent discrete assignment necessary in clustering to propose a novel unconstrained continuous relaxation of the discrete clustering problem, enabling end-to-end differentiable clustering with AM, dubbed ClAM. Leveraging the pattern completion ability of AMs, we further develop a novel self-supervised clustering loss. Our evaluations on varied datasets demonstrate that ClAM benefits from the self-supervision, and significantly improves upon both the traditional Lloyd's k-means algorithm, and more recent continuous clustering relaxations (by upto 60% in terms of the Silhouette Coefficient).</blockquote></div>
                 <div id="bibtex-2023-icml" style="display:none"><pre>@inproceedings{2023-icml,
     author = "Saha, Bishwajit and Krotov, Dmitry and Zaki, Mohammed J. and Ram, Parikshit",
     title = "End-to-end Differentiable Clustering with Associative Memories",
@@ -219,7 +219,20 @@ In <em>Proceedings of the 40th International Conference on Machine Learning</em>
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Benjamin Hoover, Yuchen Liang, Bao Pham, Rameswar Panda, Hendrik Strobelt, Duen&nbsp;Horng Chau, <strong>Mohammed J. Zaki</strong>, and Dmitry Krotov.
 <strong>Energy transformer.</strong>
 <em>arXiv Computing Research Repository</em>, 2023.
-URL: <a href="http://arxiv.org/abs/2302.07253">http://arxiv.org/abs/2302.07253</a>, <a href="https://doi.org/10.48550/arXiv.2302.07253">doi:10.48550/arXiv.2302.07253</a>.<br>[<a href="http://www.cs.rpi.edu/~zaki/PaperDir/arxiv-et.pdf">full text</a>] 
+URL: <a href="http://arxiv.org/abs/2302.07253">http://arxiv.org/abs/2302.07253</a>, <a href="https://doi.org/10.48550/arXiv.2302.07253">doi:10.48550/arXiv.2302.07253</a>.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract&#x25BC;')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract&#x25B2;')
+                }
+                })(this, 'abstract-2023-ET');">abstract&#x25BC;</a>] [<a href="http://www.cs.rpi.edu/~zaki/PaperDir/arxiv-et.pdf">full text</a>] 
             [<a href="javascript:void(0)" onclick="
             (function(target, id) {
               if ($('#' + id).css('display') == 'block')
@@ -233,7 +246,10 @@ URL: <a href="http://arxiv.org/abs/2302.07253">http://arxiv.org/abs/2302.07253</
                 $(target).text('BibTeX&#x25B2;')
               }
             })(this, 'bibtex-2023-ET');">BibTeX&#x25BC;</a>]
-            <div id="bibtex-2023-ET" style="display:none"><pre>@article{2023-ET,
+            
+                <div id="abstract-2023-ET" class="publication-abstract" style="display:none">
+                <blockquote>Transformers have become the de facto models of choice in machine learning, typically leading to impressive performance on many applications. At the same time, the architectural development in the transformer world is mostly driven by empirical findings, and the theoretical understanding of their architectural building blocks is rather limited. In contrast, Dense Associative Memory models or Modern Hopfield Networks have a well-established theoretical foundation, but have not yet demonstrated truly impressive practical results. We propose a transformer architecture that replaces the sequence of feedforward transformer blocks with a single large Associative Memory model. Our novel architecture, called Energy Transformer (or ET for short), has many of the familiar architectural primitives that are often used in the current generation of transformers. However, it is not identical to the existing architectures. The sequence of transformer layers in ET is purposely designed to minimize a specifically engineered energy function, which is responsible for representing the relationships between the tokens. As a consequence of this computational principle, the attention in ET is different from the conventional attention mechanism. In this work, we introduce the theoretical foundations of ET, explore it's empirical capabilities using the image completion task, and obtain strong quantitative results on the graph anomaly detection task.</blockquote></div>
+                <div id="bibtex-2023-ET" style="display:none"><pre>@article{2023-ET,
     author = "Hoover, Benjamin and Liang, Yuchen and Pham, Bao and Panda, Rameswar and Strobelt, Hendrik and Chau, Duen Horng and Zaki, Mohammed J. and Krotov, Dmitry",
     title = "Energy Transformer",
     year = "2023",
@@ -336,7 +352,20 @@ URL: <a href="https://dl.acm.org/doi/10.1145/3534678.3539296">https://dl.acm.org
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Bolun&nbsp;"Namir" Xia, Vipula&nbsp;D. Rawte, <strong>Mohammed J. Zaki</strong>, and Aparna Gupta.
 <strong>Fetilda: an effective framework for fin-tuned embeddings for long financial text documents.</strong>
 <em>arXiv Computing Research Repository</em>, Jun 2022.
-URL: <a href="http://arxiv.org/abs/2206.06952">http://arxiv.org/abs/2206.06952</a>.<br>[<a href="http://www.cs.rpi.edu/~zaki/PaperDir/arxiv-fetilda.pdf">full text</a>] 
+URL: <a href="http://arxiv.org/abs/2206.06952">http://arxiv.org/abs/2206.06952</a>.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract&#x25BC;')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract&#x25B2;')
+                }
+                })(this, 'abstract-2022-fetilda');">abstract&#x25BC;</a>] [<a href="http://www.cs.rpi.edu/~zaki/PaperDir/arxiv-fetilda.pdf">full text</a>] 
             [<a href="javascript:void(0)" onclick="
             (function(target, id) {
               if ($('#' + id).css('display') == 'block')
@@ -350,7 +379,10 @@ URL: <a href="http://arxiv.org/abs/2206.06952">http://arxiv.org/abs/2206.06952</
                 $(target).text('BibTeX&#x25B2;')
               }
             })(this, 'bibtex-2022-fetilda');">BibTeX&#x25BC;</a>]
-            <div id="bibtex-2022-fetilda" style="display:none"><pre>@article{2022-fetilda,
+            
+                <div id="abstract-2022-fetilda" class="publication-abstract" style="display:none">
+                <blockquote>Unstructured data, especially text, continues to grow rapidly in various domains. In particular, in the financial sphere, there is a wealth of accumulated unstructured financial data, such as the textual disclosure documents that companies submit on a regular basis to regulatory agencies, such as the Securities and Exchange Commission (SEC). These documents are typically very long and tend to contain valuable soft information about a company’s performance, which is usually not captured in predictive analyses that only utilize quantitative data. It is therefore of great interest to learn predictive models from these long textual documents, especially for forecasting numerical key performance indicators (KPIs). Whereas there has been a great progress in natural language processing via pretrained language models (LMs) learned from tremendously large corpora of textual data, they still struggle in terms of effective representations for long documents. Our work fills this critical need, namely how to develop better models to extract useful information from long textual documents and learn effective features that can leverage the soft financial and risk information for text regression (prediction) tasks. In this paper, we propose and implement a deep learning framework that splits long documents into chunks and utilizes pre-trained LMs to process and aggregate the chunks into vector representations, followed by attention-based sequence modeling to extract valuable document-level features. We evaluate our model on a collection of 10-K public disclosure reports submitted annually by US banks, and another dataset of reports submitted by US companies. Overall, our framework outperforms strong baseline methods for textual modeling as well as a baseline regression model using only numerical data. Our work provides better insights into how utilizing pre-trained domain specific and fine-tuned long-input LMs in representing long documents can improve the quality of representation of textual data, and therefore, help in improving predictive analyses.</blockquote></div>
+                <div id="bibtex-2022-fetilda" style="display:none"><pre>@article{2022-fetilda,
     Author = {Xia, Bolun "Namir" and Rawte, Vipula D. and Zaki, Mohammed J. and Gupta, Aparna},
     Title = "FETILDA: An Effective Framework For Fin-tuned Embeddings For Long Financial Text Documents",
     Year = "2022",
