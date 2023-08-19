@@ -1,7 +1,7 @@
 <!--
 .. title: CSCI4390-6390 Syllabus 
 .. slug: dm_syllabus
-.. date: 2022-08-15 09:00:31 UTC-04:00
+.. date: 2023-08-19 09:00:31 UTC-04:00
 .. tags: 
 .. category: 
 .. link: 
@@ -52,8 +52,8 @@ prior exposure to linear algebra is essentially a prerequisite. A good
 knowledge of probability and statistics is also a plus. 
 
 You are expected to know how to program. Class assignments will require
-the use of [Python](https://www.python.org/), especially using NumPy (and
-PyTorch if needed). All assignments will be submitted as [JupyterLab
+the use of [Python](https://www.python.org/), especially using NumPy and
+PyTorch. All assignments will be submitted as [JupyterLab
 Notebooks](https://jupyter.org). 
 
 ## Textbook
@@ -74,13 +74,12 @@ Your grade will be a combination of the following items.
   also have written questions. You can expect about 8-10 assignments
   over the semester. 
 
-* **Exams (50-55%)**: There will be three exams covering the main topics of
+* **Exams (60%)**: There will be three exams covering the main topics of
   the course. The tentative exam dates are noted on the class schedule
   table. There is no comprehensive final exam. I may consider take-home
   exams, otherwise they will be in-person during class hours.
 
-* **Attendance and Quizzes (5-10%)**: Attendance is required. There may be
-    pop-quizzes given throughout the semester. Students are also encouraged 
+* **Attendance and Quizzes**: Students are strongly encouraged  to attend all classes and
     to participate in the class via discussions and engagement on the Campuswire
   forum.
     
@@ -112,13 +111,6 @@ ill will report that to Student Life. Student Life will verify and
 notify all faculty who have that student. Once notification is made, all
 faculty will make every reasonable effort to accommodate the student’s
 absence and will communicate that accommodation directly to the student.
-Failure to make an appropriate accommodation for a verified or
-reasonably suspected case of illness may be appealable under the student
-grade appeal process. Students who need to report an illness should
-contact the Student Health Center via email or call 518-276-6287. For
-student seen off campus, a student may request an excused absence via
-<http://www.bit.ly/rpiabsence> with an uploaded doctor's note that excuses
-them.
 
 
 ## Academic Integrity
