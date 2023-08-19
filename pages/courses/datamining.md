@@ -20,7 +20,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 **TAs (Office Hours)**: 
 
-Aitazaz Khan <ikhana8@rpi.edu> (TBD)
+Aitazaz Khan <khana8@rpi.edu> (TBD)
 
 
 
