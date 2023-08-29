@@ -39,8 +39,9 @@ Tentative course schedule is given below.
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-|  Aug 28 |  Introduction & Data Matrix (Chapter 1) ||
-|  Aug 31 |  Data Matrix/Numeric Attributes (Chapter 2) ||
+|  Aug 28 |  Introduction & Data Matrix (Chapter 1) |
+[lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1-aug28.pdf) |
+|  Aug 31 |  Data Matrix/Numeric Attributes (Chapters 1 & 2) ||
 |  Sep 05 (Tue) | Numeric Attributes (Chapter 2) ||
 |  Sep 07 |  PCA (Chapter 7)||
 |  Sep 11 |  PCA II (Chapter 7)  ||
