@@ -187,7 +187,7 @@ What is its relationship to $\lambda_1$.
 Compute the first two eigenvectors of the covariance matrix
 $\mathbf{\Sigma}$ using a generalization of the power-iteration method. 
 
-Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current estimate, where $t$ is the step size. We will iteratively orthogonalize,
+Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current estimate, where $t$ is the step number. We will iteratively orthogonalize,
 normalize, and left multiply with $\mathbf{\Sigma}$. That is, first orthogonalize the second column with respect to the first one by subtracting its projection along the first column (see section 1.3.3 in chapter 1). After orthogonalizing, normalize both columns to be unit length, and then do the left multiplication
 
 $$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$
