@@ -18,7 +18,7 @@ Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality) from the UCI
 Machine Learning repository. Extract the winequality-red.csv datafile that
 records 12 attributes about 1599 instances of red wine. You should parse and
 store the data as a data matrix, after ignoring the last "quality"
-attribute, which is an integer valued target variable. Thus you data matrix
+attribute, which is an integer valued target variable. Thus, your data matrix
 will have 1599 points with 11 dimensions.
 
 You must submit a self-contained jupyter notebook, with all of your **code
@@ -33,8 +33,7 @@ notebook, using matplotlib.
 Compute the sample mean vector $\mathbf{\mu}$ for the data matrix using the
 column view in $\mathbf{R}^n$. That is, project each attribute vector $X_j$
 onto the ones vector $\mathbf{1}$. Verify the answer using the numpy mean
-function. and then compute the total variance $var(\mathbf{D})$; see Eq.
-(1.8) for the latter.
+function.
 
 ### b. Variance 
 
@@ -52,10 +51,10 @@ variance.
 
 Compute the sample covariance matrix  $\mathbf{\Sigma}$ as **inner
 products** between the attributes of the centered data matrix (see Eq.
-(2.38) in chapter 2). 
+(2.38) in chapter 2).  This is the column view.
 
-Next compute the sample covariance matrix as sum of the **outer products**
-between the centered points (see Eq. (2.39)). 
+Next, compute the sample covariance matrix as sum of the **outer products**
+between the centered points (see Eq. (2.39)).  This is the row view.
 
 Print the matrix from both the approaches. You can verify your output using
 numpy cov function (make sure to set rowvar as False and bias as True).
@@ -68,8 +67,7 @@ cosine between centered attribute vectors (see Eq. (2.30)).
 
 Output which attribute pairs are i) the most correlated, ii) the most
 anti-correlated, and iii) the least correlated or uncorrelated?
-
-Create the scatter plots for the three interesting pairs and visually
+Create the scatter plots for these three interesting pairs and visually
 confirm the trends, i.e., describe how each of the three cases results in a
 particular type of plot.
 
@@ -85,7 +83,7 @@ points).
 ### (CSCI 4390 Only) Stochastic Gradient Descent (SGD)
 
 Assume we want to find the point $\mathbf{z}$ that optimizes the squared
-distance objective, but based on a single point $\mathbf{x}_i$. The the
+distance objective, but based on a single point $\mathbf{x}_i$. The 
 gradient of the objective 
 $$J = \frac{1}{2}\||\mathbf{x_i} - \mathbf{z}||^2$$
 is given as  
@@ -93,24 +91,23 @@ $$\nabla = \frac{\partial J}{\partial \mathbf{z}} = \mathbf{z} -
 \mathbf{x}_i$$
 
 To get to the minimum point, we have to update the current estimate of
-$\mathbf{z}$ by taking a small step $\eta$ in a direction opposite to the
+$\mathbf{z}$ by taking a small step $\eta > 0$ in a direction opposite to the
 gradient $\nabla$, given as
 $$ \mathbf{z} = \mathbf{z} - \eta \cdot \nabla$$
 Or, 
 $$\mathbf{z} = \mathbf{z} - \eta  (\mathbf{z} - \mathbf{x}_i) $$
 
 So, starting from a random $\mathbf{z}$ vector, we can repeatedly sample a
-single point from the data matrix (via say numpy random.choice function),
+single point from the data matrix (via, say, numpy random.choice function),
 and update $\mathbf{z}$ using the equation above. 
 
-After every few steps (say 100 or 1000), we can compute the norm of the
+To test for convergence, we compute the norm of the
 difference between the previous value of $\mathbf{z}$ and its updated value,
-and stop if the difference falls below a threshold $\epsilon$, at which
-point, we have converged to a solution.
+and stop if the difference falls below a threshold $\epsilon$.
 
 Implement this SGD algorithm, and show how close is the gradient descent
-estimate of the mean from the sample mean. Show the estimated mean, and the
-norm of its difference from the true mean. 
+estimate of the mean from the actual sample mean. Show the estimated mean, and the
+norm of its difference from the actual mean. 
 
 To make this work you have to carefully choose the values of the step size
 $\eta$ and the convergence threshold $\epsilon$. Note that if you make $\eta$
@@ -120,7 +117,8 @@ small you may never converge. You have to find a balance.
 ### (CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)
 
 You will implement the SGD, but using a mini-batch of points, rather than a
-single point. Assume you sample a batch of $B$ points from the data. Then
+single point. Assume you sample a batch of $B$ points from the data (can be
+done using the numpy random.choice function). Then
 the objective is given as
 
 $$J = \frac{1}{2} \sum_{i=1}^B ||\mathbf{x}_i - \mathbf{z}||^2$$
@@ -137,7 +135,7 @@ Or
 $$\mathbf{z} = \mathbf{z} - \eta
 \cdot \mathbf{z} + \frac{\eta}{B} \mathbf{x}_i $$
 
-Implement this algorithm, and show the estimate of the optimal solution, as
+Implement this algorithm, and show the estimated solution, as
 well as the difference (norm) from the sample mean. To make this work you
 have to carefully choose the values of the step size $\eta$ and the
 convergence threshold $\epsilon$.
@@ -147,9 +145,7 @@ convergence threshold $\epsilon$.
 ### a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue
 
 Compute the dominant eigenvalue and eigenvector of the covariance matrix
-$\mathbf{\Sigma}$ via the power-iteration method. One can compute the
-dominant eigen-vector/-value of the covariance matrix iteratively as
-follows. 
+$\mathbf{\Sigma}$ via the power-iteration method, as described below.
 
 Start from a random vector $\mathbf{x}_0 \in \mathbf{R}^d$, where $d$ is the
 number of dimensions, and normalize it to be a unit vector. Set $t=0$ ($t$
@@ -158,26 +154,26 @@ denotes the iteration number).
 Next compute the updated vector by left multiplication with the covariance
 matrix:
 
-$$\mathbf{x}_{t} = \mathbf{\Sigma} \mathbf{x}_{t}$$
+$$\mathbf{x}_{t+1} = \mathbf{\Sigma} \mathbf{x}_t$$
 
 Record the ratio of the value of an element in the updated vector with
-respect to the previous vector -- this is the estimate for the eigenvalue.
+respect to the previous vector ((for, say, the max valued element and same index) 
+-- this is the estimate for the eigenvalue.
 After computing the ratio, normalize $\mathbf{x}_{t+1}$ to be a unit vector,
 increment $t$, and repeat this process. 
 
 To test convergence, compute the norm of the difference between the previous
-and new vector the scaled vectors from the current iteration and the
-previous one, and you can stop if this norm falls below some threshold
-$\epsilon$
+and updated vector (before normalization step), and stop if this norm falls below some threshold
+$\epsilon$.
 
 Print out $\mathbf{u}_1$  and $\lambda_1$.
 
 
 Once you have obtained the dominant eigenvector, $\mathbf{u}_1$ project each
 of the original data points $\mathbf{x}_i$ onto this vector, and plot the
-coordinates for the new points along this "direction".
+coordinates for the new points along this principal component "direction".
 
-Separately, plot your estimate for the eigenvalue as a function of $t$.
+Separately, plot your estimate for the eigenvalue $\lambda_1$ as a function of $t$.
 
 Finally, compute the variance of the projected points along $\mathbf{u}_1$.
 What is its relationship to $\lambda_1$.
@@ -185,35 +181,32 @@ What is its relationship to $\lambda_1$.
 ### b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues
 
 Compute the first two eigenvectors of the covariance matrix
-$\mathbf{\Sigma}$ using a generalization of the above iterative method. 
+$\mathbf{\Sigma}$ using a generalization of the power-iteration method. 
 
 Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero
-$d$-dimensional column vectors with unit length.  We will iteratively
-multiply with $\mathbf{\Sigma}$ on the followed by orthogonalization. That
-is:
-
+$d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current
+estimate, where $t$ is the step size. We will iteratively orthogonalize,
+normalize, and left 
+multiply with $\mathbf{\Sigma}$. That
+is, first orthogonalize the second column with respect to the first one by subtracting its projection
+along the first column (see section 1.3.3 in chapter 1). After orthogonalizing,
+normalize both columns to be unit length, and then do the left
+multiplication
 $$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$
+Repeat the above steps until convergence.
 
-where $t$ is the step size.
-
-However, before doing the left multiplication, we will orthogonalize the
-second column with respect to the first one by subtracting its projection
-along the first column (see section 1.3.3 in chapter 1). Before the next
-iteration, normalize the both columns to be unit length, and repeat the
-whole process. 
-
-To test for convergence, you can look at the Frobenius norm between
-$\mathbf{X}_{t+1}$ and $\mathbf{X}_{t}$. If the difference is less than some
+To test for convergence, compute the Frobenius norm between
+$\mathbf{X}_{t+1}$ and $\mathbf{X}_t$. If the difference is less than some
 threshold $\epsilon$ then we stop.
 
 To get the eigenvalues, compute the ratio of the values in both columns
-after and before update. These denote the current estimates for each of the
+after to before update (for, say, the max valued element and same index). 
+These denote the current estimates for each of the
 corresponding eigenvalues, $\lambda_1$ and $\lambda_2$. 
 
-Once you have obtained the two eigenvectors: $\mathbf{u}_1$ and
-$\mathbf{u}_2$, project each of the original data points $\mathbf{x}_i$ onto
-those two vectors, to obtain the new projected points in 2D. Plot these
-projected points in the two new dimensions. 
+Once you have obtained the two eigenvectors $\mathbf{u}_1$ and
+$\mathbf{u}_2$, (scalar) project each of the original data points $\mathbf{x}_i$ onto
+those two vectors, and plot these projected points in the two new dimensions. 
 
 Print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
 $\lambda_2$.
@@ -240,8 +233,8 @@ not work, how you fixed it, etc. Name this file
 **declaration.[txt/pdf/doc]**, choosing the correct extension.
 
 For those not that familiar with python or NumPy, you may search online for
-tutorials, e.g. https://docs.python.org/3/tutorial/ or
-https://numpy.org/doc/stable/
+tutorials, e.g. [Python tutorial](https://docs.python.org/3/tutorial) or
+[NumPy](https://numpy.org/doc/stable).
 
 ## Policy on Academic Honesty
 
