@@ -113,8 +113,8 @@ estimate of the mean from the sample mean. Show the estimated mean, and the
 norm of its difference from the true mean. 
 
 To make this work you have to carefully choose the values of the step size
-$\eta$ and the convergence threshold $\eps$. Note that if you make $\eta$
-too small then you do not get good estimates, and if you make $\eps$ too
+$\eta$ and the convergence threshold $\epsilon$. Note that if you make $\eta$
+too small then you do not get good estimates, and if you make $\epsilon$ too
 small you may never converge. You have to find a balance.
 
 ### (CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)
@@ -140,7 +140,7 @@ $$\mathbf{z} = \mathbf{z} - \eta
 Implement this algorithm, and show the estimate of the optimal solution, as
 well as the difference (norm) from the sample mean. To make this work you
 have to carefully choose the values of the step size $\eta$ and the
-convergence threshold $\eps$.
+convergence threshold $\epsilon$.
 
 ## Part III: Eigenvectors and Principal Components (50 Points)
 
