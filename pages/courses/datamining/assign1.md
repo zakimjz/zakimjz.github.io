@@ -135,6 +135,10 @@ Or
 $$\mathbf{z} = \mathbf{z} - \eta
 \cdot \mathbf{z} + \frac{\eta}{B} \mathbf{x}_i $$
 
+To test for convergence, we compute the norm of the
+difference between the previous value of $\mathbf{z}$ and its updated value,
+and stop if the difference falls below a threshold $\epsilon$.
+
 Implement this algorithm, and show the estimated solution, as
 well as the difference (norm) from the sample mean. To make this work you
 have to carefully choose the values of the step size $\eta$ and the
