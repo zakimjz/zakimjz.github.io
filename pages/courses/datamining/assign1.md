@@ -167,7 +167,7 @@ and updated vector (before normalization step), and stop if this norm falls belo
 $\epsilon$.
 
 Print out $\mathbf{u}_1$  and $\lambda_1$.
-
+You can verify your answer using numpy linalg.eigh function.
 
 Once you have obtained the dominant eigenvector, $\mathbf{u}_1$ project each
 of the original data points $\mathbf{x}_i$ onto this vector, and plot the
@@ -210,6 +210,7 @@ those two vectors, and plot these projected points in the two new dimensions.
 
 Print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
 $\lambda_2$.
+You can verify your answer using numpy linalg.eigh function.
 
 Separately, plot the graphs for the estimates of $\lambda_1$ and $\lambda_2$
 as a function of $t$.

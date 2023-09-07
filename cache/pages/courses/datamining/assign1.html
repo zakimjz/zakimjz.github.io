@@ -112,7 +112,8 @@ increment $t$, and repeat this process. </p>
 <p>To test convergence, compute the norm of the difference between the previous
 and updated vector (before normalization step), and stop if this norm falls below some threshold
 $\epsilon$.</p>
-<p>Print out $\mathbf{u}_1$  and $\lambda_1$.</p>
+<p>Print out $\mathbf{u}_1$  and $\lambda_1$.
+You can verify your answer using numpy linalg.eigh function.</p>
 <p>Once you have obtained the dominant eigenvector, $\mathbf{u}_1$ project each
 of the original data points $\mathbf{x}_i$ onto this vector, and plot the
 coordinates for the new points along this principal component "direction".</p>
@@ -144,7 +145,8 @@ corresponding eigenvalues, $\lambda_1$ and $\lambda_2$. </p>
 $\mathbf{u}_2$, (scalar) project each of the original data points $\mathbf{x}_i$ onto
 those two vectors, and plot these projected points in the two new dimensions. </p>
 <p>Print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
-$\lambda_2$.</p>
+$\lambda_2$.
+You can verify your answer using numpy linalg.eigh function.</p>
 <p>Separately, plot the graphs for the estimates of $\lambda_1$ and $\lambda_2$
 as a function of $t$.</p>
 <p>Finally, compute the variance of the projected points along $\mathbf{u}_1$
