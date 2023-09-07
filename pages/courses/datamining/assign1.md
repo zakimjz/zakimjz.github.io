@@ -33,7 +33,7 @@ notebook, using matplotlib.
 Compute the sample mean vector $\mathbf{\mu}$ for the data matrix using the
 column view in $\mathbf{R}^n$. That is, project each attribute vector $X_j$
 onto the ones vector $\mathbf{1}$. Verify the answer using the numpy mean
-function. and then compute the total variance `var(\mathbf{D})`; see Eq.
+function. and then compute the total variance $var(\mathbf{D})$; see Eq.
 (1.8) for the latter.
 
 ### b. Variance 
@@ -95,8 +95,9 @@ $$\nabla = \frac{\partial J}{\partial \mathbf{z}} = \mathbf{z} -
 To get to the minimum point, we have to update the current estimate of
 $\mathbf{z}$ by taking a small step $\eta$ in a direction opposite to the
 gradient $\nabla$, given as
-$$ \mathbf{z} = \mathbf{z} - \eta \cdot \nabla = \mathbf{z} - \eta
-(\mathbf{z} - \mathbf{x}_i) $$
+$$ \mathbf{z} = \mathbf{z} - \eta \cdot \nabla$$
+Or, 
+$$\mathbf{z} = \mathbf{z} - \eta  (\mathbf{z} - \mathbf{x}_i) $$
 
 So, starting from a random $\mathbf{z}$ vector, we can repeatedly sample a
 single point from the data matrix (via say numpy random.choice function),
@@ -131,7 +132,9 @@ So, starting from a random estimate of $\mathbf{z}$ you can use batches of
 $B$ random points to update the estimate, using the same gradient descent
 equation, but adjusted to reflect that now you are working with $B$ points,
 and adjusting $\eta$ accordingly:
-$$\mathbf{z} = \mathbf{z} - \frac{\eta}{B} \cdot \nabla = \mathbf{z} - \eta
+$$\mathbf{z} = \mathbf{z} - \frac{\eta}{B} \cdot \nabla$$
+Or
+$$\mathbf{z} = \mathbf{z} - \eta
 \cdot \mathbf{z} + \frac{\eta}{B} \mathbf{x}_i $$
 
 Implement this algorithm, and show the estimate of the optimal solution, as
