@@ -32,6 +32,7 @@ Aitazaz Khan <khana8@rpi.edu> (Wed 12-1pm, Thur 1-2pm, AE118)
 
 ## Assignments
 
+**Assign1:** {{% doc %}} dm_assign1 {{% /doc %}}, Due: 15th Sep
 
 ## Class Schedule: Lectures 
 
