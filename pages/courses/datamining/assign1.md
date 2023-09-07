@@ -117,7 +117,7 @@ small you may never converge. You have to find a balance.
 ### (CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)
 
 You will implement the SGD, but using a mini-batch of points, rather than a
-single point. Assume you sample a batch of $B$ points from the data (can be
+single point. Assume you sample a batch of $B$ points (say, $B=100$) from the data (can be
 done using the numpy random.choice function). Then
 the objective is given as
 
@@ -183,26 +183,23 @@ What is its relationship to $\lambda_1$.
 Compute the first two eigenvectors of the covariance matrix
 $\mathbf{\Sigma}$ using a generalization of the power-iteration method. 
 
-Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero
-$d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current
-estimate, where $t$ is the step size. We will iteratively orthogonalize,
-normalize, and left 
-multiply with $\mathbf{\Sigma}$. That
-is, first orthogonalize the second column with respect to the first one by subtracting its projection
-along the first column (see section 1.3.3 in chapter 1). After orthogonalizing,
-normalize both columns to be unit length, and then do the left
-multiplication
-$$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$
-Repeat the above steps until convergence.
+Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current estimate, where $t$ is the step size. We will iteratively orthogonalize,
+normalize, and left multiply with $\mathbf{\Sigma}$. That is, first orthogonalize the second column with respect to the first one by subtracting its projection along the first column (see section 1.3.3 in chapter 1). After orthogonalizing, normalize both columns to be unit length, and then do the left multiplication
 
-To test for convergence, compute the Frobenius norm between
-$\mathbf{X}_{t+1}$ and $\mathbf{X}_t$. If the difference is less than some
-threshold $\epsilon$ then we stop.
+$$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$
 
 To get the eigenvalues, compute the ratio of the values in both columns
 after to before update (for, say, the max valued element and same index). 
 These denote the current estimates for each of the
 corresponding eigenvalues, $\lambda_1$ and $\lambda_2$. 
+After computing the ratios, orthogonalize and normalize the vectors,
+and repeat the above steps until convergence.
+
+To test for convergence, compute the Frobenius norm between
+$\mathbf{X}_{t+1}$ and $\mathbf{X}_t$. If the difference is less than some
+threshold $\epsilon$ then we stop. Both matrices are assumed to be
+orthogonalized and normalized.
+
 
 Once you have obtained the two eigenvectors $\mathbf{u}_1$ and
 $\mathbf{u}_2$, (scalar) project each of the original data points $\mathbf{x}_i$ onto
