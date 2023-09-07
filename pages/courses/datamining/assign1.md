@@ -158,7 +158,7 @@ denotes the iteration number).
 Next compute the updated vector by left multiplication with the covariance
 matrix:
 
-$$\mathbf{x}_{t+1} = \mathbf{\Sigma} \mathbf{x}_{t}$$
+$$\mathbf{x}_{t} = \mathbf{\Sigma} \mathbf{x}_{t}$$
 
 Record the ratio of the value of an element in the updated vector with
 respect to the previous vector -- this is the estimate for the eigenvalue.
