@@ -45,7 +45,7 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Aug 28 |  Introduction & Data Matrix (Chapter 1) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1-aug28.pdf) |
 |  Aug 31 |  Data Matrix/Numeric Attributes (Chapters 1 & 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2-aug31.pdf)|
 |  Sep 05 (Tue) | Numeric Attributes (Chapter 2) |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3-sep5.pdf)|
-|  Sep 07 |  PCA (Chapter 7)||
+|  Sep 07 |  PCA (Chapter 7)|[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4-sep7.pdf)|
 |  Sep 11 |  PCA II (Chapter 7)  ||
 |  Sep 14 |  High Dimensional Data (Chapter 6) ||
 |  Sep 18 |  High Dimensional Data II (Chapter 6) ||
