@@ -16,7 +16,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 **Class Hours**: 10AM-11:50AM Mon/Thurs, *Darrin 308* 
 
-**Instructor Office Hours**: 12-1PM Mon/Thurs
+**Instructor Office Hours**: 12-1PM Mon/Thurs (Lally 209)
 
 **TAs (Office Hours)**: 
 
