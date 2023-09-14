@@ -133,7 +133,7 @@ and adjusting $\eta$ accordingly:
 $$\mathbf{z} = \mathbf{z} - \frac{\eta}{B} \cdot \nabla$$
 Or
 $$\mathbf{z} = \mathbf{z} - \eta
-\cdot \mathbf{z} + \frac{\eta}{B} \mathbf{x}_i $$
+\cdot \mathbf{z} + \frac{\eta}{B} \sum_{i=1}^B \mathbf{x}_i $$
 
 To test for convergence, we compute the norm of the
 difference between the previous value of $\mathbf{z}$ and its updated value,
