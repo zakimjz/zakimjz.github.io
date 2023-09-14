@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1694709543.1638935
+_modified_time = 1694728605.6251493
 _enable_loop = True
 _template_filename = '/usr/lib/python3.11/site-packages/nikola/data/themes/base/templates/story.tmpl'
 _template_uri = 'story.tmpl'
@@ -41,13 +41,13 @@ def render_body(context,**pageargs):
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         pheader = _mako_get_namespace(context, 'pheader')
         enable_comments = context.get('enable_comments', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
         post = context.get('post', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -69,13 +69,13 @@ def render_content(context,**pageargs):
     try:
         pheader = _mako_get_namespace(context, 'pheader')
         enable_comments = context.get('enable_comments', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
         post = context.get('post', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n<article class="post-')
         __M_writer(str(post.meta('type')))
