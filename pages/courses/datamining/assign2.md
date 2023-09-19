@@ -58,10 +58,12 @@ Machine Learning repository. Extract the winequality-red.csv datafile that
 records 12 attributes about 1599 instances of red wine. You should parse and
 store the data as a data matrix, using the last "quality"
 attribute as the dependent or target variable $Y$, and first 11 attributes as the
-independent attributes/variables. 
+independent attributes/variables, $\mathbf{X}$. 
 
 Implement the linear regression algorithm via QR factorization,
-namely Algorithm 23.1 on page 602 in Chapter 23.
+namely Algorithm 23.1 on page 602 in Chapter 23. Make sure you augment
+$\mathbf{X}$ by adding a
+columns of ones as the first dimension.
 
 You must implement QR factorization on your own, as described
 in Section 23.3.1 (you cannot use numpy.linalg.qr or similar function,
