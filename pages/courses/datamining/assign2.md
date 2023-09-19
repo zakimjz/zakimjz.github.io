@@ -45,7 +45,8 @@ Randomly sample $n=10,000$ points from the standard multivariate normal
 distribution in $d$ dimensions, where $d=10, 50, 100, 500$. You may use
 **np.random.multivariate_normal** to generate this sample.
 
-Verify that for all $d$, the means distance of points to the center in $d$
+Plot the histogram of distances of points to the center of the space in $d$
+dimensions. Verify that for all $d$, the means distance of points to the center in $d$
 dimensions is $\sqrt{d}$ and the standard deviation is $1/\sqrt{2}$.
 
 
