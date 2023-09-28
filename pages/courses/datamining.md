@@ -53,8 +53,8 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Sep 14 |  Discriminant Analysis II, Gradient Descent (Chapter 20) |[lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6-sep14.pdf)|
 |  Sep 18 |  High Dimensional Data I (Chapter 6) |[lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7-sep18.pdf)|
 |  Sep 21 |  High Dimensional Data II, Linear Regression (Chap 6, 7) |[lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8-sep21.pdf)|
-|  Sep 25 |  Linear Regression II (Chapter 7) |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-sep25.pdf)|
-|  Sep 28 |  Linear Regression III (Chapter 7)  ||
+|  Sep 25 |  Linear Regression II (Chapter 23) |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-sep25.pdf)|
+|  Sep 28 |  Linear Regression, Logistic Regression  (Chapter 23,24)  |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10-sep28.pdf)|
 |  Oct 02 |  **Exam I** ||
 |  Oct 05 |  Support Vector Machines I (Chapter 21)||
 |  Oct 09 |  **NO CLASS** (Columbus Day) ||
