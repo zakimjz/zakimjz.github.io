@@ -56,22 +56,22 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Sep 25 |  Linear Regression II (Chapter 23) |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-sep25.pdf)|
 |  Sep 28 |  Linear Regression, Logistic Regression  (Chapter 23,24)  |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10-sep28.pdf)|
 |  Oct 02 |  **Exam I** ||
-|  Oct 05 |  Support Vector Machines I (Chapter 21)||
+|  Oct 05 |  Logistic Regression (Chapter 24) ||
 |  Oct 09 |  **NO CLASS** (Columbus Day) ||
-|  Oct 12 |  Support Vector Machines II (Chapter 21) ||
-|  Oct 16 |  Neural Networks I (Chapter 25) ||
-|  Oct 19 |  Neural Networks II (Chap 25) ||
-|  Oct 23 |  Deep Learning (Chapter 26)||
-|  Oct 26 |  Deep Learning II (Chap 25)   ||
-|  Oct 30 |  Classification Assessment (Chapter 22)||
+|  Oct 12 |  Neural Networks (Chapter 25)  ||
+|  Oct 16 |  Bayes Classifier (Chapter 18) ||
+|  Oct 19 |  Decision Trees (Chapter 19) ||
+|  Oct 23 |  Classification Assessment I (Chapter 22) ||
+|  Oct 26 |  Classification Assessment II (Chapter 22)||
+|  Oct 30 |  Pattern Mining I (Chapter 8) ||
 |  Nov 02 |  **EXAM II** ||
-|  Nov 06 |  Representative-Based Clustering (Chapter 13)||
-|  Nov 09 |  Representative-Based Clustering || (Chapter 13)  ||
-|  Nov 13 |  Density-based Clustering (Chapter 15)  ||
-|  Nov 16 |  Density-based Clustering II (Chapters  15) ||
-|  Nov 20 |  Spectral Clustering (Chapters 16) ||
+|  Nov 06 |  Pattern Mining II (Chapter 9) ||
+|  Nov 09 |  Representative-Based Clustering I (Chapter 13)  ||
+|  Nov 13 |  Representative-Based Clustering II (Chapter 13) ||
+|  Nov 16 |  Density-based Clustering (Chapter 15)  ||
+|  Nov 20 |  Density-based Clustering II (Chapter 15)  ||
 |  Nov 23 |  **NO CLASS** (Thanksgiving) ||
-|  Nov 27 |  Spectral Clustering II (Chapter 16) ||
-|  Nov 30 |  Clustering Validation (Chapters 17) ||
-|  Dec 04 |  Wrapup ||
+|  Nov 27 |  Spectral Clustering (Chapters 16) ||
+|  Nov 30 |  Clustering Validation (Chapters 17)  ||
+|  Dec 04 |  Clustering Validation II (Chapters 17)  ||
 |  Dec 07 |  **EXAM III** ||
