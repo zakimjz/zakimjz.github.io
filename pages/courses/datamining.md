@@ -56,7 +56,7 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Sep 25 |  Linear Regression II (Chapter 23) |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-sep25.pdf)|
 |  Sep 28 |  Linear Regression, Logistic Regression  (Chapter 23,24)  |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10-sep28.pdf)|
 |  Oct 02 |  **Exam I** ||
-|  Oct 05 |  Logistic Regression (Chapter 24) ||
+|  Oct 05 |  Logistic Regression (Chapter 24) |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11-oct5.pdf)|
 |  Oct 09 |  **NO CLASS** (Columbus Day) ||
 |  Oct 12 |  Neural Networks (Chapter 25)  ||
 |  Oct 16 |  Bayes Classifier (Chapter 18) ||
