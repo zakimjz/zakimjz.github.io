@@ -1,57 +1,58 @@
-<h1>Assign3: Non-Linear Dimensionality Reduction: Kernel PCA</h1>
-<p><strong>Due Date</strong>: Sep 30, before midnight (11:59:59PM)</p>
-<p>We will the <a href="https://archive.ics.uci.edu/ml/datasets/online+news+popularity">Online News
-Popularity</a>
-dataset as in previous assignments. This dataset has 61 attributes and 39644
-points. Ignore the following attributes for this assignment: 0-1,
-4-6, 13-38, and 60 (counting from 0). So, you'll be left with 29 attributes
-that you'll use. Since 39644 is too many points, use only the first 5000
-points for this assignment. Complete the following tasks.</p>
-<p>Implement the Kernel PCA (KPCA) algorithm as described in
-Algorithm 7.2 (Chapter 7, page 208; look at <a href="https://dataminingbook.info/errata/">book errata</a> for the typo on line 7 of the algo -- the denominator should have i from 1 to $n$ and not $d$). You need to compute the kernel and
-then center it, followed by extracting the dominant eigenvectors, which
-will give you the components of the directions in feature space. Next
-you will project and visualize the data. To compute the principal
-components (PCs) from the kernel matrix, you may use the inbuilt numpy
-function eigh.</p>
-<p>Using the linear kernel (i.e., polynomial kernel with degree $q=1$ and
-$c=0$; in other words $K(\mathbf{x},\mathbf{y}) = \mathbf{x}^T\mathbf{y}$),
-how many dimensions are required to capture $\alpha=0.95$ fraction of the
-total variance? For the same linear kernel, compute the projected points
-along the first two kernel PCs, and create a scatter plot of the projected
-points.</p>
-<p>Next, use the covariance matrix for the original data to compute the
-regular principal components, i.e., for the covariance matrix. Project
-the data onto the first two PCs. How do the eigenvalues and the
-projection compare with that obtained via Kernel PCA with linear kernel?</p>
-<p>Finally, use the gaussian kernel and repeat the exercise for kernel PCA.
-Project the points onto the first two PCs and plot the scatter plot. 
-Try different values and submit your plot for
-the value that makes most sense to you (observe the projected plots for
-various spread values and then decide).</p>
-<p><strong>CSCI6390 Only</strong>: In addition to the above, use an inhomogeneous quadratic
-kernel and examine how many components it takes to capture $0.95$ fraction
-of the variance. Choose the appropriate $c$ value. Plot the data onto the
-first two quadratic PCs. Finally, out of the three kernels -- linear,
-inhomogeneous quadratic, gaussian -- which results in the best 2D
-approximation? Why?</p>
+<h1>Assign3: Logistic Regression and Neural Networks</h1>
+<p><strong>Due Date</strong>: Oct 19, before midnight</p>
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/186/wine+quality">Wine Quality
+Dataset</a> from the UCI
+Machine Learning repository. We will use winequality-white.csv as the
+<em>training dataset</em> and winequality-red.csv as the <em>testing</em> dataset.
+The white wine dataset has 4898 points, and the red wine data has 1599
+points. There are 12 attributes in total, with the last attribute "quality"
+denoting the integer valued target variable. </p>
+<hr>
+<h2>Part I: Logistic Regression</h2>
+<p>Implement the multi-class logistic regression algorithm as described in
+Algorithm 24.2 (Chapter 24, page 634). </p>
+<p>Your script should print out the weight vector(s), and also the final
+accuracy value on the test data (see Eq 22.2). You should also compute the
+F1-score (see Eq 22.7 in chapter 22).</p>
+<p>You should use the scipy.special.softmax function rather than your own,
+since it is more robust.</p>
+<hr>
+<h2>Part II: Neural Networks from Scratch</h2>
+<p>Implement the deep multi-layer perceptron (MLP) algorithm in
+Algorithm 25.2 (Chapter 25, page 668). You should use ReLU activation
+for all hidden layers, and softmax for the output layer. See section
+25.1.1 for the derivative of the activation functions, and end of section
+25.4.3 for derivative of the multiclass cross-entropy function.</p>
+<p>Train your network on white wine data, and then test on red wine data.
+You must try different number of hidden layers, and their sizes. Report
+results for the configuration that gives the best F1 score values.</p>
+<p>CSCI6390: Your implementation must additionally support sigmoid and linear
+activation function for the output layer (keep ReLU for the hidden layers).
+Also, you must support the case when there is no hidden layer; this latter
+case will correspond to linear regression when output is linear, and 
+logistic regression when output is softmax or sigmoid.</p>
+<p>In addition to reporting the results for different number of hidden layers
+(and their sizes), also report the results when there are no hidden layers
+but using softmax output (similar to multi-class logistic regression), and
+for the case when there is no hidden layer but using linear output (treating
+it like linear regression).</p>
 <hr>
 <h2>What to submit</h2>
 <ul>
 <li>
-<p>Submit your python notebook, that contains the solution and output, 
-suitably annotated/commented. Name the notebook: assign3.ipynb.</p>
+<p>Submit your python notebook, that contains the solution and output,
+suitably annotated/commented. Name the notebook: <strong>assign3.ipynb</strong>.</p>
 </li>
 <li>
 <p>Submit the notebook file via submitty. Your code must be self-contained,
-    and must not hard code file names. You can assume the data file lies in
+    and must not hard code file names. You can assume the data files lie in
     the local dir.</p>
 </li>
 </ul>
 <hr>
 <h2>Policy on Academic Honesty</h2>
-<p>You are free to discuss how to tackle the assignment, but all coding
-must be your own. Please do not copy or modify code from anyone else,
-including code on the web. Any students caught violating the academic
-honesty principle will get an automatic F grade on the course and will
-be referred to the dean of students for disciplinary action.</p>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
