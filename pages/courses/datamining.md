@@ -60,7 +60,7 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Oct 02 |  **Exam I** ||
 |  Oct 05 |  Logistic Regression (Chapter 24) |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11-oct5.pdf)|
 |  Oct 09 |  **NO CLASS** (Columbus Day) ||
-|  Oct 12 |  Neural Networks (Chapter 25)  ||
+|  Oct 12 |  Neural Networks (Chapter 25)  |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12-oct12.pdf)|
 |  Oct 16 |  Bayes Classifier (Chapter 18) ||
 |  Oct 19 |  Decision Trees (Chapter 19) ||
 |  Oct 23 |  Classification Assessment I (Chapter 22) ||
