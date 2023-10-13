@@ -49,11 +49,11 @@ Train your network on white wine data, and then test on red wine data.
 You must try different number of hidden layers, and their sizes. Report
 results for the configuration that gives the best F1 score values.
 
-CSCI6390: Your implementation must additionally support sigmoid and linear
+CSCI6390: Your implementation must additionally support linear
 activation function for the output layer (keep ReLU for the hidden layers).
 Also, you must support the case when there is no hidden layer; this latter
 case will correspond to linear regression when output is linear, and 
-logistic regression when output is softmax or sigmoid.
+logistic regression when output is softmax.
 
 In addition to reporting the results for different number of hidden layers
 (and their sizes), also report the results when there are no hidden layers
