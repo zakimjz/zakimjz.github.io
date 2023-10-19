@@ -32,7 +32,7 @@ Aitazaz Khan <khana8@rpi.edu> (Wed 12-1pm, Thur 1-2pm, AE118)
 
 ## Assignments
 
-**Assign3:** {{% doc %}} dm_assign3 {{% /doc %}}, Due: 19th Oct
+**Assign3:** {{% doc %}} dm_assign3 {{% /doc %}}, Due: 20th Oct
 
 **Assign2:** {{% doc %}} dm_assign2 {{% /doc %}}, Due: 28th Sep
 
@@ -62,12 +62,12 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Oct 09 |  **NO CLASS** (Columbus Day) ||
 |  Oct 12 |  Neural Networks (Chapter 25)  |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12-oct12.pdf)|
 |  Oct 16 |  Bayes Classifier (Chapter 18) |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13-oct16.pdf)|
-|  Oct 19 |  Decision Trees (Chapter 19) ||
-|  Oct 23 |  Classification Assessment I (Chapter 22) ||
-|  Oct 26 |  Classification Assessment II (Chapter 22)||
-|  Oct 30 |  Pattern Mining I (Chapter 8) ||
+|  Oct 19 |  KNN-Classifier, Decision Trees (Chapter 19) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14-oct19.pdf)|
+|  Oct 23 |  Support Vector Machines (Chapter 21) ||
+|  Oct 26 |  Classification Assessment I (Chapter 22)||
+|  Oct 30 |  Classification Assessment II (Chapter 22)||
 |  Nov 02 |  **EXAM II** ||
-|  Nov 06 |  Pattern Mining II (Chapter 9) ||
+|  Nov 06 |  Pattern Mining I (Chapter 9) ||
 |  Nov 09 |  Representative-Based Clustering I (Chapter 13)  ||
 |  Nov 13 |  Representative-Based Clustering II (Chapter 13) ||
 |  Nov 16 |  Density-based Clustering (Chapter 15)  ||

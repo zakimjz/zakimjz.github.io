@@ -12,7 +12,7 @@
 
 # Assign3: Logistic Regression and Neural Networks
 
-**Due Date**: Oct 19, before midnight
+**Due Date**: Oct 20, before midnight
 
 Download the [Wine Quality
 Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality) from the UCI
