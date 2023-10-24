@@ -81,7 +81,7 @@ attribute name and the split value 2.45, as well as the size of the dataset
 at this point.
 
 The root has two children -- the left child, when the root decision is true,
-is give on line 2, which happens to be a leaf, so we print the majority
+is given on line 2, which happens to be a leaf, so we print the majority
 class in that leaf node (Iris-setosa), the fraction of points in the
 majority class (p=1.0), and the size of the node (50). The right child, when
 the root decision is false, is on line 3. This is not a leaf, and will be
@@ -89,9 +89,9 @@ split further, using the decision 'petal length <= 1.75'
 
 The children node for 'petal length <= 1.75' are shown on lines 4 and 11.
 Line 4 is when the decision is true and line 11 is when the decision is
-false. Thus, we can see that the two children are either consecutive (if one
+false. Thus, we can see that the two children of a node are either consecutive (if one
 of both of them are leaves), or they are linked by the vertical lines. Thus,
-the nested structure spells out the entire tree, with all leaf nodes showing
+the nested structure represents the entire tree, with all leaf nodes showing
 the "class" of that region.
 
 ---
