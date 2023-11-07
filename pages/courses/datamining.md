@@ -69,8 +69,8 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Oct 26 |  SVMs II, Classification Assessment I (Chapters 21, 22)|[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16-oct26.pdf)|
 |  Oct 30 |  Classification Assessment II (Chapter 22)|[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17-oct30.pdf)|
 |  Nov 02 |  **EXAM II** ||
-|  Nov 06 |  Pattern Mining I (Chapter 9) ||
-|  Nov 09 |  Representative-Based Clustering I (Chapter 13)  ||
+|  Nov 06 |  Classification Assessment III, Pattern Mining I (Chapters 22, 9) |[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18-nov6.pdf)|
+|  Nov 09 |  Pattern Mining II, Representative-Based Clustering I (Chapters 9, 13)  ||
 |  Nov 13 |  Representative-Based Clustering II (Chapter 13) ||
 |  Nov 16 |  Density-based Clustering (Chapter 15)  ||
 |  Nov 20 |  Density-based Clustering II (Chapter 15)  ||
