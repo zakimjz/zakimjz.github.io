@@ -1,58 +1,80 @@
-<h1>Assign5: Support Vector Classification</h1>
-<p><strong>Due Date</strong>: Oct 24, before midnight (11:59:59PM)</p>
-<p>We will continue with the <a href="https://archive.ics.uci.edu/ml/datasets/online+news+popularity">Online News Popularity</a>
-dataset as in previous assignments. This dataset has 61 attributes and 39644
-points. 
-Ignore the following attributes for this assignment: 0-1,
-4-6, 13-38. We will use all the remaining attributes, but with the last attribute
-(60; shares) as the target variable. Thus you will have 29 independent
-attributes and 1 dependent or target attribute. Your goal is to build a
-classification model to predict the number of shares of a news article
-binned into two classes: low (negative) vs. high (positive) shares.</p>
-<p>First, follow the same data preprocessing steps outlined in <a href="/courses/datamining/dm_assign4/">CSCI4390-6390 Assign4</a>, except that you should split the data into three parts after shuffling the points, by taking 
-the first 1000 points as
-training data, the next 1000 points as validation data, and the next 1000
-points as the test data. You can ignore the remaining points.</p>
-<p>For the target classes, first clamp the highest number of shares at 6000,
-i.e., if the target variable has more than 6000 shares, then set it to 6000.
-Next, define the positive class (+1) as those posts with 2000 or more shares, and
-the negative class (-1) as those with fewer than 2000 shares.</p>
-<p>Also, keep in mind that you do not have to augment the data directly, since
-we can obtain the augmented kernel by adding 1 to all entries of the kernel
-matrix (element-wise).</p>
-<h2>SVM</h2>
-<p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540), using
-hinge loss.</p>
-<p>You must implement two kernels, namely, both linear and Gaussian.
-You must select the best $C$ value using the validation set, and the same
-goes for the spread parameter $\sigma^2$ for the Gaussian kernel.</p>
-<p>Report the test accuracy for the different kernels, and the best value of
-the hyperparameters, that should be selected based on the validation
-accuracy. </p>
-<p>Accuracy is defined as the number of correct predictions over the number of
-points in a given dataset (e.g., validation set or testing set).</p>
-<h4>CSCI6390</h4>
-<p>In addition, you must also implement the inhomogeneous polynomial kernel. 
-You need to select the best degree and $C$ value.</p>
-<p>Report the test accuracy and the best hyperparameters used based on the
-validation accuracy.</p>
+<h1>Assign5: Pattern Mining and Clustering</h1>
+<p><strong>Due Date</strong>: Nov 20, before midnight (11:59:59PM)</p>
 <hr>
-<h2>Exam I Questions</h2>
-<p>Everyone should do question Q5, and in addition CSCI6390
-should submit their solutions to Q8. The lecture13 discusses how to solve both
-these problems.</p>
+<h1>Closed Itemset Mining</h1>
+<p>Implement the closed itemset mining algorithm 9.2 on page 251. For example,
+given the dataset:</p>
+<div class="code"><pre class="code literal-block">A B D E
+B C E
+A B D E
+A B C E
+A B C D E
+B C D
+</pre></div>
+
+<p>You can assume that each line has a transaction -- a set of items, separated
+by spaces. For minimum support of 3, the set of closed itemsets should be printed out
+in the format:</p>
+<div class="code"><pre class="code literal-block">A,B,D,E - 3
+A,B,E - 4
+B,D - 4
+B,C,E - 3
+B,C - 4
+B,E - 5
+B - 6
+Number of closed itemsets: 7
+</pre></div>
+
+<p>Show the frequent closed itemsets on the
+<a href="http://www.cs.rpi.edu/DMCOURSE/data/chess.txt">chess.txt</a> dataset, using
+minimum support 3000.</p>
+<hr>
+<h1>Expectation Maximization Clustering</h1>
+<p>Implement the Expectation-Maximization (EM) algorithm for clustering
+(see Algorithm 13.3 in Chapter 13). </p>
+<p>For initializing the clusters, select $k$ random data points as the cluster
+centers. However, once you have chosen the centers, assign each point to the
+closest center to compute the covariance matrix and the prior probabilities
+of each cluster.</p>
+<p>For practical purposes, you may want to use the <a href="https://blog.feedly.com/tricks-of-the-trade-logsumexp/">logexpsum
+trick</a> for
+expectation step, where you compute the log probabilities so that you can
+deal with very small probability values, otherwise, you may find that
+weights of a point for the clusters are zero. That is, if all probabilities
+are given as $\log P(Ci)$ and $\log P(xj | Ci)$, 
+then we have
+first compute $\log w_{ij}' = \log P(xj | Ci) + \log P(Ci)$ (note: this is
+only the numerator, we have to normalize as given below). But, to compute
+the final $w_{ij}$, we have to use the logsumexp trick, since 
+$$logsumexp(\log w_{1j}', \log w_{2j}', ..., \log w_{kj}') = \log\left(\sum_{a=1}^k
+        \exp \log w_{aj}'\right) = \log \left(\sum_{a=1}^k w_{aj}'\right)$$
+And therefore,
+$$w_{ij} = \exp\Big( \log w_{ij}' - logsumexp(\log w_{1j}', ..., \log w_{kj}') \Big)$$
+You can therefore use scipy.special.logsumexp function on log probabilities.</p>
+<p>As another practical point, you can get an error when inverting the covariance
+matrix, so you should add a small ridge value $\lambda$ value along the
+diagonal entries to make the matrix invertible. This can be considered
+as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
+\lambda \mathbf{I}$$
+Or just use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+<p>Apply your algorithm on the <a href="https://archive.ics.uci.edu/dataset/53/iris">Iris
+Dataset</a>, using $k=3$ clusters. Use only the first
+four columns as the data points, and keep aside the last
+column -- the class label -- only for computing the cluster evaluation metric. Your output should comprise the following: </p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    CSCI4390 can use <em>sklearn.metrics.normalized_mutual_info_score</em>*, but
+    CSCI6390 must implement this based on Eq. 17.8 in the book.</li>
+</ul>
+<p>Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score.</p>
 <hr>
 <h2>What to submit</h2>
 <ul>
-<li>
-<p>Submit your python notebook, that contains the solution and output, 
-suitably annotated/commented. Name the notebook: <strong>assign5.ipynb</strong>.</p>
-</li>
-<li>
-<p>Submit the notebook file via submitty. Your code must be self-contained,
-    and must not hard code file names. You can assume the data file lies in
-    the local dir.</p>
-</li>
+<li>Submit your notebook named as <strong>Assign5.ipynb</strong> via submitty.</li>
 </ul>
 <hr>
 <h2>Policy on Academic Honesty</h2>
@@ -60,4 +82,5 @@ suitably annotated/commented. Name the notebook: <strong>assign5.ipynb</strong>.
 must be your own. Please do not copy or modify code from anyone else,
 including code on the web. Any students caught violating the academic
 honesty principle will get an automatic F grade on the course and will
-be referred to the dean of students for disciplinary action.</p>
+be referred to the dean of students for disciplinary action. If you do use
+AI tools, you must document the details.</p>
