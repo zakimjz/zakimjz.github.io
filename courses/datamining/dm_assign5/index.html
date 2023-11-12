@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign5 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign5/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign5">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign5/">
+<meta property="og:description" content="Assign5: Pattern Mining and Clustering
+Due Date: Nov 20, before midnight (11:59:59PM)
+
+Closed Itemset Mining
+Implement the closed itemset mining algorithm 9.2 on page 251. For example,
+given the datas">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-11-11T12:00:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign5</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign5: Pattern Mining and Clustering</h2>
+<p><strong>Due Date</strong>: Nov 20, before midnight (11:59:59PM)</p>
+<hr>
+<h2>Closed Itemset Mining</h2>
+<p>Implement the closed itemset mining algorithm 9.2 on page 251. For example,
+given the dataset:</p>
+<div class="code"><pre class="code literal-block">A B D E
+B C E
+A B D E
+A B C E
+A B C D E
+B C D
+</pre></div>
+
+<p>You can assume that each line has a transaction -- a set of items, separated
+by spaces. For minimum support of 3, the set of closed itemsets should be printed out
+in the format:</p>
+<div class="code"><pre class="code literal-block">A,B,D,E - 3
+A,B,E - 4
+B,D - 4
+B,C,E - 3
+B,C - 4
+B,E - 5
+B - 6
+Number of closed itemsets: 7
+</pre></div>
+
+<p>Show the frequent closed itemsets on the
+<a href="http://www.cs.rpi.edu/DMCOURSE/data/chess.txt">chess.txt</a> dataset, using
+minimum support 3000.</p>
+<hr>
+<h2>Expectation Maximization Clustering</h2>
+<p>Implement the Expectation-Maximization (EM) algorithm for clustering
+(see Algorithm 13.3 in Chapter 13). </p>
+<p>For initializing the clusters, select $k$ random data points as the cluster
+centers. However, once you have chosen the centers, assign each point to the
+closest center to compute the covariance matrix and the prior probabilities
+of each cluster.</p>
+<p>For practical purposes, you may want to use the <a href="https://blog.feedly.com/tricks-of-the-trade-logsumexp/">logexpsum
+trick</a> for
+expectation step, where you compute the log probabilities so that you can
+deal with very small probability values, otherwise, you may find that
+weights of a point for the clusters are zero. That is, if all probabilities
+are given as $\log P(Ci)$ and $\log P(xj | Ci)$, 
+then we have
+first compute $\log w_{ij}' = \log P(xj | Ci) + \log P(Ci)$ (note: this is
+only the numerator, we have to normalize as given below). But, to compute
+the final $w_{ij}$, we have to use the logsumexp trick, since 
+$$logsumexp(\log w_{1j}', \log w_{2j}', ..., \log w_{kj}') = \log\left(\sum_{a=1}^k
+        \exp \log w_{aj}'\right) = \log \left(\sum_{a=1}^k w_{aj}'\right)$$
+And therefore,
+$$w_{ij} = \exp\Big( \log w_{ij}' - logsumexp(\log w_{1j}', ..., \log w_{kj}') \Big)$$
+You can therefore use scipy.special.logsumexp function on log probabilities.</p>
+<p>As another practical point, you can get an error when inverting the covariance
+matrix, so you should add a small ridge value $\lambda$ value along the
+diagonal entries to make the matrix invertible. This can be considered
+as a regularized estimate of the covariance matrix, i.e., $$\Sigma +
+\lambda \mathbf{I}$$
+Or just use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+<p>Apply your algorithm on the <a href="https://archive.ics.uci.edu/dataset/53/iris">Iris
+Dataset</a>, using $k=3$ clusters. Use only the first
+four columns as the data points, and keep aside the last
+column -- the class label -- only for computing the cluster evaluation metric. Your output should comprise the following: </p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    CSCI4390 can use <em>sklearn.metrics.normalized_mutual_info_score</em>*, but
+    CSCI6390 must implement this based on Eq. 17.8 in the book.</li>
+</ul>
+<p>Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score.</p>
+<hr>
+<h3>What to submit</h3>
+<ul>
+<li>Submit your notebook named as <strong>Assign5.ipynb</strong> via submitty.</li>
+</ul>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding
+must be your own. Please do not copy or modify code from anyone else,
+including code on the web. Any students caught violating the academic
+honesty principle will get an automatic F grade on the course and will
+be referred to the dean of students for disciplinary action. If you do use
+AI tools, you must document the details.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2023         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C304VMWK2R');
+</script>
+</body>
+</html>
