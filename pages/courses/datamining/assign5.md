@@ -43,7 +43,7 @@ Number of closed itemsets: 7
 ```
 
 Show the frequent closed itemsets on the
-[chess.txt](http://www.cs.rpi.edu/DMCOURSE/data/chess.txt) dataset, using
+[chess.txt](http://www.cs.rpi.edu/~/zaki/DMCOURSE/data/chess.txt) dataset, using
 minimum support 3000.
 
 
