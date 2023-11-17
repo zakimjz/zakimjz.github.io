@@ -74,10 +74,10 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Nov 06 |  Classification Assessment III, Pattern Mining I (Chapters 22, 9) |[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18-nov6.pdf)|
 |  Nov 09 |  Pattern Mining II (Chapter 9)  |[lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19-nov9.pdf)|
 |  Nov 13 |  Representative-Based Clustering I (Chapter 13) |[lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-nov13.pdf)|
-|  Nov 16 |  Density-based Clustering (Chapter 15)  ||
-|  Nov 20 |  Density-based Clustering II (Chapter 15)  ||
+|  Nov 16 |  Density-based Clustering (Chapter 15)  |[lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21-nov16.pdf)|
+|  Nov 20 |  Spectral Clustering (Chapter 16)  ||
 |  Nov 23 |  **NO CLASS** (Thanksgiving) ||
-|  Nov 27 |  Spectral Clustering (Chapters 16) ||
+|  Nov 27 |  Spectral Clustering II (Chapters 16) ||
 |  Nov 30 |  Clustering Validation (Chapters 17)  ||
 |  Dec 04 |  Clustering Validation II (Chapters 17)  ||
 |  Dec 07 |  **EXAM III** ||
