@@ -32,7 +32,7 @@ Aitazaz Khan <khana8@rpi.edu> (Wed 12-1pm, Thur 1-2pm, AE118)
 
 ## Assignments
 
-**Assign5:** {{% doc %}} dm_assign5 {{% /doc %}}, Due: 20th Nov
+**Assign5:** {{% doc %}} dm_assign5 {{% /doc %}}, Due: 21th Nov
 
 **Assign4:** {{% doc %}} dm_assign4 {{% /doc %}}, Due: 30th Oct
 
@@ -75,7 +75,7 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Nov 09 |  Pattern Mining II (Chapter 9)  |[lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19-nov9.pdf)|
 |  Nov 13 |  Representative-Based Clustering I (Chapter 13) |[lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-nov13.pdf)|
 |  Nov 16 |  Density-based Clustering (Chapter 15)  |[lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21-nov16.pdf)|
-|  Nov 20 |  Spectral Clustering (Chapter 16)  ||
+|  Nov 20 |  Spectral Clustering (Chapter 16)  |[lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22-nov20.pdf)|
 |  Nov 23 |  **NO CLASS** (Thanksgiving) ||
 |  Nov 27 |  Spectral Clustering II (Chapters 16) ||
 |  Nov 30 |  Clustering Validation (Chapters 17)  ||
