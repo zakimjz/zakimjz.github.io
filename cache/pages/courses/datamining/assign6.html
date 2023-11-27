@@ -1,36 +1,50 @@
-<h1>Assign6: Logistic Regression</h1>
-<p><strong>Due Date</strong>: Nov 1, before midnight</p>
-<p>We will use a new dataset this time: <a href="https://www.kaggle.com/datasets/zalando-research/fashionmnist">Fashion
-MNIST</a>. It
-has 60K images that are $28\times 28 = 784$ dimensional, and which belong to
-10 classes. The data has already been converted into csv format, where the
-first column denotes the class, and the remaining 784 attributes are the
-pixel values (1-255). You will use the 60K examples fashion-mnist_train.csv
-file for training, and the 10K examples fashion-mnist_test.csv for testing.</p>
-<p>Since the data is large, you should first set the random seed to 42, and
-then shuffle the points in the training and test sets. Select the first
-10000 points after shuffling the train.csv file as the training data, and
-the first 5000 points after shuffling test.csv files as the testing data.</p>
-<p>You will implement the multi-class logistic regression algorithm as described in
-Algorithm 24.2 (Chapter 24, page 634). </p>
-<p>Your script should print out the weight vector(s), and also the final
-accuracy value on the test data (see Eq 22.2). You should also compute the F1-score (see
-Eq 22.7 in chapter 22).</p>
-<p>You should use the scipy.special.softmax function rather than your own,
-since it is more robust.</p>
-<p><strong>CSCI6390</strong>: There may be an extra component which is TBD.</p>
+<h1>Assign6: Clustering: Density</h1>
+<p><strong>Due Date</strong>: Dec 4, before midnight (11:59:59PM)</p>
+<p>You will use the 
+[Iris Dataset]((https://archive.ics.uci.edu/dataset/53/iris).
+Do not use the last column, which denotes the class label. It will only be
+use to test the NMI value. The other columns denote the input variables for
+clustering.</p>
+<hr>
+<h1>CSCI4390/6390: Density Clustering</h1>
+<p>Implement the DENCLUE density-based clustering algorithm given in 
+Algorithm 15.2 on page 388. </p>
+<p>Use mean-shift updates to compute the attractor for each point. Use
+logsumexp as needed.</p>
+<p>Once you have computed the attractors, for step 7 where you check for
+density reachable, you should basically merge two attractors (and all points
+attracted to them) using a distance threshold $\theta$. That is, two
+attractors that are within $\theta$ distance of each other should be merged
+together into a single cluster. Thus, each cluster will be given by a set of
+attractors (along with all points attracted to any one of them).</p>
+<p>Note that this method does not use the number of clusters as input, so you
+need to choose $\theta$ carefully to report the final clustering.
+Run your code using different thresholds and report the clustering with the best NMI score.</p>
+<p>Your program output should consist of the following information:</p>
+<ul>
+<li>Number of clusters.</li>
+<li>Size of each cluster.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    You can use <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html">sklearn.metrics.normalized_mutual_info_score</a> using 'geometric' as average_method.</li>
+</ul>
+<p>Note that you should try to obtain 3 clusters.</p>
+<hr>
+<h1>CSCI6390 Only: Markov Clustering (MCL)</h1>
+<p>In addition, implement the MCL algorithm 16.2 on pg 420. 
+Note that this method does not use the number of clusters as input, so you
+need to choose the inflation parameter $r$ carefully to report the final clustering.
+Run your code using different $r$ values and report the clustering with the best NMI score.</p>
+<p>Your program output should consist of the following information:</p>
+<ul>
+<li>Number of clusters.</li>
+<li>Size of each cluster.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.</li>
+</ul>
+<p>Note that you should try to obtain 3 clusters.</p>
 <hr>
 <h2>What to submit</h2>
 <ul>
-<li>
-<p>Submit your python notebook, that contains the solution and output,
-suitably annotated/commented. Name the notebook: <strong>assign6.ipynb</strong>.</p>
-</li>
-<li>
-<p>Submit the notebook file via submitty. Your code must be self-contained,
-    and must not hard code file names. You can assume the data files lie in
-    the local dir.</p>
-</li>
+<li>Submit your notebook named as <strong>assign6.ipynb</strong> via submitty.</li>
 </ul>
 <hr>
 <h2>Policy on Academic Honesty</h2>
@@ -38,4 +52,5 @@ suitably annotated/commented. Name the notebook: <strong>assign6.ipynb</strong>.
 must be your own. Please do not copy or modify code from anyone else,
 including code on the web. Any students caught violating the academic
 honesty principle will get an automatic F grade on the course and will
-be referred to the dean of students for disciplinary action.</p>
+be referred to the dean of students for disciplinary action. Use of AI tools
+must be documented.</p>

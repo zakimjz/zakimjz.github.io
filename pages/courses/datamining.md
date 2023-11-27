@@ -32,6 +32,8 @@ Aitazaz Khan <khana8@rpi.edu> (Wed 12-1pm, Thur 1-2pm, AE118)
 
 ## Assignments
 
+**Assign6:** {{% doc %}} dm_assign6 {{% /doc %}}, Due: 4th Dec
+
 **Assign5:** {{% doc %}} dm_assign5 {{% /doc %}}, Due: 21th Nov
 
 **Assign4:** {{% doc %}} dm_assign4 {{% /doc %}}, Due: 30th Oct
