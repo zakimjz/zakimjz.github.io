@@ -58,7 +58,7 @@ Note that you should try to obtain 3 clusters.
 
 In addition, implement the spectral algorithm 16.1 on pg 406.
 To define the similarity matrix, use the Gaussian kernel (see Eq 5.10):
-$$a_{ij} = \exp\{-(\mathbf{x}_i - \mathbf{x}_j) / 2\sigma^2\}$$
+$$a_{ij} = \exp\(-(\mathbf{x}_i - \mathbf{x}_j) / 2\sigma^2\)$$
 where $\sigma^2$ is the variance parameter, that you have to choose on your
 own.
 Run your code using different $\sigma^2$ values and report the clustering with the best NMI score.
