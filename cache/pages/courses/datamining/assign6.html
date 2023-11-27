@@ -1,4 +1,4 @@
-<h1>Assign6: Clustering: Density</h1>
+<h1>Assign6: Clustering: Density and Spectral</h1>
 <p><strong>Due Date</strong>: Dec 4, before midnight (11:59:59PM)</p>
 <p>You will use the 
 [Iris Dataset]((https://archive.ics.uci.edu/dataset/53/iris).
@@ -29,18 +29,19 @@ Run your code using different thresholds and report the clustering with the best
 </ul>
 <p>Note that you should try to obtain 3 clusters.</p>
 <hr>
-<h1>CSCI6390 Only: Markov Clustering (MCL)</h1>
-<p>In addition, implement the MCL algorithm 16.2 on pg 420. 
-Note that this method does not use the number of clusters as input, so you
-need to choose the inflation parameter $r$ carefully to report the final clustering.
-Run your code using different $r$ values and report the clustering with the best NMI score.</p>
+<h1>CSCI6390 Only: Spectral Clustering</h1>
+<p>In addition, implement the spectral algorithm 16.1 on pg 406.
+To define the similarity matrix, use the Gaussian kernel (see Eq 5.10):
+$$a_{ij} = \exp{-(\mathbf{x}_i - \mathbf{x}_j) / 2\sigma^2}$$
+where $\sigma^2$ is the variance parameter, that you have to choose on your
+own.
+Run your code using different $\sigma^2$ values and report the clustering with the best NMI score.</p>
 <p>Your program output should consist of the following information:</p>
 <ul>
 <li>Number of clusters.</li>
 <li>Size of each cluster.</li>
 <li>The Normalized Mutual Information (NMI) score for your clustering.</li>
 </ul>
-<p>Note that you should try to obtain 3 clusters.</p>
 <hr>
 <h2>What to submit</h2>
 <ul>

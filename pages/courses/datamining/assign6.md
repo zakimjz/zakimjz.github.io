@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-# Assign6: Clustering: Density
+# Assign6: Clustering: Density and Spectral
 
 **Due Date**: Dec 4, before midnight (11:59:59PM)
 
@@ -54,20 +54,20 @@ Note that you should try to obtain 3 clusters.
 
 ---
 
-# CSCI6390 Only: Markov Clustering (MCL)
+# CSCI6390 Only: Spectral Clustering
 
-In addition, implement the MCL algorithm 16.2 on pg 420. 
-Note that this method does not use the number of clusters as input, so you
-need to choose the inflation parameter $r$ carefully to report the final clustering.
-Run your code using different $r$ values and report the clustering with the best NMI score.
+In addition, implement the spectral algorithm 16.1 on pg 406.
+To define the similarity matrix, use the Gaussian kernel (see Eq 5.10):
+$$a_{ij} = \exp{-(\mathbf{x}_i - \mathbf{x}_j) / 2\sigma^2}$$
+where $\sigma^2$ is the variance parameter, that you have to choose on your
+own.
+Run your code using different $\sigma^2$ values and report the clustering with the best NMI score.
 
 Your program output should consist of the following information:
 
 * Number of clusters.
 * Size of each cluster.
 * The Normalized Mutual Information (NMI) score for your clustering.
-
-Note that you should try to obtain 3 clusters.
 
 ---
 
