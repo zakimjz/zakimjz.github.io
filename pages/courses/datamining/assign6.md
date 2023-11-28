@@ -19,7 +19,8 @@ You will use the
 [Iris Dataset]((https://archive.ics.uci.edu/dataset/53/iris).
 Do not use the last column, which denotes the class label. It will only be
 use to test the NMI value. The other columns denote the input variables for
-clustering.
+clustering. For the clustering methods below, it is a good idea to scale all
+attributes to be within the range 0 to 1. For this you should use sklearn.preprocessing.MinMaxScaler.
 
 
 ---
@@ -62,6 +63,8 @@ $$a_{ij} = \exp\(-(\mathbf{x}_i - \mathbf{x}_j) / 2\sigma^2\)$$
 where $\sigma^2$ is the variance parameter, that you have to choose on your
 own.
 Run your code using different $\sigma^2$ values and report the clustering with the best NMI score.
+After you obtain the eigenvectors, you can use the sklearn.cluster.KMeans to
+run the k-means algorithm to get the final clusters.
 
 Your program output should consist of the following information:
 
