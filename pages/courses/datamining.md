@@ -81,5 +81,5 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 |  Nov 23 |  **NO CLASS** (Thanksgiving) ||
 |  Nov 27 |  Markov Chain Clustering, Hierarchical (Chapters 16, 14) |[lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23-nov27.pdf)|
 |  Nov 30 |  Clustering Validation (Chapters 17)  |[lecture24](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture24-nov30.pdf)|
-|  Dec 04 |  Clustering Validation II (Chapters 17)  ||
+|  Dec 04 |  Clustering Validation II (Chapters 17)  |[lecture25](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture25-dec4.pdf)|
 |  Dec 07 |  **EXAM III** ||
