@@ -14,8 +14,8 @@
 
 |
 | Department Head
-| `Department of Computer Science<https://www.cs.rpi.edu>`_
-| `Rensselaer Polytechnic Institute<https://www.rpi.edu>`_
+| `Department of Computer Science <https://www.cs.rpi.edu>`_
+| `Rensselaer Polytechnic Institute <https://www.rpi.edu>`_
 | Troy, New York 12180-3590
 |
 
