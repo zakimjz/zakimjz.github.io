@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.cs.rpi.edu/~zaki/galleries/rss.xml</loc>
-  <lastmod>2023-07-25T02:47:00Z</lastmod>
+  <lastmod>2024-01-10T02:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.cs.rpi.edu/~zaki/rss.xml</loc>
@@ -15,6 +15,6 @@
  </sitemap>
  <sitemap>
   <loc>http://www.cs.rpi.edu/~zaki/sitemap.xml</loc>
-  <lastmod>2023-11-27T05:14:00Z</lastmod>
+  <lastmod>2024-01-10T02:41:00Z</lastmod>
  </sitemap>
 </sitemapindex>
