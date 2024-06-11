@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1713311919.635061
+_modified_time = 1718146001.239078
 _enable_loop = True
-_template_filename = '/usr/lib/python3.11/site-packages/nikola/data/themes/base/templates/post_helper.tmpl'
+_template_filename = '/usr/lib/python3.12/site-packages/nikola/data/themes/base/templates/post_helper.tmpl'
 _template_uri = 'post_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['meta_translations', 'html_tags', 'html_pager', 'open_graph_metadata', 'twitter_card_information', 'mathjax_script']
@@ -43,14 +43,16 @@ def render_body(context,**pageargs):
 def render_meta_translations(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        len = context.get('len', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
         sorted = context.get('sorted', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
+        len = context.get('len', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if len(translations) > 1:
+            pass
             for langname in sorted(translations):
+                pass
                 if langname != lang and ((not post.skip_untranslated) or post.is_translation_available(langname)):
                     __M_writer('                <link rel="alternate" hreflang="')
                     __M_writer(str(langname))
@@ -72,6 +74,7 @@ def render_html_tags(context,post):
         if post.tags:
             __M_writer('        <ul itemprop="keywords" class="tags">\n')
             for tag in post.tags:
+                pass
                 if tag not in hidden_tags:
                     __M_writer('            <li><a class="tag p-category" href="')
                     __M_writer(str(_link('tag', tag)))
@@ -117,11 +120,11 @@ def render_html_pager(context,post):
 def render_open_graph_metadata(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        abs_link = context.get('abs_link', UNDEFINED)
         url_replacer = context.get('url_replacer', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
+        abs_link = context.get('abs_link', UNDEFINED)
         permalink = context.get('permalink', UNDEFINED)
         blog_title = context.get('blog_title', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<meta property="og:site_name" content="')
         __M_writer(filters.html_escape(str(blog_title)))
@@ -148,6 +151,7 @@ def render_open_graph_metadata(context,post):
             __M_writer(str(post.formatted_date('webiso')))
             __M_writer('">\n')
         if post.tags:
+            pass
             for tag in post.tags:
                 __M_writer('       <meta property="article:tag" content="')
                 __M_writer(filters.html_escape(str(tag)))
@@ -203,6 +207,6 @@ def render_mathjax_script(context,post):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib/python3.11/site-packages/nikola/data/themes/base/templates/post_helper.tmpl", "uri": "post_helper.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 0, "31": 2, "32": 12, "33": 24, "34": 41, "35": 68, "36": 84, "37": 89, "43": 4, "51": 4, "52": 5, "53": 6, "54": 7, "55": 8, "56": 8, "57": 8, "58": 8, "59": 8, "65": 14, "71": 14, "72": 15, "73": 16, "74": 17, "75": 18, "76": 19, "77": 19, "78": 19, "79": 19, "80": 19, "81": 22, "87": 26, "92": 26, "93": 27, "94": 28, "95": 29, "96": 30, "97": 31, "98": 31, "99": 31, "100": 31, "101": 31, "102": 31, "103": 34, "104": 35, "105": 36, "106": 36, "107": 36, "108": 36, "109": 36, "110": 36, "111": 39, "117": 43, "126": 43, "127": 44, "128": 44, "129": 45, "130": 45, "131": 46, "132": 46, "133": 47, "134": 48, "135": 48, "136": 48, "137": 49, "138": 50, "139": 50, "140": 50, "141": 52, "142": 53, "143": 53, "144": 53, "145": 55, "146": 60, "147": 61, "148": 61, "149": 61, "150": 63, "151": 64, "152": 65, "153": 65, "154": 65, "160": 70, "165": 70, "166": 71, "167": 72, "168": 72, "169": 72, "170": 73, "171": 74, "172": 74, "173": 74, "174": 75, "175": 76, "176": 76, "177": 76, "178": 78, "179": 79, "180": 79, "181": 79, "182": 80, "183": 81, "184": 81, "185": 81, "191": 87, "196": 87, "197": 88, "198": 88, "204": 198}}
+{"filename": "/usr/lib/python3.12/site-packages/nikola/data/themes/base/templates/post_helper.tmpl", "uri": "post_helper.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 0, "31": 2, "32": 12, "33": 24, "34": 41, "35": 68, "36": 84, "37": 89, "43": 4, "51": 4, "52": 5, "54": 6, "56": 7, "57": 8, "58": 8, "59": 8, "60": 8, "61": 8, "67": 14, "73": 14, "74": 15, "75": 16, "76": 17, "78": 18, "79": 19, "80": 19, "81": 19, "82": 19, "83": 19, "84": 22, "90": 26, "95": 26, "96": 27, "97": 28, "98": 29, "99": 30, "100": 31, "101": 31, "102": 31, "103": 31, "104": 31, "105": 31, "106": 34, "107": 35, "108": 36, "109": 36, "110": 36, "111": 36, "112": 36, "113": 36, "114": 39, "120": 43, "129": 43, "130": 44, "131": 44, "132": 45, "133": 45, "134": 46, "135": 46, "136": 47, "137": 48, "138": 48, "139": 48, "140": 49, "141": 50, "142": 50, "143": 50, "144": 52, "145": 53, "146": 53, "147": 53, "148": 55, "149": 60, "150": 61, "151": 61, "152": 61, "153": 63, "155": 64, "156": 65, "157": 65, "158": 65, "164": 70, "169": 70, "170": 71, "171": 72, "172": 72, "173": 72, "174": 73, "175": 74, "176": 74, "177": 74, "178": 75, "179": 76, "180": 76, "181": 76, "182": 78, "183": 79, "184": 79, "185": 79, "186": 80, "187": 81, "188": 81, "189": 81, "195": 87, "200": 87, "201": 88, "202": 88, "208": 202}}
 __M_END_METADATA
 """

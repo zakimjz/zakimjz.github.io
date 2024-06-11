@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1713311919.7146468
+_modified_time = 1718146001.397006
 _enable_loop = True
-_template_filename = '/usr/lib/python3.11/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl'
+_template_filename = '/usr/lib/python3.12/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl'
 _template_uri = 'ui_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['breadcrumbs', 'show_sourcelink']
@@ -34,7 +34,9 @@ def render_breadcrumbs(context,crumbs):
         if crumbs:
             __M_writer('<nav class="breadcrumbs">\n<ul class="breadcrumb">\n')
             for link, text in crumbs:
+                pass
                 if text != index_file:
+                    pass
                     if link == '#':
                         __M_writer('                <li class="breadcrumb-item active">')
                         __M_writer(str(text.rsplit('.html', 1)[0]))
@@ -68,6 +70,6 @@ def render_show_sourcelink(context,sourcelink_href):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib/python3.11/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl", "uri": "ui_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 18, "22": 24, "28": 2, "33": 2, "34": 3, "35": 4, "36": 6, "37": 7, "38": 8, "39": 9, "40": 9, "41": 9, "42": 10, "43": 11, "44": 11, "45": 11, "46": 11, "47": 11, "48": 15, "54": 20, "59": 20, "60": 22, "61": 22, "62": 22, "63": 22, "69": 63}}
+{"filename": "/usr/lib/python3.12/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl", "uri": "ui_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 18, "22": 24, "28": 2, "33": 2, "34": 3, "35": 4, "36": 6, "38": 7, "40": 8, "41": 9, "42": 9, "43": 9, "44": 10, "45": 11, "46": 11, "47": 11, "48": 11, "49": 11, "50": 15, "56": 20, "61": 20, "62": 22, "63": 22, "64": 22, "65": 22, "71": 65}}
 __M_END_METADATA
 """
