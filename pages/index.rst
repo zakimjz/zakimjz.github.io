@@ -79,7 +79,7 @@ You can also find my publications on  |googlescholar|_ and  |dblp|_ and  |semant
 
 .. |dblp| image:: /images/dblplogo.gif
    :width: 120
-.. _dblp: http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/z/Zaki:Mohammed_Javeed.html
+.. _dblp: https://dblp.org/pid/z/MohammedJaveedZaki.html
 
 .. |semanticscholar| image:: /images/semanticscholar.png
    :width: 120
