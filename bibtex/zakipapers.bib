@@ -4812,4 +4812,29 @@ SOTA results on QM9, MOLPCBA, and LITPCBA molecular property prediction benchmar
 via transfer learning. We also demonstrate the generality of TGT with SOTA results on the traveling salesman problem (TSP).},
 }
 
-
+@article{2024-tmlr,
+title={Directed Graph Transformers},
+author={Qitong Wang and Georgios Kollias and Vasileios Kalantzis and Naoki Abe and Mohammed J Zaki},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+month={Jul},
+    KeyWord ={Journal,GraphNN,NeuralNetworks},
+customlinkgithubcode={https://github.com/Qitong-Wang/Directed-Graph-Transformers},
+fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/TMLR24.pdf},
+url={https://openreview.net/forum?id=otTFPjziiK},
+abstract={In this paper, we address the problem of capturing graph directionality using transformers.
+Most existing graph transformers typically capture distances between graph nodes and do
+not take edge direction into account.
+This is a limiting assumption since many graph
+applications need to exploit sophisticated relationships in graph data, such as time, causality,
+or generic dependency constraints. We introduce a novel graph transformer architecture that
+explicitly takes into account the directionality between connected graph nodes. To achieve
+this, we make use of dual encodings to represent both potential roles, i.e., source or target,
+of each pair of vertices linked by a directed edge. These encodings are learned by leveraging
+the latent adjacency information extracted from a directional attention module, localized
+with k-hop neighborhood information. Extensive experiments on synthetic and real graph
+datasets show that our approach can have significant accuracy gains over previous graph
+transformer (GT) and graph neural network (GNN) approaches, providing state-of-the-art
+(SOTA) results on inherently directed graphs.},
+}
