@@ -4838,3 +4838,16 @@ datasets show that our approach can have significant accuracy gains over previou
 transformer (GT) and graph neural network (GNN) approaches, providing state-of-the-art
 (SOTA) results on inherently directed graphs.},
 }
+
+
+@inproceedings{2024-cifer,
+  title={Semantic Graph Learning for Trend Prediction from Long Financial Documents},
+  author={Namir Xia and Mohammed J. Zaki and Aparna Gupta},
+  booktitle={IEEE Symposium on Computational Intelligence for Financial
+      Engineering and Economics (CIFEr)},
+    fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/CIFER24.pdf},
+  year={2024},
+  KeyWord = {Conference,TextMining},
+  abstract={The advent of large language models (LLMs) has initiated much research into their various financial applications. However, in applying LLMs on long documents, semantic relations are not explicitly incorporated, and a full or arbitrarily sparse attention operation is employed. In recent years, progress has been made in Abstract Meaning Representation (AMR), which is a graph-based representation of text to preserve its semantic relations. Since AMR can represent semantic relationships at a deeper level, it can be beneficially utilized by graph neural networks (GNNs) for constructing effective document-level graph representations built upon LLM embeddings to predict target metrics in the financial domain. We propose FLAG: Financial Long document classification via AMR-based GNN, an AMR graph based framework to generate document-level embeddings for long financial document classification. We construct document-level graphs from sentence-level AMR graphs, endow them with specialized LLM word embeddings in the financial domain, apply a deep learning mechanism that utilizes a GNN, and examine the efficacy of our AMR-based approach in predicting labeled target data from long financial documents. Extensive experiments are conducted on a dataset of quarterly earnings calls transcripts of companies in various sectors of the economy, as well as on a corpus of more recent earnings calls of companies in the S&P 1500 Composite Index. We find that our AMR-based approach outperforms fine-tuning LLMs directly on text in predicting stock price movement trends at different time horizons in both datasets. Our work also outperforms previous work utilizing document graphs and GNNs for text classification},
+}
+
