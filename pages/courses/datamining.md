@@ -1,11 +1,11 @@
 <!--
 .. title: CSCI4390-6390 Data Mining
 .. slug: datamining
-.. date: 2023-08-19 09:00:31 UTC-04:00
-.. tags: 
-.. category: 
-.. link: 
-.. description: 
+.. date: 2024-08-09 09:00:31 UTC-04:00
+.. tags:
+.. category:
+.. link:
+.. description:
 .. has_math: True
 .. type: text
 -->
@@ -14,72 +14,58 @@ This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
 algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
-**Class Hours**: 10AM-11:50AM Mon/Thurs, *Darrin 308* 
+**Class Hours**: 10AM-11:50AM Mon/Thurs, *Troy 2012*
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs (Lally 209)
 
-**TAs (Office Hours)**: 
+**TAs (Office Hours)**:
 
-Aitazaz Khan <khana8@rpi.edu> (Wed 12-1pm, Thur 1-2pm, AE118)
+Qitong Wang <wangq19@rpi.edu> (TBD)
 
 
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
-**Campuswire**: <https://campuswire.com/c/G35C68FA7>
-
-**Submitty**: <https://submitty.cs.rpi.edu/courses/f23/csci4390>
+**Submitty**: <https://submitty.cs.rpi.edu/courses/f24/csci4390>
 
 ## Assignments
 
-**Assign6:** {{% doc %}} dm_assign6 {{% /doc %}}, Due: 4th Dec
 
-**Assign5:** {{% doc %}} dm_assign5 {{% /doc %}}, Due: 21th Nov
-
-**Assign4:** {{% doc %}} dm_assign4 {{% /doc %}}, Due: 30th Oct
-
-**Assign3:** {{% doc %}} dm_assign3 {{% /doc %}}, Due: 20th Oct
-
-**Assign2:** {{% doc %}} dm_assign2 {{% /doc %}}, Due: 28th Sep
-
-**Assign1:** {{% doc %}} dm_assign1 {{% /doc %}}, Due: 15th Sep
-
-
-## Class Schedule: Lectures 
+## Class Schedule: Lectures
 
 Tentative course schedule is given below. Lecture notes (in PDF) appear
-below, and the lecture videos ca n be accessed at the [RPI's Mediasite
+below, and the lecture videos can be accessed at the [RPI's Mediasite
 Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56dfd4c369c7684562d475b815f).
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-|  Aug 28 |  Introduction & Data Matrix (Chapter 1) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1-aug28.pdf) |
-|  Aug 31 |  Data Matrix/Numeric Attributes (Chapters 1 & 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2-aug31.pdf)|
-|  Sep 05 (Tue) | Numeric Attributes (Chapter 2) |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3-sep5.pdf)|
-|  Sep 07 |  PCA (Chapter 7)|[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4-sep7.pdf)|
-|  Sep 11 |  PCA II and Discriminant Analysis (Chapters 7, 20)  |[lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5-sep11.pdf)|
-|  Sep 14 |  Discriminant Analysis II, Gradient Descent (Chapter 20) |[lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6-sep14.pdf)|
-|  Sep 18 |  High Dimensional Data I (Chapter 6) |[lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7-sep18.pdf)|
-|  Sep 21 |  High Dimensional Data II, Linear Regression (Chap 6, 7) |[lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8-sep21.pdf)|
-|  Sep 25 |  Linear Regression II (Chapter 23) |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9-sep25.pdf)|
-|  Sep 28 |  Linear Regression, Logistic Regression  (Chapter 23,24)  |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10-sep28.pdf)|
-|  Oct 02 |  **Exam I** ||
-|  Oct 05 |  Logistic Regression (Chapter 24) |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11-oct5.pdf)|
-|  Oct 09 |  **NO CLASS** (Columbus Day) ||
-|  Oct 12 |  Neural Networks (Chapter 25)  |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12-oct12.pdf)|
-|  Oct 16 |  Bayes Classifier (Chapter 18) |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13-oct16.pdf)|
-|  Oct 19 |  KNN-Classifier, Decision Trees (Chapter 19) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14-oct19.pdf)|
-|  Oct 23 |  Support Vector Machines (Chapter 21) |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15-oct23.pdf)|
-|  Oct 26 |  SVMs II, Classification Assessment I (Chapters 21, 22)|[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16-oct26.pdf)|
-|  Oct 30 |  Classification Assessment II (Chapter 22)|[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17-oct30.pdf)|
-|  Nov 02 |  **EXAM II** ||
-|  Nov 06 |  Classification Assessment III, Pattern Mining I (Chapters 22, 9) |[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18-nov6.pdf)|
-|  Nov 09 |  Pattern Mining II (Chapter 9)  |[lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19-nov9.pdf)|
-|  Nov 13 |  Representative-Based Clustering I (Chapter 13) |[lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20-nov13.pdf)|
-|  Nov 16 |  Density-based Clustering (Chapter 15)  |[lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21-nov16.pdf)|
-|  Nov 20 |  Spectral Clustering (Chapter 16)  |[lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22-nov20.pdf)|
-|  Nov 23 |  **NO CLASS** (Thanksgiving) ||
-|  Nov 27 |  Markov Chain Clustering, Hierarchical (Chapters 16, 14) |[lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23-nov27.pdf)|
-|  Nov 30 |  Clustering Validation (Chapters 17)  |[lecture24](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture24-nov30.pdf)|
-|  Dec 04 |  Clustering Validation II (Chapters 17)  |[lecture25](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture25-dec4.pdf)|
-|  Dec 07 |  **EXAM III** ||
+|  Aug 29 |  Introduction & Data Matrix (Chapter 1) | |
+|  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapters 1 & 2) ||
+|  Sep 05 | Numeric Attributes (Chapter 2) ||
+|  Sep 09 |  PCA (Chapter 7)||
+|  Sep 12 |  PCA II and Discriminant Analysis (Chapters 7, 20)  ||
+|  Sep 16 |  Discriminant Analysis II (Chapter 20) ||
+|  Sep 19 |  High Dimensional Data I (Chapter 6) ||
+|  Sep 23 |  High Dimensional Data II, Linear Regression (Chap 6, 7) ||
+|  Sep 26 |  Linear Regression II (Chapter 23) ||
+|  Sep 30 |  Linear Regression, Logistic Regression  (Chapter 23,24)  ||
+|  Oct 03 |  **Exam I** ||
+|  Oct 07 |  Logistic Regression (Chapter 24) ||
+|  Oct 10 |  Neural Networks (Chapter 25)  ||
+|  Oct 14 |  **NO CLASS** (Columbus Day) ||
+|  Oct 17 |  Bayes Classifier (Chapter 18) ||
+|  Oct 21 |  KNN-Classifier, Decision Trees (Chapter 19) ||
+|  Oct 24 |  Support Vector Machines (Chapter 21) ||
+|  Oct 28 |  SVMs II, Classification Assessment I (Chapters 21, 22)||
+|  Oct 31 |  Classification Assessment II (Chapter 22)||
+|  Nov 04 |  Classification Assessment III, Pattern Mining I (Chapters 22, 9)||
+|  Nov 07 |  **EXAM II**  ||
+|  Nov 11 |  Pattern Mining II (Chapter 9)  ||
+|  Nov 14 |  Representative-Based Clustering I (Chapter 13) ||
+|  Nov 18 |  Density-based Clustering (Chapter 15)  ||
+|  Nov 21 |  Spectral Clustering (Chapter 16)  ||
+|  Nov 25 |  Markov Chain Clustering, Hierarchical (Chapters 16, 14) ||
+|  Nov 28 |  **NO CLASS** (Thanksgiving) ||
+|  Dec 02 |  Clustering Validation (Chapters 17)  ||
+|  Dec 05 |  Clustering Validation II (Chapters 17)  ||
+|  Dec 09 |  **EXAM III** ||

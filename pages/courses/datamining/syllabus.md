@@ -1,10 +1,10 @@
 <!--
-.. title: CSCI4390-6390 Syllabus 
+.. title: CSCI4390-6390 Syllabus
 .. slug: dm_syllabus
-.. date: 2023-08-19 09:00:31 UTC-04:00
-.. tags: 
-.. category: 
-.. link: 
+.. date: 2024-08-09 09:00:31 UTC-04:00
+.. tags:
+.. category:
+.. link:
 .. description:
 .. has_math: True
 .. type: text
@@ -49,43 +49,43 @@ Emphasis will be laid on the algorithmic approach.
 You need a minimum of CS2300: Introduction to Algorithms. Linear algebra
 forms the foundation of data mining and machine learning, and therefore
 prior exposure to linear algebra is essentially a prerequisite. A good
-knowledge of probability and statistics is also a plus. 
+knowledge of probability and statistics is also a plus.
 
 You are expected to know how to program. Class assignments will require
 the use of [Python](https://www.python.org/), especially using NumPy and
 PyTorch. All assignments will be submitted as [JupyterLab
-Notebooks](https://jupyter.org). 
+Notebooks](https://jupyter.org).
 
 ## Textbook
 
 The following textbook is **required** for the course:
 
-[Data Mining and Machine Learning: Fundamental Concepts and Algorithms](https://dataminingbook.info/) 
+[Data Mining and Machine Learning: Fundamental Concepts and Algorithms](https://dataminingbook.info/)
 (2nd Edition), Mohammed J. Zaki and
 Wagner Meira, Jr, Cambridge University Press, 2020.
 
 
 ## Grading Policy
 
-Your grade will be a combination of the following items. 
+Your grade will be a combination of the following items.
 
-* **Assignments (40%)**: Assignments and HWs will be given throughout
+* **Assignments (50%)**: Assignments and HWs will be given throughout
   the semester. These will include an implementation component and can
   also have written questions. You can expect about 8-10 assignments
-  over the semester. 
+  over the semester.
 
-* **Exams (60%)**: There will be three exams covering the main topics of
+* **Exams (50%)**: There will be three exams covering the main topics of
   the course. The tentative exam dates are noted on the class schedule
   table. There is no comprehensive final exam. I may consider take-home
   exams, otherwise they will be in-person during class hours.
 
 * **Attendance and Quizzes**: Students are strongly encouraged  to attend all classes and
-    to participate in the class via discussions and engagement on the Campuswire
-  forum.
-    
+    to participate in the class via discussions and engagement via the
+    discussion forum.
+
 * **Late Submissions**: Most assignments will be due just before
   midnight on the due date. Students can get an automatic one day
-  extension for a 15% grade penalty. No further late assignments will be
+  extension for a 10% grade penalty. No further late assignments will be
   accepted.
 
 The grading for CSCI4390 and CSCI6390 will be done separately taking
@@ -94,23 +94,12 @@ includes extra/in-depth questions on the exam, and implementation of
 more advanced algorithms for the assignments. The letter grades
 typically are also based on different ranges for the two sections.
 
-All assignments will be submitted online via **Submitty**, and 
-discussions will be conducted via **Campuswire**. See the main page  for the
-links.
+## Makeup Policy
 
-
-## Health Issues
-
-Students should follow all
-guidelines from RPI related to health and safety for themselves and
-other campus members. All illness related accommodations will require
-officially approved excuse from RPI.
-
-Students who are ill, under quarantine for COVID-19, or suspect they are
-ill will report that to Student Life. Student Life will verify and
-notify all faculty who have that student. Once notification is made, all
-faculty will make every reasonable effort to accommodate the student’s
-absence and will communicate that accommodation directly to the student.
+Makeup exams will only be allowed in cases of health related issues or
+other exceptional circumstances, as long as there is supporting documentation.
+Otherwise, if a student misses an exam, the average of the
+other exams will be used in lieu of the missed one.
 
 
 ## Academic Integrity
