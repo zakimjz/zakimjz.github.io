@@ -69,24 +69,21 @@ Wagner Meira, Jr, Cambridge University Press, 2020.
 
 Your grade will be a combination of the following items.
 
-* **Assignments (50%)**: Assignments and HWs will be given throughout
+* **Assignments (60%)**: Assignments and HWs will be given throughout
   the semester. These will include an implementation component and can
-  also have written questions. You can expect about 8-10 assignments
+  also have written questions. You can expect about 7-8 assignments
   over the semester.
 
-* **Exams (50%)**: There will be three exams covering the main topics of
-  the course. The tentative exam dates are noted on the class schedule
-  table. There is no comprehensive final exam. I may consider take-home
-  exams, otherwise they will be in-person during class hours.
+* **Exams (40%)**: There will be two exams -- one mid-term and one at the end. The tentative exam dates are noted on the class schedule
+  table. There is no comprehensive final exam.
 
 * **Attendance and Quizzes**: Students are strongly encouraged  to attend all classes and
     to participate in the class via discussions and engagement via the
     discussion forum.
 
 * **Late Submissions**: Most assignments will be due just before
-  midnight on the due date. Students can get an automatic one day
-  extension for a 10% grade penalty. No further late assignments will be
-  accepted.
+  midnight on the due date. Each day late will incur a 10% penalty, up to a
+  maximum of 3 days. Submissions after that will not be graded.
 
 The grading for CSCI4390 and CSCI6390 will be done separately taking
 into account the more advanced material required for CSCI6390 -- this
@@ -98,8 +95,6 @@ typically are also based on different ranges for the two sections.
 
 Makeup exams will only be allowed in cases of health related issues or
 other exceptional circumstances, as long as there is supporting documentation.
-Otherwise, if a student misses an exam, the average of the
-other exams will be used in lieu of the missed one.
 
 
 ## Academic Integrity

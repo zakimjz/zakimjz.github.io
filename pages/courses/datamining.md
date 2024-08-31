@@ -37,33 +37,33 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
-|  Aug 29 |  Introduction & Data Matrix (Chapter 1) | |
-|  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapters 1 & 2) ||
+|  Aug 29 | **NO CLASS** | |
+|  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapter 1, 2) ||
 |  Sep 05 | Numeric Attributes (Chapter 2) ||
-|  Sep 09 |  PCA (Chapter 7)||
-|  Sep 12 |  PCA II and Discriminant Analysis (Chapters 7, 20)  ||
-|  Sep 16 |  Discriminant Analysis II (Chapter 20) ||
-|  Sep 19 |  High Dimensional Data I (Chapter 6) ||
-|  Sep 23 |  High Dimensional Data II, Linear Regression (Chap 6, 7) ||
-|  Sep 26 |  Linear Regression II (Chapter 23) ||
-|  Sep 30 |  Linear Regression, Logistic Regression  (Chapter 23,24)  ||
-|  Oct 03 |  **Exam I** ||
-|  Oct 07 |  Logistic Regression (Chapter 24) ||
-|  Oct 10 |  Neural Networks (Chapter 25)  ||
-|  Oct 14 |  **NO CLASS** (Columbus Day) ||
-|  Oct 17 |  Bayes Classifier (Chapter 18) ||
-|  Oct 21 |  KNN-Classifier, Decision Trees (Chapter 19) ||
-|  Oct 24 |  Support Vector Machines (Chapter 21) ||
-|  Oct 28 |  SVMs II, Classification Assessment I (Chapters 21, 22)||
-|  Oct 31 |  Classification Assessment II (Chapter 22)||
-|  Nov 04 |  Classification Assessment III, Pattern Mining I (Chapters 22, 9)||
-|  Nov 07 |  **EXAM II**  ||
-|  Nov 11 |  Pattern Mining II (Chapter 9)  ||
-|  Nov 14 |  Representative-Based Clustering I (Chapter 13) ||
-|  Nov 18 |  Density-based Clustering (Chapter 15)  ||
-|  Nov 21 |  Spectral Clustering (Chapter 16)  ||
-|  Nov 25 |  Markov Chain Clustering, Hierarchical (Chapters 16, 14) ||
-|  Nov 28 |  **NO CLASS** (Thanksgiving) ||
-|  Dec 02 |  Clustering Validation (Chapters 17)  ||
-|  Dec 05 |  Clustering Validation II (Chapters 17)  ||
-|  Dec 09 |  **EXAM III** ||
+|  Sep 09 | High Dimensional Data I (Chapter 6) ||
+|  Sep 12 | High Dimensional Data II (Chapter 6)  ||
+|  Sep 16 | PCA (Chapter 7) ||
+|  Sep 19 | PCA II (Chapter 7) ||
+|  Sep 23 | Pattern Mining I (Chapter 8)  ||
+|  Sep 26 | Pattern Mining II (Chapter 9)   ||
+|  Sep 30 | Representative-Based Clustering I (Chapter 13)   ||
+|  Oct 03 | Representative-Based Clustering II (Chapter 13) ||
+|  Oct 07 | Density-based Clustering (Chapter 15) ||
+|  Oct 10 | Spectral Clustering (Chapter 16) ||
+|  Oct 14 | **NO CLASS** (Columbus Day) ||
+|  Oct 17 | **EXAM I** ||
+|  Oct 21 | Clustering Validation (Chapters 17)  ||
+|  Oct 24 | Discriminant Analysis I (Chapter 20) ||
+|  Oct 28 | Linear Regression I (Chapter 23) ||
+|  Oct 31 | Linear Regression II (Chapter 23) ||
+|  Nov 04 | Logistic Regression (Chapter 24) ||
+|  Nov 07 | Bayes Classifier (Chapter 18)||
+|  Nov 11 | Support Vector Machines I (Chapter 21) ||
+|  Nov 14 | Support Vector Machines II (Chapter 21)||
+|  Nov 18 | Neural Networks I (Chapter 25)  ||
+|  Nov 21 | Neural Networks II (Chapter 25) ||
+|  Nov 25 | Deep Learning (Chapter 26) ||
+|  Nov 28 | **NO CLASS** (Thanksgiving) ||
+|  Dec 02 | Classification Assessment I (Chapters 21) ||
+|  Dec 05 | Classification Assessment II (Chapter 22) ||
+|  Dec 09 | **EXAM II** ||
