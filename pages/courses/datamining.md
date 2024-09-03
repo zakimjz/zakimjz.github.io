@@ -33,8 +33,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 ## Class Schedule: Lectures
 
 Tentative course schedule is given below. Lecture notes (in PDF) appear
-below, and the lecture videos can be accessed at the [RPI's Mediasite
-Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56dfd4c369c7684562d475b815f).
+below.
 
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
