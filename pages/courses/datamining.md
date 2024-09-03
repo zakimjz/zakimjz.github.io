@@ -39,7 +39,7 @@ Channel for CSCI4390](https://mediasite.mms.rpi.edu/mediasite/Channel/767768c56d
 | Date | Topic | Lectures |
 | :--- | :---  | ---: |
 |  Aug 29 | **NO CLASS** | |
-|  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapter 1, 2) ||
+|  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapter 1, 2) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture1.pdf) |
 |  Sep 05 | Numeric Attributes (Chapter 2) ||
 |  Sep 09 | High Dimensional Data I (Chapter 6) ||
 |  Sep 12 | High Dimensional Data II (Chapter 6)  ||
