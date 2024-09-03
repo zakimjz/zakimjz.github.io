@@ -4853,3 +4853,33 @@ customlinkgithubcode={https://github.com/Namir0806/FLAG},
   abstract={The advent of large language models (LLMs) has initiated much research into their various financial applications. However, in applying LLMs on long documents, semantic relations are not explicitly incorporated, and a full or arbitrarily sparse attention operation is employed. In recent years, progress has been made in Abstract Meaning Representation (AMR), which is a graph-based representation of text to preserve its semantic relations. Since AMR can represent semantic relationships at a deeper level, it can be beneficially utilized by graph neural networks (GNNs) for constructing effective document-level graph representations built upon LLM embeddings to predict target metrics in the financial domain. We propose FLAG: Financial Long document classification via AMR-based GNN, an AMR graph based framework to generate document-level embeddings for long financial document classification. We construct document-level graphs from sentence-level AMR graphs, endow them with specialized LLM word embeddings in the financial domain, apply a deep learning mechanism that utilizes a GNN, and examine the efficacy of our AMR-based approach in predicting labeled target data from long financial documents. Extensive experiments are conducted on a dataset of quarterly earnings calls transcripts of companies in various sectors of the economy, as well as on a corpus of more recent earnings calls of companies in the S&P 1500 Composite Index. We find that our AMR-based approach outperforms fine-tuning LLMs directly on text in predicting stock price movement trends at different time horizons in both datasets. Our work also outperforms previous work utilizing document graphs and GNNs for text classification},
 }
 
+
+@inproceedings{2024-cikm,
+    title = {LLaVA-Chef: A Multi-modal Generative Model for Food Recipes},
+    author = {Fnu Mohbat and Mohammed J. Zaki},
+    booktitle = {ACM Conference on Information and Knowledge Management
+                 (CIKM)},
+    doi={https://doi.org/10.1145/3627673.3679562},
+    fulltext={http://www.cs.rpi.edu/~zaki/PaperDir/CIKM24.pdf},
+    customlinkgithubcode={https://github.com/mohbattharani/LLaVA-Chef},
+    year={2024},
+    abstract={n the rapidly evolving landscape of online recipe sharing within
+a globalized context, there has been a notable surge in research
+towards comprehending and generating food recipes. Recent advancements in large language models (LLMs) like GPT-2 [40] and
+LLaVA [ 32 ] have paved the way for Natural Language Processing
+(NLP) approaches to delve deeper into various facets of food-related
+tasks, encompassing ingredient recognition and comprehensive
+recipe generation. Despite impressive performance and multi-modal
+adaptability of LLMs, domain-specific training remains paramount
+for their effective application. This work evaluates existing LLMs
+for recipe generation and proposes LLaVA-Chef, a novel model
+trained on a curated dataset of diverse recipe prompts in a multistage approach. First, we refine the mapping of visual food image
+embeddings to the language space. Second, we adapt LLaVA to the
+food domain by fine-tuning it on relevant recipe data. Third, we
+utilize diverse prompts to enhance the model’s recipe comprehension. Finally, we improve the linguistic quality of generated recipes
+by penalizing the model with a custom loss function. LLaVA-Chef
+demonstrates impressive improvements over pretrained LLMs and
+prior works. A detailed qualitative analysis reveals that LLaVA-Chef
+generates more detailed recipes with precise ingredient mentions,
+compared to existing approaches.},
+}
