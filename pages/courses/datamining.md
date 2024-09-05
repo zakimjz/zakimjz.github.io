@@ -39,7 +39,7 @@ below.
 | :--- | :---  | ---: |
 |  Aug 29 | **NO CLASS** | |
 |  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapter 1, 2) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture1.pdf) |
-|  Sep 05 | Numeric Attributes (Chapter 2) ||
+|  Sep 05 | Numeric Attributes (Chapter 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture2.pdf) |
 |  Sep 09 | High Dimensional Data I (Chapter 6) ||
 |  Sep 12 | High Dimensional Data II (Chapter 6)  ||
 |  Sep 16 | PCA (Chapter 7) ||
