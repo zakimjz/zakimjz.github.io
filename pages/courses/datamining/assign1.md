@@ -129,6 +129,7 @@ $\lambda_2$.
 ## Part III. Paper/Pencil Exercises
 
 Submit your solutions to the following questions:
+
 * Chapter 2: Q9, Q12
 * Chapter 7: Q1, Q2
 
