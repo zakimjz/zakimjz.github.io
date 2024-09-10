@@ -17,12 +17,11 @@
 <meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign1/">
 <meta property="og:description" content="Assign1
 Due Date: Sep 15th (Fri), before midnight (11:59:59PM EDT)
-Download the Wine Quality
+Download the Steel Industry Energy Consumption
 Dataset from the UCI
-Machine Learning repository. Extract the winequality-red.csv datafile that
-records 12 ">
+Machine Learning repository. Extract the Steel_industry_data.csv ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2023-09-06T13:51:00-04:00">
+<meta property="article:published_time" content="2024-09-06T13:51:00-04:00">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
 </head>
 <body>
@@ -78,13 +77,13 @@ bg-dark
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <h2>Assign1</h2>
 <p><strong>Due Date</strong>: Sep 15th (Fri), before midnight (11:59:59PM EDT)</p>
-<p>Download the <a href="https://archive.ics.uci.edu/dataset/186/wine+quality">Wine Quality
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption">Steel Industry Energy Consumption
 Dataset</a> from the UCI
-Machine Learning repository. Extract the winequality-red.csv datafile that
-records 12 attributes about 1599 instances of red wine. You should parse and
-store the data as a data matrix, after ignoring the last "quality"
-attribute, which is an integer valued target variable. Thus, your data matrix
-will have 1599 points with 11 dimensions.</p>
+Machine Learning repository. Extract the Steel_industry_data.csv datafile that
+records 11 attributes about 35040 instances. You should parse and
+store the data as a data matrix, focusing only on the 6 continuous
+attributes. Thus, your data matrix
+will have 35040 points in 6 dimensions.</p>
 <p>You must submit a self-contained jupyter notebook, with all of your <strong>code
 and output</strong>. You must use NumPy, with well known/inbuilt libraries for data
 input (e.g., pandas). Plots must be in inline mode (i.e., embedded) in the
@@ -113,104 +112,23 @@ between the centered points (see Eq. (2.39)).  This is the row view.</p>
 numpy cov function (make sure to set rowvar as False and bias as True).</p>
 <h4>d. Correlation matrix</h4>
 <p>Compute the correlation matrix for this dataset using the formula for the
-cosine between centered attribute vectors (see Eq. (2.30)). </p>
+cosine between centered attribute vectors (see Eq. (2.30)).</p>
 <p>Output which attribute pairs are i) the most correlated, ii) the most
 anti-correlated, and iii) the least correlated or uncorrelated?
 Create the scatter plots for these three interesting pairs and visually
 confirm the trends, i.e., describe how each of the three cases results in a
 particular type of plot.</p>
-<h3>Part II: Mean via Gradient Descent (50 points)</h3>
-<p>In class, we saw how the mean is the point that minimizes the sum of squared
-distance to all the points in the dataset. Here, we will find the mean via
-stochastic gradient descent, i.e., updating the estimate using the gradient
-information from a single random point each time (or a mini-batch of
-points).</p>
-<h4>(CSCI 4390 Only) Stochastic Gradient Descent (SGD)</h4>
-<p>Assume we want to find the point $\mathbf{z}$ that optimizes the squared
-distance objective, but based on a single point $\mathbf{x}_i$. The 
-gradient of the objective 
-$$J = \frac{1}{2}||\mathbf{x_i} - \mathbf{z}||^2$$
-is given as<br>
-$$\nabla = \frac{\partial J}{\partial \mathbf{z}} = \mathbf{z} -
-\mathbf{x}_i$$</p>
-<p>To get to the minimum point, we have to update the current estimate of
-$\mathbf{z}$ by taking a small step $\eta &gt; 0$ in a direction opposite to the
-gradient $\nabla$, given as
-$$ \mathbf{z} = \mathbf{z} - \eta \cdot \nabla$$
-Or, 
-$$\mathbf{z} = \mathbf{z} - \eta  (\mathbf{z} - \mathbf{x}_i) $$</p>
-<p>So, starting from a random $\mathbf{z}$ vector, we can repeatedly sample a
-single point from the data matrix (via, say, numpy random.choice function),
-and update $\mathbf{z}$ using the equation above. </p>
-<p>To test for convergence, we compute the norm of the
-difference between the previous value of $\mathbf{z}$ and its updated value,
-and stop if the difference falls below a threshold $\epsilon$.</p>
-<p>Implement this SGD algorithm, and show how close is the gradient descent
-estimate of the mean from the actual sample mean. Show the estimated mean, and the
-norm of its difference from the actual mean. </p>
-<p>To make this work you have to carefully choose the values of the step size
-$\eta$ and the convergence threshold $\epsilon$. Note that if you make $\eta$
-too small then you do not get good estimates, and if you make $\epsilon$ too
-small you may never converge. You have to find a balance.</p>
-<h4>(CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)</h4>
-<p>You will implement the SGD, but using a mini-batch of points, rather than a
-single point. Assume you sample a batch of $B$ points (say, $B=100$) from the data (can be
-done using the numpy random.choice function). Then
-the objective is given as</p>
-<p>$$J = \frac{1}{2} \sum_{i=1}^B ||\mathbf{x}_i - \mathbf{z}||^2$$</p>
-<p>And the gradient is given as 
-$$\nabla = B \cdot \mathbf{z} - \sum_{i=1}^B \mathbf{x}_i $$</p>
-<p>So, starting from a random estimate of $\mathbf{z}$ you can use batches of
-$B$ random points to update the estimate, using the same gradient descent
-equation, but adjusted to reflect that now you are working with $B$ points,
-and adjusting $\eta$ accordingly:
-$$\mathbf{z} = \mathbf{z} - \frac{\eta}{B} \cdot \nabla$$
-Or
-$$\mathbf{z} = \mathbf{z} - \eta
-\cdot \mathbf{z} + \frac{\eta}{B} \sum_{i=1}^B \mathbf{x}_i $$</p>
-<p>To test for convergence, we compute the norm of the
-difference between the previous value of $\mathbf{z}$ and its updated value,
-and stop if the difference falls below a threshold $\epsilon$.</p>
-<p>Implement this algorithm, and show the estimated solution, as
-well as the difference (norm) from the sample mean. To make this work you
-have to carefully choose the values of the step size $\eta$ and the
-convergence threshold $\epsilon$.</p>
-<h3>Part III: Eigenvectors and Principal Components (50 Points)</h3>
-<h4>a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue</h4>
-<p>Compute the dominant eigenvalue and eigenvector of the covariance matrix
-$\mathbf{\Sigma}$ via the power-iteration method, as described below.</p>
-<p>Start from a random vector $\mathbf{x}_0 \in \mathbf{R}^d$, where $d$ is the
-number of dimensions, and normalize it to be a unit vector. Set $t=0$ ($t$
-denotes the iteration number).</p>
-<p>Next compute the updated vector by left multiplication with the covariance
-matrix:</p>
-<p>$$\mathbf{x}_{t+1} = \mathbf{\Sigma} \mathbf{x}_t$$</p>
-<p>Record the ratio of the value of an element in the updated vector with
-respect to the previous vector ((for, say, the max valued element and same index) 
--- this is the estimate for the eigenvalue.
-After computing the ratio, normalize $\mathbf{x}_{t+1}$ to be a unit vector,
-increment $t$, and repeat this process. </p>
-<p>To test convergence, compute the norm of the difference between the previous
-and updated vector (before normalization step), and stop if this norm falls below some threshold
-$\epsilon$.</p>
-<p>Print out $\mathbf{u}_1$  and $\lambda_1$.
-You can verify your answer using numpy linalg.eigh function.</p>
-<p>Once you have obtained the dominant eigenvector, $\mathbf{u}_1$ project each
-of the original data points $\mathbf{x}_i$ onto this vector, and plot the
-coordinates for the new points along this principal component "direction".</p>
-<p>Separately, plot your estimate for the eigenvalue $\lambda_1$ as a function of $t$.</p>
-<p>Finally, compute the variance of the projected points along $\mathbf{u}_1$.
-What is its relationship to $\lambda_1$.</p>
-<h4>b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues</h4>
+<h3>Part II: Eigenvectors and Principal Components (50 Points)</h3>
+<h4>a. First Two Eigenvectors and Eigenvalues</h4>
 <p>Compute the first two eigenvectors of the covariance matrix
-$\mathbf{\Sigma}$ using a generalization of the power-iteration method. </p>
+$\mathbf{\Sigma}$ using a generalization of the power-iteration method.</p>
 <p>Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current estimate, where $t$ is the step number. We will iteratively orthogonalize,
 normalize, and left multiply with $\mathbf{\Sigma}$. That is, first orthogonalize the second column with respect to the first one by subtracting its projection along the first column (see section 1.3.3 in chapter 1). After orthogonalizing, normalize both columns to be unit length, and then do the left multiplication</p>
 <p>$$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$</p>
 <p>To get the eigenvalues, compute the ratio of the values in both columns
-after to before update (for, say, the max valued element and same index). 
+after to before update (for, say, the max valued element and same index).
 These denote the current estimates for each of the
-corresponding eigenvalues, $\lambda_1$ and $\lambda_2$. 
+corresponding eigenvalues, $\lambda_1$ and $\lambda_2$.
 After computing the ratios, orthogonalize and normalize the vectors,
 and repeat the above steps until convergence.</p>
 <p>To test for convergence, compute the Frobenius norm between
@@ -219,7 +137,7 @@ threshold $\epsilon$ then we stop. Both matrices are assumed to be
 orthogonalized and normalized.</p>
 <p>Once you have obtained the two eigenvectors $\mathbf{u}_1$ and
 $\mathbf{u}_2$, (scalar) project each of the original data points $\mathbf{x}_i$ onto
-those two vectors, and plot these projected points in the two new dimensions. </p>
+those two vectors, and plot these projected points in the two new dimensions.</p>
 <p>Print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
 $\lambda_2$.
 You can verify your answer using numpy linalg.eigh function.</p>
@@ -233,12 +151,12 @@ $\lambda_2$.</p>
 should be self-contained, i.e., it should include all output from all the
 parts, including figures. It should not hardcode file paths, but rather
 assume that the csv datafile is in the current directory, so only the csv
-filename should be used. Do not submit the datafile. </p>
+filename should be used. Do not submit the datafile.</p>
 <p>If you decide to consult ChatGPT (or other similar AI tools), you must
-declare this, and submit a separate text/doc/PDF file documenting your
+declare this in your notebook, with a brief text description of your
 successes and failures, e.g., what prompts you tried, what worked, what did
-not work, how you fixed it, etc. Name this file
-<strong>declaration.[txt/pdf/doc]</strong>, choosing the correct extension.</p>
+not work, how you fixed it, etc. Include this as a markdown cell in your
+notebook.</p>
 <p>For those not that familiar with python or NumPy, you may search online for
 tutorials, e.g. <a href="https://docs.python.org/3/tutorial">Python tutorial</a> or
 <a href="https://numpy.org/doc/stable">NumPy</a>.</p>

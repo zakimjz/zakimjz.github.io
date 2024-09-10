@@ -184,9 +184,7 @@ $t	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof 
 $t	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f
 $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:k.anonymousObject5440d2c69205
 (CSCI 4390 Only) Stochastic Gradient Descent (SGD)	cache/pages/courses/datamining/assign1.html	/^<h3>(CSCI 4390 Only) Stochastic Gradient Descent (SGD)<\/h3>$/;"	j
-(CSCI 4390 Only) Stochastic Gradient Descent (SGD)	pages/courses/datamining/assign1.md	/^### (CSCI 4390 Only) Stochastic Gradient Descent (SGD)$/;"	S	section:Assign1""Part II: Mean via Gradient Descent (50 points)
 (CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)	cache/pages/courses/datamining/assign1.html	/^<h3>(CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)<\/h3>$/;"	j
-(CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)	pages/courses/datamining/assign1.md	/^### (CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)$/;"	S	section:Assign1""Part II: Mean via Gradient Descent (50 points)
 *	output/assets/css/all-nocdn.css	/^    *, *:before, *:after {$/;"	s
 *	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 *	output/assets/css/all.css	/^    *, *:before, *:after {$/;"	s
@@ -11866,18 +11864,17 @@ Part I: Basic Stats (50 Points)	pages/courses/datamining/assign1.md	/^## Part I:
 Part I: Logistic Regression	cache/pages/courses/datamining/assign3.html	/^<h2>Part I: Logistic Regression<\/h2>$/;"	i
 Part I: Logistic Regression	output/courses/datamining/dm_assign3/index.html	/^<h3>Part I: Logistic Regression<\/h3>$/;"	j
 Part I: Logistic Regression	pages/courses/datamining/assign3.md	/^## Part I: Logistic Regression$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
+Part II: Eigenvectors and Principal Components (50 Points)	pages/courses/datamining/assign1.md	/^## Part II: Eigenvectors and Principal Components (50 Points)$/;"	s	chapter:Assign1
 Part II: Linear Regression via QR Factorization	cache/pages/courses/datamining/assign2.html	/^<h2>Part II: Linear Regression via QR Factorization<\/h2>$/;"	i
 Part II: Linear Regression via QR Factorization	output/courses/datamining/dm_assign2/index.html	/^<h3>Part II: Linear Regression via QR Factorization<\/h3>$/;"	j
 Part II: Linear Regression via QR Factorization	pages/courses/datamining/assign2.md	/^## Part II: Linear Regression via QR Factorization$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
 Part II: Mean via Gradient Descent (50 points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part II: Mean via Gradient Descent (50 points)<\/h2>$/;"	i
 Part II: Mean via Gradient Descent (50 points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part II: Mean via Gradient Descent (50 points)<\/h3>$/;"	j
-Part II: Mean via Gradient Descent (50 points)	pages/courses/datamining/assign1.md	/^## Part II: Mean via Gradient Descent (50 points)$/;"	s	chapter:Assign1
 Part II: Neural Networks from Scratch	cache/pages/courses/datamining/assign3.html	/^<h2>Part II: Neural Networks from Scratch<\/h2>$/;"	i
 Part II: Neural Networks from Scratch	output/courses/datamining/dm_assign3/index.html	/^<h3>Part II: Neural Networks from Scratch<\/h3>$/;"	j
 Part II: Neural Networks from Scratch	pages/courses/datamining/assign3.md	/^## Part II: Neural Networks from Scratch$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
 Part III: Eigenvectors and Principal Components (50 Points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part III: Eigenvectors and Principal Components (50 Points)<\/h2>$/;"	i
 Part III: Eigenvectors and Principal Components (50 Points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part III: Eigenvectors and Principal Components (50 Points)<\/h3>$/;"	j
-Part III: Eigenvectors and Principal Components (50 Points)	pages/courses/datamining/assign1.md	/^## Part III: Eigenvectors and Principal Components (50 Points)$/;"	s	chapter:Assign1
 Plugin	plugins/publication_list/publication_list.py	/^class Plugin(RestExtension):$/;"	c
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220200
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220600
@@ -12470,27 +12467,27 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1725566749.481551$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1725566749.5451968$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1725566748.872751$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1725566748.9824018$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1725566748.901544$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1725566749.055344$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1725566749.0211651$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1725566748.8332155$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1725566749.383863$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1725566749.4193082$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1725566749.511706$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1725566749.609751$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1725566749.083863$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1725566749.1193526$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1725566749.4492905$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1725566749.216058$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1725566749.183647$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1725566748.9501739$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1725566749.1500473$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1725566749.577223$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1725566748.9245903$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1725917434.4052558$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1725917434.4945755$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1725917434.4656286$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1725917434.5624917$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1725917434.6929417$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1725917434.7505338$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1725917434.5258977$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1725917435.2038128$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1725917434.6064796$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1725917434.6386209$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1725917434.4341247$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1725917435.134476$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1725917434.6655903$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1725917434.8205183$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1725917434.7218544$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1725917434.9363909$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1725917434.9077775$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1725917434.8784344$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1725917434.847574$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1725917434.7792044$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1725917434.9712286$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
@@ -12626,7 +12623,7 @@ a	themes/zen/assets/css/theme.css	/^  a,$/;"	s
 a	themes/zen/assets/css/theme.css	/^a {$/;"	s
 a	themes/zen/assets/css/theme.css	/^a,$/;"	s
 a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue	cache/pages/courses/datamining/assign1.html	/^<h3>a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue<\/h3>$/;"	j
-a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue	pages/courses/datamining/assign1.md	/^### a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue$/;"	S	section:Assign1""Part III: Eigenvectors and Principal Components (50 Points)
+a. First Two Eigenvectors and Eigenvalues	pages/courses/datamining/assign1.md	/^### a. First Two Eigenvectors and Eigenvalues$/;"	S	section:Assign1""Part II: Eigenvectors and Principal Components (50 Points)
 a. Mean	cache/pages/courses/datamining/assign1.html	/^<h3>a. Mean<\/h3>$/;"	j
 a. Mean	pages/courses/datamining/assign1.md	/^### a. Mean$/;"	S	section:Assign1""Part I: Basic Stats (50 Points)
 a.anchor-link:link	output/assets/css/ipython.min.css	/^*\/.ansi-black-fg{color:#3e424d}.ansi-black-bg{background-color:#3e424d}.ansi-black-intense-fg{c/;"	c
@@ -15014,9 +15011,8 @@ b	themes/mybootstrap/css/bootstrap.min.css	/^ *\/\/*! normalize.css v3.0.3 | MIT
 b	themes/mybootstrap/js/bootstrap.js	/^    b: [],$/;"	p	variable:anonymousFunction8d4196223b00.DefaultWhitelist
 b	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	p	variable:anonymousFunctione90b7f743b00.r
 b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues	cache/pages/courses/datamining/assign1.html	/^<h3>b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues<\/h3>$/;"	j
-b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues	pages/courses/datamining/assign1.md	/^### b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues$/;"	S	section:Assign1""Part III: Eigenvectors and Principal Components (50 Points)
 b. Variance	cache/pages/courses/datamining/assign1.html	/^<h3>b. Variance<\/h3>$/;"	j
-b. Variance	pages/courses/datamining/assign1.md	/^### b. Variance $/;"	S	section:Assign1""Part I: Basic Stats (50 Points)
+b. Variance	pages/courses/datamining/assign1.md	/^### b. Variance$/;"	S	section:Assign1""Part I: Basic Stats (50 Points)
 backdrop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
 backdrop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628b05
 backdrop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae8f05
