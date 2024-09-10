@@ -25,7 +25,7 @@ and output**. You must use NumPy, with well known/inbuilt libraries for data
 input (e.g., pandas). Plots must be in inline mode (i.e., embedded) in the
 notebook, using matplotlib.
 
-## Part I: Basic Stats (50 Points)
+## Part I: Basic Stats
 
 ### a. Mean
 
@@ -73,9 +73,7 @@ confirm the trends, i.e., describe how each of the three cases results in a
 particular type of plot.
 
 
-## Part II: Eigenvectors and Principal Components (50 Points)
-
-### a. First Two Eigenvectors and Eigenvalues
+## Part II: Eigenvectors and Principal Components
 
 Compute the first two eigenvectors of the covariance matrix
 $\mathbf{\Sigma}$ using the power-iteration method.
@@ -128,6 +126,18 @@ Finally, compute the variance of the projected points along $\mathbf{u}_1$
 and $\mathbf{u}_2$. What is their relationship to $\lambda_1$ and
 $\lambda_2$.
 
+## Part III. Paper/Pencil Exercises
+
+Submit your solutions to the following questions:
+* Chapter 2: Q9, Q12
+* Chapter 7: Q1, Q2
+
+**CSCI6390 Only**: In addition do: Chapter 2, Q10; Chapter 7, Q6.
+
+You can write out the solutions on paper, take an image and attach it so it
+displays in your notebook. For example, you can call "from IPython.display import Image", and then use 
+Image("<IMG_NAME>"). 
+
 ## Submission
 
 Submit your notebook via submitty, named **assign1.ipynb**. The notebook
@@ -135,6 +145,9 @@ should be self-contained, i.e., it should include all output from all the
 parts, including figures. It should not hardcode file paths, but rather
 assume that the csv datafile is in the current directory, so only the csv
 filename should be used. Do not submit the datafile.
+
+For the paper-pencil questions, embed the image in your notebook, and also
+submit the image file along with the notebook file.
 
 If you decide to consult ChatGPT (or other similar AI tools), you must
 declare this in your notebook, with a brief text description of your

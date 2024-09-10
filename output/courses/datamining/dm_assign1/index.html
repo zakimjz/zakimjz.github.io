@@ -87,7 +87,7 @@ will have 35040 points in 6 dimensions.</p>
 and output</strong>. You must use NumPy, with well known/inbuilt libraries for data
 input (e.g., pandas). Plots must be in inline mode (i.e., embedded) in the
 notebook, using matplotlib.</p>
-<h3>Part I: Basic Stats (50 Points)</h3>
+<h3>Part I: Basic Stats</h3>
 <h4>a. Mean</h4>
 <p>Compute the sample mean vector $\mathbf{\mu}$ for the data matrix using the
 column view in $\mathbf{R}^n$. That is, project the attribute vectors $X_j$
@@ -119,8 +119,7 @@ anti-correlated, and iii) the least correlated or uncorrelated?
 Create the scatter plots for these three interesting pairs and visually
 confirm the trends, i.e., describe how each of the three cases results in a
 particular type of plot.</p>
-<h3>Part II: Eigenvectors and Principal Components (50 Points)</h3>
-<h4>a. First Two Eigenvectors and Eigenvalues</h4>
+<h3>Part II: Eigenvectors and Principal Components</h3>
 <p>Compute the first two eigenvectors of the covariance matrix
 $\mathbf{\Sigma}$ using the power-iteration method.</p>
 <p>Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero
@@ -160,12 +159,22 @@ those two vectors, and plot these projected points in the two new dimensions (yo
 <p>Finally, compute the variance of the projected points along $\mathbf{u}_1$
 and $\mathbf{u}_2$. What is their relationship to $\lambda_1$ and
 $\lambda_2$.</p>
+<h3>Part III. Paper/Pencil Exercises</h3>
+<p>Submit your solutions to the following questions:
+* Chapter 2: Q9, Q12
+* Chapter 7: Q1, Q2</p>
+<p><strong>CSCI6390 Only</strong>: In addition do: Chapter 2, Q10; Chapter 7, Q6.</p>
+<p>You can write out the solutions on paper, take an image and attach it so it
+displays in your notebook. For example, you can call "from IPython.display import Image", and then use 
+Image("<img_name>"). </img_name></p>
 <h3>Submission</h3>
 <p>Submit your notebook via submitty, named <strong>assign1.ipynb</strong>. The notebook
 should be self-contained, i.e., it should include all output from all the
 parts, including figures. It should not hardcode file paths, but rather
 assume that the csv datafile is in the current directory, so only the csv
 filename should be used. Do not submit the datafile.</p>
+<p>For the paper-pencil questions, embed the image in your notebook, and also
+submit the image file along with the notebook file.</p>
 <p>If you decide to consult ChatGPT (or other similar AI tools), you must
 declare this in your notebook, with a brief text description of your
 successes and failures, e.g., what prompts you tried, what worked, what did

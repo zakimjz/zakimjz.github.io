@@ -11858,13 +11858,13 @@ Part I a): Points in High Dimensional Space	pages/courses/datamining/assign2.md	
 Part I b): High Dimensional Normal Distribution	cache/pages/courses/datamining/assign2.html	/^<h2>Part I b): High Dimensional Normal Distribution<\/h2>$/;"	i
 Part I b): High Dimensional Normal Distribution	output/courses/datamining/dm_assign2/index.html	/^<h3>Part I b): High Dimensional Normal Distribution<\/h3>$/;"	j
 Part I b): High Dimensional Normal Distribution	pages/courses/datamining/assign2.md	/^## Part I b): High Dimensional Normal Distribution$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
+Part I: Basic Stats	pages/courses/datamining/assign1.md	/^## Part I: Basic Stats$/;"	s	chapter:Assign1
 Part I: Basic Stats (50 Points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part I: Basic Stats (50 Points)<\/h2>$/;"	i
 Part I: Basic Stats (50 Points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part I: Basic Stats (50 Points)<\/h3>$/;"	j
-Part I: Basic Stats (50 Points)	pages/courses/datamining/assign1.md	/^## Part I: Basic Stats (50 Points)$/;"	s	chapter:Assign1
 Part I: Logistic Regression	cache/pages/courses/datamining/assign3.html	/^<h2>Part I: Logistic Regression<\/h2>$/;"	i
 Part I: Logistic Regression	output/courses/datamining/dm_assign3/index.html	/^<h3>Part I: Logistic Regression<\/h3>$/;"	j
 Part I: Logistic Regression	pages/courses/datamining/assign3.md	/^## Part I: Logistic Regression$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
-Part II: Eigenvectors and Principal Components (50 Points)	pages/courses/datamining/assign1.md	/^## Part II: Eigenvectors and Principal Components (50 Points)$/;"	s	chapter:Assign1
+Part II: Eigenvectors and Principal Components	pages/courses/datamining/assign1.md	/^## Part II: Eigenvectors and Principal Components$/;"	s	chapter:Assign1
 Part II: Linear Regression via QR Factorization	cache/pages/courses/datamining/assign2.html	/^<h2>Part II: Linear Regression via QR Factorization<\/h2>$/;"	i
 Part II: Linear Regression via QR Factorization	output/courses/datamining/dm_assign2/index.html	/^<h3>Part II: Linear Regression via QR Factorization<\/h3>$/;"	j
 Part II: Linear Regression via QR Factorization	pages/courses/datamining/assign2.md	/^## Part II: Linear Regression via QR Factorization$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
@@ -11873,6 +11873,7 @@ Part II: Mean via Gradient Descent (50 points)	output/courses/datamining/dm_assi
 Part II: Neural Networks from Scratch	cache/pages/courses/datamining/assign3.html	/^<h2>Part II: Neural Networks from Scratch<\/h2>$/;"	i
 Part II: Neural Networks from Scratch	output/courses/datamining/dm_assign3/index.html	/^<h3>Part II: Neural Networks from Scratch<\/h3>$/;"	j
 Part II: Neural Networks from Scratch	pages/courses/datamining/assign3.md	/^## Part II: Neural Networks from Scratch$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
+Part III. Paper/Pencil Exercises	pages/courses/datamining/assign1.md	/^## Part III. Paper\/Pencil Exercises$/;"	s	chapter:Assign1
 Part III: Eigenvectors and Principal Components (50 Points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part III: Eigenvectors and Principal Components (50 Points)<\/h2>$/;"	i
 Part III: Eigenvectors and Principal Components (50 Points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part III: Eigenvectors and Principal Components (50 Points)<\/h3>$/;"	j
 Plugin	plugins/publication_list/publication_list.py	/^class Plugin(RestExtension):$/;"	c
@@ -12623,9 +12624,8 @@ a	themes/zen/assets/css/theme.css	/^  a,$/;"	s
 a	themes/zen/assets/css/theme.css	/^a {$/;"	s
 a	themes/zen/assets/css/theme.css	/^a,$/;"	s
 a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue	cache/pages/courses/datamining/assign1.html	/^<h3>a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue<\/h3>$/;"	j
-a. First Two Eigenvectors and Eigenvalues	pages/courses/datamining/assign1.md	/^### a. First Two Eigenvectors and Eigenvalues$/;"	S	section:Assign1""Part II: Eigenvectors and Principal Components (50 Points)
 a. Mean	cache/pages/courses/datamining/assign1.html	/^<h3>a. Mean<\/h3>$/;"	j
-a. Mean	pages/courses/datamining/assign1.md	/^### a. Mean$/;"	S	section:Assign1""Part I: Basic Stats (50 Points)
+a. Mean	pages/courses/datamining/assign1.md	/^### a. Mean$/;"	S	section:Assign1""Part I: Basic Stats
 a.anchor-link:link	output/assets/css/ipython.min.css	/^*\/.ansi-black-fg{color:#3e424d}.ansi-black-bg{background-color:#3e424d}.ansi-black-intense-fg{c/;"	c
 a.badge-danger.focus	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	c
 a.badge-danger.focus	output/assets/css/bootstrap.min.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	c
@@ -15012,7 +15012,7 @@ b	themes/mybootstrap/js/bootstrap.js	/^    b: [],$/;"	p	variable:anonymousFuncti
 b	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	p	variable:anonymousFunctione90b7f743b00.r
 b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues	cache/pages/courses/datamining/assign1.html	/^<h3>b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues<\/h3>$/;"	j
 b. Variance	cache/pages/courses/datamining/assign1.html	/^<h3>b. Variance<\/h3>$/;"	j
-b. Variance	pages/courses/datamining/assign1.md	/^### b. Variance$/;"	S	section:Assign1""Part I: Basic Stats (50 Points)
+b. Variance	pages/courses/datamining/assign1.md	/^### b. Variance$/;"	S	section:Assign1""Part I: Basic Stats
 backdrop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
 backdrop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628b05
 backdrop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae8f05
