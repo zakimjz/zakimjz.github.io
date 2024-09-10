@@ -130,14 +130,12 @@ $\lambda_2$.
 
 Submit your solutions to the following questions:
 
-* Chapter 2: Q9, Q12
-* Chapter 7: Q1, Q2
-
-**CSCI6390 Only**: In addition do: Chapter 2, Q10; Chapter 7, Q6.
+* Chapter 2: Q9, Q12, in addition CSCI6390 students must also do Q10
+* Chapter 7: Q1, Q2, in addition CSCI6390 students must also do Q6
 
 You can write out the solutions on paper, take an image and attach it so it
-displays in your notebook. For example, you can call "from IPython.display import Image", and then use 
-Image("<IMG_NAME>"). 
+displays in your notebook. For example, you can call "from IPython.display import Image", and then use
+Image("<IMG_NAME>").
 
 ## Submission
 
