@@ -11,14 +11,13 @@
 
 # Assign1
 
-**Due Date**: Sep 15th (Fri), before midnight (11:59:59PM EDT)
+**Due Date**: Sep 17th (Tue), before midnight (11:59:59PM EDT)
 
 Download the [Steel Industry Energy Consumption
 Dataset](https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption) from the UCI
-Machine Learning repository. Extract the Steel_industry_data.csv datafile that
-records 11 attributes about 35040 instances. You should parse and
+Machine Learning repository. Extract the Steel_industry_data.csv datafile. You should parse and
 store the data as a data matrix, focusing only on the 6 continuous
-attributes. Thus, your data matrix
+attributes (see datafile or link above for names/descriptions). Thus, your data matrix
 will have 35040 points in 6 dimensions.
 
 You must submit a self-contained jupyter notebook, with all of your **code
@@ -31,9 +30,9 @@ notebook, using matplotlib.
 ### a. Mean
 
 Compute the sample mean vector $\mathbf{\mu}$ for the data matrix using the
-column view in $\mathbf{R}^n$. That is, project each attribute vector $X_j$
-onto the ones vector $\mathbf{1}$. Verify the answer using the numpy mean
-function.
+column view in $\mathbf{R}^n$. That is, project the attribute vectors $X_j$
+onto the ones vector $\mathbf{1}$. Use matrix operations instead of a for
+loop. Verify the answer using the numpy mean function.
 
 ### b. Variance
 
@@ -51,7 +50,7 @@ variance.
 
 Compute the sample covariance matrix  $\mathbf{\Sigma}$ as **inner
 products** between the attributes of the centered data matrix (see Eq.
-(2.38) in chapter 2).  This is the column view.
+(2.38) in chapter 2). Use matrix operations. This is the column view.
 
 Next, compute the sample covariance matrix as sum of the **outer products**
 between the centered points (see Eq. (2.39)).  This is the row view.
@@ -63,7 +62,9 @@ numpy cov function (make sure to set rowvar as False and bias as True).
 ###d. Correlation matrix
 
 Compute the correlation matrix for this dataset using the formula for the
-cosine between centered attribute vectors (see Eq. (2.30)).
+cosine between centered attribute vectors (see Eq. (2.30)), i.e., dot
+products between normalized and centered attribute vectors; use matrix
+operations.
 
 Output which attribute pairs are i) the most correlated, ii) the most
 anti-correlated, and iii) the least correlated or uncorrelated?
@@ -77,36 +78,51 @@ particular type of plot.
 ### a. First Two Eigenvectors and Eigenvalues
 
 Compute the first two eigenvectors of the covariance matrix
-$\mathbf{\Sigma}$ using a generalization of the power-iteration method.
+$\mathbf{\Sigma}$ using the power-iteration method.
 
-Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current estimate, where $t$ is the step number. We will iteratively orthogonalize,
-normalize, and left multiply with $\mathbf{\Sigma}$. That is, first orthogonalize the second column with respect to the first one by subtracting its projection along the first column (see section 1.3.3 in chapter 1). After orthogonalizing, normalize both columns to be unit length, and then do the left multiplication
+Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero
+$d$-dimensional column vectors, and let $\mathbf{X}_t$ be the current
+estimate for the eigenvectors, where $t$ is the step number.
+
+We will iteratively orthogonalize,
+normalize, and left multiply with $\mathbf{\Sigma}$. That is, first
+orthogonalize the second column with respect to the first one by
+subtracting its projection along the first column (see section 1.3.3 in
+chapter 1). After orthogonalizing, normalize both columns to be unit
+length, and then do the left multiplication
 
 $$\mathbf{X}_{t+1} = \mathbf{\Sigma} \; \mathbf{X}_t$$
 
-To get the eigenvalues, compute the ratio of the values in both columns
-after to before update (for, say, the max valued element and same index).
+The matrix $\mathbf{X}_t$ will contain the first two eigenvectors after
+convergence.
+
+To get the eigenvalues, compute the ratio of the values in a column
+after versus before the update (for, say, the max valued element).
 These denote the current estimates for each of the
-corresponding eigenvalues, $\lambda_1$ and $\lambda_2$.
-After computing the ratios, orthogonalize and normalize the vectors,
+corresponding eigenvalues, $\lambda_1$ and $\lambda_2$ (store these
+estimates for plotting below).
+Next, orthogonalize and normalize the vectors,
 and repeat the above steps until convergence.
 
 To test for convergence, compute the Frobenius norm between
 $\mathbf{X}_{t+1}$ and $\mathbf{X}_t$. If the difference is less than some
-threshold $\epsilon$ then we stop. Both matrices are assumed to be
+threshold $\epsilon$ (say $10^{-6}$) then stop. Both matrices are assumed to be
 orthogonalized and normalized.
 
 
 Once you have obtained the two eigenvectors $\mathbf{u}_1$ and
-$\mathbf{u}_2$, (scalar) project each of the original data points $\mathbf{x}_i$ onto
-those two vectors, and plot these projected points in the two new dimensions.
-
-Print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
+$\mathbf{u}_2$,
+print out $\mathbf{u}_1$ and $\mathbf{u}_2$, and $\lambda_1$ and
 $\lambda_2$.
-You can verify your answer using numpy linalg.eigh function.
+You can verify your answer using numpy linalg.eigh function (note that this
+function prints them from smallest to largest, so you should reverse the
+order; and note that the eigenvectors are columns, not rows).
 
-Separately, plot the graphs for the estimates of $\lambda_1$ and $\lambda_2$
+Next, plot the graphs for the estimates of $\lambda_1$ and $\lambda_2$
 as a function of $t$.
+Furthermore, (scalar) project each of the original data points $\mathbf{x}_i$ onto
+those two vectors, and plot these projected points in the two new dimensions (you should try to use matrix operations for this).
+
 
 Finally, compute the variance of the projected points along $\mathbf{u}_1$
 and $\mathbf{u}_2$. What is their relationship to $\lambda_1$ and
