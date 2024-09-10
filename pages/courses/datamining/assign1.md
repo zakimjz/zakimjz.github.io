@@ -135,7 +135,7 @@ Submit your solutions to the following questions:
 
 You can write out the solutions on paper, take an image and attach it so it
 displays in your notebook. For example, you can call "from IPython.display import Image", and then use
-Image("<IMG_NAME>").
+Image("IMG_NAME").
 
 ## Submission
 
