@@ -103,7 +103,9 @@ Next, orthogonalize and normalize the vectors,
 and repeat the above steps until convergence.
 
 To test for convergence, compute the Frobenius norm between
-$\mathbf{X}_{t+1}$ and $\mathbf{X}_t$. If the difference is less than some
+$\mathbf{X}_{t+1}$ and $\mathbf{X}_t$; this can be computed using
+**np.linalg.norm** for the difference between these two matrices.
+If the difference is less than some
 threshold $\epsilon$ (say $10^{-6}$) then stop. Both matrices are assumed to be
 orthogonalized and normalized.
 
