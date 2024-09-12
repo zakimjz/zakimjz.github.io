@@ -42,7 +42,7 @@ below.
 |  Sep 03 (Tue) |  Data Matrix/Numeric Attributes (Chapter 1, 2) | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture1.pdf) |
 |  Sep 05 | Numeric Attributes (Chapter 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture2.pdf) |
 |  Sep 09 | Eigenvectors |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture3.pdf) |
-|  Sep 12 | PCA (Chapter 7)  ||
+|  Sep 12 | PCA (Chapter 7)  |[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture4.pdf) |
 |  Sep 16 | High Dimensional Data I (Chapter 6)||
 |  Sep 19 | High Dimensional Data II (Chapter 6) ||
 |  Sep 23 | Pattern Mining I (Chapter 8)  ||

@@ -183,8 +183,6 @@ $e	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof
 $t	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f
 $t	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f
 $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:k.anonymousObject5440d2c69205
-(CSCI 4390 Only) Stochastic Gradient Descent (SGD)	cache/pages/courses/datamining/assign1.html	/^<h3>(CSCI 4390 Only) Stochastic Gradient Descent (SGD)<\/h3>$/;"	j
-(CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)	cache/pages/courses/datamining/assign1.html	/^<h3>(CSCI 6390 Only) Mini-batch Stochastic Gradient Descent (SGD)<\/h3>$/;"	j
 *	output/assets/css/all-nocdn.css	/^    *, *:before, *:after {$/;"	s
 *	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 *	output/assets/css/all.css	/^    *, *:before, *:after {$/;"	s
@@ -11224,36 +11222,18 @@ Assign1	pages/courses/datamining/assign1.md	/^# Assign1$/;"	c
 Assign1: Transcription Factor Binding via MLP	cache/pages/courses/mlib/assign1.html	/^<h1>Assign1: Transcription Factor Binding via MLP<\/h1>$/;"	h
 Assign1: Transcription Factor Binding via MLP	output/courses/mlib/mlib_assign1/index.html	/^    <h2>Assign1: Transcription Factor Binding via MLP<\/h2>$/;"	i
 Assign1: Transcription Factor Binding via MLP	pages/courses/mlib/assign1.md	/^# Assign1: Transcription Factor Binding via MLP$/;"	c
-Assign2: High Dimensional Data and Linear Regression	cache/pages/courses/datamining/assign2.html	/^<h1>Assign2: High Dimensional Data and Linear Regression<\/h1>$/;"	h
-Assign2: High Dimensional Data and Linear Regression	output/courses/datamining/dm_assign2/index.html	/^    <h2>Assign2: High Dimensional Data and Linear Regression<\/h2>$/;"	i
-Assign2: High Dimensional Data and Linear Regression	pages/courses/datamining/assign2.md	/^# Assign2: High Dimensional Data and Linear Regression$/;"	c
 Assign2: Transcription Factor Binding via LSTMs and CNNs	cache/pages/courses/mlib/assign2.html	/^<h1>Assign2: Transcription Factor Binding via LSTMs and CNNs<\/h1>$/;"	h
 Assign2: Transcription Factor Binding via LSTMs and CNNs	output/courses/mlib/mlib_assign2/index.html	/^    <h2>Assign2: Transcription Factor Binding via LSTMs and CNNs<\/h2>$/;"	i
 Assign2: Transcription Factor Binding via LSTMs and CNNs	pages/courses/mlib/assign2.md	/^# Assign2: Transcription Factor Binding via LSTMs and CNNs$/;"	c
-Assign3: Logistic Regression and Neural Networks	cache/pages/courses/datamining/assign3.html	/^<h1>Assign3: Logistic Regression and Neural Networks<\/h1>$/;"	h
-Assign3: Logistic Regression and Neural Networks	output/courses/datamining/dm_assign3/index.html	/^    <h2>Assign3: Logistic Regression and Neural Networks<\/h2>$/;"	i
-Assign3: Logistic Regression and Neural Networks	pages/courses/datamining/assign3.md	/^# Assign3: Logistic Regression and Neural Networks$/;"	c
 Assign3: Protein Embeddings	cache/pages/courses/mlib/assign3.html	/^<h1>Assign3: Protein Embeddings<\/h1>$/;"	h
 Assign3: Protein Embeddings	output/courses/mlib/mlib_assign3/index.html	/^    <h2>Assign3: Protein Embeddings<\/h2>$/;"	i
 Assign3: Protein Embeddings	pages/courses/mlib/assign3.md	/^# Assign3: Protein Embeddings$/;"	c
-Assign4: Decision Trees	cache/pages/courses/datamining/assign4.html	/^<h1>Assign4: Decision Trees<\/h1>$/;"	h
-Assign4: Decision Trees	output/courses/datamining/dm_assign4/index.html	/^    <h2>Assign4: Decision Trees<\/h2>$/;"	i
-Assign4: Decision Trees	pages/courses/datamining/assign4.md	/^# Assign4: Decision Trees$/;"	c
 Assign4: Protein Contextual Embeddings via BERT	cache/pages/courses/mlib/assign4.html	/^<h1>Assign4: Protein Contextual Embeddings via BERT<\/h1>$/;"	h
 Assign4: Protein Contextual Embeddings via BERT	output/courses/mlib/mlib_assign4/index.html	/^    <h2>Assign4: Protein Contextual Embeddings via BERT<\/h2>$/;"	i
 Assign4: Protein Contextual Embeddings via BERT	pages/courses/mlib/assign4.md	/^# Assign4: Protein Contextual Embeddings via BERT$/;"	c
 Assign5: Graph Neural Networks	cache/pages/courses/mlib/assign5.html	/^<h1>Assign5: Graph Neural Networks<\/h1>$/;"	h
 Assign5: Graph Neural Networks	output/courses/mlib/mlib_assign5/index.html	/^    <h2>Assign5: Graph Neural Networks<\/h2>$/;"	i
 Assign5: Graph Neural Networks	pages/courses/mlib/assign5.md	/^# Assign5: Graph Neural Networks$/;"	c
-Assign5: Pattern Mining and Clustering	cache/pages/courses/datamining/assign5.html	/^<h1>Assign5: Pattern Mining and Clustering<\/h1>$/;"	h
-Assign5: Pattern Mining and Clustering	output/courses/datamining/dm_assign5/index.html	/^    <h2>Assign5: Pattern Mining and Clustering<\/h2>$/;"	i
-Assign5: Pattern Mining and Clustering	pages/courses/datamining/assign5.md	/^# Assign5: Pattern Mining and Clustering$/;"	c
-Assign6: Clustering: Density and Spectral	cache/pages/courses/datamining/assign6.html	/^<h1>Assign6: Clustering: Density and Spectral<\/h1>$/;"	h
-Assign6: Clustering: Density and Spectral	output/courses/datamining/dm_assign6/index.html	/^    <h2>Assign6: Clustering: Density and Spectral<\/h2>$/;"	i
-Assign6: Clustering: Density and Spectral	pages/courses/datamining/assign6.md	/^# Assign6: Clustering: Density and Spectral$/;"	c
-Assign7: RNNs	cache/pages/courses/datamining/assign7.html	/^<h1>Assign7: RNNs<\/h1>$/;"	h
-Assign8: Clustering: EM and K-Means	cache/pages/courses/datamining/assign8.html	/^<h1>Assign8: Clustering: EM and K-Means<\/h1>$/;"	h
-Assign9: Clustering: Density and MCL	cache/pages/courses/datamining/assign9.html	/^<h1>Assign9: Clustering: Density and MCL<\/h1>$/;"	h
 Assignments	cache/pages/courses/datamining.html	/^<h2>Assignments<\/h2>$/;"	i
 Assignments	cache/pages/courses/mlib.html	/^<h2>Assignments<\/h2>$/;"	i
 Assignments	output/courses/datamining/index.html	/^<h3>Assignments<\/h3>$/;"	j
@@ -11335,25 +11315,10 @@ CSCI2300 Syllabus	output/courses/algorithms/algo_syllabus/index.html	/^<article 
 CSCI2300 Syllabus | Zaki Home Page	output/courses/algorithms/algo_syllabus/index.html	/^<title>CSCI2300 Syllabus  | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Assign1	output/courses/datamining/dm_assign1/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4390-6390 Assign1 | Zaki Home Page	output/courses/datamining/dm_assign1/index.html	/^<title>CSCI4390-6390 Assign1 | Zaki Home Page<\/title>$/;"	j
-CSCI4390-6390 Assign2	output/courses/datamining/dm_assign2/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
-CSCI4390-6390 Assign2 | Zaki Home Page	output/courses/datamining/dm_assign2/index.html	/^<title>CSCI4390-6390 Assign2 | Zaki Home Page<\/title>$/;"	j
-CSCI4390-6390 Assign3	output/courses/datamining/dm_assign3/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
-CSCI4390-6390 Assign3 | Zaki Home Page	output/courses/datamining/dm_assign3/index.html	/^<title>CSCI4390-6390 Assign3 | Zaki Home Page<\/title>$/;"	j
-CSCI4390-6390 Assign4	output/courses/datamining/dm_assign4/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
-CSCI4390-6390 Assign4 | Zaki Home Page	output/courses/datamining/dm_assign4/index.html	/^<title>CSCI4390-6390 Assign4 | Zaki Home Page<\/title>$/;"	j
-CSCI4390-6390 Assign5	output/courses/datamining/dm_assign5/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
-CSCI4390-6390 Assign5 | Zaki Home Page	output/courses/datamining/dm_assign5/index.html	/^<title>CSCI4390-6390 Assign5 | Zaki Home Page<\/title>$/;"	j
-CSCI4390-6390 Assign6	output/courses/datamining/dm_assign6/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
-CSCI4390-6390 Assign6 | Zaki Home Page	output/courses/datamining/dm_assign6/index.html	/^<title>CSCI4390-6390 Assign6 | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Data Mining	output/courses/datamining/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4390-6390 Data Mining | Zaki Home Page	output/courses/datamining/index.html	/^<title>CSCI4390-6390 Data Mining | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Syllabus	output/courses/datamining/dm_syllabus/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4390-6390 Syllabus | Zaki Home Page	output/courses/datamining/dm_syllabus/index.html	/^<title>CSCI4390-6390 Syllabus | Zaki Home Page<\/title>$/;"	j
-CSCI4390/6390: Density Clustering	cache/pages/courses/datamining/assign6.html	/^<h1>CSCI4390\/6390: Density Clustering<\/h1>$/;"	h
-CSCI4390/6390: Density Clustering	cache/pages/courses/datamining/assign9.html	/^<h1>CSCI4390\/6390: Density Clustering<\/h1>$/;"	h
-CSCI4390/6390: Density Clustering	output/courses/datamining/dm_assign6/index.html	/^<h2>CSCI4390\/6390: Density Clustering<\/h2>$/;"	i
-CSCI4390/6390: Density Clustering	pages/courses/datamining/assign6.md	/^# CSCI4390\/6390: Density Clustering$/;"	c
-CSCI4390/6390: Expectation Maximization Clustering	cache/pages/courses/datamining/assign8.html	/^<h1>CSCI4390\/6390: Expectation Maximization Clustering<\/h1>$/;"	h
 CSCI4949-6969 Assign3	output/courses/mlib/mlib_assign3/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4949-6969 Assign3 | Zaki Home Page	output/courses/mlib/mlib_assign3/index.html	/^<title>CSCI4949-6969 Assign3 | Zaki Home Page<\/title>$/;"	j
 CSCI4949-6969 Assign4	output/courses/mlib/mlib_assign4/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
@@ -11376,11 +11341,6 @@ CSCI4969-6969 Machine Learning in Bioinformatics	output/courses/mlib/index.html	
 CSCI4969-6969 Machine Learning in Bioinformatics | Zaki Home Page	output/courses/mlib/index.html	/^<title>CSCI4969-6969 Machine Learning in Bioinformatics  | Zaki Home Page<\/title>$/;"	j
 CSCI4969-6969 Syllabus	output/courses/mlib/mlib_syllabus/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4969-6969 Syllabus | Zaki Home Page	output/courses/mlib/mlib_syllabus/index.html	/^<title>CSCI4969-6969 Syllabus  | Zaki Home Page<\/title>$/;"	j
-CSCI6390 Only: K-Means	cache/pages/courses/datamining/assign8.html	/^<h1>CSCI6390 Only: K-Means<\/h1>$/;"	h
-CSCI6390 Only: Markov Clustering (MCL)	cache/pages/courses/datamining/assign9.html	/^<h1>CSCI6390 Only: Markov Clustering (MCL)<\/h1>$/;"	h
-CSCI6390 Only: Spectral Clustering	cache/pages/courses/datamining/assign6.html	/^<h1>CSCI6390 Only: Spectral Clustering<\/h1>$/;"	h
-CSCI6390 Only: Spectral Clustering	output/courses/datamining/dm_assign6/index.html	/^<h2>CSCI6390 Only: Spectral Clustering<\/h2>$/;"	i
-CSCI6390 Only: Spectral Clustering	pages/courses/datamining/assign6.md	/^# CSCI6390 Only: Spectral Clustering$/;"	c
 CST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c6e405
 Callbacks	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	c	variable:S
 Callbacks	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	c	variable:S
@@ -11407,9 +11367,6 @@ Class Schedule: Lectures	pages/courses/datamining.md	/^## Class Schedule: Lectur
 Class schedule	cache/pages/courses/mlib.html	/^<h2>Class schedule<\/h2>$/;"	i
 Class schedule	output/courses/mlib/index.html	/^<h3>Class schedule<\/h3>$/;"	j
 Class schedule	pages/courses/mlib.md	/^## Class schedule$/;"	s
-Closed Itemset Mining	cache/pages/courses/datamining/assign5.html	/^<h1>Closed Itemset Mining<\/h1>$/;"	h
-Closed Itemset Mining	output/courses/datamining/dm_assign5/index.html	/^<h2>Closed Itemset Mining<\/h2>$/;"	i
-Closed Itemset Mining	pages/courses/datamining/assign5.md	/^# Closed Itemset Mining$/;"	c
 Cn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	c	function:k
 Collapse	themes/mybootstrap/js/bootstrap.js	/^  Collapse.prototype.dimension = function () {$/;"	c
 Collapse	themes/mybootstrap/js/bootstrap.js	/^  var Collapse = function (element, options) {$/;"	c	function:anonymousFunction8d4196226900
@@ -11504,9 +11461,6 @@ Evaluation	cache/pages/courses/mlib/assign4.html	/^<h1>Evaluation<\/h1>$/;"	h
 Evaluation	output/courses/mlib/mlib_assign4/index.html	/^<h2>Evaluation<\/h2>$/;"	i
 Evaluation	pages/courses/mlib/assign4.md	/^# Evaluation$/;"	c
 Example	plugins/publication_list/README.md	/^## Example$/;"	s	chapter:Publication List
-Expectation Maximization Clustering	cache/pages/courses/datamining/assign5.html	/^<h1>Expectation Maximization Clustering<\/h1>$/;"	h
-Expectation Maximization Clustering	output/courses/datamining/dm_assign5/index.html	/^<h2>Expectation Maximization Clustering<\/h2>$/;"	i
-Expectation Maximization Clustering	pages/courses/datamining/assign5.md	/^# Expectation Maximization Clustering$/;"	c
 F	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"function"==typeof define&&define.amd?define(t):"object"==typeof exp/;"	c	function:anonymousFunctionc4d0dcb618a00
 F	output/assets/js/baguetteBox.min.js	/^!function(e,t){"use strict";"function"==typeof define&&define.amd?define(t):"object"==typeof exp/;"	c
 F	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	c	function:k
@@ -11852,30 +11806,15 @@ PSEUDO	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==ty
 PSEUDO	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	property:ue.ce.fe.anonymousObjecte21246b04305.preFilter
 PSEUDO	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b01605
 PST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c6e405
-Part I a): Points in High Dimensional Space	cache/pages/courses/datamining/assign2.html	/^<h2>Part I a): Points in High Dimensional Space<\/h2>$/;"	i
-Part I a): Points in High Dimensional Space	output/courses/datamining/dm_assign2/index.html	/^<h3>Part I a): Points in High Dimensional Space<\/h3>$/;"	j
-Part I a): Points in High Dimensional Space	pages/courses/datamining/assign2.md	/^## Part I a): Points in High Dimensional Space$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
-Part I b): High Dimensional Normal Distribution	cache/pages/courses/datamining/assign2.html	/^<h2>Part I b): High Dimensional Normal Distribution<\/h2>$/;"	i
-Part I b): High Dimensional Normal Distribution	output/courses/datamining/dm_assign2/index.html	/^<h3>Part I b): High Dimensional Normal Distribution<\/h3>$/;"	j
-Part I b): High Dimensional Normal Distribution	pages/courses/datamining/assign2.md	/^## Part I b): High Dimensional Normal Distribution$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
+Part I: Basic Stats	cache/pages/courses/datamining/assign1.html	/^<h2>Part I: Basic Stats<\/h2>$/;"	i
+Part I: Basic Stats	output/courses/datamining/dm_assign1/index.html	/^<h3>Part I: Basic Stats<\/h3>$/;"	j
 Part I: Basic Stats	pages/courses/datamining/assign1.md	/^## Part I: Basic Stats$/;"	s	chapter:Assign1
-Part I: Basic Stats (50 Points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part I: Basic Stats (50 Points)<\/h2>$/;"	i
-Part I: Basic Stats (50 Points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part I: Basic Stats (50 Points)<\/h3>$/;"	j
-Part I: Logistic Regression	cache/pages/courses/datamining/assign3.html	/^<h2>Part I: Logistic Regression<\/h2>$/;"	i
-Part I: Logistic Regression	output/courses/datamining/dm_assign3/index.html	/^<h3>Part I: Logistic Regression<\/h3>$/;"	j
-Part I: Logistic Regression	pages/courses/datamining/assign3.md	/^## Part I: Logistic Regression$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
+Part II: Eigenvectors and Principal Components	cache/pages/courses/datamining/assign1.html	/^<h2>Part II: Eigenvectors and Principal Components<\/h2>$/;"	i
+Part II: Eigenvectors and Principal Components	output/courses/datamining/dm_assign1/index.html	/^<h3>Part II: Eigenvectors and Principal Components<\/h3>$/;"	j
 Part II: Eigenvectors and Principal Components	pages/courses/datamining/assign1.md	/^## Part II: Eigenvectors and Principal Components$/;"	s	chapter:Assign1
-Part II: Linear Regression via QR Factorization	cache/pages/courses/datamining/assign2.html	/^<h2>Part II: Linear Regression via QR Factorization<\/h2>$/;"	i
-Part II: Linear Regression via QR Factorization	output/courses/datamining/dm_assign2/index.html	/^<h3>Part II: Linear Regression via QR Factorization<\/h3>$/;"	j
-Part II: Linear Regression via QR Factorization	pages/courses/datamining/assign2.md	/^## Part II: Linear Regression via QR Factorization$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
-Part II: Mean via Gradient Descent (50 points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part II: Mean via Gradient Descent (50 points)<\/h2>$/;"	i
-Part II: Mean via Gradient Descent (50 points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part II: Mean via Gradient Descent (50 points)<\/h3>$/;"	j
-Part II: Neural Networks from Scratch	cache/pages/courses/datamining/assign3.html	/^<h2>Part II: Neural Networks from Scratch<\/h2>$/;"	i
-Part II: Neural Networks from Scratch	output/courses/datamining/dm_assign3/index.html	/^<h3>Part II: Neural Networks from Scratch<\/h3>$/;"	j
-Part II: Neural Networks from Scratch	pages/courses/datamining/assign3.md	/^## Part II: Neural Networks from Scratch$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
+Part III. Paper/Pencil Exercises	cache/pages/courses/datamining/assign1.html	/^<h2>Part III. Paper\/Pencil Exercises<\/h2>$/;"	i
+Part III. Paper/Pencil Exercises	output/courses/datamining/dm_assign1/index.html	/^<h3>Part III. Paper\/Pencil Exercises<\/h3>$/;"	j
 Part III. Paper/Pencil Exercises	pages/courses/datamining/assign1.md	/^## Part III. Paper\/Pencil Exercises$/;"	s	chapter:Assign1
-Part III: Eigenvectors and Principal Components (50 Points)	cache/pages/courses/datamining/assign1.html	/^<h2>Part III: Eigenvectors and Principal Components (50 Points)<\/h2>$/;"	i
-Part III: Eigenvectors and Principal Components (50 Points)	output/courses/datamining/dm_assign1/index.html	/^<h3>Part III: Eigenvectors and Principal Components (50 Points)<\/h3>$/;"	j
 Plugin	plugins/publication_list/publication_list.py	/^class Plugin(RestExtension):$/;"	c
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220200
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220600
@@ -11900,14 +11839,6 @@ Policy on Academic Honesty	cache/pages/courses/algorithms/hw7.html	/^<h2>Policy 
 Policy on Academic Honesty	cache/pages/courses/algorithms/hw8.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	cache/pages/courses/algorithms/hw9.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	cache/pages/courses/datamining/assign1.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign2.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign3.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign4.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign5.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign6.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign7.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign8.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
-Policy on Academic Honesty	cache/pages/courses/datamining/assign9.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	output/courses/algorithms/algo_hw1/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/algorithms/algo_hw10/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/algorithms/algo_hw2/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
@@ -11919,11 +11850,6 @@ Policy on Academic Honesty	output/courses/algorithms/algo_hw7/index.html	/^<h3>P
 Policy on Academic Honesty	output/courses/algorithms/algo_hw8/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/algorithms/algo_hw9/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/datamining/dm_assign1/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
-Policy on Academic Honesty	output/courses/datamining/dm_assign2/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
-Policy on Academic Honesty	output/courses/datamining/dm_assign3/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
-Policy on Academic Honesty	output/courses/datamining/dm_assign4/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
-Policy on Academic Honesty	output/courses/datamining/dm_assign5/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
-Policy on Academic Honesty	output/courses/datamining/dm_assign6/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	pages/courses/algorithms/hw1.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab1: Fibonacci Series
 Policy on Academic Honesty	pages/courses/algorithms/hw10.md	/^## Policy on Academic Honesty$/;"	s	chapter:Bonus
 Policy on Academic Honesty	pages/courses/algorithms/hw2.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab2: Integer Multiplication
@@ -11935,11 +11861,6 @@ Policy on Academic Honesty	pages/courses/algorithms/hw7.md	/^## Policy on Academ
 Policy on Academic Honesty	pages/courses/algorithms/hw8.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab8: Kruskal's Algorithm and Union-Find Data Structure
 Policy on Academic Honesty	pages/courses/algorithms/hw9.md	/^## Policy on Academic Honesty$/;"	s	chapter:Bonus
 Policy on Academic Honesty	pages/courses/datamining/assign1.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign1
-Policy on Academic Honesty	pages/courses/datamining/assign2.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
-Policy on Academic Honesty	pages/courses/datamining/assign3.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
-Policy on Academic Honesty	pages/courses/datamining/assign4.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign4: Decision Trees
-Policy on Academic Honesty	pages/courses/datamining/assign5.md	/^## Policy on Academic Honesty$/;"	s	chapter:Expectation Maximization Clustering
-Policy on Academic Honesty	pages/courses/datamining/assign6.md	/^## Policy on Academic Honesty$/;"	s	chapter:CSCI6390 Only: Spectral Clustering
 Popover	themes/mybootstrap/js/bootstrap.js	/^  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)$/;"	c
 Popover	themes/mybootstrap/js/bootstrap.js	/^  var Popover = function (element, options) {$/;"	c	function:anonymousFunction8d4196225000
 Prerequisites	cache/pages/courses/algorithms/syllabus.html	/^<h2>Prerequisites<\/h2>$/;"	i
@@ -12037,7 +11958,6 @@ ScrollSpy	themes/mybootstrap/js/bootstrap.js	/^  function ScrollSpy(element, opt
 ScrollSpy.DEFAULTS	themes/mybootstrap/js/bootstrap.js	/^  ScrollSpy.DEFAULTS = {$/;"	p
 Se	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	c
 Se	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	c
-Sep 1, Introduction, Data Matrix	cache/pages/courses/datamining/videos.html	/^<h1>Sep 1, Introduction, Data Matrix<\/h1>$/;"	h
 Sn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	c	function:k
 Speeding up recursive code via memoization	cache/pages/courses/algorithms/hw2.html	/^<h3>Speeding up recursive code via memoization<\/h3>$/;"	j
 Speeding up recursive code via memoization	pages/courses/algorithms/hw2.md	/^### Speeding up recursive code via memoization$/;"	S	chapter:Lab2: Integer Multiplication
@@ -12167,30 +12087,12 @@ WebkitTransition	themes/mybootstrap/js/bootstrap.min.js	/^if(this.$element.is(":
 Website and Announcements	cache/pages/courses/algorithms/syllabus.html	/^<h2>Website and Announcements<\/h2>$/;"	i
 Website and Announcements	output/courses/algorithms/algo_syllabus/index.html	/^<h3>Website and Announcements<\/h3>$/;"	j
 Website and Announcements	pages/courses/algorithms/syllabus.md	/^## Website and Announcements$/;"	s
-What to submit	cache/pages/courses/datamining/assign2.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign3.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign4.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign5.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign6.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign7.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign8.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	cache/pages/courses/datamining/assign9.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign0.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign1.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign2.html	/^<h2>What to submit<\/h2>$/;"	i
-What to submit	output/courses/datamining/dm_assign2/index.html	/^<h3>What to submit<\/h3>$/;"	j
-What to submit	output/courses/datamining/dm_assign3/index.html	/^<h3>What to submit<\/h3>$/;"	j
-What to submit	output/courses/datamining/dm_assign4/index.html	/^<h3>What to submit<\/h3>$/;"	j
-What to submit	output/courses/datamining/dm_assign5/index.html	/^<h3>What to submit<\/h3>$/;"	j
-What to submit	output/courses/datamining/dm_assign6/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign0/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign1/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign2/index.html	/^<h3>What to submit<\/h3>$/;"	j
-What to submit	pages/courses/datamining/assign2.md	/^## What to submit$/;"	s	chapter:Assign2: High Dimensional Data and Linear Regression
-What to submit	pages/courses/datamining/assign3.md	/^## What to submit$/;"	s	chapter:Assign3: Logistic Regression and Neural Networks
-What to submit	pages/courses/datamining/assign4.md	/^## What to submit$/;"	s	chapter:Assign4: Decision Trees
-What to submit	pages/courses/datamining/assign5.md	/^## What to submit$/;"	s	chapter:Expectation Maximization Clustering
-What to submit	pages/courses/datamining/assign6.md	/^## What to submit$/;"	s	chapter:CSCI6390 Only: Spectral Clustering
 What to submit	pages/courses/mlib/assign0.md	/^## What to submit$/;"	s	chapter:Assign0: CCNI User Forms and Amazon SageMaker Studio Lab
 What to submit	pages/courses/mlib/assign1.md	/^## What to submit$/;"	s	chapter:Assign1: Transcription Factor Binding via MLP
 What to submit	pages/courses/mlib/assign2.md	/^## What to submit$/;"	s	chapter:Assign2: Transcription Factor Binding via LSTMs and CNNs
@@ -12468,27 +12370,27 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1725917434.4052558$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1725917434.4945755$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1725917434.4656286$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1725917434.5624917$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1725917434.6929417$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1725917434.7505338$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1725917434.5258977$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1725917435.2038128$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1725917434.6064796$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1725917434.6386209$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1725917434.4341247$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1725917435.134476$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1725917434.6655903$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1725917434.8205183$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1725917434.7218544$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1725917434.9363909$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1725917434.9077775$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1725917434.8784344$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1725917434.847574$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1725917434.7792044$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1725917434.9712286$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1725939161.7345085$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1725939161.7883236$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1725939161.0555685$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1725939161.1847606$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1725939161.0852892$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1725939161.2652094$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1725939161.2285478$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1725939161.01596$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1725939161.818388$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1725939161.849403$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1725939161.760208$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1725939161.933369$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1725939161.2965403$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1725939161.9692667$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1725939161.8758802$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1725939162.0529983$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1725939162.024364$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1725939161.1486502$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1725939161.9946642$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1725939161.905135$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1725939161.1153738$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
@@ -12623,7 +12525,6 @@ a	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw n
 a	themes/zen/assets/css/theme.css	/^  a,$/;"	s
 a	themes/zen/assets/css/theme.css	/^a {$/;"	s
 a	themes/zen/assets/css/theme.css	/^a,$/;"	s
-a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue	cache/pages/courses/datamining/assign1.html	/^<h3>a. (CSCI-4390 Only): Dominant Eigenvector and Eigenvalue<\/h3>$/;"	j
 a. Mean	cache/pages/courses/datamining/assign1.html	/^<h3>a. Mean<\/h3>$/;"	j
 a. Mean	pages/courses/datamining/assign1.md	/^### a. Mean$/;"	S	section:Assign1""Part I: Basic Stats
 a.anchor-link:link	output/assets/css/ipython.min.css	/^*\/.ansi-black-fg{color:#3e424d}.ansi-black-bg{background-color:#3e424d}.ansi-black-intense-fg{c/;"	c
@@ -13002,8 +12903,8 @@ abstract-2024-tkdd	cache/pages/publications.html	/^                <div id="abst
 abstract-2024-tkdd	output/publications/index.html	/^                <div id="abstract-2024-tkdd" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-tmlr	cache/pages/publications.html	/^                <div id="abstract-2024-tmlr" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-tmlr	output/publications/index.html	/^                <div id="abstract-2024-tmlr" class="publication-abstract" style="display:none">$/;"	I
-abutsEnd	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-abutsStart	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+abutsEnd	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+abutsStart	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 accepts	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb618105
 accepts	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b018105
 access	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a205
@@ -14961,7 +14862,7 @@ article.post-text h1.entry-title	themes/zen/assets/css/theme.css	/^article.post-
 article.post-text h1.entry-title a	themes/zen/assets/css/theme.css	/^article.post-text h1.entry-title a {$/;"	s
 article.post-text h1.entry-title a:focus	themes/zen/assets/css/theme.css	/^article.post-text h1.entry-title a:focus {$/;"	s
 article.post-text h1.entry-title a:hover	themes/zen/assets/css/theme.css	/^article.post-text h1.entry-title a:hover,$/;"	s
-as	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+as	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 aside	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 aside	output/assets/css/bootstrap.min.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 aside	themes/mybootstrap/css/bootstrap.css	/^aside,$/;"	s
@@ -15010,7 +14911,6 @@ b	themes/mybootstrap/css/bootstrap.css	/^b,$/;"	s
 b	themes/mybootstrap/css/bootstrap.min.css	/^ *\/\/*! normalize.css v3.0.3 | MIT License | github.com\/necolas\/normalize.css *\/html{font-fa/;"	s
 b	themes/mybootstrap/js/bootstrap.js	/^    b: [],$/;"	p	variable:anonymousFunction8d4196223b00.DefaultWhitelist
 b	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	p	variable:anonymousFunctione90b7f743b00.r
-b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues	cache/pages/courses/datamining/assign1.html	/^<h3>b. (CSCI-6390 Only) First Two Eigenvectors and Eigenvalues<\/h3>$/;"	j
 b. Variance	cache/pages/courses/datamining/assign1.html	/^<h3>b. Variance<\/h3>$/;"	j
 b. Variance	pages/courses/datamining/assign1.md	/^### b. Variance$/;"	S	section:Assign1""Part I: Basic Stats
 backdrop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
@@ -15740,11 +15640,6 @@ blog-title	output/courses/algorithms/algo_hw9/index.html	/^            <span id=
 blog-title	output/courses/algorithms/algo_syllabus/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/algorithms/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/dm_assign1/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
-blog-title	output/courses/datamining/dm_assign2/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
-blog-title	output/courses/datamining/dm_assign3/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
-blog-title	output/courses/datamining/dm_assign4/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
-blog-title	output/courses/datamining/dm_assign5/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
-blog-title	output/courses/datamining/dm_assign6/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/dm_syllabus/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
@@ -15838,11 +15733,6 @@ bs-navbar	output/courses/algorithms/algo_hw9/index.html	/^        <div class="co
 bs-navbar	output/courses/algorithms/algo_syllabus/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/algorithms/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/dm_assign1/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
-bs-navbar	output/courses/datamining/dm_assign2/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
-bs-navbar	output/courses/datamining/dm_assign3/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
-bs-navbar	output/courses/datamining/dm_assign4/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
-bs-navbar	output/courses/datamining/dm_assign5/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
-bs-navbar	output/courses/datamining/dm_assign6/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/dm_syllabus/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
@@ -16153,7 +16043,7 @@ containerWidth	output/assets/js/gallery.min.js	/^function renderGallery(t,e){var
 containerWidth	output/assets/js/justified-layout.min.js	/^"use strict";var merge=require("merge"),Row=require(".\/row");function createNewRow(layoutConfig/;"	p	variable:anonymousObject271704620305.anonymousObject271704623705
 contains	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:ue.ce.fe.anonymousObjectc4d0dcb64305.pseudos
 contains	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:ue.ce.fe.anonymousObjecte21246b04305.pseudos
-contains	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+contains	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 content	cache/.mako.tmp/base.tmpl.py	/^        def content():$/;"	f	function:render_body	file:
 content	cache/.mako.tmp/base.tmpl.py	/^        def content():$/;"	f	function:render_content	file:
 content	cache/.mako.tmp/gallery.tmpl.py	/^        def content():$/;"	f	function:render_body	file:
@@ -16191,11 +16081,6 @@ content	output/courses/algorithms/algo_hw9/index.html	/^<\/nav><!-- End of Menub
 content	output/courses/algorithms/algo_syllabus/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/algorithms/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/dm_assign1/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
-content	output/courses/datamining/dm_assign2/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
-content	output/courses/datamining/dm_assign3/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
-content	output/courses/datamining/dm_assign4/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
-content	output/courses/datamining/dm_assign5/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
-content	output/courses/datamining/dm_assign6/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/dm_syllabus/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
@@ -16235,7 +16120,7 @@ converters	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"=
 converters	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b018105
 count	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"function"==typeof define&&define.amd?define(t):"object"==typeof exp/;"	p	variable:anonymousObjectc4d0dcb636f05
 count	output/assets/js/baguetteBox.min.js	/^!function(e,t){"use strict";"function"==typeof define&&define.amd?define(t):"object"==typeof exp/;"	p	variable:anonymousObject85ad2c8a1205
-count	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+count	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 courses	cache/pages/index.html	/^<section id="courses">$/;"	I
 courses	output/index.html	/^<section id="courses"><h2>Courses<\/h2>$/;"	I
 create	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:d
@@ -16444,9 +16329,9 @@ deva	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function
 dfn	themes/mybootstrap/css/bootstrap.css	/^dfn {$/;"	s
 dfn	themes/mybootstrap/css/bootstrap.min.css	/^ *\/\/*! normalize.css v3.0.3 | MIT License | github.com\/necolas\/normalize.css *\/html{font-fa/;"	s
 dfn	themes/zen/assets/css/theme.css	/^dfn,$/;"	s
-diff	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-diffNow	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-difference	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+diff	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+diffNow	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+difference	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 dimension	themes/mybootstrap/js/bootstrap.js	/^  Collapse.prototype.dimension = function () {$/;"	m	class:Collapse
 dimension	themes/mybootstrap/js/bootstrap.min.js	/^if(this.$element.is(":visible")){var e=this.$element.height(),o=this.options.offset,n=o.top,s=o./;"	m	class:o
 dir	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:ue.ce.fe.anonymousObjectc4d0dcb64305.relative. 
@@ -16715,7 +16600,7 @@ div.warning p	output/assets/css/nikola_rst.css	/^div.warning p, div.system-messa
 div.warning p.admonition-title	output/assets/css/all-nocdn.css	/^div.warning p.admonition-title, div.system-message p.system-message-title {$/;"	c
 div.warning p.admonition-title	output/assets/css/all.css	/^div.warning p.admonition-title, div.system-message p.system-message-title {$/;"	c
 div.warning p.admonition-title	output/assets/css/nikola_rst.css	/^div.warning p.admonition-title, div.system-message p.system-message-title {$/;"	c
-divideEqually	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+divideEqually	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 dl	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 dl	output/assets/css/bootstrap.min.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 dl	themes/mybootstrap/css/bootstrap.css	/^dl {$/;"	s
@@ -16988,10 +16873,10 @@ end	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof
 end	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00705
 end	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:c.fromDateTimes.anonymousObject5440d2c613a05
 end	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousObject8debe7e63e05.modifiers.shift.fn.l
-endOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+endOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 enforceFocus	themes/mybootstrap/js/bootstrap.js	/^  Modal.prototype.enforceFocus = function () {$/;"	m	class:Modal
 enforceFocus	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
-engulfs	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+engulfs	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 enter	themes/mybootstrap/js/bootstrap.js	/^  Tooltip.prototype.enter = function (obj) {$/;"	m	class:Tooltip
 enter	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:d
 enumerable	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousObjectc4d0dcb61d905
@@ -17007,7 +16892,6 @@ eq	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof
 eq	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:ue.ce.fe.anonymousObjecte21246b04305.pseudos
 equals	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:e
 equals	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-equals	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 equals	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:n
 er	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 era	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.S.f.anonymousObject5440d2c6c605
@@ -17015,7 +16899,6 @@ era	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function 
 era	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.eras.anonymousFunction5440d2c66900.e
 era	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.offset.anonymousObject5440d2c63105
 eras	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-eras	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 error	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb60f05
 error	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00f05
 escape	themes/mybootstrap/js/bootstrap.js	/^  Modal.prototype.escape = function () {$/;"	m	class:Modal
@@ -17091,7 +16974,7 @@ fast	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeo
 fast	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:S.fx.speeds
 fe	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f	function:ue.ce
 fe	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f	function:ue.ce
-features	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+features	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 ff	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.ke
 fff	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.ke
 ffff	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.ke
@@ -17379,11 +17262,6 @@ footer	output/courses/algorithms/algo_hw9/index.html	/^            <\/script><\/
 footer	output/courses/algorithms/algo_syllabus/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/algorithms/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/dm_assign1/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
-footer	output/courses/datamining/dm_assign2/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
-footer	output/courses/datamining/dm_assign3/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
-footer	output/courses/datamining/dm_assign4/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
-footer	output/courses/datamining/dm_assign5/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
-footer	output/courses/datamining/dm_assign6/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/dm_syllabus/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/index.html	/^<\/article><!--End of body content--><footer id="footer">$/;"	I
@@ -17898,12 +17776,12 @@ hasContent	themes/mybootstrap/js/bootstrap.js	/^  Popover.prototype.hasContent =
 hasContent	themes/mybootstrap/js/bootstrap.js	/^  Tooltip.prototype.hasContent = function () {$/;"	m	class:Tooltip
 hasContent	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:d
 hasContent	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
-hasDST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+hasDST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 hasData	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a205
 hasData	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
 hasData	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0a205
 hasData	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0a505
-hasSame	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+hasSame	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 has_content	plugins/publication_list/publication_list.py	/^    has_content = False$/;"	v	class:PublicationList
 he	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f	function:ue.ce.fe
 he	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	f	function:ue.ce.fe
@@ -18260,7 +18138,7 @@ insertBefore	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"objec
 instance	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61b000.e
 instance	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:e
 instance	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousFunction8debe7e60200.e
-intersection	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+intersection	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 interval	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb621b05
 interval	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb621c05
 interval	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae2005
@@ -18277,8 +18155,8 @@ invalid	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";funct
 ir	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k.anonymousFunction5440d2c61a600
 is	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb67905
 is	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b07905
-isAfter	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-isBefore	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+isAfter	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+isBefore	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 isBreakoutRow	output/assets/js/justified-layout.min.js	/^"use strict";var merge=require("merge"),Row=require(".\/row");function createNewRow(layoutConfig/;"	p	variable:anonymousObject271704620305.anonymousObject271704622c05
 isCreated	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61dc00.t.state
 isCreated	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	property:anonymousFunction8debe7e62e00.t.state
@@ -18290,7 +18168,7 @@ isDestroyed	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof
 isDuration	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:y
 isElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61fe00.d
 isElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunction3fa8e3ae0300.d
-isEmpty	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+isEmpty	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 isEmptyObject	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb60f05
 isEmptyObject	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00f05
 isEnglish	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
@@ -18315,7 +18193,7 @@ isSimulated	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"
 isSimulated	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d105
 isSimulated	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b014805.simulate.anonymousObjecte21246b014a05
 isSimulated	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d105
-isValidIANAZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+isValidIANAZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 isValidSpecifier	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:r
 isValidZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:r
 isWithContent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:a
@@ -18643,7 +18521,7 @@ legend	themes/mybootstrap/css/bootstrap.min.css	/^ *\/\/*! normalize.css v3.0.3 
 legend	themes/zen/assets/css/theme.css	/^legend,$/;"	s
 length	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb60705
 length	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b00705
-length	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+length	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 letterSpacing	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6f305
 letterSpacing	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0f305
 li	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb62c805.whiteList
@@ -19212,7 +19090,7 @@ map	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof
 map	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb60f05
 map	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00705
 map	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00f05
-mapEndpoints	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+mapEndpoints	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 mapUnits	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 margin	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6fa05
 margin	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0fa05
@@ -19253,7 +19131,6 @@ merge	output/assets/js/justified-layout.min.js	/^"use strict";var merge=require(
 merge	output/assets/js/justified-layout.min.js	/^var merge=require("merge");var Row=module.exports=function(params){this.top=params.top;this.left/;"	p	variable:anonymousObject271704620305.anonymousObject271704621805
 merge	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:c
 meridiems	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-meridiems	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 metaKey	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d205
 metaKey	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d205
 method	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb631b05
@@ -19285,7 +19162,6 @@ milliseconds	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";
 milliseconds	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:y.normalizeUnit.e
 min	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:p
 minus	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-minus	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 minute	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:anonymousObject5440d2c61ac05
 minute	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.Ze.e
 minute	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c618805
@@ -19381,7 +19257,6 @@ month	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";functio
 month	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.offset.anonymousObject5440d2c63305
 month	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:y.normalizeUnit.e
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	property:k.anonymousObject5440d2c6e705.quarters
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	property:k.anonymousObject5440d2c6e705.years
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	property:k.anonymousObject5440d2c6e805.quarters
@@ -19392,7 +19267,7 @@ months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";functi
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.tr.e
 months	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:y.normalizeUnit.e
 monthsCache	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	function:g.i
-monthsFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+monthsFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 mouseenter	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d505
 mouseenter	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d505
 mouseleave	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d505
@@ -19444,7 +19319,7 @@ needsContext	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object
 needsContext	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6c105.add.anonymousObjectc4d0dcb6c505
 needsContext	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b01605
 needsContext	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0c105.add.anonymousObjecte21246b0c505
-negate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+negate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 next	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb67e05
 next	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb61b05
 next	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:ue.ce.H
@@ -19509,9 +19384,9 @@ nonce	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typ
 nonce	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b00f05.globalEval.anonymousObjecte21246b01005
 noop	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb60f05
 noop	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00f05
-normalize	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+normalize	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 normalizeUnit	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	variable:y
-normalizeZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+normalizeZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 not	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb67905
 not	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	property:ue.ce.fe.anonymousObjectc4d0dcb64305.pseudos
 not	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b07905
@@ -19756,7 +19631,7 @@ output	themes/mybootstrap/css/bootstrap.css	/^output {$/;"	s
 output	themes/mybootstrap/css/bootstrap.min.css	/^ *\/\/*! normalize.css v3.0.3 | MIT License | github.com\/necolas\/normalize.css *\/html{font-fa/;"	s
 output	themes/zen/assets/css/theme.css	/^output,$/;"	s
 outputCalendar	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.reconfigure.anonymousObject5440d2c61d805
-overlaps	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+overlaps	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 overrideMimeType	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb616105.ajax.T
 overrideMimeType	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b016105.ajax.T
 p	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
@@ -19890,7 +19765,6 @@ placement	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery
 plt	listings/mlib/compute_phi_psi.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
 plt	output/listings/mlib/compute_phi_psi.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
 plus	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-plus	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 pn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k.anonymousFunction5440d2c613600
 pointerId	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d205
 pointerId	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d205
@@ -20333,7 +20207,7 @@ readyState	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"=
 readyState	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b016105.ajax.T
 readyWait	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb69e05
 readyWait	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b09e05
-reconfigure	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+reconfigure	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 recursive	output/assets/js/justified-layout.min.js	/^var merge=require("merge");var Row=module.exports=function(params){this.top=params.top;this.left/;"	f	variable:Public
 redefaultToEN	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 redefaultToSystem	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
@@ -20522,7 +20396,7 @@ replaceArrow	themes/mybootstrap/js/bootstrap.js	/^  Tooltip.prototype.replaceArr
 replaceArrow	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:d
 require	output/assets/js/justified-layout.min.js	/^require=function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeo/;"	f
 required_arguments	plugins/publication_list/publication_list.py	/^    required_arguments = 1$/;"	v	class:PublicationList
-rescale	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+rescale	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 reset	output/assets/css/all-nocdn.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 reset	output/assets/css/bootstrap.min.css	/^ *\/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange/;"	s
 reset	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:ue.ce.fe.anonymousObjectc4d0dcb65d05
@@ -20536,7 +20410,7 @@ resetScrollbar	themes/mybootstrap/js/bootstrap.js	/^  Modal.prototype.resetScrol
 resetScrollbar	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
 resize	themes/mybootstrap/js/bootstrap.js	/^  Modal.prototype.resize = function () {$/;"	m	class:Modal
 resize	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
-resolvedLocaleOptions	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+resolvedLocaleOptions	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 resolvedOptions	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:e
 resolvedOptions	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 result	output/assets/js/justified-layout.min.js	/^var merge=require("merge");var Row=module.exports=function(params){this.top=params.top;this.left/;"	M	variable:anonymousObject271704620305
@@ -20752,7 +20626,6 @@ selector	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)
 selector	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	p	variable:anonymousObjecte90b7f744305
 semanticscholar	pages/index.rst	/^.. _semanticscholar: https:\/\/www.semanticscholar.org\/author\/1693515$/;"	T	chapter:Publications and Software
 semanticscholar	pages/index.rst	/^.. |semanticscholar| image:: \/images\/semanticscholar.png$/;"	d	chapter:Publications and Software
-sep-1-introduction-data-matrix	cache/pages/courses/datamining/videos.html	/^<div class="section" id="sep-1-introduction-data-matrix">$/;"	I
 serialize	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb615705
 serialize	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b015705
 serializeArray	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb615705
@@ -20784,14 +20657,14 @@ setContent	themes/mybootstrap/js/bootstrap.js	/^  Popover.prototype.setContent =
 setContent	themes/mybootstrap/js/bootstrap.js	/^  Tooltip.prototype.setContent = function () {$/;"	m	class:Tooltip
 setContent	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:d
 setContent	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
-setLocale	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+setLocale	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 setRequestHeader	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb616105.ajax.T
 setRequestHeader	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b016105.ajax.T
 setScrollbar	themes/mybootstrap/js/bootstrap.js	/^  Modal.prototype.setScrollbar = function () {$/;"	m	class:Modal
 setScrollbar	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
 setState	themes/mybootstrap/js/bootstrap.js	/^  Button.prototype.setState = function (state) {$/;"	m	class:Button
 setState	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
-setZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+setZone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 set_site	plugins/publication_list/publication_list.py	/^    def set_site(self, site):$/;"	m	class:Plugin
 setup	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	property:S.event.special
 setup	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	property:anonymousObjectc4d0dcb6ce05.click
@@ -20801,8 +20674,8 @@ shift	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof export
 shift	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	property:anonymousObject8debe7e63e05.modifiers
 shiftKey	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d205
 shiftKey	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d205
-shiftTo	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-shiftToAll	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+shiftTo	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+shiftToAll	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 shivCSS	output/assets/js/html5.js	/^!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a/;"	p	variable:anonymousObjectbcfe36280b05
 shivCSS	output/assets/js/html5shiv-printshiv.min.js	/^!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a/;"	p	variable:anonymousObject83120c280b05
 shivDocument	output/assets/js/html5.js	/^!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a/;"	p	variable:anonymousObjectbcfe36280b05
@@ -20901,8 +20774,8 @@ specificOffset	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict
 specificOffset	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c619205
 splice	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb60705
 splice	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b00705
-splitAt	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-splitBy	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+splitAt	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+splitBy	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 spring-2020	cache/pages/courses.html	/^<section id="spring-2020">$/;"	I
 spring-2020	output/courses/index.html	/^<\/ul><\/section><section id="spring-2020"><h2>Spring 2020<\/h2>$/;"	I
 src	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousFunctionc4d0dcb618300.anonymousFunctionc4d0dcb618400.anonymousObjectc4d0dcb618605
@@ -20917,7 +20790,7 @@ standalone	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";fu
 start	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb61ec05.modifiers.shift.fn.l
 start	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:c.fromDateTimes.anonymousObject5440d2c613a05
 start	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousObject8debe7e63e05.modifiers.shift.fn.l
-startOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+startOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 startTime	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb610705
 startTime	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b010705
 startX	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"function"==typeof define&&define.amd?define(t):"object"==typeof exp/;"	p	variable:anonymousObjectc4d0dcb636f05
@@ -21298,42 +21171,35 @@ to	themes/mybootstrap/js/bootstrap.js	/^  Carousel.prototype.to = function (pos)
 to	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+functio/;"	m	class:i
 toArray	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb60705
 toArray	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b00705
-toBSON	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toDuration	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toBSON	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toDuration	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toElement	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb6d205
 toElement	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b0d205
 toFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toHTTP	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toHTTP	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toHuman	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toISO	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toISO	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toISODate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toISODate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toISOTime	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toISOTime	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toISOWeekDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toJSDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toISOWeekDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toJSDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toJSON	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toJSON	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toLocal	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toLocaleParts	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toLocaleString	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toLocal	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toLocaleParts	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toLocaleString	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toMessage	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	m	class:t
 toMillis	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toMillis	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 toObject	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toObject	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toRFC2822	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toRelative	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toRelativeCalendar	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toSQL	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toSQLDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toSQLTime	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toSeconds	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toRFC2822	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toRelative	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toRelativeCalendar	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toSQL	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toSQLDate	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toSQLTime	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toSeconds	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toString	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-toString	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toUTC	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
-toUnixInteger	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+toUTC	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
+toUnixInteger	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 toggle	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6b805
 toggle	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 toggle	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb624e05
@@ -21564,11 +21430,11 @@ unbind	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typ
 unbind	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b01a505
 undelegate	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb61a505
 undelegate	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b01a505
-union	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+union	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 unit	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.toRelative.anonymousObject5440d2c620f05
 units	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.toRelative.anonymousObject5440d2c620f05
 units	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.toRelativeCalendar.anonymousObject5440d2c621505
-until	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+until	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 unwrap	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb616e05
 unwrap	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b016e05
 update	listings/mlib/compute_phi_psi.py	/^    def update(self, Vin):$/;"	m	class:running_stats
@@ -21632,7 +21498,6 @@ value	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof expor
 value	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	m	variable:anonymousFunction8debe7e62e00.anonymousObject8debe7e63d05
 value	output/assets/js/popper.min.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	variable:anonymousObject8debe7e62b05
 valueOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-valueOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 valueOf	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	m	class:Boolean
 values	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.V.n
 values	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:t.anonymousObject5440d2c611105
@@ -21700,10 +21565,9 @@ weekday	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";funct
 weekday	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:luxon.vt
 weekday	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:luxon.yt
 weekdays	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
-weekdays	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
 weekdays	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.tr.e
 weekdaysCache	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	function:g.i
-weekdaysFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:t
+weekdaysFormat	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 weeknumber	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.tr.e
 weeknumbers	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.tr.e
 weeks	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	property:k.anonymousObject5440d2c6e705.months
