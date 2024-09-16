@@ -12176,7 +12176,7 @@ __init__	output/listings/mlib/compute_phi_psi.py	/^    def __init__(self, name_s
 __init__	plugins/publication_list/publication_list.py	/^    def __init__(self, detail_page_url):$/;"	m	class:Style
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _addAriaAndCollapsedClass	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addAriaAndCollapsedClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addEventListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12188,7 +12188,7 @@ _cleanTipClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _clearMenus	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
 _clearMenus	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:t
 _close	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _data	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
 _data	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0a505
 _dataApiClickHandler	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12259,7 +12259,6 @@ _exports	cache/.mako.tmp/ui_helper.tmpl.py	/^_exports = ['breadcrumbs', 'show_so
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-_getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getContent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:a
@@ -12275,7 +12274,7 @@ _getMenuElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typ
 _getOffset	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffset	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffsetHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getParent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParent	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParentFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12287,9 +12286,9 @@ _getPopperConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==ty
 _getRootElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getRootElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getScrollHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getScrollTop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getTargetFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	function:t
 _getTargetFromElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:t
 _handleDismiss	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12370,34 +12369,34 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1725939161.7345085$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1725939161.7883236$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1725939161.0555685$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1725939161.1847606$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1725939161.0852892$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1725939161.2652094$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1725939161.2285478$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1725939161.01596$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1725939161.818388$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1725939161.849403$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1725939161.760208$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1725939161.933369$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1725939161.2965403$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1725939161.9692667$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1725939161.8758802$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1725939162.0529983$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1725939162.024364$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1725939161.1486502$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1725939161.9946642$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1725939161.905135$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1725939161.1153738$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1726173605.243071$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1726173605.300661$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1726173604.4044027$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1726173604.442511$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1726173604.253635$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1726173604.3447537$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1726173604.4827023$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1726173604.6857054$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1726173605.332909$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1726173605.3638957$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1726173605.2687614$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1726173605.2120838$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1726173604.281823$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1726173604.1383138$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1726173605.3909807$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1726173604.3102536$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1726173604.2268424$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1726173604.1981595$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1726173604.1680772$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1726173605.4209545$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1726173604.3740656$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae12200.t
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _process	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _queueHooks	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6ab05
 _queueHooks	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0ab05
 _removeData	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
@@ -12407,7 +12406,7 @@ _removeElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _setActiveIndicatorElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setActiveIndicatorElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _showElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _showElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _slide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12480,7 +12479,7 @@ _template_uri	cache/.mako.tmp/story.tmpl.py	/^_template_uri = 'story.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/tags.tmpl.py	/^_template_uri = 'tags.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/ui_helper.tmpl.py	/^_template_uri = 'ui_helper.tmpl'$/;"	v
 _transitionComplete	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
+_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _triggerArray	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb625000.t
 _triggerArray	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae5500.t
 _triggerBackdropTransition	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -16380,9 +16379,7 @@ display	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)t
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 div	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb62c805.whiteList
 div	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousObject3fa8e3aecd05.whiteList
@@ -17828,7 +17825,6 @@ hide	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports
 hide	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6b805
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
-hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3aefb05
 hide	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0b805
@@ -20218,7 +20214,7 @@ reference	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof ex
 reflow	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61fe00.d
 reflow	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunction3fa8e3ae0300.d
 refresh	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 refresh	themes/mybootstrap/js/bootstrap.js	/^  ScrollSpy.prototype.refresh = function () {$/;"	m	class:ScrollSpy
 refresh	themes/mybootstrap/js/bootstrap.min.js	/^if(this.$element.is(":visible")){var e=this.$element.height(),o=this.options.offset,n=o.top,s=o./;"	m	class:e
 regex	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c619205
@@ -20690,7 +20686,6 @@ show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"u
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628b05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
-show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae8f05
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae9005
