@@ -29,6 +29,8 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 ## Assignments
 
+**Assign2:** {{% doc %}} dm_assign2 {{% /doc %}}, Due: 27th Sep
+
 **Assign1:** {{% doc %}} dm_assign1 {{% /doc %}}, Due: 17th Sep
 
 ## Class Schedule: Lectures

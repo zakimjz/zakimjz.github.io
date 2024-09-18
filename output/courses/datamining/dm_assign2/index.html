@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign2 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign2/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign2">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign2/">
+<meta property="og:description" content="Assign2: High Dimensional Data
+Due Date: Sep 27, before midnight (11:59:59PM)
+Part I: High Dimensional Data
+Diagonals in High Dimensions
+Your goal is the compute the probability distribution for the r">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-09-17T10:23:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign2</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign2: High Dimensional Data</h2>
+<p><strong>Due Date</strong>: Sep 27, before midnight (11:59:59PM)</p>
+<h3>Part I: High Dimensional Data</h3>
+<h4>Diagonals in High Dimensions</h4>
+<p>Your goal is the compute the probability distribution for the random
+variable $X$ that represents the angle (in degrees) between any two
+diagonals in high dimensions.</p>
+<p>Assume that there are $d$ primary dimensions (the standard axes in
+cartesian coordinates), with each of them ranging from -1 to 1.  There
+are $2^{d}$ additional half-diagonals in this space, one for each
+corner of the $d$-dimensional hypercube.</p>
+<p>Randomly generate
+ $n=100,000$ pairs of
+half-diagonals in the $d$-dimensional hypercube (random $d$-dimensional
+vectors with elements +1 or -1), and compute the angle
+between them (in degrees).</p>
+<p>Plot the probability distribution for three different
+values of $d$, as follows $d={10,100,1000}$, that is,
+plot of the angle versus the probability of observing that
+angle in the sample of $n$ points for a given value of $d$. What is
+the min, max, range, mean and variance of $X$ for each value of
+$d$?</p>
+<p><strong>CSCI6390</strong>:  In addition, what would expect analytically? In other
+words, derive formulas for what should happen to angle between
+half-diagonals as $d \to \infty$. Does the probability distribution conform to this trend?
+Explain why or why not?</p>
+<h4>High Dimensional Normal Distribution</h4>
+<p>Empirically verify what happens to the high dimensional normal
+distribution in terms of the distance of points from the center.</p>
+<p>Randomly sample $n=10,000$ points from the standard multivariate normal
+distribution in $d$ dimensions, where $d=10, 50, 100, 500$. You may use
+<strong>np.random.multivariate_normal</strong> to generate this sample.</p>
+<p>Plot the histogram of distances of points to the center of the space in $d$
+dimensions. For each $d$, compute the mean distance of points to the center in $d$
+dimensions, and also compute the standard deviation. How do these conform
+to the theory?</p>
+<h3>Part II: Frequent Patterns</h3>
+<p>Implement the dEclat mining algorithm 8.4 on page 231. For example,
+given the dataset:</p>
+<div class="code"><pre class="code literal-block">A B D E
+B C E
+A B D E
+A B C E
+A B C D E
+B C D
+</pre></div>
+
+<p>You can assume that each line has a transaction -- a set of items, separated
+by spaces. For minimum support of 3, the set of frequent itemsets should be printed out
+in the format:</p>
+<div class="code"><pre class="code literal-block">A - 4
+B - 6
+D - 4
+E - 5
+C - 4
+A B - 4
+A D - 3
+A E - 4
+A B D - 3
+A B E - 4
+A B D E - 3
+A D E - 3
+B D - 4
+B E - 5
+B C - 4
+B D E - 3
+B E C - 3
+D E - 3
+E C - 3
+Number of frequent itemsets 19
+</pre></div>
+
+<p>Print the frequent itemsets on the
+<a href="http://www.cs.rpi.edu/~zaki/DMCOURSE/data/chess.txt">chess.txt</a> dataset, using
+minimum support 3025.</p>
+<h3>Part III. Paper/Pencil Exercises</h3>
+<p>Submit your solutions to the following questions:</p>
+<ul>
+<li>Chapter 6: Q4, Q8, in addition CSCI6390 students must also do Q7</li>
+<li>Chapter 8: Q1a, Q2, in addition CSCI6390 students must also do Q9</li>
+</ul>
+<p>You can write out the solutions on paper, take an image and attach it so it
+displays in your notebook. For example, you can call "from IPython.display import Image", and then use
+Image("IMG_NAME").</p>
+<hr>
+<h3>What to submit</h3>
+<ul>
+<li>
+<p>You must submit a jupyter notebook, with all of your <strong>code
+and output</strong>. You must use NumPy, with well known/inbuilt libraries for data
+input (e.g., pandas). Plots must be in inline mode (i.e., embedded) in the
+notebook, using matplotlib. Name the notebook: assign2.ipynb.</p>
+</li>
+<li>
+<p>Your code must be self-contained,
+    and must not hard code file names. You can assume the data file lies in
+    the local dir.</p>
+</li>
+<li>
+<p>For the paper-pencil questions, embed the image in your notebook, and also
+submit the image file along with the notebook file.</p>
+</li>
+</ul>
+<p>If you decide to consult ChatGPT (or other similar AI tools), you must
+declare this, and submit comments in the notebook documenting your
+successes and failures, e.g., what prompts you tried, what worked, what did
+not work, how you fixed it, etc.</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2024         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C304VMWK2R');
+</script>
+</body>
+</html>

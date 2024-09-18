@@ -11222,6 +11222,7 @@ Assign1	pages/courses/datamining/assign1.md	/^# Assign1$/;"	c
 Assign1: Transcription Factor Binding via MLP	cache/pages/courses/mlib/assign1.html	/^<h1>Assign1: Transcription Factor Binding via MLP<\/h1>$/;"	h
 Assign1: Transcription Factor Binding via MLP	output/courses/mlib/mlib_assign1/index.html	/^    <h2>Assign1: Transcription Factor Binding via MLP<\/h2>$/;"	i
 Assign1: Transcription Factor Binding via MLP	pages/courses/mlib/assign1.md	/^# Assign1: Transcription Factor Binding via MLP$/;"	c
+Assign2: High Dimensional Data	pages/courses/datamining/assign2.md	/^# Assign2: High Dimensional Data$/;"	c
 Assign2: Transcription Factor Binding via LSTMs and CNNs	cache/pages/courses/mlib/assign2.html	/^<h1>Assign2: Transcription Factor Binding via LSTMs and CNNs<\/h1>$/;"	h
 Assign2: Transcription Factor Binding via LSTMs and CNNs	output/courses/mlib/mlib_assign2/index.html	/^    <h2>Assign2: Transcription Factor Binding via LSTMs and CNNs<\/h2>$/;"	i
 Assign2: Transcription Factor Binding via LSTMs and CNNs	pages/courses/mlib/assign2.md	/^# Assign2: Transcription Factor Binding via LSTMs and CNNs$/;"	c
@@ -11417,6 +11418,7 @@ Deferred	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==
 Details	cache/pages/courses/mlib/assign1.html	/^<h2>Details<\/h2>$/;"	i
 Details	output/courses/mlib/mlib_assign1/index.html	/^<h3>Details<\/h3>$/;"	j
 Details	pages/courses/mlib/assign1.md	/^## Details$/;"	s	chapter:Assign1: Transcription Factor Binding via MLP
+Diagonals in High Dimensions	pages/courses/datamining/assign2.md	/^### Diagonals in High Dimensions$/;"	S	section:Assign2: High Dimensional Data""Part I: High Dimensional Data
 Dn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	c	function:k
 Dropdown	themes/mybootstrap/js/bootstrap.js	/^  Dropdown.prototype.toggle = function (e) {$/;"	c
 Dropdown	themes/mybootstrap/js/bootstrap.js	/^  var Dropdown = function (element) {$/;"	c	function:anonymousFunction8d4196221c00
@@ -11614,6 +11616,7 @@ He	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof 
 He	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	c
 Height	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb619d05
 Height	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjecte21246b019d05
+High Dimensional Normal Distribution	pages/courses/datamining/assign2.md	/^### High Dimensional Normal Distribution$/;"	S	section:Assign2: High Dimensional Data""Part I: High Dimensional Data
 Hn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	c	function:k
 Homeworks	cache/pages/courses/algorithms/syllabus.html	/^<h2>Homeworks<\/h2>$/;"	i
 Homeworks	output/courses/algorithms/algo_syllabus/index.html	/^<h3>Homeworks<\/h3>$/;"	j
@@ -11809,12 +11812,15 @@ PST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function 
 Part I: Basic Stats	cache/pages/courses/datamining/assign1.html	/^<h2>Part I: Basic Stats<\/h2>$/;"	i
 Part I: Basic Stats	output/courses/datamining/dm_assign1/index.html	/^<h3>Part I: Basic Stats<\/h3>$/;"	j
 Part I: Basic Stats	pages/courses/datamining/assign1.md	/^## Part I: Basic Stats$/;"	s	chapter:Assign1
+Part I: High Dimensional Data	pages/courses/datamining/assign2.md	/^## Part I: High Dimensional Data$/;"	s	chapter:Assign2: High Dimensional Data
 Part II: Eigenvectors and Principal Components	cache/pages/courses/datamining/assign1.html	/^<h2>Part II: Eigenvectors and Principal Components<\/h2>$/;"	i
 Part II: Eigenvectors and Principal Components	output/courses/datamining/dm_assign1/index.html	/^<h3>Part II: Eigenvectors and Principal Components<\/h3>$/;"	j
 Part II: Eigenvectors and Principal Components	pages/courses/datamining/assign1.md	/^## Part II: Eigenvectors and Principal Components$/;"	s	chapter:Assign1
+Part II: Frequent Patterns	pages/courses/datamining/assign2.md	/^## Part II: Frequent Patterns$/;"	s	chapter:Assign2: High Dimensional Data
 Part III. Paper/Pencil Exercises	cache/pages/courses/datamining/assign1.html	/^<h2>Part III. Paper\/Pencil Exercises<\/h2>$/;"	i
 Part III. Paper/Pencil Exercises	output/courses/datamining/dm_assign1/index.html	/^<h3>Part III. Paper\/Pencil Exercises<\/h3>$/;"	j
 Part III. Paper/Pencil Exercises	pages/courses/datamining/assign1.md	/^## Part III. Paper\/Pencil Exercises$/;"	s	chapter:Assign1
+Part III. Paper/Pencil Exercises	pages/courses/datamining/assign2.md	/^## Part III. Paper\/Pencil Exercises$/;"	s	chapter:Assign2: High Dimensional Data
 Plugin	plugins/publication_list/publication_list.py	/^class Plugin(RestExtension):$/;"	c
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220200
 Plugin	themes/mybootstrap/js/bootstrap.js	/^  function Plugin(option) {$/;"	c	function:anonymousFunction8d4196220600
@@ -11861,6 +11867,7 @@ Policy on Academic Honesty	pages/courses/algorithms/hw7.md	/^## Policy on Academ
 Policy on Academic Honesty	pages/courses/algorithms/hw8.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab8: Kruskal's Algorithm and Union-Find Data Structure
 Policy on Academic Honesty	pages/courses/algorithms/hw9.md	/^## Policy on Academic Honesty$/;"	s	chapter:Bonus
 Policy on Academic Honesty	pages/courses/datamining/assign1.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign1
+Policy on Academic Honesty	pages/courses/datamining/assign2.md	/^## Policy on Academic Honesty$/;"	s	chapter:Assign2: High Dimensional Data
 Popover	themes/mybootstrap/js/bootstrap.js	/^  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)$/;"	c
 Popover	themes/mybootstrap/js/bootstrap.js	/^  var Popover = function (element, options) {$/;"	c	function:anonymousFunction8d4196225000
 Prerequisites	cache/pages/courses/algorithms/syllabus.html	/^<h2>Prerequisites<\/h2>$/;"	i
@@ -12093,6 +12100,7 @@ What to submit	cache/pages/courses/mlib/assign2.html	/^<h2>What to submit<\/h2>$
 What to submit	output/courses/mlib/mlib_assign0/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign1/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign2/index.html	/^<h3>What to submit<\/h3>$/;"	j
+What to submit	pages/courses/datamining/assign2.md	/^## What to submit$/;"	s	chapter:Assign2: High Dimensional Data
 What to submit	pages/courses/mlib/assign0.md	/^## What to submit$/;"	s	chapter:Assign0: CCNI User Forms and Amazon SageMaker Studio Lab
 What to submit	pages/courses/mlib/assign1.md	/^## What to submit$/;"	s	chapter:Assign1: Transcription Factor Binding via MLP
 What to submit	pages/courses/mlib/assign2.md	/^## What to submit$/;"	s	chapter:Assign2: Transcription Factor Binding via LSTMs and CNNs
@@ -12369,27 +12377,27 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1726173605.243071$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1726173605.300661$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1726173604.4044027$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1726173604.442511$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1726173604.253635$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1726173604.3447537$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1726173604.4827023$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1726173604.6857054$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1726173605.332909$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1726173605.3638957$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1726173605.2687614$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1726173605.2120838$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1726173604.281823$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1726173604.1383138$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1726173605.3909807$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1726173604.3102536$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1726173604.2268424$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1726173604.1981595$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1726173604.1680772$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1726173605.4209545$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1726173604.3740656$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1726522544.6144361$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1726522544.6767967$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1726522543.6896846$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1726522543.7274373$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1726522543.5282924$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1726522543.6276298$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1726522543.770166$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1726522543.9851358$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1726522544.7080822$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1726522544.7413883$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1726522544.6432984$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1726522544.0206392$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1726522543.557846$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1726522543.3941345$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1726522544.7702239$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1726522543.5890555$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1726522543.4971607$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1726522543.4614816$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1726522543.4261057$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1726522544.7997406$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1726522543.6593668$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
