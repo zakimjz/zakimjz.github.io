@@ -45,8 +45,8 @@ below.
 |  Sep 05 | Numeric Attributes (Chapter 2) |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture2.pdf) |
 |  Sep 09 | Eigenvectors |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture3.pdf) |
 |  Sep 12 | PCA (Chapter 7)  |[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture4.pdf) |
-|  Sep 16 | PCA II (Chapter 7) | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture5.pdf)||
-|  Sep 19 | High Dimensional Data I (Chapter 6) ||
+|  Sep 16 | PCA II (Chapter 7) | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture5.pdf)|
+|  Sep 19 | High Dimensional Data (Chapter 6) |[lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture6.pdf)|
 |  Sep 23 | Pattern Mining I (Chapter 8)  ||
 |  Sep 26 | Pattern Mining II (Chapter 9)   ||
 |  Sep 30 | Representative-Based Clustering I (Chapter 13)   ||
