@@ -74,7 +74,7 @@ B C D
 ```
 You can assume that each line has a transaction -- a set of items, separated
 by spaces. For minimum support of 3, the set of frequent itemsets should be printed out
-in the format:
+in the format below (sorted in alphabetic order, with the final total):
 ```
 A - 4
 A B - 4
