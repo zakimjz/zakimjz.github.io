@@ -24,21 +24,13 @@ centers. However, once you have chosen the centers, assign each point to the
 closest center to compute the covariance matrix and the prior probabilities
 of each cluster.
 
-For practical purposes, you may want to use the [logexpsum
+For practical purposes, you should use log probabilities so that we can
+effectively handle very small probability values,
+otherwise, you may find that
+weights of a point for the clusters are zero.
+You should use the [logexpsum
 trick](https://blog.feedly.com/tricks-of-the-trade-logsumexp/) for
-expectation step, where you compute the log probabilities so that you can
-deal with very small probability values, otherwise, you may find that
-weights of a point for the clusters are zero. That is, if all probabilities
-are given as $\log P(Ci)$ and $\log P(xj | Ci)$,
-then we have
-first compute $\log w_{ij}' = \log P(xj | Ci) + \log P(Ci)$ (note: this is
-only the numerator, we have to normalize as given below). But, to compute
-the final $w_{ij}$, we have to use the logsumexp trick, since
-$$logsumexp(\log w_{1j}', \log w_{2j}', ..., \log w_{kj}') = \log\left(\sum_{a=1}^k
-        \exp \log w_{aj}'\right) = \log \left(\sum_{a=1}^k w_{aj}'\right)$$
-And therefore,
-$$w_{ij} = \exp\Big( \log w_{ij}' - logsumexp(\log w_{1j}', ..., \log w_{kj}') \Big)$$
-You can therefore use scipy.special.logsumexp function on log probabilities.
+expectation step via the scipy.special.logsumexp function on log probabilities.
 
 As another practical point, you can get an error when inverting the covariance
 matrix, so you should add a small ridge value $\lambda$ value along the
