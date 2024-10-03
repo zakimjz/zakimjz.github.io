@@ -52,7 +52,7 @@ below.
 |  Sep 23 | Pattern Mining I (Chapter 8)  |[lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture7.pdf)|
 |  Sep 26 | Pattern Mining II (Chapter 9)   |[lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture8.pdf)|
 |  Sep 30 | Representative-Based Clustering I (Chapter 13)   |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture9.pdf)|
-|  Oct 03 | Representative-Based Clustering II (Chapter 13) ||
+|  Oct 03 | Representative-Based Clustering II (Chapter 13) |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture10.pdf)|
 |  Oct 07 | Density-based Clustering (Chapter 15) ||
 |  Oct 10 | Spectral Clustering (Chapter 16) ||
 |  Oct 14 | **NO CLASS** (Columbus Day) ||
