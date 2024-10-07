@@ -11231,6 +11231,8 @@ Assign2: Transcription Factor Binding via LSTMs and CNNs	pages/courses/mlib/assi
 Assign3: Protein Embeddings	cache/pages/courses/mlib/assign3.html	/^<h1>Assign3: Protein Embeddings<\/h1>$/;"	h
 Assign3: Protein Embeddings	output/courses/mlib/mlib_assign3/index.html	/^    <h2>Assign3: Protein Embeddings<\/h2>$/;"	i
 Assign3: Protein Embeddings	pages/courses/mlib/assign3.md	/^# Assign3: Protein Embeddings$/;"	c
+Assign4: Density Clustering	cache/pages/courses/datamining/assign4.html	/^<h1>Assign4: Density Clustering<\/h1>$/;"	h
+Assign4: Density Clustering	output/courses/datamining/dm_assign4/index.html	/^    <h2>Assign4: Density Clustering<\/h2>$/;"	i
 Assign4: Density Clustering	pages/courses/datamining/assign4.md	/^# Assign4: Density Clustering$/;"	c
 Assign4: Protein Contextual Embeddings via BERT	cache/pages/courses/mlib/assign4.html	/^<h1>Assign4: Protein Contextual Embeddings via BERT<\/h1>$/;"	h
 Assign4: Protein Contextual Embeddings via BERT	output/courses/mlib/mlib_assign4/index.html	/^    <h2>Assign4: Protein Contextual Embeddings via BERT<\/h2>$/;"	i
@@ -11326,6 +11328,8 @@ CSCI4390-6390 Assign2	output/courses/datamining/dm_assign2/index.html	/^<article
 CSCI4390-6390 Assign2 | Zaki Home Page	output/courses/datamining/dm_assign2/index.html	/^<title>CSCI4390-6390 Assign2 | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Assign3	output/courses/datamining/dm_assign3/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4390-6390 Assign3 | Zaki Home Page	output/courses/datamining/dm_assign3/index.html	/^<title>CSCI4390-6390 Assign3 | Zaki Home Page<\/title>$/;"	j
+CSCI4390-6390 Assign4	output/courses/datamining/dm_assign4/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
+CSCI4390-6390 Assign4 | Zaki Home Page	output/courses/datamining/dm_assign4/index.html	/^<title>CSCI4390-6390 Assign4 | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Data Mining	output/courses/datamining/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
 CSCI4390-6390 Data Mining | Zaki Home Page	output/courses/datamining/index.html	/^<title>CSCI4390-6390 Data Mining | Zaki Home Page<\/title>$/;"	j
 CSCI4390-6390 Syllabus	output/courses/datamining/dm_syllabus/index.html	/^<article class="post-text storypage" itemscope="itemscope" itemtype="http:\/\/schema.org\/Articl/;"	h
@@ -11398,6 +11402,7 @@ DD	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j
 DDD	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.ke
 DDDD	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c69205.ke
 DEFAULT_LANG	conf.py	/^DEFAULT_LANG = "en"$/;"	v
+DENCLUE Algorithm	cache/pages/courses/datamining/assign4.html	/^<h3>DENCLUE Algorithm<\/h3>$/;"	j
 DENCLUE Algorithm	pages/courses/datamining/assign4.md	/^### DENCLUE Algorithm$/;"	S	section:Assign4: Density Clustering""Part I: Clustering Algorithm
 Data	cache/pages/courses/mlib/assign6.html	/^<h1>Data<\/h1>$/;"	h
 Data	cache/pages/courses/mlib/capstone1.html	/^<h1>Data<\/h1>$/;"	h
@@ -11409,6 +11414,7 @@ Data	pages/courses/mlib/assign6.md	/^# Data$/;"	c
 Data	pages/courses/mlib/capstone1.md	/^# Data$/;"	c
 Data	pages/courses/mlib/capstone2.md	/^# Data$/;"	c
 Dataset	cache/pages/courses/datamining/assign3.html	/^<h3>Dataset<\/h3>$/;"	j
+Dataset	cache/pages/courses/datamining/assign4.html	/^<h3>Dataset<\/h3>$/;"	j
 Dataset	cache/pages/courses/mlib/assign1.html	/^<h2>Dataset<\/h2>$/;"	i
 Dataset	cache/pages/courses/mlib/assign2.html	/^<h2>Dataset<\/h2>$/;"	i
 Dataset	output/courses/mlib/mlib_assign1/index.html	/^<h3>Dataset<\/h3>$/;"	j
@@ -11828,6 +11834,8 @@ PST	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function 
 Part I: Basic Stats	cache/pages/courses/datamining/assign1.html	/^<h2>Part I: Basic Stats<\/h2>$/;"	i
 Part I: Basic Stats	output/courses/datamining/dm_assign1/index.html	/^<h3>Part I: Basic Stats<\/h3>$/;"	j
 Part I: Basic Stats	pages/courses/datamining/assign1.md	/^## Part I: Basic Stats$/;"	s	chapter:Assign1
+Part I: Clustering Algorithm	cache/pages/courses/datamining/assign4.html	/^<h2>Part I: Clustering Algorithm<\/h2>$/;"	i
+Part I: Clustering Algorithm	output/courses/datamining/dm_assign4/index.html	/^<h3>Part I: Clustering Algorithm<\/h3>$/;"	j
 Part I: Clustering Algorithm	pages/courses/datamining/assign4.md	/^## Part I: Clustering Algorithm$/;"	s	chapter:Assign4: Density Clustering
 Part I: High Dimensional Data	cache/pages/courses/datamining/assign2.html	/^<h2>Part I: High Dimensional Data<\/h2>$/;"	i
 Part I: High Dimensional Data	output/courses/datamining/dm_assign2/index.html	/^<h3>Part I: High Dimensional Data<\/h3>$/;"	j
@@ -11841,6 +11849,8 @@ Part II: Eigenvectors and Principal Components	pages/courses/datamining/assign1.
 Part II: Frequent Patterns	cache/pages/courses/datamining/assign2.html	/^<h2>Part II: Frequent Patterns<\/h2>$/;"	i
 Part II: Frequent Patterns	output/courses/datamining/dm_assign2/index.html	/^<h3>Part II: Frequent Patterns<\/h3>$/;"	j
 Part II: Frequent Patterns	pages/courses/datamining/assign2.md	/^## Part II: Frequent Patterns$/;"	s	chapter:Assign2: High Dimensional Data
+Part II: Questions	cache/pages/courses/datamining/assign4.html	/^<h2>Part II: Questions<\/h2>$/;"	i
+Part II: Questions	output/courses/datamining/dm_assign4/index.html	/^<h3>Part II: Questions<\/h3>$/;"	j
 Part II: Questions	pages/courses/datamining/assign4.md	/^## Part II: Questions$/;"	s	chapter:Assign4: Density Clustering
 Part III. Paper/Pencil Exercises	cache/pages/courses/datamining/assign1.html	/^<h2>Part III. Paper\/Pencil Exercises<\/h2>$/;"	i
 Part III. Paper/Pencil Exercises	cache/pages/courses/datamining/assign2.html	/^<h2>Part III. Paper\/Pencil Exercises<\/h2>$/;"	i
@@ -11874,6 +11884,7 @@ Policy on Academic Honesty	cache/pages/courses/algorithms/hw9.html	/^<h2>Policy 
 Policy on Academic Honesty	cache/pages/courses/datamining/assign1.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	cache/pages/courses/datamining/assign2.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	cache/pages/courses/datamining/assign3.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
+Policy on Academic Honesty	cache/pages/courses/datamining/assign4.html	/^<h2>Policy on Academic Honesty<\/h2>$/;"	i
 Policy on Academic Honesty	output/courses/algorithms/algo_hw1/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/algorithms/algo_hw10/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/algorithms/algo_hw2/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
@@ -11887,6 +11898,7 @@ Policy on Academic Honesty	output/courses/algorithms/algo_hw9/index.html	/^<h3>P
 Policy on Academic Honesty	output/courses/datamining/dm_assign1/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/datamining/dm_assign2/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	output/courses/datamining/dm_assign3/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
+Policy on Academic Honesty	output/courses/datamining/dm_assign4/index.html	/^<h3>Policy on Academic Honesty<\/h3>$/;"	j
 Policy on Academic Honesty	pages/courses/algorithms/hw1.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab1: Fibonacci Series
 Policy on Academic Honesty	pages/courses/algorithms/hw10.md	/^## Policy on Academic Honesty$/;"	s	chapter:Bonus
 Policy on Academic Honesty	pages/courses/algorithms/hw2.md	/^## Policy on Academic Honesty$/;"	s	chapter:Lab2: Integer Multiplication
@@ -12129,11 +12141,13 @@ Website and Announcements	output/courses/algorithms/algo_syllabus/index.html	/^<
 Website and Announcements	pages/courses/algorithms/syllabus.md	/^## Website and Announcements$/;"	s
 What to submit	cache/pages/courses/datamining/assign2.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/datamining/assign3.html	/^<h2>What to submit<\/h2>$/;"	i
+What to submit	cache/pages/courses/datamining/assign4.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign0.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign1.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	cache/pages/courses/mlib/assign2.html	/^<h2>What to submit<\/h2>$/;"	i
 What to submit	output/courses/datamining/dm_assign2/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/datamining/dm_assign3/index.html	/^<h3>What to submit<\/h3>$/;"	j
+What to submit	output/courses/datamining/dm_assign4/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign0/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign1/index.html	/^<h3>What to submit<\/h3>$/;"	j
 What to submit	output/courses/mlib/mlib_assign2/index.html	/^<h3>What to submit<\/h3>$/;"	j
@@ -12223,7 +12237,7 @@ __init__	output/listings/mlib/compute_phi_psi.py	/^    def __init__(self, name_s
 __init__	plugins/publication_list/publication_list.py	/^    def __init__(self, detail_page_url):$/;"	m	class:Style
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _addAriaAndCollapsedClass	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addAriaAndCollapsedClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addEventListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12235,7 +12249,7 @@ _cleanTipClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _clearMenus	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
 _clearMenus	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:t
 _close	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _data	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
 _data	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0a505
 _dataApiClickHandler	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12306,6 +12320,7 @@ _exports	cache/.mako.tmp/ui_helper.tmpl.py	/^_exports = ['breadcrumbs', 'show_so
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
+_getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getContent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:a
@@ -12321,7 +12336,7 @@ _getMenuElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typ
 _getOffset	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffset	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffsetHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getParent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParent	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParentFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12333,9 +12348,9 @@ _getPopperConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==ty
 _getRootElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getRootElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getScrollHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getScrollTop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getTargetFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	function:t
 _getTargetFromElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:t
 _handleDismiss	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12416,34 +12431,34 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1728329806.0107515$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1728329806.0619254$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1728329805.7701428$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1728329805.8824096$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1728329805.797413$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1728329805.9550972$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1728329805.9203439$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1728329805.735065$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1728329806.089322$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1728329806.1192873$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1728329806.034421$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1728329806.9061744$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1728329805.9836261$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1728329806.689538$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1728329806.1446197$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1728329806.7680075$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1728329806.7412202$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1728329805.8496592$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1728329806.7139177$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1728329806.1726477$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1728329805.8225079$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1728331309.0962882$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1728331309.1456165$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1728331307.742913$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1728331307.8001509$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1728331309.2527654$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1728331309.3037474$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1728331307.837651$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1728331309.422042$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1728331309.1728468$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1728331309.2020047$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1728331309.1198788$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1728331307.713006$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1728331309.2265763$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1728331309.4859018$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1728331309.2775836$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1728331309.5703762$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1728331309.5434964$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1728331309.4543047$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1728331309.509313$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1728331309.3299825$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1728331307.769707$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae12200.t
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _process	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _queueHooks	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6ab05
 _queueHooks	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0ab05
 _removeData	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
@@ -12453,7 +12468,7 @@ _removeElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _setActiveIndicatorElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setActiveIndicatorElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _showElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _showElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _slide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12526,7 +12541,7 @@ _template_uri	cache/.mako.tmp/story.tmpl.py	/^_template_uri = 'story.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/tags.tmpl.py	/^_template_uri = 'tags.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/ui_helper.tmpl.py	/^_template_uri = 'ui_helper.tmpl'$/;"	v
 _transitionComplete	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
+_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
 _triggerArray	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb625000.t
 _triggerArray	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae5500.t
 _triggerBackdropTransition	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -15688,6 +15703,7 @@ blog-title	output/courses/algorithms/index.html	/^            <span id="blog-tit
 blog-title	output/courses/datamining/dm_assign1/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/dm_assign2/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/dm_assign3/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
+blog-title	output/courses/datamining/dm_assign4/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/dm_syllabus/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/datamining/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
 blog-title	output/courses/index.html	/^            <span id="blog-title">Zaki Home Page<\/span>$/;"	I
@@ -15783,6 +15799,7 @@ bs-navbar	output/courses/algorithms/index.html	/^        <div class="collapse na
 bs-navbar	output/courses/datamining/dm_assign1/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/dm_assign2/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/dm_assign3/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
+bs-navbar	output/courses/datamining/dm_assign4/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/dm_syllabus/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/datamining/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
 bs-navbar	output/courses/index.html	/^        <div class="collapse navbar-collapse" id="bs-navbar">$/;"	I
@@ -16133,6 +16150,7 @@ content	output/courses/algorithms/index.html	/^<\/nav><!-- End of Menubar --><di
 content	output/courses/datamining/dm_assign1/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/dm_assign2/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/dm_assign3/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
+content	output/courses/datamining/dm_assign4/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/dm_syllabus/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/datamining/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
 content	output/courses/index.html	/^<\/nav><!-- End of Menubar --><div class="container" id="content" role="main">$/;"	I
@@ -16432,7 +16450,9 @@ display	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)t
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
+dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 div	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb62c805.whiteList
 div	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousObject3fa8e3aecd05.whiteList
@@ -17316,6 +17336,7 @@ footer	output/courses/algorithms/index.html	/^            <\/script><\/article><
 footer	output/courses/datamining/dm_assign1/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/dm_assign2/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/dm_assign3/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
+footer	output/courses/datamining/dm_assign4/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/dm_syllabus/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/datamining/index.html	/^            <\/script><\/article><!--End of body content--><footer id="footer">$/;"	I
 footer	output/courses/index.html	/^<\/article><!--End of body content--><footer id="footer">$/;"	I
@@ -17882,6 +17903,7 @@ hide	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports
 hide	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6b805
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
+hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3aefb05
 hide	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0b805
@@ -20275,7 +20297,7 @@ reference	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof ex
 reflow	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61fe00.d
 reflow	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunction3fa8e3ae0300.d
 refresh	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
+refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 refresh	themes/mybootstrap/js/bootstrap.js	/^  ScrollSpy.prototype.refresh = function () {$/;"	m	class:ScrollSpy
 refresh	themes/mybootstrap/js/bootstrap.min.js	/^if(this.$element.is(":visible")){var e=this.$element.height(),o=this.options.offset,n=o.top,s=o./;"	m	class:e
 regex	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c619205
@@ -20747,6 +20769,7 @@ show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"u
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628b05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
+show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae8f05
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae9005

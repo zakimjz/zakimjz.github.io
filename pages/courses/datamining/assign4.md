@@ -31,6 +31,11 @@ computing the NMI metric for the clustering.
 Also, it is a good idea to scale all
 attributes to be within the range 0 to 1. For this you should use [sklearn.preprocessing.MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
 
+Finally, since there are too many points, you should randomly select 3000
+points as the training set size, so that the matrix will be $3000 \times
+6$. For this, set np.random.seed(seed=42) and use np.random.choice to
+select the subset of points.
+
 ### DENCLUE Algorithm
 
 Implement the DENCLUE density-based clustering algorithm given in
