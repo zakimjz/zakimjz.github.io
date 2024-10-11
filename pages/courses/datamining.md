@@ -56,7 +56,7 @@ below.
 |  Sep 30 | Representative-Based Clustering I (Chapter 13)   |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture9.pdf)|
 |  Oct 03 | Representative-Based Clustering II (Chapter 13) |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture10.pdf)|
 |  Oct 07 | Density-based Clustering (Chapter 15) |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture11.pdf)|
-|  Oct 10 | Spectral Clustering (Chapter 16) ||
+|  Oct 10 | Spectral Clustering (Chapter 16) |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture12.pdf)|
 |  Oct 14 | **NO CLASS** (Columbus Day) ||
 |  Oct 17 | **EXAM I** ||
 |  Oct 21 | Clustering Validation (Chapters 17)  ||
