@@ -59,17 +59,17 @@ below.
 |  Oct 10 | Spectral Clustering (Chapter 16) |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture12.pdf)|
 |  Oct 14 | **NO CLASS** (Columbus Day) ||
 |  Oct 17 | **EXAM I** ||
-|  Oct 21 | Clustering Validation (Chapters 17)  ||
-|  Oct 24 | Discriminant Analysis I (Chapter 20) ||
-|  Oct 28 | Linear Regression I (Chapter 23) ||
-|  Oct 31 | Linear Regression II (Chapter 23) ||
-|  Nov 04 | Logistic Regression (Chapter 24) ||
-|  Nov 07 | Bayes Classifier (Chapter 18)||
-|  Nov 11 | Support Vector Machines I (Chapter 21) ||
-|  Nov 14 | Support Vector Machines II (Chapter 21)||
-|  Nov 18 | Neural Networks I (Chapter 25)  ||
-|  Nov 21 | Neural Networks II (Chapter 25) ||
-|  Nov 25 | Deep Learning (Chapter 26) ||
+|  Oct 21 | Linear Regression I (Chapter 23)||
+|  Oct 24 | Associative Memories (Bao Pham) ||
+|  Oct 28 | Linear Regression II (Chapter 23) ||
+|  Oct 31 | Logistic Regression (Chapter 24) ||
+|  Nov 04 | Bayes Classifier (Chapter 18)||
+|  Nov 07 | Support Vector Machines I (Chapter 21) ||
+|  Nov 11 | Support Vector Machines II (Chapter 21)||
+|  Nov 14 | Neural Networks I (Chapter 25) ||
+|  Nov 18 | Neural Networks II (Chapter 25)  ||
+|  Nov 21 | Deep Learning I (Chapter 26) ||
+|  Nov 25 | Deep Learning II (Chapter 26) ||
 |  Nov 28 | **NO CLASS** (Thanksgiving) ||
 |  Dec 02 | Classification Assessment I (Chapters 21) ||
 |  Dec 05 | Classification Assessment II (Chapter 22) ||
