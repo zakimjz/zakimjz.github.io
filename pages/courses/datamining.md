@@ -71,6 +71,6 @@ below.
 |  Nov 21 | Deep Learning I (Chapter 26) ||
 |  Nov 25 | Deep Learning II (Chapter 26) ||
 |  Nov 28 | **NO CLASS** (Thanksgiving) ||
-|  Dec 02 | Classification Assessment I (Chapters 21) ||
-|  Dec 05 | Classification Assessment II (Chapter 22) ||
+|  Dec 02 | Classification Assessment (Chapters 22) ||
+|  Dec 05 | Regression Assessment (Chapter 27) ||
 |  Dec 09 | **EXAM II** ||
