@@ -59,11 +59,11 @@ below.
 |  Oct 10 | Spectral Clustering (Chapter 16) |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture12.pdf)|
 |  Oct 14 | **NO CLASS** (Columbus Day) ||
 |  Oct 17 | **EXAM I** ||
-|  Oct 21 | Linear Regression I (Chapter 23)||
+|  Oct 21 | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)||
 |  Oct 24 | Associative Memories (Bao Pham) ||
-|  Oct 28 | Linear Regression II (Chapter 23) ||
-|  Oct 31 | Logistic Regression (Chapter 24) ||
-|  Nov 04 | Bayes Classifier (Chapter 18)||
+|  Oct 28 | Linear Regression I (Chapter 23) ||
+|  Oct 31 | Linear Regression II (Chapter 23)||
+|  Nov 04 | Logistic Regression (Chapter 24)  ||
 |  Nov 07 | Support Vector Machines I (Chapter 21) ||
 |  Nov 11 | Support Vector Machines II (Chapter 21)||
 |  Nov 14 | Neural Networks I (Chapter 25) ||
