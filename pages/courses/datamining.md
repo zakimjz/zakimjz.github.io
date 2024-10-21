@@ -59,7 +59,7 @@ below.
 |  Oct 10 | Spectral Clustering (Chapter 16) |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture12.pdf)|
 |  Oct 14 | **NO CLASS** (Columbus Day) ||
 |  Oct 17 | **EXAM I** ||
-|  Oct 21 | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)||
+|  Oct 21 | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)|[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture13.pdf)|
 |  Oct 24 | Associative Memories (Bao Pham) ||
 |  Oct 28 | Linear Regression I (Chapter 23) ||
 |  Oct 31 | Linear Regression II (Chapter 23)||
