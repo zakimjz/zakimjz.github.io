@@ -1,0 +1,44 @@
+<h1>Assign5: Bayes Classifier</h1>
+<p><strong>Due Date</strong>: Oct 31, before midnight (11:59:59PM)</p>
+<hr>
+<h3>Dataset</h3>
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption">Steel Industry Energy Consumption
+Dataset</a> from the UCI
+Machine Learning repository. Extract the Steel_industry_data.csv datafile. You should parse and
+store the data as a data matrix, focusing only on the 6 continuous
+attributes (see datafile or link above for names/descriptions). Thus, your data matrix
+will have 35040 points in 6 dimensions. However, in addition you should
+record the last attribute (load type) for each point. We will use this as
+the class label.</p>
+<p>You should first randomly shuffle all points, and then take
+the first 80% of the data as training and the remaining 20% as testing.
+You must do this via <a href="https://scikit-learn.org/1.5/modules/generated/sklearn.model_selection.train_test_split.html">sklearn.train_test_split</a>, using 42 as the random_state.</p>
+<hr>
+<h2>Part I: Bayes Classifier</h2>
+<p>Implement both the full Bayes classifier in Algo 18.1, and the naive Bayes
+classifier in Algo 18.2.</p>
+<p>Students in CSCI6390, should in addition, implement the K-nearest-neighbor
+classifier, and present the best results trying different K values.</p>
+<p>Estimate parameters using the training data, and
+report the accuracy of the testing set. You must report total accuracy, and
+the class-specific accuracy and recall values -- see Eq 22.3 and 22.4 for
+the later two. Report these values for all methods.</p>
+<p>You may use <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multivariate_normal.html">scipy multivariate_normal.pdf</a> to compute the normal probability density function.</p>
+<hr>
+<h2>Part II: Questions</h2>
+<p>Submit your solutions to the following questions:</p>
+<ul>
+<li>Chapter 18: Q3</li>
+</ul>
+<hr>
+<h2>What to submit</h2>
+<ul>
+<li>Submit your notebook named as <strong>assign5.ipynb</strong>.</li>
+</ul>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
