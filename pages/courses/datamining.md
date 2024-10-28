@@ -63,7 +63,7 @@ below.
 |  Oct 17 | **EXAM I** ||
 |  Oct 21 | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)|[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture13.pdf)|
 |  Oct 24 | Associative Memories (Bao Pham) ||
-|  Oct 28 | Linear Regression I (Chapter 23) ||
+|  Oct 28 | Discriminant Analysis, Linear Regression I (Chapters 20, 23) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture14.pdf)|
 |  Oct 31 | Linear Regression II (Chapter 23)||
 |  Nov 04 | Logistic Regression (Chapter 24)  ||
 |  Nov 07 | Support Vector Machines I (Chapter 21) ||
