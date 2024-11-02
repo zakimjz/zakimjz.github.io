@@ -19,8 +19,8 @@
 | Troy, New York 12180-3590
 |
 
-Mohammed J. Zaki is a Professor and Department Head of Computer Science at
-RPI. He received his Ph.D. degree in computer science from the University of
+Mohammed J. Zaki is a Professor and Department Head of `Computer Science<https://www.cs.rpi.edu>`_ at
+RPI. He is also the co-director for the NSF IUCRC `Center for Research Towards Advancing Financial Technologies (CRAFT)<https://www.stevens.edu/craft>`_. He received his Ph.D. degree in computer science from the University of
 Rochester in 1998. His research interests focus on novel data mining and
 machine learning techniques, particularly for learning from graph structured
 and textual data, with applications in bioinformatics, personal health and
