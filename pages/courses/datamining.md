@@ -68,7 +68,7 @@ below.
 |  Oct 28 | Discriminant Analysis, Linear Regression I (Chapters 20, 23) |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture14.pdf)|
 |  Oct 31 | Linear Regression II (Chapter 23)|[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture15.pdf)|
 |  Nov 04 | Logistic Regression (Chapter 24)  |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture16.pdf)|
-|  Nov 07 | Support Vector Machines I (Chapter 21) ||
+|  Nov 07 | Support Vector Machines I (Chapter 21) |[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture17.pdf)|
 |  Nov 11 | Support Vector Machines II (Chapter 21)||
 |  Nov 14 | Neural Networks I (Chapter 25) ||
 |  Nov 18 | Neural Networks II (Chapter 25)  ||
