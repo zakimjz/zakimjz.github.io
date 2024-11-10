@@ -37,14 +37,27 @@ remaining 20% as testing).
 ## Part I: Logistic Regression
 
 Implement the multi-class logistic regression algorithm as described in
-Algorithm 24.2 (Chapter 24, page 634).
+Algorithm 24.2 (Chapter 24, page 634). In line 6, instead of
+initializing with zeros, use np.random.randn instead. This way you'll get
+different initialized weights in each run, and thus you'll be able to
+explore more. Also, you may cap the maximum iterations of the repeat-until
+loop in addition to checking for convergence.
 
 Your script should print out the weight vector(s), and also the final
 accuracy value on the test data (see Eq 22.2). You should also compute the
 F1-score (see Eq 22.7 in chapter 22).
 
-You should use the scipy.special.softmax function rather than your own,
+You should use the scipy.special.softmax or scipy.special.log_softmax function rather than your own,
 since it is more robust.
+
+Finally, CSCI6390 students must implement a **mini-batch** version of the
+logistic regression. That is, instead of using a single point to compute
+the gradient as in eq (24.19), compute the gradient for a batch of points
+at the same time (you can make batch size a parameter and try different
+values), and the batch gradient will be the sum of the individual gradient
+from each point. At the same time, line 10 will now iterate over the batch
+of points, and update the class weights once per batch (as opposed to once
+per point).
 
 ---
 
