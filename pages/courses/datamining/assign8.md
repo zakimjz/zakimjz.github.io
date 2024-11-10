@@ -73,7 +73,7 @@ validation accuracy.
 
 Submit your solutions to the following questions:
 
-* Chapter 23: Q1, Q2
+* Chapter 21: Q1, Q2
 * Chapter 25: Q1
 
 
