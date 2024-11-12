@@ -28,7 +28,7 @@ the class label. However, instead of three classes, we will use 'Light
 Load' as the positive class (+1) and the other two classes (combined) as the negative
 class (-1), so that we get a binary classification task.
 
-First usr random seed 42, and np.random.permutation to permute the points,
+First use random seed 42, and np.random.permutation to permute the points,
 and  select only the first 2000 points as the initial dataset. Next,
 Use
 [sklearn.train_test_split](https://scikit-learn.org/1.5/modules/generated/sklearn.model_selection.train_test_split.html),
