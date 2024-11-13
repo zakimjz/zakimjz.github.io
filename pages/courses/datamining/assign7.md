@@ -50,6 +50,11 @@ F1-score (see Eq 22.7 in chapter 22).
 You should use the scipy.special.softmax or scipy.special.log_softmax function rather than your own,
 since it is more robust.
 
+Also, the loops in line 8, 11, 15, and 18 run from 1 to $K-1$, but you can
+just make it 1 to $K$, so that all class weight vectors are learned (the
+pseudocode assumes that the last class the base class, and therefore its
+weight vector is the zero vector). As such, both approaches are fine.
+
 Finally, CSCI6390 students must implement a **mini-batch** version of the
 logistic regression. That is, instead of using a single point to compute
 the gradient as in eq (24.19), compute the gradient for a batch of points
