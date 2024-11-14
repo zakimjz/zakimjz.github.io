@@ -74,7 +74,7 @@ below.
 |  Nov 04 | Logistic Regression (Chapter 24)  |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture16.pdf)|
 |  Nov 07 | Support Vector Machines I (Chapter 21) |[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture17.pdf)|
 |  Nov 11 | Support Vector Machines II (Chapter 21)|[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture18.pdf)|
-|  Nov 14 | Neural Networks I (Chapter 25) ||
+|  Nov 14 | Neural Networks I (Chapter 25) |[lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture19.pdf)|
 |  Nov 18 | Neural Networks II (Chapter 25)  ||
 |  Nov 21 | Deep Learning I (Chapter 26) ||
 |  Nov 25 | Deep Learning II (Chapter 26) ||
