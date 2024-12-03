@@ -78,7 +78,7 @@ below.
 |  Nov 18 | Neural Networks II (Chapter 25)  |[lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture20.pdf)|
 |  Nov 21 | Deep Learning I (Chapter 26) |[lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture21.pdf)|
 |  Nov 25 | Deep Learning II (Chapter 26) |[lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture22.pdf)|
-|  Nov 28 | **NO CLASS** (Thanksgiving) |[lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture23.pdf)|
-|  Dec 02 | Classification Assessment (Chapters 22) ||
+|  Nov 28 | **NO CLASS** (Thanksgiving) ||
+|  Dec 02 | Classification Assessment (Chapters 22) |[lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture23.pdf)|
 |  Dec 05 | Regression Assessment (Chapter 27) ||
 |  Dec 09 | **EXAM II** ||
