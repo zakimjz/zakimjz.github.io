@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1733190560.6063063
+_modified_time = 1733442365.3378012
 _enable_loop = True
 _template_filename = '/usr/lib/python3.12/site-packages/nikola/data/themes/bootstrap4/templates/index_helper.tmpl'
 _template_uri = 'index_helper.tmpl'
@@ -27,9 +27,9 @@ def render_body(context,**pageargs):
 def render_html_pager(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        nextlink = context.get('nextlink', UNDEFINED)
-        prevlink = context.get('prevlink', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
+        prevlink = context.get('prevlink', UNDEFINED)
+        nextlink = context.get('nextlink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if prevlink or nextlink:

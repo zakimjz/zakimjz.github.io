@@ -80,5 +80,5 @@ below.
 |  Nov 25 | Deep Learning II (Chapter 26) |[lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture22.pdf)|
 |  Nov 28 | **NO CLASS** (Thanksgiving) ||
 |  Dec 02 | Classification Assessment (Chapters 22) |[lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture23.pdf)|
-|  Dec 05 | Regression Assessment (Chapter 27) ||
+|  Dec 05 | Regression Assessment (Chapter 27) |[lecture24](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Lecture24.pdf)|
 |  Dec 09 | **EXAM II** ||
