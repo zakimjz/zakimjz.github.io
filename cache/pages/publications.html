@@ -43,7 +43,49 @@ fo itemset mining. Used for CHARM, GenMax and Eclat papers.</p>
 <section id="publications">
 <h1>Publications</h1>
 <div class="publication-list">
-<h3>2024</h3>
+<h3>2025</h3>
+<ul><li class="publication" style="padding-bottom: 1em;">Sharmishtha Dutta, Alex Gittens, <strong>Mohammed J. Zaki</strong>, and Charu&nbsp;C. Aggarwal.
+<strong>Replacing paths with connection-biased attention for knowledge graph completion.</strong>
+In <em>The 39th AAAI Conference on Artificial Intelligence (AAAI)</em>. Apr 2025.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract&#x25BC;')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract&#x25B2;')
+                }
+                })(this, 'abstract-2025-aaai');">abstract&#x25BC;</a>] [<a href="http://www.cs.rpi.edu/~zaki/PaperDir/AAAI25.pdf">full text</a>] [<a href="https://arxiv.org/abs/2410.00876">Arxiv</a>] [<a href="https://github.com/shoron-dutta/CBLiP">githubcode</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX&#x25BC;')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX&#x25B2;')
+              }
+            })(this, 'bibtex-2025-aaai');">BibTeX&#x25BC;</a>]
+            
+                <div id="abstract-2025-aaai" class="publication-abstract" style="display:none">
+                <blockquote>Knowledge graph (KG) completion aims to identify additional facts that can be inferred from the existing facts in the KG. Recent developments in this field have explored this task in the inductive setting, where at test time one sees entities that were not present during training; the most performant models in the inductive setting have employed path encoding modules in addition to standard subgraph encoding modules. This work similarly focuses on KG completion in the inductive setting, without the explicit use of path encodings, which can be time-consuming and introduces several hyperparameters that require costly hyperparameter optimization. Our approach uses a Transformer-based subgraph encoding module only; we introduce connection-biased attention and entity role embeddings into the subgraph encoding module to eliminate the need for an expensive and time-consuming path encoding module. Evaluations on standard inductive KG completion benchmark datasets demonstrate that our Connection-Biased Link Prediction (CBLiP) model has superior performance to models that do not use path information. Compared to models that utilize path information, CBLiP shows competitive or superior performance while being faster. Additionally, to show that the effectiveness of connection-biased attention and entity role embeddings also holds in the transductive setting, we compare CBLiP's performance on therelation prediction task in the transductive setting.</blockquote></div>
+                <div id="bibtex-2025-aaai" style="display:none"><pre>@inproceedings{2025-aaai,
+    author = "Dutta, Sharmishtha and Gittens, Alex and Zaki, Mohammed J. and Aggarwal, Charu C.",
+    title = "Replacing Paths with Connection-Biased Attention for Knowledge Graph Completion",
+    booktitle = "The 39th AAAI Conference on Artificial Intelligence (AAAI)",
+    customlinkArxiv = "https://arxiv.org/abs/2410.00876",
+    customlinkgithubcode = "https://github.com/shoron-dutta/CBLiP",
+    month = "Apr",
+    year = "2025"
+}
+</pre></div></li></ul><h3>2024</h3>
 <ul><li class="publication" style="padding-bottom: 1em;">Jing Hu, Lingfei Wu, Yu&nbsp;Chen, Po&nbsp;Hu, and <strong>Mohammed J. Zaki</strong>.
 <strong><span class="bibtex-protected">GraphFlow+</span>: exploiting conversation flow in conversational machine comprehension with graph neural networks.</strong>
 <em>Machine Intelligence Research</em>, 21(2):272–282, April 2024.
@@ -250,7 +292,7 @@ URL: <a href="https://openreview.net/pdf?id=otTFPjziiK">https://openreview.net/p
             })(this, 'bibtex-2024-tmlr');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2024-tmlr" class="publication-abstract" style="display:none">
-                <blockquote>In this paper, we address the problem of capturing graph directionality using transformers. Most existing graph transformers typically capture distances between graph nodes and do not take edge direction into account. This is a limiting assumption since many graph applications need to exploit sophisticated relationships in graph data, such as time, causality, or generic dependency constraints. We introduce a novel graph transformer architecture that explicitly takes into account the directionality between connected graph nodes. To achieve this, we make use of dual encodings to represent both potential roles, i.e., source or target, of each pair of vertices linked by a directed edge. These encodings are learned by leveraging the latent adjacency information extracted from a directional attention module, localized with k-hop neighborhood information. Extensive experiments on synthetic and real graph datasets show that our approach can have significant accuracy gains over previous graph transformer (GT) and graph neural network (GNN) approaches, providing state-of-the-art (SOTA) results on inherently directed graphs.</blockquote></div>
+                <blockquote>In this paper, we address the problem of capturing graph directionality using transformers. Most existing graph transformers typically capture distances between graph nodes and do not take edge direction into account. This is a limiting assumption since many graph applications need to exploit sophisticated relationships in graph data, such as time, causality, or generic dependency constraints. We introduce a novel graph transformer architecture that explicitly takes into account the directionality between connected graph nodes. To achieve this, we make use of dual encodings to represent both potential roles, i.e., source or target , of each pair of vertices linked by a directed edge. These encodings are learned by leveraging the latent adjacency information extracted from a directional attention module, localized with k-hop neighborhood information. Extensive experiments on synthetic and real graph datasets show that our approach can have significant accuracy gains over previous graph transformer (GT) and graph neural network (GNN) approaches, providing state-of-the-art (SOTA) results on inherently directed graphs.</blockquote></div>
                 <div id="bibtex-2024-tmlr" style="display:none"><pre>@article{2024-tmlr,
     author = "Wang, Qitong and Kollias, Georgios and Kalantzis, Vasileios and Abe, Naoki and Zaki, Mohammed J.",
     title = "Directed Graph Transformers",
@@ -335,7 +377,7 @@ In <em>ACM Conference on Information and Knowledge Management (CIKM)</em>. Oct 2
             })(this, 'bibtex-2024-cikm');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2024-cikm" class="publication-abstract" style="display:none">
-                <blockquote>n the rapidly evolving landscape of online recipe sharing within a globalized context, there has been a notable surge in research towards comprehending and generating food recipes. Recent advancements in large language models (LLMs) like GPT-2 [40] and LLaVA [ 32 ] have paved the way for Natural Language Processing (NLP) approaches to delve deeper into various facets of food-related tasks, encompassing ingredient recognition and comprehensive recipe generation. Despite impressive performance and multi-modal adaptability of LLMs, domain-specific training remains paramount for their effective application. This work evaluates existing LLMs for recipe generation and proposes LLaVA-Chef, a novel model trained on a curated dataset of diverse recipe prompts in a multistage approach. First, we refine the mapping of visual food image embeddings to the language space. Second, we adapt LLaVA to the food domain by fine-tuning it on relevant recipe data. Third, we utilize diverse prompts to enhance the model’s recipe comprehension. Finally, we improve the linguistic quality of generated recipes by penalizing the model with a custom loss function. LLaVA-Chef demonstrates impressive improvements over pretrained LLMs and prior works. A detailed qualitative analysis reveals that LLaVA-Chef generates more detailed recipes with precise ingredient mentions, compared to existing approaches.</blockquote></div>
+                <blockquote>n the rapidly evolving landscape of online recipe sharing within a globalized context, there has been a notable surge in research towards comprehending and generating food recipes. Recent advancements in large language models (LLMs) like GPT-2 [40] and LLaVA [ 32 ] have paved the way for Natural Language Processing (NLP) approaches to delve deeper into various facets of food-related tasks, encompassing ingredient recognition and comprehensive recipe generation. Despite impressive performance and multi-modal adaptability of LLMs, domain-specific training remains paramount for their effective application. This work evaluates existing LLMs for recipe generation and proposes LLaVA-Chef, a novel model trained on a curated dataset of diverse recipe prompts in a multistage approach. First, we refine the mapping of visual food image embeddings to the language space. Second, we adapt LLaVA to the food domain by fine-tuning it on relevant recipe data. Third , we utilize diverse prompts to enhance the model’s recipe comprehension. Finally, we improve the linguistic quality of generated recipes by penalizing the model with a custom loss function. LLaVA-Chef demonstrates impressive improvements over pretrained LLMs and prior works. A detailed qualitative analysis reveals that LLaVA-Chef generates more detailed recipes with precise ingredient mentions, compared to existing approaches.</blockquote></div>
                 <div id="bibtex-2024-cikm" style="display:none"><pre>@inproceedings{2024-cikm,
     author = "Mohbat, Fnu and Zaki, Mohammed J.",
     title = "LLaVA-Chef: A Multi-modal Generative Model for Food Recipes",
@@ -343,6 +385,45 @@ In <em>ACM Conference on Information and Knowledge Management (CIKM)</em>. Oct 2
     doi = "https://doi.org/10.1145/3627673.3679562",
     customlinkgithubcode = "https://github.com/mohbattharani/LLaVA-Chef",
     month = "Oct",
+    year = "2024"
+}
+</pre></div></li><li class="publication" style="padding-bottom: 1em;">Bishwajit Saha, Dmitry Krotov, <strong>Mohammed J. Zaki</strong>, and Parikshit Ram.
+<strong>Deep clustering with associative memories.</strong>
+In <em>Workshop on Machine Learning and Compression (with NeurIPS)</em>. Dec 2024.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract&#x25BC;')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract&#x25B2;')
+                }
+                })(this, 'abstract-2024-neuripsw');">abstract&#x25BC;</a>] [<a href="http://www.cs.rpi.edu/~zaki/PaperDir/Neurips24w.pdf">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX&#x25BC;')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX&#x25B2;')
+              }
+            })(this, 'bibtex-2024-neuripsw');">BibTeX&#x25BC;</a>]
+            
+                <div id="abstract-2024-neuripsw" class="publication-abstract" style="display:none">
+                <blockquote>Deep clustering -- joint representation learning and latent space clustering -- is a well studied problem especially in computer vision and text processing under the deep learning framework. While the representation learning is generally differentiable, clustering is an inherently discrete optimization, requiring various approximations and regularizations to fit in a standard differentiable pipeline. This leads to a somewhat disjointed representation learning and clustering. Recently, Associative Memories were utilized in the end-to-end differentiable CLAM clustering scheme (Saha et al. 2023). In this work, we show how Associative Memories enable a novel take on deep clustering, DCLAM, simplifying the whole pipeline and tying together the representation learning and clustering more intricately. Our experiments showcase the advantage of , producing improved clustering quality regardless of the architecture choice (convolutional, residual or fully-connected) or data modality (images or text).</blockquote></div>
+                <div id="bibtex-2024-neuripsw" style="display:none"><pre>@inproceedings{2024-neuripsw,
+    author = "Saha, Bishwajit and Krotov, Dmitry and Zaki, Mohammed J. and Ram, Parikshit",
+    title = "Deep Clustering with Associative Memories",
+    booktitle = "Workshop on Machine Learning and Compression (with NeurIPS)",
+    month = "Dec",
     year = "2024"
 }
 </pre></div></li></ul><h3>2023</h3>
@@ -389,7 +470,7 @@ In <em>ACM Conference on Information and Knowledge Management (CIKM)</em>. Oct 2
     month = "Jan",
     DOI = "https://doi.org/10.1016/j.websem.2022.100743",
     customlinkgithubcode = "https://github.com/DiyaLI916/recipe\_recommendation",
-    KeyWord = "Journal,NeuralNetworks,RecipeRecommendation,KnowledgeGraphs,FoodComputing,Health"
+    KeyWord = "Journal,NeuralNetworks,RecipeRecommendation,KnowledgeGraphs, FoodComputing,Health"
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Md.&nbsp;Shamim Hussain, <strong>Mohammed J. Zaki</strong>, and Dharmashankar Subramanian.
 <strong>The information pathways hypothesis: transformers are dynamic self-ensembles.</strong>
@@ -886,7 +967,7 @@ URL: <a href="https://aclanthology.org/2022.coling-1.279">https://aclanthology.o
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Diya Li and <strong>Mohammed J. Zaki</strong>.
 <strong>Food knowledge representation learning with adversarial substitution.</strong>
-In <em>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing, <span class="bibtex-protected">AACL/IJCNLP</span> - Volume 1: Long Papers</em>, 653–664. Association for Computational Linguistics, Nov 2022.
+In <em>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing, <span class="bibtex-protected"> AACL/IJCNLP</span> - Volume 1: Long Papers</em>, 653–664. Association for Computational Linguistics, Nov 2022.
 URL: <a href="https://aclanthology.org/2022.aacl-main.50">https://aclanthology.org/2022.aacl-main.50</a>.<br>
                 [<a href="javascript:void(0)" onclick="
                 (function(target, id) {
@@ -920,7 +1001,7 @@ URL: <a href="https://aclanthology.org/2022.aacl-main.50">https://aclanthology.o
                 <div id="bibtex-2022-aacl" style="display:none"><pre>@inproceedings{2022-aacl,
     author = "Li, Diya and Zaki, Mohammed J.",
     title = "Food Knowledge Representation Learning with Adversarial Substitution",
-    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing, {AACL/IJCNLP} - Volume 1: Long Papers",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing, { AACL/IJCNLP} - Volume 1: Long Papers",
     pages = "653--664",
     publisher = "Association for Computational Linguistics",
     year = "2022",
@@ -974,7 +1055,7 @@ URL: <a href="https://www.frontiersin.org/articles/10.3389/fdata.2022.1044709">h
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Ching-Hua Chen, Daniel Gruen, Jonathan Harris, James Hendler, Deborah&nbsp;L. McGuinness, Marco Monti, Nidhi Rastogi, Oshani Seneviratne, and <strong>Mohammed J. Zaki</strong>.
 <strong>Semantic technologies for clinically relevant personal health applications.</strong>
-In <em>Personal Health Informatics: Patient Participation in Precision Health, Editors: Hsueh, Pei-Yun Sabrina and Wetter, Thomas and Zhu, Xinxin</em>, 199–220. Cham, 2022. Springer International Publishing.
+In <em>Personal Health Informatics: Patient Participation in Precision Health, Editors: Hsueh, Pei-Yun Sabrina and Wetter, Thomas and Zhu , Xinxin</em>, 199–220. Cham, 2022. Springer International Publishing.
 URL: <a href="https://doi.org/10.1007/978-3-031-07696-1_10">https://doi.org/10.1007/978-3-031-07696-1_10</a>, <a href="https://doi.org/10.1007/978-3-031-07696-1_10">doi:10.1007/978-3-031-07696-1_10</a>.<br>
                 [<a href="javascript:void(0)" onclick="
                 (function(target, id) {
@@ -1004,11 +1085,11 @@ URL: <a href="https://doi.org/10.1007/978-3-031-07696-1_10">https://doi.org/10.1
             })(this, 'bibtex-2022-springer');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2022-springer" class="publication-abstract" style="display:none">
-                <blockquote>Despite recent advances in digital health solutions and machine learning, personal health applications that aim to modify health behaviors are still limited in their ability to offer more personalized decision support. Moreover, while many personal health applications cater to general health and well-being, there remains a significant opportunity to increase the clinical relevance of the insights being generated. This chapter describes the motivation for, and illustrative applications of, semantic technologies for enabling clinically relevant personal health applications. We present two use cases that demonstrate how semantic web technologies, in combination with machine learning and data mining methods, can be used to provide personalized insights to support behaviors that are consistent with nutritional guidelines for people with diabetes.</blockquote></div>
+                <blockquote>Despite recent advances in digital health solutions and machine learning, personal health applications that aim to modify health behaviors are still limited in their ability to offer more personalized decision support. Moreover, while many personal health applications cater to general health and well-being, there remains a significant opportunity to increase the clinical relevance of the insights being generated. This chapter describes the motivation for , and illustrative applications of, semantic technologies for enabling clinically relevant personal health applications. We present two use cases that demonstrate how semantic web technologies, in combination with machine learning and data mining methods, can be used to provide personalized insights to support behaviors that are consistent with nutritional guidelines for people with diabetes.</blockquote></div>
                 <div id="bibtex-2022-springer" style="display:none"><pre>@inproceedings{2022-springer,
     author = "Chen, Ching-Hua and Gruen, Daniel and Harris, Jonathan and Hendler, James and McGuinness, Deborah L. and Monti, Marco and Rastogi, Nidhi and Seneviratne, Oshani and Zaki, Mohammed J.",
     title = "Semantic Technologies for Clinically Relevant Personal Health Applications",
-    booktitle = "Personal Health Informatics: Patient Participation in Precision Health, Editors: Hsueh, Pei-Yun Sabrina and Wetter, Thomas and Zhu, Xinxin",
+    booktitle = "Personal Health Informatics: Patient Participation in Precision Health, Editors: Hsueh, Pei-Yun Sabrina and Wetter, Thomas and Zhu , Xinxin",
     year = "2022",
     publisher = "Springer International Publishing",
     address = "Cham",
@@ -1048,7 +1129,7 @@ URL: <a href="https://ieeexplore.ieee.org/document/10063681">https://ieeexplore.
             })(this, 'bibtex-2022-trustcom');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2022-trustcom" class="publication-abstract" style="display:none">
-                <blockquote>Threat intelligence on malware attacks and campaigns is increasingly being shared with other security experts for a cost or for free. Other security analysts use this intelligence to inform them of indicators of compromise, attack techniques, and preventative actions. Security analysts prepare threat analysis reports after investigating an attack, an emerging cyber threat, or a recently discovered vulnerability. Collectively known as cyber threat intelligence (CTI), the reports are typically in an unstructured format and, therefore, challenging to integrate seamlessly into existing intrusion detection systems. This paper proposes a framework that uses the aggregated CTI for analysis and defense at scale. The information is extracted and stored in a structured format using knowledge graphs such that the semantics of the threat intelligence can be preserved and shared at scale with other security analysts. Specifically, we propose the first semi-supervised open-source knowledge graph-based framework, TINKER, to capture cyber threat information and its context. Following TINKER, we generate a Cyberthreat Intelligence Knowledge Graph (CTI-KG) and demonstrate the usage using different use cases.</blockquote></div>
+                <blockquote>Threat intelligence on malware attacks and campaigns is increasingly being shared with other security experts for a cost or for free. Other security analysts use this intelligence to inform them of indicators of compromise, attack techniques, and preventative actions. Security analysts prepare threat analysis reports after investigating an attack, an emerging cyber threat, or a recently discovered vulnerability. Collectively known as cyber threat intelligence (CTI), the reports are typically in an unstructured format and, therefore, challenging to integrate seamlessly into existing intrusion detection systems. This paper proposes a framework that uses the aggregated CTI for analysis and defense at scale. The information is extracted and stored in a structured format using knowledge graphs such that the semantics of the threat intelligence can be preserved and shared at scale with other security analysts. Specifically, we propose the first semi-supervised open-source knowledge graph-based framework, TINKER , to capture cyber threat information and its context. Following TINKER, we generate a Cyberthreat Intelligence Knowledge Graph (CTI-KG) and demonstrate the usage using different use cases.</blockquote></div>
                 <div id="bibtex-2022-trustcom" style="display:none"><pre>@inproceedings{2022-trustcom,
     author = "Rastogi, Nidhi and Dutta, Sharmishtha and Gittens, Alex and Zaki, Mohammed J. and Aggarwal, Charu C.",
     title = "{TINKER:} {A} framework for Open source Cyberthreat Intelligence",
@@ -1427,7 +1508,7 @@ URL: <a href="https://deep-learning-graphs.bitbucket.io/dlg-aaai20/">https://dee
             })(this, 'bibtex-2020-dlgma');">BibTeX&#x25BC;</a>]
             
                 <div id="abstract-2020-dlgma" class="publication-abstract" style="display:none">
-                <blockquote>In this paper, we propose an end-to-end graph learning framework, namely Deep Iterative and Adaptive Learning for Graph Neural Networks (DIAL-GNN), for jointly learning the graph structure and graph embeddings simultaneously. We first cast the graph structure learning problem as a similarity metric learning problem and leverage an adapted graph regularization for controlling smoothness, connectivity and sparsity of the generated graph. We further propose a novel iterative method for searching for a hidden graph structure that augments the initial graph structure. Our iterative method dynamically stops when the learned graph structure approaches close enough to the optimal graph. Our extensive experiments demonstrate that the proposed DIAL-GNN model can consistently outperform or match state-of-the-art baselines in terms of both downstream task performance and computational time. The proposed approach can cope with both transductive learning and inductive learning.</blockquote></div>
+                <blockquote>In this paper, we propose an end-to-end graph learning framework, namely Deep Iterative and Adaptive Learning for Graph Neural Networks (DIAL-GNN), for jointly learning the graph structure and graph embeddings simultaneously. We first cast the graph structure learning problem as a similarity metric learning problem and leverage an adapted graph regularization for controlling smoothness , connectivity and sparsity of the generated graph. We further propose a novel iterative method for searching for a hidden graph structure that augments the initial graph structure. Our iterative method dynamically stops when the learned graph structure approaches close enough to the optimal graph. Our extensive experiments demonstrate that the proposed DIAL-GNN model can consistently outperform or match state-of-the-art baselines in terms of both downstream task performance and computational time. The proposed approach can cope with both transductive learning and inductive learning.</blockquote></div>
                 <div id="bibtex-2020-dlgma" style="display:none"><pre>@inproceedings{2020-dlgma,
     author = "Chen, Yu and Wu, Lingfei and Zaki, Mohammed J.",
     title = "Deep Iterative and Adaptive Learning for Graph Neural Networks",
@@ -2879,7 +2960,7 @@ In <em>ACM SIGCHI Conference on Human Factors in Computing Systems – Juried Wo
     Booktitle = "ACM SIGCHI Conference on Human Factors in Computing Systems -- Juried Works-in-Progress",
     month = "May",
     year = "2012",
-    KeyWord = "Conference,SocialNetworks,SentimentAnalysis,DataMining,Classification"
+    KeyWord = "Conference,SocialNetworks,SentimentAnalysis,DataMining, Classification"
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Medha Atre, Vineet Chaoji, and <strong>Mohammed J. Zaki</strong>.
 <strong>Bitpath – label order constrained reachability queries over large graphs.</strong>
@@ -4370,7 +4451,7 @@ URL: <a href="http://www.cs.rpi.edu/~zaki/Workshops/BIOKDD08/">http://www.cs.rpi
     Year = "2008",
     Doi = "10.1007/s10618-008-0098-x",
     customlinkgithubcode = "https://github.com/zakimjz/DMTL",
-    KeyWord = "Journal,DataMining,GraphMining,TreeMining,SequenceMining,ItemsetMining"
+    KeyWord = "Journal,DataMining,GraphMining,TreeMining,SequenceMining, ItemsetMining"
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Jake&nbsp;Y. Chen, <strong>Mohammed J. Zaki</strong>, and Stefano Lonardi.
 <strong>Biokdd08: a workshop report on data mining in bioinformatics.</strong>
@@ -6226,7 +6307,7 @@ AAAI/MIT Press, 2004.<br>[<a href="http://www.cs.rpi.edu/~zaki/PaperDir/NGDM04.p
     KeyWord = "Journal,Biokdd"
 }
 </pre></div></li><li class="publication" style="padding-bottom: 1em;">Bart Goethals and <strong>Mohammed J. Zaki</strong>.
-<strong>Advances in frequent itemset mining implementations: report on <span class="bibtex-protected">FIMI'03</span>.</strong>
+<strong>Advances in frequent itemset mining implementations: report on <span class="bibtex-protected"> FIMI'03</span>.</strong>
 <em>SIGKDD Explorations</em>, 6(1):109&ndash;117, June 2004.<br>[<a href="http://www.cs.rpi.edu/~zaki/PaperDir/KDDExplor04-fimi.pdf">full text</a>] 
             [<a href="javascript:void(0)" onclick="
             (function(target, id) {
@@ -6243,7 +6324,7 @@ AAAI/MIT Press, 2004.<br>[<a href="http://www.cs.rpi.edu/~zaki/PaperDir/NGDM04.p
             })(this, 'bibtex-2004-explor:fimi');">BibTeX&#x25BC;</a>]
             <div id="bibtex-2004-explor:fimi" style="display:none"><pre>@article{2004-explor:fimi,
     Author = "Goethals, Bart and Zaki, Mohammed J.",
-    Title = "Advances in Frequent Itemset Mining Implementations: report on {FIMI'03}",
+    Title = "Advances in Frequent Itemset Mining Implementations: report on { FIMI'03}",
     Journal = "SIGKDD Explorations",
     Volume = "6",
     Number = "1",
@@ -7249,7 +7330,7 @@ In <em>8th ACM SIGKDD International Conference Knowledge Discovery and Data Mini
     Author = "Zaki, Mohammed J.",
     Title = "Efficiently Mining Frequent Trees in a Forest",
     Booktitle = "8th ACM SIGKDD International Conference Knowledge Discovery and Data Mining",
-    Annote = "Errata: Theorem 1, case I a) should be as follows: If P != {} add (y,j) and (y,n\_i) to [Px], where n\_i (=n\_j) is the depth first number for node (x,i). (Note that n\_i is easy to compute. It is simply the number of nodes in prefix P, i.e., length of P, not counting -1s). Also, in example 4, the second last line should be: ...adding elements (4,0) and (4,2) to the class...",
+    Annote = "Errata: Theorem 1, case I a) should be as follows: If P != {} add (y ,j) and (y,n\_i) to [Px], where n\_i (=n\_j) is the depth first number for node (x,i). (Note that n\_i is easy to compute. It is simply the number of nodes in prefix P, i.e., length of P, not counting -1s). Also, in example 4, the second last line should be: ...adding elements (4,0) and (4,2) to the class...",
     Month = "July",
     Year = "2002",
     customlinkgithubcode = "https://github.com/zakimjz/TreeMiner",

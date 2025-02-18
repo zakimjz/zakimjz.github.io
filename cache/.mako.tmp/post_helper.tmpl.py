@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1733442364.0067282
+_modified_time = 1739908435.3124843
 _enable_loop = True
-_template_filename = '/usr/lib/python3.12/site-packages/nikola/data/themes/base/templates/post_helper.tmpl'
+_template_filename = '/usr/lib/python3.13/site-packages/nikola/data/themes/base/templates/post_helper.tmpl'
 _template_uri = 'post_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['meta_translations', 'html_tags', 'html_pager', 'open_graph_metadata', 'twitter_card_information', 'mathjax_script']
@@ -43,9 +43,9 @@ def render_body(context,**pageargs):
 def render_meta_translations(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        sorted = context.get('sorted', UNDEFINED)
         translations = context.get('translations', UNDEFINED)
         lang = context.get('lang', UNDEFINED)
+        sorted = context.get('sorted', UNDEFINED)
         len = context.get('len', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -67,8 +67,8 @@ def render_meta_translations(context,post):
 def render_html_tags(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        hidden_tags = context.get('hidden_tags', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
+        hidden_tags = context.get('hidden_tags', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if post.tags:
@@ -120,11 +120,11 @@ def render_html_pager(context,post):
 def render_open_graph_metadata(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        url_replacer = context.get('url_replacer', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
         blog_title = context.get('blog_title', UNDEFINED)
-        abs_link = context.get('abs_link', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
         permalink = context.get('permalink', UNDEFINED)
+        abs_link = context.get('abs_link', UNDEFINED)
+        url_replacer = context.get('url_replacer', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<meta property="og:site_name" content="')
         __M_writer(filters.html_escape(str(blog_title)))
@@ -207,6 +207,6 @@ def render_mathjax_script(context,post):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib/python3.12/site-packages/nikola/data/themes/base/templates/post_helper.tmpl", "uri": "post_helper.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 0, "31": 2, "32": 12, "33": 24, "34": 41, "35": 68, "36": 84, "37": 89, "43": 4, "51": 4, "52": 5, "54": 6, "56": 7, "57": 8, "58": 8, "59": 8, "60": 8, "61": 8, "67": 14, "73": 14, "74": 15, "75": 16, "76": 17, "78": 18, "79": 19, "80": 19, "81": 19, "82": 19, "83": 19, "84": 22, "90": 26, "95": 26, "96": 27, "97": 28, "98": 29, "99": 30, "100": 31, "101": 31, "102": 31, "103": 31, "104": 31, "105": 31, "106": 34, "107": 35, "108": 36, "109": 36, "110": 36, "111": 36, "112": 36, "113": 36, "114": 39, "120": 43, "129": 43, "130": 44, "131": 44, "132": 45, "133": 45, "134": 46, "135": 46, "136": 47, "137": 48, "138": 48, "139": 48, "140": 49, "141": 50, "142": 50, "143": 50, "144": 52, "145": 53, "146": 53, "147": 53, "148": 55, "149": 60, "150": 61, "151": 61, "152": 61, "153": 63, "155": 64, "156": 65, "157": 65, "158": 65, "164": 70, "169": 70, "170": 71, "171": 72, "172": 72, "173": 72, "174": 73, "175": 74, "176": 74, "177": 74, "178": 75, "179": 76, "180": 76, "181": 76, "182": 78, "183": 79, "184": 79, "185": 79, "186": 80, "187": 81, "188": 81, "189": 81, "195": 87, "200": 87, "201": 88, "202": 88, "208": 202}}
+{"filename": "/usr/lib/python3.13/site-packages/nikola/data/themes/base/templates/post_helper.tmpl", "uri": "post_helper.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 0, "31": 2, "32": 12, "33": 24, "34": 41, "35": 68, "36": 84, "37": 89, "43": 4, "51": 4, "52": 5, "54": 6, "56": 7, "57": 8, "58": 8, "59": 8, "60": 8, "61": 8, "67": 14, "73": 14, "74": 15, "75": 16, "76": 17, "78": 18, "79": 19, "80": 19, "81": 19, "82": 19, "83": 19, "84": 22, "90": 26, "95": 26, "96": 27, "97": 28, "98": 29, "99": 30, "100": 31, "101": 31, "102": 31, "103": 31, "104": 31, "105": 31, "106": 34, "107": 35, "108": 36, "109": 36, "110": 36, "111": 36, "112": 36, "113": 36, "114": 39, "120": 43, "129": 43, "130": 44, "131": 44, "132": 45, "133": 45, "134": 46, "135": 46, "136": 47, "137": 48, "138": 48, "139": 48, "140": 49, "141": 50, "142": 50, "143": 50, "144": 52, "145": 53, "146": 53, "147": 53, "148": 55, "149": 60, "150": 61, "151": 61, "152": 61, "153": 63, "155": 64, "156": 65, "157": 65, "158": 65, "164": 70, "169": 70, "170": 71, "171": 72, "172": 72, "173": 72, "174": 73, "175": 74, "176": 74, "177": 74, "178": 75, "179": 76, "180": 76, "181": 76, "182": 78, "183": 79, "184": 79, "185": 79, "186": 80, "187": 81, "188": 81, "189": 81, "195": 87, "200": 87, "201": 88, "202": 88, "208": 202}}
 __M_END_METADATA
 """
