@@ -31,7 +31,7 @@ You can also find my publications on |googlescholar|_ and  |dblp|_.
 
 .. |googlescholar| image:: /images/googlescholar.gif
    :width: 100
-.. _googlescholar: http://scholar.google.com/scholar?q=zaki,+mj
+.. _googlescholar: https://scholar.google.com/citations?user=UmwJklEAAAAJ&hl=en
 
 .. |dblp| image:: /images/dblplogo.gif
    :width: 100
