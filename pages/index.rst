@@ -27,7 +27,9 @@ and textual data, with applications in bioinformatics, personal health and
 financial analytics. He has around 300 publications (and 6 patents),
 including the `Data Mining and Machine Learning
 <http://dataminingbook.info>`_ textbook (2nd Edition, Cambridge
-University Press, 2020). He is the founding co-chair for the BIOKDD
+University Press, 2020). His research has won several best paper awards and nominations, including the
+`EDBT'24 Test of Time Award <https://dastlab.github.io/edbticdt2024/?contents=awards_tot_edbt.html>`_.
+He is the founding co-chair for the BIOKDD
 series of workshops. He is currently an associate editor for Data Mining
 and Knowledge Discovery, and he has also served as Area Editor for
 Statistical Analysis and Data Mining, and as Associate Editor for ACM
@@ -47,9 +49,9 @@ was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
 as HP Innovation Research Award, and Google Faculty Research Award. 
 His research is supported in part by NSF, DARPA, NIH, DOE, IBM, Google, HP,
-and Nvidia. He  is a `Fellow of the IEEE
-<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_,  a
-`Fellow of the ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_, and a `Fellow of the AAAS <https://www.aaas.org/news/elected-fellows-announcement-2022>`_. 
+and Nvidia. He  is a Fellow of the `IEEE
+<https://www.computer.org/press-room/2016-news/cs-fellows-2017>`_,
+`ACM <https://www.acm.org/media-center/2022/january/fellows-2021>`_, `AAAS <https://www.aaas.org/news/elected-fellows-announcement-2022>`_, and `SIAM <https://www.siam.org/publications/siam-news/articles/siam-announces-2025-class-of-fellows/>`_. 
 
 
 Courses

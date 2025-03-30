@@ -10517,7 +10517,7 @@ $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j
 2004-schism	bibtex/zakipapers.bib	/^@inproceedings{2004-schism,$/;"	j
 2004-vwm	bibtex/zakipapers.bib	/^@inproceedings{2004-vwm,$/;"	j
 2005	cache/pages/publications.html	/^<\/pre><\/div><\/li><\/ul><h3>2005<\/h3>$/;"	j
-2005-bdme	bibtex/zakipapers.bib	/^@Proceedings{2005-bdme,$/;"	P
+2005-bdme	bibtex/zakipapers.bib	/^@proceedings{2005-bdme,$/;"	P
 2005-biokdd	bibtex/zakipapers.bib	/^@proceedings{2005-biokdd,$/;"	P
 2005-charm:tkde	bibtex/zakipapers.bib	/^@article{2005-charm:tkde,$/;"	a
 2005-clicks	bibtex/zakipapers.bib	/^@inproceedings{2005-clicks,$/;"	j
@@ -10584,7 +10584,7 @@ $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j
 2008-psist:jpdc	bibtex/zakipapers.bib	/^@article{2008-psist:jpdc,$/;"	a
 2008-pspbook	bibtex/zakipapers.bib	/^@book{2008-pspbook,$/;"	b
 2008-sadm	bibtex/zakipapers.bib	/^@article{2008-sadm,$/;"	a
-2008-sdm	bibtex/zakipapers.bib	/^@Proceedings{2008-sdm,$/;"	P
+2008-sdm	bibtex/zakipapers.bib	/^@proceedings{2008-sdm,$/;"	P
 2008-snap	bibtex/zakipapers.bib	/^@inproceedings{2008-snap,$/;"	j
 2008-sparcl	bibtex/zakipapers.bib	/^@inproceedings{2008-sparcl,$/;"	j
 2008-tkdd-editorial	bibtex/zakipapers.bib	/^@article{2008-tkdd-editorial,$/;"	a
@@ -10602,7 +10602,7 @@ $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j
 2009-lac-competence	bibtex/zakipapers.bib	/^@inproceedings{2009-lac-competence,$/;"	j
 2009-musk	bibtex/zakipapers.bib	/^@inproceedings{2009-musk,$/;"	j
 2009-robin:prl	bibtex/zakipapers.bib	/^@article{2009-robin:prl,$/;"	a
-2009-sigkdd	bibtex/zakipapers.bib	/^@Proceedings{2009-sigkdd,$/;"	P
+2009-sigkdd	bibtex/zakipapers.bib	/^@proceedings{2009-sigkdd,$/;"	P
 2009-simclus	bibtex/zakipapers.bib	/^@inproceedings{2009-simclus,$/;"	j
 2009-snap:jbcb	bibtex/zakipapers.bib	/^@article{2009-snap:jbcb,$/;"	a
 2009-sparcl:kais	bibtex/zakipapers.bib	/^@article{2009-sparcl:kais,$/;"	a
@@ -10732,14 +10732,17 @@ $t	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j
 2023-jows	bibtex/zakipapers.bib	/^@article{2023-jows,$/;"	a
 2023-sigkdd	bibtex/zakipapers.bib	/^@inproceedings{2023-sigkdd,$/;"	j
 2023-tnnls	bibtex/zakipapers.bib	/^@article{2023-tnnls,$/;"	a
-2024	cache/pages/publications.html	/^<h3>2024<\/h3>$/;"	j
+2024	cache/pages/publications.html	/^<\/pre><\/div><\/li><\/ul><h3>2024<\/h3>$/;"	j
 2024-cifer	bibtex/zakipapers.bib	/^@inproceedings{2024-cifer,$/;"	j
 2024-cikm	bibtex/zakipapers.bib	/^@inproceedings{2024-cikm,$/;"	j
 2024-icml	bibtex/zakipapers.bib	/^@inproceedings{2024-icml,$/;"	j
 2024-jhir	bibtex/zakipapers.bib	/^@article{2024-jhir,$/;"	a
 2024-mir	bibtex/zakipapers.bib	/^@article{2024-mir,$/;"	a
+2024-neuripsw	bibtex/zakipapers.bib	/^@inproceedings{2024-neuripsw,$/;"	j
 2024-tkdd	bibtex/zakipapers.bib	/^@article{2024-tkdd,$/;"	a
 2024-tmlr	bibtex/zakipapers.bib	/^@article{2024-tmlr,$/;"	a
+2025	cache/pages/publications.html	/^<h3>2025<\/h3>$/;"	j
+2025-aaai	bibtex/zakipapers.bib	/^@inproceedings{2025-aaai,$/;"	j
 21	themes/mybootstrap/config.json	/^    "progress-bars.less",$/;"	s	array:css
 22	themes/mybootstrap/config.json	/^    "media.less",$/;"	s	array:css
 23	themes/mybootstrap/config.json	/^    "list-group.less",$/;"	s	array:css
@@ -12313,7 +12316,7 @@ __init__	output/listings/mlib/compute_phi_psi.py	/^    def __init__(self, name_s
 __init__	plugins/publication_list/publication_list.py	/^    def __init__(self, detail_page_url):$/;"	m	class:Style
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _activate	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_activate	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _addAriaAndCollapsedClass	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addAriaAndCollapsedClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _addEventListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12325,7 +12328,7 @@ _cleanTipClass	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _clearMenus	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
 _clearMenus	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:t
 _close	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_close	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _data	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
 _data	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0a505
 _dataApiClickHandler	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12396,7 +12399,6 @@ _exports	cache/.mako.tmp/ui_helper.tmpl.py	/^_exports = ['breadcrumbs', 'show_so
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-_getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getContent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	variable:a
@@ -12412,7 +12414,7 @@ _getMenuElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typ
 _getOffset	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffset	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getOffsetHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getOffsetHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getParent	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParent	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _getParentFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12424,9 +12426,9 @@ _getPopperConfig	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==ty
 _getRootElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getRootElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getScrollHeight	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getScrollHeight	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getScrollTop	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_getScrollTop	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _getTargetFromElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	function:t
 _getTargetFromElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:t
 _handleDismiss	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	function:t
@@ -12507,34 +12509,34 @@ _mako_inherit	cache/.mako.tmp/page.tmpl.py	/^def _mako_inherit(template, context
 _mako_inherit	cache/.mako.tmp/post.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/story.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
 _mako_inherit	cache/.mako.tmp/tags.tmpl.py	/^def _mako_inherit(template, context):$/;"	f
-_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1731975751.355688$/;"	v
-_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1731975751.407916$/;"	v
-_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1731975750.9822083$/;"	v
-_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1731975751.0176024$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1731975750.8406768$/;"	v
-_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1731975750.9299047$/;"	v
-_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1731975751.0566318$/;"	v
-_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1731975752.1029902$/;"	v
-_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1731975751.2722797$/;"	v
-_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1731975751.3027842$/;"	v
-_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1731975751.3804882$/;"	v
-_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1731975751.238656$/;"	v
-_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1731975750.8663032$/;"	v
-_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1731975750.7262864$/;"	v
-_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1731975751.328264$/;"	v
-_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1731975750.8953574$/;"	v
-_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1731975750.81412$/;"	v
-_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1731975750.7844543$/;"	v
-_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1731975750.7545469$/;"	v
-_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1731975751.4349296$/;"	v
-_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1731975750.9562964$/;"	v
+_modified_time	cache/.mako.tmp/archive.tmpl.py	/^_modified_time = 1739915720.5599911$/;"	v
+_modified_time	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_modified_time = 1739915720.6157703$/;"	v
+_modified_time	cache/.mako.tmp/base.tmpl.py	/^_modified_time = 1739915717.7019453$/;"	v
+_modified_time	cache/.mako.tmp/base_helper.tmpl.py	/^_modified_time = 1739915717.7624424$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper.tmpl.py	/^_modified_time = 1739915720.024124$/;"	v
+_modified_time	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_modified_time = 1739915720.0825799$/;"	v
+_modified_time	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_modified_time = 1739915717.801518$/;"	v
+_modified_time	cache/.mako.tmp/gallery.tmpl.py	/^_modified_time = 1739915719.989045$/;"	v
+_modified_time	cache/.mako.tmp/index.tmpl.py	/^_modified_time = 1739915720.4727063$/;"	v
+_modified_time	cache/.mako.tmp/index_helper.tmpl.py	/^_modified_time = 1739915720.5051417$/;"	v
+_modified_time	cache/.mako.tmp/list_post.tmpl.py	/^_modified_time = 1739915720.5870643$/;"	v
+_modified_time	cache/.mako.tmp/listing.tmpl.py	/^_modified_time = 1739915717.6683805$/;"	v
+_modified_time	cache/.mako.tmp/math_helper.tmpl.py	/^_modified_time = 1739915720.1132333$/;"	v
+_modified_time	cache/.mako.tmp/page.tmpl.py	/^_modified_time = 1739915720.1509893$/;"	v
+_modified_time	cache/.mako.tmp/pagination_helper.tmpl.py	/^_modified_time = 1739915720.5316992$/;"	v
+_modified_time	cache/.mako.tmp/post.tmpl.py	/^_modified_time = 1739915720.238538$/;"	v
+_modified_time	cache/.mako.tmp/post_header.tmpl.py	/^_modified_time = 1739915720.20885$/;"	v
+_modified_time	cache/.mako.tmp/post_helper.tmpl.py	/^_modified_time = 1739915720.0534525$/;"	v
+_modified_time	cache/.mako.tmp/story.tmpl.py	/^_modified_time = 1739915720.1779046$/;"	v
+_modified_time	cache/.mako.tmp/tags.tmpl.py	/^_modified_time = 1739915720.6436932$/;"	v
+_modified_time	cache/.mako.tmp/ui_helper.tmpl.py	/^_modified_time = 1739915717.731794$/;"	v
 _n	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb631d00.t
 _offsets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae12200.t
 _offsets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _process	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_process	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _queueHooks	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6ab05
 _queueHooks	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0ab05
 _removeData	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6a505
@@ -12544,7 +12546,7 @@ _removeElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==type
 _setActiveIndicatorElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setActiveIndicatorElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _setListeners	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+_setListeners	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _showElement	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _showElement	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 _slide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -12574,27 +12576,27 @@ _targets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports
 _targets	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
 _targets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae12200.t
 _targets	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:e.refresh
-_template_filename	cache/.mako.tmp/archive.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/base.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/base_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/comments_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/gallery.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/index.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/index_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/list_post.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/listing.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/math_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/page.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/pagination_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/post.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/post_header.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/post_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/story.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
-_template_filename	cache/.mako.tmp/tags.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
-_template_filename	cache/.mako.tmp/ui_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.12\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/archive.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/base.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/base_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/comments_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/comments_helper_dummy.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/feeds_translations_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/gallery.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/index.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/index_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/list_post.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/listing.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/math_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/page.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/pagination_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/post.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/post_header.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/post_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/story.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/base\/templat/;"	v
+_template_filename	cache/.mako.tmp/tags.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
+_template_filename	cache/.mako.tmp/ui_helper.tmpl.py	/^_template_filename = '\/usr\/lib\/python3.13\/site-packages\/nikola\/data\/themes\/bootstrap4\/t/;"	v
 _template_uri	cache/.mako.tmp/archive.tmpl.py	/^_template_uri = 'archive.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/archive_navigation_helper.tmpl.py	/^_template_uri = 'archive_navigation_helper.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/base.tmpl.py	/^_template_uri = 'base.tmpl'$/;"	v
@@ -12617,7 +12619,7 @@ _template_uri	cache/.mako.tmp/story.tmpl.py	/^_template_uri = 'story.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/tags.tmpl.py	/^_template_uri = 'tags.tmpl'$/;"	v
 _template_uri	cache/.mako.tmp/ui_helper.tmpl.py	/^_template_uri = 'ui_helper.tmpl'$/;"	v
 _transitionComplete	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
+_transitionComplete	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 _triggerArray	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb625000.t
 _triggerArray	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	function:anonymousFunction3fa8e3ae5500.t
 _triggerBackdropTransition	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
@@ -13036,10 +13038,14 @@ abstract-2024-jhir	cache/pages/publications.html	/^                <div id="abst
 abstract-2024-jhir	output/publications/index.html	/^                <div id="abstract-2024-jhir" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-mir	cache/pages/publications.html	/^                <div id="abstract-2024-mir" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-mir	output/publications/index.html	/^                <div id="abstract-2024-mir" class="publication-abstract" style="display:none">$/;"	I
+abstract-2024-neuripsw	cache/pages/publications.html	/^                <div id="abstract-2024-neuripsw" class="publication-abstract" style="display:non/;"	I
+abstract-2024-neuripsw	output/publications/index.html	/^                <div id="abstract-2024-neuripsw" class="publication-abstract" style="display:non/;"	I
 abstract-2024-tkdd	cache/pages/publications.html	/^                <div id="abstract-2024-tkdd" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-tkdd	output/publications/index.html	/^                <div id="abstract-2024-tkdd" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-tmlr	cache/pages/publications.html	/^                <div id="abstract-2024-tmlr" class="publication-abstract" style="display:none">$/;"	I
 abstract-2024-tmlr	output/publications/index.html	/^                <div id="abstract-2024-tmlr" class="publication-abstract" style="display:none">$/;"	I
+abstract-2025-aaai	cache/pages/publications.html	/^                <div id="abstract-2025-aaai" class="publication-abstract" style="display:none">$/;"	I
+abstract-2025-aaai	output/publications/index.html	/^                <div id="abstract-2025-aaai" class="publication-abstract" style="display:none">$/;"	I
 abutsEnd	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 abutsStart	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	class:t
 accepts	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousObjectc4d0dcb618105
@@ -15688,10 +15694,14 @@ bibtex-2024-jhir	cache/pages/publications.html	/^                <div id="bibtex
 bibtex-2024-jhir	output/publications/index.html	/^                <div id="bibtex-2024-jhir" style="display:none"><pre>@article{2024-jhir,$/;"	I
 bibtex-2024-mir	cache/pages/publications.html	/^                <div id="bibtex-2024-mir" style="display:none"><pre>@article{2024-mir,$/;"	I
 bibtex-2024-mir	output/publications/index.html	/^                <div id="bibtex-2024-mir" style="display:none"><pre>@article{2024-mir,$/;"	I
+bibtex-2024-neuripsw	cache/pages/publications.html	/^                <div id="bibtex-2024-neuripsw" style="display:none"><pre>@inproceedings{2024-neu/;"	I
+bibtex-2024-neuripsw	output/publications/index.html	/^                <div id="bibtex-2024-neuripsw" style="display:none"><pre>@inproceedings{2024-neu/;"	I
 bibtex-2024-tkdd	cache/pages/publications.html	/^                <div id="bibtex-2024-tkdd" style="display:none"><pre>@article{2024-tkdd,$/;"	I
 bibtex-2024-tkdd	output/publications/index.html	/^                <div id="bibtex-2024-tkdd" style="display:none"><pre>@article{2024-tkdd,$/;"	I
 bibtex-2024-tmlr	cache/pages/publications.html	/^                <div id="bibtex-2024-tmlr" style="display:none"><pre>@article{2024-tmlr,$/;"	I
 bibtex-2024-tmlr	output/publications/index.html	/^                <div id="bibtex-2024-tmlr" style="display:none"><pre>@article{2024-tmlr,$/;"	I
+bibtex-2025-aaai	cache/pages/publications.html	/^                <div id="bibtex-2025-aaai" style="display:none"><pre>@inproceedings{2025-aaai,$/;"	I
+bibtex-2025-aaai	output/publications/index.html	/^                <div id="bibtex-2025-aaai" style="display:none"><pre>@inproceedings{2025-aaai,$/;"	I
 big	themes/zen/assets/css/theme.css	/^big,$/;"	s
 binary	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousFunctionc4d0dcb617800.anonymousFunctionc4d0dcb617900.o.anonymousFunctionc4d0dcb617b00.anonymousObjectc4d0dcb617c05
 binary	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	p	variable:anonymousFunctione21246b017800.anonymousFunctione21246b017900.o.anonymousFunctione21246b017b00.anonymousObjecte21246b017c05
@@ -16538,9 +16548,7 @@ display	themes/mybootstrap/js/bootstrap.min.js	/^if("undefined"==typeof jQuery)t
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 dispose	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
-dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
-dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	class:e
 dispose	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	method:e
 div	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb62c805.whiteList
 div	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	property:anonymousObject3fa8e3aecd05.whiteList
@@ -17773,7 +17781,7 @@ glyphicons_halflingsregular	themes/mybootstrap/fonts/glyphicons-halflings-regula
 gn	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	f	function:k.anonymousFunction5440d2c613600
 googlescholar	pages/index.rst	/^.. _googlescholar: https:\/\/scholar.google.com\/citations?user=UmwJklEAAAAJ&hl=en$/;"	T	chapter:Publications and Software
 googlescholar	pages/index.rst	/^.. |googlescholar| image:: \/images\/googlescholar.gif$/;"	d	chapter:Publications and Software
-googlescholar	pages/publications.rst	/^.. _googlescholar: http:\/\/scholar.google.com\/scholar?q=zaki,+mj$/;"	T
+googlescholar	pages/publications.rst	/^.. _googlescholar: https:\/\/scholar.google.com\/citations?user=UmwJklEAAAAJ&hl=en$/;"	T
 googlescholar	pages/publications.rst	/^.. |googlescholar| image:: \/images\/googlescholar.gif$/;"	d
 gpuAcceleration	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb61ec05.modifiers.applyStyle
 gpuAcceleration	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports&&'undefined'!=typeof module?module.exports=t():'func/;"	p	property:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb61ec05.modifiers.computeStyle
@@ -17993,7 +18001,6 @@ hide	output/assets/js/all-nocdn.js	/^ *\/(function(e,t){'object'==typeof exports
 hide	output/assets/js/all-nocdn.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjectc4d0dcb6b805
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
-hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 hide	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3aefb05
 hide	output/assets/js/jquery.min.js	/^!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.expo/;"	m	variable:anonymousObjecte21246b0b805
@@ -20383,7 +20390,7 @@ reference	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof ex
 reflow	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunctionc4d0dcb618a00.anonymousFunctionc4d0dcb61fe00.d
 reflow	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	m	variable:anonymousFunction3fa8e3ae0300.d
 refresh	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
-refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
+refresh	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 refresh	themes/mybootstrap/js/bootstrap.js	/^  ScrollSpy.prototype.refresh = function () {$/;"	m	class:ScrollSpy
 refresh	themes/mybootstrap/js/bootstrap.min.js	/^if(this.$element.is(":visible")){var e=this.$element.height(),o=this.options.offset,n=o.top,s=o./;"	m	class:e
 regex	output/assets/js/luxon.min.js	/^var luxon=function(t){"use strict";function j(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enum/;"	p	variable:k.anonymousObject5440d2c619205
@@ -20855,7 +20862,6 @@ show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"u
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628a05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousFunctionc4d0dcb618a00.anonymousObjectc4d0dcb628b05
 show	output/assets/js/all-nocdn.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObjectc4d0dcb62f605
-show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	class:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	f	method:e
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae8f05
 show	output/assets/js/bootstrap.min.js	/^!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),/;"	p	variable:anonymousObject3fa8e3ae9005
