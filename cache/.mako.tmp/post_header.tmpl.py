@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1743352299.834666
+_modified_time = 1751359089.5897074
 _enable_loop = True
-_template_filename = '/usr/lib/python3.13/site-packages/nikola/data/themes/base/templates/post_header.tmpl'
+_template_filename = '/usr/local/lib/python3.12/dist-packages/nikola/data/themes/base/templates/post_header.tmpl'
 _template_uri = 'post_header.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['html_title', 'html_translations', 'html_sourcelink', 'html_post_header']
@@ -63,11 +63,11 @@ def render_html_title(context):
 def render_html_translations(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        messages = context.get('messages', UNDEFINED)
         lang = context.get('lang', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
+        len = context.get('len', UNDEFINED)
         sorted = context.get('sorted', UNDEFINED)
         translations = context.get('translations', UNDEFINED)
-        len = context.get('len', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if len(post.translated_to) > 1:
@@ -93,9 +93,9 @@ def render_html_translations(context,post):
 def render_html_sourcelink(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        messages = context.get('messages', UNDEFINED)
         show_sourcelink = context.get('show_sourcelink', UNDEFINED)
         post = context.get('post', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if show_sourcelink:
@@ -112,19 +112,19 @@ def render_html_sourcelink(context):
 def render_html_post_header(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        def html_title():
-            return render_html_title(context)
-        post = context.get('post', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
-        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
         def html_sourcelink():
             return render_html_sourcelink(context)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
-        multiple_authors_per_post = context.get('multiple_authors_per_post', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        def html_title():
+            return render_html_title(context)
         def html_translations(post):
             return render_html_translations(context,post)
+        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
+        multiple_authors_per_post = context.get('multiple_authors_per_post', UNDEFINED)
+        post = context.get('post', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n    <header>\n        ')
@@ -191,6 +191,6 @@ def render_html_post_header(context):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib/python3.13/site-packages/nikola/data/themes/base/templates/post_header.tmpl", "uri": "post_header.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 0, "34": 2, "35": 3, "36": 9, "37": 22, "38": 28, "39": 64, "45": 5, "51": 5, "52": 6, "53": 7, "54": 7, "55": 7, "56": 7, "57": 7, "63": 11, "72": 11, "73": 12, "74": 13, "75": 14, "76": 14, "77": 15, "79": 16, "80": 17, "81": 17, "82": 17, "83": 17, "84": 17, "85": 17, "86": 17, "87": 20, "93": 24, "100": 24, "101": 25, "102": 26, "103": 26, "104": 26, "105": 26, "106": 26, "112": 30, "130": 30, "131": 32, "132": 32, "133": 35, "135": 36, "136": 37, "137": 37, "138": 37, "139": 37, "140": 37, "141": 39, "142": 40, "143": 40, "144": 40, "145": 40, "146": 40, "147": 41, "148": 42, "149": 42, "150": 42, "151": 44, "152": 46, "153": 46, "154": 47, "155": 47, "156": 47, "157": 47, "158": 47, "159": 47, "160": 48, "161": 49, "162": 49, "163": 49, "164": 50, "165": 50, "166": 50, "167": 50, "168": 50, "169": 50, "170": 52, "171": 54, "172": 55, "173": 55, "174": 55, "175": 57, "176": 57, "177": 57, "178": 58, "179": 59, "180": 59, "181": 59, "182": 59, "183": 59, "184": 61, "185": 62, "186": 62, "192": 186}}
+{"filename": "/usr/local/lib/python3.12/dist-packages/nikola/data/themes/base/templates/post_header.tmpl", "uri": "post_header.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 0, "34": 2, "35": 3, "36": 9, "37": 22, "38": 28, "39": 64, "45": 5, "51": 5, "52": 6, "53": 7, "54": 7, "55": 7, "56": 7, "57": 7, "63": 11, "72": 11, "73": 12, "74": 13, "75": 14, "76": 14, "77": 15, "79": 16, "80": 17, "81": 17, "82": 17, "83": 17, "84": 17, "85": 17, "86": 17, "87": 20, "93": 24, "100": 24, "101": 25, "102": 26, "103": 26, "104": 26, "105": 26, "106": 26, "112": 30, "130": 30, "131": 32, "132": 32, "133": 35, "135": 36, "136": 37, "137": 37, "138": 37, "139": 37, "140": 37, "141": 39, "142": 40, "143": 40, "144": 40, "145": 40, "146": 40, "147": 41, "148": 42, "149": 42, "150": 42, "151": 44, "152": 46, "153": 46, "154": 47, "155": 47, "156": 47, "157": 47, "158": 47, "159": 47, "160": 48, "161": 49, "162": 49, "163": 49, "164": 50, "165": 50, "166": 50, "167": 50, "168": 50, "169": 50, "170": 52, "171": 54, "172": 55, "173": 55, "174": 55, "175": 57, "176": 57, "177": 57, "178": 58, "179": 59, "180": 59, "181": 59, "182": 59, "183": 59, "184": 61, "185": 62, "186": 62, "192": 186}}
 __M_END_METADATA
 """

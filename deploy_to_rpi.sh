@@ -1,1 +1,1 @@
-rsync -av --exclude 'CNAME' output/* linux.cs.rpi.edu:www/.
+rsync -av --exclude 'CNAME' output/* zakim@linux.cs.rpi.edu:www/.

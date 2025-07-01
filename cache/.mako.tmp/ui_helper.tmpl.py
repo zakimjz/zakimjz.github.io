@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1743352299.1140997
+_modified_time = 1751359088.537209
 _enable_loop = True
-_template_filename = '/usr/lib/python3.13/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl'
+_template_filename = '/usr/local/lib/python3.12/dist-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl'
 _template_uri = 'ui_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['breadcrumbs', 'show_sourcelink']
@@ -70,6 +70,6 @@ def render_show_sourcelink(context,sourcelink_href):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib/python3.13/site-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl", "uri": "ui_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 18, "22": 24, "28": 2, "33": 2, "34": 3, "35": 4, "36": 6, "38": 7, "40": 8, "41": 9, "42": 9, "43": 9, "44": 10, "45": 11, "46": 11, "47": 11, "48": 11, "49": 11, "50": 15, "56": 20, "61": 20, "62": 22, "63": 22, "64": 22, "65": 22, "71": 65}}
+{"filename": "/usr/local/lib/python3.12/dist-packages/nikola/data/themes/bootstrap4/templates/ui_helper.tmpl", "uri": "ui_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 18, "22": 24, "28": 2, "33": 2, "34": 3, "35": 4, "36": 6, "38": 7, "40": 8, "41": 9, "42": 9, "43": 9, "44": 10, "45": 11, "46": 11, "47": 11, "48": 11, "49": 11, "50": 15, "56": 20, "61": 20, "62": 22, "63": 22, "64": 22, "65": 22, "71": 65}}
 __M_END_METADATA
 """
