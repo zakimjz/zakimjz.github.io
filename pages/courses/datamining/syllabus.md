@@ -69,21 +69,21 @@ Wagner Meira, Jr, Cambridge University Press, 2020.
 
 Your grade will be a combination of the following items.
 
-* **Assignments (60%)**: Assignments and HWs will be given throughout
-  the semester. These will include an implementation component and can
-  also have written questions. You can expect about 7-8 assignments
-  over the semester.
+* **Assignments (30%)**: Assignments and HWs will be given throughout the
+semester. These will include an implementation component and can also have
+written questions. You can expect about 7-8 assignments over the semester.
+ 
+   **Late Submissions**: Most assignments will be due just before midnight on the
+   due date. Each day late will incur a 10% penalty, up to a maximum of 3 days.
+   Submissions after that will not be graded.
 
-* **Exams (40%)**: There will be two exams -- one mid-term and one at the end. The tentative exam dates are noted on the class schedule
-  table. There is no comprehensive final exam.
+* **Exams (60%)**: There will be three exams. The tentative exam dates are
+noted on the class schedule table. There is no comprehensive final exam. Exams
+will be closed book.
 
-* **Attendance and Quizzes**: Students are strongly encouraged  to attend all classes and
-    to participate in the class via discussions and engagement via the
-    discussion forum.
+* **Quizzes (10%)**: There will be regular quizzes, to encourage students to
+remain up-to-date on the course content.
 
-* **Late Submissions**: Most assignments will be due just before
-  midnight on the due date. Each day late will incur a 10% penalty, up to a
-  maximum of 3 days. Submissions after that will not be graded.
 
 The grading for CSCI4390 and CSCI6390 will be done separately taking
 into account the more advanced material required for CSCI6390 -- this
@@ -102,23 +102,11 @@ other exceptional circumstances, as long as there is supporting documentation.
 Students must work independently on all course assignments. You may
 consult other members of the class on the assignments, **but you must
 submit your own work**. For instance you may discuss general approaches to
-solving a problem, but you must implement the solution on your own
-(similarity detection software may be used). **Anytime you borrow
-material from the web or elsewhere, you must acknowledge the source**.
-Copying and pasting from published sources or the internet is considered
-plagiarism and is not acceptable. Plagiarized work will receive an
-automatic grade of zero.
-
-Student-teacher relationships are built on trust. Acts which violate
-this trust undermine the educational process. The Rensselaer Handbook of
-Student Rights and Responsibilities and The Rensselaer Graduate Student
-Supplement define various forms of Academic Dishonesty and procedures
-for responding to them. **Submission of any assignment that is in
-violation with these policies will result in a penalty that is deemed by
+solving a problem, but you must implement the solution on your own.
+**You are allowed to use AI tools to help you implement and test your solutions**. 
+However, you must submit the tools used and the prompts along with your notebook submission.
+Instances of academic integrity violations will incur a penalty that is deemed by
 the instructor to be appropriate to the infraction ranging from a grade
 of zero on the assignment in question, to failure of the class as a
 whole. The student will also be reported to the Dean of Students or the
-Dean of Graduate Education as appropriate**. Note that academic
-dishonesty will be dealt with severely and will be reported to the Dean
-of Students. If you have any questions concerning this policy before
-submitting an assignment, please ask for clarification.
+Dean of Graduate Education as appropriate.
