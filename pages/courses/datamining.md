@@ -59,7 +59,7 @@ below.
 |  Nov 13 | Neural Networks II (Chapter 25)||
 |  Nov 17 | Support Vector Machines I (Chapter 21) ||
 |  Nov 20 | Support Vector Machines II (Chapter 21)  ||
-|  Nov 24 | NO CLASS (Thanksgiving) ||
+|  Nov 24 | **NO CLASS** (Thanksgiving) ||
 |  Nov 27 | **NO CLASS** (Thanksgiving) ||
 |  Dec 01 | Classification Assessment (Chapters 22) I ||
 |  Dec 04 | Classification Assessment (Chapters 22) II ||

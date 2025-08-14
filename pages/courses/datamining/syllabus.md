@@ -72,10 +72,9 @@ Your grade will be a combination of the following items.
 * **Assignments (30%)**: Assignments and HWs will be given throughout the
 semester. These will include an implementation component and can also have
 written questions. You can expect about 7-8 assignments over the semester.
- 
-   **Late Submissions**: Most assignments will be due just before midnight on the
-   due date. Each day late will incur a 10% penalty, up to a maximum of 3 days.
-   Submissions after that will not be graded.
+**Late Submissions**: Most assignments will be due just before midnight on the
+due date. Each day late will incur a 10% penalty, up to a maximum of 3 days.
+Submissions after that will not be graded.
 
 * **Exams (60%)**: There will be three exams. The tentative exam dates are
 noted on the class schedule table. There is no comprehensive final exam. Exams
