@@ -48,11 +48,10 @@ and Nvidia. He  is a Fellow of the `IEEE
 Courses
 -------
 
-Fall 2024: :doc:`Data Mining <datamining>`
+:doc:`Data Mining <datamining>`
 
-Spring 2022: :doc:`Machine Learning in Bioinformatics <mlib>` 
+:doc:`Machine Learning in Bioinformatics <mlib>` 
 
-Spring 2021: {{% doc %}} algorithms {{% /doc %}}
 
 
 Publications and Software
