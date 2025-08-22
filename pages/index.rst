@@ -30,20 +30,11 @@ including the `Data Mining and Machine Learning
 University Press, 2020). His research has won several best paper awards and nominations, including the
 `EDBT'24 Test of Time Award <https://dastlab.github.io/edbticdt2024/?contents=awards_tot_edbt.html>`_.
 He is the founding co-chair for the BIOKDD
-series of workshops. He is currently an associate editor for Data Mining
-and Knowledge Discovery, and he has also served as Area Editor for
-Statistical Analysis and Data Mining, and as Associate Editor for ACM
+series of workshops. He has served as associate editor for several journals, including 
+Data Mining and Knowledge Discovery, Statistical Analysis and Data Mining, ACM
 Transactions on Knowledge Discovery from Data, and Social Networks and
-Mining. He was the program co-chair for `SDM'08
-<http://www.siam.org/meetings/sdm08>`_, `SIGKDD\'09
-<http://dl.acm.org/citation.cfm?id=1557019>`_, `PAKDD'10
-<http://link.springer.com/book/10.1007%2F978-3-642-13657-3>`_, `BIBM'11
-<http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6120121>`_,
-`CIKM'12 <http://dl.acm.org/citation.cfm?id=2396761>`_, `ICDM'12
-<http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6412852>`_,
-`IEEE BigData'15 <http://cci.drexel.edu/bigdata/bigdata2015>`_, and
-`CIKM'18 <http://www.cikm2018.units.it>`_, and he recently co-chaired
-`CIKM'22 <https://www.cikm2022.org/>`_. He is currently serving on
+Mining. He was the program co-chair for SIGKDD, SDM, ICDM, PAKDD, BIBM, IEEE BigData, and CIKM conferences.
+He also served on
 the Board of Directors for `ACM SIGKDD <https://www.kdd.org/about>`_. He
 was a recipient of the National Science Foundation CAREER Award and the
 Department of Energy Early Career Principal Investigator Award, as well
