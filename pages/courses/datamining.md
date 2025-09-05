@@ -32,10 +32,10 @@ Tentative course schedule is given below. Lecture notes (in PDF) appear
 below.
 
 | Date       | Topic                                                        |                                                               Lectures |
-| :--------- | :----------------------------------------------------------- | ---------------------------------------------------------------------: |
+| :--------- | :----------------------------------------------------------- | ---------------------------------------------------------------------: | ---------------------------------------------------------------------- |
 | Aug 28     | Data Matrix/Numeric Attributes (Chapter 1, 2)                | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
 | Sep 04     | Numeric Attributes (Chapter 2)                               | [lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf) |
-| Sep 05 (F) | Numeric Attributes (Chapter 2)                               |                                                                        |
+| Sep 05 (F) | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)         |                                                                        | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf) |
 | Sep 08     | Eigenvectors                                                 |                                                                        |
 | Sep 11     | PCA (Chapter 7)                                              |                                                                        |
 | Sep 15     | PCA II (Chapter 7)                                           |                                                                        |
