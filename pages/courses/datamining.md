@@ -34,7 +34,7 @@ below.
 | Date       | Topic                                                        |                                                               Lectures |
 | :--------- | :----------------------------------------------------------- | ---------------------------------------------------------------------: |
 | Aug 28     | Data Matrix/Numeric Attributes (Chapter 1, 2)                | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
-| Sep 04     | Numeric Attributes (Chapter 2)                               |                                                                        |
+| Sep 04     | Numeric Attributes (Chapter 2)                               | [lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf) |
 | Sep 05 (F) | Numeric Attributes (Chapter 2)                               |                                                                        |
 | Sep 08     | Eigenvectors                                                 |                                                                        |
 | Sep 11     | PCA (Chapter 7)                                              |                                                                        |
