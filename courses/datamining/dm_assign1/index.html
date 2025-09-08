@@ -102,7 +102,7 @@ Next, center the data matrix by subtracting the mean vector from each point.</p>
 <h4>c. Find Best Projection Vector</h4>
 <p>We will use a randomized approach to finding the best unit projection vector
 $\mathbf{u}_1$ that has the least mean squared error (MSE):</p>
-<p>$$MSE(\mathbf{u}<em i="1">1) = \sum</em> ||^2 $$}^n || \mathbf{x}_i - \mathbf{p_i</p>
+<p>$$MSE = \sum_{i=1}^n || \mathbf{x}_i - \mathbf{p_i} ||^2 $$</p>
 <p>where $\mathbf{p}_i$ is the projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.</p>
 <p>To find $\mathbf{u}_1$ you should write a function to generate random vectors
 in $d$-dim space, say using the numpy.random.randn function. For each such
