@@ -1,0 +1,79 @@
+<h1>Assign1: Interesting Projections</h1>
+<p><strong>Due Date</strong>: Sep 15th (Mon), before midnight (11:59:59PM EDT)</p>
+<h2>Data Download the [Breast Cancer Wisconsin (Diagnostic)</h2>
+<p>Dataset](<a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic</a>)
+from the UCI Machine Learning repository. You should parse and store the data
+as a data matrix. The ID variable will not be used, and the Diagnosis variable
+will be used only as labels for plotting. The remaining 30 continuous
+attributes will comprise the data matrix, which is $n=569$ points in $d=30$
+dimensional space.</p>
+<h2>Jupyter Notebook You must submit a self-contained jupyter notebook, with all</h2>
+<p>of your <strong>code and output</strong>. You must use NumPy, with well known/inbuilt
+libraries for data input (e.g., pandas). Plots must be in inline mode (i.e.,
+embedded) in the notebook, using matplotlib.</p>
+<h2>Random Projections</h2>
+<p>Your first task is to find two orthogonal (and unit) projection vectors,
+t$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
+where the goal is to minimize the mean squared error when the data is
+approximated by the two orthogonal vectors. Do this via the following steps.</p>
+<h3>a. Scale and Center the Data Matrix</h3>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1.
+Next, center the data matrix by subtracting the mean vector from each point.</p>
+<h3>b. Compute Total Variance</h3>
+<p>From now on we will assume that the data matrix $\mathbf{D}$ <strong>is centered</strong>.</p>
+<p>Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).</p>
+<h3>c. Find Best Projection Vector</h3>
+<p>We will use a randomized approach to finding the best unit projection vector
+$\mathbf{u}<em i="1">1$ that has the least mean squared error (MSE): $$MSE(u1) =
+\sum</em>_i$ is the
+projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.}^n | \mathbf{x}_i - \mathbf{p_i} | $$ where $\mathbf{p</p>
+<p>To find $\mathbf{u}_1$ you should write a function to generate random vectors
+in $d$-dim space, say using the numpy.random.randn function. For each such
+random vector, make it into a unit vector (divide by its norm). Next, compute
+its MSE value. Try many such random vectors (say 10,000 or 100,000) and store
+the best one.</p>
+<h3>d. Find Second Best Vector</h3>
+<p>Next, we will find another unit vector $\mathbf{u}_2$ that is <strong>orthogonal</strong> to
+$\mathbf{u}_1$, and that still minimizes the MSE, but with respect to
+$\mathbf{u}_2$.</p>
+<p>This function is similar to that for part c. The only difference is that each
+time you generate a random vector $\mathbf{u}_2$, make sure to make it
+orthogonal to $\mathbf{u}_1$ (project onto $\mathbf{u}_1$ and then subtract
+that from $\mathbf{u}_2$), and then convert it into a unit vector.</p>
+<h3>e. Project Data and Plot</h3>
+<p>Now that we have found $\mathbf{u}_1$ and $\mathbf{u}_2$, we will project the
+entire centered data matrix onto each one of them to obtain a projected $n
+\times 2$ dataset. Plot this as a scatter plot, but make sure to label the
+malignant samples as red and the benign points as green.</p>
+<p>Finally, print the fraction of total variance captured by your two new
+dimensions. The latter is the sum of the projected variances in each direction.</p>
+<h3>f. Improving Directions</h3>
+<p>If you are interested in improving the initial random directions $\mathbf{u}_1$
+and $\mathbf{u}_2$, as extra credit you may use local search. The idea is that
+we can start with the best direction so far, say $\mathbf{u}_1$, and to
+generate the new random directions, we perturb this vector slightly (again you
+can use numpy.random.randn, but scale the values to the smaller, say in the
+range (0,0.1) or (0,0.01), etc.) to generate new random directions. The idea is to search
+"around" the best previous direction found. If this yields a better direction,
+use that as the new best estimate, and than repeat the whole process for a few
+rounds of local search. The same applies to finding the second direction.</p>
+<p>If your local search gives better results, plot the projected points in that
+space and note the fraction of total variance captured.</p>
+<h2>Submission</h2>
+<p>Submit your notebook via submitty, named <strong>assign1.ipynb</strong>. The notebook should
+be self-contained, i.e., it should include all output from all the parts,
+including figures. It should not hardcode file paths, but rather assume that
+the datafile is in the current directory, so only the input filename
+(wdbc.data) should be used. Do not submit the datafile.</p>
+<p>If you decide to consult CoPilot (or other similar AI tools), you must record
+in your notebook tool and the prompts you used. Include the prompts as markdown
+cells in your notebook (for each part/instance).</p>
+<p>For those not that familiar with python or NumPy, you may search online for
+tutorials, e.g. <a href="https://docs.python.org/3/tutorial">Python tutorial</a> or
+<a href="https://numpy.org/doc/stable">NumPy</a>.</p>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating the
+academic honesty principle (e.g., code similarity, or failure to disclose AI
+tools) will get an automatic F grade on the course and will be referred to the
+dean of students for disciplinary action.</p>

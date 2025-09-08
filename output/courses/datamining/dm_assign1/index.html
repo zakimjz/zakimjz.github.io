@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign1 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign1/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign1">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign1/">
+<meta property="og:description" content="Assign1: Interesting Projections
+Due Date: Sep 15th (Mon), before midnight (11:59:59PM EDT)
+Data Download the [Breast Cancer Wisconsin (Diagnostic)
+Dataset](https://archive.ics.uci.edu/dataset/17/brea">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-09-07T08:51:00-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign1</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign1: Interesting Projections</h2>
+<p><strong>Due Date</strong>: Sep 15th (Mon), before midnight (11:59:59PM EDT)</p>
+<h3>Data Download the [Breast Cancer Wisconsin (Diagnostic)</h3>
+<p>Dataset](<a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic</a>)
+from the UCI Machine Learning repository. You should parse and store the data
+as a data matrix. The ID variable will not be used, and the Diagnosis variable
+will be used only as labels for plotting. The remaining 30 continuous
+attributes will comprise the data matrix, which is $n=569$ points in $d=30$
+dimensional space.</p>
+<h3>Jupyter Notebook You must submit a self-contained jupyter notebook, with all</h3>
+<p>of your <strong>code and output</strong>. You must use NumPy, with well known/inbuilt
+libraries for data input (e.g., pandas). Plots must be in inline mode (i.e.,
+embedded) in the notebook, using matplotlib.</p>
+<h3>Random Projections</h3>
+<p>Your first task is to find two orthogonal (and unit) projection vectors,
+t$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
+where the goal is to minimize the mean squared error when the data is
+approximated by the two orthogonal vectors. Do this via the following steps.</p>
+<h4>a. Scale and Center the Data Matrix</h4>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1.
+Next, center the data matrix by subtracting the mean vector from each point.</p>
+<h4>b. Compute Total Variance</h4>
+<p>From now on we will assume that the data matrix $\mathbf{D}$ <strong>is centered</strong>.</p>
+<p>Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).</p>
+<h4>c. Find Best Projection Vector</h4>
+<p>We will use a randomized approach to finding the best unit projection vector
+$\mathbf{u}<em i="1">1$ that has the least mean squared error (MSE): $$MSE(u1) =
+\sum</em>_i$ is the
+projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.}^n | \mathbf{x}_i - \mathbf{p_i} | $$ where $\mathbf{p</p>
+<p>To find $\mathbf{u}_1$ you should write a function to generate random vectors
+in $d$-dim space, say using the numpy.random.randn function. For each such
+random vector, make it into a unit vector (divide by its norm). Next, compute
+its MSE value. Try many such random vectors (say 10,000 or 100,000) and store
+the best one.</p>
+<h4>d. Find Second Best Vector</h4>
+<p>Next, we will find another unit vector $\mathbf{u}_2$ that is <strong>orthogonal</strong> to
+$\mathbf{u}_1$, and that still minimizes the MSE, but with respect to
+$\mathbf{u}_2$.</p>
+<p>This function is similar to that for part c. The only difference is that each
+time you generate a random vector $\mathbf{u}_2$, make sure to make it
+orthogonal to $\mathbf{u}_1$ (project onto $\mathbf{u}_1$ and then subtract
+that from $\mathbf{u}_2$), and then convert it into a unit vector.</p>
+<h4>e. Project Data and Plot</h4>
+<p>Now that we have found $\mathbf{u}_1$ and $\mathbf{u}_2$, we will project the
+entire centered data matrix onto each one of them to obtain a projected $n
+\times 2$ dataset. Plot this as a scatter plot, but make sure to label the
+malignant samples as red and the benign points as green.</p>
+<p>Finally, print the fraction of total variance captured by your two new
+dimensions. The latter is the sum of the projected variances in each direction.</p>
+<h4>f. Improving Directions</h4>
+<p>If you are interested in improving the initial random directions $\mathbf{u}_1$
+and $\mathbf{u}_2$, as extra credit you may use local search. The idea is that
+we can start with the best direction so far, say $\mathbf{u}_1$, and to
+generate the new random directions, we perturb this vector slightly (again you
+can use numpy.random.randn, but scale the values to the smaller, say in the
+range (0,0.1) or (0,0.01), etc.) to generate new random directions. The idea is to search
+"around" the best previous direction found. If this yields a better direction,
+use that as the new best estimate, and than repeat the whole process for a few
+rounds of local search. The same applies to finding the second direction.</p>
+<p>If your local search gives better results, plot the projected points in that
+space and note the fraction of total variance captured.</p>
+<h3>Submission</h3>
+<p>Submit your notebook via submitty, named <strong>assign1.ipynb</strong>. The notebook should
+be self-contained, i.e., it should include all output from all the parts,
+including figures. It should not hardcode file paths, but rather assume that
+the datafile is in the current directory, so only the input filename
+(wdbc.data) should be used. Do not submit the datafile.</p>
+<p>If you decide to consult CoPilot (or other similar AI tools), you must record
+in your notebook tool and the prompts you used. Include the prompts as markdown
+cells in your notebook (for each part/instance).</p>
+<p>For those not that familiar with python or NumPy, you may search online for
+tutorials, e.g. <a href="https://docs.python.org/3/tutorial">Python tutorial</a> or
+<a href="https://numpy.org/doc/stable">NumPy</a>.</p>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating the
+academic honesty principle (e.g., code similarity, or failure to disclose AI
+tools) will get an automatic F grade on the course and will be referred to the
+dean of students for disciplinary action.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C304VMWK2R');
+</script>
+</body>
+</html>
