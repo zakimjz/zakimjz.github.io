@@ -12,9 +12,9 @@
 
 **Due Date**: Sep 15th (Mon), before midnight (11:59:59PM EDT)
 
-## Data Download the [Breast Cancer Wisconsin (Diagnostic)
+## Data
 
-Dataset](<https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic>)
+Download the [Breast Cancer Wisconsin (Diagnostic) Dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 from the UCI Machine Learning repository. You should parse and store the data
 as a data matrix. The ID variable will not be used, and the Diagnosis variable
 will be used only as labels for plotting. The remaining 30 continuous
