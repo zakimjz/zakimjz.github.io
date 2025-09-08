@@ -8,8 +8,6 @@
 .. has_math: True
 .. type: text
 
-# Assign1: Interesting Projections
-
 **Due Date**: Sep 15th (Mon), before midnight (11:59:59PM EDT)
 
 ## Data
