@@ -38,10 +38,10 @@ below.
 | Aug 28     | Data Matrix/Numeric Attributes (Chapter 1, 2)                | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
 | Sep 04     | Numeric Attributes (Chapter 2)                               | [lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf) |
 | Sep 05 (F) | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)         | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf) |
-| Sep 08     | Eigenvectors                                                 | [lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf) |
-| Sep 11     | PCA (Chapter 7)                                              |                                                                        |
-| Sep 15     | PCA II (Chapter 7)                                           |                                                                        |
-| Sep 18     | High Dimensional Data (Chapter 6)                            |                                                                        |
+| Sep 08     | High-dim Data (Chap 6)                                       | [lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf) |
+| Sep 11     | Eigenvectors (Chapter 7)                                     |                                                                        |
+| Sep 15     | PCA (Chapter 7)                                              |                                                                        |
+| Sep 18     | PCA II (Chapter 7)                                           |                                                                        |
 | Sep 22     | Pattern Mining I (Chapter 8)                                 |                                                                        |
 | Sep 25     | Pattern Mining II (Chapter 9)                                |                                                                        |
 | Sep 29     | **EXAM I**                                                   |                                                                        |
