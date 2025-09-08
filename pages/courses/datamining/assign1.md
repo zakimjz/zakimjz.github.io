@@ -82,7 +82,7 @@ malignant samples as red and the benign points as green.
 Finally, print the fraction of total variance captured by your two new
 dimensions. The latter is the sum of the projected variances in each direction.
 
-### f. Improving Directions
+### f. Extra Credit: Improving Directions
 
 If you are interested in improving the initial random directions $\mathbf{u}_1$
 and $\mathbf{u}_2$, as extra credit you may use local search. The idea is that
