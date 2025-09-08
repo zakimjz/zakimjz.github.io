@@ -21,16 +21,17 @@ will be used only as labels for plotting. The remaining 30 continuous
 attributes will comprise the data matrix, which is $n=569$ points in $d=30$
 dimensional space.
 
-## Jupyter Notebook You must submit a self-contained jupyter notebook, with all
+## Jupyter Notebook
 
+You must submit a self-contained jupyter notebook, with all
 of your **code and output**. You must use NumPy, with well known/inbuilt
 libraries for data input (e.g., pandas). Plots must be in inline mode (i.e.,
 embedded) in the notebook, using matplotlib.
 
 ## Random Projections
 
-Your first task is to find two orthogonal (and unit) projection vectors,
-t$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
+Your task is to find two orthogonal (and unit) projection vectors,
+$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
 where the goal is to minimize the mean squared error when the data is
 approximated by the two orthogonal vectors. Do this via the following steps.
 
@@ -48,9 +49,11 @@ Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).
 ### c. Find Best Projection Vector
 
 We will use a randomized approach to finding the best unit projection vector
-$\mathbf{u}_1$ that has the least mean squared error (MSE): $$MSE(u1) =
-\sum_{i=1}^n \| \mathbf{x}_i - \mathbf{p_i} \| $$ where $\mathbf{p}_i$ is the
-projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.
+$\mathbf{u}_1$ that has the least mean squared error (MSE):
+
+$$MSE(u1) = \sum_{i=1}^n \| \mathbf{x}_i - \mathbf{p_i} \| $$
+
+where $\mathbf{p}_i$ is the projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.
 
 To find $\mathbf{u}_1$ you should write a function to generate random vectors
 in $d$-dim space, say using the numpy.random.randn function. For each such

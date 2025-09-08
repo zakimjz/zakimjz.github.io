@@ -7,13 +7,14 @@ as a data matrix. The ID variable will not be used, and the Diagnosis variable
 will be used only as labels for plotting. The remaining 30 continuous
 attributes will comprise the data matrix, which is $n=569$ points in $d=30$
 dimensional space.</p>
-<h2>Jupyter Notebook You must submit a self-contained jupyter notebook, with all</h2>
-<p>of your <strong>code and output</strong>. You must use NumPy, with well known/inbuilt
+<h2>Jupyter Notebook</h2>
+<p>You must submit a self-contained jupyter notebook, with all
+of your <strong>code and output</strong>. You must use NumPy, with well known/inbuilt
 libraries for data input (e.g., pandas). Plots must be in inline mode (i.e.,
 embedded) in the notebook, using matplotlib.</p>
 <h2>Random Projections</h2>
-<p>Your first task is to find two orthogonal (and unit) projection vectors,
-t$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
+<p>Your task is to find two orthogonal (and unit) projection vectors,
+$\mathbf{u}_1$ and $\mathbf{u}_2$, that best approximate the data matrix,
 where the goal is to minimize the mean squared error when the data is
 approximated by the two orthogonal vectors. Do this via the following steps.</p>
 <h3>a. Scale and Center the Data Matrix</h3>
@@ -24,9 +25,9 @@ Next, center the data matrix by subtracting the mean vector from each point.</p>
 <p>Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).</p>
 <h3>c. Find Best Projection Vector</h3>
 <p>We will use a randomized approach to finding the best unit projection vector
-$\mathbf{u}<em i="1">1$ that has the least mean squared error (MSE): $$MSE(u1) =
-\sum</em>_i$ is the
-projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.}^n | \mathbf{x}_i - \mathbf{p_i} | $$ where $\mathbf{p</p>
+$\mathbf{u}_1$ that has the least mean squared error (MSE):</p>
+<p>$$MSE(u1) = \sum_{i=1}^n | \mathbf{x}_i - \mathbf{p_i} | $$</p>
+<p>where $\mathbf{p}_i$ is the projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.</p>
 <p>To find $\mathbf{u}_1$ you should write a function to generate random vectors
 in $d$-dim space, say using the numpy.random.randn function. For each such
 random vector, make it into a unit vector (divide by its norm). Next, compute
