@@ -49,7 +49,7 @@ Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).
 We will use a randomized approach to finding the best unit projection vector
 $\mathbf{u}_1$ that has the least mean squared error (MSE):
 
-$$MSE = \sum_{i=1}^n \|\| \mathbf{x}_i - \mathbf{p_i} \|\|^2 $$
+$$MSE = \frac{1}{n} \sum_{i=1}^n \|\| \mathbf{x}_i - \mathbf{p_i} \|\|^2 $$
 
 where $\mathbf{p}_i$ is the projection of $\mathbf{x}_i$ onto $\mathbf{u}_1$.
 
