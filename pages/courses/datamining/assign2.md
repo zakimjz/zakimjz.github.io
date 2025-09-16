@@ -29,6 +29,9 @@ must be in inline mode (i.e., embedded) in the notebook, using matplotlib.
 
 ## Eigenvectors and Principal Components
 
+Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1,
+and center the data matrix by subtracting the mean vector from each point.
+
 Compute the first two eigenvectors of the covariance matrix $\mathbf{\Sigma}$ using the
 power-iteration method.
 

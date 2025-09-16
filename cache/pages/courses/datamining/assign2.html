@@ -12,6 +12,8 @@ is $n=569$ points in $d=30$ dimensional space.</p>
 You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
 must be in inline mode (i.e., embedded) in the notebook, using matplotlib.</p>
 <h2>Eigenvectors and Principal Components</h2>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1,
+and center the data matrix by subtracting the mean vector from each point.</p>
 <p>Compute the first two eigenvectors of the covariance matrix $\mathbf{\Sigma}$ using the
 power-iteration method.</p>
 <p>Let $\mathbf{X}_0$ be a $d \times 2$ (random) matrix with two non-zero $d$-dimensional
