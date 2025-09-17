@@ -81,6 +81,12 @@ Finally, i) compute the variance of the projected points along $\mathbf{u}_1$ an
 $\mathbf{u}_2$, ii) What is their relationship to $\lambda_1$ and $\lambda_2$, and iii)
 What fraction of the total variance is captured by the two eigenvectors.
 
+### c. Compare with best random projection directions
+
+Compare the optimal directions $\mathbf{u}_1$ and $\mathbf{u}_2$, with the best obtained
+in Assign1. Print the angle between the corresponding directions, to see how close the
+random search directions come to the corresponding eigenvectors.
+
 ## Submission
 
 Submit your notebook via submitty, named **assign2.ipynb**. The notebook should be
