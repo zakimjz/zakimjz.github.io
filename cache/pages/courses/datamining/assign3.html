@@ -1,0 +1,45 @@
+<h1>Assign3: Pattern Mining</h1>
+<p><strong>Due Date</strong>: Oct 9, before midnight (11:59:59PM)</p>
+<hr>
+<h1>Closed Itemset Mining</h1>
+<p>Implement the CHARM closed itemset mining algorithm (Algorithm 9.2 on page 251 in the book). 
+For example, given the dataset:</p>
+<div class="code"><pre class="code literal-block">A B D E
+B C E
+A B D E
+A B C E
+A B C D E
+B C D
+</pre></div>
+
+<p>You can assume that each line has a transaction -- a set of items, separated
+by spaces. For minimum support of 3, the set of closed itemsets should be printed out
+in the format:</p>
+<div class="code"><pre class="code literal-block">A,B,D,E - 3
+A,B,E - 4
+B,D - 4
+B,C,E - 3
+B,C - 4
+B,E - 5
+B - 6
+Number of closed itemsets: 7
+</pre></div>
+
+<p>Show the frequent closed itemsets on the
+<a href="http://www.cs.rpi.edu/~zaki/DMCOURSE/data/ModApte_words.txt">Reuters Newswire Data</a> dataset, using
+minimum support of 50. The dataset is a list of words, one per line, with
+each line representing a transaction. Here the words are the items.</p>
+<p>Next plot the running time as a function of minimum support
+from 50 down to 15 or 10 (or the smallest value more than 10 you can run), decreasing the minimum support by 5 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.</p>
+<hr>
+<h2>What to submit</h2>
+<ul>
+<li>Submit your notebook named as <strong>assign3.ipynb</strong> via submitty.</li>
+</ul>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating the
+academic honesty principle (e.g., code similarity, or failure to disclose AI
+tools) will get an automatic F grade on the course and will be referred to the
+dean of students for disciplinary action.</p>
