@@ -12,7 +12,7 @@
 
 # Assign3: Pattern Mining
 
-**Due Date**: Oct 9, before midnight (11:59:59PM)
+**Due Date**: Oct 10, before midnight (11:59:59PM)
 
 ---
 
