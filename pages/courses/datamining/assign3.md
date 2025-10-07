@@ -53,6 +53,13 @@ each line representing a transaction. Here the words are the items.
 Next plot the running time as a function of minimum support
 from 50 down to 15 or 10 (or the smallest value more than 10 you can run), decreasing the minimum support by 5 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.
 
+**CSCI6390**: In addition, those in CSCI6390 must also implement the diffset version of
+the code (after doing the tidset based approach). This means that the subset
+checks on the tidsets should be replaced by equivalent operations on diffsets.
+You should create diffsets starting at level 2 (with two items) and not for
+single items, since the data is very sparse. Show the runtime comparison of the
+tidset vs. diffset versions for the support values from 50 down to 15 or 10.
+
 ---
 
 ## What to submit
