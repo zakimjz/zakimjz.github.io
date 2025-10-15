@@ -1,7 +1,7 @@
 <!--
 .. title: CSCI4390-6390 Assign4
 .. slug: dm_assign4
-.. date: 2025-10-14 12:00:01 UTC-04:00
+.. date: 2025-10-13 12:00:01 UTC-04:00
 .. tags:
 .. category:
 .. link:
