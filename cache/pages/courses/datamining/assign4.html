@@ -1,0 +1,68 @@
+<h1>Assign4: EM Clustering</h1>
+<p><strong>Due Date</strong>: Oct 22 (Wed), before midnight (11:59:59PM)</p>
+<h2>Data</h2>
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Breast Cancer Wisconsin (Diagnostic)
+Dataset</a> from
+the UCI Machine Learning repository. You should parse and store the data as a data matrix.
+The ID variable will not be used, and the Diagnosis variable will be used only as labels
+to determine the ground truth clustering. The remaining 30 continuous attributes will comprise the data matrix, which
+is $n=569$ points in $d=30$ dimensional space.</p>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1.</p>
+<h2>Jupyter Notebook</h2>
+<p>You must submit a self-contained jupyter notebook, with all of your <strong>code and output</strong>.
+You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
+must be in inline mode (i.e., embedded) in the notebook, using matplotlib.</p>
+<h2>EM Algorithm</h2>
+<p>Implement the Expectation-Maximization (EM) algorithm for clustering
+(see Algorithm 13.3 in Chapter 13).</p>
+<p>For initializing the clusters, CSCI4390 students should select $k$ random "actual" points in the dataset 
+as the cluster centers, and CSCI6390 students should choose the $k$ farthest "actual" points starting with an initial random point in the data. However, once you have chosen the centers, assign each point to the
+closest center to compute the covariance matrix and the prior probabilities
+of each cluster.</p>
+<p>For practical purposes, it is better to use log probabilities so that we can
+effectively handle very small probability values,
+otherwise, you may find that
+weights of a point for the clusters are zero. For
+expectation step the scipy.special.logsumexp function can be useful for log probabilities.</p>
+<p>As another practical point, you can get an error when inverting the covariance
+matrix, so you should add a small ridge value $\lambda$ value along the
+diagonal entries to make the matrix invertible. 
+You should also use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+<h3>Experimentation and Results</h3>
+<p>Apply your algorithm on the data from above, using $k=2$ clusters.
+Your output should comprise the following:</p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    CSCI4390 can use <em>sklearn.metrics.normalized_mutual_info_score</em>*, but
+    CSCI6390 must implement this based on Eq. 17.8 in the book.</li>
+</ul>
+<p>Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score. </p>
+<p>Once you have the best clustering, plot the data projected onto the first two principal
+components of the data, and color the points according to the cluster assignments. Points
+where the true label and the predicted cluster match the malignant class should be red,
+those where the true label and the predicted cluster members match the benign class should
+be green, and all other points should be blue. This will help you visualize the quality of
+your clustering. </p>
+<h2>What to submit</h2>
+<ul>
+<li>Submit your notebook named as <strong>assign4.ipynb</strong> via submitty.</li>
+</ul>
+<p>The notebook
+should be self-contained, i.e., it should include all output from all the
+parts, including figures. It should not hardcode file paths.</p>
+<p>If you decide to consult ChatGPT (or other similar AI tools), you must
+declare this in your notebook, with a brief text description of your
+successes and failures, e.g., what prompts you tried, what worked, what did
+not work, how you fixed it, etc. Include this as a markdown cell in your
+notebook.</p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
