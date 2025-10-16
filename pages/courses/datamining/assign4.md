@@ -57,7 +57,9 @@ You should also use scipy.stats.multivariate_normal.logpdf with *allow_singular*
 ### Experimentation and Results
 
 Apply your algorithm on the data from above, using $k=2$ clusters.
-Your output should comprise the following:
+Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score. 
+Your output should comprise the following for (only) the best cluster found:
 
 * The final mean for each cluster
 * The final covariance matrix for each cluster
@@ -66,8 +68,6 @@ Your output should comprise the following:
     CSCI4390 can use *sklearn.metrics.normalized_mutual_info_score**, but
     CSCI6390 must implement this based on Eq. 17.8 in the book.
 
-Run your code several times (due to the different random initial center
-selections),  and report the clustering with the best NMI score. 
 
 Once you have the best clustering, plot the data projected onto the first two principal
 components of the data, and color the points according to the cluster assignments. Points
