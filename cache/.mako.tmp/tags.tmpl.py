@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1760646938.9968107
+_modified_time = 1760651855.1299958
 _enable_loop = True
 _template_filename = '/usr/local/lib/python3.12/dist-packages/nikola/data/themes/bootstrap4/templates/tags.tmpl'
 _template_uri = 'tags.tmpl'
@@ -32,12 +32,12 @@ def render_body(context,**pageargs):
             return render_content(context._locals(__M_locals))
         cat_items = context.get('cat_items', UNDEFINED)
         range = context.get('range', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
-        len = context.get('len', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        hidden_tags = context.get('hidden_tags', UNDEFINED)
         items = context.get('items', UNDEFINED)
         cat_hierarchy = context.get('cat_hierarchy', UNDEFINED)
+        hidden_tags = context.get('hidden_tags', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        title = context.get('title', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'content'):
@@ -57,12 +57,12 @@ def render_content(context,**pageargs):
             return render_content(context)
         cat_items = context.get('cat_items', UNDEFINED)
         range = context.get('range', UNDEFINED)
-        messages = context.get('messages', UNDEFINED)
-        len = context.get('len', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        hidden_tags = context.get('hidden_tags', UNDEFINED)
         items = context.get('items', UNDEFINED)
         cat_hierarchy = context.get('cat_hierarchy', UNDEFINED)
+        hidden_tags = context.get('hidden_tags', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        title = context.get('title', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n<h1>')
         __M_writer(filters.html_escape(str(title)))

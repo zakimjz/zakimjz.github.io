@@ -55,7 +55,7 @@ below.
 | Oct 06     | Representative-Based Clustering II (Chapter 13)               | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)|
 | Oct 09     | Representative-Based Clustering III (Chapter 13)                        | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)|
 | Oct 13     | **NO CLASS** (Columbus Day)                                  ||
-| Oct 16     | Density-based Clustering (Chapter 15)                        ||
+| Oct 16     | Density-based Clustering (Chapter 15)                        |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf)|
 | Oct 20     | Spectral Clustering (Chapter 16)                             ||
 | Oct 23     | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)    ||
 | Oct 27     | Discriminant Analysis, Linear Regression I (Chapters 20, 23) ||
