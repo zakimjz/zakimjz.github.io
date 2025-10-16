@@ -108,7 +108,9 @@ diagonal entries to make the matrix invertible.
 You should also use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
 <h4>Experimentation and Results</h4>
 <p>Apply your algorithm on the data from above, using $k=2$ clusters.
-Your output should comprise the following:</p>
+Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score. 
+Your output should comprise the following for (only) the best cluster found:</p>
 <ul>
 <li>The final mean for each cluster</li>
 <li>The final covariance matrix for each cluster</li>
@@ -117,8 +119,6 @@ Your output should comprise the following:</p>
     CSCI4390 can use <em>sklearn.metrics.normalized_mutual_info_score</em>*, but
     CSCI6390 must implement this based on Eq. 17.8 in the book.</li>
 </ul>
-<p>Run your code several times (due to the different random initial center
-selections),  and report the clustering with the best NMI score. </p>
 <p>Once you have the best clustering, plot the data projected onto the first two principal
 components of the data, and color the points according to the cluster assignments. Points
 where the true label and the predicted cluster match the malignant class should be red,
