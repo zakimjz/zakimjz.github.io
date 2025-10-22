@@ -36,7 +36,7 @@ must be in inline mode (i.e., embedded) in the notebook, using matplotlib.
 ### DENCLUE Algorithm
 
 You will implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388), 
-but slightly modified as noted below.
+but slightly modified as noted below (esp. ignore line 7).
 
 You will use mean-shift updates to compute the attractor for each point, as defined in the
 FindAttactor function (lines 11-17). Use logsumexp if needed.
@@ -60,7 +60,7 @@ added to a previous attractor (this would also involve keep track of how many po
 been added to a given attractor's point set.)
 
 
-Finally, run kmeans over the attractors to find 2 clusters (you can use sklearn's Kmeans
+Finally, in lieu of line 7, run kmeans over the attractors to find 2 clusters (you can use sklearn's Kmeans
 algorithm), and then for each attractor in
 a cluster, its assigned points should get the same cluster label.
 
