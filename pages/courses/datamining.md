@@ -59,9 +59,9 @@ below.
 | Oct 13     | **NO CLASS** (Columbus Day)                                       | |
 | Oct 16     | Density-based Clustering (Chapter 15)                             | [lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf) |
 | Oct 20     | Clustering Assessment (Chapter 17)                                | [lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf) |
-| Oct 23     | Bayes Classifier, Discriminant Analysis (Chapters 18, 20)         ||
-| Oct 27     | Discriminant Analysis, Linear Regression I (Chapters 20, 23)      ||
-| Oct 30     | Linear Regression II (Chapter 23)                                 ||
+| Oct 23     | Guest Lecture (Graph Clustering)                                  | |
+| Oct 27     | Bayes Classifier (Chapters 18)                                    |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf) |
+| Oct 30     | Linear Regression (Chapter 23)                                    ||
 | Nov 03     | **EXAM II**                                                       ||
 | Nov 06     | Logistic Regression (Chapter 24)                                  ||
 | Nov 10     | Neural Networks I (Chapter 25)                                    ||
