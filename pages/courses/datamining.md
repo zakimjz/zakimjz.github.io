@@ -60,17 +60,17 @@ below.
 | Oct 16     | Density-based Clustering (Chapter 15)                             | [lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf) |
 | Oct 20     | Clustering Assessment (Chapter 17)                                | [lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf) |
 | Oct 23     | Guest Lecture (Graph Clustering)                                  | |
-| Oct 27     | Bayes Classifier (Chapters 18)                                    |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf) |
-| Oct 30     | Linear Regression (Chapter 23)                                    ||
+| Oct 27     | Bayes Classifier (Chapters 18)                                    | [lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf) |
+| Oct 30     | Decision Trees (Chapter 19)                                    | [lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf) |
 | Nov 03     | **EXAM II**                                                       ||
-| Nov 06     | Logistic Regression (Chapter 24)                                  ||
-| Nov 10     | Neural Networks I (Chapter 25)                                    ||
-| Nov 13     | Neural Networks II (Chapter 25)                                   ||
-| Nov 17     | Support Vector Machines I (Chapter 21)                            ||
-| Nov 20     | Support Vector Machines II (Chapter 21)                           ||
+| Nov 06     | Support Vector Machines I (Chapter 21)                                 ||
+| Nov 10     | Support Vector Machines II (Chapter 21)                                    ||
+| Nov 13     | Linear Regression (Chapter 23)                                    ||
+| Nov 17     | Logistic Regression (Chapter 24)                            ||
+| Nov 20     | Neural Networks I (Chapter 25)                           ||
 | Nov 24     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 27     | **NO CLASS** (Thanksgiving)                                       ||
-| Dec 01     | Classification Assessment (Chapters 22) I                         ||
-| Dec 04     | Classification Assessment (Chapters 22) II                        ||
+| Dec 01     | Neural Networks II (Chapters 25)                          ||
+| Dec 04     | Classification Assessment (Chapters 22)                        ||
 | Dec 08     | Regression Assessment (Chapter 27)                                ||
 | Dec 11     | **EXAM III**                                                      ||
