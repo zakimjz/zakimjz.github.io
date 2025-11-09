@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign6 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign6/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign6">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign6/">
+<meta property="og:description" content="Assign6: Support Vector Classification
+Due Date: Nov 18, before midnight (11:59:59PM)
+
+Dataset
+Download the Breast Cancer Wisconsin (Diagnostic)
+Dataset from
+the UCI Machine Learning repository. You s">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-11-08T12:23:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign6</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign6: Support Vector Classification</h2>
+<p><strong>Due Date</strong>: Nov 18, before midnight (11:59:59PM)</p>
+<hr>
+<h4>Dataset</h4>
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Breast Cancer Wisconsin (Diagnostic)
+Dataset</a> from
+the UCI Machine Learning repository. You should parse and store the data as a data matrix.
+The ID variable will not be used, and the Diagnosis variable will be used as class labels
+for the classification task.
+The remaining 30 continuous attributes will comprise the data matrix, which
+is $n=569$ points in $d=30$ dimensional space. </p>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1. Code the
+malign class as $+1$ and the benign class as $-1$. Then, augment the dataset by adding a
+column of ones.
+Next, use
+<a href="https://scikit-learn.org/1.5/modules/generated/sklearn.model_selection.train_test_split.html">sklearn.train_test_split</a>,
+using 42 as the random_state, setting shuffle to True and test_size to 100, to create the 
+testing data, and the remaining data. Next apply the same process but this time with
+test_size as 69 to create the validation set and training set. You will then have training set with 400 points, validation with 69 points, and
+testing with 100 points.</p>
+<h3>Jupyter Notebook</h3>
+<p>You must submit a self-contained jupyter notebook named as <strong>assign6.ipynb</strong>, with all of your <strong>code and output</strong>.
+You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
+must be in inline mode (i.e., embedded) in the notebook, using matplotlib.</p>
+<hr>
+<h3>SVM</h3>
+<p>You will implement the dual SVM Algorithm 21.1 (Chapter 21, page 540), using
+hinge loss.</p>
+<p>You must implement two kernels, namely, both linear and Gaussian.
+You must select the best $C$ value using the validation set, and the same
+goes for the spread parameter $\sigma^2$ for the Gaussian kernel. That is, choose values
+that give the best accuracy on the validation set.</p>
+<p>Report the test accuracy for the different kernels, and the best value of
+the hyperparameters, that should be selected based on the validation
+accuracy. Accuracy is defined as the number of correct predictions over the number of
+points in a given dataset (e.g., validation set or testing set).</p>
+<p>Finally, for each kernel, please project the test data onto 2D, and show the
+predictions (red for malign, green for benign, and blue for incorrect) for each test
+point.</p>
+<h5>CSCI6390</h5>
+<p>In addition, you must also implement the inhomogeneous polynomial kernel.
+You need to select the best degree and $C$ value.</p>
+<p>Report the test accuracy and the best hyperparameters used based on the
+validation accuracy. Also plot the predictions for each point in 2D.</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared, along with the prompts used. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C304VMWK2R');
+</script>
+</body>
+</html>
