@@ -67,7 +67,7 @@ below.
 | Nov 03     | **EXAM II**                                                       | |
 | Nov 06     | Support Vector Machines I (Chapter 21)                            | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf) |
 | Nov 10     | Support Vector Machines II (Chapter 21)                           | [lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf) |
-| Nov 13     | Linear Regression (Chapter 23)                                    ||
+| Nov 13     | Linear Regression (Chapter 23)                                    | [lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf) |
 | Nov 17     | Logistic Regression (Chapter 24)                                  ||
 | Nov 20     | Neural Networks I (Chapter 25)                                    ||
 | Nov 24     | **NO CLASS** (Thanksgiving)                                       ||
