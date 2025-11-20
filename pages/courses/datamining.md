@@ -72,7 +72,7 @@ below.
 | Nov 20     | Logistic Regression (Chapters 24)                                 | [lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21.pdf) |
 | Nov 24     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 27     | **NO CLASS** (Thanksgiving)                                       ||
-| Dec 01     | Neural Networks II (Chapters 25)                                  ||
-| Dec 04     | Classification Assessment (Chapters 22)                           ||
+| Dec 01     | Neural Networks I (Chapters 25)                                  ||
+| Dec 04     | Neural Networks II (Chapters 25) & Classification Assessment (Chapters 22)                           ||
 | Dec 08     | Regression Assessment (Chapter 27)                                ||
 | Dec 11     | **EXAM III**                                                      ||
