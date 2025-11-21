@@ -1,0 +1,75 @@
+<h1>Assign7: Linear and Logistic Regresson</h1>
+<p><strong>Due Date</strong>: Dec 8, before midnight (11:59:59PM)</p>
+<hr>
+<h3>Dataset</h3>
+<p>Download the <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Breast Cancer Wisconsin (Diagnostic)
+Dataset</a> from
+the UCI Machine Learning repository. You should parse and store the data as a data matrix.
+The ID variable will not be used, and the Diagnosis variable will be used as the
+response/target variable for both the regression and classification tasks.
+The remaining 30 continuous attributes will comprise the data matrix, which
+is $n=569$ points in $d=30$ dimensional space. </p>
+<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1. Code the
+malign class as $+1$ and the benign class as $0$. Then, augment the dataset by adding a
+column of ones.
+Next, use
+<a href="https://scikit-learn.org/1.5/modules/generated/sklearn.model_selection.train_test_split.html">sklearn.train_test_split</a>,
+using 42 as the random_state, setting shuffle to True and test_size to 100, to create the 
+testing data, so that the remaining data is training. </p>
+<h2>Jupyter Notebook</h2>
+<p>You must submit a self-contained jupyter notebook named as <strong>assign7.ipynb</strong>, with all of your <strong>code and output</strong>.</p>
+<hr>
+<h2>Part I: Linear Regression via Projections (100 points)</h2>
+<p>Implement the linear regression algorithm via QR factorization, namely Algorithm 23.1 on
+page 602 in Chapter 23. Make sure you augment $\mathbf{X}$ by adding a columns of ones as
+the first dimension.</p>
+<p>You must implement QR factorization on your own, as described in Section 23.3.1. You
+cannot use numpy.linalg.qr or similar function, though you may use it to verify your
+results. If you do, please note that the built-in qr code outputs normalized vectors, so
+you'll not have the $\Delta$ matrix in that case. The best way to verify that your QR is
+correct is to ensure that $\mathbf{Q}\mathbf{R} = \mathbf{D}$.</p>
+<p>Next, using the $\mathbf{Q}$ and the $\mathbf{R}$ matrices, you must solve for the
+augmented weight vector $\mathbf{w}$. You must implement backsolve via backsubstitution on
+their own without using the in-built inv or solve functions in numpy (but you can verify
+using those). See Example 23.4 on how backsolve works.</p>
+<p>After you have computed the weight vector $\mathbf{w}$, print it, and then
+compute the SSE value and the $R^2$ statistic, where:
+$$R^2=\frac{TSS-SSE}{TSS}$$
+where TSS is the total scatter of the response variable
+$TSS = \sum_{i=1}^n ( y_i - \mu_Y)^2$</p>
+<p><strong>CSCI6390</strong>: You will implement the QR factorization as above, including backsolve.
+However, there is one key difference. You must do QR factorization for Ridge Regression.
+For this, only one change is required for the training dataset. If the training dataset is
+$n \times (d+1)$, then append to it a diagonal matrix $\alpha \times \mathbf{I}$ of size
+$(d+1)\times (d+1)$. This way the new training data will be of size $n+(d+1) \times (d+1)$. 
+Also, append to the Y training vector $(d+1)$ zeros, so that its size is also $n+(d+1)$.
+You can now do the QR factorization for this new training set, and it is the same as
+performing ridge regression. You must of course try different values of $\alpha$ and
+report the one that gives you the best SSE score. Note that there is no change needed for
+the test set.</p>
+<hr>
+<h2>Part II: Logistic Regression (100 points)</h2>
+<p>Implement the multi-class logistic regression algorithm as described in
+Algorithm 24.2 (Chapter 24, page 634). In line 6, instead of
+initializing with zeros, use np.random.randn instead. This way you'll get
+different initialized weights in each run, and thus you'll be able to
+explore more. Also, you may cap the maximum iterations of the repeat-until
+loop in addition to checking for convergence.</p>
+<p>Note that even though this dataset is binary classification task, please treat it as a
+K-way classification, where K=2. </p>
+<p>Your script should print out the weight vector(s), and also the final
+accuracy value on the test data (see Eq 22.2). You should also compute the
+F1-score (see Eq 22.7 in chapter 22; you can use scikit.learn in-builts for this).</p>
+<p>You should use the scipy.special.softmax or scipy.special.log_softmax function rather than your own,
+since it is more robust.</p>
+<p>Also, the loops in line 8, 11, 15, and 18 run from 1 to $K-1$, but you can
+just make it 1 to $K$, so that all class weight vectors are learned (the
+pseudocode assumes that the last class the base class, and therefore its
+weight vector is the zero vector). As such, both approaches are fine.</p>
+<hr>
+<h2>Policy on Academic Honesty</h2>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared, along with the prompts used. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
