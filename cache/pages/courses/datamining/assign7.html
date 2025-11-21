@@ -40,8 +40,8 @@ $TSS = \sum_{i=1}^n ( y_i - \mu_Y)^2$</p>
 <p><strong>CSCI6390</strong>: You will implement the QR factorization as above, including backsolve.
 However, there is one key difference. You must do QR factorization for Ridge Regression.
 For this, only one change is required for the training dataset. If the training dataset is
-$n \times (d+1)$, then append to it a diagonal matrix $\alpha \times \mathbf{I}$ of size
-$(d+1)\times (d+1)$. This way the new training data will be of size $n+(d+1) \times (d+1)$. 
+$n \times (d+1)$, then append to it a diagonal matrix $\alpha \mathbf{I}$ of size
+$(d+1)\times (d+1)$, where $\alpha$ is the regularization constant. This way the new training data will be of size $n+(d+1) \times (d+1)$. 
 Also, append to the Y training vector $(d+1)$ zeros, so that its size is also $n+(d+1)$.
 You can now do the QR factorization for this new training set, and it is the same as
 performing ridge regression. You must of course try different values of $\alpha$ and
