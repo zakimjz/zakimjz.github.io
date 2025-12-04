@@ -75,6 +75,6 @@ below.
 | Nov 24     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 27     | **NO CLASS** (Thanksgiving)                                       ||
 | Dec 01     | Neural Networks I (Chapters 25)                                  | [lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22.pdf) |
-| Dec 04     | Neural Networks II (Chapters 25) & Classification Assessment (Chapters 22)                           ||
-| Dec 08     | Regression Assessment (Chapter 27)                                ||
+| Dec 04     | Neural Networks II (Chapters 25)                            | [lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23.pdf) |
+| Dec 08     | Classification Assessment (Chapter 22)                                ||
 | Dec 11     | **EXAM III**                                                      ||
