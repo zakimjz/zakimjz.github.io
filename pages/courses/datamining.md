@@ -1,7 +1,7 @@
 <!--
 .. title: CSCI4390-6390 Data Mining
 .. slug: datamining
-.. date: 2025-08-13 09:00:31 UTC-04:00
+.. date: 2026-08-12 09:00:31 UTC-04:00
 .. tags:
 .. category:
 .. link:
@@ -14,31 +14,18 @@ This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
 algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
-**Class Hours**: 10AM-11:50AM Mon/Thurs, _Ricketts 203_
+**Class Hours**: 10AM-11:50AM Mon/Thurs
 
-**Instructor Office Hours**: 12-1PM Mon/Thurs (Lally 209)
+**Instructor Office Hours**: 12-1PM Mon/Thurs (MRC335)
 
-**TAs (Office Hours)**: Qitong Wang <wangq19@rpi.edu> (Tue & Wed 11AM-12PM, AE 118)
+**TAs (Office Hours)**: TBD
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
-**Submitty**: <https://submitty.cs.rpi.edu/courses/f25/csci4390>
+**Submitty**: <https://submitty.cs.rpi.edu/courses/f26/csci4390>
 
 ## Assignments
 
-**Assign6**: {{% doc %}} dm_assign7 {{% /doc %}} (Due: Dec 8th, Midnight)
-
-**Assign6**: {{% doc %}} dm_assign6 {{% /doc %}} (Due: Nov 18th, Midnight)
-
-**Assign5**: {{% doc %}} dm_assign5 {{% /doc %}} (Due: Oct 30th, Midnight)
-
-**Assign4**: {{% doc %}} dm_assign4 {{% /doc %}} (Due: Oct 22nd, Midnight)
-
-**Assign3**: {{% doc %}} dm_assign3 {{% /doc %}} (Due: Oct 10th, Midnight)
-
-**Assign2**: {{% doc %}} dm_assign2 {{% /doc %}} (Due: Sep 22nd, Midnight)
-
-**Assign1**: {{% doc %}} dm_assign1 {{% /doc %}} (Due: Sep 15th, Midnight)
 
 ## Class Schedule: Lectures
 
@@ -47,34 +34,34 @@ below.
 
 | Date       | Topic                                                             |                                                               Lectures |
 | :--------- | :-----------------------------------------------------------------| ---------------------------------------------------------------------: |
-| Aug 28     | Data Matrix/Numeric Attributes (Chapter 1, 2)                     | [lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf) |
-| Sep 04     | Numeric Attributes (Chapter 2)                                    | [lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf) |
-| Sep 05 (F) | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)              | [lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf) |
-| Sep 08     | High-dim Data (Chap 6)                                            | [lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf) |
-| Sep 11     | Eigenvectors (Chapter 7)                                          | [lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf) |
-| Sep 15     | PCA (Chapter 7)                                                   | [lecture6](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture6.pdf) |
-| Sep 18     | PCA II (Chapter 7)                                                | [lecture7](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture7.pdf) |
-| Sep 22     | Pattern Mining I (Chapter 8)                                      | [lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf) |
-| Sep 25     | Pattern Mining II (Chapter 9)                                     | [lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9.pdf) |
-| Sep 29     | **EXAM I**                                                        | |
-| Oct 02     | Pattern Mining & Representative-Based Clustering (Chapters 9, 13) | [lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf) |
-| Oct 06     | Representative-Based Clustering II (Chapter 13)                   | [lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)|
-| Oct 09     | Representative-Based Clustering III (Chapter 13)                  | [lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf) |
-| Oct 13     | **NO CLASS** (Columbus Day)                                       | |
-| Oct 16     | Density-based Clustering (Chapter 15)                             | [lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf) |
-| Oct 20     | Clustering Assessment (Chapter 17)                                | [lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf) |
-| Oct 23     | Guest Lecture (Graph Clustering)                                  | |
-| Oct 27     | Bayes Classifier (Chapters 18)                                    | [lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf) |
-| Oct 30     | Decision Trees (Chapter 19)                                       | [lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf) |
-| Nov 03     | **EXAM II**                                                       | |
-| Nov 06     | Support Vector Machines I (Chapter 21)                            | [lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf) |
-| Nov 10     | Support Vector Machines II (Chapter 21)                           | [lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf) |
-| Nov 13     | SVM + Linear Regression (Chapter 23)                              | [lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf) |
-| Nov 17     | Linear Regression (Chapter 23)                                    | [lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20.pdf) |
-| Nov 20     | Logistic Regression (Chapters 24)                                 | [lecture21](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture21.pdf) |
-| Nov 24     | **NO CLASS** (Thanksgiving)                                       ||
-| Nov 27     | **NO CLASS** (Thanksgiving)                                       ||
-| Dec 01     | Neural Networks I (Chapters 25)                                  | [lecture22](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture22.pdf) |
-| Dec 04     | Neural Networks II (Chapters 25)                            | [lecture23](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture23.pdf) |
-| Dec 08     | Classification Assessment (Chapter 22)                                ||
-| Dec 11     | **EXAM III**                                                      ||
+| Aug 27     | Data Matrix/Numeric Attributes (Chapters 1&2)                     || 
+| Aug 31     | Numeric Attributes (Chapter 2)                                    ||
+| Sep 03     | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)              ||
+| Sep 07     | **NO CLASS** (Labor Day)                                          ||
+| Sep 10     | High-dim Data (Chapter 6)                                          ||
+| Sep 14     | PCA (Chapter 7)                                                   ||
+| Sep 17     | PCA II (Chapter 7)                                                ||
+| Sep 21     | Pattern Mining I (Chapter 8)                                      ||
+| Sep 24     | Pattern Mining II (Chapter 9)                                     ||
+| Sep 28     | **EXAM I**                                                        ||
+| Oct 01     | Representative-Based Clustering I (Chapter 13)                   ||
+| Oct 05     | Representative-Based Clustering II (Chapter 13)                   ||
+| Oct 08     | Density-based Clustering (Chapter 15)                  ||
+| Oct 12     | **NO CLASS** (Columbus Day)                                       ||
+| Oct 16(F)  | Bayes Classifier (Chapters 18)                            ||
+| Oct 19     | Decision Trees (Chapter 19)                                    ||
+| Oct 22     | Support Vector Machines I (Chapter 21)                                ||
+| Oct 26     | Support Vector Machines II (Chapter 21)                                     ||
+| Oct 29     | Linear Regression (Chapter 23)                                       ||
+| Nov 02     | **EXAM II**                                                       ||
+| Nov 05     | Linear Regression II (Chapter 23)                            ||
+| Nov 09     | Logistic Regression (Chapter 24)                           ||
+| Nov 12     | Neural Networks I (Chapter 25)                               ||
+| Nov 16     | Neural Networks II (Chapter 25)                                    ||
+| Nov 19     | Modern Hopfield Networks I                                ||
+| Nov 23     | **NO CLASS** (Thanksgiving)                                       ||
+| Nov 26     | **NO CLASS** (Thanksgiving)                                       ||
+| Nov 30     | Modern Hopfield Networks II                                  ||
+| Dec 03     | Assessment I (Chapters 17&22)                                  ||
+| Dec 07     | Assessment II (Chapters 17&22)                            ||
+| Dec 10     | **EXAM III**                                                      ||

@@ -14,7 +14,8 @@
 
 This course will provide an introduction to the main topics in data
 mining and knowledge discovery, including: algebraic, geometric and probabilistic
-foundations, classification, regression, and clustering.
+foundations, classification, regression, and clustering. It will cover both unsupervised and
+supervised approaches.
 Emphasis will be laid on the algorithmic approach.
 
 
@@ -103,7 +104,7 @@ consult other members of the class on the assignments, **but you must
 submit your own work**. For instance you may discuss general approaches to
 solving a problem, but you must implement the solution on your own.
 **You are allowed to use AI tools to help you implement and test your solutions**. 
-However, you must submit the tools used and the prompts along with your notebook submission.
+However, you must document the tools used and the prompts along with your notebook submission.
 Instances of academic integrity violations will incur a penalty that is deemed by
 the instructor to be appropriate to the infraction ranging from a grade
 of zero on the assignment in question, to failure of the class as a
