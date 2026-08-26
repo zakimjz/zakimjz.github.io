@@ -14,11 +14,11 @@ This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
 algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
-**Class Hours**: Troy 2102, 10AM-11:50AM Mon/Thurs
+**Class Hours**: Troy 2012, 10AM-11:50AM Mon/Thurs
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs (MRC335)
 
-**TAs (Office Hours)**: TBD
+**TAs (Office Hours)**: Anweshit Panda (pandaa2@rpi.edu); Hours TBD
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
