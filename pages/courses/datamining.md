@@ -14,7 +14,7 @@ This course focuses on fundamental algorithms and core concepts in data
 mining and machine learning. The emphasis is on leveraging geometric,
 algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
-**Class Hours**: 10AM-11:50AM Mon/Thurs
+**Class Hours**: Troy 2102, 10AM-11:50AM Mon/Thurs
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs (MRC335)
 
