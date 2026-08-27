@@ -15,8 +15,7 @@
 This course will provide an introduction to the main topics in data
 mining and knowledge discovery, including: algebraic, geometric and probabilistic
 foundations, classification, regression, and clustering. It will cover both unsupervised and
-supervised approaches.
-Emphasis will be laid on the algorithmic approach.
+supervised approaches. Emphasis will be laid on the algorithmic approach.
 
 
 ## Learning Objectives
@@ -79,9 +78,10 @@ Submissions after that will not be graded.
 
 * **Exams (60%)**: There will be three exams. The tentative exam dates are
 noted on the class schedule table. There is no comprehensive final exam. Exams
-will be closed book.
+will be closed book. Students with accommodations should contact the instructor well
+before the first exam so that suitable arrangements can be made.
 
-* **Quizzes (10%)**: There will be regular quizzes, to encourage students to
+* **Quizzes (10%)**: There will be regular pop quizzes, to encourage students to
 remain up-to-date on the course content.
 
 
@@ -93,8 +93,11 @@ typically are also based on different ranges for the two sections.
 
 ## Makeup Policy
 
-Makeup exams will only be allowed in cases of health related issues or
-other exceptional circumstances, as long as there is supporting documentation.
+Makeup exams will only be allowed in cases of health related issues or other exceptional
+circumstances, as long as there is supporting documentation. If no supporting evidence is
+provided, there will be no makeup exam. Instead, students will receive a zero grade for
+that exam, which can be replaced if they take a comprehensive final exam during finals
+week.
 
 
 ## Academic Integrity

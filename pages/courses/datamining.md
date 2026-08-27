@@ -18,7 +18,7 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 **Instructor Office Hours**: 12-1PM Mon/Thurs (MRC335)
 
-**TAs (Office Hours)**: Anweshit Panda (pandaa2@rpi.edu); Hours TBD
+**TAs (Office Hours)**: Anweshit Panda (pandaa2@rpi.edu); Hours 2-3PM Tue/Wed (AE111)
 
 **Syllabus**: {{% doc %}} dm_syllabus {{% /doc %}}
 
@@ -34,7 +34,7 @@ below.
 
 | Date       | Topic                                                             |                                                               Lectures |
 | :--------- | :-----------------------------------------------------------------| ---------------------------------------------------------------------: |
-| Aug 27     | Data Matrix/Numeric Attributes (Chapters 1&2)                     || 
+| Aug 27     | Data Matrix/Numeric Attributes (Chapters 1&2)                     |[lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf)| 
 | Aug 31     | Numeric Attributes (Chapter 2)                                    ||
 | Sep 03     | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)              ||
 | Sep 07     | **NO CLASS** (Labor Day)                                          ||
