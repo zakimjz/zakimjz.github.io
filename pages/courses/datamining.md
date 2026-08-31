@@ -35,7 +35,7 @@ below.
 | Date       | Topic                                                             |                                                               Lectures |
 | :--------- | :-----------------------------------------------------------------| ---------------------------------------------------------------------: |
 | Aug 27     | Data Matrix/Numeric Attributes (Chapters 1&2)                     |[lecture1](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture1.pdf)| 
-| Aug 31     | Numeric Attributes (Chapter 2)                                    ||
+| Aug 31     | Numeric Attributes (Chapter 2)                                    |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf)|
 | Sep 03     | Numeric Attributes (Chap 2) & High-dim Data (Chap 6)              ||
 | Sep 07     | **NO CLASS** (Labor Day)                                          ||
 | Sep 10     | High-dim Data (Chapter 6)                                          ||
