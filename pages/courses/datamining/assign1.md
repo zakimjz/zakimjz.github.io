@@ -129,6 +129,9 @@ $\mathbf{b}_2$. We just have to make sure that each
 time you generate a random vector $\mathbf{b}_2$, make sure to make it
 orthogonal to $\mathbf{b}_1$, and then convert it into a unit vector.
 
+BTW, as for the MSE case, you can optimize the directions via the same approach as in the
+improving directions part (but this is not required).
+
 Now that we have found $\mathbf{b}_1$ and $\mathbf{b}_2$, we will project the
 entire centered data matrix onto each one of them to obtain a projected $n
 \times 2$ dataset. That is, retain only the scalar projections of each centered point onto
@@ -136,6 +139,10 @@ the direction $\mathbf{b}_1$ and onto the direction $\mathbf{b}_2$, respectively
 Plot this as a scatter plot, but make sure to label the
 samples using different colors for each of the seven classes.
 How does this plot compare to the one that minimizes the MSE?
+
+Note: Out of the 30 points for part d, 10 will be applied to the SEP measure. The same
+applies to part d.
+
 
 ## Submission
 
