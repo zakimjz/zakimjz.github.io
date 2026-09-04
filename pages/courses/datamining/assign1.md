@@ -1,6 +1,6 @@
 .. title: CSCI4390-6390 Assign1
 .. slug: dm_assign1
-.. date: 2024-09-07 08:51:00 UTC-04:00
+.. date: 2026-09-03 08:51:00 UTC-04:00
 .. tags:
 .. category:
 .. link:
@@ -8,7 +8,7 @@
 .. has_math: True
 .. type: text
 
-**Due Date**: Sep 15th (Mon), before midnight (11:59:59PM EDT)
+**Due Date**: Sep 14th (Mon), before midnight (11:59:59PM EDT)
 
 ## Data
 
