@@ -100,7 +100,7 @@ Next, center the data matrix by subtracting the mean vector from each point.</p>
 <h4>b. Compute Total Variance (10 points)</h4>
 <p>From now on we will assume that the data matrix $\mathbf{D}$ <strong>is centered</strong>.</p>
 <p>Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).</p>
-<h4>c. Find Best Projection Vector (20 points)</h4>
+<h4>c. Find Best Projection Vector (30 points)</h4>
 <p>We will use a randomized approach to find the best unit projection vector
 $\mathbf{a}_1$ that has the least mean squared error (MSE):</p>
 <p>$$MSE = \frac{1}{n} \sum_{i=1}^n || \mathbf{x}_i - \mathbf{p_i} ||^2 $$</p>
@@ -110,7 +110,7 @@ in $d$-dim space, say using the numpy.random.randn function. For each such
 random vector, make it into a unit vector (divide by its norm). Next, compute
 its MSE value. Try many such random vectors (say 10,000 or 100,000) and store
 the best one.</p>
-<h4>d. Find Second Best Vector (20 points)</h4>
+<h4>d. Find Second Best Vector (30 points)</h4>
 <p>Next, we will find another unit vector $\mathbf{a}_2$ that is <strong>orthogonal</strong> to
 $\mathbf{a}_1$, and that still minimizes the MSE, but with respect to
 $\mathbf{a}_2$.</p>
@@ -118,7 +118,7 @@ $\mathbf{a}_2$.</p>
 time you generate a random vector $\mathbf{a}_2$, make sure to make it
 orthogonal to $\mathbf{a}_1$ (project onto $\mathbf{a}_1$ and then subtract
 that from $\mathbf{a}_2$), and then convert it into a unit vector.</p>
-<h4>e. Project Data and Plot (15 points)</h4>
+<h4>e. Project Data and Plot (20 points)</h4>
 <p>Now that we have found $\mathbf{a}_1$ and $\mathbf{a}_2$, we will project the
 entire centered data matrix onto each one of them to obtain a projected $n
 \times 2$ dataset. That is, retain only the scalar projections of each centered point onto
@@ -139,8 +139,10 @@ use that as the new best estimate, and than repeat the whole process for a few
 rounds of local search. The same applies to finding the second direction.</p>
 <p>If your local search gives better results, plot the projected points in that
 space and note the fraction of total variance captured.</p>
-<h3>Part II. Separating Directions (25 points)</h3>
-<p>We will use a randomized approach to find the best unit projection vector
+<h3>Part II (CSCI6390 Only). Separating Directions</h3>
+<p>In addition to the MSE directions, you also need to find directions that maximize
+separation between classes. </p>
+<p>We will use the same randomized approach to find the best unit projection vector
 $\mathbf{b}_1$ that has the maximum separation between the classes (SEP):</p>
 <p>$$SEP = \frac{\sum_{i=1}^{k-1} \sum_{j=i+1}^k (m_i - m_j)^2}{\sum_{i=1}^k s_i^2} $$</p>
 <p>where $m_i$ is the (scalar) projected mean, and $s_i^2$ the projected variance for 

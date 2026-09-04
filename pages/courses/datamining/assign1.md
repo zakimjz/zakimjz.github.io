@@ -47,7 +47,7 @@ From now on we will assume that the data matrix $\mathbf{D}$ **is centered**.
 
 Compute and print the total variance $var(\mathbf{D})$ (see Eq. (1.8)).
 
-### c. Find Best Projection Vector (20 points)
+### c. Find Best Projection Vector (30 points)
 
 We will use a randomized approach to find the best unit projection vector
 $\mathbf{a}_1$ that has the least mean squared error (MSE):
@@ -62,7 +62,7 @@ random vector, make it into a unit vector (divide by its norm). Next, compute
 its MSE value. Try many such random vectors (say 10,000 or 100,000) and store
 the best one.
 
-### d. Find Second Best Vector (20 points)
+### d. Find Second Best Vector (30 points)
 
 Next, we will find another unit vector $\mathbf{a}_2$ that is **orthogonal** to
 $\mathbf{a}_1$, and that still minimizes the MSE, but with respect to
@@ -73,7 +73,7 @@ time you generate a random vector $\mathbf{a}_2$, make sure to make it
 orthogonal to $\mathbf{a}_1$ (project onto $\mathbf{a}_1$ and then subtract
 that from $\mathbf{a}_2$), and then convert it into a unit vector.
 
-### e. Project Data and Plot (15 points)
+### e. Project Data and Plot (20 points)
 
 Now that we have found $\mathbf{a}_1$ and $\mathbf{a}_2$, we will project the
 entire centered data matrix onto each one of them to obtain a projected $n
@@ -102,9 +102,12 @@ If your local search gives better results, plot the projected points in that
 space and note the fraction of total variance captured.
 
 
-## Part II. Separating Directions (25 points)
+## Part II (CSCI6390 Only). Separating Directions
 
-We will use a randomized approach to find the best unit projection vector
+In addition to the MSE directions, you also need to find directions that maximize
+separation between classes. 
+
+We will use the same randomized approach to find the best unit projection vector
 $\mathbf{b}_1$ that has the maximum separation between the classes (SEP):
 
 $$SEP = \frac{\sum_{i=1}^{k-1} \sum_{j=i+1}^k (m_i - m_j)^2}{\sum_{i=1}^k s_i^2} $$
