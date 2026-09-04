@@ -107,9 +107,10 @@ space and note the fraction of total variance captured.
 We will use a randomized approach to find the best unit projection vector
 $\mathbf{b}_1$ that has the maximum separation between the classes (SEP):
 
-$$SEP = \frac{\sum_{i=1}^{k-1} \sum_{j-i_1}^k (m_i - m_j)^2}{\sum_{i=1}^k s_i^2} $$
+$$SEP = \frac{\sum_{i=1}^{k-1} \sum_{j=i+1}^k (m_i - m_j)^2}{\sum_{i=1}^k s_i^2} $$
 
-where $m_i$ is the mean, and $s_i^2$ the variance for class $i$ along the direction
+where $m_i$ is the (scalar) projected mean, and $s_i^2$ the projected variance for 
+class $i$ along the direction
 $\mathbf{b}_1$, and $k$ is the number of classes.
 
 To find $\mathbf{b}_1$ you should write a function to generate random vectors
@@ -120,7 +121,7 @@ the best one.
 
 
 Next, we will find another unit vector $\mathbf{b}_2$ that is **orthogonal** to
-$\mathbf{a}_1$, and that still maximizes the SEP, but with respect to
+$\mathbf{b}_1$, and that still maximizes the SEP, but with respect to
 $\mathbf{b}_2$. We just have to make sure that each
 time you generate a random vector $\mathbf{b}_2$, make sure to make it
 orthogonal to $\mathbf{b}_1$, and then convert it into a unit vector.
