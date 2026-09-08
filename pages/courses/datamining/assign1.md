@@ -12,7 +12,7 @@
 
 ## Data
 
-Download the [Segmentation Dataset](http://www.cs.rpi.edu/~zaki/DMCOURSE/data/segmentation.csv). This data is from the UCI Machine Learning repository [ImageSegmentation Dataset](https://archive.ics.uci.edu/dataset/50/image+segmentation), but it has been converted into a csv format (you can look at the UCI files for the attribute explanations). You should parse and store the csv file
+Download the [Segmentation Dataset](http://www.cs.rpi.edu/~zaki/DMCOURSE/data/segmentation.csv). If chrome does not download this file when you click, please right click and use "save link as" to download it. This data is from the UCI Machine Learning repository [ImageSegmentation Dataset](https://archive.ics.uci.edu/dataset/50/image+segmentation), but it has been converted into a csv format (you can look at the UCI files for the attribute explanations). You should parse and store the csv file
 as a data matrix. The first variable is the class variable, which is categorical, and will be used only as labels for plotting in Part I, and as a supervision signal in Part II. The remaining 19 continuous
 attributes will comprise the data matrix, which comprises $n=2100$ points in $d=19$ dimensional space.
 
