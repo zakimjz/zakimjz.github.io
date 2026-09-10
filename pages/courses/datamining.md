@@ -40,23 +40,23 @@ below.
 | Aug 31     | Numeric Attributes (Chapter 2)                                    |[lecture2](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture2.pdf)|
 | Sep 03     | Numeric Attributes II (Chapter 2)              |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf)|
 | Sep 07     | **NO CLASS** (Labor Day)                                          ||
-| Sep 10     | High-dim Data (Chapter 6)                                          ||
-| Sep 14     | PCA (Chapter 7)                                                   ||
-| Sep 17     | PCA II (Chapter 7)                                                ||
-| Sep 21     | Pattern Mining I (Chapter 8)                                      ||
-| Sep 24     | Pattern Mining II (Chapter 9)                                     ||
+| Sep 10     | PCA (Chapter 7)                                           |[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf)|
+| Sep 14     | PCA II (Chapter 7)                                                   ||
+| Sep 17     | Linear Discriminant Analysis (Chap 20)                                               ||
+| Sep 21     | Linear Regression I (Chapter 23)                                      ||
+| Sep 24     | Linear Regression II (Chapter 23)                                     ||
 | Sep 28     | **EXAM I**                                                        ||
-| Oct 01     | Representative-Based Clustering I (Chapter 13)                   ||
-| Oct 05     | Representative-Based Clustering II (Chapter 13)                   ||
-| Oct 08     | Density-based Clustering (Chapter 15)                  ||
+| Oct 01     | Pattern Mining I (Chapter 8)                   ||
+| Oct 05     | Pattern Mining II (Chapter 9)                   ||
+| Oct 08     | Representative-Based Clustering I (Chapter 13)                  ||
 | Oct 12     | **NO CLASS** (Columbus Day)                                       ||
-| Oct 16(F)  | Bayes Classifier (Chapters 18)                            ||
-| Oct 19     | Decision Trees (Chapter 19)                                    ||
-| Oct 22     | Support Vector Machines I (Chapter 21)                                ||
-| Oct 26     | Support Vector Machines II (Chapter 21)                                     ||
-| Oct 29     | Linear Regression (Chapter 23)                                       ||
+| Oct 16(F)  | Representative-Based Clustering II (Chapter 13)                           ||
+| Oct 19     | Density-based Clustering (Chapter 15)                                   ||
+| Oct 22     | Bayes Classifier (Chapters 18)                                 ||
+| Oct 26     | Decision Trees (Chapter 19)                                      ||
+| Oct 29     | Support Vector Machines I (Chapter 21)                                       ||
 | Nov 02     | **EXAM II**                                                       ||
-| Nov 05     | Linear Regression II (Chapter 23)                            ||
+| Nov 05     | Support Vector Machines II (Chapter 21)                            ||
 | Nov 09     | Logistic Regression (Chapter 24)                           ||
 | Nov 12     | Neural Networks I (Chapter 25)                               ||
 | Nov 16     | Neural Networks II (Chapter 25)                                    ||
