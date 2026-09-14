@@ -41,8 +41,8 @@ below.
 | Sep 03     | Numeric Attributes II (Chapter 2)              |[lecture3](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture3.pdf)|
 | Sep 07     | **NO CLASS** (Labor Day)                                          ||
 | Sep 10     | PCA (Chapter 7)                                           |[lecture4](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture4.pdf)|
-| Sep 14     | PCA II (Chapter 7)                                                   ||
-| Sep 17     | Linear Discriminant Analysis (Chap 20)                                               ||
+| Sep 14     | PCA II and LDA I (Chapters 7 and 20)                                                   |[lecture5](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture5.pdf)|
+| Sep 17     | LDA II (Chap 20)                                               ||
 | Sep 21     | Linear Regression I (Chapter 23)                                      ||
 | Sep 24     | Linear Regression II (Chapter 23)                                     ||
 | Sep 28     | **EXAM I**                                                        ||

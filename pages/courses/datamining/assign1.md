@@ -140,7 +140,7 @@ Plot this as a scatter plot, but make sure to label the
 samples using different colors for each of the seven classes.
 How does this plot compare to the one that minimizes the MSE?
 
-Note: Out of the 30 points for part d, 10 will be applied to the SEP measure. The same
+Note: Out of the 30 points for part c, 10 will be applied to the SEP measure. The same
 applies to part d.
 
 
