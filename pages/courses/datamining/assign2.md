@@ -1,6 +1,6 @@
 .. title: CSCI4390-6390 Assign2
 .. slug: dm_assign2
-.. date: 2024-09-15 13:51:00 UTC-04:00
+.. date: 2026-09-17 13:51:00 UTC-04:00
 .. tags:
 .. category:
 .. link:
@@ -8,26 +8,34 @@
 .. has_math: True
 .. type: text
 
-# Assign1
+# Assign2
 
-**Due Date**: Sep 22nd (Mon), before midnight (11:59:59PM EDT)
+**Due Date**: Sep 24th (Thurs), before midnight (11:59:59PM EDT)
 
 ## Data
 
-Download the [Breast Cancer Wisconsin (Diagnostic)
-Dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) from
-the UCI Machine Learning repository. You should parse and store the data as a data matrix.
-The ID variable will not be used, and the Diagnosis variable will be used only as labels
-for plotting. The remaining 30 continuous attributes will comprise the data matrix, which
-is $n=569$ points in $d=30$ dimensional space.
+Download the [Segmentation Dataset](http://www.cs.rpi.edu/~zaki/DMCOURSE/data/segmentation.csv). If chrome does not download this file when you click, please right click and use "save link as" to download it. This data is from the UCI Machine Learning repository [ImageSegmentation Dataset](https://archive.ics.uci.edu/dataset/50/image+segmentation), but it has been converted into a csv format (you can look at the UCI files for the attribute explanations). You should parse and store the csv file
+as a data matrix. The first variable is the class variable, which is categorical, and will be used only as labels for plotting in Part I. 
+However, the 4th column REGION-PIXEL-COUNT has the same value for all rows, and therefore,
+we will ignore it for this assignment.
+The remaining 18 continuous
+attributes will comprise the data matrix $D$, which comprises $n=2100$ points in $d=18$ dimensional space. 
 
 ## Jupyter Notebook
 
-You must submit a self-contained jupyter notebook, with all of your **code and output**.
-You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
-must be in inline mode (i.e., embedded) in the notebook, using matplotlib.
+You must submit a self-contained jupyter notebook, with all
+of your **code and output**. You must use NumPy, with well known/inbuilt
+libraries for data input (e.g., pandas). Plots must be in inline mode (i.e.,
+embedded) in the notebook, using matplotlib. If you use AI to assist with the assignment,
+you must clearly document the tool used, and the prompts used for each part of the
+assignment. 
+Include the prompts as markdown
+cells in your notebook (for each part/instance).
+However, I strongly encourage you to do this assignment without the help of AI
+if you really want to learn, and understand the concepts.
 
-## Eigenvectors and Principal Components
+
+## Part I. Eigenvectors and Principal Components
 
 Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1,
 and center the data matrix by subtracting the mean vector from each point.
@@ -81,23 +89,32 @@ Finally, i) compute the variance of the projected points along $\mathbf{u}_1$ an
 $\mathbf{u}_2$, ii) What is their relationship to $\lambda_1$ and $\lambda_2$, and iii)
 What fraction of the total variance is captured by the two eigenvectors.
 
-### c. Compare with best random projection directions
+## Part II (CSCI6390 Only): Quadratic PCA
 
-Compare the optimal directions $\mathbf{u}_1$ and $\mathbf{u}_2$, with the best obtained
-in Assign1. Print the angle between the corresponding directions, to see how close the
-random search directions come to the corresponding eigenvectors.
+You will find the top-two "quadratic" PCs by first transforming the dataset into a
+homogeneous quadratic attribute space as follows:
+if $X_1, X_2, ..., X_d$ are the original dimensions, create a new dataset with all
+possible degree 2 combinations, as follows $X_1^2, X_2^2, ...., X_d^2$, 
+$\sqrt{2}X_1X_2, \sqrt{2}X_1X3, ..., \sqrt{2}X_{d-1}X_d$. In other words, individual attributes are squared
+$X_i^2$ for all $i=1,...,d$, and all pair-wise attributes are created as $\sqrt{2}X_iX_j$
+for $i=1,...,d-1$ and $j=i+1,...d$. Let's call this transformed dataset $Dq$. Now center,
+and compute covariance matrix and the top-two eigenvectors in this new space.
+
+Plot the data by projecting the transformed, centered data onto the two new "quadratic" PC axes. 
+Is this set of axes better than the one for the original $D$? Why or why not?
+
+If you decide to consult CoPilot (or other similar AI tools), you must record in your
+notebook tool and the prompts you used. Include the prompts as markdown cells in your
+notebook (for each part/instance).
 
 ## Submission
 
 Submit your notebook via submitty, named **assign2.ipynb**. The notebook should be
 self-contained, i.e., it should include all output from all the parts, including figures.
 It should not hardcode file paths, but rather assume that the datafile is in the current
-directory, so only the input filename (wdbc.data) should be used. Do not submit the
+directory, so only the input filename should be used. Do not submit the
 datafile.
 
-If you decide to consult CoPilot (or other similar AI tools), you must record in your
-notebook tool and the prompts you used. Include the prompts as markdown cells in your
-notebook (for each part/instance).
 
 ## Policy on Academic Honesty
 
