@@ -103,9 +103,6 @@ and compute covariance matrix and the top-two eigenvectors in this new space.
 Plot the data by projecting the transformed data $D_q$ after centering onto the two new "quadratic" PC axes. 
 Is this set of axes from $D_q$ better than the one for the original $D$? Why or why not?
 
-If you decide to consult CoPilot (or other similar AI tools), you must record in your
-notebook tool and the prompts you used. Include the prompts as markdown cells in your
-notebook (for each part/instance).
 
 ## Submission
 
