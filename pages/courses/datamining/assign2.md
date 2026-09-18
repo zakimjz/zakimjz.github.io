@@ -97,11 +97,11 @@ if $X_1, X_2, ..., X_d$ are the original dimensions, create a new dataset with a
 possible degree 2 combinations, as follows $X_1^2, X_2^2, ...., X_d^2$, 
 $\sqrt{2}X_1X_2, \sqrt{2}X_1X3, ..., \sqrt{2}X_{d-1}X_d$. In other words, individual attributes are squared
 $X_i^2$ for all $i=1,...,d$, and all pair-wise attributes are created as $\sqrt{2}X_iX_j$
-for $i=1,...,d-1$ and $j=i+1,...d$. Let's call this transformed dataset $Dq$. Now center,
+for $i=1,...,d-1$ and $j=i+1,...d$. Let's call this transformed dataset $D_q$. Now center,
 and compute covariance matrix and the top-two eigenvectors in this new space.
 
-Plot the data by projecting the transformed, centered data onto the two new "quadratic" PC axes. 
-Is this set of axes better than the one for the original $D$? Why or why not?
+Plot the data by projecting the transformed data $D_q$ after centering onto the two new "quadratic" PC axes. 
+Is this set of axes from $D_q$ better than the one for the original $D$? Why or why not?
 
 If you decide to consult CoPilot (or other similar AI tools), you must record in your
 notebook tool and the prompts you used. Include the prompts as markdown cells in your
