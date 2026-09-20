@@ -82,8 +82,8 @@ $t$.
 
 Next, since we have found the optimal $\mathbf{u}_1$ and $\mathbf{u}_2$, we will project
 the entire centered data matrix onto each one of them to obtain a projected $n \times 2$
-dataset. Plot this as a scatter plot, but make sure to label the malignant samples as red
-and the benign points as green.
+dataset. Plot this as a scatter plot, but make sure to color the points based on the
+labels.
 
 Finally, i) compute the variance of the projected points along $\mathbf{u}_1$ and
 $\mathbf{u}_2$, ii) What is their relationship to $\lambda_1$ and $\lambda_2$, and iii)
