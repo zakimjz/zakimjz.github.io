@@ -49,7 +49,7 @@ below.
 | Sep 24     | Linear Regression II (Chapter 23)                                     |[lecture8](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture8.pdf)|
 | Sep 28     | **EXAM I**                                                        ||
 | Oct 01     | Pattern Mining I (Chapter 8)                   |[lecture9](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture9.pdf)|
-| Oct 05     | Pattern Mining II (Chapter 9)                   ||
+| Oct 05     | Pattern Mining II (Chapter 9)                   |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)|
 | Oct 08     | Representative-Based Clustering I (Chapter 13)                  ||
 | Oct 12     | **NO CLASS** (Columbus Day)                                       ||
 | Oct 16(F)  | Representative-Based Clustering II (Chapter 13)                           ||
