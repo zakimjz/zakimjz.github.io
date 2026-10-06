@@ -63,7 +63,7 @@ smallest value more than 10 you can run).
 
 
 **CSCI6390 Only** In addition, you must generate all the frequent minimal generators that
-correspond to a given closed itemset.
+correspond to each frequent closed itemset.
 
 ---
 
