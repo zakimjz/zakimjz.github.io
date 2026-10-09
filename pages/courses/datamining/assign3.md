@@ -46,24 +46,24 @@ Number of closed itemsets: 7
 ```
 
 Show the frequent closed itemsets on the
-[Reuters Newswire Data](http://www.cs.rpi.edu/~zaki/DMCOURSE/data/newswire_words.txt) dataset, using
-minimum support of 50. The dataset is a list of words, one per line, with
-each line representing a transaction. Here the words are the items.
+[chess dataset](http://www.cs.rpi.edu/~zaki/DMCOURSE/data/chess.txt), using
+minimum support of 2900. The dataset is a set of integer items, one per line, with
+each line representing a transaction.
 
 Next plot the running time as a function of minimum support
-from 50 down to 15 or 10 (or the smallest value more than 10 you can run), decreasing the minimum support by 5 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.
+from 3000 down to 2400, decreasing the minimum support by 100 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.
 
 After testing the tidset approach, you must also implement the diffset version of
 the code. This means that the subset
 checks on the tidsets should be replaced by equivalent operations on diffsets.
 You should create diffsets starting at level 2 (with itemsets of size 2) and not for
 single items, since the data is very sparse. Show the runtime comparison of the
-tidset vs. diffset versions for the support values from 50 down to 15 or 10 (or the
-smallest value more than 10 you can run).
+tidset vs. diffset versions for the support values from 3000 down to 2400.
 
 
-**CSCI6390 Only** In addition, you must generate all the frequent minimal generators that
-correspond to each frequent closed itemset.
+**CSCI6390 Only** In addition, you must generate all the frequent minimal generators. Show
+the minimal generators for support 2800, and then plot the number of minimal generators as
+a function of minimum support from 3000 to 2400. 
 
 ---
 
