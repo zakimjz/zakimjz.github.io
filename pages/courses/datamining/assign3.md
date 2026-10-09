@@ -62,7 +62,7 @@ tidset vs. diffset versions for the support values from 3000 down to 2400.
 
 
 **CSCI6390 Only** In addition, you must generate all the frequent minimal generators. Show
-the minimal generators for support 2800, and then plot the number of minimal generators as
+the minimal generators for support 2900, and then plot the number of minimal generators as
 a function of minimum support from 3000 to 2400. 
 
 ---
