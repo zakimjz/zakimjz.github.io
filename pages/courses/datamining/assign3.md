@@ -51,19 +51,19 @@ minimum support of 2900. The dataset is a set of integer items, one per line, wi
 each line representing a transaction.
 
 Next plot the running time as a function of minimum support
-from 3000 down to 2400, decreasing the minimum support by 100 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.
+from 3000 down to 2500, decreasing the minimum support by 100 each time. Also plot the number of closed frequent itemsets as a function of the same minimum support values.
 
 After testing the tidset approach, you must also implement the diffset version of
 the code. This means that the subset
 checks on the tidsets should be replaced by equivalent operations on diffsets.
 You should create diffsets starting at level 2 (with itemsets of size 2) and not for
 single items, since the data is very sparse. Show the runtime comparison of the
-tidset vs. diffset versions for the support values from 3000 down to 2400.
+tidset vs. diffset versions for the support values from 3000 down to 2500.
 
 
 **CSCI6390 Only** In addition, you must generate all the frequent minimal generators. Show
 the minimal generators for support 2900, and then plot the number of minimal generators as
-a function of minimum support from 3000 to 2400. 
+a function of minimum support from 3000 to 2500. 
 
 ---
 
