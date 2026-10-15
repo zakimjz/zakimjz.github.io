@@ -54,7 +54,7 @@ below.
 | Oct 05     | Pattern Mining II (Chapter 9)                   |[lecture10](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture10.pdf)|
 | Oct 08     | Representative-Based Clustering I (Chapter 13)                  |[lecture11](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture11.pdf)|
 | Oct 12     | **NO CLASS** (Columbus Day)                                       ||
-| Oct 15     | Representative-Based Clustering II (Chapter 13)                           ||
+| Oct 15     | Representative-Based Clustering II (Chapter 13)                           |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)|
 | Oct 16(F)  | Density-based Clustering I (Chapter 15)                           ||
 | Oct 19     | Density-based Clustering II (Chapter 15)                                   ||
 | Oct 22     | Bayes Classifier (Chapters 18)                                 ||
