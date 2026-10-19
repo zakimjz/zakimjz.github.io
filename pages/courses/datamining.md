@@ -56,10 +56,10 @@ below.
 | Oct 12     | **NO CLASS** (Columbus Day)                                       ||
 | Oct 15     | Representative-Based Clustering II (Chapter 13)                           |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)|
 | Oct 16(F)  | Density-based Clustering I (Chapter 15)                           |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf)|
-| Oct 19     | Density-based Clustering II (Chapter 15)                                   ||
-| Oct 22     | Bayes Classifier (Chapters 18)                                 ||
-| Oct 26     | Decision Trees (Chapter 19)                                      ||
-| Oct 29     | Support Vector Machines I (Chapter 21)                                       ||
+| Oct 19     | Density-based Clustering II (Chapter 15)                                   |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf)|
+| Oct 22     | Spectral Clustering (Chapters 16)                                 ||
+| Oct 26     | Bayes Classifier (Chapter 18)                                      ||
+| Oct 29     | Decision Trees (Chapter 19)                                       ||
 | Nov 02     | **EXAM II**                                                       ||
 | Nov 05     | Support Vector Machines II (Chapter 21)                            ||
 | Nov 09     | Logistic Regression (Chapter 24)                           ||
