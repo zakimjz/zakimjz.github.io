@@ -16,7 +16,7 @@
 
 ## Data
 
-Download the [Complex Data](https://www.cs.rpi.edu/~zaki/www/DMCOURSE/data/complex8.csv),
+Download the [Complex Data](https://www.cs.rpi.edu/~zaki/DMCOURSE/data/complex8.csv),
 which comprises 2551 points in a 2D space. The first two columns give the coordinates of
 the points and the last column denotes the "true" cluster label. You should use the third
 column only to assess the clustering quality via the NMI metric, and only the first two
