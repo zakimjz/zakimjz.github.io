@@ -59,8 +59,6 @@ probabilities or weights $w_{ij}$. Check out any online resources for more detai
 to use logsumexp when computing with log probabilities.
 
 
-### Experimentation and Results
-
 Apply your algorithm on the data from above, using $k=8$ clusters.
 Run your code several times (due to the different random initial center
 selections),  and report the clustering with the best NMI score. 
