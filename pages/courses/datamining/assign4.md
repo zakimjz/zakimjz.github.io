@@ -20,8 +20,9 @@ Download the [Complex Data](https://www.cs.rpi.edu/~zaki/www/DMCOURSE/data/compl
 which comprises 2551 points in a 2D space. The first two columns give the coordinates of
 the points and the last column denotes the "true" cluster label. You should use the third
 column only to assess the clustering quality via the NMI metric, and only the first two
-coordinates should be used for the clustering algorithm. You should plot the data with
-colors based on the true labels to visualize the data.
+coordinates should be used for the clustering algorithm. 
+
+You should first plot the data with colors based on the true labels to visualize the data.
 
 
 ## Jupyter Notebook
@@ -45,12 +46,13 @@ as the cluster centers, and CSCI6390 students should choose the $k$ farthest "ac
 closest center to compute the covariance matrix and the prior probabilities
 of each cluster.
 
-For practical purposes, it is better to use log probabilities so that we can
-effectively handle very small probability values,
-otherwise, you may find that
-weights of a point for the clusters are zero. For
-expectation step the scipy.special.logsumexp function can be useful for log probabilities.
-You should also use scipy.stats.multivariate_normal.logpdf if you work with log probabilities.
+For CSCI6390, you should implement the EM algorithm using log probabilities, which is a
+more robust way to handle very small probability values. Thus, for expectation step you
+should use the scipy.special.logsumexp function, and likewise you should use 
+scipy.stats.multivariate_normal.logpdf to compute the log density values for points. 
+Essentially, for the E-step, you'll first use log values to compute the log weights 
+$\log w_{ij} = \log P(C_i|x_j)$. Then you can take the np.exp of these values to get the actual
+probabilities or weights $w_{ij}$.
 
 
 ### Experimentation and Results
@@ -75,16 +77,16 @@ and color the points based on your labels (not the true labels).
 
 Implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388).
 Use mean-shift updates to compute the attractor for each point, as defined in the
-FindAttactor function (lines 11-17). Use logsumexp if needed (this is beneficial if the
-exp values are too small).
+FindAttactor function (lines 11-17). 
 
 Note that this method does not use the number of clusters as input, so you
 need to choose the width parameter $h$, the minimum density value $\xi$, 
 and the distance threshold $\theta$ for merging attractors (see class notes for the latter) 
-to find a good clustering.
-Run your code using different values of these parameters to find 8 clusters 
-and report the clustering with the best NMI score.
+to find a good clustering. Also you may use the python Networkx package to find the
+connected components.
 
+Run your code using different values of the parameters to find 8 clusters 
+and report the clustering with the best NMI score.
 Your program output should consist of the following information for the best clustering:
 
 * Size of each cluster.
