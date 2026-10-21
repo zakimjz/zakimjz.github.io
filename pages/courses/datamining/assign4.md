@@ -41,18 +41,22 @@ cells in your notebook (for each part/instance).
 Implement the Expectation-Maximization (EM) algorithm for clustering
 (see Algorithm 13.3 in Chapter 13).
 
-For initializing the clusters, CSCI4390 students should select $k$ random "actual" points in the dataset 
-as the cluster centers, and CSCI6390 students should choose the $k$ farthest "actual" points starting with an initial random point in the data. However, once you have chosen the centers, assign each point to the
-closest center to compute the covariance matrix and the prior probabilities
-of each cluster.
+For initializing the clusters, CSCI4390 students should select $k$ random "actual" points
+in the dataset as the cluster centers. However, once you have chosen the centers, assign
+each point to the closest center to compute the covariance matrix and the prior
+probabilities of each cluster.
 
-For CSCI6390, you should implement the EM algorithm using log probabilities, which is a
-more robust way to handle very small probability values. Thus, for expectation step you
-should use the scipy.special.logsumexp function, and likewise you should use 
-scipy.stats.multivariate_normal.logpdf to compute the log density values for points. 
-Essentially, for the E-step, you'll first use log values to compute the log weights 
-$\log w_{ij} = \log P(C_i|x_j)$. Then you can take the np.exp of these values to get the actual
-probabilities or weights $w_{ij}$.
+For CSCI6390 students should choose the $k$ farthest "actual" points starting with an
+initial random point in the data, and then compute the covariance matrix and prior
+probabilities after assigning each point to the closest center. Furthermore, CSCI6390
+students should implement the EM algorithm using log probabilities, which give a more
+robust way to handle very small probability values. Thus, for expectation step you should
+use the scipy.special.logsumexp function, and likewise you should use
+scipy.stats.multivariate_normal.logpdf to compute the log density values for points.
+Essentially, for the E-step, you'll first use log values to compute the log weights $\log
+w_{ij} = \log P(C_i|x_j)$. Then you can take the np.exp of these values to get the actual
+probabilities or weights $w_{ij}$. Check out any online resources for more details on how
+to use logsumexp when computing with log probabilities.
 
 
 ### Experimentation and Results
