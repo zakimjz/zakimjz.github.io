@@ -38,13 +38,13 @@ Your output should comprise the following for (only) the best cluster found:</p>
 <li>The final covariance matrix for each cluster</li>
 <li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
 <li>The Normalized Mutual Information (NMI) score for your clustering, using the
-<em>sklearn.metrics.normalized_mutual_info_score</em>* which compares the true cluster labels,
+<em>sklearn.metrics.normalized_mutual_info_score</em> which compares the true cluster labels,
 with those determined by your algorithm (see Eq. 17.8, and corresponding section
 in the books for what NMI means).</li>
 </ul>
 <p>Once you have the best clustering, plot the clusters found using your algorithm 
 and color the points based on your labels (not the true labels).</p>
-<h2>DENCLUE Density Based Clustering</h2>
+<h2>Part II: DENCLUE Density Based Clustering</h2>
 <p>Implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388).
 Use mean-shift updates to compute the attractor for each point, as defined in the
 FindAttactor function (lines 11-17). Use logsumexp if needed (this is beneficial if the
@@ -59,7 +59,7 @@ and report the clustering with the best NMI score.</p>
 <ul>
 <li>Size of each cluster.</li>
 <li>The Normalized Mutual Information (NMI) score for your clustering.
-    You can use sklearn.metrics.normalized_mutual_info_score to compute.</li>
+    You can use <em>sklearn.metrics.normalized_mutual_info_score</em> to compute this.</li>
 </ul>
 <p>Once you have the best clustering, plot the clusters found using your algorithm 
 and color the points based on your labels (not the true labels).</p>
