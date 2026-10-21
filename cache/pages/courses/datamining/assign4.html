@@ -1,18 +1,21 @@
-<h1>Assign4: EM Clustering</h1>
-<p><strong>Due Date</strong>: Oct 22 (Wed), before midnight (11:59:59PM)</p>
+<h1>Assign4: Clustering -- EM and DENCLUE</h1>
+<p><strong>Due Date</strong>: Oct 29 (Wed), before midnight (11:59:59PM)</p>
 <h2>Data</h2>
-<p>Download the <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Breast Cancer Wisconsin (Diagnostic)
-Dataset</a> from
-the UCI Machine Learning repository. You should parse and store the data as a data matrix.
-The ID variable will not be used, and the Diagnosis variable will be used only as labels
-to determine the ground truth clustering. The remaining 30 continuous attributes will comprise the data matrix, which
-is $n=569$ points in $d=30$ dimensional space.</p>
-<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1.</p>
+<p>Download the <a href="https://www.cs.rpi.edu/~zaki/www/DMCOURSE/data/complex8.csv">Complex Data</a>,
+which comprises 2551 points in a 2D space. The first two columns give the coordinates of
+the points and the last column denotes the "true" cluster label. You should use the third
+column only to assess the clustering quality via the NMI metric, and only the first two
+coordinates should be used for the clustering algorithm. You should plot the data with
+colors based on the true labels to visualize the data.</p>
 <h2>Jupyter Notebook</h2>
 <p>You must submit a self-contained jupyter notebook, with all of your <strong>code and output</strong>.
 You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
-must be in inline mode (i.e., embedded) in the notebook, using matplotlib.</p>
-<h2>EM Algorithm</h2>
+must be in inline mode (i.e., embedded) in the notebook, using matplotlib.
+If you use AI to assist with the assignment,
+you must clearly document the tool used, and the prompts used for each part of the
+assignment. Include the prompts as markdown
+cells in your notebook (for each part/instance).</p>
+<h2>Part I: EM Algorithm</h2>
 <p>Implement the Expectation-Maximization (EM) algorithm for clustering
 (see Algorithm 13.3 in Chapter 13).</p>
 <p>For initializing the clusters, CSCI4390 students should select $k$ random "actual" points in the dataset 
@@ -23,13 +26,10 @@ of each cluster.</p>
 effectively handle very small probability values,
 otherwise, you may find that
 weights of a point for the clusters are zero. For
-expectation step the scipy.special.logsumexp function can be useful for log probabilities.</p>
-<p>As another practical point, you can get an error when inverting the covariance
-matrix, so you should add a small ridge value $\lambda$ value along the
-diagonal entries to make the matrix invertible. 
-You should also use scipy.stats.multivariate_normal.logpdf with <em>allow_singular</em> flag set to True.</p>
+expectation step the scipy.special.logsumexp function can be useful for log probabilities.
+You should also use scipy.stats.multivariate_normal.logpdf if you work with log probabilities.</p>
 <h3>Experimentation and Results</h3>
-<p>Apply your algorithm on the data from above, using $k=2$ clusters.
+<p>Apply your algorithm on the data from above, using $k=8$ clusters.
 Run your code several times (due to the different random initial center
 selections),  and report the clustering with the best NMI score. 
 Your output should comprise the following for (only) the best cluster found:</p>
@@ -37,16 +37,33 @@ Your output should comprise the following for (only) the best cluster found:</p>
 <li>The final mean for each cluster</li>
 <li>The final covariance matrix for each cluster</li>
 <li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
-<li>The Normalized Mutual Information (NMI) score for your clustering.
-    CSCI4390 can use <em>sklearn.metrics.normalized_mutual_info_score</em>*, but
-    CSCI6390 must implement this based on Eq. 17.8 in the book.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering, using the
+<em>sklearn.metrics.normalized_mutual_info_score</em>* which compares the true cluster labels,
+with those determined by your algorithm (see Eq. 17.8, and corresponding section
+in the books for what NMI means).</li>
 </ul>
-<p>Once you have the best clustering, plot the data projected onto the first two principal
-components of the data, and color the points according to the cluster assignments. Points
-where the true label and the predicted cluster match the malignant class should be red,
-those where the true label and the predicted cluster members match the benign class should
-be green, and all other points should be blue. This will help you visualize the quality of
-your clustering. </p>
+<p>Once you have the best clustering, plot the clusters found using your algorithm 
+and color the points based on your labels (not the true labels).</p>
+<h2>DENCLUE Density Based Clustering</h2>
+<p>Implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388).
+Use mean-shift updates to compute the attractor for each point, as defined in the
+FindAttactor function (lines 11-17). Use logsumexp if needed (this is beneficial if the
+exp values are too small).</p>
+<p>Note that this method does not use the number of clusters as input, so you
+need to choose the width parameter $h$, the minimum density value $\xi$, 
+and the distance threshold $\theta$ for merging attractors (see class notes for the latter) 
+to find a good clustering.
+Run your code using different values of these parameters to find 8 clusters 
+and report the clustering with the best NMI score.</p>
+<p>Your program output should consist of the following information for the best clustering:</p>
+<ul>
+<li>Size of each cluster.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    You can use sklearn.metrics.normalized_mutual_info_score to compute.</li>
+</ul>
+<p>Once you have the best clustering, plot the clusters found using your algorithm 
+and color the points based on your labels (not the true labels).</p>
+<p>How does EM compare with DENCLUE on this dataset?</p>
 <h2>What to submit</h2>
 <ul>
 <li>Submit your notebook named as <strong>assign4.ipynb</strong> via submitty.</li>
@@ -54,11 +71,6 @@ your clustering. </p>
 <p>The notebook
 should be self-contained, i.e., it should include all output from all the
 parts, including figures. It should not hardcode file paths.</p>
-<p>If you decide to consult ChatGPT (or other similar AI tools), you must
-declare this in your notebook, with a brief text description of your
-successes and failures, e.g., what prompts you tried, what worked, what did
-not work, how you fixed it, etc. Include this as a markdown cell in your
-notebook.</p>
 <hr>
 <h2>Policy on Academic Honesty</h2>
 <p>You are free to discuss how to tackle the assignment, but all coding must be

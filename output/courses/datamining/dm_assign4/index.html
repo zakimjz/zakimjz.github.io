@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSCI4390-6390 Assign4 | Zaki Home Page</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign4/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Font Awesome --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><meta name="author" content="Mohammed J. Zaki">
+<meta property="og:site_name" content="Zaki Home Page">
+<meta property="og:title" content="CSCI4390-6390 Assign4">
+<meta property="og:url" content="http://www.cs.rpi.edu/~zaki/courses/datamining/dm_assign4/">
+<meta property="og:description" content="Assign4: Clustering -- EM and DENCLUE
+Due Date: Oct 29 (Wed), before midnight (11:59:59PM)
+Data
+Download the Complex Data,
+which comprises 2551 points in a 2D space. The first two columns give the coo">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-10-30T12:00:01-04:00">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Zaki Home Page</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../publications/" class="nav-link">Publications</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/zakimjz" class="nav-link">Github</a>
+                </li>
+<li class="nav-item">
+<a href="../../datamining" class="nav-link">DataMining</a>
+                </li>
+<li class="nav-item">
+<a href="../../mlib" class="nav-link">MLinBioinfo</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">CSCI4390-6390 Assign4</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h2>Assign4: Clustering -- EM and DENCLUE</h2>
+<p><strong>Due Date</strong>: Oct 29 (Wed), before midnight (11:59:59PM)</p>
+<h3>Data</h3>
+<p>Download the <a href="https://www.cs.rpi.edu/~zaki/www/DMCOURSE/data/complex8.csv">Complex Data</a>,
+which comprises 2551 points in a 2D space. The first two columns give the coordinates of
+the points and the last column denotes the "true" cluster label. You should use the third
+column only to assess the clustering quality via the NMI metric, and only the first two
+coordinates should be used for the clustering algorithm. You should plot the data with
+colors based on the true labels to visualize the data.</p>
+<h3>Jupyter Notebook</h3>
+<p>You must submit a self-contained jupyter notebook, with all of your <strong>code and output</strong>.
+You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
+must be in inline mode (i.e., embedded) in the notebook, using matplotlib.
+If you use AI to assist with the assignment,
+you must clearly document the tool used, and the prompts used for each part of the
+assignment. Include the prompts as markdown
+cells in your notebook (for each part/instance).</p>
+<h3>Part I: EM Algorithm</h3>
+<p>Implement the Expectation-Maximization (EM) algorithm for clustering
+(see Algorithm 13.3 in Chapter 13).</p>
+<p>For initializing the clusters, CSCI4390 students should select $k$ random "actual" points in the dataset 
+as the cluster centers, and CSCI6390 students should choose the $k$ farthest "actual" points starting with an initial random point in the data. However, once you have chosen the centers, assign each point to the
+closest center to compute the covariance matrix and the prior probabilities
+of each cluster.</p>
+<p>For practical purposes, it is better to use log probabilities so that we can
+effectively handle very small probability values,
+otherwise, you may find that
+weights of a point for the clusters are zero. For
+expectation step the scipy.special.logsumexp function can be useful for log probabilities.
+You should also use scipy.stats.multivariate_normal.logpdf if you work with log probabilities.</p>
+<h4>Experimentation and Results</h4>
+<p>Apply your algorithm on the data from above, using $k=8$ clusters.
+Run your code several times (due to the different random initial center
+selections),  and report the clustering with the best NMI score. 
+Your output should comprise the following for (only) the best cluster found:</p>
+<ul>
+<li>The final mean for each cluster</li>
+<li>The final covariance matrix for each cluster</li>
+<li>Size of each cluster, after assigning  each point to the cluster with highest posterior probability $P(c_i | x_j)$.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering, using the
+<em>sklearn.metrics.normalized_mutual_info_score</em>* which compares the true cluster labels,
+with those determined by your algorithm (see Eq. 17.8, and corresponding section
+in the books for what NMI means).</li>
+</ul>
+<p>Once you have the best clustering, plot the clusters found using your algorithm 
+and color the points based on your labels (not the true labels).</p>
+<h3>DENCLUE Density Based Clustering</h3>
+<p>Implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388).
+Use mean-shift updates to compute the attractor for each point, as defined in the
+FindAttactor function (lines 11-17). Use logsumexp if needed (this is beneficial if the
+exp values are too small).</p>
+<p>Note that this method does not use the number of clusters as input, so you
+need to choose the width parameter $h$, the minimum density value $\xi$, 
+and the distance threshold $\theta$ for merging attractors (see class notes for the latter) 
+to find a good clustering.
+Run your code using different values of these parameters to find 8 clusters 
+and report the clustering with the best NMI score.</p>
+<p>Your program output should consist of the following information for the best clustering:</p>
+<ul>
+<li>Size of each cluster.</li>
+<li>The Normalized Mutual Information (NMI) score for your clustering.
+    You can use sklearn.metrics.normalized_mutual_info_score to compute.</li>
+</ul>
+<p>Once you have the best clustering, plot the clusters found using your algorithm 
+and color the points based on your labels (not the true labels).</p>
+<p>How does EM compare with DENCLUE on this dataset?</p>
+<h3>What to submit</h3>
+<ul>
+<li>Submit your notebook named as <strong>assign4.ipynb</strong> via submitty.</li>
+</ul>
+<p>The notebook
+should be self-contained, i.e., it should include all output from all the
+parts, including figures. It should not hardcode file paths.</p>
+<hr>
+<h3>Policy on Academic Honesty</h3>
+<p>You are free to discuss how to tackle the assignment, but all coding must be
+your own. Any AI tool use must be declared. Any students caught violating
+the academic honesty principle (e.g., code similarity, or failure to
+disclose AI tools) will get an automatic F grade on the course and will be
+referred to the dean of students for disciplinary action.</p>
+    </div>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2026         <a href="mailto:zaki@cs.rpi.edu">Mohammed J. Zaki</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-C304VMWK2R"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C304VMWK2R');
+</script>
+</body>
+</html>
