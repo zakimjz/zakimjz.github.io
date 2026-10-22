@@ -87,8 +87,9 @@ and the distance threshold $\theta$ for merging attractors (see class notes for 
 to find a good clustering. Also you may use the python Networkx package to find the
 connected components.
 
-Run your code using different values of the parameters to find 8 clusters 
-and report the clustering with the best NMI score.
+Run your code using different values of the parameters to find close to 8 clusters 
+and report the clustering with the best NMI score (you may find slightly more cluster if
+that gives better NMI, say up to 16 clusters max).
 Your program output should consist of the following information for the best clustering:
 
 * Size of each cluster.
