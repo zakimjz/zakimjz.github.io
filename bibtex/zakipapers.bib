@@ -5038,40 +5038,6 @@
 
 
 
-@article{pham2025memorization,
-  title = {Memorization to generalization: Emergence of diffusion models from
-           associative memory},
-  author = {Pham, Bao and Raya, Gabriel and Negri, Matteo and Zaki, Mohammed J.
-            and Ambrogioni, Luca and Krotov, Dmitry},
-  journal = {Arxiv},
-  customlinkArxiv = {https://arxiv.org/abs/2505.21777},
-  year = {2025},
-  abstract = {Hopfield networks are associative memory (AM) systems, designed
-              for storing and retrieving patterns as local minima of an energy
-              landscape. In the classical Hopfield model, an interesting
-              phenomenon occurs when the amount of training data reaches its
-              critical memory load - spurious states, or unintended stable points
-              , emerge at the end of the retrieval dynamics, leading to incorrect
-              recall. In this work, we examine diffusion models, commonly used in
-              generative modeling, from the perspective of AMs. The training
-              phase of diffusion model is conceptualized as memory encoding
-              (training data is stored in the memory). The generation phase is
-              viewed as an attempt of memory retrieval. In the small data regime
-              the diffusion model exhibits a strong memorization phase, where the
-              network creates distinct basins of attraction around each sample in
-              the training set, akin to the Hopfield model below the critical
-              memory load. In the large data regime, a different phase appears
-              where an increase in the size of the training set fosters the
-              creation of new attractor states that correspond to manifolds of
-              the generated samples. Spurious states appear at the boundary of
-              this transition and correspond to emergent attractor states, which
-              are absent in the training set, but, at the same time, have
-              distinct basins of attraction around them. Our findings provide: a
-              novel perspective on the memorization-generalization phenomenon in
-              diffusion models via the lens of AMs, theoretical prediction of
-              existence of spurious states, empirical validation of this
-              prediction in commonly-used diffusion models.},
-}
 
 @article{2025-CE,
   author = {Gupta, Aparna and Lu, Cheng and Simaan, Majeed and Zaki, Mohammed J.
@@ -5135,5 +5101,43 @@
   movement trends, as well as previous work utilizing document graphs and GNNs for text
   classification. Finally, we demonstrate our AMR-graph-based approach’s potential for
   explainability via a case study.},
+}
+
+
+@inproceedings{2026-emnlp,
+  title = {Language Diffusion Models are Associative Memories Capable of Retrieving Unseen
+  Data},
+  author = {Pham, Bao and Zaki, Mohammed J.
+            and Ambrogioni, Luca and Krotov, Dmitry and Negri, Matteo},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing
+  (EMNLP)},
+  url = {https://aclanthology.org/2026.emnlp-main.835/},
+  customlinkArxiv = {https://arxiv.org/abs/2604.26841},
+  customlinkgithubcode = {https://github.com/Lemon-cmd/Associative-Memory-and-Language-Diffusion},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/EMNLP26.pdf},
+  year = {2026},
+  month = {Oct},
+  KeyWord = {Conference,AssociativeMemory,DiffusionModel},
+  abstract = {Understanding when language diffusion models memorize training data versus
+  generalize remains an open challenge. We address it by framing Uniform-based Discrete
+  Diffusion Models (UDDMs) as Associative Memories (AMs) where both memorization and creativity coexist. Unlike Hopfield networks, which require an energy function to produce attractors, we show that attractors can be formed via conditional likelihood maximization. We observe that UDDMs treat both training and unseen test sequences as fixed points for denoising while retaining the capacity to synthesize novel texts. We demonstrate that, as training set size increases, attractor basins around training samples shrink while those around unseen test samples expand until they become indistinguishable. This transition can be detected via the conditional entropy of tokens, which vanishes during memorization. Our framework provides both a theoretical foundation and a practical metric to elucidate the generative regimes of UDDMs.},
+}
+
+
+
+@article{2026-naturecomm,
+  title = {Emergence of diffusion models from associative memory through memorization and generalization},
+  author = {Pham, Bao and Raya, Gabriel and Negri, Matteo and Zaki, Mohammed J.
+            and Ambrogioni, Luca and Krotov, Dmitry},
+  journal = {Nature Communications},
+  url = {https://www.nature.com/articles/s41467-026-78727-y},
+  customlinkArxiv = {https://arxiv.org/abs/2505.21777},
+  doi = {https://doi.org/10.1038/s41467-026-78727-y},
+  customlinkgithubcode = {https://github.com/Lemon-cmd/Diffusion-Models-and-Associative-Memory},
+  fulltext = {http://www.cs.rpi.edu/~zaki/PaperDir/NatureComm26.pdf},
+  year = {2026},
+  month = {Oct},
+  KeyWord = {Journal,EBM,DAM,AssociativeMemory,DiffusionModel},
+  abstract = {Dense Associative Memories (DenseAMs) are generalizations of Hopfield networks that store training data at local minima of the energy landscape. When the amount of training data exceeds the critical memory storage capacity, new local minima (different from the training data) emerge. These emergent local minima, known as spurious states, can hinder memory retrieval. We examine diffusion models (DMs) through the DenseAM lens, viewing their generative process as an attempt of a memory retrieval. In the small data regime, DMs create distinct attractors for each training sample, akin to DenseAMs below the critical capacity. As the training set size increases, DMs transition to generalization. We identify a critical intermediate phase, predicted by DenseAM theory, characterized by the emergence of spurious states. In generative modeling, these previously overlooked states are no longer negative artifacts but rather are the first signs of generative capabilities. Their existence is demonstrated across a wide range of architectures and datasets.},
 }
 
