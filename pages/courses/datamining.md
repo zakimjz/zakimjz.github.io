@@ -59,11 +59,11 @@ below.
 | Oct 15     | Representative-Based Clustering II (Chapter 13)                           |[lecture12](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture12.pdf)|
 | Oct 16(F)  | Density-based Clustering I (Chapter 15)                           |[lecture13](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture13.pdf)|
 | Oct 19     | Density-based Clustering II (Chapter 15)                                   |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf)|
-| Oct 22     | Spectral Clustering (Chapters 16)                                 |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf)|
-| Oct 26     | Bayes Classifier (Chapter 18)                                      ||
-| Oct 29     | Decision Trees (Chapter 19)                                       ||
+| Oct 22     | Spectral Clustering (Chapter 16)                                 |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf)|
+| Oct 26     | Clustering Validation (Chapter 17)                                     |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf)|
+| Oct 29     | Bayes Classifier (Chapter 18)                                       ||
 | Nov 02     | **EXAM II**                                                       ||
-| Nov 05     | Support Vector Machines II (Chapter 21)                            ||
+| Nov 05     | Support Vector Machines (Chapter 21)                            ||
 | Nov 09     | Logistic Regression (Chapter 24)                           ||
 | Nov 12     | Neural Networks I (Chapter 25)                               ||
 | Nov 16     | Neural Networks II (Chapter 25)                                    ||
@@ -71,6 +71,6 @@ below.
 | Nov 23     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 26     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 30     | Modern Hopfield Networks II                                  ||
-| Dec 03     | Assessment I (Chapters 17&22)                                  ||
-| Dec 07     | Assessment II (Chapters 17&22)                            ||
+| Dec 03     | Assessment I (Chapter 22)                                  ||
+| Dec 07     | Assessment II (Chapter 22)                            ||
 | Dec 10     | **EXAM III**                                                      ||
