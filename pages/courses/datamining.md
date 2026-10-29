@@ -61,7 +61,7 @@ below.
 | Oct 19     | Density-based Clustering II (Chapter 15)                                   |[lecture14](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture14.pdf)|
 | Oct 22     | Spectral Clustering (Chapter 16)                                 |[lecture15](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture15.pdf)|
 | Oct 26     | Clustering Validation (Chapter 17)                                     |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf)|
-| Oct 29     | Bayes Classifier (Chapter 18)                                       ||
+| Oct 29     | Bayes Classifier (Chapter 18)                                       |[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf)|
 | Nov 02     | **EXAM II**                                                       ||
 | Nov 05     | Support Vector Machines (Chapter 21)                            ||
 | Nov 09     | Logistic Regression (Chapter 24)                           ||
