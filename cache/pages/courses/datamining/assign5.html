@@ -1,63 +1,68 @@
-<h1>Assign5: Density Clustering</h1>
-<p><strong>Due Date</strong>: Oct 30, before midnight (11:59:59PM)</p>
-<hr>
+<p><strong>Due Date</strong>: Nov 18th (Wed), before midnight (11:59:59PM EST)</p>
 <h2>Data</h2>
-<p>Download the <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Breast Cancer Wisconsin (Diagnostic)
-Dataset</a> from
-the UCI Machine Learning repository. You should parse and store the data as a data matrix.
-The ID variable will not be used, and the Diagnosis variable will be used only as labels
-to determine the ground truth clustering. The remaining 30 continuous attributes will comprise the data matrix, which
-is $n=569$ points in $d=30$ dimensional space.</p>
-<p>Use sklearn's MinMaxScaler to make sure all attributes are between 0 and 1.</p>
+<p>Download the <a href="http://www.cs.rpi.edu/~zaki/DMCOURSE/data/segmentation.csv">Segmentation
+Dataset</a>. If chrome does not
+download this file when you click, please right click and use "save link as" to download
+it. This data is from the UCI Machine Learning repository <a href="https://archive.ics.uci.edu/dataset/50/image+segmentation">ImageSegmentation
+Dataset</a>, but it has been
+converted into a csv format (you can look at the UCI files for the attribute
+explanations). You should parse and store the csv file as a data matrix. The first
+variable is the class variable, which is categorical, and will be used as the target
+variable $Y$. The remaining 19 continuous attributes will comprise the data matrix, which
+comprises $n=2100$ points ($\mathbf{x}$) in $d=19$ dimensional space.</p>
+<h4>Preprocessing</h4>
+<p>First, use <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html">sklearn's
+MinMaxScaler</a>
+to make sure all attributes are between 0 and 1.</p>
+<p>Next, use
+<a href="https://scikit-learn.org/1.5/modules/generated/sklearn.model_selection.train_test_split.html">sklearn.train_test_split</a>,
+using 42 as the random_state, to shuffle and create the training and
+testing data, using 80-20 split (i.e., 80% of the data as training and the
+remaining 20% as testing). Make sure to split both the data and the corresponding labels.</p>
 <h2>Jupyter Notebook</h2>
 <p>You must submit a self-contained jupyter notebook, with all of your <strong>code and output</strong>.
 You must use NumPy, with well known/inbuilt libraries for data input (e.g., pandas). Plots
-must be in inline mode (i.e., embedded) in the notebook, using matplotlib.</p>
-<h3>DENCLUE Algorithm</h3>
-<p>You will implement the DENCLUE density-based clustering algorithm (Alg 15.2, pg 388), 
-but slightly modified as noted below (esp. ignore line 7).</p>
-<p>You will use mean-shift updates to compute the attractor for each point, as defined in the
-FindAttactor function (lines 11-17). Use logsumexp if needed.</p>
-<p>The first change from the pseudo-code is that we will not do any density-based filtering. 
-Just compute the attractor for each point using mean-shift. Next, as you find the
-attractor for point $\mathbf{x}_i$, first check whether a previously found attractor is
-close to it, and add the point to that attractor's points. In other words, say
-$\mathbf{a}_i$ is the attractor for $\mathbf{x}_i$. If $\mathbf{a}_i$ is close to a
-previously found attractor $\mathbf{a}_k$, then add $\mathbf{x}_i$ to the point set for
-$\mathbf{a}_k$. For the closeness check you should use 
-$|\mathbf{a}_i -\mathbf{a}_k | \le \theta$
-where $\theta$ is some distance threshold (that you'll have to choose).</p>
-<p>Note that as you add points to a given attractor, say $\mathbf{a}_k$ above, make sure you
-also update the attractor to be the mean of the two attractors, i.e., replace
-$\mathbf{a}_k$ by the mean of $\mathbf{a}_k$ and $\mathbf{a}_i$, for the case above. To be
-perfectly correct, you should do a running mean update of the attractors if points are
-added to a previous attractor (this would also involve keep track of how many points have
-been added to a given attractor's point set.)</p>
-<p>Finally, in lieu of line 7, run kmeans over the attractors to find 2 clusters (you can use sklearn's Kmeans
-algorithm), and then for each attractor in
-a cluster, its assigned points should get the same cluster label.</p>
-<p>Note that this method does not use the number of clusters as input, so you
-need to choose the width parameter $h$ and the distance threshold $\theta$ carefully
-to find a good clustering.
-Run your code using different values for both and report the clustering with the best NMI score.</p>
-<p>Your program output should consist of the following information:</p>
-<ul>
-<li>Size of each cluster.</li>
-<li>The Normalized Mutual Information (NMI) score for your clustering.
-    You can use <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html">sklearn.metrics.normalized_mutual_info_score</a> using 'geometric' as average_method.</li>
-</ul>
-<p>Finally, plot the clusters in 2D using the PCA projections. Note the cluster centers as
-well.</p>
-<hr>
-<h2>What to submit</h2>
-<ul>
-<li>Submit your notebook named as <strong>assign5.ipynb</strong> via submitty. Document AI tools use via
-  the prompts use and the modifications to those prompts to make things work.</li>
-</ul>
-<hr>
+must be in inline mode (i.e., embedded) in the notebook, using matplotlib. If you use AI
+to assist with the assignment, you must clearly document the tool used, and the prompts
+used for each part of the assignment. Include the prompts as markdown cells in your
+notebook (for each part/instance). </p>
+<h2>Multi-class Logistic Regression</h2>
+<p>Implement the multi-class logistic regression algorithm as described in
+Algorithm 24.2 (Chapter 24, page 634), i.e., stochastic gradient ascent (SGA). 
+In line 6, instead of
+initializing with zeros, use np.random.randn instead. This way you'll get
+different initialized weights in each run, and thus you'll be able to
+explore more. Also, you may cap the maximum iterations of the repeat-until
+loop in addition to checking for convergence.</p>
+<p>You should use the scipy.special.softmax or scipy.special.log_softmax function rather than your own,
+since it is more robust.</p>
+<p>Also, the loops in line 8, 11, 15, and 18 run from 1 to $K-1$, but you can
+just make it 1 to $K$, so that all class weight vectors are learned (the
+pseudocode assumes that the last class the base class, and therefore its
+weight vector is the zero vector). As such, both approaches are fine.</p>
+<p>Your script should print out the learned weight vector(s), and plot the training loss.
+Finally, compute the F1 score and accuracy of your model on the test data. That is, predict the class
+for each point, by assigning it to the max probability class, and then compute the
+macro-F1 score and the accuracy. You may use the sklearn's f1_score and accuracy_score
+functions to compute these.</p>
+<p><strong>CSCI6390</strong> In addition, implement a <strong>mini-batch</strong> version of the
+logistic regression. That is, instead of using a single point to compute
+the gradient as in eq (24.19), compute the gradient for a batch of points
+at the same time (you can make batch size a parameter and try different
+values), and the batch gradient will be the sum of the individual gradient
+from each point. At the same time, line 10 will now iterate over the batch
+of points, and update the class weights once per batch (as opposed to once
+per point). Plot the training loss, and also the test F1 and accuracy for the mini-batch
+version. How does it compare to SGA?</p>
+<h2>Submission</h2>
+<p>Submit your notebook via submitty, named <strong>assign5.ipynb</strong>. The notebook should
+be self-contained, i.e., it should include all output from all the parts,
+including figures. It should not hardcode file paths, but rather assume that
+the datafile is in the current directory, so only the input filename
+(segmentation.csv) should be used. Do not submit the datafile.</p>
 <h2>Policy on Academic Honesty</h2>
 <p>You are free to discuss how to tackle the assignment, but all coding must be
-your own. Any AI tool use must be declared. Any students caught violating
-the academic honesty principle (e.g., code similarity, or failure to
-disclose AI tools) will get an automatic F grade on the course and will be
-referred to the dean of students for disciplinary action.</p>
+your own. Any AI tool use must be declared. Any students caught violating the
+academic honesty principle (e.g., code similarity, or failure to disclose AI
+tools) will get an automatic F grade on the course and will be referred to the
+dean of students for disciplinary action.</p>

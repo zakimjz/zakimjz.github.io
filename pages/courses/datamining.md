@@ -26,6 +26,8 @@ algebraic and probabilistic viewpoints, as well as algorithmic implementation.
 
 ## Assignments
 
+**Assign5**: {{% doc %}} dm_assign5 {{% /doc %}} (Due: Nov 18th, Midnight)
+
 **Assign4**: {{% doc %}} dm_assign4 {{% /doc %}} (Due: Oct 29th, Midnight)
 
 **Assign3**: {{% doc %}} dm_assign3 {{% /doc %}} (Due: Oct 15th, Midnight)
