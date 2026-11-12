@@ -65,7 +65,7 @@ below.
 | Oct 26     | Clustering Validation (Chapter 17)                                     |[lecture16](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture16.pdf)|
 | Oct 29     | Bayes Classifier (Chapter 18)                                       |[lecture17](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture17.pdf)|
 | Nov 02     | **EXAM II**                                                       ||
-| Nov 05     | Decision Trees (Chapter 19)                            ||
+| Nov 05     | Decision Trees (Chapter 19)                            |[Decision Trees (Anweshit Panda's Presentation)](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Decision_Trees.pdf)|
 | Nov 09     | Logistic Regression (Chapter 24)                           |[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf)|
 | Nov 12     | Neural Networks I (Chapter 25)                               ||
 | Nov 16     | Neural Networks II (Chapter 25)                                    ||
