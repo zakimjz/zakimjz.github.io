@@ -68,7 +68,7 @@ below.
 | Nov 05     | Decision Trees (Chapter 19)                            |[Decision Trees (A. Panda)](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/Decision_Trees.pdf)|
 | Nov 09     | Logistic Regression (Chapter 24)                           |[lecture18](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture18.pdf)|
 | Nov 12     | Support Vector Machines I (Chapter 21)                               |[lecture19](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture19.pdf)|
-| Nov 16     | SVMs II (Chapter 21)                                    ||
+| Nov 16     | SVMs II (Chapter 21)                                    |[lecture20](http://www.cs.rpi.edu/~zaki/DMCOURSE/lectures/lecture20.pdf)|
 | Nov 19     | Neural Networks I (Chapter 25)                               ||
 | Nov 23     | **NO CLASS** (Thanksgiving)                                       ||
 | Nov 26     | **NO CLASS** (Thanksgiving)                                       ||
