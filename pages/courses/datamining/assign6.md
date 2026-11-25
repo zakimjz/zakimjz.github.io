@@ -12,7 +12,7 @@
 
 # Assign6: Support Vector Classification
 
-**Due Date**: Nov 8, before midnight (11:59:59PM)
+**Due Date**: Dec 8, before midnight (11:59:59PM)
 
 ---
 
